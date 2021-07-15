@@ -31,3 +31,26 @@ http://localhost:8080
 ```
 
 To stop the process just press `CTRL + C` in your shell.
+
+## Statamic Development
+
+To run [CLI](https://statamic.dev/cli) get an interactive prompt first:
+
+```
+docker-compose exec statamic bash
+```
+
+Run `php artisan` or `php please` inside the statamic service.
+
+Alternatively, the commands can also be executed directly on the host.
+
+```
+docker-compose exec statamic php please
+```
+
+## Build Images
+Of course you can modify the existing `Dockerfile`. These are located inside `images/*/Dockerfile`. To build the images you can run the `build.sh` script using [npm](https://www.npmjs.com/).
+
+```
+npm run build
+```

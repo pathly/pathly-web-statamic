@@ -1,0 +1,13 @@
+<svg id="Back-to-Top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Pfad_263" data-name="Pfad 263" d="M.388-7.829a1.265,1.265,0,0,0,1.788-.035L13.475-19.6V10.735a1.265,1.265,0,0,0,2.53,0v-30.32L27.22-7.865a1.26,1.26,0,0,0,.887.39,1.342,1.342,0,0,0,.9-.351,1.266,1.266,0,0,0,.04-1.788L15.654-23.61l-.01-.008a.946.946,0,0,0-.3-.213l-.11-.067a1.011,1.011,0,0,0-.334-.077L14.74-24a1.289,1.289,0,0,0-.519.112l-.019.009a1.238,1.238,0,0,0-.3.2L.354-9.617a1.26,1.26,0,0,0-.354.9,1.256,1.256,0,0,0,.388.887" transform="translate(0 24)" fill="#fbfdff" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <circle id="Ellipse_35" data-name="Ellipse 35" cx="40" cy="40" r="40" fill="#ff696e"/>
+  <g id="Gruppe_150" data-name="Gruppe 150" transform="translate(25 46)">
+    <g id="Gruppe_149" data-name="Gruppe 149" transform="translate(0 -24)" clip-path="url(#clip-path)">
+      <path id="Pfad_262" data-name="Pfad 262" d="M39.4,22H-5V-29H39.4Z" transform="translate(-2.5 21.5)" fill="#fbfdff"/>
+    </g>
+  </g>
+</svg>

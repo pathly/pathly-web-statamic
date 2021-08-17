@@ -56,6 +56,12 @@ sections:
           validate:
             - required
       -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
+      -
         handle: parent
         field:
           type: entries
@@ -63,12 +69,6 @@ sections:
             - pages
           max_items: 1
           listable: false
-          localizable: true
-      -
-        handle: template
-        field:
-          type: template
-          display: Template
           localizable: true
   feedback:
     display: Feedback
@@ -135,7 +135,7 @@ sections:
           icon: grid
           listable: hidden
   support:
-    display: Support Needs
+    display: 'Support Needs'
     fields:
       -
         handle: support_headline_addition

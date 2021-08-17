@@ -13,5 +13,6 @@ feedback_headline: 'Das sagt unsere Community'
 support_headline_addition: 'Du & Pathly'
 support_headline: 'So kannst du helfen!'
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1629150151
+updated_at: 1629205237
+template: collaboration
 ---

@@ -1,0 +1,204 @@
+title: Collaboration
+sections:
+  intro:
+    display: Intro
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: intro_headline
+        field:
+          input_type: text
+          antlers: false
+          display: Headline
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: intro_textarea
+        field:
+          antlers: false
+          display: Textarea
+          type: textarea
+          icon: textarea
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: intro_image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          display: Image
+          type: assets
+          icon: assets
+          listable: hidden
+          validate:
+            - required
+          max_files: 1
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
+  feedback:
+    display: Feedback
+    fields:
+      -
+        handle: feedback_headline_addition
+        field:
+          input_type: text
+          antlers: false
+          display: 'Headline Addition'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: feedback_headline
+        field:
+          input_type: text
+          antlers: false
+          display: Headline
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: feedback_quotes
+        field:
+          fields:
+            -
+              handle: feedback_quotes_textarea
+              field:
+                antlers: false
+                display: Textarea
+                type: textarea
+                icon: textarea
+                listable: hidden
+                validate:
+                  - required
+            -
+              handle: feedback_quotes_author
+              field:
+                input_type: text
+                antlers: false
+                display: Author
+                type: text
+                icon: text
+                listable: hidden
+                validate:
+                  - required
+            -
+              handle: feedback_quotes_link
+              field:
+                display: Link
+                type: link
+                icon: link
+                listable: hidden
+          mode: stacked
+          max_rows: 3
+          reorderable: true
+          display: Notes
+          type: grid
+          icon: grid
+          listable: hidden
+  support:
+    display: Support Needs
+    fields:
+      -
+        handle: support_headline_addition
+        field:
+          input_type: text
+          antlers: false
+          display: 'Headline Addition'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: support_headline
+        field:
+          input_type: text
+          antlers: false
+          display: Headline
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: support_needs
+        field:
+          fields:
+            -
+              handle: support_needs_image
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                display: Image
+                type: assets
+                icon: assets
+                listable: hidden
+                validate:
+                  - required
+                max_files: 1
+            -
+              handle: support_needs_headline
+              field:
+                input_type: text
+                antlers: false
+                display: Headline
+                type: text
+                icon: text
+                listable: hidden
+                validate:
+                  - required
+            -
+              handle: support_needs_description
+              field:
+                display: Description
+                type: list
+                icon: list
+                listable: hidden
+                validate:
+                  - required
+          mode: stacked
+          reorderable: true
+          display: Jobs
+          type: grid
+          icon: grid
+          listable: hidden

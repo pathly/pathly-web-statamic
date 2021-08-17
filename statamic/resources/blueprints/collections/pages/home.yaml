@@ -1,0 +1,223 @@
+title: Home
+sections:
+  intro:
+    display: Intro
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: intro_headline
+        field:
+          input_type: text
+          antlers: false
+          display: Headline
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
+  about_us:
+    display: 'About us'
+    fields:
+      -
+        handle: about_us_headline_addition
+        field:
+          input_type: text
+          antlers: false
+          display: 'Headline Addition'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: about_us_headline
+        field:
+          type: text
+          validate:
+            - required
+          display: Headline
+          listable: hidden
+          input_type: text
+          antlers: false
+      -
+        handle: about_us_textarea
+        field:
+          antlers: false
+          display: Textarea
+          type: textarea
+          icon: textarea
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: about_us_image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          display: Image
+          type: assets
+          icon: assets
+          listable: hidden
+          validate:
+            - required
+          max_files: 1
+  collaboration:
+    display: Collaboration
+    fields:
+      -
+        handle: collaboration_headline_addition
+        field:
+          input_type: text
+          antlers: false
+          display: 'Headline Addition'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: collaboration_headline
+        field:
+          input_type: text
+          antlers: false
+          display: Headline
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: collaboration_textarea
+        field:
+          antlers: false
+          display: Textarea
+          type: textarea
+          icon: textarea
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: collaboration_image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          display: Image
+          type: assets
+          icon: assets
+          listable: hidden
+          validate:
+            - required
+          max_files: 1
+  supporter:
+    display: Supporter
+    fields:
+      -
+        handle: supporter_headline_addition
+        field:
+          input_type: text
+          antlers: false
+          display: 'Headline Addition'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: supporter_headline
+        field:
+          input_type: text
+          antlers: false
+          display: Headline
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: supporter_profiles
+        field:
+          fields:
+            -
+              handle: supporter_profile_image
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                display: Image
+                type: assets
+                icon: assets
+                listable: hidden
+                validate:
+                  - required
+                max_files: 1
+            -
+              handle: supporter_profile_name
+              field:
+                input_type: text
+                antlers: false
+                display: Name
+                type: text
+                icon: text
+                listable: hidden
+                validate:
+                  - required
+            -
+              handle: supporter_profile_link
+              field:
+                display: Link
+                type: link
+                icon: link
+                listable: hidden
+            -
+              handle: supporter_profile_hightlighted
+              field:
+                default: false
+                display: Highlighted
+                type: toggle
+                icon: toggle
+                listable: hidden
+                validate:
+                  - required
+          mode: stacked
+          max_rows: 0
+          reorderable: true
+          display: Profiles
+          type: grid
+          icon: grid
+          listable: hidden
+          validate:
+            - required

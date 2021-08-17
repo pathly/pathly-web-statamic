@@ -381,7 +381,7 @@ section {
   height: 80em;
   top: -30em;
   left: -24em;
-  background-image: url("../images/background/home_key-aspects_background.svg");
+  background-image: url("../images/home_key-aspects_background.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   z-index: -1;
@@ -542,7 +542,7 @@ section {
   height: 100em;
   top: -10em;
   left: 40em;
-  background-image: url("../images/background/home_your-path_background.svg");
+  background-image: url("../images/home_your-path_background.svg");
   background-repeat: no-repeat;
   background-size: 70%;
 }
@@ -742,7 +742,7 @@ section {
 	width: 1em; /* 32px // based on 24px */
 	height: 1em;
 	content: "";
-  background-image: url("../images/icons/home_collaboration_button_icon.svg");
+  background-image: url("../images/home_collaboration_button_icon.svg");
   background-size: 1em auto;
   background-repeat: no-repeat;
   margin-right: 0.67em; /* 16px // based on 24px */
@@ -981,7 +981,7 @@ img.section__supporter__slick-slider__list__item__image--big {
   bottom: 0;
   left: 10em;
   z-index: -1;
-  background-image: url("../images/background/footer_background.svg");
+  background-image: url("/images/footer_background.svg");
   background-size: 100%;
   background-repeat: no-repeat;
   overflow: hidden;

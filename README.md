@@ -34,10 +34,10 @@ To stop the process just press `CTRL + C` in your shell.
 
 ## Start Development
 
-To get all the used assets and resources, you need to update your public folder. Run following commands:
+To get all the used assets and resources, you need to update your public folder. 
+Go into the directory pathly-web-statamic/statamic and run the following command:
 
-``` 
-cd statamic
+```
 npm run dev
 ```
 

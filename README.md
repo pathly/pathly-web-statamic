@@ -32,7 +32,16 @@ http://localhost:8080
 
 To stop the process just press `CTRL + C` in your shell.
 
-## Statamic Development
+## Start Development
+
+To get all the used assets and resources, you need to update your public folder. Run following commands:
+
+``` 
+cd statamic
+npm run dev
+```
+
+## Advanced Statamic Development
 
 To run [CLI](https://statamic.dev/cli) get an interactive prompt first:
 
@@ -42,7 +51,7 @@ docker-compose exec statamic bash
 
 Run `php artisan` or `php please` inside the statamic service.
 
-Alternatively, the commands can also be executed directly on the host.
+Alternatively, the commands can also be executed directly on the host:
 
 ```
 docker-compose exec statamic php please

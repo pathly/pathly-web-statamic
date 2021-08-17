@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -17,6 +18,8 @@ mix.postCss('resources/css/main.css', 'public/css', [
     require('postcss-nested'),
     require('postcss-preset-env')({stage: 0})
 ])
+
+mix.copyDirectory('resources/images', 'public/images');
 
 if (mix.inProduction()) {
    mix.version();

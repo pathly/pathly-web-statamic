@@ -3,107 +3,70 @@
 
 <main class="main-grid">
   <!-- Section Header -->
-  <section class="section__header">
-    <img class="section__header__image" src="/images/home_header.svg">
+  <section class="section_home-header">
+    <img class="section_home-header_image" src="/images/home_header.svg">
 
-    <div class="section__header__text">
+    <div class="section_home-header_text">
       <h2>{{ intro_headline }}</h2>
 
-        <svg class="section__header__text__svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 200 50" preserveAspectRatio="xMinYMin meet">
-          <path class="section__header__text__svg__mouse" d="M25,21c0,5-4,9-9,9l0,0c-4.9,0-9-4-9-9V11c0-4.9,4.1-9,9-9l0,0c5,0,9,4.1,9,9V21z"/>
-          <line class="section__header__text__svg__scroller" x1="16" y1="8" x2="16" y2="14">
-            <animate attributeName="y1" values="8;8;8;14;14" dur="1.5s" repeatCount="indefinite" />
-            <animate attributeName="y2" values="8;8;14;14;14" dur="1.5s" repeatCount="indefinite" />
-            <animate attributeName="opacity" values="0;1;1;0" dur="1.5s" repeatCount="indefinite" />
-          <line/>
-        </svg>
+      <svg class="section_home-header_text_svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 200 50" preserveAspectRatio="xMinYMin meet">
+        <path class="section_home-header_text_svg_mouse" d="M25,21c0,5-4,9-9,9l0,0c-4.9,0-9-4-9-9V11c0-4.9,4.1-9,9-9l0,0c5,0,9,4.1,9,9V21z"/>
+        <line class="section_home-header_text_svg_scroller" x1="16" y1="8" x2="16" y2="14">
+          <animate attributeName="y1" values="8;8;8;14;14" dur="1.5s" repeatCount="indefinite" />
+          <animate attributeName="y2" values="8;8;14;14;14" dur="1.5s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0;1;1;0" dur="1.5s" repeatCount="indefinite" />
+        <line/>
+      </svg>
 
-      <div class="section__header__text__scroller">
-        <div class="section__header__text__scroller__animation"></div>
+      <div class="section_home-header_text_scroller">
+        <div class="section_home-header_text_scroller_animation"></div>
       </div>
     </div>
   </section>
 
   <!-- About Us -->
-  <section class="section__pathly-intro section--top-spacing" id="section__pathly-intro">
-    <div class="section__pathly-intro__text">
-      <h2 class="section-headline">{{ about_us_headline_addition }}</h2>
-      <h2 class="section-headline--bottom-spacing">{{ about_us_headline }}</h2>
-      <p>{{ about_us_textarea }}</p>
+  <section class="section_standard-left section--top-spacing" id="">
+    <div class="section_standard-left_text">
+      <h2 class="section-headline-addition">{{ about-us_headline_addition }}</h2>
+      <h2 class="section-headline--bottom-spacing">{{ about-us_headline }}</h2>
+      <p>{{ about-us_textarea }}</p>
     </div>
 
-    {{ about_us_image }}
-        <img class="section__pathly-intro__image" src="{{ url }}" alt="{{ alt }}" loading="lazy">
-    {{ /about_us_image }}
+    {{ about-us_image }}
+        <img class="section_standard-left_image" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+    {{ /about-us_image }}
   </section>
 
-  <!-- Your Path -->
-  <!-- <section class="section__your-path section--top-spacing">
-    <div class="section__your-path__background-image"></div>
-
-    <div class="section__your-path__text">
-      <h2 class="section-headline"><?= $page->yourPathHeadlineAddition()->html() ?></h2>
-      <h2><?= $page->yourPathHeadline()->html() ?></h2>
-    </div>
-
-    <div class="section__your-path__images">
-      <img class="section__your-path__image section__your-path__image1"
-      src="assets/images/home/image1.png"
-      loading="lazy"
-      alt=""
-      srcset=""
-      sizes="50vw"
-      >
-      <img class="section__your-path__image section__your-path__image2 "
-      src="assets/images/home/image2.png"
-      loading="lazy"
-      alt=""
-      srcset=""
-      sizes="50vw"
-      >
-      <img class="section__your-path__image section__your-path__image3"
-      src="assets/images/home/image3.png"
-      loading="lazy"
-      alt=""
-      srcset=""
-      sizes="50vw"
-      >
-    </div>
-
-    <button class="section__your-path__cta cta-button" type="button" name="button">Mehr? Bald!</button>
-    <!-- <a class="section__your-path__cta cta-button" href="#">Personalisieren</a> -->
-  <!-- </section> -->
-
   <!-- Collaboration -->
-  <section class="section__collaboration section--top-spacing">
-    <div class="section__collaboration__text">
-      <h2 class="section-headline">{{ collaboration_headline_addition }}</h2>
+  <section class="section_standard-right section--top-spacing">
+    <div class="section_standard-right_text">
+      <h2 class="section-headline-addition">{{ collaboration_headline_addition }}</h2>
       <h2 class="section-headline--bottom-spacing">{{ collaboration_headline }}</h2>
       <p>{{ collaboration_textarea }}</p>
-      <a class="section__collaboration__text__button cta-button" href="mailto:mail@pathly.app?subject=Mitwirken&amp;body=Hallo%20liebes%20Pathly%20Team,">Schreib uns</a>
+      <a class="section_standard-right_text_button cta-button" href="mailto:mail@pathly.app?subject=Mitwirken&amp;body=Hallo%20liebes%20Pathly%20Team,">Schreib uns</a>
     </div>
 
     {{ collaboration_image }}
-        <img class="section__collaboration__image" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+        <img class="section_standard-right_image" src="{{ url }}" alt="{{ alt }}" loading="lazy">
     {{ /collaboration_image }}
   </section>
 
   <!-- Supporter -->
-  <!-- <section class="section__supporter section--top-spacing">
-    <div class="section__supporter__text">
-      <h2 class="section-headline"><?= $page->supporterHeadlineAddition()->html() ?></h2>
+  <!-- <section class="section_supporter section--top-spacing">
+    <div class="section_supporter_text">
+      <h2 class="section-headline-addition"><?= $page->supporterHeadlineAddition()->html() ?></h2>
       <h2><?= $page->supporterHeadline()->html() ?></h2>
     </div>
 
     <?php $supporters = $page->supporterProfile()->toStructure(); ?>
 
-    <div class="section__supporter__slick-slider">
-      <ul class="section__supporter__slick-slider__list">
+    <div class="section_supporter_slick-slider">
+      <ul class="section_supporter_slick-slider_list">
         <?php foreach ($supporters as $supporter): ?>
           <?php $image = $supporter->image()->toFile(); ?>
-          <li class="section__supporter__slick-slider__list__item">
+          <li class="section_supporter_slick-slider_list_item">
             <?php if ($supporter->isHighlightedImage()->toBool()): ?>
-              <img class="section__supporter__slick-slider__list__item__image section__supporter__slick-slider__list__item__image--big"
+              <img class="section_supporter_slick-slider_list_item_image section_supporter_slick-slider_list_item_image--big"
               src="<?= $image->url() ?>"
               loading="lazy"
               alt="<?= $image->alt()->html() ?>"
@@ -111,7 +74,7 @@
               sizes="50vw"
               >
             <?php else: ?>
-              <img class="section__supporter__slick-slider__list__item__image section__supporter__slick-slider__list__item__image--small"
+              <img class="section_supporter_slick-slider_list_item_image section_supporter_slick-slider_list_item_image--small"
               src="<?= $image->url() ?>"
               loading="lazy"
               alt="<?= $image->alt()->html() ?>"

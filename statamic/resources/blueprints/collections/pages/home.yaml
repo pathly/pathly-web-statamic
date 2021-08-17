@@ -33,6 +33,12 @@ sections:
           validate:
             - required
       -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
+      -
         handle: parent
         field:
           type: entries
@@ -41,107 +47,18 @@ sections:
           max_items: 1
           listable: false
           localizable: true
-      -
-        handle: template
-        field:
-          type: template
-          display: Template
-          localizable: true
   about_us:
     display: 'About us'
     fields:
       -
-        handle: about_us_headline_addition
-        field:
-          input_type: text
-          antlers: false
-          display: 'Headline Addition'
-          type: text
-          icon: text
-          listable: hidden
-          validate:
-            - required
-      -
-        handle: about_us_headline
-        field:
-          type: text
-          validate:
-            - required
-          display: Headline
-          listable: hidden
-          input_type: text
-          antlers: false
-      -
-        handle: about_us_textarea
-        field:
-          antlers: false
-          display: Textarea
-          type: textarea
-          icon: textarea
-          listable: hidden
-          validate:
-            - required
-      -
-        handle: about_us_image
-        field:
-          mode: grid
-          restrict: false
-          allow_uploads: true
-          display: Image
-          type: assets
-          icon: assets
-          listable: hidden
-          validate:
-            - required
-          max_files: 1
+        import: standard_section
+        prefix: about-us_
   collaboration:
     display: Collaboration
     fields:
       -
-        handle: collaboration_headline_addition
-        field:
-          input_type: text
-          antlers: false
-          display: 'Headline Addition'
-          type: text
-          icon: text
-          listable: hidden
-          validate:
-            - required
-      -
-        handle: collaboration_headline
-        field:
-          input_type: text
-          antlers: false
-          display: Headline
-          type: text
-          icon: text
-          listable: hidden
-          validate:
-            - required
-      -
-        handle: collaboration_textarea
-        field:
-          antlers: false
-          display: Textarea
-          type: textarea
-          icon: textarea
-          listable: hidden
-          validate:
-            - required
-      -
-        handle: collaboration_image
-        field:
-          mode: grid
-          restrict: false
-          allow_uploads: true
-          display: Image
-          type: assets
-          icon: assets
-          listable: hidden
-          validate:
-            - required
-          max_files: 1
+        import: standard_section
+        prefix: collaboration_
   supporter:
     display: Supporter
     fields:

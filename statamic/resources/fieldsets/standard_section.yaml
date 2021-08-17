@@ -1,0 +1,43 @@
+title: 'Standard Section'
+fields:
+  -
+    handle: headline_addition
+    field:
+      input_type: text
+      antlers: false
+      display: 'Headline Addition'
+      type: text
+      icon: text
+      listable: hidden
+  -
+    handle: headline
+    field:
+      input_type: text
+      antlers: false
+      display: Headline
+      type: text
+      icon: text
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: textarea
+    field:
+      antlers: false
+      display: Textarea
+      type: textarea
+      icon: textarea
+      listable: hidden
+  -
+    handle: image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      max_files: 1
+      display: Image
+      type: assets
+      icon: assets
+      listable: hidden
+      validate:
+        - required

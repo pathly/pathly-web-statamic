@@ -1,0 +1,9 @@
+title: Stories
+template: stories/show
+layout: layout
+revisions: false
+route: '/stories/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

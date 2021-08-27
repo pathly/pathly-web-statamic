@@ -1,0 +1,19 @@
+:root {
+    --root4px: 0.17rem;
+    --root8px: 0.33rem;
+    --root16px: 0.67rem;
+    --root24px: 1rem;
+    --root32px: 1.33rem;
+    --root40px: 1.67rem;
+    --root48px: 2rem;
+    --root56px: 2.33rem;
+    --root64px: 2.67rem;
+    --root72px: 3rem;
+    --root80px: 3.33rem;
+    --root88px: 3.67rem;
+    --root96px: 4rem;
+    --root120px: 5rem;
+}
+
+/* "rootXXpx" based on 24px */
+/* How to use -> margin-left: var(--root16px); */

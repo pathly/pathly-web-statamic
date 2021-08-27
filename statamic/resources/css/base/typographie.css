@@ -32,24 +32,24 @@ html {
 h1 {
   font-family: "neue-kabel";
   font-weight: 700;
-  font-size: 2.67rem; /* 64px // based on 24px */
+  font-size: var(--root64px);
 }
 
 h2 {
   font-family: "neue-kabel";
   font-weight: 700;
-  font-size: 1.67rem; /* 40px // based on 24px */
-  line-height: 1.2; /* 58px // based on 48px */
+  font-size: var(--root40px);
+  line-height: 1.2;
 }
 
 @media (max-width: 500px) {
   h2 {
-    font-size: 1.33rem; /* 32px // based on 24px */
+    font-size: var(--root32px);
   }
 }
 
-h2.section-headline {
-  font-size: 3.33rem; /* 80px // based on 24px */
+h2.section-headline-addition {
+  font-size: var(--root80px);
   line-height: 1;
   margin-left: -1em;
   margin-bottom: -0.4em;
@@ -57,83 +57,28 @@ h2.section-headline {
 }
 
 @media (max-width: 1300px) {
-  h2.section-headline {
+  h2.section-headline-addition {
     margin-left: 0.4em;
   }
 }
 
 @media (max-width: 700px) {
-  h2.section-headline {
+  h2.section-headline-addition {
     margin-left: -0.5em;
   }
 }
 
 @media (max-width: 500px) {
-  h2.section-headline {
-    font-size: 2.67rem; /* 64px // based on 24px */
+  h2.section-headline-addition {
+    font-size: var(--root64px);
   }
 }
 
 @media (max-width: 350px) {
-  h2.section-headline {
+  h2.section-headline-addition {
     margin-left: 0.4em;
   }
 }
-
-/*
-h2.section-headline--left {
-  grid-column: 1/8;
-}
-
-@media (max-width: 1000px) {
-  h2.section-headline--left {
-    grid-column: 2/13;
-  }
-}
-
-@media (max-width: 700px) {
-  h2.section-headline--left {
-    grid-column: 1/14;
-  }
-}
-
-h2.section-headline--full-width {
-  grid-column: 1/13;
-}
-
-@media (max-width: 1000px) {
-  h2.section-headline--full-width {
-    grid-column: 2/13;
-  }
-}
-
-@media (max-width: 700px) {
-  h2.section-headline--full-width {
-    grid-column: 1/14;
-  }
-}
-
-h2.section-headline--right {
-  grid-column: 8/14;
-}
-
-@media (max-width: 1300px) {
-  h2.section-headline--right {
-    grid-column: 7/14;
-  }
-}
-
-@media (max-width: 1000px) {
-  h2.section-headline--right {
-    grid-column: 2/13;
-  }
-}
-
-@media (max-width: 700px) {
-  h2.section-headline--right {
-    grid-column: 1/14;
-  }
-} */
 
 h2.section-headline--bottom-spacing {
   margin-bottom: 1em;
@@ -142,15 +87,15 @@ h2.section-headline--bottom-spacing {
 h3 {
   font-family: "neue-kabel";
   font-weight: 700;
-  font-size: 1.33rem; /* 32px // based on 24px */
+  font-size: var(--root32px);
 }
 
 li h3 {
   font-family: "neue-kabel";
-  font-size: 1.67rem; /* 40px // based on 24px */
-  line-height: 1.2; /* 58px // based on 48px */
+  font-size: var(--root40px);
+  line-height: 1.2;
   color: rgba(var(--primaryPurple));
-  margin-bottom: 0.33em; /* 16px // based on 48px */
+  margin-bottom: var(--root16px);
 }
 
 @media (max-width: 1400px) {
@@ -161,19 +106,19 @@ li h3 {
 
 p {
   font-family: "azo-sans-web";
-  font-size: 1rem; /* 24px // based on 24px */
-  line-height: 1.5; /* 36px // based on 24px */
+  font-size: var(--root24px);
+  line-height: 1.5;
 }
 
 p + p {
-  margin-top: 1em;
+  margin-top: var(--root24px);
 }
 
 li p,
 li a {
   font-family: "neue-kabel";
-  font-size: 1.25rem; /* 30px // based on 24px */
-  line-height: 1.2; /* 36px // based on 30px */
+  font-size: var(--root32px);
+  line-height: 1.2;
   font-weight: 500;
   color: rgb(var(--primaryPurple));
 }
@@ -181,7 +126,7 @@ li a {
 @media (max-width: 1400px) {
   li p,
   li a  {
-    font-size: 1rem;
+    font-size: var(--root24px);
   }
 }
 

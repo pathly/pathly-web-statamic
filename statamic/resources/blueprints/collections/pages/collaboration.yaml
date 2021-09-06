@@ -11,39 +11,8 @@ sections:
           validate:
             - required
       -
-        handle: intro_headline
-        field:
-          input_type: text
-          antlers: false
-          display: Headline
-          type: text
-          icon: text
-          listable: hidden
-          validate:
-            - required
-      -
-        handle: intro_textarea
-        field:
-          antlers: false
-          display: Textarea
-          type: textarea
-          icon: textarea
-          listable: hidden
-          validate:
-            - required
-      -
-        handle: intro_image
-        field:
-          mode: grid
-          restrict: false
-          allow_uploads: true
-          display: Image
-          type: assets
-          icon: assets
-          listable: hidden
-          validate:
-            - required
-          max_files: 1
+        import: standard_section
+        prefix: intro_
   sidebar:
     display: Sidebar
     fields:

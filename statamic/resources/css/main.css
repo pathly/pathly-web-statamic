@@ -3,6 +3,7 @@
 @import "base/typographie.css";
 @import "base/sizes.css";
 @import "base/colors.css";
-@import "base/base.css";
+@import "sites/general.css";
+@import "sites/home.css";
 /* @import "slick/slick.css";
 @import "slick/slick-theme.css"; */

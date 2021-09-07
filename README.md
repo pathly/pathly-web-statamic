@@ -28,7 +28,7 @@ If this is the first time you start this project, please run the initial configu
 
 ```
 docker-compose exec statamic composer install
-docker-compose exec cp -n /app/.env.docker /app/.env
+docker-compose exec statamic cp -n /app/.env.docker /app/.env
 ```
 
 Now everything is installed.

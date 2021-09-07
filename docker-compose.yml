@@ -7,6 +7,7 @@ networks:
 services:
   statamic:
     image: ghcr.io/o1y/statamic-starter:latest-php7.4
+    privileged: true
     cap_add:
       - SYS_ADMIN
     devices:

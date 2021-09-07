@@ -22,7 +22,16 @@ cd pathly-web-statamic
 docker-compose up
 ```
 
-Wait until you see the output `Statamic is ready`. Now everything is installed.
+Wait until you see the output `Statamic is ready`.
+
+If this is the first time you start this project, please run the initial configuration:
+
+```
+docker-compose exec statamic composer install
+docker-compose exec cp -n /app/.env.docker /app/.env
+```
+
+Now everything is installed.
 
 Open a browser of your choice and access the local Statamic website:
 

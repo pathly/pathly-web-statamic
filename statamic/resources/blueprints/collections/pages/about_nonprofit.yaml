@@ -11,7 +11,7 @@ sections:
           validate:
             - required
       -
-        import: standard_section
+        import: standard_section_w_image
         prefix: intro_
   sidebar:
     display: Sidebar
@@ -45,26 +45,8 @@ sections:
     display: Preamble
     fields:
       -
-        handle: preamble_headline
-        field:
-          input_type: text
-          antlers: false
-          display: Headline
-          type: text
-          icon: text
-          listable: hidden
-          validate:
-            - required
-      -
-        handle: preamble_textarea
-        field:
-          antlers: false
-          display: Textarea
-          type: textarea
-          icon: textarea
-          listable: hidden
-          validate:
-            - required
+        import: standard_section
+        prefix: preamble_
   statutes:
     display: Statutes
     fields:

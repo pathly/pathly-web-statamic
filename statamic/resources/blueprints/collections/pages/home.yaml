@@ -51,13 +51,13 @@ sections:
     display: 'About us'
     fields:
       -
-        import: standard_section
+        import: standard_section_w_image
         prefix: about-us_
   collaboration:
     display: Collaboration
     fields:
       -
-        import: standard_section
+        import: standard_section_w_image
         prefix: collaboration_
   supporter:
     display: Supporter

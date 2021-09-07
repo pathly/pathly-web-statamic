@@ -11,7 +11,7 @@ sections:
           validate:
             - required
       -
-        import: standard_section
+        import: standard_section_w_image
         prefix: intro_
   sidebar:
     display: Sidebar

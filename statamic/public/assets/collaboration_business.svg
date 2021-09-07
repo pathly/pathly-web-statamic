@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="517" viewBox="0 0 520 517">
+  <g id="Gruppe_3002" data-name="Gruppe 3002" transform="translate(-1133 -4357)">
+    <rect id="Fritzi" width="520" height="517" rx="40" transform="translate(1133 4357)" fill="#314355"/>
+    <g id="loan" transform="translate(1254 4487.422)">
+      <path id="Pfad_738" data-name="Pfad 738" d="M219.012,76.238l29.232-17.546a20.385,20.385,0,0,1,27.625,6.464h0a20.376,20.376,0,0,1-4.682,27.126L219.012,132.7a27.7,27.7,0,0,1-10.241,4.968l-93.523,23.377a27.7,27.7,0,0,1-21.766-3.615l-68.4-44.257H2V39.3l45.979-7.665A27.7,27.7,0,0,1,65.8,34.641l42.4,23.128,68.848,3.625a19.924,19.924,0,0,1,18.88,19.9h0a19.928,19.928,0,0,1-17.943,19.854l-74.4,7.415" transform="translate(-2 94.279)" fill="none" stroke="#fbfdff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="16"/>
+      <g id="Ellipse_64" data-name="Ellipse 64" transform="translate(115.884 0)" fill="none" stroke="#fbfdff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="16">
+        <ellipse cx="54.744" cy="56.632" rx="54.744" ry="56.632" stroke="none"/>
+        <ellipse cx="54.744" cy="56.632" rx="46.744" ry="48.632" fill="none"/>
+      </g>
+      <g id="Rechteck_199" data-name="Rechteck 199" transform="translate(155.047 55.082) rotate(-45)" fill="none" stroke="#fbfdff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="16">
+        <rect width="22.329" height="22.329" stroke="none"/>
+        <rect x="8" y="8" width="6.329" height="6.329" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

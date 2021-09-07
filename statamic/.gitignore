@@ -2,10 +2,6 @@
 /public/hot
 /public/storage
 /public/vendor/statamic
-/public/css
-/public/js
-/public/images
-/public/assets
 /storage/*.key
 /vendor
 .env

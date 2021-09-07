@@ -1,0 +1,133 @@
+title: 'About Nonprofit'
+sections:
+  main:
+    display: Intro
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        import: standard_section
+        prefix: intro_
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+      -
+        handle: template
+        field:
+          hide_partials: true
+          display: Template
+          type: template
+          icon: template
+          listable: hidden
+  preamble:
+    display: Preamble
+    fields:
+      -
+        handle: preamble_headline
+        field:
+          input_type: text
+          antlers: false
+          display: Headline
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: preamble_textarea
+        field:
+          antlers: false
+          display: Textarea
+          type: textarea
+          icon: textarea
+          listable: hidden
+          validate:
+            - required
+  statutes:
+    display: Statutes
+    fields:
+      -
+        handle: statutes_headline
+        field:
+          input_type: text
+          antlers: false
+          display: Headline
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: statutes_sections
+        field:
+          fields:
+            -
+              handle: statutes_section_headline
+              field:
+                input_type: text
+                antlers: false
+                display: Headline
+                type: text
+                icon: text
+                listable: hidden
+                validate:
+                  - required
+            -
+              handle: statutes_section_subsections
+              field:
+                fields:
+                  -
+                    handle: statutes_section_subsection_textarea
+                    field:
+                      antlers: false
+                      display: Textarea
+                      type: textarea
+                      icon: textarea
+                      listable: hidden
+                      validate:
+                        - required
+                  -
+                    handle: statutes_section_subsection_list
+                    field:
+                      display: List
+                      type: list
+                      icon: list
+                      listable: hidden
+                mode: stacked
+                reorderable: true
+                display: Subsections
+                type: grid
+                icon: grid
+                listable: hidden
+                validate:
+                  - required
+          mode: stacked
+          reorderable: true
+          display: Sections
+          type: grid
+          icon: grid
+          listable: hidden
+          validate:
+            - required

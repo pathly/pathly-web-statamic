@@ -22,18 +22,31 @@ cd pathly-web-statamic
 docker-compose up
 ```
 
-Wait until you see the output `Statamic is ready`.
+Wait until you see the output `Statamic is ready`, which indicates that statamic is working as intended.
 
-If this is the first time you start this project, please run the initial configuration:
+Continue by pressing `CTRL + C` in your shell to shut the process back down.
+
+To finish the installation, run the following commands:
 
 ```
+docker-compose up -d
 docker-compose exec statamic composer install
 docker-compose exec statamic cp -n /app/.env.docker /app/.env
+docker-compose stop
 ```
 
 Now everything is installed.
 
-Open a browser of your choice and access the local Statamic website:
+## Running Pathly
+
+To start the Statamic Docker container run the following command in the root folder of the project  
+(as you did during the installation phase):
+
+```
+docker-compose up
+```
+
+Now open up a browser of your choice and access the local Statamic website:
 
 ```
 http://localhost:8080
@@ -43,10 +56,13 @@ To stop the process just press `CTRL + C` in your shell.
 
 ## Start Development
 
-To get all the used assets and resources, you need to update your public folder. 
-Go into the directory pathly-web-statamic/statamic and run the following command:
+To get all the used assets and resources, you need to update your public folder.  
+This requires you to have a [NodeJS](https://nodejs.org/) installation.
+
+Go into the directory pathly-web-statamic/statamic and run the following commands:
 
 ```
+npm install
 npm run dev
 ```
 

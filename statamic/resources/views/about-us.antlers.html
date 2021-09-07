@@ -1,2 +1,22 @@
-<!-- <h2>{{ intro_headline }}</h2> -->
-<h1>{{ title }}</h1>
+<!-- 
+<style>
+.small-top-margin {
+    margin-top: 5vw;
+}
+
+.full-width {
+    width: 90vw;
+}
+
+.horizontally-centered {
+    display: block;
+    margin: auto;
+}
+</style>
+-->
+
+<div class="small-top-margin full-width">
+    {{ intro_image }}
+    <img class="full-width horizontally-centered" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+    {{ /intro_image }}
+</div>

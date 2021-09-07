@@ -1,0 +1,13 @@
+
+.small-top-margin {
+    margin-top: 5vw;
+}
+
+.full-width {
+    width: 90vw;
+}
+
+.horizontally-centered {
+    display: block;
+    margin: auto;
+}

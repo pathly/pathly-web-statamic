@@ -19,17 +19,13 @@ Now you can run the following commands:
 ``` 
 git clone git@github.com:pathly/pathly-web-statamic.git
 cd pathly-web-statamic
-docker-compose up
+docker-compose up -d
 ```
 
 Wait until you see the output `Statamic is ready`, which indicates that statamic is working as intended.
-
-Continue by pressing `CTRL + C` in your shell to shut the process back down.
-
 To finish the installation, run the following commands:
 
 ```
-docker-compose up -d
 docker-compose exec statamic composer install
 docker-compose exec statamic cp -n /app/.env.docker /app/.env
 docker-compose stop
@@ -39,8 +35,7 @@ Now everything is installed.
 
 ## Running Pathly
 
-To start the Statamic Docker container run the following command in the root folder of the project  
-(as you did during the installation phase):
+To start the Statamic Docker container run the following command in the root folder of the project:
 
 ```
 docker-compose up
@@ -53,6 +48,15 @@ http://localhost:8080
 ```
 
 To stop the process just press `CTRL + C` in your shell.
+
+Instead you can also use following commands to run and stop the docker (as you did during the installation phase):
+
+```
+docker-compose up -d
+docker-compose stop
+```
+
+This has the advantage that the process runs in the background and you don't have to open another window for more commands.
 
 ## Start Development
 

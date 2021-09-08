@@ -1,6 +1,6 @@
 ---
 id: 447a7021-51fa-4939-903c-15f8a32d604a
-blueprint: our_mission
+blueprint: our-mission
 title: 'Unsere Mission'
 intro_image: ribbons_big.svg
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
@@ -27,7 +27,7 @@ mission_section:
       -
         textarea: |-
           Pathly soll Krebspatient:innen bei der Bewältigung ihres Alltags unterstützen, ihnen dabei helfen
-          wieder träumen zu können und zum Weitermachen inspirieren. Mit Pathly soll eine Plattform entstehen, die Krebpatient:innen und ihren Angehörigen dabei hilft, den richtigen Umgang mit der Erkrankung und auch den möglichen Folgen zu finden. Pathly soll informieren, Pathly soll auffangen. Pathly soll inspirieren und Halt geben. Pathly soll Mut machen. 
+          wieder träumen zu können und zum Weitermachen inspirieren. Mit Pathly soll eine Plattform entstehen, die Krebpatient:innen und ihren Angehörigen dabei hilft, den richtigen Umgang mit der Erkrankung und auch den möglichen Folgen zu finden. Pathly soll informieren, Pathly soll auffangen. Pathly soll inspirieren und Halt geben. Pathly soll Mut machen.
           Uns ist es wichtig, das Pathly ein Wegweiser und ein:e nützliche:r Unterstützer:in im Alltag wird. Viele Infos zum Thema Krebs fokussieren sich auf das Medizinische, sind umständlich und kompliziert formuliert, das wollen wir anders machen. Wir wollen den Patient:innen helfen, das Leben trotz Krebs zu genießen.
         type: textarea
         enabled: true
@@ -55,7 +55,7 @@ mission_section:
         enabled: true
       -
         textarea: |-
-          Angst, Verzweiflung und Hilflosigkeit sind Gefühle, die bei so einer Diagnose nicht selten mitschwingen. Deswegen möchten wir mit Pathly eine Plattform kreieren, auf der wir Aufklären, Erfahrungen weiter geben, hilfreiche Tipps zur Verfügung stellen und die Patient:innen und ihre Angehörigen vom ersten Moment an begleiten. Unser Ziel ist es mit unserer App personalisierte Informationen und Hilfestellungen mit den Betroffenen zu teilen, so dass gar nicht erst eine Überflut an Informationen entsteht. 
+          Angst, Verzweiflung und Hilflosigkeit sind Gefühle, die bei so einer Diagnose nicht selten mitschwingen. Deswegen möchten wir mit Pathly eine Plattform kreieren, auf der wir Aufklären, Erfahrungen weiter geben, hilfreiche Tipps zur Verfügung stellen und die Patient:innen und ihre Angehörigen vom ersten Moment an begleiten. Unser Ziel ist es mit unserer App personalisierte Informationen und Hilfestellungen mit den Betroffenen zu teilen, so dass gar nicht erst eine Überflut an Informationen entsteht.
 
           Wir setzen uns dafür ein, Inhalte so aufzuarbeiten, dass sie leicht zu verstehen, immer abrufbar und frei von Stigmen und Tabus sind. Wir möchten aufklären, enttabuisieren und Patient:innen digital durch ihre Therapie und auch danach begleiten.
         type: textarea

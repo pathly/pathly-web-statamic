@@ -1,12 +1,12 @@
 ---
 id: adcbfb7d-026a-4069-bf65-1a02464fd2a4
 blueprint: story
-title: 'Christine Raab'
+title: 'Christine, 38'
 name: 'Christine Raab'
 age: 38
 type: 'Breast Cancer'
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1629209890
+updated_at: 1630672918
 image: stories/Christine_Raab.png
 content:
   -

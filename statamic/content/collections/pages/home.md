@@ -5,7 +5,7 @@ title: Home
 author: a213c844-224f-4cde-a891-d1f543fd3b61
 template: home
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1629200312
+updated_at: 1631186091
 intro_headline: 'Dein Wegweiser durch den Alltag Deiner Krebserkrankung'
 about-us_headline_addition: Hallo!
 about-us_headline: 'Wir sind Thora und Rebecca.'
@@ -79,4 +79,7 @@ supporter_profiles:
     supporter_profile_name: 'Yana Sorkova'
     supporter_profile_link: null
     supporter_profile_hightlighted: false
+collaborate_toggle: true
+socialmedia_toggle: true
+cta: 6f656d83-2700-4b8f-aa2e-67e1553868cc
 ---

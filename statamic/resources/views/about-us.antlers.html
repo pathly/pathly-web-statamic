@@ -1,2 +1,143 @@
-<!-- <h2>{{ intro_headline }}</h2> -->
-<h1>{{ title }}</h1>
+<!--
+<style>
+/* Makes a previously square element round, adding a thin border */
+.round-image {
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(var(--blueUltraLightViolett));
+}
+
+/* Dynamically scaling image size, with a minimum 200px width */
+.profile-image-size {
+    min-width: 200px;
+    width: 20vw;
+}
+
+/* Correct color for the name of a person */
+.person-name {
+    color: rgb(var(--primaryPurple));
+}
+
+/* Margin around a complete profile entry */
+.profile-entry-spacing {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 80px;
+}
+
+/* Prevents an element (e.g. an image) from being dragged */
+.undraggable {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* 
+  Text options 
+*/
+.bold-text {
+  font-weight: bold;
+}
+
+.small-text {
+  font-size: 0.8em;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* 
+  Layout options 
+*/
+.small-margin-above {
+  margin-top: 8px;
+}
+
+.medium-margin-below {
+  margin-bottom: 40px;
+}
+
+.horizontally-centered {
+  display: inline-block;
+}
+
+/* full-width class that uses the entire available width in the center of the grid */
+.section_standard_w_image-left_text .full-width {
+  width: calc(90vw / 13 * 11);
+  max-width: calc(1800px / 13 * 11);
+}
+
+@media (max-width: 1000px) {
+  .section_standard_w_image-left_text .full-width {
+    width: calc(90vw / 13 * 9);
+  }
+}
+
+@media (max-width: 700px) {
+  .section_standard_w_image-left_text .full-width {
+    width: calc(90vw / 13 * 11);
+  }
+}
+
+@media (max-width: 350px) {
+  .section_standard_w_image-left_text .full-width {
+    width: 90vw;
+  }
+}
+</style>
+-->
+
+<section class="section_standard_w_image-left section--top-spacing">
+  <div class="section_standard_w_image-left_text">
+    <h2 class="section-headline-addition">{{ team_headline_addition }}</h2>
+    <h2 class="medium-margin-below">{{ team_headline }}</h2>
+    <div class = "center-text full-width">
+      {{  team_profiles }}
+        <div class = "horizontally-centered profile-entry-spacing">
+          {{team_profile_image}}
+            <img class="round-image profile-image-size undraggable" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+          {{/team_profile_image}}
+
+          <h3 class="person-name small-margin-above">
+            {{team_profile_name}}
+          </h3>
+          
+          <p class="small-margin-above small-text">
+            <!-- 
+              The following script tag will be replaced by the formatted responsibilities
+            -->
+            <script> 
+              // A string of comma separated responsibilities (with a trailing comma).
+              // Example: "Vorstand,Head of Development,"
+              var text = "{{team_profile_responsibilities}}{{label}},{{/team_profile_responsibilities}}";
+
+              // Array conatining each responsibility (with a trailing empty string element)
+              var arr = text.split(",");
+
+              // Remove trailing empty string element
+              arr.pop();
+
+              // The text this script tag will be replaced with
+              var final_text = arr.join(" &middot; ");
+              document.write(final_text);
+
+              // Removes this script tag from the document
+              var thisScript = document.scripts[document.scripts.length - 1];
+              thisScript.parentNode.removeChild(thisScript);
+            </script>
+          </p>
+          <!--
+          <p class="small-margin-above small-text bold-text">
+            someone@pathly.app
+          </p>
+          -->
+        </div>
+      {{ /team_profiles }}
+    </div>
+  </div>
+</section>

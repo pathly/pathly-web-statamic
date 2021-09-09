@@ -1,22 +1,19 @@
-<!-- 
+<!--
 <style>
 .small-top-margin {
     margin-top: 5vw;
 }
 
-.full-width {
-    width: 90vw;
-}
-
-.horizontally-centered {
-    display: block;
-    margin: auto;
+.streach-across-full-grid-width {
+    display: inline-grid;
+    grid-column: 1/14;
+    width: 100%;
 }
 </style>
 -->
 
-<div class="small-top-margin full-width">
-    {{ intro_image }}
-    <img class="full-width horizontally-centered" src="{{ url }}" alt="{{ alt }}" loading="lazy">
-    {{ /intro_image }}
-</div>
+<section>
+  {{ intro_image }}
+    <img class="small-top-margin streach-across-full-grid-width" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+  {{ /intro_image }}
+</section>

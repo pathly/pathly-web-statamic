@@ -3,11 +3,8 @@
     margin-top: 5vw;
 }
 
-.full-width {
-    width: 90vw;
-}
-
-.horizontally-centered {
-    display: block;
-    margin: auto;
+.streach-across-full-grid-width {
+    display: inline-grid;
+    grid-column: 1/14;
+    width: 100%;
 }

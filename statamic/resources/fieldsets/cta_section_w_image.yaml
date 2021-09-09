@@ -1,0 +1,117 @@
+title: 'CTA Section with Image'
+fields:
+  -
+    handle: headline_addition
+    field:
+      input_type: text
+      antlers: false
+      display: 'Headline Addition'
+      type: text
+      icon: text
+      listable: hidden
+  -
+    handle: headline
+    field:
+      input_type: text
+      antlers: false
+      display: Headline
+      type: text
+      icon: text
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: textarea
+    field:
+      antlers: false
+      display: Textarea
+      type: textarea
+      icon: textarea
+      listable: hidden
+  -
+    handle: image
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      max_files: 1
+      display: Image
+      type: assets
+      icon: assets
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: image_position
+    field:
+      options:
+        left: Left
+        right: Right
+      display: 'Image Position'
+      type: button_group
+      icon: button_group
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: button_type
+    field:
+      options:
+        mail: 'Button that opens the mail program'
+        subpage: 'Button that leads to another subpage'
+      display: 'Which Button Type?'
+      type: button_group
+      icon: button_group
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: mail_address
+    field:
+      input_type: email
+      antlers: false
+      display: 'Mail Address'
+      type: text
+      icon: text
+      listable: hidden
+      validate:
+        - required
+      if:
+        button_type: 'equals mail'
+  -
+    handle: mail_subject
+    field:
+      input_type: text
+      antlers: false
+      display: 'Mail Subject'
+      type: text
+      icon: text
+      listable: hidden
+      if:
+        button_type: 'equals mail'
+  -
+    handle: mail_body
+    field:
+      antlers: false
+      display: 'Mail Body'
+      type: textarea
+      icon: textarea
+      listable: hidden
+      if:
+        button_type: 'equals mail'
+  -
+    handle: subpage
+    field:
+      max_items: 1
+      mode: default
+      create: true
+      collections:
+        - pages
+      display: Subpage
+      type: entries
+      icon: entries
+      listable: hidden
+      if:
+        button_type: 'equals subpage'
+      validate:
+        - required

@@ -1,46 +1,7 @@
 title: 'CTA Section with Image'
 fields:
   -
-    handle: headline_addition
-    field:
-      input_type: text
-      antlers: false
-      display: 'Headline Addition'
-      type: text
-      icon: text
-      listable: hidden
-  -
-    handle: headline
-    field:
-      input_type: text
-      antlers: false
-      display: Headline
-      type: text
-      icon: text
-      listable: hidden
-      validate:
-        - required
-  -
-    handle: textarea
-    field:
-      antlers: false
-      display: Textarea
-      type: textarea
-      icon: textarea
-      listable: hidden
-  -
-    handle: image
-    field:
-      mode: grid
-      restrict: false
-      allow_uploads: true
-      max_files: 1
-      display: Image
-      type: assets
-      icon: assets
-      listable: hidden
-      validate:
-        - required
+    import: standard_section_w_image
   -
     handle: image_position
     field:
@@ -74,8 +35,6 @@ fields:
       type: text
       icon: text
       listable: hidden
-      validate:
-        - required
       if:
         button_type: 'equals mail'
   -
@@ -113,5 +72,3 @@ fields:
       listable: hidden
       if:
         button_type: 'equals subpage'
-      validate:
-        - required

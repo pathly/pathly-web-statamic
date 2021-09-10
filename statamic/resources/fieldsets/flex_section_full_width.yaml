@@ -1,0 +1,106 @@
+title: 'Flex Section Full Width'
+fields:
+  -
+    handle: section
+    field:
+      fields:
+        -
+          handle: headline_addition
+          field:
+            input_type: text
+            antlers: false
+            display: 'Headline Addition'
+            type: text
+            icon: text
+            listable: hidden
+        -
+          handle: headline
+          field:
+            input_type: text
+            antlers: false
+            display: Headline
+            type: text
+            icon: text
+            listable: hidden
+            validate:
+              - required
+        -
+          handle: replicator
+          field:
+            collapse: false
+            sets:
+              textarea:
+                display: Textarea
+                fields:
+                  -
+                    handle: textarea
+                    field:
+                      antlers: false
+                      display: Textarea
+                      type: textarea
+                      icon: textarea
+                      listable: hidden
+                      validate:
+                        - required
+              list:
+                display: List
+                fields:
+                  -
+                    handle: list
+                    field:
+                      display: List
+                      type: list
+                      icon: list
+                      listable: hidden
+                      validate:
+                        - required
+              image:
+                display: Image
+                fields:
+                  -
+                    handle: image
+                    field:
+                      mode: grid
+                      restrict: false
+                      allow_uploads: true
+                      max_files: 1
+                      display: Image
+                      type: assets
+                      icon: assets
+                      listable: hidden
+                      validate:
+                        - required
+              quote:
+                display: Quote
+                fields:
+                  -
+                    handle: quote_textarea
+                    field:
+                      antlers: false
+                      display: Textarea
+                      type: textarea
+                      icon: textarea
+                      listable: hidden
+                      validate:
+                        - required
+                  -
+                    handle: quote_author
+                    field:
+                      input_type: text
+                      antlers: false
+                      display: Author
+                      type: text
+                      icon: text
+                      listable: hidden
+                      validate:
+                        - required
+            display: Replicator
+            type: replicator
+            icon: replicator
+            listable: hidden
+      mode: stacked
+      reorderable: true
+      display: Section
+      type: grid
+      icon: grid
+      listable: hidden

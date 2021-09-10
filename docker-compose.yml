@@ -6,7 +6,7 @@ networks:
 
 services:
   statamic:
-    image: ghcr.io/o1y/statamic-starter:latest-php7.4
+    image: ghcr.io/o1y/statamic-starter:1.0.0-php7.4
     cap_add:
       - SYS_ADMIN
     devices:

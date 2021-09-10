@@ -6,8 +6,7 @@ Statamic Starter is a Docker development environment to make Statamic developmen
 
 ## Requirements
 
-* Docker Engine >= 20.10.3
-* Docker Compose >= 1.28.5
+* Docker Desktop >= 3.4.0
 
 [Download Docker](https://docs.docker.com/get-docker/)
 
@@ -24,7 +23,7 @@ cd pathly-web-statamic
 To start the Statamic Docker container run the following command in the root folder of the project:
 
 ```
-docker-compose up
+docker compose up
 ```
 
 Wait until you see the output `Statamic is ready`, which indicates that statamic is working as intended.
@@ -38,14 +37,18 @@ http://localhost:8080
 
 To stop the container just press `CTRL + C` in your shell.
 
-Instead you can also use following commands to run and stop the docker:
+## Start the development environment in detached mode
+
+An alternative way to start the development environment is using the detached mode:
 
 ```
-docker-compose up -d
-docker-compose stop
+docker compose up -d
+docker compose stop
 ```
 
-This has the advantage that the process runs in the background and you don't have to open another window for more commands.
+This mode has the advantage that the containers run in the background and you don't have to open another window for more commands. The downside is you don't see any logs from the container for further debugging anymore. 
+
+To attach to logs in detached mode you can use `docker compose logs -f statamic`.
 
 ## Start Frontend Development
 

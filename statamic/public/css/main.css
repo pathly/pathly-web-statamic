@@ -291,6 +291,10 @@ body {
   transform: translateY(-0.5em);
 }.header_scroll-to-top.hidden {
   display: none;
+}/* -------------------------------------------------------------------------------- *//* --- sections --- *//* -------------------------------------------------------------------------------- */.full-width {
+  display: inline-grid;
+  grid-column: 1/14;
+  width: 100%;
 }/* -------------------------------------------------------------------------------- *//* --- sections --- *//* -------------------------------------------------------------------------------- */section {
   grid-column: 1/14;
   display: grid;
@@ -775,6 +779,7 @@ body {
   }
 }.main-footer_list_meta {
   display: flex;
-}/* @import "slick/slick.css";
+}
+/* @import "slick/slick.css";
 @import "slick/slick-theme.css"; */
 

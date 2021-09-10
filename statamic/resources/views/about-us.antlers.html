@@ -42,8 +42,8 @@
     -ms-user-select: none;
 }
 
-/* 
-  Text options 
+/*
+  Text options
 */
 .bold-text {
   font-weight: bold;
@@ -57,8 +57,8 @@
   text-align: center;
 }
 
-/* 
-  Layout options 
+/*
+  Layout options
 */
 @media (max-width: 800px) {
   .section--top-spacing {
@@ -116,6 +116,12 @@
 </style>
 -->
 
+<section class="section--top">
+  {{ intro_image }}
+    <img class="full-width" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+  {{ /intro_image }}
+</section>
+
 <section class="section_standard_w_image-left section--top-spacing">
   <div class="section_standard_w_image-left_text">
     <h2 class="section-headline-addition">{{ team_headline_addition }}</h2>
@@ -130,12 +136,12 @@
           <h3 class="person-name small-margin-above">
             {{team_profile_name}}
           </h3>
-          
+
           <p class="small-margin-above small-text">
-            <!-- 
+            <!--
               The following script tag will be replaced by the formatted responsibilities
             -->
-            <script> 
+            <script>
               // An array conatining each single responsibility
               var arr = [{{team_profile_responsibilities}}"{{label}}",{{/team_profile_responsibilities}}];
 

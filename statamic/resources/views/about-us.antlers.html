@@ -136,15 +136,8 @@
               The following script tag will be replaced by the formatted responsibilities
             -->
             <script> 
-              // A string of comma separated responsibilities (with a trailing comma).
-              // Example: "Vorstand,Head of Development,"
-              var text = "{{team_profile_responsibilities}}{{label}},{{/team_profile_responsibilities}}";
-
-              // Array conatining each responsibility (with a trailing empty string element)
-              var arr = text.split(",");
-
-              // Remove trailing empty string element
-              arr.pop();
+              // An array conatining each single responsibility
+              var arr = [{{team_profile_responsibilities}}"{{label}}",{{/team_profile_responsibilities}}];
 
               // The text this script tag will be replaced with
               var final_text = arr.join(" &middot; ");

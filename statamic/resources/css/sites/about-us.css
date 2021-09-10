@@ -1,10 +1,1 @@
 
-.small-top-margin {
-    margin-top: 5vw;
-}
-
-.streach-across-full-grid-width {
-    display: inline-grid;
-    grid-column: 1/14;
-    width: 100%;
-}

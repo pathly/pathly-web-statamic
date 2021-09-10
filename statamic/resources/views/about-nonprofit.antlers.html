@@ -1,1 +1,68 @@
-<h1>{{ title }}</h1>
+<!-- Section Header -->
+<section class="section_standard_w_image">
+    {{ intro_image }}
+    <img
+        class="section_standard_w_image-right_image"
+        src="{{ url }}"
+        alt="{{ alt }}"
+        loading="lazy"
+    />
+    {{ /intro_image }}
+
+    <div class="section_standard_w_image-right_text">
+        <h2>{{ intro_headline }}</h2>
+        <p>{{ intro_textarea }}</p>
+    </div>
+</section>
+
+<!-- Section Präamble -->
+<section class="section--top-spacing">
+    <div class="section-standard">
+        <h2>{{ preamble_headline }}</h2>
+        <p>{{ preamble_textarea }}</p>
+    </div>
+</section>
+
+<!-- Section Statutes -->
+<section class="section--top-spacing">
+    <div class="section-standard">
+        <h2>{{ statutes_headline }}</h2>
+
+        <ol class="statutes-headlines-list">
+            {{ statutes_sections }}
+            <div class="expansion-panel container--top-spacing-40px">
+                <input
+                    type="checkbox"
+                    id="expansion-panel-button-{{statutes_section_headline}}"
+                />
+                <label
+                    for="expansion-panel-button-{{statutes_section_headline}}"
+                    class="expansion-panel-title"
+                >
+                    <li class="statutes-headlines-item">
+                        {{statutes_section_headline}}
+                        <span class="expansion-panel-indicator no-select"
+                            >+</span
+                        >
+                    </li>
+                </label>
+
+                <div class="expansion-panel-content">
+                    <ol class="container--top-spacing-40px">
+                        {{ statutes_section_subsections }}
+                        <li>
+                            {{statutes_section_subsection_textarea}}
+                            <ul>
+                                {{ statutes_section_subsection_list }}
+                                <li>{{ value }}</li>
+                                {{ /statutes_section_subsection_list }}
+                            </ul>
+                        </li>
+                        {{ /statutes_section_subsections }}
+                    </ol>
+                </div>
+            </div>
+            {{ /statutes_sections }}
+        </ol>
+    </div>
+</section>

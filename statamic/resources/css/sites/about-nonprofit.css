@@ -1,0 +1,25 @@
+.container--top-spacing-40px {
+    margin-top: var(--root40px);
+}
+.statutes-headlines-list {
+    counter-reset: statutes_headlines_item;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.statutes-headlines-item::before {
+    content: "§ " counter(statutes_headlines_item) " ";
+    counter-increment: statutes_headlines_item;
+}
+
+.expansion-panel-content ol {
+    font-weight: normal;
+    padding: revert;
+}
+.expansion-panel-content ol li:not(:first-child) {
+    margin-top: var(--root24px);
+}
+.expansion-panel-content ol ul {
+    padding: revert;
+    list-style: disc;
+}

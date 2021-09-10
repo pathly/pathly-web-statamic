@@ -22,7 +22,12 @@ body {
   /* background-color: rgb(var(--primaryTextLight)); */
 }
 
-
+.no-select {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
 
 /* -------------------------------------------------------------------------------- */
 /* --- button --- */
@@ -204,6 +209,19 @@ section {
 
 
 
+/* -------------------------------------------------------------------------------- */
+/* --- sections standard--- */
+/* -------------------------------------------------------------------------------- */
+
+.section-standard {
+  grid-column: 2/13;
+}
+
+.section-standard p {
+  margin-top: var(--root40px);
+}
+
+
 /* ---------------------------------------- */
 /* --- section standard left with image --- */
 /* ---------------------------------------- */
@@ -329,4 +347,54 @@ section {
   background-size: var(--root24px) auto;
   background-repeat: no-repeat;
   margin-right: var(--root16px);
+}
+
+/* ---------------------------------------- */
+/* --- expansion panel --- */
+/* ---------------------------------------- */
+
+.expansion-panel {
+  border-radius: var(--root16px);
+  grid-column: 2/12;
+  background-color: rgb(var(--primaryTextLight));
+  padding: var(--root40px);
+}
+.expansion-panel-content::-webkit-scrollbar {
+  display: none;
+}
+.expansion-panel-content {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  overflow: auto;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 1s ease, opacity 0.4s ease;
+}
+
+.expansion-panel input[type="checkbox"] {
+  display: none;
+}
+
+.expansion-panel-title {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.expansion-panel-indicator {
+  float: right;
+  width: 10px;
+  transition: transform 0.4s ease;
+}
+
+.expansion-panel input[type="checkbox"]:checked ~ .expansion-panel-content {
+  max-height: 1000px;
+  opacity: 1;
+  transition: max-height 2s linear;
+}
+.expansion-panel
+  input[type="checkbox"]:checked
+  ~ label
+  .expansion-panel-indicator {
+  transform: rotate(45deg);
 }

@@ -93,6 +93,8 @@
 .section_standard_w_image-left_text .full-width {
   width: calc(90vw / 13 * 11);
   max-width: calc(1800px / 13 * 11);
+  display: inherit;
+  grid-column: initial;
 }
 
 @media (max-width: 1000px) {

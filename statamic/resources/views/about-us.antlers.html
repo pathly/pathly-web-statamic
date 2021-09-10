@@ -1,5 +1,49 @@
+
 <section class="section--top">
   {{ intro_image }}
     <img class="full-width" src="{{ url }}" alt="{{ alt }}" loading="lazy">
   {{ /intro_image }}
+</section>
+
+<section class="section_standard_w_image-left section--top-spacing">
+  <div class="section_standard_w_image-left_text">
+    <h2 class="section-headline-addition">{{ team_headline_addition }}</h2>
+    <h2 class="medium-margin-below">{{ team_headline }}</h2>
+    <div class = "center-text full-width">
+      {{  team_profiles }}
+        <div class = "horizontally-centered profile-entry-spacing">
+          {{team_profile_image}}
+            <img class="round-image profile-image-size undraggable" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+          {{/team_profile_image}}
+
+          <h3 class="person-name small-margin-above">
+            {{team_profile_name}}
+          </h3>
+          
+          <p class="small-margin-above small-text">
+            <!-- 
+              The following script tag will be replaced by the formatted responsibilities
+            -->
+            <script> 
+              // An array conatining each single responsibility
+              var arr = [{{team_profile_responsibilities}}"{{label}}",{{/team_profile_responsibilities}}];
+
+              // The text this script tag will be replaced with
+              var final_text = arr.join(" &middot; ");
+              document.write(final_text);
+
+              // Removes this script tag from the document
+              var thisScript = document.scripts[document.scripts.length - 1];
+              thisScript.parentNode.removeChild(thisScript);
+            </script>
+          </p>
+          <!--
+          <p class="small-margin-above small-text bold-text">
+            someone@pathly.app
+          </p>
+          -->
+        </div>
+      {{ /team_profiles }}
+    </div>
+  </div>
 </section>

@@ -1,20 +1,20 @@
 /* Makes a previously square element round, adding a thin border */
 .round-image {
-    border-radius: 50%;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(var(--blueUltraLightViolett));
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(var(--blueUltraLightViolett));
 }
 
 /* Dynamically scaling image size, with a minimum 200px width */
 .profile-image-size {
-    min-width: 200px;
-    width: 20vw;
+  min-width: 200px;
+  width: 20vw;
 }
 
 /* Correct color for the name of a person */
 .person-name {
-    color: rgb(var(--primaryPurple));
+  color: rgb(var(--primaryPurple));
 }
 
 /* Margin around a complete profile entry */
@@ -24,14 +24,20 @@
   margin-top: 80px;
 }
 
+@media (max-width: 800px) {
+  .profile-entry-spacing {
+    margin-top: 40px;
+  }
+}
+
 /* Prevents an element (e.g. an image) from being dragged */
 .undraggable {
-    user-drag: none;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 /* 
@@ -52,12 +58,30 @@
 /* 
   Layout options 
 */
+@media (max-width: 800px) {
+  .section--top-spacing {
+    margin-top: 60px;
+  }
+}
+
 .small-margin-above {
   margin-top: 8px;
 }
 
+@media (max-width: 800px) {
+  .small-margin-above {
+    margin-top: 4px;
+  }
+}
+
 .medium-margin-below {
   margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+  .medium-margin-below {
+    margin-bottom: 20px;
+  }
 }
 
 .horizontally-centered {

@@ -5,7 +5,7 @@ title: 'Unsere Mission'
 intro_image: ribbons_big.svg
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1631095372
+updated_at: 1631532531
 mission_section:
   -
     headline_addition: 'Unsere Mission'
@@ -61,4 +61,6 @@ mission_section:
         type: textarea
         enabled: true
 template: our-mission
+description: 'Deswegen gibt es Pathly'
+image: icons/nav_mission.svg
 ---

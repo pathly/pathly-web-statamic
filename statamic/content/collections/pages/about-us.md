@@ -50,6 +50,8 @@ team_profiles:
     team_profile_responsibilities:
       - illustration
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1630942659
+updated_at: 1631532453
 template: about-us
+description: 'Das Team von Pathly'
+image: icons/nav_team.svg
 ---

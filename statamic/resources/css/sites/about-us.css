@@ -10,7 +10,7 @@
   grid-column: 2/13;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   grid-gap: var(--root80px);
 }
 
@@ -29,13 +29,12 @@
 
 .team_profile img {
   width: 100%;
-  height: 100%;
   margin-bottom: var(--root24px);
 }
 
 /* A list of responsibilities a given team member has */
 /* Makes sure the list is displayed in a single line */
-.team_profile ul,
+
 .team_profile ul li {
   display: inline-flex;
 }
@@ -62,6 +61,7 @@
 }
 
 /* A paragraph containing the team member's email address */
-.team_profile p {
+.team_profile a {
   font-weight: 700;
+  color: black;
 }

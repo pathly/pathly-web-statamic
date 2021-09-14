@@ -25,10 +25,9 @@
           {{ /team_profile_responsibilities }}
         </ul>
 
-        <p>
-          <!-- TODO: Replace with email variable: -->
-          someone@pathly.app
-        </p>
+        {{ if team_profile_mail }}
+          <a href="mailto:{{ team_profile_mail }}">{{ team_profile_mail }}</a>
+        {{ endif}}
       </li>
     {{ /team_profiles }}
   </ul>

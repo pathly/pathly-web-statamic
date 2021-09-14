@@ -7,38 +7,44 @@
 /* Div that contains a number of profile entries from the team */
 #team_profiles {
   text-align: center;
-  display:block;
-  grid-column: 1/14;
+  grid-column: 2/13;
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: var(--root80px);
+}
+
+@media (max-width: 400px) {
+  #team_profiles {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 
 /* A single profile entry */
 .team_profile {
-  margin-left: 1em;
-  margin-right: 1em;
   margin-top: var(--root80px);
   display: inline-block;
   text-align: center;
 }
 
-/* A round profile picture with a thin border */
 .team_profile img {
-  /* Dynamically scaling image size, with a minimum 200px width */
-  min-width: 200px;
-  min-height: 200px;
-  width: 20vw;
-  height: 20vw;
+  width: 100%;
+  height: 100%;
   margin-bottom: var(--root24px);
 }
 
 /* A list of responsibilities a given team member has */
-.team_profile ul {
-}
-
 /* Makes sure the list is displayed in a single line */
 .team_profile ul,
 .team_profile ul li {
   display: inline-flex;
+}
+
+@media (max-width: 400px) {
+  .team_profile ul,
+  .team_profile ul li {
+    display: block;
+  }
 }
 
 /* Adds a small dot inbetween responsibilities */
@@ -47,6 +53,12 @@
 	height: var(--root24px);
 	content: "\B7";
   text-align: center;
+}
+
+@media (max-width: 400px) {
+  .team_profile ul li:not(:last-child)::after {
+    content: "";
+  }
 }
 
 /* A paragraph containing the team member's email address */

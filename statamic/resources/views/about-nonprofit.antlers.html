@@ -1,1 +1,48 @@
-<h1>{{ title }}</h1>
+<section class="section_standard-w-image-left">
+  {{ intro_image }}
+    <img src="{{ url }}" alt="{{ alt }}" loading="lazy"/>
+  {{ /intro_image }}
+
+  <div>
+    <h2 class="section-headline">{{ intro_headline }}</h2>
+    <p>{{ intro_textarea }}</p>
+  </div>
+</section>
+
+<section class="section_standard section--top-spacing">
+  <h2 class="section-headline">{{ preamble_headline }}</h2>
+  <p>{{ preamble_textarea }}</p>
+</section>
+
+<section class="section_standard section--top-spacing">
+  <h2>{{ statutes_headline }}</h2>
+
+  <ol class="statutes_sections">
+    {{ statutes_sections }}
+      <div class="accordion">
+        <input type="checkbox" id="accordion_button-{{ statutes_section_headline }}"/>
+        <label for="accordion_button-{{ statutes_section_headline }}" class="accordion_title">
+          <li class="statutes_sections_headline">
+            {{ statutes_section_headline }}
+            <span class="accordion_indicator no-select">+</span>
+          </li>
+        </label>
+
+        <div class="accordion_content">
+          <ol class="statutes_sections_subsections">
+            {{ statutes_section_subsections }}
+              <li>
+                {{statutes_section_subsection_textarea}}
+                <ul>
+                  {{ statutes_section_subsection_list }}
+                    <li>{{ value }}</li>
+                  {{ /statutes_section_subsection_list }}
+                </ul>
+              </li>
+            {{ /statutes_section_subsections }}
+          </ol>
+        </div>
+      </div>
+    {{ /statutes_sections }}
+  </ol>
+</section>

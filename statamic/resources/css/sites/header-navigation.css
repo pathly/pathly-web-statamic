@@ -67,7 +67,7 @@
 }
 
 /* underline animation */
-.header-nav-list > li:not(.is-parent) > a::after {
+.header-nav-list > li > a::after {
   content: '';
   position: absolute;
   bottom: var(--root8px);
@@ -83,7 +83,7 @@
 .header-nav-list > li:hover > a {
   color: rgb(var(--primaryPurple));
 }
-.header-nav-list > li:not(.is-parent):hover > a::after {
+.header-nav-list > li:hover > a::after {
   transform: scaleX(1);
   background-color: rgb(var(--primaryPurple));
 }
@@ -92,18 +92,18 @@
 .header-nav-list > .is-parent > a {
   margin-right: var(--root24px);
 }
-.header-nav-list > .is-parent > a::after {
+.header-nav-list > .is-parent > a::before {
   content: '';
   position: absolute;
   right: 0;
-  transform: translate(calc(100% + 7px), 100%) rotate(45deg);
+  transform: translate(calc(100% + 7px), 80%) rotate(45deg);
   height: 8px;
   width: 8px;
   border: rgb(var(--primaryPurple), 0.6) solid;
   border-width: 0 2px 2px 0;
   transition: border 0.4s, transform 0.4s;
 }
-.header-nav-list > .is-parent:hover > a::after {
+.header-nav-list > .is-parent:hover > a::before {
   border-color: rgb(var(--primaryPurple));
   transform: translate(calc(100% + 7px), 120%) rotate(45deg);
 }

@@ -7,7 +7,7 @@
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
-  gtag('config', 'G-0HCDCE6ENV', { ‚anonymize_ip‘: true } );
+  gtag('config', 'G-0HCDCE6ENV', { 'anonymize_ip': true } );
   </script>
 
   <meta charset="utf-8">
@@ -36,25 +36,39 @@ ga('send', 'pageview');
 </script> -->
 </head>
 
-<header class="header main-grid">
+<header class="header">
   <a class="header_logo" href="">
     <img src="/images/logo_dark.svg" alt="Pathly Logo">
     <h1>Pathly</h1>
   </a>
 
-  <nav class="header_nav">
-    <ul class="header_nav_main">
+  <nav class="header-nav">
+    <ul class="header-nav-list">
       {{ nav:collection:pages }}
-      <li>
-        <a class="{{ is_current || is_parent ?= 'classeDieIchRanfuegenMoechte' }}" href="{{ url }}">{{ title }}</a>
-        {{ if children }}
-        <ul class="header_nav_main_sub">
-          {{ children }}
-          <li><a class="" href="{{ url }}">{{ title }}</a></li>
-          {{ /children }}
-        </ul>
-        {{ /if }}
+      {{ if children }}
+      <li class="is-parent" >
+        <a>{{ title }}</a>
+        <div class="header-nav-sub">
+          <ul class="header-nav-sub-list shadow">
+            {{ children }}
+            <li>
+              <a class="" href="{{ url }}">
+                {{ image }}
+                <img src="{{ url }}" alt="">
+                {{ /image }}
+                <span class="text">
+                  <h2>{{ title }}</h2>
+                  <p>{{ description }}</p>
+                </span>
+              </a>
+            </li>
+            {{ /children }}
+          </ul>
+        </div>
       </li>
+      {{ else }}
+      <li><a class="link" href="{{ url }}">{{ title }}</a></li>
+      {{ endif}}
       {{ /nav:collection:pages }}
     </ul>
 

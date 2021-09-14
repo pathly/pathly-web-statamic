@@ -1,166 +1,33 @@
-<!--
-<style>
-/* Makes a previously square element round, adding a thin border */
-.round-image {
-    border-radius: 50%;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(var(--blueUltraLightViolett));
-}
-
-/* Dynamically scaling image size, with a minimum 200px width */
-.profile-image-size {
-    min-width: 200px;
-    width: 20vw;
-}
-
-/* Correct color for the name of a person */
-.person-name {
-    color: rgb(var(--primaryPurple));
-}
-
-/* Margin around a complete profile entry */
-.profile-entry-spacing {
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 80px;
-}
-
-@media (max-width: 800px) {
-  .profile-entry-spacing {
-    margin-top: 40px;
-  }
-}
-
-/* Prevents an element (e.g. an image) from being dragged */
-.undraggable {
-    user-drag: none;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
-
-/*
-  Text options
-*/
-.bold-text {
-  font-weight: bold;
-}
-
-.small-text {
-  font-size: 0.8em;
-}
-
-.center-text {
-  text-align: center;
-}
-
-/*
-  Layout options
-*/
-@media (max-width: 800px) {
-  .section--top-spacing {
-    margin-top: 60px;
-  }
-}
-
-.small-margin-above {
-  margin-top: 8px;
-}
-
-@media (max-width: 800px) {
-  .small-margin-above {
-    margin-top: 4px;
-  }
-}
-
-.medium-margin-below {
-  margin-bottom: 40px;
-}
-
-@media (max-width: 800px) {
-  .medium-margin-below {
-    margin-bottom: 20px;
-  }
-}
-
-.horizontally-centered {
-  display: inline-block;
-}
-
-/* full-width class that uses the entire available width in the center of the grid */
-.section_standard_w_image-left_text .full-width {
-  width: calc(90vw / 13 * 11);
-  max-width: calc(1800px / 13 * 11);
-}
-
-@media (max-width: 1000px) {
-  .section_standard_w_image-left_text .full-width {
-    width: calc(90vw / 13 * 9);
-  }
-}
-
-@media (max-width: 700px) {
-  .section_standard_w_image-left_text .full-width {
-    width: calc(90vw / 13 * 11);
-  }
-}
-
-@media (max-width: 350px) {
-  .section_standard_w_image-left_text .full-width {
-    width: 90vw;
-  }
-}
-</style>
--->
-
 <section class="section--top">
   {{ intro_image }}
-    <img class="full-width" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+  <img class="full-width" src="{{ url }}" alt="{{ alt }}" loading="lazy">
   {{ /intro_image }}
 </section>
 
-<section class="section_standard_w_image-left section--top-spacing">
-  <div class="section_standard_w_image-left_text">
-    <h2 class="section-headline-addition">{{ team_headline_addition }}</h2>
-    <h2 class="medium-margin-below">{{ team_headline }}</h2>
-    <div class = "center-text full-width">
-      {{  team_profiles }}
-        <div class = "horizontally-centered profile-entry-spacing">
-          {{team_profile_image}}
-            <img class="round-image profile-image-size undraggable" src="{{ url }}" alt="{{ alt }}" loading="lazy">
-          {{/team_profile_image}}
+<section class="section_full-width section--top-spacing">
+  <h2 class="section-headline--addition">{{ team_headline_addition }}</h2>
+  <h2 class="section-headline">{{ team_headline }}</h2>
 
-          <h3 class="person-name small-margin-above">
-            {{team_profile_name}}
-          </h3>
+  <ul class="team_profiles">
+    {{ team_profiles }}
+      <li class="team_profile">
+        {{ team_profile_image }}
+        <!-- TODO Thora: add shadow -->
+          <img class="round-image undraggable" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+        {{ /team_profile_image }}
 
-          <p class="small-margin-above small-text">
-            <!--
-              The following script tag will be replaced by the formatted responsibilities
-            -->
-            <script>
-              // An array conatining each single responsibility
-              var arr = [{{team_profile_responsibilities}}"{{label}}",{{/team_profile_responsibilities}}];
+        <h3>
+          {{ team_profile_name }}
+        </h3>
 
-              // The text this script tag will be replaced with
-              var final_text = arr.join(" &middot; ");
-              document.write(final_text);
+        <ul>
+          {{ team_profile_responsibilities }}
+            <li>{{ label }}</li>
+          {{ /team_profile_responsibilities }}
+        </ul>
 
-              // Removes this script tag from the document
-              var thisScript = document.scripts[document.scripts.length - 1];
-              thisScript.parentNode.removeChild(thisScript);
-            </script>
-          </p>
-          <!--
-          <p class="small-margin-above small-text bold-text">
-            someone@pathly.app
-          </p>
-          -->
-        </div>
-      {{ /team_profiles }}
-    </div>
-  </div>
+        <p>someone@pathly.app</p>
+      </li>
+    {{ /team_profiles }}
+  </ul>
 </section>

@@ -1,95 +1,45 @@
-/* Makes a previously square element round, adding a thin border */
-.round-image {
-  border-radius: 50%;
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgb(var(--blueUltraLightViolett));
+.team_profiles {
+  grid-column: 2/13;
+  margin-top: var(--root120px);
 }
 
-/* Dynamically scaling image size, with a minimum 200px width */
-.profile-image-size {
-  min-width: 200px;
-  width: 20vw;
+.team_profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--root80px);
 }
 
-/* Correct color for the name of a person */
-.person-name {
-  color: rgb(var(--primaryPurple));
-}
-
-/* Margin around a complete profile entry */
-.profile-entry-spacing {
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 80px;
-}
-
-@media (max-width: 800px) {
-  .profile-entry-spacing {
+/* @media (max-width: 800px) {
+  .team_profile {
     margin-top: 40px;
   }
+} */
+
+.team_profile img {
+  min-width: 200px;
+  width: 20vw;
+  margin-bottom: var(--root24px);
 }
 
-/* Prevents an element (e.g. an image) from being dragged */
-.undraggable {
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+.team_profile ul,
+.team_profile ul li {
+  display: flex;
 }
 
-/* 
-  Text options 
-*/
-.bold-text {
-  font-weight: bold;
-}
-
-.small-text {
-  font-size: 0.8em;
-}
-
-.center-text {
+.team_profile ul li:not(:last-child)::after {
+  width: var(--root24px);
+	height: var(--root24px);
+	content: "\B7";
   text-align: center;
 }
 
-/* 
-  Layout options 
-*/
-@media (max-width: 800px) {
-  .section--top-spacing {
-    margin-top: 60px;
-  }
-}
-
-.small-margin-above {
-  margin-top: 8px;
-}
-
-@media (max-width: 800px) {
-  .small-margin-above {
-    margin-top: 4px;
-  }
-}
-
-.medium-margin-below {
-  margin-bottom: 40px;
-}
-
-@media (max-width: 800px) {
-  .medium-margin-below {
-    margin-bottom: 20px;
-  }
-}
-
-.horizontally-centered {
-  display: inline-block;
+.team_profile p {
+  text-align: center;
 }
 
 /* full-width class that uses the entire available width in the center of the grid */
-.section_standard_w_image-left_text .full-width {
+/* .section_standard_w_image-left_text .full-width {
   width: calc(90vw / 13 * 11);
   max-width: calc(1800px / 13 * 11);
 }
@@ -110,4 +60,4 @@
   .section_standard_w_image-left_text .full-width {
     width: 90vw;
   }
-}
+} */

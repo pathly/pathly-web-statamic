@@ -218,9 +218,10 @@ section {
   display: block;
 }
 
-/* .section_standard p {
-  margin-top: var(--root40px);
-} */
+.section_standard .section-headline {
+  margin-bottom: var(--root40px);
+}
+
 
 
 /* ---------------------------------------- */
@@ -241,6 +242,7 @@ section {
 .section_full-width .section-headline {
   grid-column: 2/14;
 }
+
 
 
 /* ---------------------------------------- */
@@ -299,6 +301,8 @@ section {
   }
 }
 
+
+
 /* ---------------------------------------- */
 /* --- section standard with image left --- */
 /* ---------------------------------------- */
@@ -352,16 +356,16 @@ section {
   }
 }
 
-/* .section_standard-w-image-left div h2 {
+.section_standard-w-image-left div .section-headline {
   margin-bottom: var(--root40px);
-} */
+}
 
-.section_standard-w-image-left_text button {
+.section_standard-w-image-left div button {
   display: inline-flex;
   align-items: center;
 }
 
-.section_standard-w-image-left_text button::before {
+.section_standard-w-image-left div button::before {
 	width: var(--root24px);
 	height: var(--root24px);
 	content: "";

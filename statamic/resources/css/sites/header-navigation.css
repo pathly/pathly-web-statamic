@@ -1,4 +1,49 @@
 /* -------------------------------------------------------------------------------- */
+/* --- header --- */
+/* -------------------------------------------------------------------------------- */
+
+.header {
+  position: fixed;
+  background-color: #ffffff60;
+  backdrop-filter: blur(10px);
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--root24px);
+  border-radius: var(--root24px);
+  margin: var(--root24px) 5vw;
+  z-index: 1000;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding-top: 5vw;
+  }
+}
+
+.header_logo {
+  display: flex;
+  align-items: center;
+  color: rgb(var(--primaryPurple));
+}
+
+.header_logo img {
+  height: var(--root80px);
+  width: auto;
+  margin-right: var(--root24px);
+  border-radius: var(--root16px);
+  box-shadow: 0 0 var(--root8px) rgba(var(--primaryPurple), 0.15);
+  -moz-box-shadow: 0 0 var(--root8px) rgba(var(--primaryPurple), 0.15);
+  -webkit-box-shadow: 0 0 var(--root8px) rgba(var(--primaryPurple), 0.15);
+}
+
+.header_logo h1 {
+  font-size: var(--root32px);
+}
+
+
+/* -------------------------------------------------------------------------------- */
 /* --- navigation --- */
 /* -------------------------------------------------------------------------------- */
 
@@ -63,6 +108,7 @@
   transform: translate(calc(100% + 7px), 120%) rotate(45deg);
 }
 
+/* sub menu */
 .header-nav-sub {
   display: none;
   position: absolute;
@@ -76,6 +122,7 @@
   background-color: #ffffff;
   border-radius: var(--root24px);
   display: grid;
+  grid-gap: var(--root16px);
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   max-height: calc(100vh - (var(--root40px) + var(--root24px) * 5 + var(--root16px) + 1em));
   overflow: auto;
@@ -91,11 +138,16 @@
   background-color: rgb(var(--primaryPurple), 0.25);
 }
 .header-nav-sub-list li a img {
-  width: 20%;
+  height: var(--root80px);
   padding: var(--root24px);
+  box-sizing: revert;
 }
 .header-nav-sub-list li a .text {
   width: 100%;
+}
+.header-nav-sub-list li a .text h2 {
+  font-size: var(--root40px);
+  color: rgb(var(--primaryTextDark));
 }
 
 .header-nav-list li.is-parent:hover .header-nav-sub {

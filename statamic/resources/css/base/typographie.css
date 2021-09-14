@@ -57,32 +57,10 @@ h2.section-headline--addition {
   color: rgba(var(--primaryPurple), 0.2);
 }
 
-@media (max-width: 1300px) {
-  h2.section-headline-addition,
-  h2.section-headline--addition {
-    margin-left: 0.4em;
-  }
-}
-
-@media (max-width: 700px) {
-  h2.section-headline-addition,
-  h2.section-headline--addition {
-    /* TODO: Don't use negative left margin. Moves the text out of the screen if located in first grid column */
-    margin-left: -0.5em;
-  }
-}
-
 @media (max-width: 500px) {
   h2.section-headline-addition,
   h2.section-headline--addition {
     font-size: var(--root64px);
-  }
-}
-
-@media (max-width: 350px) {
-  h2.section-headline-addition,
-  h2.section-headline--addition {
-    margin-left: 0.4em;
   }
 }
 

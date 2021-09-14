@@ -1,14 +1,10 @@
 
-/*
-* Specifies a min height for the intro image to prevent the page layout changing during the page loading process
-*/
+/* Specifies a min height for the intro image to prevent the page layout changing during the page loading process */
 #intro_image {
   min-height: calc(90vw * 0.4671);
 }
 
-/*
-* Div that contains a number of profile entries from the team
-*/
+/* Div that contains a number of profile entries from the team */
 #team_profiles {
   text-align: center;
   display:block;
@@ -16,50 +12,35 @@
   width: 100%;
 }
 
-/* 
-* A single profile entry
-*/
+/* A single profile entry */
 .team_profile {
   margin-left: 1em;
   margin-right: 1em;
-  margin-top: 80px;
+  margin-top: var(--root80px);
   display: inline-block;
+  text-align: center;
 }
 
-/*
-* A round profile picture with a thin border
-*/
+/* A round profile picture with a thin border */
 .team_profile img {
-  /* TODO: Use box-shadow instead of border */
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgb(var(--blueUltraLightViolett));
-
   /* Dynamically scaling image size, with a minimum 200px width */
   min-width: 200px;
   min-height: 200px;
   width: 20vw;
   height: 20vw;
+  margin-bottom: var(--root24px);
 }
 
-/* 
-* H3 containing the name of the team member a given profile belongs to 
-*/
-.team_profile h3 {
-  color: rgb(var(--primaryPurple));
-}
-
-/*
-* A list of responsibilities a given team member has
-*/
+/* A list of responsibilities a given team member has */
 .team_profile ul {
-  font-size: 0.8em;
 }
+
 /* Makes sure the list is displayed in a single line */
 .team_profile ul,
 .team_profile ul li {
   display: inline-flex;
 }
+
 /* Adds a small dot inbetween responsibilities */
 .team_profile ul li:not(:last-child)::after {
   width: var(--root24px);
@@ -68,34 +49,7 @@
   text-align: center;
 }
 
-/*
-* A paragraph containing the team member's email address
-*/
+/* A paragraph containing the team member's email address */
 .team_profile p {
-  font-size: 0.8em;
-  font-weight: bold;
-}
-
-/* 
-* Layout
-*/
-
-/* Separation between profile attributes */
-.team_profile h3,
-.team_profile ul,
-.team_profile p {
-  margin-top: 8px;
-}
-
-/* Reduce empty space on mobile devices */
-@media (max-width: 1000px) {
-  .team_profile h3,
-  .team_profile ul,
-  .team_profile p {
-    margin-top: 4px;
-  }
-
-  .team_profile {
-    margin-top: 40px;
-  }
+  font-weight: 700;
 }

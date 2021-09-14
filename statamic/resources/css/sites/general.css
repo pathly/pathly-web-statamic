@@ -186,18 +186,6 @@ button {
 /* --- sections --- */
 /* -------------------------------------------------------------------------------- */
 
-.full-width {
-  display: inline-grid;
-  grid-column: 1/14;
-  width: 100%;
-}
-
-
-
-/* -------------------------------------------------------------------------------- */
-/* --- sections --- */
-/* -------------------------------------------------------------------------------- */
-
 section {
   grid-column: 1/14;
   display: grid;
@@ -233,6 +221,26 @@ section {
 /* .section_standard p {
   margin-top: var(--root40px);
 } */
+
+
+/* ---------------------------------------- */
+/* --- section full width --- */
+/* ---------------------------------------- */
+
+.section_full-width {
+  grid-column: 1/14;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  position: relative;
+}
+
+.section_full-width .section-headline--addition {
+  grid-column: 1/14;
+}
+
+.section_full-width .section-headline {
+  grid-column: 2/14;
+}
 
 
 /* ---------------------------------------- */
@@ -365,6 +373,34 @@ section {
 
 
 
+/* -------------------------------------------------------------------------------- */
+/* --- elements --- */
+/* -------------------------------------------------------------------------------- */
+
+/* Uses the combined width of all grid columns */
+.full-width {
+  display: inline-grid;
+  grid-column: 1/14;
+  width: 100%;
+}
+
+/* Prevents an element (e.g. an image) from being dragged */
+.undraggable {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Makes a previously square element round */
+.round-image {
+  border-radius: 50%;
+}
+
+
+
 /* ---------------------------------------- */
 /* --- accordion --- */
 /* ---------------------------------------- */
@@ -412,6 +448,7 @@ section {
   opacity: 1;
   transition: max-height 2s linear;
 }
+
 .accordion input[type="checkbox"]:checked ~ label .accordion_indicator {
   transform: rotate(45deg);
 }

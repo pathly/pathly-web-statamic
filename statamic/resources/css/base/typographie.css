@@ -48,60 +48,61 @@ h2 {
   }
 }
 
-h2.section-headline-addition {
+/* TODO: section-headline-addition will be outdated */
+h2.section-headline-addition,
+h2.section-headline--addition {
   font-size: var(--root80px);
   line-height: 1;
-  margin-left: -1em;
   margin-bottom: -0.4em;
   color: rgba(var(--primaryPurple), 0.2);
 }
 
 @media (max-width: 1300px) {
-  h2.section-headline-addition {
+  h2.section-headline-addition,
+  h2.section-headline--addition {
     margin-left: 0.4em;
   }
 }
 
 @media (max-width: 700px) {
-  h2.section-headline-addition {
+  h2.section-headline-addition,
+  h2.section-headline--addition {
+    /* TODO: Don't use negative left margin. Moves the text out of the screen if located in first grid column */
     margin-left: -0.5em;
   }
 }
 
 @media (max-width: 500px) {
-  h2.section-headline-addition {
+  h2.section-headline-addition,
+  h2.section-headline--addition {
     font-size: var(--root64px);
   }
 }
 
 @media (max-width: 350px) {
-  h2.section-headline-addition {
+  h2.section-headline-addition,
+  h2.section-headline--addition {
     margin-left: 0.4em;
   }
 }
 
 h2.section-headline--bottom-spacing {
-  margin-bottom: 1em;
+  margin-bottom: var(--root24px);
 }
 
 h3 {
   font-family: "neue-kabel";
   font-weight: 700;
-  font-size: var(--root32px);
+  font-size: var(--root40px);
 }
 
 li h3 {
   font-family: "neue-kabel";
+  font-weight: 700;
   font-size: var(--root40px);
   line-height: 1.2;
   color: rgba(var(--primaryPurple));
   margin-bottom: var(--root16px);
-}
-
-@media (max-width: 1400px) {
-  li h3  {
-    /* font-size: 1.5rem; */
-  }
 }
 
 p {
@@ -112,22 +113,6 @@ p {
 
 p + p {
   margin-top: var(--root24px);
-}
-
-li p,
-li a {
-  font-family: "neue-kabel";
-  font-size: var(--root32px);
-  line-height: 1.2;
-  font-weight: 500;
-  color: rgb(var(--primaryPurple));
-}
-
-@media (max-width: 1400px) {
-  li p,
-  li a  {
-    font-size: var(--root24px);
-  }
 }
 
 a:link,

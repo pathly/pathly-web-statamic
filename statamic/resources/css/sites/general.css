@@ -181,18 +181,6 @@ button {
 /* --- sections --- */
 /* -------------------------------------------------------------------------------- */
 
-.full-width {
-  display: inline-grid;
-  grid-column: 1/14;
-  width: 100%;
-}
-
-
-
-/* -------------------------------------------------------------------------------- */
-/* --- sections --- */
-/* -------------------------------------------------------------------------------- */
-
 section {
   grid-column: 1/14;
   display: grid;
@@ -214,6 +202,27 @@ section {
   }
 }
 
+
+
+/* ---------------------------------------- */
+/* --- section full width --- */
+/* ---------------------------------------- */
+
+
+.section_full-width {
+  grid-column: 1/14;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  position: relative;
+}
+
+.section_full-width .section-headline--addition {
+  grid-column: 1/14;
+}
+
+.section_full-width .section-headline {
+  grid-column: 2/14;
+}
 
 
 /* ---------------------------------------- */
@@ -341,4 +350,32 @@ section {
   background-size: var(--root24px) auto;
   background-repeat: no-repeat;
   margin-right: var(--root16px);
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+/* --- Elements --- */
+/* -------------------------------------------------------------------------------- */
+
+/* Uses the combined width of all grid columns */
+.full-width {
+  display: inline-grid;
+  grid-column: 1/14;
+  width: 100%;
+}
+
+/* Prevents an element (e.g. an image) from being dragged */
+.undraggable {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Makes a previously square element round */
+.round-image {
+  border-radius: 50%;
 }

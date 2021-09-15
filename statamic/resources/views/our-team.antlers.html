@@ -1,34 +1,35 @@
-
 <section class="section--top">
   {{ intro_image }}
     <img id="intro_image" class="full-width undraggable" src="{{ url }}" alt="{{ alt }}" loading="lazy">
   {{ /intro_image }}
 </section>
 
-<section class="section_full-width section--top-spacing">
+<section class="section_standard section--top-spacing">
   <h2 class="section-headline--addition">{{ team_headline_addition }}</h2>
   <h2 class="section-headline medium-margin-below">{{ team_headline }}</h2>
-  <ul id="team_profiles">
-    {{  team_profiles }}
-      <li class="team_profile">
-        {{team_profile_image}}
-          <img class="round-image undraggable" src="{{ url }}" alt="{{ alt }}" loading="lazy">
-        {{/team_profile_image}}
+  <div>
+    <ul id="team_profiles">
+      {{  team_profiles }}
+        <li class="team_profile">
+          {{team_profile_image}}
+            <img class="round-image undraggable" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+          {{/team_profile_image}}
 
-        <h3>
-          {{team_profile_name}}
-        </h3>
+          <h3>
+            {{team_profile_name}}
+          </h3>
 
-        <ul>
-          {{ team_profile_responsibilities }}
-            <li>{{ label }}</li>
-          {{ /team_profile_responsibilities }}
-        </ul>
+          <ul>
+            {{ team_profile_responsibilities }}
+              <li>{{ label }}</li>
+            {{ /team_profile_responsibilities }}
+          </ul>
 
-        {{ if team_profile_mail }}
-          <a href="mailto:{{ team_profile_mail }}">{{ team_profile_mail }}</a>
-        {{ endif}}
-      </li>
-    {{ /team_profiles }}
-  </ul>
+          {{ if team_profile_mail }}
+            <a href="mailto:{{ team_profile_mail }}">{{ team_profile_mail }}</a>
+          {{ endif}}
+        </li>
+      {{ /team_profiles }}
+    </ul>
+  </div>
 </section>

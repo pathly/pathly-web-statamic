@@ -7,8 +7,6 @@
 /* Div that contains a number of profile entries from the team */
 #team_profiles {
   text-align: center;
-  grid-column: 2/13;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   grid-gap: var(--root80px);

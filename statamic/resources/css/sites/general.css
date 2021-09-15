@@ -360,7 +360,7 @@ section {
 	width: var(--root24px);
 	height: var(--root24px);
 	content: "";
-  background-image: url("../images/home_collaboration_button_icon.svg");
+  /* background-image: url("../images/home_collaboration_button_icon.svg"); */
   background-size: var(--root24px) auto;
   background-repeat: no-repeat;
   margin-right: var(--root16px);

@@ -1,34 +1,13 @@
 version: '3.7'
 
-networks:
-  statamic:
-    driver: bridge
-
 services:
   statamic:
-    image: ghcr.io/o1y/statamic-starter:latest-php7.4
-    cap_add:
-      - SYS_ADMIN
-    devices:
-      - /dev/fuse
+    image: ghcr.io/o1y/statamic-starter:1.0.1-php7.4
     ports:
-      - 8080:80
-      - 443:443
+      - 8080:8080
     volumes:
-      - ./statamic:/app
-    networks:
-      - statamic
+      - ./statamic/:/var/www/
   mail:
     image: mailhog/mailhog:latest
     ports:
       - 8025:8025
-    networks:
-      - statamic
-  redis:
-    image: redis:alpine
-    networks:
-      - statamic
-
-volumes:
-  data:
-

@@ -6,40 +6,28 @@ Statamic Starter is a Docker development environment to make Statamic developmen
 
 ## Requirements
 
-* Docker Engine >= 20.10.3
-* Docker Compose >= 1.28.5
+* Docker Desktop >= 3.4.0
 
 [Download Docker](https://docs.docker.com/get-docker/)
 
-## Installation
+## Start the development environment
 
 First open your shell and go to the directory where you want to have the project located.
-Now you can run the following commands:
+Now you can run the following commands to prepare the project:
 
 ``` 
 git clone git@github.com:pathly/pathly-web-statamic.git
 cd pathly-web-statamic
-docker-compose up -d
 ```
-
-Wait until you see the output `Statamic is ready`, which indicates that statamic is working as intended.
-To finish the installation, run the following commands:
-
-```
-docker-compose exec statamic composer install
-docker-compose exec statamic cp -n /app/.env.docker /app/.env
-docker-compose stop
-```
-
-Now everything is installed.
-
-## Running Pathly
 
 To start the Statamic Docker container run the following command in the root folder of the project:
 
 ```
-docker-compose up
+docker compose up
 ```
+
+Wait until you see the output `Statamic is ready`, which indicates that statamic is working as intended.
+
 
 Now open up a browser of your choice and access the local Statamic website:
 
@@ -47,18 +35,22 @@ Now open up a browser of your choice and access the local Statamic website:
 http://localhost:8080
 ```
 
-To stop the process just press `CTRL + C` in your shell.
+To stop the container just press `CTRL + C` in your shell.
 
-Instead you can also use following commands to run and stop the docker (as you did during the installation phase):
+## Start the development environment in detached mode
+
+An alternative way to start the development environment is using the detached mode:
 
 ```
-docker-compose up -d
-docker-compose stop
+docker compose up -d
+docker compose stop
 ```
 
-This has the advantage that the process runs in the background and you don't have to open another window for more commands.
+This mode has the advantage that the containers run in the background and you don't have to open another window for more commands. The downside is you don't see any logs from the container for further debugging anymore. 
 
-## Start Development
+To attach to logs in detached mode you can use `docker compose logs -f statamic`.
+
+## Start Frontend Development
 
 To get all the used assets and resources, you need to update your public folder.  
 This requires you to have a [NodeJS](https://nodejs.org/) installation.
@@ -72,23 +64,44 @@ npm run dev
 
 ## Advanced Statamic Development
 
-To run [CLI](https://statamic.dev/cli) get an interactive prompt first:
+### How do I run `please` or `artisan`?
+
+To run [please](https://statamic.dev/cli) get a bash shell in the container first:
 
 ```
-docker-compose exec statamic bash
+docker compose exec statamic bash
 ```
 
-Run `php artisan` or `php please` inside the statamic service.
+Now you can run `php artisan` or `php please`.
 
-Alternatively, the commands can also be executed directly on the host:
 
-```
-docker-compose exec statamic php please
-```
-
-## Build Images
-Of course you can modify the existing `Dockerfile`. These are located inside `images/*/Dockerfile`. To build the images you can run the `build.sh` script using [npm](https://www.npmjs.com/).
+An alternative way to run `please` or `artisan` commands in your container is:
 
 ```
-npm run build
+docker compose exec statamic php please
+docker compose exec statamic php artisan
+```
+
+###  How do I create a new Statamic User?
+The easiest way to create your first user is by running
+
+```
+docker compose exec statamic php please make:user
+```
+
+###  Where should I put my `.env` variables for local development?
+You should put your environment variables for local development into your `.env` file. Whenever you change that file, the php server will perform a reload. 
+
+However, you should not commit your local `.env` into your project. Instead use the file `.env.docker`, which we create during the initial Statamic installation.
+
+###  How do I update Statamic?
+In your `composer.json`, change the `statamic/cms` version to the version number of your choice, e.g:
+
+```
+"statamic/cms": "3.2.*"
+```
+
+Then run:
+```
+docker compose exec statamic composer update statamic/cms --with-dependencies
 ```

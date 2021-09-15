@@ -52,7 +52,32 @@ sections:
     fields:
       -
         import: standard_section_w_image
-        prefix: about-us_
+        prefix: our-team_
+  supporter:
+    display: Supporter
+    fields:
+      -
+        handle: supporter_headline_addition
+        field:
+          input_type: text
+          antlers: false
+          display: 'Headline Addition'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: supporter_headline
+        field:
+          input_type: text
+          antlers: false
+          display: Headline
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
   prefooter:
     display: Prefooter
     fields:

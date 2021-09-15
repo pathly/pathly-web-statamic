@@ -1,4 +1,4 @@
-title: 'About Us'
+title: 'Our Team'
 sections:
   intro:
     display: Intro
@@ -111,14 +111,14 @@ sections:
                 clearable: false
                 searchable: true
                 options:
-                  management: "Vorstand"
-                  headDevelopment: "Head of Development"
-                  headDesign: "Head of Design"
-                  contentCreation: "Content Creation"
-                  illustration: "Illustration"
-                  development: "Development"
-                  design: "Design"
-                  business: "Business"
+                  management: Vorstand
+                  headDevelopment: 'Head of Development'
+                  headDesign: 'Head of Design'
+                  contentCreation: 'Content Creation'
+                  illustration: Illustration
+                  development: Development
+                  design: Design
+                  business: Business
                 taggable: false
                 push_tags: false
                 cast_booleans: false
@@ -128,6 +128,15 @@ sections:
                 listable: hidden
                 validate:
                   - required
+            -
+              handle: team_profile_mail
+              field:
+                input_type: email
+                antlers: false
+                display: Mail
+                type: text
+                icon: text
+                listable: hidden
           mode: stacked
           max_rows: 0
           reorderable: true

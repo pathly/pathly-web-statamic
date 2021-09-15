@@ -1,31 +1,27 @@
-title: 'About Nonprofit'
+title: "Our Nonprofit"
 sections:
   main:
     display: Intro
     fields:
-      -
-        handle: title
+      - handle: title
         field:
           type: text
           required: true
           validate:
             - required
-      -
-        import: standard_section_w_image
+      - import: standard_section_w_image
         prefix: intro_
   sidebar:
     display: Sidebar
     fields:
-      -
-        handle: slug
+      - handle: slug
         field:
           type: slug
           required: true
           localizable: true
           validate:
             - required
-      -
-        handle: parent
+      - handle: parent
         field:
           type: entries
           collections:
@@ -33,8 +29,7 @@ sections:
           max_items: 1
           listable: false
           localizable: true
-      -
-        handle: template
+      - handle: template
         field:
           hide_partials: true
           display: Template
@@ -44,14 +39,12 @@ sections:
   preamble:
     display: Preamble
     fields:
-      -
-        import: standard_section
+      - import: standard_section
         prefix: preamble_
   statutes:
     display: Statutes
     fields:
-      -
-        handle: statutes_headline
+      - handle: statutes_headline
         field:
           input_type: text
           antlers: false
@@ -61,12 +54,10 @@ sections:
           listable: hidden
           validate:
             - required
-      -
-        handle: statutes_sections
+      - handle: statutes_sections
         field:
           fields:
-            -
-              handle: statutes_section_headline
+            - handle: statutes_section_headline
               field:
                 input_type: text
                 antlers: false
@@ -76,12 +67,10 @@ sections:
                 listable: hidden
                 validate:
                   - required
-            -
-              handle: statutes_section_subsections
+            - handle: statutes_section_subsections
               field:
                 fields:
-                  -
-                    handle: statutes_section_subsection_textarea
+                  - handle: statutes_section_subsection_textarea
                     field:
                       antlers: false
                       display: Textarea
@@ -90,8 +79,7 @@ sections:
                       listable: hidden
                       validate:
                         - required
-                  -
-                    handle: statutes_section_subsection_list
+                  - handle: statutes_section_subsection_list
                     field:
                       display: List
                       type: list

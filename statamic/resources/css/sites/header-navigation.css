@@ -166,7 +166,7 @@
     cursor: pointer;
     height: var(--root80px);
     width: var(--root80px);
-    background-color: red;
+    padding: var(--root16px);
   }
   .header-nav-list li {
     margin-top: var(--root40px);
@@ -201,6 +201,9 @@
 
   /* when menu is active
   activated by adding the active class */
+  #header-nav.active .header-nav-switch-mobile {
+    content: url("/images/menu_cancel.svg");
+  }
   .header-nav.active {
     position: fixed;
     left: 0;
@@ -208,6 +211,7 @@
     height: 100vh;
     width: 100%;
     transition: left 1s ease;
+    background-color: #ffffff;
   }
   .header-nav.active .header-nav-list {
     display: block;
@@ -250,7 +254,8 @@
     cursor: pointer;
     height: var(--root80px);
     width: var(--root80px);
-    background-color: red;
+    transform: rotateY(180deg);
+    padding: var(--root16px);
   }
 
   .header-nav-sub-list li a {
@@ -264,7 +269,7 @@
   .header-nav {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: transparent;
   }
 
   .header-nav-list {

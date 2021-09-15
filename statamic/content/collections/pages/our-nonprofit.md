@@ -1,6 +1,6 @@
 ---
 id: b8895441-800c-4b94-8a91-4bf2fe14584b
-blueprint: about-nonprofit
+blueprint: our-nonprofit
 title: 'Unser Verein'
 intro_headline: 'Unser Verein'
 intro_textarea: 'Hier haben wir unsere Satzung für Euch bereitgestellt. Wir möchten, dass unsere Ziele und die Struktur unseres Vereins transparent und für alle Interessierten zugänglich sind.'
@@ -298,5 +298,5 @@ statutes_sections:
         statutes_section_subsection_list: {  }
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
 updated_at: 1631648358
-template: about-nonprofit
+template: our-nonprofit
 ---

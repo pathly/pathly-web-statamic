@@ -1,6 +1,6 @@
 ---
 id: 78ffdf4a-62f6-4492-83ff-0363973150da
-blueprint: about-us
+blueprint: our-team
 title: 'Das sind wir'
 intro_image: supporter_crowd_big.svg
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
@@ -59,5 +59,5 @@ team_profiles:
     team_profile_mail: yana@pathly.app
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
 updated_at: 1631644839
-template: about-us
+template: our-team
 ---

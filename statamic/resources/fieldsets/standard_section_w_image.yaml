@@ -41,3 +41,15 @@ fields:
       listable: hidden
       validate:
         - required
+  -
+    handle: image_position
+    field:
+      options:
+        left: Left
+        right: Right
+      display: 'Image Position'
+      type: button_group
+      icon: button_group
+      listable: hidden
+      validate:
+        - required

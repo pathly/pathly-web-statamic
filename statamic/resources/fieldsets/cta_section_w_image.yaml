@@ -3,18 +3,6 @@ fields:
   -
     import: standard_section_w_image
   -
-    handle: image_position
-    field:
-      options:
-        left: Left
-        right: Right
-      display: 'Image Position'
-      type: button_group
-      icon: button_group
-      listable: hidden
-      validate:
-        - required
-  -
     handle: button_type
     field:
       options:
@@ -23,6 +11,19 @@ fields:
       display: 'Which Button Type?'
       type: button_group
       icon: button_group
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: button_icon
+    field:
+      mode: grid
+      restrict: false
+      allow_uploads: true
+      max_files: 1
+      display: Button Icon
+      type: assets
+      icon: assets
       listable: hidden
       validate:
         - required

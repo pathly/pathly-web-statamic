@@ -7,8 +7,17 @@
       {{ /cta_image }}
 
       <div>
-        <h2 class="section-headline-addition">{{ cta_headline_addition }}</h2>
+        {{ if cta_headline_addition }}<h2 class="section-headline-addition">{{ cta_headline_addition }}</h2>{{ /if }}
         <h2 class="section-headline">{{ cta_headline }}</h2>
+        {{ if cta_textarea }}<p>{{ cta_textarea }}</p>{{ /if }}
+
+        {{ if cta_button_type === 'mail' }}
+          <a class="cta-button" href="mailto:{{ cta_mail_address }}?subject={{ cta_mail_subject }}&body={{ cta_mail_body }}">{{ cta_mail_address }}</a>
+        {{ elseif cta_button_type === 'subpage' }}
+          {{ cta_subpage }}
+            <a class="cta-button"  href="{{ url }}">{{ title }}</a>
+          {{ /cta_subpage }}
+        {{ /if }}
       </div>
     </section>
   {{ /cta }}

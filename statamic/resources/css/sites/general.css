@@ -35,7 +35,7 @@ body {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   padding: 0 5vw;
-  margin: calc(var(--root24px) * 4 + var(--root80px)) auto 0 auto;
+  margin: calc(var(--root24px) * 4 + var(--root80px) + var(--root96px)) auto 0 auto;
   max-width: 1800px;
 }
 
@@ -55,10 +55,6 @@ section {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   position: relative;
-}
-
-.section--top {
-  margin-top: var(--root96px);
 }
 
 .section--top-spacing {

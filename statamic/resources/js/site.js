@@ -1,4 +1,3 @@
-// This is all you.
 jQuery(() => {
     initMenuListeners();
 });

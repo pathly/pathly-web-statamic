@@ -61,6 +61,9 @@
     background-color: rgb(var(--blueUltraLightViolett));
     color: rgb(var(--darkViolett));
 }
+.section_card-overview_card_favorite.active {
+    content: url("/images/favorite_on.svg");
+}
 .section_card-overview_card_name {
     margin-top: var(--root16px);
     color: black;

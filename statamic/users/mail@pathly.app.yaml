@@ -2,3 +2,7 @@ name: Pathly
 super: true
 id: a213c844-224f-4cde-a891-d1f543fd3b61
 password_hash: $2y$10$LnM8qRK62jv.6TVl6a/ku.vh1Ir/jakll7e1TbeFZaMJ9qTqd1Qk.
+preferences:
+  assets:
+    assets:
+      mode: table

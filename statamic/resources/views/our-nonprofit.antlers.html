@@ -1,4 +1,4 @@
-<section class="section_standard-w-image-left">
+<section class="{{ intro_image_position == 'left' ?= 'section_standard-w-image-left' }}{{ intro_image_position == 'right' ?= 'section_standard-w-image-right' }}">
   {{ intro_image }}
     <img src="{{ url }}" alt="{{ alt }}" loading="lazy"/>
   {{ /intro_image }}

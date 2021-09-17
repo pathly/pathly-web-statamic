@@ -1,0 +1,89 @@
+sections:
+  social-media:
+    display: 'Social Media'
+    fields:
+      -
+        handle: social-media_textarea
+        field:
+          antlers: false
+          display: Textarea
+          type: textarea
+          icon: textarea
+          instructions: 'Formulate the text in such a way that the various links can be included at the end of the sentence.'
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: social-media_profiles
+        field:
+          fields:
+            -
+              handle: social-media_profile_name
+              field:
+                input_type: text
+                antlers: false
+                display: Name
+                type: text
+                icon: text
+                listable: hidden
+                validate:
+                  - required
+            -
+              handle: social-media_profile_url
+              field:
+                input_type: url
+                antlers: false
+                display: URL
+                type: text
+                icon: text
+                listable: hidden
+                validate:
+                  - required
+          mode: stacked
+          reorderable: true
+          display: 'Social Media Profiles'
+          type: grid
+          icon: grid
+          listable: hidden
+  mail:
+    display: Mail
+    fields:
+      -
+        handle: mail_textarea
+        field:
+          antlers: false
+          display: Textarea
+          type: textarea
+          icon: textarea
+          instructions: 'Formulate the text in such a way that the link can be included at the end of the sentence. The word "mail " will be automatically added at the end.'
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: mail_address
+        field:
+          input_type: email
+          antlers: false
+          display: 'Mail Address'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: mail_subject
+        field:
+          input_type: text
+          antlers: false
+          display: 'Mail Subject'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: mail_body
+        field:
+          antlers: false
+          display: 'Mail Body'
+          type: textarea
+          icon: textarea
+          listable: hidden

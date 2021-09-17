@@ -1,0 +1,23 @@
+title: CTA
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        import: cta_section_w_image
+        prefix: cta_
+  sidebar:
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true

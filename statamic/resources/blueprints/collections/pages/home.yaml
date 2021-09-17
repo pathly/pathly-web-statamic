@@ -53,12 +53,6 @@ sections:
       -
         import: standard_section_w_image
         prefix: our-team_
-  collaboration:
-    display: Collaboration
-    fields:
-      -
-        import: standard_section_w_image
-        prefix: collaboration_
   supporter:
     display: Supporter
     fields:
@@ -84,3 +78,8 @@ sections:
           listable: hidden
           validate:
             - required
+  prefooter:
+    display: Prefooter
+    fields:
+      -
+        import: prefooter

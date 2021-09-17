@@ -11,7 +11,8 @@ cta_textarea: |-
 cta_image: supporter_crowd_small.png
 cta_image_position: left
 cta_button_type: subpage
+cta_button_icon: icons/icon_mail.svg
 cta_subpage: 5a9d1aaf-b693-493c-9eb8-959a811eb732
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1631793458
+updated_at: 1631797207
 ---

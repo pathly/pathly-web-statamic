@@ -9,9 +9,10 @@ cta_textarea: |-
 
   Du schreibst gern? Bist fit in Social Media, programmierst für dein Leben gerne, kennst dich mit Frinanzierungs-Modellen für gemeinnützige Organisationen aus oder hast Bock uns zu sponsern?  Wir freuen uns über jede Art der Unterstützung.
 cta_image: collaboration_phone.png
-cta_image_position: left
+cta_image_position: right
 cta_button_type: subpage
 cta_subpage: 5a9d1aaf-b693-493c-9eb8-959a811eb732
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1631193437
+updated_at: 1631887711
+cta_button_icon: icons/icon_mail.svg
 ---

@@ -18,5 +18,4 @@ supporter_headline_addition: 'Wir & Ihr'
 supporter_headline: 'Unsere Unterstützer:innen'
 cta_toggle: true
 cta: f67d9c6c-015c-4d33-af37-dbbdb50d7347
-socialmedia_toggle: true
 ---

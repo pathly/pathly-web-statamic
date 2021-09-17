@@ -1,0 +1,30 @@
+<footer class="main-footer main-grid section--top-spacing">
+  <section class="footer_social-media">
+    {{ social-media }}
+      <p>
+        {{ social-media_textarea }}
+
+        {{ social-media_profiles }}
+          {{ if last }}
+            <a href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a>.
+          {{ elseif social-media_profiles|count > 2 && index !== social-media_profiles|count|subtract:2 }}
+            <a href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a>,
+          {{ else }}
+            <a href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a> und
+          {{ /if }}
+        {{ /social-media_profiles }}
+
+        {{ mail_textarea }}
+        <a href="mailto:{{ mail_address }}?subject={{ mail_subject }}&body={{ mail_body }}">Mail</a>.
+      </p>
+    {{ /social-media }}
+  </section>
+
+  <ul class="main-footer_list">
+    <li><p>&copy; Pathly 2021</p></li>
+    <div class="main-footer_list_meta">
+      <li><a href="">Impressum</a></li>
+      <li><a href="">Datenschutz</a></li>
+    </div>
+  </ul>
+</footer>

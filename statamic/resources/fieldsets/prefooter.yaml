@@ -1,0 +1,26 @@
+title: Prefooter
+fields:
+  -
+    handle: cta_toggle
+    field:
+      default: false
+      display: 'Show CTA'
+      type: toggle
+      icon: toggle
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: cta
+    field:
+      max_items: 1
+      mode: default
+      create: true
+      collections:
+        - ctas
+      display: Choose CTA
+      type: entries
+      icon: entries
+      listable: hidden
+      if:
+        cta_toggle: 'equals true'

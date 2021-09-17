@@ -1,9 +1,9 @@
 sections:
-  social_media:
+  social-media:
     display: 'Social Media'
     fields:
       -
-        handle: socialmedia_textarea
+        handle: social-media_textarea
         field:
           antlers: false
           display: Textarea
@@ -14,11 +14,11 @@ sections:
           validate:
             - required
       -
-        handle: socialmedia_profiles
+        handle: social-media_profiles
         field:
           fields:
             -
-              handle: socialmedia_profile_name
+              handle: social-media_profile_name
               field:
                 input_type: text
                 antlers: false
@@ -29,7 +29,7 @@ sections:
                 validate:
                   - required
             -
-              handle: socialmedia_profile_url
+              handle: social-media_profile_url
               field:
                 input_type: url
                 antlers: false
@@ -48,6 +48,17 @@ sections:
   mail:
     display: Mail
     fields:
+      -
+        handle: mail_textarea
+        field:
+          antlers: false
+          display: Textarea
+          type: textarea
+          icon: textarea
+          instructions: 'Formulate the text in such a way that the link can be included at the end of the sentence. The word "mail " will be automatically added at the end.'
+          listable: hidden
+          validate:
+            - required
       -
         handle: mail_address
         field:

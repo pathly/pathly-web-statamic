@@ -60,6 +60,8 @@ team_profiles:
       - illustration
     team_profile_mail: yana@pathly.app
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1631644839
+updated_at: 1631887593
 template: our-team
+cta_toggle: true
+cta: 26cd6f15-97c9-4d5d-b701-6725436ce2b0
 ---

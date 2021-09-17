@@ -129,3 +129,8 @@ sections:
           listable: hidden
           validate:
             - required
+  prefooter:
+    display: Prefooter
+    fields:
+      -
+        import: prefooter

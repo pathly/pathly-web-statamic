@@ -1,0 +1,13 @@
+.footer_social-media {
+  grid-column: 6/13;
+  display: block;
+}
+
+.footer_social-media p {
+  font-size: var(--root40px);
+  font-weight: 700;
+}
+
+.footer_social-media a {
+  color: rgb(var(--primaryRed));
+}

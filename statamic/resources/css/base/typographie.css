@@ -53,6 +53,7 @@ h2.section-headline-addition,
 h2.section-headline--addition {
   font-size: var(--root80px);
   line-height: 1;
+  margin-left: 1em;
   margin-bottom: -0.4em;
   color: rgba(var(--primaryPurple), 0.2);
 }
@@ -64,8 +65,8 @@ h2.section-headline--addition {
   }
 }
 
-h2.section-headline--bottom-spacing {
-  margin-bottom: var(--root24px);
+h2.section-headline {
+  margin-bottom: var(--root40px);
 }
 
 h3 {

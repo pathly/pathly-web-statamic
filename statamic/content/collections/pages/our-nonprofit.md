@@ -7,6 +7,7 @@ image: icons/nav_nonprofit.svg
 intro_headline: 'Unser Verein'
 intro_textarea: 'Hier haben wir unsere Satzung für Euch bereitgestellt. Wir möchten, dass unsere Ziele und die Struktur unseres Vereins transparent und für alle Interessierten zugänglich sind.'
 intro_image: nonprofit_statutes.svg
+intro_image_position: left
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
 preamble_headline: Präambel
 preamble_textarea: |-
@@ -299,6 +300,8 @@ statutes_sections:
         statutes_section_subsection_textarea: 'Bei Auflösung des Vereins oder bei Wegfall steuerbegünstigter Zwecke fällt das Vermögen des Vereins an eine steuerbegünstigte Körperschaft des öffentlichen Rechts zwecks Verwendung für die Förderung der Bildung.'
         statutes_section_subsection_list: {  }
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1631648358
+updated_at: 1631887635
 template: our-nonprofit
+cta_toggle: true
+cta: 26cd6f15-97c9-4d5d-b701-6725436ce2b0
 ---

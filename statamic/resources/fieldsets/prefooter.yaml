@@ -24,13 +24,3 @@ fields:
       listable: hidden
       if:
         cta_toggle: 'equals true'
-  -
-    handle: socialmedia_toggle
-    field:
-      default: false
-      display: 'Show Social Media'
-      type: toggle
-      icon: toggle
-      listable: hidden
-      validate:
-        - required

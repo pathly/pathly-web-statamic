@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1405.343" height="935.707" viewBox="0 0 1405.343 935.707">
+  <g id="Gruppe_3029" data-name="Gruppe 3029" transform="translate(-234.957 -197.275)">
+    <g id="Gruppe_2062" data-name="Gruppe 2062" transform="translate(116.293 96.75)">
+      <path id="Pfad_4411" data-name="Pfad 4411" d="M1805.908,704.544c29.067,20.645,41.794,49.969,47.461,62.474,20.167,44.509,15.339,88.137,12.923,109.969-12.158,109.856-110.019,248.963-228.958,290.417-55.352,19.292-89.588-15.995-179.321-1.175-12.193,2.014-44.326,7.894-90.179,13.123-31.528,3.6-55.729,5.307-67.325,6.054-53.208,3.423-79.811,5.135-108.358,1.568a301.374,301.374,0,0,1-95.81-29.087c-36.205-18.181-100.8-50.615-129.793-126.694-24.953-65.465-19.358-151.284,22.923-212.451,11.422-14.469,29.645-33.652,55.99-46.6,49.5-24.324,85.2-5.762,110.663-34.957,16.726-19.178,6.891-33.577,21.514-60.38,23.489-43.054,78.972-61.091,115.88-61.746,90.2-1.6,93.281,100.192,185.6,117.451,82.5,15.423,138.458-54.943,254.565-50.405C1751.712,682.813,1779.292,685.641,1805.908,704.544Z" transform="translate(-556.309 -370.151)" fill="#e1e6ff"/>
+      <path id="Pfad_4412" data-name="Pfad 4412" d="M1630.523,826.751c42.3,43.655,104.1-3.989,150.322,36.632,34.21,30.068,38.3,89.53,33.172,125.449-17.473,122.436-180.228,239.165-328.25,252.59-94.906,8.608-139.362-77.592-208.6-48.443-50.846,21.405-55.7,70.561-114.962,80.533-6.506,1.095-63.366,9.864-100.687-22.974-23.854-20.988-26.139-47.019-56.6-60.315-18.08-7.89-34.441-4.474-40.205-5.906C854.781,1157.008,717.7,1050.339,733.39,918.224c16.553-139.342,191.994-213.866,202.824-218.3,111.685-45.72,218.256-14.6,243.721-7.167,108.888,31.793,140.938,94.792,204.818,70.5,53.073-20.181,67.509-77.569,122.521-79.614,36.383-1.352,63.769,22.5,72.274,30.748C1619.811,753.454,1598.913,794.125,1630.523,826.751Z" transform="translate(-420.16 -407.655)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="8"/>
+      <path id="Pfad_4143" data-name="Pfad 4143" d="M1532.087,499.446,1129.322,1328.44h586.569l-96.656-805.286Z" transform="translate(-544.386 -317.404)" fill="#fff2cc" opacity="0.46"/>
+      <path id="Pfad_4144" data-name="Pfad 4144" d="M1262.294,924.313h-26.477V973.44H1203.6V924.313H1092.58l143.236-187.259V895.283h26.477Zm-58.7-29.03V827.334l-51.36,67.949Z" transform="translate(-540.24 -344.216)" fill="#fff"/>
+      <path id="Pfad_4413" data-name="Pfad 4413" d="M518.028,0c286.1,0,518.028,7.655,518.028,17.1,0,7.648-152.169,14.124-361.821,16.306-49.445.515-101.848.791-156.207.791C231.929,34.194,0,26.539,0,17.1S231.929,0,518.028,0Z" transform="translate(292.697 1002.039)" fill="#e1e6ff"/>
+      <path id="Pfad_4145" data-name="Pfad 4145" d="M1432.112,758.186c31.914,17.032,49.886,58.13,49.886,106.748,0,64.121-31.262,115.162-84.537,115.162-24.761,0-44.755-10.9-59.1-28.942Zm-225.854,33.626q.222.52.514,1.113" transform="translate(-553.068 -346.601)" fill="#7b75ff"/>
+      <path id="Pfad_4146" data-name="Pfad 4146" d="M1696.313,924.313h-26.478V973.44h-32.22V924.313H1526.6l143.235-187.259V895.283h26.478Zm-58.7-29.03V827.334l-51.361,67.949Z" transform="translate(-589.215 -344.216)" fill="#7b75ff"/>
+      <path id="Pfad_4158" data-name="Pfad 4158" d="M1634,434.8l119.167,97.654a602.194,602.194,0,0,1-136.718-17.034,602.209,602.209,0,0,1-133.4-49.785Z" transform="translate(-584.301 -310.109)" fill="#7b75ff"/>
+      <path id="Pfad_4159" data-name="Pfad 4159" d="M1587.183,443.543c10.229-25.106,36.231-39.581,61.321-35.208,28.083,4.894,48.82,32.323,45.429,62.728a133.8,133.8,0,0,1-106.749-27.521Z" transform="translate(-596.051 -307.036)" fill="#fff2cc"/>
+      <path id="Pfad_4160" data-name="Pfad 4160" d="M1427.691,783.853a37.878,37.878,0,0,0-22.127-6.773c-34.453,0-49.765,38.919-49.765,83.262,0,19.394,2.929,37.751,9.109,52.268l-13.872,34.716c-16.706-21.014-25.754-51.725-25.754-86.221,0-64.121,31.263-115.163,84.857-115.163a72.7,72.7,0,0,1,34.652,8.416Z" transform="translate(-566.498 -345.219)" fill="#fff"/>
+      <g id="Brustkrebs_Monat" data-name="Brustkrebs Monat" transform="translate(661.516 646.402)" style="isolation: isolate">
+        <text id="Wir_haben_ein_Problem" data-name="Wir haben ein Problem" transform="translate(0 44)" fill="#7b75ff" font-size="44" font-family="NeueKabel-Bold, Neue Kabel" font-weight="700" style="isolation: isolate"><tspan x="0" y="0">Wir haben ein Problem</tspan></text>
+      </g>
+    </g>
+    <g id="Gruppe_3027" data-name="Gruppe 3027" transform="translate(107.387 56.891)">
+      <rect id="Rechteck_348-2" data-name="Rechteck 348-2" width="19.278" height="19.404" transform="translate(127.57 304.221) rotate(-45)" fill="#e1e6ff"/>
+      <rect id="Rechteck_349-2" data-name="Rechteck 349-2" width="19.278" height="19.404" transform="translate(251.703 291.779) rotate(-45)" fill="#9cb0fc"/>
+      <rect id="Rechteck_350-2" data-name="Rechteck 350-2" width="23.417" height="23.569" transform="translate(347.482 369.061) rotate(-45)" fill="#7b75ff"/>
+      <rect id="Rechteck_351-2" data-name="Rechteck 351-2" width="23.417" height="23.569" transform="translate(340.87 195.877) rotate(-45)" fill="#e1e6ff"/>
+      <rect id="Rechteck_351-2-2" data-name="Rechteck 351-2" width="11.634" height="11.71" transform="translate(157.191 397.479) rotate(-45)" fill="#fff"/>
+      <rect id="Rechteck_351-2-3" data-name="Rechteck 351-2" width="11.634" height="11.71" transform="translate(305.523 370.678) rotate(-45)" fill="#fff"/>
+      <rect id="Rechteck_351-2-4" data-name="Rechteck 351-2" width="11.634" height="11.71" transform="translate(249.127 430.559) rotate(-45)" fill="#fff"/>
+      <rect id="Rechteck_351-2-5" data-name="Rechteck 351-2" width="11.634" height="11.71" transform="translate(376.289 468.363) rotate(-45)" fill="#fff"/>
+      <rect id="Rechteck_351-2-6" data-name="Rechteck 351-2" width="11.634" height="11.71" transform="translate(445.357 261.494) rotate(-45)" fill="#fff"/>
+    </g>
+    <g id="Gruppe_3028" data-name="Gruppe 3028" transform="translate(-73 -47)">
+      <rect id="Rechteck_351-2-7" data-name="Rechteck 351-2" width="11.71" height="11.634" transform="translate(1607.959 514.814) rotate(-45)" fill="#fff"/>
+      <rect id="Rechteck_351-2-8" data-name="Rechteck 351-2" width="11.71" height="11.634" transform="translate(1561.561 504.934) rotate(-45)" fill="#fff"/>
+      <rect id="Rechteck_351-2-9" data-name="Rechteck 351-2" width="11.71" height="11.634" transform="translate(1588.723 417.129) rotate(-45)" fill="#fff"/>
+      <rect id="Rechteck_351-2-10" data-name="Rechteck 351-2" width="11.71" height="11.634" transform="translate(1696.793 491.998) rotate(-45)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

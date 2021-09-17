@@ -22,17 +22,7 @@ body {
   /* background-color: rgb(var(--primaryTextLight)); */
 }
 
-.shadow {
-  box-shadow: 0 var(--root24px) var(--root40px) rgba(var(--primaryTextDark), 0.2);
-  -moz-box-shadow: 0 var(--root24px) var(--root40px) rgba(var(--primaryTextDark), 0.2);
-  -webkit-box-shadow: 0 var(--root24px) var(--root40px) rgba(var(--primaryTextDark), 0.2);
 
-.no-select {
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
-}
 
 /* -------------------------------------------------------------------------------- */
 /* --- button --- */
@@ -292,6 +282,19 @@ section {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+.no-select {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.shadow {
+  box-shadow: 0 var(--root24px) var(--root40px) rgba(var(--primaryTextDark), 0.2);
+  -moz-box-shadow: 0 var(--root24px) var(--root40px) rgba(var(--primaryTextDark), 0.2);
+  -webkit-box-shadow: 0 var(--root24px) var(--root40px) rgba(var(--primaryTextDark), 0.2);
 }
 
 /* Makes a previously square element round */

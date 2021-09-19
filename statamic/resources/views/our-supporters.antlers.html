@@ -17,32 +17,20 @@
   </div>
 </section>
 
-<!--<section class="section_standard section--top-spacing">
-  <h2 class="section-headline--addition">{{ team_headline_addition }}</h2>
-  <h2 class="section-headline medium-margin-below">{{ team_headline }}</h2>
+<section class="section_standard section--top-spacing">
+  <h2 class="section-headline--addition">{{ cooperations_headline_addition }}</h2>
+  <h2 class="section-headline medium-margin-below">{{ cooperations_headline }}</h2>
   <div>
-    <ul id="team_profiles">
-      {{  team_profiles }}
-        <li class="team_profile">
-          {{team_profile_image}}
-            <img class="round-image undraggable" src="{{ url }}" alt="{{ alt }}" loading="lazy">
-          {{/team_profile_image}}
-
-          <h3>
-            {{team_profile_name}}
-          </h3>
-
-          <ul>
-            {{ team_profile_responsibilities }}
-              <li>{{ label }}</li>
-            {{ /team_profile_responsibilities }}
-          </ul>
-
-          {{ if team_profile_mail }}
-            <a href="mailto:{{ team_profile_mail }}">{{ team_profile_mail }}</a>
-          {{ endif}}
-        </li>
-      {{ /team_profiles }}
+    <ul id="cooperations_profiles">
+      {{  cooperations_profiles }}
+        <a class="cooperations_profile" title="{{cooperations_profile_name}}" href="{{cooperations_profile_url}}">
+          <li>
+            {{cooperations_profile_image}}
+              <img class="undraggable" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+            {{/cooperations_profile_image}}
+          </li>
+        </a>
+      {{ /cooperations_profiles }}
     </ul>
   </div>
-</section> -->
+</section> 

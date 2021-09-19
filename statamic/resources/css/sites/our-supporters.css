@@ -15,3 +15,41 @@
         grid-column: 7/12;
     }
 }
+
+#cooperations_profiles a {
+    padding: 40px 80px;
+    background-color: rgb(var(--primaryTextLight));
+    border-radius: 40px;
+}
+
+/* Div that contains a number of corporation profile entries */
+#cooperations_profiles {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-gap: var(--root80px);
+}
+
+@media (max-width: 400px) {
+  #cooperations_profiles {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* A single profile entry */
+.cooperations_profile {
+  margin-top: var(--root80px);
+  display: inline-block;
+  text-align: center;
+}
+
+.cooperations_profile img {
+  width: 100%;
+}
+
+.cooperations_profile li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

@@ -1,0 +1,15 @@
+
+#our-supporters-header img {
+    width: 80%;
+    min-height: calc(100vw * 0.3234);
+}
+
+#our-supporters-header p {
+    text-align: justify;
+    font-size: 0.9em;
+    margin-top: var(--root48px);
+}
+
+#our-supporters-header div {
+    grid-area: 1/7/1/12;
+}

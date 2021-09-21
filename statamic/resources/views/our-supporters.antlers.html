@@ -11,18 +11,19 @@
 
 <section class="section_standard section--top-spacing">
   <h2 class="section-headline--addition">{{ cooperations_headline_addition }}</h2>
-  <h2 class="section-headline medium-margin-below">{{ cooperations_headline }}</h2>
+  <h2 class="section-headline">{{ cooperations_headline }}</h2>
   <div>
     <ul id="cooperations_profiles">
       {{  cooperations_profiles }}
-        <a class="cooperations_profile" title="{{cooperations_profile_name}}" href="{{cooperations_profile_url}}">
-          <li>
-            {{cooperations_profile_image}}
-              <img class="undraggable" src="{{ url }}" alt="{{ alt }}" loading="lazy">
-            {{/cooperations_profile_image}}
-          </li>
-        </a>
+        <li class="cooperations_profile">
+          <a href="{{ cooperations_profile_url }}">
+
+              {{ cooperations_profile_image }}
+                <img class="undraggable" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+              {{ /cooperations_profile_image }}
+          </a>
+        </li>
       {{ /cooperations_profiles }}
     </ul>
   </div>
-</section> 
+</section>

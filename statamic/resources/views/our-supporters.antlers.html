@@ -1,10 +1,15 @@
-<!-- <section>
+<section class="{{ intro_image_position == 'left' ?= 'section_standard-w-image-left' }}{{ intro_image_position == 'right' ?= 'section_standard-w-image-right' }}">
   {{ intro_image }}
-    <img id="intro_image" class="full-width undraggable" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+    <img src="{{ url }}" alt="{{ alt }}" loading="lazy">
   {{ /intro_image }}
+
+  <div>
+    <h2 class="section-headline">{{ intro_headline }}</h2>
+    <p>{{ intro_textarea }}</p>
+  </div>
 </section>
 
-<section class="section_standard section--top-spacing">
+<!--<section class="section_standard section--top-spacing">
   <h2 class="section-headline--addition">{{ team_headline_addition }}</h2>
   <h2 class="section-headline medium-margin-below">{{ team_headline }}</h2>
   <div>

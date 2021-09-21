@@ -1,6 +1,6 @@
 
 /* Specifies a min height for the intro image to prevent the page layout changing during the page loading process */
-#intro_image {
+#team_intro_image {
   min-height: calc(90vw * 0.4671);
 }
 

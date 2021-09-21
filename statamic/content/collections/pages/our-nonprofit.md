@@ -2,6 +2,8 @@
 id: b8895441-800c-4b94-8a91-4bf2fe14584b
 blueprint: our-nonprofit
 title: 'Unser Verein'
+description: 'Unsere Satzung'
+image: icons/nav_nonprofit.svg
 intro_headline: 'Unser Verein'
 intro_textarea: 'Hier haben wir unsere Satzung für Euch bereitgestellt. Wir möchten, dass unsere Ziele und die Struktur unseres Vereins transparent und für alle Interessierten zugänglich sind.'
 intro_image: nonprofit_statutes.svg

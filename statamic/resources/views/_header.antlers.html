@@ -1,0 +1,46 @@
+<header class="header">
+  <a class="header_logo" href="/">
+    <img src="/images/logo_dark.svg" alt="Pathly Logo" />
+    <h1>Pathly</h1>
+  </a>
+
+  <nav id="header_nav" class="header_nav">
+    <img class="header_nav_mobile-burger-button" src="/images/menu_burgermenu.svg" alt="" />
+    <ul class="header_nav_list">
+      {{ nav:collection:pages include_home="true" }}
+        {{ if children }}
+          <li class="is-parent">
+            <a class="link {{ is_current || is_parent ?= 'active' }}">{{ title }}</a>
+            <div class="header_nav_sub">
+              <ul class="header_nav_sub_list shadow">
+                <div class="header_nav_sub_mobile-back-button">
+                  <img src="/images/menu_arrow.svg" alt=""/>
+                </div>
+
+                {{ children }}
+                  <li>
+                    <a href="{{ url }}">
+                      {{ image }}
+                        <img class="undraggable" src="{{ url }}" alt="" />
+                      {{ /image }}
+                      <div>
+                        <h2>{{ title }}</h2>
+                        <p>{{ description }}</p>
+                      </div>
+                    </a>
+                  </li>
+                {{ /children }}
+              </ul>
+            </div>
+          </li>
+          {{ else }}
+          <li>
+            <a class="link {{ is_current || is_parent ?= 'active' }}" href="{{ url }}">{{ title }}</a>
+          </li>
+        {{ /if }}
+      {{ /nav:collection:pages }}
+    </ul>
+
+    <a class="header_scroll-to-top hidden" href="#" onclick="scrollToTop()"></a>
+  </nav>
+</header>

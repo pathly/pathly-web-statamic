@@ -13,7 +13,7 @@ feedback_headline: 'Das sagt unsere Community'
 support_headline_addition: 'Du & Pathly'
 support_headline: 'So kannst du helfen!'
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1630074655
+updated_at: 1631532493
 template: collaboration
 feedback_quotes:
   -
@@ -26,7 +26,7 @@ feedback_quotes:
     feedback_quotes_link: null
 support_needs:
   -
-    support_needs_image: collaboration_content-creation.svg
+    support_needs_image: icons/collaboration_content-creation.svg
     support_needs_headline: 'Content Creation'
     support_needs_description:
       - 'Du überlegst dir zusammen mit unserem Social Media-Team, was wir als nächstes posten wollen'
@@ -36,16 +36,18 @@ support_needs:
       - 'Du pflegst Inhalte in unser Content Management System ein'
       - 'Du sammelst Tipps, Tricks und Erfahrungen von Betroffenen'
   -
-    support_needs_image: collaboration_business.svg
+    support_needs_image: icons/collaboration_business.svg
     support_needs_headline: 'Business und Fundraising'
     support_needs_description:
       - 'Du hilfst uns bei der Organisation von Spenden-Kampagnen'
       - 'Du sprichst potentielle Sponsoren an'
   -
-    support_needs_image: collaboration_marketing.svg
+    support_needs_image: icons/collaboration_marketing.svg
     support_needs_headline: 'Marketing und Öffentlichkeitsarbeit'
     support_needs_description:
       - 'Du bist zuständig für die Außenkommunikation des Vereins'
       - 'Du machst Pathly für die Öffentlichkeit bekannt'
       - 'Du kümmerst dich um Kooperationen mit Stiftungen und anderen Vereinen'
+description: 'Werde ein Teil von Pathly'
+image: icons/nav_collaboration.svg
 ---

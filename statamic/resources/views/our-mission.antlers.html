@@ -1,5 +1,31 @@
 <section>
-  {{ intro_image }}
-    <img class="full-width" src="{{ url }}" alt="{{ alt }}" loading="lazy">
-  {{ /intro_image }}
+    {{ intro_image }}
+    <img class="full-width" src="{{ url }}" alt="{{ alt }}" loading="lazy" />
+    {{ /intro_image }}
 </section>
+
+{{ mission_section }}
+<section class="mission-section section_standard section--top-spacing">
+    <h2 class="section-headline--addition">{{ headline_addition }}</h2>
+    <h2 class="section-headline">{{ headline }}</h2>
+    <div>
+        {{ replicator }}
+            {{ if type == "quote" }}
+                <h2 class="mission_quote_text spacer80px">{{ quote_textarea }}</h2>
+                <p class="mission_quote_author">{{ quote_author }}</p>
+            {{ elseif type == "image" }}
+                <img class="full-width spacer80px" src="{{ image }}" alt="{{ caption }}">
+            {{ elseif type == "textarea" }}
+                <p class="spacer40px">{{ textarea }}</p>
+            {{ elseif type == "list" }}
+                <ul class="mission_list spacer80px">
+                    {{ list }}
+                        <li>{{ value }}</li>
+                    {{ /list }}
+                </ul>
+            {{ /if }}
+        {{ /replicator }}
+    </div>
+</section>
+
+{{ /mission_section }}

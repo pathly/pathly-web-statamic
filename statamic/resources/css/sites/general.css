@@ -141,6 +141,10 @@ section {
   }
 }
 
+.section_standard-w-image-right > div h2.section-headline--addition {
+  margin-left: 1em;
+}
+
 .section_standard-w-image-right > div a {
   display: inline-flex;
   align-items: center;
@@ -197,6 +201,10 @@ section {
   .section_standard-w-image-left > div {
     grid-column: 1/14;
   }
+}
+
+.section_standard-w-image-left > div h2.section-headline--addition {
+  margin-left: 1em;
 }
 
 .section_standard-w-image-left > div a {

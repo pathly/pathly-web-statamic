@@ -48,18 +48,14 @@ h2 {
   }
 }
 
-/* TODO: section-headline-addition will be outdated */
-h2.section-headline-addition,
 h2.section-headline--addition {
   font-size: var(--root80px);
   line-height: 1;
-  margin-left: 1em;
   margin-bottom: -0.4em;
   color: rgba(var(--primaryPurple), 0.2);
 }
 
 @media (max-width: 500px) {
-  h2.section-headline-addition,
   h2.section-headline--addition {
     font-size: var(--root64px);
   }

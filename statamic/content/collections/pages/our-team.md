@@ -2,6 +2,8 @@
 id: 78ffdf4a-62f6-4492-83ff-0363973150da
 blueprint: our-team
 title: 'Das sind wir'
+description: 'Das Team von Pathly'
+image: icons/nav_team.svg
 intro_image: supporter_crowd_big.svg
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
 team_headline_addition: 'Das sind wir'

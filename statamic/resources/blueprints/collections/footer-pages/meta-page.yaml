@@ -1,0 +1,55 @@
+title: 'Meta Page'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: textarea
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - anchor
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: true
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          display: Textarea
+          type: bard
+          icon: bard
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true

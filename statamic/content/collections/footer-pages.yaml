@@ -1,0 +1,6 @@
+title: 'Footer Pages'
+revisions: false
+date_behavior:
+  past: public
+  future: private
+route: '{parent_uri}/{slug}'

@@ -141,6 +141,10 @@ section {
   }
 }
 
+.section_standard-w-image-right > div h2.section-headline--addition {
+  margin-left: 1em;
+}
+
 .section_standard-w-image-right > div a {
   display: inline-flex;
   align-items: center;
@@ -199,6 +203,10 @@ section {
   }
 }
 
+.section_standard-w-image-left > div h2.section-headline--addition {
+  margin-left: 1em;
+}
+
 .section_standard-w-image-left > div a {
   display: inline-flex;
   align-items: center;
@@ -210,6 +218,30 @@ section {
   margin-right: var(--root16px);
 }
 
+
+
+/* ---------------------------------------- */
+/* --- section tiles --- */
+/* ---------------------------------------- */
+
+.tiles {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-gap: var(--root80px);
+}
+
+@media (max-width: 400px) {
+  .tiles {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+.tiles_item {
+  margin-top: var(--root80px);
+  display: inline-block;
+  text-align: center;
+}
 
 
 /* -------------------------------------------------------------------------------- */
@@ -224,6 +256,7 @@ section {
 }
 
 /* Prevents an element (e.g. an image) from being dragged */
+img,
 .undraggable {
   user-drag: none;
   -webkit-user-drag: none;

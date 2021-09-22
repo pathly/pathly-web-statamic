@@ -1,51 +1,28 @@
-
 /* Specifies a min height for the intro image to prevent the page layout changing during the page loading process */
 #team_intro_image {
-  min-height: calc(90vw * 0.4671);
+  /* min-height: calc(90vw * 0.4671); */
 }
 
-/* Div that contains a number of profile entries from the team */
-#team_profiles {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  grid-gap: var(--root80px);
-}
-
-@media (max-width: 400px) {
-  #team_profiles {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-}
-
-/* A single profile entry */
-.team_profile {
-  margin-top: var(--root80px);
-  display: inline-block;
-  text-align: center;
-}
-
-.team_profile img {
+#team_profile img {
   width: 100%;
   margin-bottom: var(--root24px);
 }
 
 /* A list of responsibilities a given team member has */
 /* Makes sure the list is displayed in a single line */
-
-.team_profile ul li {
+#team_profile ul li {
   display: inline-flex;
 }
 
 @media (max-width: 400px) {
-  .team_profile ul,
-  .team_profile ul li {
+  #team_profile ul,
+  #team_profile ul li {
     display: block;
   }
 }
 
 /* Adds a small dot inbetween responsibilities */
-.team_profile ul li:not(:last-child)::after {
+#team_profile ul li:not(:last-child)::after {
   width: var(--root24px);
 	height: var(--root24px);
 	content: "\B7";
@@ -53,13 +30,13 @@
 }
 
 @media (max-width: 400px) {
-  .team_profile ul li:not(:last-child)::after {
+  #team_profile ul li:not(:last-child)::after {
     content: "";
   }
 }
 
 /* A paragraph containing the team member's email address */
-.team_profile a {
+#team_profile a {
   font-weight: 700;
   color: black;
 }

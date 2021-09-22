@@ -1,0 +1,19 @@
+/* A single profile entry */
+#cooperations_profile {
+  /* margin-top: var(--root80px);
+  display: inline-block;
+  text-align: center; */
+  background-color: rgb(var(--primaryTextLight));
+  border-radius: 40px;
+}
+
+#cooperations_profile a {
+  display: block;
+  padding: 40px;
+  background-color: rgb(var(--primaryTextLight));
+  border-radius: 40px;
+}
+
+#cooperations_profile img {
+  width: 100%;
+}

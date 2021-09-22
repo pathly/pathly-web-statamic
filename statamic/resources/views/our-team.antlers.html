@@ -1,6 +1,6 @@
 <section>
   {{ intro_image }}
-    <img id="team_intro_image" class="full-width undraggable" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+    <img id="team_intro_image" class="full-width" src="{{ url }}" alt="{{ alt }}" loading="lazy">
   {{ /intro_image }}
 </section>
 
@@ -8,11 +8,11 @@
   <h2 class="section-headline--addition">{{ team_headline_addition }}</h2>
   <h2 class="section-headline">{{ team_headline }}</h2>
   <div>
-    <ul id="team_profiles">
+    <ul class="tiles">
       {{  team_profiles }}
-        <li class="team_profile">
+        <li class="tiles_item" id="team_profile">
           {{team_profile_image}}
-            <img class="round-image undraggable" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+            <img class="round-image" src="{{ url }}" alt="{{ alt }}" loading="lazy">
           {{/team_profile_image}}
 
           <h3>

@@ -13,13 +13,13 @@
   <h2 class="section-headline--addition">{{ cooperations_headline_addition }}</h2>
   <h2 class="section-headline">{{ cooperations_headline }}</h2>
   <div>
-    <ul id="cooperations_profiles">
+    <ul class="tiles">
       {{  cooperations_profiles }}
-        <li class="cooperations_profile">
+        <li class="tiles_item" id="cooperations_profile">
           <a href="{{ cooperations_profile_url }}">
 
               {{ cooperations_profile_image }}
-                <img class="undraggable" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+                <img src="{{ url }}" alt="{{ alt }}" loading="lazy">
               {{ /cooperations_profile_image }}
           </a>
         </li>

@@ -255,6 +255,10 @@ section {
   width: 100%;
 }
 
+img.full-width {
+  min-height: calc(90vw * 0.4671);
+}
+
 /* Prevents an element (e.g. an image) from being dragged */
 img,
 .undraggable {

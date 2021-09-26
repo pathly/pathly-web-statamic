@@ -1,1 +1,95 @@
-<p>404 Page not found.</p>
+<style>
+body {
+    background-color: rgb(var(--darkViolett));
+}
+
+#error-image {
+    grid-column: 3/12;
+    width: 100%;
+    margin-top: -3em;
+}
+
+#left-light-fern {
+    position: absolute;
+    top: calc(-3em + 23vw);
+    width: 25vw;
+    left: -2vw;
+}
+
+#left-dark-fern {
+    position: absolute;
+    top: calc(-3em + 4vw);
+    width: 20vw;
+    left: -7vw;
+}
+
+#right-light-fern {
+    position: absolute;
+    top: calc(-3em + 27vw);
+    width: 20vw;
+    right: 5vw;
+    transform: rotate(225deg);
+}
+
+#right-dark-fern {
+    position: absolute;
+    top: calc(-3em + 12vw);
+    width: 18vw;
+    right: 0;
+    transform: rotate(315deg);
+}
+
+@media (min-width: 1800px) {
+    #left-light-fern {
+        top: calc(-3em + 0.23 * 1800px);
+        width: calc(0.25 * 1800px);
+        left: calc(-2vw - (100vw - 1800px) / 2);
+    }
+
+    #left-dark-fern {
+        top: calc(-3em + 0.04 * 1800px);
+        width: calc(0.20 * 1800px);
+        left: calc(-7vw - (100vw - 1800px)/2);
+    }
+
+    #right-light-fern {
+        top: calc(-3em + 0.27 * 1800px);
+        width: calc(0.20 * 1800px);
+        right: calc(5vw - (100vw - 1800px)/2);
+    }
+
+    #right-dark-fern {
+        top: calc(-3em + 0.12 * 1800px);
+        width: calc(0.18 * 1800px);
+        right: calc(-1 * (100vw - 1800px)/2);
+    }
+}
+
+@media (min-width: 2000px) {
+    #left-light-fern {
+        top: calc(-3em + 0.23 * 2000px);
+        width: calc(0.25 * 2000px);
+    }
+
+    #left-dark-fern {
+        top: calc(-3em + 0.04 * 2000px);
+        width: calc(0.20 * 2000px);
+    }
+
+    #right-light-fern {
+        top: calc(-3em + 0.27 * 2000px);
+        width: calc(0.20 * 2000px);
+    }
+
+    #right-dark-fern {
+        top: calc(-3em + 0.12 * 2000px);
+        width: calc(0.18 * 2000px);
+    }
+}
+</style>
+
+<img id="error-image"       src="/images/error_404.svg">
+<img id="left-dark-fern"    src="/images/flower_dark.svg"   loading="lazy">
+<img id="left-light-fern"   src="/images/flower_light.svg"  loading="lazy">
+<img id="right-dark-fern"   src="/images/flower_dark.svg"   loading="lazy">
+<img id="right-light-fern"  src="/images/flower_light.svg"  loading="lazy">

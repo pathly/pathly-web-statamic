@@ -20,5 +20,7 @@
   </main>
 </body>
 
-{{ partial:footer }}
+{{ if !404 }}
+  {{ partial:footer }}
+{{ /if }}
 </html>

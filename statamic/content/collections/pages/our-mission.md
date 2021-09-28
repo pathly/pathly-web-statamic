@@ -62,5 +62,5 @@ mission_section:
         enabled: true
 template: our-mission
 description: 'Deswegen gibt es Pathly'
-image: icons/nav_mission.svg
+icon: icons/nav_mission.svg
 ---

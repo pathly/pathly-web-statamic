@@ -3,7 +3,7 @@ id: ca52693e-4925-4fb8-ac76-e362f473e61a
 blueprint: our-supporters
 title: 'Unsere Unterstützer:innen'
 description: 'Ein Danke an alle!'
-image: icons/nav_supporters.svg
+icon: icons/nav_supporters.svg
 template: our-supporters
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
 intro_headline: 'Wir schicken all unseren tollen Unterstützer:innen und Spender:innen ein großes, herzliches Dankeschön.'

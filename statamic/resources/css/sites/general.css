@@ -24,8 +24,6 @@ body {
 
 
 
-
-
 /* -------------------------------------------------------------------------------- */
 /* --- grid --- */
 /* -------------------------------------------------------------------------------- */
@@ -44,6 +42,7 @@ body {
     padding: 0;
   }
 }
+
 
 
 /* -------------------------------------------------------------------------------- */
@@ -288,7 +287,32 @@ img,
   border-radius: 50%;
 }
 
+.simple-quote * {
+  font-family: "neue-kabel";
+  color: rgb(var(--primaryPurple));
+}
 
+.simple-quote blockquote {
+  font-size: var(--root48px);
+  font-weight: 700;
+  margin-bottom: var(--root8px);
+}
+
+.replicator {
+  margin-top: var(--root40px);
+}
+.replicator > * + * {
+  margin-top: var(--root80px);
+}
+
+.replicator > ul {
+  list-style: disc;
+  padding-left: 1em;
+}
+
+.replicator li::marker {
+  color: rgb(var(--primaryRed));
+}
 
 /* ---------------------------------------- */
 /* --- button --- */

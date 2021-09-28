@@ -1,8 +1,3 @@
-/* Specifies a min height for the intro image to prevent the page layout changing during the page loading process */
-#team_intro_image {
-  /* min-height: calc(90vw * 0.4671); */
-}
-
 #team_profile img {
   width: 100%;
   margin-bottom: var(--root24px);

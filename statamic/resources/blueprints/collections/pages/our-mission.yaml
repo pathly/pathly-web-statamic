@@ -84,3 +84,8 @@ sections:
       -
         import: flex_section_full_width
         prefix: mission_
+  prefooter:
+    display: Prefooter
+    fields:
+      -
+        import: prefooter

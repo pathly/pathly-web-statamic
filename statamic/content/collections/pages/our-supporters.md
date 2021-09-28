@@ -41,9 +41,10 @@ cooperations_profiles:
     cooperations_profile_image: supporter/junge-erwachsene_300.png
     cooperations_profile_name: 'Deutsche Stiftung für junge Erwachsene'
     cooperations_profile_url: 'https://junge-erwachsene-mit-krebs.de'
-
 supporters_headline_addition: 'Ein Danke an'
 supporters_headline: 'Unsere Sponsoren'
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1632222790
+updated_at: 1632853552
+cta_toggle: true
+cta: a49460ee-26f4-49ef-9d7c-108f6993d8bf
 ---

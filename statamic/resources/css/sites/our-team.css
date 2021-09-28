@@ -33,5 +33,5 @@
 /* A paragraph containing the team member's email address */
 #team_profile a {
   font-weight: 700;
-  color: black;
+  color: rgb(var(--primaryPurple));
 }

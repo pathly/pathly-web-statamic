@@ -237,7 +237,6 @@ section {
 }
 
 .tiles_item {
-  margin-top: var(--root80px);
   display: inline-block;
   text-align: center;
 }

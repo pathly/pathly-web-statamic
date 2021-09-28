@@ -14,5 +14,4 @@ cta_button_type: subpage
 cta_subpage: 5a9d1aaf-b693-493c-9eb8-959a811eb732
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
 updated_at: 1631887711
-cta_button_icon: icons/icon_mail.svg
 ---

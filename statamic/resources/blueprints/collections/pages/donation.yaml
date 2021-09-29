@@ -70,7 +70,6 @@ sections:
         prefix: intro_
   donation-options:
     display: 'Donation Options'
-    # instructions: 'You don't need to add the regular bank transfer as an option here. This will happen automatically.'
     fields:
       -
         handle: options_headline_addition
@@ -142,7 +141,7 @@ sections:
         field:
           input_type: text
           antlers: false
-          display: Bank Transfer Headline
+          display: 'Bank Transfer Headline'
           type: text
           icon: text
           listable: hidden
@@ -151,10 +150,22 @@ sections:
       -
         handle: donation-options_bank-transfer_textarea
         field:
-          antlers: false
-          display: Bank Transfer Textarea
-          type: textarea
-          icon: textarea
+          always_show_set_button: false
+          buttons:
+            - bold
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          display: 'Bank Transfer Textarea'
+          type: bard
+          icon: bard
           listable: hidden
           validate:
             - required
@@ -163,7 +174,7 @@ sections:
         field:
           input_type: text
           antlers: false
-          display: Contribution Receipt Headline
+          display: 'Contribution Receipt Headline'
           type: text
           icon: text
           listable: hidden
@@ -173,7 +184,7 @@ sections:
         handle: donation-options_contribution-receipt_textarea
         field:
           antlers: false
-          display: Contribution Receipt Textarea
+          display: 'Contribution Receipt Textarea'
           type: textarea
           icon: textarea
           listable: hidden

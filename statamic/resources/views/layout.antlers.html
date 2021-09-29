@@ -20,5 +20,7 @@
   </main>
 </body>
 
-{{ partial:footer }}
+{{ if current_template !== "errors.404" }}
+  {{ partial:footer }}
+{{ endif }}
 </html>

@@ -13,8 +13,16 @@ donation-options_headline: 'So kannst du spenden!'
 donation-options_buttons:
   -
     donation-options_buttons_icon: null
-    donation-options_button_headline: 'Mit PayPal ganz einfach über diesen Button spenden'
-    donation-options_button_url: 'https://www.paypal.de'
+    donation-options_button_headline: 'Mit PayPal spenden'
+    donation-options_button_url: 'https://www.google.com'
+  -
+    donation-options_buttons_icon: null
+    donation-options_button_headline: 'Mit Betterplace einmalig oder regelmäßig spenden'
+    donation-options_button_url: 'https://www.google.com'
+  -
+    donation-options_buttons_icon: null
+    donation-options_button_headline: 'Mit Klarna als SOFORT Überweisung spenden'
+    donation-options_button_url: 'https://www.google.com'
 more-options_headline_addition: 'Das kannst du machen'
 more-options_headline: 'Hilf uns mit deinem Engagement!'
 more-options_options:
@@ -36,7 +44,7 @@ more-options_options:
 cta_toggle: true
 cta: f67d9c6c-015c-4d33-af37-dbbdb50d7347
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1632933928
+updated_at: 1632935969
 donation-options_bank-transfer_headline: 'Oder per Überweisung spenden!'
 donation-options_bank-transfer_textarea:
   -
@@ -76,4 +84,5 @@ donation-options_bank-transfer_textarea:
 donation-options_contribution-receipt_headline: 'Spendenquittung fürs Finanzamt'
 donation-options_contribution-receipt_textarea: 'Bei einer Spende unter 200€ reicht dem Finanzamt der Nachweis auf deinem Kontoauszug, bei Spenden über 200€ stellen wir dir selbstverständlich eine Spenden Quittung aus.'
 template: donation
+options_headline_addition: 'Diese Optionen hast du'
 ---

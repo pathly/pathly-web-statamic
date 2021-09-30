@@ -385,6 +385,9 @@ button {
   opacity: 0;
   transition: max-height 1s ease, opacity 0.4s ease;
 }
+.accordion_content > *:first-child {
+  margin-top: var(--root40px);
+}
 
 .accordion_content::-webkit-scrollbar {
   display: none;

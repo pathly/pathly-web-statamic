@@ -11,3 +11,79 @@
     <p>{{ intro_textarea }}</p>
   </div>
 </section>
+
+<section class="section_standard section--top-spacing">
+  <h2 class="section-headline--addition">{{ options_headline_addition }}</h2>
+  <h2 class="section-headline">{{ donation-options_headline }}</h2>
+  <div class="donation-options_buttons">
+    {{ donation-options_buttons }}
+      <a class="donation-options_button" href="{{ donation-options_button_url }}">
+        <div class="donation-options_button_icon-container">
+          {{ donation-options_buttons_icon }}
+            <img src="{{ url }}" alt="{{ alt }}">
+          {{ /donation-options_buttons_icon }}
+        </div>
+        <p>{{ donation-options_button_headline }}</p>
+      </a>
+    {{ /donation-options_buttons }}
+  </div>
+</section>
+
+<section class="section_standard section--top-spacing">
+  <!-- todo: das klappt hier noch nicht so ganz -->
+  <div class="donation-options_bank">
+    <h2>{{ donation-options_bank-transfer_headline }}</h2>
+    {{ donation-options_bank-transfer_textarea }}
+      {{ if type == "paragraph"}}
+        {{ content }}
+          {{ if type == "text" }}
+          <p>{{ text }}</p>
+          {{ elseif type == "hard_break" }}
+          <br>
+          {{ /if }}
+        {{ /content }}
+      {{ /if }}
+    {{ /donation-options_bank-transfer_textarea }}
+  </div>
+
+  <div>
+    <div class="accordion">
+      <input type="checkbox" id="accordion_button-{{ donation-options_contribution-receipt_headline }}"/>
+      <label for="accordion_button-{{ donation-options_contribution-receipt_headline }}" class="accordion_title">
+        <p>
+          <b>
+            {{ donation-options_contribution-receipt_headline }}
+          </b>
+          <span class="accordion_indicator no-select">+</span>
+        </p>
+      </label>
+
+      <div class="accordion_content">
+        <p>{{ donation-options_contribution-receipt_textarea }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section_standard section--top-spacing">
+  <h2 class="section-headline--addition">{{ more-options_headline_addition }}</h2>
+  <h2 class="section-headline">{{ more-options_headline }}</h2>
+  {{ more-options_options }}
+    <div class="accordion">
+      <input type="checkbox" id="accordion_button-{{ more-options_option_headline }}"/>
+      <label for="accordion_button-{{ more-options_option_headline }}" class="accordion_title">
+        <p>
+          <b>
+            {{ more-options_option_headline }}
+          </b>
+          <span class="accordion_indicator no-select">+</span>
+        </p>
+      </label>
+
+      <div class="accordion_content">
+        <p>{{ more-options_option_textarea }}</p>
+      </div>
+    </div>
+  {{ /more-options_options }}
+
+</section>

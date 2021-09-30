@@ -12,7 +12,6 @@
 .statutes_sections_subsections {
   font-weight: normal;
   padding: revert;
-  margin-top: var(--root40px);
 }
 
 .statutes_sections_subsections li:not(:first-child) {

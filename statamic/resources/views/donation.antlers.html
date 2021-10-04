@@ -27,40 +27,30 @@
       </a>
     {{ /donation-options_buttons }}
   </div>
-</section>
 
-<section class="section_standard section--top-spacing">
-  <!-- todo: das klappt hier noch nicht so richtig -->
-  <div class="donation-options_bank">
+  <div class="donation-options_bank-transfer">
     <h2>{{ donation-options_bank-transfer_headline }}</h2>
+    <p>
+      <b>{{ donation-options_bank-transfer_name }}</b>
+      <br>
+      <b>IBAN</b> {{ donation-options_bank-transfer_iban }}
+      <br>
+      <b>BIC</b> {{ donation-options_bank-transfer_bic }}
+    </p>
     {{ donation-options_bank-transfer_textarea }}
-      {{ if type == "paragraph"}}
-        {{ content }}
-          {{ if type == "text" }}
-          <p>{{ text }}</p>
-          {{ elseif type == "hard_break" }}
-          <br>
-          {{ /if }}
-        {{ /content }}
-      {{ /if }}
-    {{ /donation-options_bank-transfer_textarea }}
   </div>
 
-  <div>
-    <div class="accordion">
-      <input type="checkbox" id="accordion_button-{{ donation-options_contribution-receipt_headline }}"/>
-      <label for="accordion_button-{{ donation-options_contribution-receipt_headline }}" class="accordion_title">
-        <p>
-          <b>
-            {{ donation-options_contribution-receipt_headline }}
-          </b>
-          <span class="accordion_indicator no-select">+</span>
-        </p>
-      </label>
+  <div class="accordion">
+    <input type="checkbox" id="accordion_button-{{ donation-options_contribution-receipt_headline }}"/>
+    <label for="accordion_button-{{ donation-options_contribution-receipt_headline }}" class="accordion_title">
+      <p>
+        {{ donation-options_contribution-receipt_headline }}
+        <span class="accordion_indicator no-select">+</span>
+      </p>
+    </label>
 
-      <div class="accordion_content">
-        <p>{{ donation-options_contribution-receipt_textarea }}</p>
-      </div>
+    <div class="accordion_content">
+      <p>{{ donation-options_contribution-receipt_textarea }}</p>
     </div>
   </div>
 </section>
@@ -73,9 +63,7 @@
       <input type="checkbox" id="accordion_button-{{ more-options_option_headline }}"/>
       <label for="accordion_button-{{ more-options_option_headline }}" class="accordion_title">
         <p>
-          <b>
-            {{ more-options_option_headline }}
-          </b>
+          {{ more-options_option_headline }}
           <span class="accordion_indicator no-select">+</span>
         </p>
       </label>

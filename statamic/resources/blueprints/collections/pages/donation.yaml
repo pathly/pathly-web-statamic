@@ -148,24 +148,35 @@ sections:
           validate:
             - required
       -
-        handle: donation-options_bank-transfer_textarea
+        handle: donation-options_bank-transfer_name
         field:
-          always_show_set_button: false
-          buttons:
-            - bold
-          save_html: false
-          toolbar_mode: fixed
-          link_noopener: false
-          link_noreferrer: false
-          target_blank: false
-          reading_time: false
-          fullscreen: true
-          allow_source: true
-          enable_input_rules: true
-          enable_paste_rules: true
-          display: 'Bank Transfer Textarea'
-          type: bard
-          icon: bard
+          input_type: text
+          antlers: false
+          display: 'Bank Name'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: donation-options_bank-transfer_iban
+        field:
+          input_type: text
+          antlers: false
+          display: IBAN
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: donation-options_bank-transfer_bic
+        field:
+          input_type: text
+          antlers: false
+          display: BIC
+          type: text
+          icon: text
           listable: hidden
           validate:
             - required

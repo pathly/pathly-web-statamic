@@ -369,6 +369,7 @@ button {
   width: 100%;
   cursor: pointer;
   border-radius: 5px;
+  font-weight: 700;
 }
 
 .accordion_indicator {

@@ -44,45 +44,13 @@ more-options_options:
 cta_toggle: true
 cta: f67d9c6c-015c-4d33-af37-dbbdb50d7347
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1632935969
+updated_at: 1633363702
 donation-options_bank-transfer_headline: 'Oder per Überweisung spenden!'
-donation-options_bank-transfer_textarea:
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: Skatbank
-      -
-        type: text
-        text: ' '
-      -
-        type: hard_break
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: IBAN
-      -
-        type: text
-        text: ' 0000 0000 0000 0000'
-      -
-        type: hard_break
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: BIC
-      -
-        type: text
-        text: ' GENODEF1SLR'
 donation-options_contribution-receipt_headline: 'Spendenquittung fürs Finanzamt'
 donation-options_contribution-receipt_textarea: 'Bei einer Spende unter 200€ reicht dem Finanzamt der Nachweis auf deinem Kontoauszug, bei Spenden über 200€ stellen wir dir selbstverständlich eine Spenden Quittung aus.'
 template: donation
 options_headline_addition: 'Diese Optionen hast du'
+donation-options_bank-transfer_name: Skatbank
+donation-options_bank-transfer_iban: 0000 0000 0000 0000
+donation-options_bank-transfer_bic: DE12 3456
 ---

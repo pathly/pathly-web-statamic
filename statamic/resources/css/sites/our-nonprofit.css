@@ -1,7 +1,6 @@
 .statutes_sections {
   counter-reset: statutes_headlines_item;
   list-style-type: none;
-  font-weight: bold;
 }
 
 .statutes_sections_headline::before {

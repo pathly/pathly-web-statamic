@@ -3,7 +3,8 @@ sections:
   main:
     display: Main
     fields:
-      - handle: title
+      -
+        handle: title
         field:
           type: text
           required: true
@@ -14,20 +15,20 @@ sections:
         field:
           input_type: text
           antlers: false
-          display: Description
+          display: Navigation Description
           type: text
           icon: text
           listable: hidden
           validate:
             - required
       -
-        handle: image
+        handle: icon
         field:
           mode: grid
           restrict: false
           allow_uploads: true
           max_files: 1
-          display: Image
+          display: Navigation Icon
           type: assets
           icon: assets
           listable: hidden

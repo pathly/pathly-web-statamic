@@ -1,11 +1,11 @@
 ---
 id: 1250a9ec-aa51-401c-8f93-5a0d7e6844fd
 blueprint: home
-title: Home
+title: Projekt
 author: a213c844-224f-4cde-a891-d1f543fd3b61
 template: home
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1631193799
+updated_at: 1635957645
 intro_headline: 'Dein Wegweiser durch den Alltag Deiner Krebserkrankung'
 our-team_headline_addition: Hallo!
 our-team_headline: 'Wir sind Thora und Rebecca.'
@@ -18,4 +18,5 @@ supporter_headline_addition: 'Wir & Ihr'
 supporter_headline: 'Unsere Unterstützer:innen'
 cta_toggle: true
 cta: f67d9c6c-015c-4d33-af37-dbbdb50d7347
+our-team_image_position: left
 ---

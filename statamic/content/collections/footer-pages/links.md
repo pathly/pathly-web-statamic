@@ -46,6 +46,6 @@ links:
     link_url: 'https://www.pathly.app/privacy'
 cta_toggle: true
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1635953053
+updated_at: 1635971055
 cta: fff42fe4-4d5c-484a-b43d-f5eecec74f70
 ---

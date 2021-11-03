@@ -300,7 +300,7 @@ statutes_sections:
         statutes_section_subsection_textarea: 'Bei Auflösung des Vereins oder bei Wegfall steuerbegünstigter Zwecke fällt das Vermögen des Vereins an eine steuerbegünstigte Körperschaft des öffentlichen Rechts zwecks Verwendung für die Förderung der Bildung.'
         statutes_section_subsection_list: {  }
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1631887635
+updated_at: 1635966800
 template: our-nonprofit
 cta_toggle: true
 cta: 26cd6f15-97c9-4d5d-b701-6725436ce2b0

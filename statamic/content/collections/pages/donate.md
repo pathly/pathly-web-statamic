@@ -44,7 +44,7 @@ more-options_options:
 cta_toggle: true
 cta: f67d9c6c-015c-4d33-af37-dbbdb50d7347
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1635954342
+updated_at: 1635971020
 donation-options_bank-transfer_headline: 'Oder per Überweisung spenden!'
 donation-options_contribution-receipt_headline: 'Spendenquittung fürs Finanzamt'
 donation-options_contribution-receipt_textarea: 'Bei einer Spende unter 200€ reicht dem Finanzamt der Nachweis auf deinem Kontoauszug, bei Spenden über 200€ stellen wir dir selbstverständlich eine Spenden Quittung aus.'

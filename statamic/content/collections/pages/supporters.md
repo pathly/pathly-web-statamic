@@ -44,7 +44,7 @@ cooperations_profiles:
 supporters_headline_addition: 'Ein Danke an'
 supporters_headline: 'Unsere Sponsoren'
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1632853552
+updated_at: 1635966834
 cta_toggle: true
 cta: a49460ee-26f4-49ef-9d7c-108f6993d8bf
 ---

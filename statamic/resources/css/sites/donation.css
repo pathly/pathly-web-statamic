@@ -1,36 +1,4 @@
-.donation-options_buttons {
-  display: grid;
-  gap: var(--root40px);
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-}
-
-.donation-options_button {
-  display: flex;
-  align-items: center;
-  padding: var(--root16px);
-  border-radius: var(--root16px);
-  background-color: rgb(var(--primaryTextLight));
-}
-
-.donation-options_button_icon-container {
-  width: var(--root40px);
-  height: var(--root40px);
-  background-color: rgb(var(--primaryPurple));
-  border-radius: var(--root8px);
-  margin-right: var(--root24px);
-  flex-shrink: 0;
-  overflow: hidden;
-}
-
-.donation-options_button_icon-container img {
-  width: 100%;
-}
-
-.donation-options_button p {
-  color: rgb(var(--primaryTextDark));
-}
-
-.donation-options_bank-transfer {
+.bank-transfer {
   background-color: rgb(var(--primaryTextLight));
   text-align: center;
   border-radius: var(--root16px);
@@ -38,6 +6,6 @@
   margin-top: var(--root120px);
 }
 
-.donation-options_bank-transfer h2 {
+.bank-transfer h2 {
   margin-bottom: var(--root40px);
 }

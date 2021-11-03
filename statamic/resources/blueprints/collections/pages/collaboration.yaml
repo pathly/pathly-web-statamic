@@ -51,6 +51,8 @@ sections:
           type: template
           display: Template
           localizable: true
+          validate:
+            - required
       -
         handle: parent
         field:

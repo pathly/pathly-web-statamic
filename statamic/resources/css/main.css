@@ -5,7 +5,7 @@
 @import "base/colors.css";
 @import "sites/general.css";
 
-@import "sites/header-navigation.css";
+@import "sites/header.css";
 @import "sites/home.css";
 @import "sites/our-team.css";
 @import "sites/our-nonprofit.css";
@@ -13,6 +13,8 @@
 @import "sites/our-supporters.css";
 @import "sites/donation.css";
 @import "sites/footer.css";
+
+@import "sites/meta-page.css";
 
 /* @import "slick/slick.css";
 @import "slick/slick-theme.css"; */

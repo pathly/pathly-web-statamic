@@ -20,11 +20,12 @@
     {{ /social-media }}
   </section>
 
-  <ul class="main-footer_list">
-    <li><p>&copy; Pathly 2021</p></li>
-    <div class="main-footer_list_meta">
-      <li><a href="">Impressum</a></li>
-      <li><a href="">Datenschutz</a></li>
-    </div>
-  </ul>
+  <nav id="footer_nav" class="footer_nav">
+    <p>&copy; Pathly e.V. 2021</p>
+    <ul class="footer_nav_list">
+      {{ nav:collection:footer-pages include_home="true" }}
+        <li><a class="link {{ is_current ?= 'active' }}" href="{{ url }}">{{ title }}</a></li>
+      {{ /nav:collection:footer-pages }}
+    </ul>
+  </nav>
 </footer>

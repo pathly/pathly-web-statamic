@@ -1,0 +1,20 @@
+/* -------------------------------------------------------------------------------- */
+/* --- sections meta --- */
+/* -------------------------------------------------------------------------------- */
+
+.section_meta * + h2,
+.section_meta * + h3 {
+  margin-top: var(--root80px);
+}
+
+.section_meta h1 + p,
+.section_meta h2 + p,
+.section_meta h3 + p,
+.section_meta h1 + h2,
+.section_meta h2 + h3 {
+  margin-top: var(--root48px);
+}
+
+.section_meta a {
+  color: rgb(var(--primaryTextDark));
+}

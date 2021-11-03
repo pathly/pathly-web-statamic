@@ -1,0 +1,15 @@
+<section class="section_standard">
+  <h1>{{ title }}</h1>
+  <div class="link-list">
+    {{ links }}
+      <a class="link-list_button" href="{{ link_url }}">
+        <div class="link-list_button_icon-container">
+          {{ link_icon }}
+            <img src="{{ url }}" alt="{{ alt }}">
+          {{ /link_icon }}
+        </div>
+        <p>{{ link_headline }}</p>
+      </a>
+    {{ /links }}
+  </div>
+</section>

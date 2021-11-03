@@ -2,7 +2,7 @@
 id: f75fa98c-5c65-4db9-b5ef-c820d75596a9
 blueprint: linklist
 title: Linkliste
-template: default
+template: footer-pages/linklist
 links:
   -
     link_image: {  }
@@ -44,7 +44,8 @@ links:
     link_image: {  }
     link_headline: Datenschutz
     link_url: 'https://www.pathly.app/privacy'
-cta_toggle: false
+cta_toggle: true
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1635949134
+updated_at: 1635953053
+cta: fff42fe4-4d5c-484a-b43d-f5eecec74f70
 ---

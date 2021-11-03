@@ -38,7 +38,7 @@
 }
 
 .footer_nav_list li {
-  margin-left: var(--root16px);
+  margin-left: var(--root32px);
 }
 
 /* @media (max-width: 450px) {

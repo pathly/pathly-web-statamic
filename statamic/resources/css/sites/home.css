@@ -1,7 +1,6 @@
-
-/* ---------------------------------------- */
+/* -------------------------------------------------------------------------------- */
 /* --- section home header --- */
-/* ---------------------------------------- */
+/* -------------------------------------------------------------------------------- */
 
 .section_home-header {
 }
@@ -117,44 +116,6 @@
 }
 
 
-
-/* ############### */
-/* --- section meta --- */
-/* ############### */
-
-.section_meta {
-  grid-column: 2/13;
-  margin-top: var(--root96px);
-  margin-bottom: 8.33em; /* 200px // based on 24px */
-}
-
-@media (max-width: 350px) {
-  .section_meta {
-    grid-column: 1/14;
-  }
-}
-
-.section_meta_text {
-  grid-column: 1/14;
-  word-break: break-word;
-}
-
-.section_meta * + h1,
-.section_meta * + h2,
-.section_meta * + h3 {
-  margin-top: var(--root80px);
-}
-
-.section_meta h1 + p,
-.section_meta h2 + p,
-.section_meta h3 + p,
-.section_meta h2 + h3 {
-  margin-top: var(--root48px);
-}
-
-.section_meta a {
-  color: rgb(var(--primaryTextDark));
-}
 
 /* ############### */
 /* --- section linklist --- */

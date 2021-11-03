@@ -1,0 +1,37 @@
+/* -------------------------------------------------------------------------------- */
+/* --- sections meta --- */
+/* -------------------------------------------------------------------------------- */
+
+.section_meta {
+  grid-column: 1/14;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  position: relative;
+}
+
+.section_meta h1 {
+  grid-column: 2/14;
+  margin-bottom: var(--root40px);
+}
+
+.section_meta > div {
+  grid-column: 2/13;
+  width: 100%;
+}
+
+.section_meta * + h2,
+.section_meta * + h3 {
+  margin-top: var(--root80px);
+}
+
+.section_meta h1 + p,
+.section_meta h2 + p,
+.section_meta h3 + p,
+.section_meta h1 + h2,
+.section_meta h2 + h3 {
+  margin-top: var(--root48px);
+}
+
+.section_meta a {
+  color: rgb(var(--primaryTextDark));
+}

@@ -236,6 +236,6 @@ textarea:
         type: text
         text: 'Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.'
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1632311661
-template: footer-pages/imprint
+updated_at: 1635930879
+template: footer-pages/meta-page
 ---

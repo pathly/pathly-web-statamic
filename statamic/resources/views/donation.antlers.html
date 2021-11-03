@@ -7,14 +7,14 @@
     {{ if intro_headline_addition }}
       <h2 class="section-headline--addition">{{ intro_headline_addition }}</h2>
     {{ /if }}
-    <h2 class="section-headline">{{ intro_headline }}</h2>
+    <h2 id="{{ intro_headline }}" class="section-headline">{{ intro_headline }}</h2>
     <p>{{ intro_textarea }}</p>
   </div>
 </section>
 
 <section class="section_standard section--big-top-spacing">
   <h2 class="section-headline--addition">{{ options_headline_addition }}</h2>
-  <h2 class="section-headline">{{ donation-options_headline }}</h2>
+  <h2 id="{{ donation-options_headline }}" class="section-headline">{{ donation-options_headline }}</h2>
   <div class="link-list">
     {{ donation-options_buttons }}
       <a class="link-list_button" href="{{ donation-options_button_url }}">
@@ -29,7 +29,7 @@
   </div>
 
   <div class="bank-transfer">
-    <h2>{{ donation-options_bank-transfer_headline }}</h2>
+    <h2 id="{{ donation-options_bank-transfer_headline }}">{{ donation-options_bank-transfer_headline }}</h2>
     <p>
       <b>{{ donation-options_bank-transfer_name }}</b>
       <br>
@@ -57,7 +57,7 @@
 
 <section class="section_standard section--big-top-spacing">
   <h2 class="section-headline--addition">{{ more-options_headline_addition }}</h2>
-  <h2 class="section-headline">{{ more-options_headline }}</h2>
+  <h2 id="{{ more-options_headline }}" class="section-headline">{{ more-options_headline }}</h2>
   {{ more-options_options }}
     <div class="accordion">
       <input type="checkbox" id="accordion_button-{{ more-options_option_headline }}"/>

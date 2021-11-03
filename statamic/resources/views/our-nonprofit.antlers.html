@@ -7,7 +7,7 @@
     {{ if intro_headline_addition }}
       <h2 class="section-headline--addition">{{ intro_headline_addition }}</h2>
     {{ /if }}
-    <h2 class="section-headline">{{ intro_headline }}</h2>
+    <h2 id="{{ intro_headline }}" class="section-headline">{{ intro_headline }}</h2>
     <p>{{ intro_textarea }}</p>
   </div>
 </section>
@@ -16,7 +16,7 @@
   {{ if preamble_headline_addition }}
     <h2 class="section-headline--addition">{{ preamble_headline_addition }}</h2>
   {{ /if }}
-  <h2 class="section-headline">{{ preamble_headline }}</h2>
+  <h2 id="{{ preamble_headline }}" class="section-headline">{{ preamble_headline }}</h2>
   <div>
     <p class="max-width">{{ preamble_textarea }}</p>
   </div>
@@ -26,7 +26,7 @@
   {{ if statutes_headline_addition }}
     <h2 class="section-headline--addition">{{ statutes_headline_addition }}</h2>
   {{ /if }}
-  <h2 class="section-headline">{{ statutes_headline }}</h2>
+  <h2 id="{{ statutes_headline }}" class="section-headline">{{ statutes_headline }}</h2>
 
   <div>
     <ol class="statutes_sections">

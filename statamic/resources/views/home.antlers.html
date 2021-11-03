@@ -3,7 +3,7 @@
   <img class="section_home-header_image" src="/images/home_header.svg">
 
   <div class="section_home-header_text">
-    <h2>{{ intro_headline }}</h2>
+    <h2 id="{{ intro_headline }}">{{ intro_headline }}</h2>
 
     <svg class="section_home-header_text_svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 200 50" preserveAspectRatio="xMinYMin meet">
       <path class="section_home-header_text_svg_mouse" d="M25,21c0,5-4,9-9,9l0,0c-4.9,0-9-4-9-9V11c0-4.9,4.1-9,9-9l0,0c5,0,9,4.1,9,9V21z"/>
@@ -26,7 +26,7 @@
     {{ if our-team_headline_addition }}
       <h2 class="section-headline--addition">{{ our-team_headline_addition }}</h2>
     {{ /if }}
-    <h2 class="section-headline">{{ our-team_headline }}</h2>
+    <h2 id="{{ our-team_headline }}" class="section-headline">{{ our-team_headline }}</h2>
     <p>{{ our-team_textarea }}</p>
   </div>
 

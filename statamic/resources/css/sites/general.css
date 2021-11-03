@@ -19,7 +19,8 @@ body {
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: 100%;
 
-  /* background-color: rgb(var(--primaryTextLight)); */
+  scroll-padding-top: calc(var(--root24px) * 4 + var(--root80px) + var(--root40px));
+  scroll-behavior: smooth;
 }
 
 

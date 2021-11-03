@@ -228,7 +228,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  font-weight: 700;
   color: rgb(var(--primaryPurple));
   border-radius: var(--root24px);
   padding: var(--root24px);

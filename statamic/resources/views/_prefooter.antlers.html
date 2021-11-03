@@ -7,7 +7,9 @@
       {{ /cta_image }}
 
       <div>
-        {{ if cta_headline_addition }}<h2 class="section-headline--addition">{{ cta_headline_addition }}</h2>{{ /if }}
+        {{ if cta_headline_addition }}
+          <h2 class="section-headline--addition">{{ cta_headline_addition }}</h2>
+        {{ /if }}
         <h2 class="section-headline">{{ cta_headline }}</h2>
         {{ if cta_textarea }}<p>{{ cta_textarea }}</p>{{ /if }}
 
@@ -16,7 +18,7 @@
             {{ cta_button_icon }}
               <img src="{{ url }}" alt="{{ alt }}" loading="lazy">
             {{ /cta_button_icon }}
-            {{ cta_mail_address }}
+            Schreib uns!
           </a>
         {{ elseif cta_button_type === 'subpage' }}
           {{ cta_subpage }}

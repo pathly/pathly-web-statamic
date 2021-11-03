@@ -49,5 +49,5 @@ support_needs:
       - 'Du machst Pathly für die Öffentlichkeit bekannt'
       - 'Du kümmerst dich um Kooperationen mit Stiftungen und anderen Vereinen'
 description: 'Werde ein Teil von Pathly'
-image: icons/nav_collaboration.svg
+icon: icons/nav_collaboration.svg
 ---

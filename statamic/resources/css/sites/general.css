@@ -24,8 +24,6 @@ body {
 
 
 
-
-
 /* -------------------------------------------------------------------------------- */
 /* --- grid --- */
 /* -------------------------------------------------------------------------------- */
@@ -44,6 +42,7 @@ body {
     padding: 0;
   }
 }
+
 
 
 /* -------------------------------------------------------------------------------- */
@@ -238,7 +237,6 @@ section {
 }
 
 .tiles_item {
-  margin-top: var(--root80px);
   display: inline-block;
   text-align: center;
 }
@@ -253,6 +251,10 @@ section {
   display: inline-grid;
   grid-column: 1/14;
   width: 100%;
+}
+
+img.full-width {
+  min-height: calc(90vw * 0.4671);
 }
 
 /* Prevents an element (e.g. an image) from being dragged */
@@ -284,7 +286,32 @@ img,
   border-radius: 50%;
 }
 
+.simple-quote * {
+  font-family: "neue-kabel";
+  color: rgb(var(--primaryPurple));
+}
 
+.simple-quote blockquote {
+  font-size: var(--root48px);
+  font-weight: 700;
+  margin-bottom: var(--root8px);
+}
+
+.replicator {
+  margin-top: var(--root40px);
+}
+.replicator > * + * {
+  margin-top: var(--root80px);
+}
+
+.replicator > ul {
+  list-style: disc;
+  padding-left: 1em;
+}
+
+.replicator li::marker {
+  color: rgb(var(--primaryRed));
+}
 
 /* ---------------------------------------- */
 /* --- button --- */
@@ -342,6 +369,7 @@ button {
   width: 100%;
   cursor: pointer;
   border-radius: 5px;
+  font-weight: 700;
 }
 
 .accordion_indicator {
@@ -357,6 +385,9 @@ button {
   max-height: 0;
   opacity: 0;
   transition: max-height 1s ease, opacity 0.4s ease;
+}
+.accordion_content > *:first-child {
+  margin-top: var(--root40px);
 }
 
 .accordion_content::-webkit-scrollbar {

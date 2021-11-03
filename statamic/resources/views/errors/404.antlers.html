@@ -1,1 +1,56 @@
-<p>404 Page not found.</p>
+<style>
+  body {
+    background-color: rgb(var(--darkViolett));
+  }
+
+  #error-image {
+    grid-column: 2/13;
+    width: 100%;
+    margin-bottom: 5em;
+  }
+
+  #left-light-fern {
+    position: fixed;
+    width: 25vw;
+    left: -2vw;
+    bottom: -5px;
+  }
+
+  #left-dark-fern {
+    position: fixed;
+    width: 20vw;
+    left: -7vw;
+    bottom: 5vh;
+  }
+
+  #right-light-fern {
+    position: fixed;
+    width: 20vw;
+    right: 5vw;
+    bottom: -10px;
+    transform: rotate(225deg);
+  }
+
+  #right-dark-fern {
+    position: fixed;
+    width: 18vw;
+    right: 0;
+    bottom: -10px;
+    transform: rotate(315deg);
+  }
+
+  @media (orientation: portrait) {
+    #left-light-fern,
+    #left-dark-fern,
+    #right-light-fern,
+    #right-dark-fern {
+      display: none;
+    }
+  }
+</style>
+
+<img id="error-image"       src="/images/error_404.svg"     loading="lazy"  alt="404 – Wir haben ein Problem">
+<img id="left-dark-fern"    src="/images/flower_dark.svg"   loading="lazy"  alt="Pflanze">
+<img id="left-light-fern"   src="/images/flower_light.svg"  loading="lazy"  alt="Pflanze">
+<img id="right-dark-fern"   src="/images/flower_dark.svg"   loading="lazy"  alt="Pflanze">
+<img id="right-light-fern"  src="/images/flower_light.svg"  loading="lazy"  alt="Pflanze">

@@ -1,7 +1,7 @@
 ---
 id: 36763c83-3210-49f6-8951-8cf4c62d7b74
 blueprint: meta-page
-title: Datenschutzerklärung
+title: Datenschutz
 textarea:
   -
     type: heading
@@ -1547,5 +1547,5 @@ textarea:
         text: .
 template: footer-pages/meta-page
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1635945893
+updated_at: 1635947918
 ---

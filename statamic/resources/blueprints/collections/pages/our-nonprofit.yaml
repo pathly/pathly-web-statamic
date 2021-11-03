@@ -58,6 +58,8 @@ sections:
           type: template
           icon: template
           listable: hidden
+          validate:
+            - required
   intro:
     display: Intro
     fields:

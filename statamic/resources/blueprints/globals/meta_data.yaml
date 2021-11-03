@@ -1,0 +1,69 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          input_type: text
+          antlers: false
+          display: Title
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: description
+        field:
+          antlers: false
+          display: Description
+          type: textarea
+          icon: textarea
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: author
+        field:
+          input_type: text
+          antlers: false
+          display: Author
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: designer
+        field:
+          input_type: text
+          antlers: false
+          display: Designer
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: copyright
+        field:
+          input_type: text
+          antlers: false
+          display: Copyright
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: geo_position
+        field:
+          input_type: text
+          antlers: false
+          display: 'Geo Position'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required

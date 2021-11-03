@@ -41,6 +41,12 @@
       {{ /nav:collection:pages }}
     </ul>
 
+    <ul class="header_nav_list header_footer_nav_list">
+      {{ nav:collection:footer-pages include_home="true" }}
+        <li><a class="link {{ is_current ?= 'active' }}" href="{{ url }}">{{ title }}</a></li>
+      {{ /nav:collection:footer-pages }}
+    </ul>
+
     <a class="header_scroll-to-top hidden" href="#" onclick="scrollToTop()"></a>
   </nav>
 </header>

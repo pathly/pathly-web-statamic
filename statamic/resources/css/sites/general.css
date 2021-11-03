@@ -33,7 +33,7 @@ body {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   padding: 0 5vw;
-  margin: calc(var(--root24px) * 4 + var(--root80px) + var(--root96px)) auto 0 auto;
+  margin: calc(var(--root24px) * 4 + var(--root80px) + var(--root40px)) auto 0 auto;
   max-width: 1800px;
 }
 
@@ -56,14 +56,18 @@ section {
   position: relative;
 }
 
-.section--top-spacing {
+.section--big-top-spacing {
   margin-top: 14.58em; /* 350px // based on 24px */
 }
 
 @media (max-width: 1000px) {
-  .section--top-spacing {
+  .section--big-top-spacing {
     margin-top: 10em;
   }
+}
+
+.section--small-top-spacing {
+  margin-top: 10.42em; /* 250px // based on 24px */
 }
 
 
@@ -92,6 +96,19 @@ section {
 .section_standard > div {
   grid-column: 2/13;
   width: 100%;
+}
+
+@media (max-width: 450px) {
+  .section_standard h1,
+  .section_standard .section-headline {
+    grid-column: 1/14;
+    margin-bottom: var(--root40px);
+  }
+
+  .section_standard > div {
+    grid-column: 1/14;
+    width: 100%;
+  }
 }
 
 
@@ -135,7 +152,8 @@ section {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
+  .section_standard-w-image-right > img,
   .section_standard-w-image-right > div {
     grid-column: 1/14;
   }
@@ -197,7 +215,8 @@ section {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
+  .section_standard-w-image-left > img,
   .section_standard-w-image-left > div {
     grid-column: 1/14;
   }
@@ -240,6 +259,10 @@ section {
 .tiles_item {
   display: inline-block;
   text-align: center;
+}
+
+.tiles_item h3 {
+  color: rgb(var(--primaryTextDark));
 }
 
 
@@ -288,6 +311,10 @@ section {
 /* -------------------------------------------------------------------------------- */
 /* --- elements --- */
 /* -------------------------------------------------------------------------------- */
+
+.max-width {
+  max-width: 1200px;
+}
 
 /* Uses the combined width of all grid columns */
 .full-width {
@@ -399,12 +426,16 @@ button {
 .accordion {
   background-color: rgb(var(--primaryTextLight));
   border-radius: var(--root16px);
-  padding: var(--root40px);
   margin-top: var(--root40px);
 }
 
 .accordion input[type="checkbox"] {
   display: none;
+}
+
+.accordion li,
+.accordion p {
+  margin: var(--root40px);
 }
 
 .accordion_title {
@@ -413,12 +444,14 @@ button {
   cursor: pointer;
   border-radius: 5px;
   font-weight: 700;
+  color: rgb(var(--primaryPurple));
 }
 
 .accordion_indicator {
   float: right;
   width: 10px;
   transition: transform 0.4s ease;
+  color: rgb(var(--primaryPurple));
 }
 
 .accordion_content {

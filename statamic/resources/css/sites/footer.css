@@ -8,7 +8,20 @@
   margin-bottom: var(--root120px);
 }
 
+@media (max-width: 750px) {
+  .footer_social-media {
+    grid-column: 2/13;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer_social-media {
+    grid-column: 1/14;
+  }
+}
+
 .footer_social-media p {
+  font-family: "neue-kabel";
   font-size: var(--root40px);
   font-weight: 700;
 }
@@ -30,6 +43,8 @@
 }
 
 .footer_nav * {
+  font-family: "neue-kabel";
+  font-weight: 700;
   color: rgb(var(--primaryPurple));
 }
 
@@ -41,30 +56,8 @@
   margin-left: var(--root32px);
 }
 
-/* @media (max-width: 450px) {
-  .main-footer_list {
-    grid-column: 2/13;
-    align-items: flex-start;
-    flex-direction: column;
+@media (max-width: 800px) {
+  .footer_nav_list {
+    display: none;
   }
 }
-
-@media (max-width: 350px) {
-  .main-footer_list {
-    grid-column: 1/14;
-  }
-} */
-
-/* .footer_nav_list li {
-  margin-right: var(--root40px);
-}
-
-@media (max-width: 450px) {
-  .main-footer_list li {
-    margin-bottom: var(--root16px);
-  }
-}
-
-.main-footer_list_meta {
-  display: flex;
-} */

@@ -34,4 +34,19 @@
 #team_profile a {
   font-weight: 700;
   color: rgb(var(--primaryPurple));
+  position: relative;
+  padding-left: var(--root32px);
+}
+
+#team_profile a::before {
+  width: var(--root24px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url("../images/mail.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }

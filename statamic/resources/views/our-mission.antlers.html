@@ -5,7 +5,7 @@
 </section>
 
 {{ mission_section }}
-  <section class="section_standard section--top-spacing">
+  <section class="section_standard section--small-top-spacing">
       {{ if headline_addition }}
         <h2 class="section-headline--addition">{{ headline_addition }}</h2>
       {{ /if }}
@@ -14,16 +14,16 @@
       <div class="replicator">
           {{ replicator }}
             {{ if type == "quote" }}
-              <div class="simple-quote">
+              <div class="simple-quote max-width">
                 <blockquote>{{ quote_textarea }}</blockquote>
                 <p>{{ quote_author }}</p>
               </div>
             {{ elseif type == "image" }}
               <img class="full-width" src="{{ image }}" alt="{{ caption }}">
             {{ elseif type == "textarea" }}
-              <p>{{ textarea }}</p>
+              <p class="max-width">{{ textarea }}</p>
             {{ elseif type == "list" }}
-              <ul>
+              <ul class="max-width">
                 {{ list }}
                   <li>{{ value }}</li>
                 {{ /list }}

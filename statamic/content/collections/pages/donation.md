@@ -44,13 +44,13 @@ more-options_options:
 cta_toggle: true
 cta: f67d9c6c-015c-4d33-af37-dbbdb50d7347
 updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1633363702
+updated_at: 1635954342
 donation-options_bank-transfer_headline: 'Oder per Überweisung spenden!'
 donation-options_contribution-receipt_headline: 'Spendenquittung fürs Finanzamt'
 donation-options_contribution-receipt_textarea: 'Bei einer Spende unter 200€ reicht dem Finanzamt der Nachweis auf deinem Kontoauszug, bei Spenden über 200€ stellen wir dir selbstverständlich eine Spenden Quittung aus.'
 template: donation
 options_headline_addition: 'Diese Optionen hast du'
 donation-options_bank-transfer_name: Skatbank
-donation-options_bank-transfer_iban: 0000 0000 0000 0000
-donation-options_bank-transfer_bic: DE12 3456
+donation-options_bank-transfer_iban: 'DE11 8306 5408 0004 2983 06'
+donation-options_bank-transfer_bic: GENODEF1SLR
 ---

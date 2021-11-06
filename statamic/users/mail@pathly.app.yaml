@@ -1,8 +1,6 @@
 name: Pathly
-super: true
-id: a213c844-224f-4cde-a891-d1f543fd3b61
-password_hash: $2y$10$LnM8qRK62jv.6TVl6a/ku.vh1Ir/jakll7e1TbeFZaMJ9qTqd1Qk.
-preferences:
-  assets:
-    assets:
-      mode: table
+super: false
+roles:
+  - editor
+id: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
+password_hash: $2y$10$6oI1lhcQ2saVy7kcFaVDue5qz85rq98VIDU9hS6kFj/L/eBKjvMUm

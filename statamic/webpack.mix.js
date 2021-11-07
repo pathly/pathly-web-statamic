@@ -11,7 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/site.js', 'public/js')
+
+mix.copy('resources/js/jquery-1.11.1.min.js', 'public/js');
+mix.js('resources/js/site.js', 'public/js');
 
 mix.postCss('resources/css/main.css', 'public/css', [
     require('postcss-import'),

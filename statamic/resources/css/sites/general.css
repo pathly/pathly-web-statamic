@@ -249,7 +249,7 @@ section {
 
 
 /* -------------------------------------------------------------------------------- */
-/* --- section tiles --- */
+/* --- tiles --- */
 /* -------------------------------------------------------------------------------- */
 
 .tiles {
@@ -272,6 +272,71 @@ section {
 
 .tiles_item h3 {
   color: rgb(var(--primaryTextDark));
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+/* --- alternating tiles --- */
+/* -------------------------------------------------------------------------------- */
+
+.alternating-tiles {
+  margin-top: var(--root40px);
+}
+
+.alternating-tiles > li {
+  grid-column: 2/13;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.alternating-tiles > li:not(:last-child) {
+  margin-bottom: var(--root80px);
+}
+
+.alternating-tiles > li:nth-child(odd) > img {
+  grid-area: 1/1/1/5;
+  width: 100%;
+}
+
+.alternating-tiles > li:nth-child(odd) > div {
+  grid-area: 1/6/1/12;
+}
+
+.alternating-tiles > li:nth-child(even) > img {
+  grid-area: 1/8/1/12;
+  width: 100%;
+}
+
+.alternating-tiles > li:nth-child(even) > div {
+  grid-area: 1/1/1/7;
+}
+
+.alternating-tiles h3 {
+  margin-bottom: var(--root40px);
+  color: rgb(var(--primaryTextDark));
+}
+
+.alternating-tiles > li > div ul li {
+  list-style-type: disc;
+  margin-left: 1.1em;
+}
+
+.alternating-tiles > li > div ul li::marker {
+  color: rgb(var(--primaryRed));
+}
+
+@media (max-width: 1000px) {
+  .alternating-tiles > li:nth-child(odd) > img,
+  .alternating-tiles > li:nth-child(even) > img {
+    grid-area: 1/1/1/12;
+  }
+
+  .alternating-tiles > li:nth-child(odd) > div,
+  .alternating-tiles > li:nth-child(even) > div {
+    grid-area: 2/1/2/12;
+    margin-top: var(--root40px);
+  }
 }
 
 
@@ -394,7 +459,7 @@ img,
 
 /*
  The following wrapper class can be used to prevent page content from jumping around when images finish (lazy-) loading.
- In order to use the class, wrap the <img> element in question inside a <div> with the "img-wrapper" class and give it a unique id like so: 
+ In order to use the class, wrap the <img> element in question inside a <div> with the "img-wrapper" class and give it a unique id like so:
 
     <div id="pagename-imagename" class="img-wrapper">
     {{ imagename }}
@@ -402,7 +467,7 @@ img,
     {{ /imagename }}
     </div>
 
-  Afterwards, create a style for the id in the CSS file, specifying the "--aspect-ratio" variable, which needs to contain the aspect ratio of the image: 
+  Afterwards, create a style for the id in the CSS file, specifying the "--aspect-ratio" variable, which needs to contain the aspect ratio of the image:
 
     #pagename-imagename {
       --aspect-ratio: calc(height / width);
@@ -410,7 +475,7 @@ img,
 
   That's it.
 
-  Full example: 
+  Full example:
     HTML File for collaboration page:
 
       <div id="collaboration-intro_image" class="img-wrapper">
@@ -419,7 +484,7 @@ img,
       {{ /intro_image }}
       </div>
 
-    Corresponding CSS file: 
+    Corresponding CSS file:
 
       #collaboration-intro_image {
         --aspect-ratio: calc(890.503 / 811.281);
@@ -436,7 +501,7 @@ img,
   top: 0;
   left: 0;
   max-width: 100%;
-  height: auto; 
+  height: auto;
 }
 
 /* -------------------------------------------------------------------------------- */

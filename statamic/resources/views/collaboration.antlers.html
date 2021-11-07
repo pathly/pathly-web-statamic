@@ -12,3 +12,32 @@
     <p>{{ intro_textarea }}</p>
   </div>
 </section>
+
+<section class="section_standard section--small-top-spacing">
+    {{ if support_headline_addition }}
+        <h2 class="section-headline--addition">{{ support_headline_addition }}</h2>
+    {{ /if }}
+    <h2 class="section-headline">{{ support_headline }}</h2>
+
+    <div>
+        <ul id="collaboration-support_needs">
+        {{support_needs}}
+            <li>
+                <div class="img-wrapper">
+                {{support_needs_image}}
+                    <img src="{{ url }}" alt="{{ alt }}" loading="lazy"/>
+                {{/support_needs_image}}
+                </div>
+                <div>
+                    <h2>{{support_needs_headline}}</h2>
+                    <ul>
+                    {{support_needs_description}}
+                        <li class="collaboration-support-need"><p>{{value}}</p></li>
+                    {{/support_needs_description}}
+                    </ul>
+                </div>
+            </li>
+        {{/support_needs}}
+        </ul>
+    </div>
+</section>

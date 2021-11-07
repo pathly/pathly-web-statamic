@@ -1,2 +1,14 @@
-<!-- <h2>{{ intro_headline }}</h2> -->
-<h1>hallo</h1>
+<section class="{{ intro_image_position == 'left' ?= 'section_standard-w-image-left' }}{{ intro_image_position == 'right' ?= 'section_standard-w-image-right' }}">
+    {{ intro_image }}
+        <div id="collaboration-intro_image" class="img-wrapper">
+        <img src="{{ url }}" alt="{{ alt }}" loading="lazy"/>
+        </div>
+    {{ /intro_image }}
+  <div>
+    {{ if intro_headline_addition }}
+        <h2 class="section-headline--addition">{{ intro_headline_addition }}</h2>
+    {{ /if }}
+    <h2 class="section-headline">{{ intro_headline }}</h2>
+    <p>{{ intro_textarea }}</p>
+  </div>
+</section>

@@ -106,7 +106,8 @@ section {
 
 @media (max-width: 450px) {
   .section_text h1,
-  .section_text .section-headline {
+  .section_text .section-headline,
+  .section_text .section-headline--addition {
     grid-column: 1/14;
     margin-bottom: var(--root40px);
   }
@@ -148,6 +149,21 @@ section {
   }
 }
 
+.section_text-w-image-right > div h2.section-headline--addition {
+  margin-left: 1em;
+}
+
+.section_text-w-image-right > div a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.section_text-w-image-right > div a img {
+  width: var(--root24px);
+	height: var(--root24px);
+  margin-right: var(--root16px);
+}
+
 /* Elements under each other, image on top */
 @media (max-width: 1000px) {
   .section_text-w-image-right > img,
@@ -169,21 +185,6 @@ section {
   }
 }
 
-.section_text-w-image-right > div h2.section-headline--addition {
-  margin-left: 1em;
-}
-
-.section_text-w-image-right > div a {
-  display: inline-flex;
-  align-items: center;
-}
-
-.section_text-w-image-right > div a img {
-  width: var(--root24px);
-	height: var(--root24px);
-  margin-right: var(--root16px);
-}
-
 
 
 /* -------------------------------------------------------------------------------- */
@@ -202,6 +203,21 @@ section {
 
 .section_text-w-image-left > div {
   grid-area: 1/8/1/14;
+}
+
+.section_text-w-image-left > div h2.section-headline--addition {
+  margin-left: 1em;
+}
+
+.section_text-w-image-left > div a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.section_text-w-image-left > div a img {
+  width: var(--root24px);
+	height: var(--root24px);
+  margin-right: var(--root16px);
 }
 
 @media (max-width: 1300px) {
@@ -236,21 +252,6 @@ section {
   }
 }
 
-.section_text-w-image-left > div h2.section-headline--addition {
-  margin-left: 1em;
-}
-
-.section_text-w-image-left > div a {
-  display: inline-flex;
-  align-items: center;
-}
-
-.section_text-w-image-left > div a img {
-  width: var(--root24px);
-	height: var(--root24px);
-  margin-right: var(--root16px);
-}
-
 
 
 /* -------------------------------------------------------------------------------- */
@@ -280,7 +281,8 @@ section {
 
 @media (max-width: 450px) {
   .section_pattern h1,
-  .section_pattern .section-headline {
+  .section_pattern .section-headline,
+  .section_pattern .section-headline--addition {
     grid-column: 1/14;
     margin-bottom: var(--root40px);
   }
@@ -393,7 +395,7 @@ section {
 .link-list {
   display: grid;
   gap: var(--root40px);
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .link-list_button {
@@ -402,6 +404,10 @@ section {
   padding: var(--root16px);
   border-radius: var(--root16px);
   background-color: rgb(var(--primaryTextLight));
+}
+
+.link-list_button:hover {
+  background-color: rgba(var(--primaryPurple), 0.3);
 }
 
 .link-list_button_icon-container {
@@ -420,9 +426,12 @@ section {
 
 .link-list_button p {
   color: rgb(var(--primaryTextDark));
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+}
+
+@media (max-width: 550px) {
+  .link-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 
 
@@ -561,9 +570,9 @@ button {
   font-size: var(--root24px);
   text-align: center;
 
-  border-radius: calc((var(--root24px) + 2 * var(--root24px))); /* font-size + 2 * padding */
+  border-radius: calc(var(--root24px) + 2 * var(--root16px)); /* font-size + 2 * padding */
   display: inline-block; /* otherwise padding not counted for offset */
-  padding: var(--root24px) var(--root48px);
+  padding: var(--root16px) var(--root48px);
   margin-top: var(--root80px);
 
   background-color: rgb(var(--primaryRed));
@@ -598,6 +607,7 @@ button {
 .accordion li,
 .accordion p {
   margin: var(--root40px);
+  margin-right: var(--root48px);
 }
 
 .accordion_title {

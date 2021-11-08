@@ -34,6 +34,7 @@
 
 .header_logo h1 {
   font-size: var(--root32px);
+  white-space: nowrap;
 }
 
 @media (max-width: 800px) {
@@ -48,6 +49,31 @@
 /* -------------------------------------------------------------------------------- */
 /* --- navigation --- */
 /* -------------------------------------------------------------------------------- */
+
+.header_nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.header_nav .donation-button {
+  margin-left: var(--root64px);
+  margin-top: 0;
+  padding-left: var(--root72px);
+  position: relative;
+}
+
+.header_nav .donation-button::before {
+  content: "";
+  width: var(--root24px);
+  height: var(--root24px);
+  position: absolute;
+  left: var(--root40px);
+  background-image: url("/images/heart.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 
 .header_nav_list {
   display: flex;
@@ -120,7 +146,7 @@
 @media (max-width: 800px) {
   /* when mobile menu is inactive */
   .header_nav {
-    display: flex;
+    align-items: flex-start;
     flex-direction: column;
   }
 
@@ -148,6 +174,15 @@
     margin-top: var(--root24px);
     margin-right: var(--root24px);
     content: url("/images/menu_cancel.svg");
+  }
+
+  .header_nav .donation-button {
+    display: none;
+  }
+
+  .header_nav.active .donation-button {
+    display: block;
+    margin-left: var(--root40px);
   }
 
   .header_nav.active .header_nav_list {

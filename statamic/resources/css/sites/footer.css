@@ -24,10 +24,12 @@
   font-family: "neue-kabel";
   font-size: var(--root40px);
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .footer_social-media a {
   color: rgb(var(--primaryRed));
+  line-height: 1.3;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -53,7 +55,13 @@
 }
 
 .footer_nav_list li {
+  padding: var(--root8px) var(--root16px);
+  border-radius: calc(var(--root24px) + 2 * var(--root24px));
   margin-left: var(--root32px);
+}
+
+.footer_nav_list li:hover {
+  background-color: rgb(var(--primaryTextLight));
 }
 
 @media (max-width: 800px) {

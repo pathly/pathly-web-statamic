@@ -4,7 +4,7 @@
 }
 
 .statutes_sections_headline::before {
-  content: "§ " counter(statutes_headlines_item) " ";
+  content: "§" counter(statutes_headlines_item) " ";
   counter-increment: statutes_headlines_item;
 }
 

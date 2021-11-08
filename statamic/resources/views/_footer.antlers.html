@@ -21,7 +21,7 @@
   </section>
 
   <nav id="footer_nav" class="footer_nav">
-    <p>&copy; Pathly e.V. 2021</p>
+    <p>&copy; {{ meta-data }}{{ copyright }}{{ /meta-data }}</p>
     <ul class="footer_nav_list">
       {{ nav:collection:footer-pages include_home="true" }}
         <li><a class="link {{ is_current ?= 'active' }}" href="{{ url }}">{{ title }}</a></li>

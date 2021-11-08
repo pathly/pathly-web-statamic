@@ -241,12 +241,19 @@
   overflow: hidden;
 }
 
-.header_nav_sub_list > li > a > div h2 {
+.header_nav_sub_list > li > a > div .header_nav_sub_list_title {
+  font-family: "neue-kabel";
+  font-weight: 700;
+  font-size: var(--root32px);
   color: rgb(var(--primaryTextDark));
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
 }
 
-.header_nav_sub_list > li > a > div h2,
-.header_nav_sub_list > li > a > div p {
+.header_nav_sub_list > li > a > div .header_nav_sub_list_description {
+  font-weight: 400;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -327,7 +334,7 @@
     margin-right: var(--root16px);
   }
 
-  .header_nav_sub_list > li > a > div h2 {
+  .header_nav_sub_list > li > a > div .header_nav_sub_list_title {
     color: rgb(var(--primaryTextLight));
   }
 }

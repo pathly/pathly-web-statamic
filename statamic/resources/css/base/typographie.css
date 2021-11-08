@@ -49,16 +49,9 @@ h2 {
 }
 
 h2.section-headline--addition {
-  font-size: var(--root80px);
-  line-height: 1;
-  margin-bottom: -0.4em;
-  color: rgba(var(--primaryPurple), 0.2);
-}
-
-@media (max-width: 500px) {
-  h2.section-headline--addition {
-    font-size: var(--root64px);
-  }
+  font-size: var(--root32px);
+  font-weight: 500;
+  color: rgb(var(--primaryPurple));
 }
 
 h2.section-headline {

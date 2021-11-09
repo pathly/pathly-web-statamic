@@ -151,10 +151,6 @@ section {
   }
 }
 
-.section_text-w-image-right > div h2.section-headline--addition {
-  margin-left: 1em;
-}
-
 .section_text-w-image-right > div a {
   display: inline-flex;
   align-items: center;
@@ -205,10 +201,6 @@ section {
 
 .section_text-w-image-left > div {
   grid-area: 1/8/1/14;
-}
-
-.section_text-w-image-left > div h2.section-headline--addition {
-  margin-left: 1em;
 }
 
 .section_text-w-image-left > div a {

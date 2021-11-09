@@ -31,30 +31,32 @@
   <div>
     <ol class="statutes_sections">
       {{ statutes_sections }}
-        <div class="accordion">
-          <input type="checkbox" id="accordion_button-{{ statutes_section_headline }}"/>
-          <label for="accordion_button-{{ statutes_section_headline }}" class="accordion_title">
-            <li class="statutes_sections_headline">
-              {{ statutes_section_headline }}
+        <li>
+          <div class="accordion">
+            <input type="checkbox" id="accordion_button-{{ statutes_section_headline }}"/>
+            <label for="accordion_button-{{ statutes_section_headline }}" class="accordion_title">
+              <h3>{{ statutes_section_headline }}</h3>
               <span class="accordion_indicator no-select">+</span>
-            </li>
-          </label>
+            </label>
 
-          <div class="accordion_content">
-            <ol class="statutes_sections_subsections">
-              {{ statutes_section_subsections }}
-                <li>
-                  {{statutes_section_subsection_textarea}}
-                  <ul>
-                    {{ statutes_section_subsection_list }}
-                      <li>{{ value }}</li>
-                    {{ /statutes_section_subsection_list }}
-                  </ul>
-                </li>
-              {{ /statutes_section_subsections }}
-            </ol>
+            <div class="accordion_content">
+              <ol class="statutes_section_subsections">
+                {{ statutes_section_subsections }}
+                  <li>
+                    <p>{{ statutes_section_subsection_textarea }}<p>
+                    <ul>
+                      {{ statutes_section_subsection_list }}
+                        <li>
+                          <p>{{ value }}<p>
+                        </li>
+                      {{ /statutes_section_subsection_list }}
+                    </ul>
+                  </li>
+                {{ /statutes_section_subsections }}
+              </ol>
+            </div>
           </div>
-        </div>
+        </li>
       {{ /statutes_sections }}
     </ol>
   </div>

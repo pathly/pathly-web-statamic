@@ -61,21 +61,12 @@ h2.section-headline {
 h3 {
   font-family: "neue-kabel";
   font-weight: 700;
-  font-size: var(--root40px);
-}
-
-li h3 {
-  font-family: "neue-kabel";
-  font-weight: 700;
-  font-size: var(--root40px);
-  line-height: 1.2;
-  color: rgba(var(--primaryPurple));
-  margin-bottom: var(--root16px);
+  font-size: var(--root32px);
 }
 
 p {
   font-family: "azo-sans-web";
-  font-size: var(--root24px);
+  font-size: 0.83rem; /* 20px based on 24px */
   line-height: 1.5;
 }
 

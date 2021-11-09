@@ -9,25 +9,12 @@
   display: inline-flex;
 }
 
-@media (max-width: 400px) {
-  #team_profile ul,
-  #team_profile ul li {
-    display: block;
-  }
-}
-
 /* Adds a small dot inbetween responsibilities */
 #team_profile ul li:not(:last-child)::after {
   width: var(--root24px);
 	height: var(--root24px);
 	content: "\B7";
   text-align: center;
-}
-
-@media (max-width: 400px) {
-  #team_profile ul li:not(:last-child)::after {
-    content: "";
-  }
 }
 
 /* A paragraph containing the team member's email address */
@@ -49,4 +36,15 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+@media (max-width: 400px) {
+  #team_profile ul,
+  #team_profile ul li {
+    display: block;
+  }
+
+  #team_profile ul li:not(:last-child)::after {
+    content: "";
+  }
 }

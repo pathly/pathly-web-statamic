@@ -4,7 +4,7 @@ blueprint: our-team
 title: 'Das sind wir'
 description: 'Das Team von Pathly'
 icon: icons/nav_team.svg
-intro_image: supporter_crowd_big.svg
+intro_image--big: supporter_crowd_big.svg
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
 team_headline_addition: 'Das sind wir'
 team_headline: 'Lerne unser Team kennen'
@@ -59,9 +59,10 @@ team_profiles:
     team_profile_responsibilities:
       - illustration
     team_profile_mail: yana@pathly.app
-updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1635970889
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1636483111
 template: our-team
 cta_toggle: true
 cta: 26cd6f15-97c9-4d5d-b701-6725436ce2b0
+intro_image--small: collaboration_phone.svg
 ---

@@ -15,7 +15,7 @@ sections:
         field:
           input_type: text
           antlers: false
-          display: Navigation Description
+          display: 'Navigation Description'
           type: text
           icon: text
           listable: hidden
@@ -28,7 +28,7 @@ sections:
           restrict: false
           allow_uploads: true
           max_files: 1
-          display: Navigation Icon
+          display: 'Navigation Icon'
           type: assets
           icon: assets
           listable: hidden
@@ -68,13 +68,26 @@ sections:
     display: Intro
     fields:
       -
-        handle: intro_image
+        handle: intro_image--big
         field:
           mode: grid
           restrict: false
           allow_uploads: true
           max_files: 1
-          display: Image
+          display: 'Big Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: intro_image--small
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Small Image'
           type: assets
           icon: assets
           listable: hidden

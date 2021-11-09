@@ -15,11 +15,15 @@
   padding-left: var(--root32px);
 }
 
-.statutes_section_subsections li:not(:first-child) {
+.statutes_section_subsections > li:not(:first-child) {
   margin-top: var(--root24px);
 }
 
 .statutes_section_subsections ul {
   padding: revert;
   list-style: disc;
+}
+
+.statutes_section_subsections ul li::marker {
+  color: rgb(var(--primaryPurple));
 }

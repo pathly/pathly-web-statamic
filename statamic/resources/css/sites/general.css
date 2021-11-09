@@ -337,6 +337,7 @@ section {
   /* grid-column: 2/13; */
   display: grid;
   grid-template-columns: repeat(11, 1fr);
+  align-items: center;
 }
 
 .alternating-tiles > li:not(:last-child) {
@@ -544,7 +545,7 @@ img,
 
 
 /* -------------------------------------------------------------------------------- */
-/* --- button --- */
+/* --- button and links --- */
 /* -------------------------------------------------------------------------------- */
 
 button {
@@ -575,6 +576,23 @@ button {
 
 .cta-button:hover {
   transform: translateY(-0.5em);
+}
+
+.text-link {
+  display: block;
+  font-family: "neue-kabel";
+  font-weight: 700;
+  color: rgb(var(--primaryPurple));
+  position: relative;
+  padding-left: var(--root32px);
+  margin-top: var(--root40px);
+}
+
+.text-link::before {
+  content: "\2192";
+  position: absolute;
+  left: 0;
+  color: rgb(var(--primaryPurple));
 }
 
 

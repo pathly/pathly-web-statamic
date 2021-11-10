@@ -29,12 +29,7 @@ html {
   }
 }
 
-h1 {
-  font-family: "neue-kabel";
-  font-weight: 700;
-  font-size: var(--root64px);
-}
-
+h1,
 h2 {
   font-family: "neue-kabel";
   font-weight: 700;
@@ -49,7 +44,7 @@ h2 {
 }
 
 h2.section-headline--addition {
-  font-size: var(--root32px);
+  font-size: var(--root24px);
   font-weight: 500;
   color: rgb(var(--primaryPurple));
 }
@@ -67,7 +62,7 @@ h3 {
 p {
   font-family: "azo-sans-web";
   font-size: 0.83rem; /* 20px based on 24px */
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 p + p {

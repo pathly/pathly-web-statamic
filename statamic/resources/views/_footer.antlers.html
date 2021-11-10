@@ -18,10 +18,11 @@
         <a href="mailto:{{ mail_address }}?subject={{ mail_subject }}&body={{ mail_body }}">Mail</a>.
       </p>
     {{ /social-media }}
+    <img src="/images/social-media_background.svg" alt="background" loading="lazy"/>
   </section>
 
   <nav id="footer_nav" class="footer_nav">
-    <p>&copy; {{ meta-data }}{{ copyright }}{{ /meta-data }}</p>
+    <p>&copy; 2021 <span>{{ meta-data }}{{ copyright }}{{ /meta-data }}</span></p>
     <ul class="footer_nav_list">
       {{ nav:collection:footer-pages include_home="true" }}
         <li><a class="link {{ is_current ?= 'active' }}" href="{{ url }}">{{ title }}</a></li>

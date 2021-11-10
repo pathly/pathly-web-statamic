@@ -14,7 +14,7 @@
   grid-row: 1;
   width: 140%;
   margin-left: -35vw;
-  margin-top: -10em;
+  margin-top: -12em;
 }
 
 .home-header_text {
@@ -46,7 +46,8 @@
 @media (max-width: 2300px) {
   .home-header_image {
     grid-column: 1/12;
-    margin-left: -40vw;
+    margin-left: -35vw;
+    margin-top: -14em;
   }
 
   .home-header_text {
@@ -55,15 +56,26 @@
 }
 
 @media (max-width: 2000px) {
+  .home-header_image {
+    margin-left: -40vw;
+  }
+
   .home-header_text {
     grid-column: 9/14;
-    margin-top: 12em;
+    margin-top: 10em;
+  }
+}
+
+@media (max-width: 1600px) {
+  .home-header_text {
+    grid-column: 9/14;
+    margin-top: 8em;
   }
 }
 
 @media (max-width: 1400px) {
   .home-header_image {
-    margin-top: -9em;
+    margin-top: -10em;
     width: 130%;
     margin-left: -36vw;
   }

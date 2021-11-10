@@ -57,6 +57,8 @@
 }
 
 .header_nav .donation-button {
+  display: flex;
+  align-items: center;
   margin-left: var(--root64px);
   margin-top: 0;
   padding-left: var(--root72px);
@@ -117,7 +119,7 @@
 .header_nav_list > .is-parent > a::before {
   content: '';
   position: absolute;
-  right: 0;
+  right: 10px;
   transform: translate(calc(100% + 7px), 80%) rotate(45deg);
   height: var(--root8px);
   width: var(--root8px);
@@ -156,7 +158,7 @@
     top: 0;
     height: 100vh;
     width: 100%;
-    transition: left 1s ease;
+    transition: left 0.5s ease-out;
     background-color: rgb(var(--darkViolett));
   }
 
@@ -181,8 +183,10 @@
   }
 
   .header_nav.active .donation-button {
-    display: block;
+    display: flex;
     margin-left: var(--root40px);
+    position: absolute;
+    top: var(--root32px);
   }
 
   .header_nav.active .header_nav_list {
@@ -192,6 +196,7 @@
   .header_nav_list {
     display: none;
     padding: 0 var(--root40px);
+    width: 100%;
   }
 
   .header_nav_list > li {
@@ -204,6 +209,7 @@
     padding: 0;
     font-size: var(--root40px);
     color: rgb(var(--primaryPurple));
+    width: 100%;
   }
 
   .header_nav_list > li > a::after {

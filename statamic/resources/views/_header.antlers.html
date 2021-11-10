@@ -1,11 +1,11 @@
 <header class="header">
   <a class="header_logo" href="/">
-    <img src="/images/logo_dark.svg" alt="Pathly Logo" />
+    <img src="/images/logo_dark.svg" alt="Pathly Logo" loading="lazy"/>
     <h1>{{ meta-data }}{{ title }}{{ /meta-data }}</h1>
   </a>
 
   <nav id="header_nav" class="header_nav">
-    <img class="header_nav_mobile-burger-button" src="/images/menu_burgermenu.svg" alt="" />
+    <img class="header_nav_mobile-burger-button" src="/images/menu_burgermenu.svg" alt="burger menu" loading="lazy"/>
 
     <a href="/organisation/donate" class="cta-button donation-button">Spenden</a>
 
@@ -17,14 +17,14 @@
             <div class="header_nav_sub">
               <ul class="header_nav_sub_list shadow">
                 <div class="header_nav_sub_mobile-back-button">
-                  <img src="/images/menu_arrow.svg" alt=""/>
+                  <img src="/images/menu_arrow.svg" alt="back button" loading="lazy"/>
                 </div>
 
                 {{ children }}
                   <li>
                     <a href="{{ url }}">
                       {{ icon }}
-                        <img src="{{ url }}" alt="" />
+                        <img src="{{ url }}" alt="{{ alt }}" loading="lazy"/>
                       {{ /icon }}
                       <div>
                         <span class="header_nav_sub_list_title">{{ title }}</span>

@@ -4,9 +4,9 @@ blueprint: home
 title: Projekt
 author: a213c844-224f-4cde-a891-d1f543fd3b61
 template: home
-updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1635957645
-intro_headline: 'Dein Wegweiser durch den Alltag Deiner Krebserkrankung'
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1636547543
+intro_headline: 'Dein digitaler Wegweiser durch den Alltag mit Krebs'
 our-team_headline_addition: Hallo!
 our-team_headline: 'Wir sind Thora und Rebecca.'
 our-team_textarea: |-

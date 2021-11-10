@@ -36,7 +36,7 @@ body {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   padding: 0 5vw;
-  margin: calc(var(--root24px) * 4 + var(--root80px) + var(--root40px)) auto 0 auto;
+  margin: calc(2 * var(--root48px) + var(--root80px) + var(--root40px)) auto 0 auto; /* 2 * (header padding+margin) + header content height + bottom spacing */
   max-width: 1800px;
 }
 
@@ -69,6 +69,12 @@ section {
   }
 }
 
+@media (max-width: 700px) {
+  .section--big-top-spacing {
+    margin-top: 5em;
+  }
+}
+
 .section--small-top-spacing {
   margin-top: 10.42em; /* 250px // based on 24px */
 }
@@ -76,7 +82,19 @@ section {
 
 
 /* -------------------------------------------------------------------------------- */
-/* --- sections text--- */
+/* --- section intro --- */
+/* -------------------------------------------------------------------------------- */
+
+.section_intro {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - (2 * var(--root48px) + var(--root80px) + 2 * var(--root40px))); /* 100vh - (2 * (header padding+margin) + header content height + 2 * bottom spacing) */
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+/* --- section text--- */
 /* -------------------------------------------------------------------------------- */
 
 .section_text {
@@ -106,17 +124,27 @@ section {
   grid-column: 2/11;
 }
 
+@media (max-width: 750px) {
+  .section_text h1,
+  .section_text .section-headline,
+  .section_text .section-headline--addition {
+    grid-column: 2/13;
+  }
+
+  .section_text > div > *:not(img) {
+    grid-column: 1/12;
+  }
+}
+
 @media (max-width: 450px) {
   .section_text h1,
   .section_text .section-headline,
   .section_text .section-headline--addition {
     grid-column: 1/14;
-    margin-bottom: var(--root40px);
   }
 
   .section_text > div {
     grid-column: 1/14;
-    width: 100%;
   }
 }
 
@@ -133,22 +161,11 @@ section {
 .section_text-w-image-right > img,
 .section_text-w-image-right > .img-wrapper {
   width: 100%;
-  grid-area: 1/8/1/14;
+  grid-area: 1/9/1/14;
 }
 
 .section_text-w-image-right > div {
-  grid-area: 1/1/1/7;
-}
-
-@media (max-width: 1300px) {
-  .section_text-w-image-right > img,
-  .section_text-w-image-right > .img-wrapper {
-    grid-column: 9/14;
-  }
-
-  .section_text-w-image-right > div {
-    grid-column: 1/8;
-  }
+  grid-area: 1/1/1/8;
 }
 
 .section_text-w-image-right > div a {
@@ -196,11 +213,11 @@ section {
 .section_text-w-image-left > img,
 .section_text-w-image-left > .img-wrapper {
   width: 100%;
-  grid-area: 1/1/1/7;
+  grid-area: 1/1/1/6;
 }
 
 .section_text-w-image-left > div {
-  grid-area: 1/8/1/14;
+  grid-area: 1/7/1/14;
 }
 
 .section_text-w-image-left > div a {
@@ -212,17 +229,6 @@ section {
   width: var(--root24px);
 	height: var(--root24px);
   margin-right: var(--root16px);
-}
-
-@media (max-width: 1300px) {
-  .section_text-w-image-left > img,
-  .section_text-w-image-left > .img-wrapper {
-    grid-column: 1/6;
-  }
-
-  .section_text-w-image-left > div {
-    grid-column: 7/14;
-  }
 }
 
 /* Elements under each other, image on top */
@@ -253,7 +259,7 @@ section {
 /* -------------------------------------------------------------------------------- */
 
 .section_image-full-width picture {
-  grid-column: 1/14;
+  width: 100%;
 }
 
 
@@ -271,12 +277,14 @@ section {
 
 .section_pattern .section-headline--addition {
   grid-column: 2/13;
+  text-align: center;
 }
 
 .section_pattern h1,
 .section_pattern .section-headline {
   grid-column: 2/13;
   margin-bottom: var(--root40px);
+  text-align: center;
 }
 
 .section_pattern > div {
@@ -288,7 +296,6 @@ section {
   .section_pattern .section-headline,
   .section_pattern .section-headline--addition {
     grid-column: 1/14;
-    margin-bottom: var(--root40px);
   }
 
   .section_pattern > div {
@@ -306,8 +313,14 @@ section {
 .tiles {
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: var(--root80px);
+}
+
+@media (max-width: 1400px) {
+  .tiles {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
 }
 
 @media (max-width: 400px) {
@@ -323,6 +336,12 @@ section {
 
 .tiles_item h3 {
   margin-bottom: var(--root8px);
+}
+
+@media (max-width: 650px) {
+  .tiles_item img {
+    width: 80% !important;
+  }
 }
 
 

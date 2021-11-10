@@ -1,7 +1,7 @@
 ---
 id: ca52693e-4925-4fb8-ac76-e362f473e61a
 blueprint: our-supporters
-title: 'Unsere Unterstützer:innen'
+title: 'Unterstützer:innen'
 description: 'Ein Danke an alle!'
 icon: icons/nav_supporters.svg
 template: our-supporters
@@ -43,8 +43,8 @@ cooperations_profiles:
     cooperations_profile_url: 'https://junge-erwachsene-mit-krebs.de'
 supporters_headline_addition: 'Ein Danke an'
 supporters_headline: 'Unsere Sponsoren'
-updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1635966834
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1636564092
 cta_toggle: true
 cta: a49460ee-26f4-49ef-9d7c-108f6993d8bf
 ---

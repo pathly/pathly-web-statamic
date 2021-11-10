@@ -86,7 +86,6 @@ section {
 /* -------------------------------------------------------------------------------- */
 
 .section_intro {
-  display: flex;
   align-items: center;
   min-height: calc(100vh - (2 * var(--root48px) + var(--root80px) + 2 * var(--root40px))); /* 100vh - (2 * (header padding+margin) + header content height + 2 * bottom spacing) */
 }
@@ -259,7 +258,7 @@ section {
 /* -------------------------------------------------------------------------------- */
 
 .section_image-full-width picture {
-  width: 100%;
+  grid-column: 1/14;
 }
 
 

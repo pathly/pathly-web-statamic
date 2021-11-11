@@ -12,8 +12,8 @@ feedback_headline_addition: Stimmen
 feedback_headline: 'Das sagt unsere Community'
 support_headline_addition: 'Du & Pathly'
 support_headline: 'So kannst du helfen!'
-updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1635970848
+updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
+updated_at: 1636626273
 template: collaboration
 feedback_quotes:
   -

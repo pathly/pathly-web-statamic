@@ -20,17 +20,30 @@
   </div>
 </section>
 
-<!-- About Us -->
-<section class="section_text-w-image-left section--big-top-spacing">
-  <div class="section_text-w-image-left_text">
-    {{ if our-team_headline_addition }}
-      <h2 class="section-headline--addition">{{ our-team_headline_addition }}</h2>
-    {{ /if }}
-    <h2 id="{{ our-team_headline }}" class="section-headline">{{ our-team_headline }}</h2>
-    <p>{{ our-team_textarea }}</p>
-  </div>
+<section class="{{ about-project_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-project_image_position == 'right' ?= 'section_text-w-image-right' }} section--small-top-spacing">
+  {{ about-project_image }}
+    <img src="{{ url }}" alt="{{ alt }}" loading="lazy"/>
+  {{ /about-project_image }}
 
-  {{ our-team_image }}
-  <img class="section_text-w-image-left_image" src="{{ url }}" alt="{{ alt }}" loading="lazy">
-  {{ /our-team_image }}
+  <div>
+    {{ if about-project_headline_addition }}
+      <h2 class="section-headline--addition">{{ about-project_headline_addition }}</h2>
+    {{ /if }}
+    <h2 id="{{ about-project_headline }}" class="section-headline">{{ about-project_headline }}</h2>
+    <p>{{ about-project_textarea }}</p>
+  </div>
+</section>
+
+<section class="{{ about-founders_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-founders_image_position == 'right' ?= 'section_text-w-image-right' }} section--small-top-spacing">
+  {{ about-founders_image }}
+    <img src="{{ url }}" alt="{{ alt }}" loading="lazy"/>
+  {{ /about-founders_image }}
+
+  <div>
+    {{ if about-founders_headline_addition }}
+      <h2 class="section-headline--addition">{{ about-founders_headline_addition }}</h2>
+    {{ /if }}
+    <h2 id="{{ about-founders_headline }}" class="section-headline">{{ about-founders_headline }}</h2>
+    <p>{{ about-founders_textarea }}</p>
+  </div>
 </section>

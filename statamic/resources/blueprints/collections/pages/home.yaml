@@ -49,12 +49,18 @@ sections:
           max_items: 1
           listable: false
           localizable: true
-  about_us:
-    display: 'About us'
+  about_project:
+    display: 'About Project'
     fields:
       -
         import: standard_section_w_image
-        prefix: our-team_
+        prefix: about-project_
+  about_founders:
+    display: 'About Founders'
+    fields:
+      -
+        import: standard_section_w_image
+        prefix: about-founders_
   supporter:
     display: Supporter
     fields:

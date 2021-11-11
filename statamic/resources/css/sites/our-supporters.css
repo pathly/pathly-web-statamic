@@ -1,19 +1,25 @@
-/* A single profile entry */
 #cooperations_profile {
-  /* margin-top: var(--root80px);
-  display: inline-block;
-  text-align: center; */
   background-color: rgb(var(--primaryTextLight));
-  border-radius: 40px;
+  border-radius: var(--root40px);
 }
 
 #cooperations_profile a {
   display: block;
-  padding: 40px;
+  padding: var(--root40px);
   background-color: rgb(var(--primaryTextLight));
-  border-radius: 40px;
+  border-radius: var(--root40px);
 }
 
 #cooperations_profile img {
+  width: 100%;
+}
+
+#sponsors_profile .alternating-tiles_image-container {
+  background-color: rgb(var(--blueUltraLightViolett));
+  aspect-ratio: 1;
+  padding: var(--root40px);
+}
+
+#sponsors_profile .alternating-tiles_image-container img {
   width: 100%;
 }

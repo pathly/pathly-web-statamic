@@ -147,7 +147,7 @@ sections:
     display: Sponsoren
     fields:
       -
-        handle: supporters_headline_addition
+        handle: sponsors_headline_addition
         field:
           input_type: text
           antlers: false
@@ -158,7 +158,7 @@ sections:
           validate:
             - required
       -
-        handle: supporters_headline
+        handle: sponsors_headline
         field:
           input_type: text
           antlers: false
@@ -224,6 +224,8 @@ sections:
           type: grid
           icon: grid
           listable: hidden
+          validate:
+            - required
   prefooter:
     display: Prefooter
     fields:

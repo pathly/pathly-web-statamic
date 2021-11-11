@@ -41,10 +41,16 @@ cooperations_profiles:
     cooperations_profile_image: supporter/junge-erwachsene_300.png
     cooperations_profile_name: 'Deutsche Stiftung für junge Erwachsene'
     cooperations_profile_url: 'https://junge-erwachsene-mit-krebs.de'
-supporters_headline_addition: 'Ein Danke an'
-supporters_headline: 'Unsere Sponsoren'
+sponsors_headline_addition: 'Ein Danke an'
+sponsors_headline: 'Unsere Sponsoren'
+sponsors_profiles:
+  -
+    sponsors_profile_image: supporter/ayach_300.png
+    sponsors_profile_name: CreativeMod
+    sponsors_profile_description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.'
+    sponsors_profile_url: 'https://google.com'
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1636564092
+updated_at: 1636654726
 cta_toggle: true
 cta: a49460ee-26f4-49ef-9d7c-108f6993d8bf
 ---

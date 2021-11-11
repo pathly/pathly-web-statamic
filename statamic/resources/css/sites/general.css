@@ -328,17 +328,17 @@ section {
   }
 }
 
-.tiles_item {
+.tiles > li {
   display: inline-block;
   text-align: center;
 }
 
-.tiles_item h3 {
+.tiles > li h3 {
   margin-bottom: var(--root8px);
 }
 
 @media (max-width: 650px) {
-  .tiles_item img {
+  .tiles > li img {
     width: 80% !important;
   }
 }
@@ -348,10 +348,6 @@ section {
 /* -------------------------------------------------------------------------------- */
 /* --- alternating tiles --- */
 /* -------------------------------------------------------------------------------- */
-
-.alternating-tiles {
-  margin-top: var(--root40px);
-}
 
 .alternating-tiles > li {
   /* grid-column: 2/13; */
@@ -364,22 +360,32 @@ section {
   margin-bottom: var(--root80px);
 }
 
-.alternating-tiles > li:nth-child(odd) > img {
-  grid-area: 1/1/1/5;
+.alternating-tiles_image-container {
   width: 100%;
+  height: auto;
+  border-radius: var(--root40px);
+  flex-shrink: 0;
+  overflow: hidden;
 }
 
-.alternating-tiles > li:nth-child(odd) > div {
+.alternating-tiles > li:nth-child(odd) > .alternating-tiles_image-container {
+  grid-area: 1/1/1/5;
+}
+
+.alternating-tiles > li:nth-child(odd) > div:not(.alternating-tiles_image-container) {
   grid-area: 1/6/1/12;
 }
 
-.alternating-tiles > li:nth-child(even) > img {
+.alternating-tiles > li:nth-child(even) > .alternating-tiles_image-container {
   grid-area: 1/8/1/12;
-  width: 100%;
 }
 
-.alternating-tiles > li:nth-child(even) > div {
+.alternating-tiles > li:nth-child(even) > div:not(.alternating-tiles_image-container) {
   grid-area: 1/1/1/7;
+}
+
+.alternating-tiles_image-container img {
+  width: 100%;
 }
 
 .alternating-tiles h3 {
@@ -396,15 +402,26 @@ section {
 }
 
 @media (max-width: 1000px) {
-  .alternating-tiles > li:nth-child(odd) > img,
-  .alternating-tiles > li:nth-child(even) > img {
+  .alternating-tiles > li:nth-child(odd) > .alternating-tiles_image-container,
+  .alternating-tiles > li:nth-child(even) > .alternating-tiles_image-container {
     grid-area: 1/1/1/12;
   }
 
-  .alternating-tiles > li:nth-child(odd) > div,
-  .alternating-tiles > li:nth-child(even) > div {
+  .alternating-tiles > li:nth-child(odd) > div:not(.alternating-tiles_image-container),
+  .alternating-tiles > li:nth-child(even) > div:not(.alternating-tiles_image-container) {
     grid-area: 2/1/2/12;
     margin-top: var(--root40px);
+  }
+
+  .alternating-tiles h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .alternating-tiles .alternating-tiles_image-container {
+    margin: 0 10%;
+    width: 80%;
   }
 }
 

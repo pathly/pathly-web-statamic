@@ -22,9 +22,11 @@
     <ul class="alternating-tiles">
       {{ support_needs }}
         <li>
-          {{ support_needs_image }}
-            <img src="{{ url }}" alt="{{ alt }}" loading="lazy"/>
-          {{ /support_needs_image }}
+          <div class="alternating-tiles_image-container">
+            {{ support_needs_image }}
+              <img src="{{ url }}" alt="{{ alt }}" loading="lazy"/>
+            {{ /support_needs_image }}
+          </div>
 
           <div>
             <h3>{{ support_needs_headline }}</h3>

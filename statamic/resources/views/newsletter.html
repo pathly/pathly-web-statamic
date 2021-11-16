@@ -1,0 +1,183 @@
+<style style="">
+
+  @import url("https://use.typekit.net/tgc1ukf.css");
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-family:"azo-sans-web", Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: rgb(49, 67, 85);
+    hyphens: none;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+  }
+
+  @media (max-width: 1600px) {
+    html {
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    html {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    html {
+      font-size: 18px;
+    }
+  }
+
+  .mj-embedded {
+    padding-bottom: 3rem; /* otherwise button shadow is cut */
+  }
+
+  .mj-embedded-content {
+    padding: 3.33rem; /* 80px */
+    background-color: rgb(246, 249, 255); /* primary text light */
+    border-radius: 0.67rem;
+  }
+
+  .mj-embedded-header {
+    font-family: 'neue-kabel';
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(49, 67, 85); /* primary text dark */
+    margin-bottom: 1.67rem; /* 40px */
+  }
+
+  .mj-embedded-body {
+    font-size: 0.83rem; /* 20px */
+    text-align: center;
+    color: rgb(49, 67, 85); /* primary text dark */
+    max-width: 800px;
+    margin: 0 auto 1.67rem auto; /* 40px */
+  }
+
+  .mj-embedded-footer {
+  }
+
+  .w-preview-field-table {
+    position: relative;
+  }
+
+  .w-preview-fields-content-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .w-preview-fields-content-cell {
+    flex-grow: 1;
+    margin: 0 0.67rem;
+    padding: 0 !important;
+  }
+
+  @media (max-width: 750px) {
+    .w-preview-fields-content-row {
+      flex-direction: column;
+    }
+
+    .w-preview-fields-content-cell:not(:last-child) {
+      margin-bottom: 0.67rem;
+    }
+  }
+
+  .w-preview-fields-content-cell input {
+    font-size: 0.83rem;
+    padding: 0.67rem 2rem; /* 24px 48px */
+    border: 2px solid rgb(255, 105, 110); /* primary red */
+    border-radius: calc(2 * 0.67rem + 1rem); /* 2 * padding + fontsize */
+    width: 100%;
+    background-color: #FBFDFF;
+    outline: none;
+    color: rgb(49, 67, 85);
+  }
+
+  .mj-form {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .mj-form-button {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: calc((3.33rem + ((2 * 0.67rem + 1rem) / 2)) * -1); /* (iframe padding + half of button height)  */
+  }
+
+  .mj-subscribe-button {
+    font-family:"neue-kabel";
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+
+    border-radius: calc(1rem + 2 * 0.67rem); /* font-size + 2 * padding */
+    display: inline-block; /* otherwise padding not counted for offset */
+    padding: 0.67rem 2rem; /* 16px 48px */
+
+    background-color: rgb(255, 105, 110); /* primary red */
+    box-shadow: 0 0.33rem 2rem rgba(255, 105, 110, 0.2); /* 8px 48px */
+    -moz-box-shadow:  0 0.33rem 2rem rgba(255, 105, 110, 0.2); /* 8px 48px */
+    -webkit-box-shadow:  0 0.33rem 2rem rgba(255, 105, 110, 0.2); /* 8px 48px */
+    color: rgb(246, 249, 255);
+
+    transition: all 0.5s ease;
+  }
+
+  .mj-subscribe-button:hover {
+    transform: translateY(-0.5em);
+  }
+
+  p {
+    margin: 0;
+  }
+
+</style>
+
+<div class="mj-embedded" style="height: auto;">
+  <div class="mj-embedded-content">
+    <div class="mj-embedded-header">
+      <div class="mj-embedded-title">Newsletter</div>
+    </div>
+
+    <div class="mj-embedded-body">
+      <p>Meld Dich für unseren Newsletter an und erhalte Highlights aus Geschichten, Tipps und Infos direkt auf dein Smartphone!</p>
+    </div>
+
+    <div class="mj-embedded-footer">
+      <div class="mj-form">
+        <div class="w-preview-field-table">
+          <div class="w-preview-fields-content-row">
+            <div class="w-preview-fields-content-cell">
+              <input class="w-preview-fields-content-cell-field-8363" type="text" placeholder="Dein Vorname" name="w-field-field-181175-1128666-1732720-8363">
+            </div>
+
+            <div class="w-preview-fields-content-cell">
+              <input class="w-preview-fields-content-cell-field-email" type="email" placeholder="Deine Mail-Adresse" name="w-field-field-181175-1128666-1732720-email" required="required">
+            </div>
+          </div>
+
+          <div class="mj-form-button">
+            <div class="mj-subscribe-button">
+              <div class="mj-subscribe-button-content">
+                <p>Jetzt anmelden!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

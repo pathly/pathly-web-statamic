@@ -63,6 +63,10 @@ section {
   margin-top: 14.58em; /* 350px // based on 24px */
 }
 
+.section--small-top-spacing {
+  margin-top: 10.42em; /* 250px // based on 24px */
+}
+
 @media (max-width: 1000px) {
   .section--big-top-spacing {
     margin-top: 10em;
@@ -70,26 +74,11 @@ section {
 }
 
 @media (max-width: 700px) {
-  .section--big-top-spacing {
+  .section--big-top-spacing,
+  .section--small-top-spacing {
     margin-top: 5em;
   }
 }
-
-.section--small-top-spacing {
-  margin-top: 10.42em; /* 250px // based on 24px */
-}
-
-
-
-/* -------------------------------------------------------------------------------- */
-/* --- section intro --- */
-/* -------------------------------------------------------------------------------- */
-
-.section_intro {
-  align-items: center;
-  min-height: calc(100vh - (2 * var(--root48px) + var(--root80px) + 2 * var(--root40px))); /* 100vh - (2 * (header padding+margin) + header content height + 2 * bottom spacing) */
-}
-
 
 
 /* -------------------------------------------------------------------------------- */

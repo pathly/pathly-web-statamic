@@ -23,7 +23,7 @@
 }
 
 .header_logo img {
-  height: var(--root80px);
+  height: var(--root72px);
   width: auto;
   margin-right: var(--root24px);
   border-radius: var(--root16px);

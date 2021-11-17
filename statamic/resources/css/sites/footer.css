@@ -5,7 +5,7 @@
 .footer_social-media {
   grid-column: 6/13;
   display: block;
-  margin-bottom: 12.5em; /* 250px // based on 20px */
+  margin-bottom: 10.42em; /* 250px // based on 24px */
   position: revert;
 }
 
@@ -17,6 +17,7 @@
 }
 
 .footer_social-media a {
+  font-size: var(--root32px);
   color: rgb(var(--primaryRed));
 }
 

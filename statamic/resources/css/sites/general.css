@@ -60,17 +60,17 @@ section {
 }
 
 .section--big-top-spacing {
-  margin-top: 17.5rem; /* 350px // based on 20px */
+  margin-top: 14.58em; /* 350px // based on 24px */
 }
 
 .section--small-top-spacing {
-  margin-top: 12.5rem; /* 250px // based on 20px */
+  margin-top: 10.42em; /* 250px // based on 24px */
 }
 
 @media (max-width: 500px) {
   .section--big-top-spacing,
   .section--small-top-spacing {
-    margin-top: 8em;
+    margin-top: 5em;
   }
 }
 
@@ -578,10 +578,10 @@ button {
 .cta-button {
   font-family: "neue-kabel";
   font-weight: 700;
-  font-size: var(--root20px);
+  font-size: var(--root24px);
   text-align: center;
 
-  border-radius: calc(var(--root20px) + 2 * var(--root16px)); /* font-size + 2 * padding */
+  border-radius: calc(var(--root24px) + 2 * var(--root16px)); /* font-size + 2 * padding */
   display: inline-block; /* otherwise padding not counted for offset */
   padding: var(--root16px) var(--root48px);
   margin-top: var(--root80px);
@@ -670,7 +670,7 @@ button {
 }
 
 .accordion_title h3 {
-  font-size: var(--root20px);
+  font-size: var(--root24px);
 }
 
 .accordion_indicator {

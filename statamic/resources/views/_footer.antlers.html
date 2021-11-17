@@ -22,7 +22,7 @@
   </section>
 
   <nav id="footer_nav" class="footer_nav">
-    <p>&copy; 2021 <span>{{ meta-data }}{{ copyright }}{{ /meta-data }}</span></p>
+    <a href="/">&copy; 2021 <span>{{ meta-data }}{{ copyright }}{{ /meta-data }}</span></a>
     <ul class="footer_nav_list">
       {{ nav:collection:footer-pages include_home="true" }}
         <li><a class="link {{ is_current ?= 'active' }}" href="{{ url }}">{{ title }}</a></li>

@@ -1,6 +1,4 @@
-<style style="">
-
-  @import url("https://use.typekit.net/tgc1ukf.css");
+<style>
 
   * {
     box-sizing: border-box;
@@ -9,28 +7,16 @@
   }
 
   html {
-    font-family:"azo-sans-web", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 24px;
+    font-size: 20px;
     color: rgb(49, 67, 85);
     hyphens: none;
     -webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
     -o-hyphens: none;
-  }
-
-  @media (max-width: 1600px) {
-    html {
-      font-size: 22px;
-    }
-  }
-
-  @media (max-width: 1200px) {
-    html {
-      font-size: 20px;
-    }
   }
 
   @media (max-width: 800px) {
@@ -40,30 +26,30 @@
   }
 
   .mj-embedded {
-    padding-bottom: 3rem; /* otherwise button shadow is cut */
+    padding-bottom: 4rem; /* otherwise button shadow is cut */
   }
 
   .mj-embedded-content {
-    padding: 3.33rem; /* 80px */
+    padding: 4rem; /* 80px */
     background-color: rgb(246, 249, 255); /* primary text light */
-    border-radius: 0.67rem;
+    border-radius: 0.8rem; /* 16px */
   }
 
   .mj-embedded-header {
-    font-family: 'neue-kabel', Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.4rem; /* 48px */
     text-align: center;
     color: rgb(49, 67, 85); /* primary text dark */
-    margin-bottom: 1.67rem; /* 40px */
+    margin-bottom: 2rem; /* 40px */
   }
 
   .mj-embedded-body {
-    font-size: 0.83rem; /* 20px */
+    font-size: 1rem; /* 20px */
     text-align: center;
     color: rgb(49, 67, 85); /* primary text dark */
     max-width: 800px;
-    margin: 0 auto 1.67rem auto; /* 40px */
+    margin: 0 auto 2rem auto; /* 40px */
   }
 
   .mj-embedded-footer {
@@ -80,7 +66,7 @@
 
   .w-preview-fields-content-cell {
     flex-grow: 1;
-    margin: 0 0.67rem;
+    margin: 0 0.8rem; /* 16px */
     padding: 0 !important;
   }
 
@@ -90,15 +76,15 @@
     }
 
     .w-preview-fields-content-cell:not(:last-child) {
-      margin-bottom: 0.67rem;
+      margin-bottom: 0.8rem; /* 16px */
     }
   }
 
   .w-preview-fields-content-cell input {
-    font-size: 0.83rem;
-    padding: 0.67rem 2rem; /* 24px 48px */
+    font-size: 1rem; /* 20px */
+    padding: 0.8rem 2.4rem; /* 16px 48px */
     border: 2px solid rgb(255, 105, 110); /* primary red */
-    border-radius: calc(2 * 0.67rem + 1rem); /* 2 * padding + fontsize */
+    border-radius: calc(2 * 0.8rem + 1rem); /* 2 * padding + fontsize */
     width: 100%;
     background-color: #FBFDFF;
     outline: none;
@@ -114,23 +100,23 @@
     position: absolute;
     width: 100%;
     text-align: center;
-    bottom: calc((3.33rem + ((2 * 0.67rem + 1rem) / 2)) * -1); /* (iframe padding + half of button height)  */
+    bottom: calc((3.33rem + ((2 * 0.8rem + 1rem) / 2)) * -1); /* (iframe padding + half of button height)  */
   }
 
   .mj-subscribe-button {
     font-family:"neue-kabel", Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1rem; /* 20px */
     text-align: center;
 
-    border-radius: calc(1rem + 2 * 0.67rem); /* font-size + 2 * padding */
+    border-radius: calc(1rem + 2 * 0.8rem); /* font-size + 2 * padding */
     display: inline-block; /* otherwise padding not counted for offset */
-    padding: 0.67rem 2rem; /* 16px 48px */
+    padding: 0.8rem 2.4rem; /* 16px 48px */
 
     background-color: rgb(255, 105, 110); /* primary red */
-    box-shadow: 0 0.33rem 2rem rgba(255, 105, 110, 0.2); /* 8px 48px */
-    -moz-box-shadow:  0 0.33rem 2rem rgba(255, 105, 110, 0.2); /* 8px 48px */
-    -webkit-box-shadow:  0 0.33rem 2rem rgba(255, 105, 110, 0.2); /* 8px 48px */
+    box-shadow: 0 0.4rem 2.4rem rgba(255, 105, 110, 0.2); /* 8px 48px */
+    -moz-box-shadow:  0 0.4rem 2.4rem rgba(255, 105, 110, 0.2); /* 8px 48px */
+    -webkit-box-shadow:  0 0.4rem 2.4rem rgba(255, 105, 110, 0.2); /* 8px 48px */
     color: rgb(246, 249, 255);
 
     transition: all 0.5s ease;

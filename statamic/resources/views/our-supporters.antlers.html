@@ -22,7 +22,7 @@
     <ul class="tiles">
       {{  cooperations_profiles }}
         <li id="cooperations_profile">
-          <a href="{{ cooperations_profile_url }}" target="_blank">
+          <a target="_blank" href="{{ cooperations_profile_url }}">
               {{ cooperations_profile_image }}
                 <img src="{{ url }}" alt="{{ alt }}" loading="lazy">
               {{ /cooperations_profile_image }}
@@ -33,7 +33,7 @@
   </div>
 </section>
 
-<section class="section_pattern section--small-top-spacing">
+<section class="section_alternating-pattern section--small-top-spacing">
   {{ if sponsors_headline_addition }}
     <h2 class="section-headline--addition">{{ sponsors_headline_addition }}</h2>
   {{ /if }}
@@ -52,7 +52,7 @@
           <div>
             <h3>{{ sponsors_profile_name }}</h3>
             <p>{{ sponsors_profile_description }}</p>
-            <a class="text-link" href="{{ sponsors_profile_url }}">Website</a>
+            <a target="_blank" class="text-link" href="{{ sponsors_profile_url }}">Website</a>
           </div>
         </li>
       {{ /sponsors_profiles }}

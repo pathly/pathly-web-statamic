@@ -6,11 +6,11 @@
 
         {{ social-media_profiles }}
           {{ if last }}
-            <a href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a>.
+            <a target="_blank" href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a>.
           {{ elseif social-media_profiles|count > 2 && index !== social-media_profiles|count|subtract:2 }}
-            <a href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a>,
+            <a target="_blank" href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a>,
           {{ else }}
-            <a href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a> und
+            <a target="_blank" href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a> und
           {{ /if }}
         {{ /social-media_profiles }}
 

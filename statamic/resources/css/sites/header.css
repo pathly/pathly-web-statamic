@@ -41,6 +41,7 @@
   .header {
     margin: 0;
     width: 100%;
+    border-radius: 0;
   }
 }
 
@@ -120,7 +121,7 @@
   content: '';
   position: absolute;
   right: 10px;
-  transform: translate(calc(100% + 7px), 80%) rotate(45deg);
+  transform: translate(calc(100% + 7px), 100%) rotate(45deg);
   height: var(--root8px);
   width: var(--root8px);
   border: rgb(var(--primaryPurple)) solid;
@@ -129,12 +130,7 @@
 }
 
 .header_nav_list > .is-parent:hover > a::before {
-  border-color: rgb(var(--primaryPurple));
   transform: translate(calc(100% + 7px), 120%) rotate(45deg);
-}
-
-.header_nav_list > .is-parent > a.active::before {
-  border-color: rgb(var(--primaryPurple));
 }
 
 /* only desktop */
@@ -355,7 +351,7 @@
     margin: 0;
     height: 100%;
     max-height: none;
-    padding: 0 var(--root40px);
+    padding: 0 var(--root40px) 0 var(--root80px);
     display: flex;
     flex-direction: column;
     border-radius: 0;

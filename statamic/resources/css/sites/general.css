@@ -80,13 +80,6 @@ section {
 /* --- section text--- */
 /* -------------------------------------------------------------------------------- */
 
-.section_text {
-  grid-column: 1/14;
-  display: grid;
-  grid-template-columns: repeat(13, 1fr);
-  position: relative;
-}
-
 .section_text .section-headline--addition {
   grid-column: 3/12;
 }
@@ -144,11 +137,11 @@ section {
 .section_text-w-image-right > img,
 .section_text-w-image-right > .img-wrapper {
   width: 100%;
-  grid-area: 1/9/1/14;
+  grid-area: 1/9/1/13;
 }
 
 .section_text-w-image-right > div {
-  grid-area: 1/1/1/8;
+  grid-area: 1/2/1/8;
 }
 
 .section_text-w-image-right > div a {
@@ -160,6 +153,17 @@ section {
   width: var(--root24px);
 	height: var(--root24px);
   margin-right: var(--root16px);
+}
+
+@media (max-width: 1400px) {
+  .section_text-w-image-right > img,
+  .section_text-w-image-right > .img-wrapper {
+    grid-column: 9/14;
+  }
+
+  .section_text-w-image-right > div {
+    grid-column: 1/8;
+  }
 }
 
 /* Elements under each other, image on top */
@@ -196,11 +200,11 @@ section {
 .section_text-w-image-left > img,
 .section_text-w-image-left > .img-wrapper {
   width: 100%;
-  grid-area: 1/1/1/6;
+  grid-area: 1/2/1/6;
 }
 
 .section_text-w-image-left > div {
-  grid-area: 1/7/1/14;
+  grid-area: 1/7/1/13;
 }
 
 .section_text-w-image-left > div a {
@@ -212,6 +216,17 @@ section {
   width: var(--root24px);
 	height: var(--root24px);
   margin-right: var(--root16px);
+}
+
+@media (max-width: 1400px) {
+  .section_text-w-image-left > img,
+  .section_text-w-image-left > .img-wrapper {
+    grid-column: 1/6;
+  }
+
+  .section_text-w-image-left > div {
+    grid-column: 7/14;
+  }
 }
 
 /* Elements under each other, image on top */
@@ -251,13 +266,6 @@ section {
 /* --- section pattern--- */
 /* -------------------------------------------------------------------------------- */
 
-.section_pattern {
-  grid-column: 1/14;
-  display: grid;
-  grid-template-columns: repeat(13, 1fr);
-  position: relative;
-}
-
 .section_pattern .section-headline--addition {
   grid-column: 2/13;
   text-align: center;
@@ -272,6 +280,7 @@ section {
 
 .section_pattern > div {
   grid-column: 2/13;
+  margin-top: var(--root40px);
 }
 
 @media (max-width: 450px) {
@@ -324,6 +333,40 @@ section {
 @media (max-width: 650px) {
   .tiles > li img {
     width: 80% !important;
+  }
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+/* --- section alternating pattern--- */
+/* -------------------------------------------------------------------------------- */
+
+.section_alternating-pattern .section-headline--addition {
+  grid-column: 2/13;
+}
+
+.section_alternating-pattern h1,
+.section_alternating-pattern .section-headline {
+  grid-column: 2/13;
+  margin-bottom: var(--root40px);
+}
+
+.section_alternating-pattern > div {
+  grid-column: 2/13;
+  margin-top: var(--root40px);
+}
+
+@media (max-width: 450px) {
+  .section_alternating-pattern h1,
+  .section_alternating-pattern .section-headline,
+  .section_alternating-pattern .section-headline--addition {
+    grid-column: 1/14;
+  }
+
+  .section_alternating-pattern > div {
+    grid-column: 1/14;
+    width: 100%;
   }
 }
 

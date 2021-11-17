@@ -207,7 +207,7 @@
     display: block;
     margin: 0;
     padding: 0;
-    font-size: var(--root40px);
+    font-size: var(--root32px);
     color: rgb(var(--primaryPurple));
     width: 100%;
   }

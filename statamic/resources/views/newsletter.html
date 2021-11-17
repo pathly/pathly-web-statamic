@@ -1,4 +1,4 @@
-<style>
+<style style="">
 
   * {
     box-sizing: border-box;
@@ -36,12 +36,17 @@
   }
 
   .mj-embedded-header {
-    font-family: Helvetica, sans-serif;
     font-weight: 700;
     font-size: 2.4rem; /* 48px */
     text-align: center;
     color: rgb(49, 67, 85); /* primary text dark */
     margin-bottom: 2rem; /* 40px */
+  }
+
+  @media (max-width: 650px) {
+    .mj-embedded-header {
+      font-size: 2rem; /* 40px */
+    }
   }
 
   .mj-embedded-body {
@@ -100,11 +105,11 @@
     position: absolute;
     width: 100%;
     text-align: center;
-    bottom: calc((3.33rem + ((2 * 0.8rem + 1rem) / 2)) * -1); /* (iframe padding + half of button height)  */
+    bottom: calc((4rem + ((2 * 0.8rem + 1rem) / 2)) * -1); /* (iframe padding + half of button height)  */
   }
 
   .mj-subscribe-button {
-    font-family:"neue-kabel", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: 700;
     font-size: 1rem; /* 20px */
     text-align: center;

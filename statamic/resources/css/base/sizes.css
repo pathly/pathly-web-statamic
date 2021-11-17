@@ -1,19 +1,20 @@
 :root {
-    --root4px: 0.17rem;
-    --root8px: 0.33rem;
-    --root16px: 0.67rem;
-    --root24px: 1rem;
-    --root32px: 1.33rem;
-    --root40px: 1.67rem;
-    --root48px: 2rem;
-    --root56px: 2.33rem;
-    --root64px: 2.67rem;
-    --root72px: 3rem;
-    --root80px: 3.33rem;
-    --root88px: 3.67rem;
-    --root96px: 4rem;
-    --root120px: 5rem;
+    --root4px: 0.2rem;
+    --root8px: 0.4rem;
+    --root16px: 0.8rem;
+    --root20px: 1rem;
+    --root24px: 1.2rem;
+    --root32px: 1.6rem;
+    --root40px: 2rem;
+    --root48px: 2.4rem;
+    --root56px: 2.8rem;
+    --root64px: 3.2rem;
+    --root72px: 3.6rem;
+    --root80px: 4rem;
+    --root88px: 4.4rem;
+    --root96px: 4.8rem;
+    --root120px: 6rem;
 }
 
-/* "rootXXpx" based on 24px */
+/* "rootXXpx" based on 20px */
 /* How to use -> margin-left: var(--root16px); */

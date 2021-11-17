@@ -83,8 +83,14 @@ team_profiles:
     team_profile_responsibilities:
       - contentCreation
     team_profile_mail: null
+  -
+    team_profile_image: supporter/RonahiSolmaz_500.png
+    team_profile_name: 'Ronahi Solmaz'
+    team_profile_responsibilities:
+      - contentCreation
+    team_profile_mail: null
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1636925073
+updated_at: 1637101203
 template: our-team
 cta_toggle: true
 cta: 26cd6f15-97c9-4d5d-b701-6725436ce2b0

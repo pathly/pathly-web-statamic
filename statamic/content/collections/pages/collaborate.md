@@ -4,16 +4,16 @@ blueprint: collaboration
 title: Mitwirken
 intro_headline: 'Ihr könnt uns dabei helfen, Pathly in den App und Play Store zu bringen!'
 intro_textarea: |-
-  Unsere App für Krebspatient:innen und Angehörige befindet sich derzeit noch in der Entstehungsphase, weshalb wir stets auf der Suche nach Unterstützer:innen und neuen Impressionen sind.
+  Unsere App für Krebspatient:innen und Angehörige befindet sich derzeit noch in der Entstehungsphase, weshalb wir stets auf der Suche nach Unterstützer:innen und neuen Impressionen sind. 
 
-  Du schreibst gern? Bist fit in Social Media, programmierst für dein Leben gerne, kennst dich mit Finanzierungs-Modellen für gemeinnützige Organisationen aus oder hast Bock uns zu sponsern?  Wir freuen uns über jede Art der Unterstützung.
+  Du bist Krebspatient:in, Angerhörige:r oder möchtest dich für das Thema stark machen? Du schreibst gern? Bist fit in Social Media, programmierst für dein Leben gerne, arbeitest dich gerne in neue Themen ein oder hast Bock uns zu sponsern? Fang jetzt an zu helfen, denn wir brauchen Dich!
 intro_image: collaboration_phone.svg
 feedback_headline_addition: Stimmen
 feedback_headline: 'Das sagt unsere Community'
 support_headline_addition: 'Du & Pathly'
 support_headline: 'So kannst du helfen!'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1636626273
+updated_at: 1636914749
 template: collaboration
 feedback_quotes:
   -
@@ -29,25 +29,27 @@ support_needs:
     support_needs_image: icons/collaboration_content-creation.svg
     support_needs_headline: 'Content Creation'
     support_needs_description:
-      - 'Du überlegst dir zusammen mit unserem Social Media-Team, was wir als nächstes posten wollen'
-      - 'Du bist dafür verantwortlich Texte für unsere Posts zu verfassen'
-      - 'Du baust unsere Community gemeinsam mit uns weiter auf und reagierst auf DMs und Kommentare'
-      - 'Du verfasst Inhalte für unsere Website'
-      - 'Du pflegst Inhalte in unser Content Management System ein'
-      - 'Du sammelst Tipps, Tricks und Erfahrungen von Betroffenen'
+      - 'Du bist Krebspatient:in, Angerhörige:r oder möchtest dich für das Thema stark machen'
+      - 'Du möchtest Tipps, Tricks und Erfahrungen weitergeben'
+      - 'Du überlegst dir zusammen mit unserem Redaktions-Team, was wir als nächstes posten wollen'
+      - 'Du nimmst an unserm regelmäßigen Online-Team-Treffen teil'
   -
     support_needs_image: icons/collaboration_business.svg
-    support_needs_headline: 'Business und Fundraising'
+    support_needs_headline: 'Business & Marketing'
     support_needs_description:
       - 'Du hilfst uns bei der Organisation von Spenden-Kampagnen'
       - 'Du sprichst potentielle Sponsoren an'
+      - 'Du bist zuständig für unsere Außenkommunikation'
+      - 'Du machst Pathly in der Öffentlichkeit bekannt'
   -
     support_needs_image: icons/collaboration_marketing.svg
-    support_needs_headline: 'Marketing und Öffentlichkeitsarbeit'
+    support_needs_headline: 'Design & Illustration'
     support_needs_description:
-      - 'Du bist zuständig für die Außenkommunikation des Vereins'
-      - 'Du machst Pathly für die Öffentlichkeit bekannt'
-      - 'Du kümmerst dich um Kooperationen mit Stiftungen und anderen Vereinen'
+      - 'Du bist Designstudent:in oder Designer:in'
+      - 'Du hast Bock und bist motiviert'
+      - 'Du gestaltest unser Social Media Beiträge'
+      - 'Du hilfst bei der Weiterentwicklung von Website und App'
+      - 'Du nimmst an unserm regelmäßigen Online-Team-Treffen teil'
 description: 'Werde ein Teil von Pathly'
 icon: icons/nav_collaboration.svg
 intro_image_position: right

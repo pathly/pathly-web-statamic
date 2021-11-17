@@ -62,10 +62,10 @@ sections:
         import: standard_section_w_image
         prefix: about-founders_
   supporter:
-    display: Supporter
+    display: All Supporters
     fields:
       -
-        handle: supporter_headline_addition
+        handle: all-supporters_headline_addition
         field:
           input_type: text
           antlers: false
@@ -76,7 +76,7 @@ sections:
           validate:
             - required
       -
-        handle: supporter_headline
+        handle: all-supporters_headline
         field:
           input_type: text
           antlers: false

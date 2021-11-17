@@ -18,14 +18,14 @@
 
   <div>
     <ul class="tiles">
-      {{  team_profiles }}
+      {{ team_profiles }}
         <li id="team_profile">
-          {{team_profile_image}}
+          {{ team_profile_image }}
             <img class="round-image shadow" src="{{ url }}" alt="{{ alt }}" loading="lazy">
-          {{/team_profile_image}}
+          {{ /team_profile_image }}
 
           <h3>
-            {{team_profile_name}}
+            {{ team_profile_name }}
           </h3>
 
           <ul>
@@ -36,7 +36,7 @@
 
           {{ if team_profile_mail }}
             <a href="mailto:{{ team_profile_mail }}">{{ team_profile_mail }}</a>
-          {{ endif}}
+          {{ endif }}
         </li>
       {{ /team_profiles }}
     </ul>

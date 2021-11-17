@@ -16,5 +16,65 @@ $(document).ready(function() {
   $( document ).on("click" , ".header_nav_sub_mobile-back-button", function(){
       $("#header_nav").removeClass("sub-menu-active");
   });
-  
+
+// ------------------------------
+// ----- Slick Slider
+// ------------------------------
+
+  $('.all-supporters_slick-slider_list').slick({
+    arrows: false,
+    infinite: true,
+    loop: true,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 5000,
+    cssEase: 'linear',
+    draggable: false,
+    swipe: false,
+    swipeToSlide: false,
+    touchMove: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    adaptiveHeight: true,
+    slidesToShow: 7,
+    responsive: [
+      {
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 6,
+        }
+      },
+      {
+        breakpoint: 1600,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+
 });

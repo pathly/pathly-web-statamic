@@ -13,8 +13,10 @@ const mix = require('laravel-mix');
 
 
 mix.copy('resources/js/jquery-1.11.1.min.js', 'public/js');
+mix.copy('resources/js/slick.min.js', 'public/js');
 mix.js('resources/js/site.js', 'public/js');
 
+mix.copy('resources/css/slick', 'public/css/slick');
 mix.postCss('resources/css/main.css', 'public/css', [
     require('postcss-import'),
     require('postcss-nested'),

@@ -12,8 +12,8 @@ about-project_headline: 'Ein digitaler Wegweiser für die Hosentasche.'
 about-project_textarea: |-
   Krebs. Eine Diagnose, die einen extremen Einschnitt im Leben der Betroffenen bedeutet. Das Leben ändert sich schlagartig.
 
-  Mit Pathly solle eine Plattform entstehen, die Krebspatient:innen und ihre Angehörigen auf dem Weg durch die Erkrankung begleitet, ihnen dabei hilft, den richtigen Umgang mit der Erkrankung und auch den möglichen Folgen zu finden. Pathly informiert, inspiriert und macht Mut!
-about-project_image: mission-small.svg
+  Pathly soll Krebspatient:innen und ihre Angehörigen auf dem Weg durch die Erkrankung begleitet, ihnen dabei hilft, den richtigen Umgang mit der Erkrankung und auch den möglichen Folgen zu finden. Pathly soll informieren, Pathly soll auffangen. Pathly soll Halt gebe, Inspiration und Mut schenken.
+about-project_image: ribbons_small.svg
 about-project_image_position: right
 about-founders_headline_addition: Hallo!
 about-founders_headline: 'Wir sind Thora und Rebecca.'

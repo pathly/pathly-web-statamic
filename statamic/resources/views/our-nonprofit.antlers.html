@@ -1,4 +1,4 @@
-<section class="section_intro {{ intro_image_position == 'left' ?= 'section_text-w-image-left' }}{{ intro_image_position == 'right' ?= 'section_text-w-image-right' }}">
+<section class="{{ intro_image_position == 'left' ?= 'section_text-w-image-left' }}{{ intro_image_position == 'right' ?= 'section_text-w-image-right' }}">
   {{ intro_image }}
     <img src="{{ url }}" alt="{{ alt }}" loading="lazy"/>
   {{ /intro_image }}
@@ -12,7 +12,7 @@
   </div>
 </section>
 
-<section class="section_text section--big-top-spacing">
+<section class="section_text section--small-top-spacing">
   {{ if preamble_headline_addition }}
     <h2 class="section-headline--addition">{{ preamble_headline_addition }}</h2>
   {{ /if }}
@@ -22,7 +22,7 @@
   </div>
 </section>
 
-<section class="section_text section--big-top-spacing">
+<section class="section_text section--small-top-spacing">
   {{ if statutes_headline_addition }}
     <h2 class="section-headline--addition">{{ statutes_headline_addition }}</h2>
   {{ /if }}

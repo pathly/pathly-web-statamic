@@ -2,10 +2,10 @@
 id: 447a7021-51fa-4939-903c-15f8a32d604a
 blueprint: our-mission
 title: 'Unsere Mission'
-intro_image--big: ribbons_big.svg
+intro_image--big: mission-big.svg
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1636626456
+updated_at: 1636910116
 mission_section:
   -
     headline_addition: 'Unsere Mission'
@@ -64,6 +64,6 @@ template: our-mission
 description: 'Deswegen gibt es Pathly'
 icon: icons/nav_mission.svg
 cta_toggle: true
-intro_image--small: ribbons_small.svg
-cta: f67d9c6c-015c-4d33-af37-dbbdb50d7347
+intro_image--small: mission-small.svg
+cta: 4257810f-4ba7-44ca-a0a2-8ee85aa3439f
 ---

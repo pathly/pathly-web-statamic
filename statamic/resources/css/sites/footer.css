@@ -104,7 +104,7 @@
 
 .footer_nav_list li {
   padding: var(--root8px) var(--root16px);
-  border-radius: calc(var(--root20x) + 2 * var(--root16px)); /* fontsize + 2 * padding */
+  border-radius: calc(var(--root24x) + 2 * var(--root16px)); /* fontsize + 2 * padding */
   margin-left: var(--root32px);
 }
 

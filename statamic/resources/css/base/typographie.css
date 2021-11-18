@@ -72,10 +72,9 @@ p + p {
   margin-top: var(--root24px);
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none;
-  cursor: pointer;
+a {
+  font-family: 'neue-kabel';
+  font-weight: 700;
+  font-size: var(--root24px);
+  color: rgb(var(--primaryPurple));
 }

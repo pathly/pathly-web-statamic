@@ -287,9 +287,11 @@
   text-overflow: ellipsis;
   overflow: hidden;
   display: block;
+  margin-bottom: calc(-1 * var(--root4px));
 }
 
 .header_nav_sub_list > li > a > div .header_nav_sub_list_description {
+  font-size: var(--root20px);
   font-weight: 400;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -351,7 +353,7 @@
     margin: 0;
     height: 100%;
     max-height: none;
-    padding: 0 var(--root40px) 0 var(--root80px);
+    padding: 0 var(--root40px) var(--root80px) var(--root40px);
     display: flex;
     flex-direction: column;
     border-radius: 0;

@@ -357,6 +357,11 @@ section {
   margin-top: var(--root40px);
 }
 
+.section_alternating-pattern > div a {
+  display: block;
+  margin-top: var(--root40px);
+}
+
 @media (max-width: 450px) {
   .section_alternating-pattern h1,
   .section_alternating-pattern .section-headline,
@@ -642,21 +647,22 @@ button {
   transform: translateY(-0.5em);
 }
 
-.text-link {
-  display: block;
-  font-family: "neue-kabel";
-  font-weight: 700;
-  color: rgb(var(--primaryPurple));
+.mail-link {
   position: relative;
-  padding-left: var(--root32px);
-  margin-top: var(--root40px);
+  padding-left: var(--root40px);
 }
 
-.text-link::before {
-  content: "\2192";
+.mail-link::before {
+  width: var(--root24px);
+  height: 100%;
   position: absolute;
+  top: 0;
   left: 0;
-  color: rgb(var(--primaryPurple));
+  content: "";
+  background-image: url("../images/mail.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 

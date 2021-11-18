@@ -183,9 +183,25 @@
   }
 
   .newsletter_mailbox-image {
-    width: 18rem;
+    width: 13rem;
+    top: -2rem;
+    left: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .newsletter_mailbox-image {
+    width: 13rem;
     top: -2rem;
     left: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .newsletter_mailbox-image {
+    width: 11rem;
+    top: -1rem;
+    left: 2rem;
   }
 }
 

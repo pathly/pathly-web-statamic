@@ -1,3 +1,35 @@
+<!-- .mj-embedded-header {
+  font-weight: 700;
+  font-size: 2rem; /* 48px */
+  text-align: center;
+  color: rgb(49, 67, 85); /* primary text dark */
+  margin-bottom: 1.67rem; /* 40px */
+}
+
+@media (max-width: 650px) {
+  .mj-embedded-header {
+    font-size: 1.67rem; /* 40px */
+  }
+}
+
+.mj-embedded-body {
+  font-size: 0.83rem; /* 20px */
+  text-align: center;
+  color: rgb(49, 67, 85); /* primary text dark */
+  max-width: 800px;
+  margin: 0 auto 1.67rem auto; /* 40px */
+} -->
+
+<!-- <div class="mj-embedded-header">
+  <div class="mj-embedded-title">Newsletter</div>
+</div>
+
+<div class="mj-embedded-body">
+  <p>Meld Dich für unseren Newsletter an und erhalte Highlights aus Geschichten, Tipps und Infos direkt auf dein Smartphone!</p>
+</div> -->
+
+
+
 <style style="">
 
   * {
@@ -6,12 +38,13 @@
     padding: 0;
   }
 
-  html {
+  html,
+  body {
     font-family: Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
-    color: rgb(49, 67, 85);
+    font-size: 24px;
+    color: #314355;
     hyphens: none;
     -webkit-hyphens: none;
     -moz-hyphens: none;
@@ -19,42 +52,36 @@
     -o-hyphens: none;
   }
 
-  @media (max-width: 800px) {
-    html {
-      font-size: 18px;
+  @media (max-width: 1600px) {
+    html,
+    body {
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    html,
+    body {
+      font-size: 20px;
     }
   }
 
   .mj-embedded {
-    padding-bottom: 4rem; /* otherwise button shadow is cut */
+    padding-bottom: 3rem; /* otherwise button shadow is cut */
   }
 
   .mj-embedded-content {
-    padding: 4rem; /* 80px */
+    padding: 3.33rem; /* 80px */
+    padding-top: 0;
     background-color: rgb(246, 249, 255); /* primary text light */
-    border-radius: 0.8rem; /* 16px */
+    border-radius: 0 0 0.67rem 0.67rem; /* 16px */
   }
 
-  .mj-embedded-header {
-    font-weight: 700;
-    font-size: 2.4rem; /* 48px */
-    text-align: center;
-    color: rgb(49, 67, 85); /* primary text dark */
-    margin-bottom: 2rem; /* 40px */
-  }
-
-  @media (max-width: 650px) {
-    .mj-embedded-header {
-      font-size: 2rem; /* 40px */
+  @media (max-width: 600px) {
+    .mj-embedded-content {
+      padding-left: 1rem; /* 24px */
+      padding-right: 1rem; /* 24px */
     }
-  }
-
-  .mj-embedded-body {
-    font-size: 1rem; /* 20px */
-    text-align: center;
-    color: rgb(49, 67, 85); /* primary text dark */
-    max-width: 800px;
-    margin: 0 auto 2rem auto; /* 40px */
   }
 
   .mj-embedded-footer {
@@ -67,12 +94,16 @@
   .w-preview-fields-content-row {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   .w-preview-fields-content-cell {
     flex-grow: 1;
-    margin: 0 0.8rem; /* 16px */
+    margin: 0 0.67rem; /* 16px */
     padding: 0 !important;
+    width: 100%;
+    max-width: 400px;
   }
 
   @media (max-width: 750px) {
@@ -81,15 +112,15 @@
     }
 
     .w-preview-fields-content-cell:not(:last-child) {
-      margin-bottom: 0.8rem; /* 16px */
+      margin-bottom: 0.67rem; /* 16px */
     }
   }
 
   .w-preview-fields-content-cell input {
-    font-size: 1rem; /* 20px */
-    padding: 0.8rem 2.4rem; /* 16px 48px */
+    font-size: 0.83rem; /* 20px */
+    padding: 0.67rem 2rem; /* 16px 48px */
     border: 2px solid rgb(255, 105, 110); /* primary red */
-    border-radius: calc(2 * 0.8rem + 1rem); /* 2 * padding + fontsize */
+    border-radius: calc(2 * 0.67rem + 0.83rem); /* 2 * padding + fontsize */
     width: 100%;
     background-color: #FBFDFF;
     outline: none;
@@ -105,23 +136,23 @@
     position: absolute;
     width: 100%;
     text-align: center;
-    bottom: calc((4rem + ((2 * 0.8rem + 1rem) / 2)) * -1); /* (iframe padding + half of button height)  */
+    bottom: calc((3.33rem + ((2 * 0.67rem + 0.83rem) / 2)) * -1); /* (iframe padding + half of button height)  */
   }
 
   .mj-subscribe-button {
     font-family: Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 1rem; /* 20px */
+    font-size: 0.83rem; /* 20px */
     text-align: center;
 
-    border-radius: calc(1rem + 2 * 0.8rem); /* font-size + 2 * padding */
+    border-radius: calc(0.83rem + 2 * 0.67rem); /* font-size + 2 * padding */
     display: inline-block; /* otherwise padding not counted for offset */
-    padding: 0.8rem 2.4rem; /* 16px 48px */
+    padding: 0.67rem 2rem; /* 16px 48px */
 
     background-color: rgb(255, 105, 110); /* primary red */
-    box-shadow: 0 0.4rem 2.4rem rgba(255, 105, 110, 0.2); /* 8px 48px */
-    -moz-box-shadow:  0 0.4rem 2.4rem rgba(255, 105, 110, 0.2); /* 8px 48px */
-    -webkit-box-shadow:  0 0.4rem 2.4rem rgba(255, 105, 110, 0.2); /* 8px 48px */
+    box-shadow: 0 0.33rem 2rem rgba(255, 105, 110, 0.2); /* 8px 48px */
+    -moz-box-shadow:  0 0.33rem 2rem rgba(255, 105, 110, 0.2); /* 8px 48px */
+    -webkit-box-shadow:  0 0.33rem 2rem rgba(255, 105, 110, 0.2); /* 8px 48px */
     color: rgb(246, 249, 255);
 
     transition: all 0.5s ease;
@@ -139,14 +170,6 @@
 
 <div class="mj-embedded" style="height: auto;">
   <div class="mj-embedded-content">
-    <div class="mj-embedded-header">
-      <div class="mj-embedded-title">Newsletter</div>
-    </div>
-
-    <div class="mj-embedded-body">
-      <p>Meld Dich für unseren Newsletter an und erhalte Highlights aus Geschichten, Tipps und Infos direkt auf dein Smartphone!</p>
-    </div>
-
     <div class="mj-embedded-footer">
       <div class="mj-form">
         <div class="w-preview-field-table">

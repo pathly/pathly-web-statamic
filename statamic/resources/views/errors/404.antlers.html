@@ -1,12 +1,15 @@
 <style>
   body {
     background-color: rgb(var(--darkViolett));
+    height: 100vh;
+  }
+
+  #error-image-wrapper {
+    grid-column: 2/13;
   }
 
   #error-image {
-    grid-column: 2/13;
     width: 100%;
-    margin-bottom: 5em;
   }
 
   #left-light-fern {
@@ -49,8 +52,10 @@
   }
 </style>
 
-<img id="error-image"       src="/images/error_404.svg"     loading="lazy"  alt="404 – Wir haben ein Problem">
-<img id="left-dark-fern"    src="/images/flower_dark.svg"   loading="lazy"  alt="Pflanze">
-<img id="left-light-fern"   src="/images/flower_light.svg"  loading="lazy"  alt="Pflanze">
-<img id="right-dark-fern"   src="/images/flower_dark.svg"   loading="lazy"  alt="Pflanze">
-<img id="right-light-fern"  src="/images/flower_light.svg"  loading="lazy"  alt="Pflanze">
+<a id="error-image-wrapper" href="/">
+  <img id="error-image"       src="/images/error_404.svg"     loading="lazy"  alt="404 – Wir haben ein Problem">
+</a>
+<img   id="left-dark-fern"    src="/images/flower_dark.svg"   loading="lazy"  alt="Pflanze">
+<img   id="left-light-fern"   src="/images/flower_light.svg"  loading="lazy"  alt="Pflanze">
+<img   id="right-dark-fern"   src="/images/flower_dark.svg"   loading="lazy"  alt="Pflanze">
+<img   id="right-light-fern"  src="/images/flower_light.svg"  loading="lazy"  alt="Pflanze">

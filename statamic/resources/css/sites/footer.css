@@ -7,6 +7,7 @@
   display: block;
   margin-bottom: 10.42em; /* 250px // based on 24px */
   position: revert;
+  z-index: 1;
 }
 
 .footer_social-media p {
@@ -27,6 +28,7 @@
   left: 10vw;
   width: 40%;
   height: auto;
+  z-index: -1;
 }
 
 @media (max-width: 1400px) {
@@ -37,7 +39,7 @@
 
 @media (max-width: 1200px) {
   .footer_social-media img {
-    bottom: 9rem;
+    bottom: 8rem;
     left: 5vw;
     width: 70%;
   }
@@ -104,7 +106,7 @@
 
 .footer_nav_list li {
   padding: var(--root8px) var(--root16px);
-  border-radius: calc(var(--root24x) + 2 * var(--root16px)); /* fontsize + 2 * padding */
+  border-radius: calc(var(--root24px) + 2 * var(--root16px)); /* fontsize + 2 * padding */
   margin-left: var(--root32px);
 }
 

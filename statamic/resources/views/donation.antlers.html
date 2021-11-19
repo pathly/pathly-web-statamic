@@ -12,8 +12,17 @@
   </div>
 </section>
 
+<section class="section_video-full-width section--small-top-spacing">
+  <h2 id="donation_options" class="section-headline">{{ donation_video_headline }}</h2>
+  <div>
+    <iframe width="560" height="315" src="{{ donation_video_url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</section>
+
 <section class="section_pattern section--small-top-spacing">
-  <h2 class="section-headline--addition">{{ options_headline_addition }}</h2>
+  {{ if intro_headline_addition }}
+    <h2 class="section-headline--addition">{{ options_headline_addition }}</h2>
+  {{ /if }}
   <h2 id="donation_options" class="section-headline">{{ donation-options_headline }}</h2>
   <div class="link-list">
     {{ donation-options_buttons }}
@@ -54,7 +63,9 @@
 </section>
 
 <section class="section_pattern section--small-top-spacing">
-  <h2 class="section-headline--addition">{{ more-options_headline_addition }}</h2>
+  {{ if intro_headline_addition }}
+    <h2 class="section-headline--addition">{{ more-options_headline_addition }}</h2>
+  {{ /if }}
   <h2 id="donation_more-options" class="section-headline">{{ more-options_headline }}</h2>
   {{ more-options_options }}
     <div class="accordion">

@@ -68,6 +68,32 @@ sections:
       -
         import: standard_section_w_image
         prefix: intro_
+  video:
+    display: Video
+    fields:
+      -
+        handle: donation_video_headline
+        field:
+          input_type: text
+          antlers: false
+          display: Headline
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: donation_video_url
+        field:
+          input_type: url
+          antlers: false
+          display: 'Video URL'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+          instructions: 'Youtube Video > Teilen > Einbetten > Erweiterten Datenschutzmodus aktivieren > Inhalt von src="" kopieren'
   donation-options:
     display: 'Donation Options'
     fields:
@@ -264,7 +290,7 @@ sections:
       -
         import: prefooter
   opengraph:
-    display: Open Graph
+    display: 'Open Graph'
     fields:
       -
         import: opengraph

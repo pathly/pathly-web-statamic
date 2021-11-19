@@ -40,7 +40,7 @@ more-options_options:
 cta_toggle: true
 cta: f67d9c6c-015c-4d33-af37-dbbdb50d7347
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1637317816
+updated_at: 1637360461
 donation-options_bank-transfer_headline: 'Oder per Überweisung spenden!'
 donation-options_contribution-receipt_headline: 'Spendenquittung fürs Finanzamt'
 donation-options_contribution-receipt_textarea: 'Bei einer Spende unter 200€ reicht dem Finanzamt der Nachweis auf deinem Kontoauszug, bei Spenden über 200€ stellen wir dir selbstverständlich eine Spenden Quittung aus.'
@@ -52,4 +52,6 @@ donation-options_bank-transfer_bic: GENODEF1SLR
 og_title: Spenden
 og_description: 'Hilf uns beim Helfen – Jede Spende zählt!'
 og_image: opengraph/og_donation.png
+donation_video_headline: 'Warum für Pathly spenden?'
+donation_video_url: 'https://www.youtube-nocookie.com/embed/xSzyNXDDIfg'
 ---

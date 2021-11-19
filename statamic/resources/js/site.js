@@ -17,6 +17,10 @@ $(document).ready(function() {
       $("#header_nav").removeClass("sub-menu-active");
   });
 
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+
 // ------------------------------
 // ----- Slick Slider
 // ------------------------------

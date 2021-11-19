@@ -263,6 +263,33 @@ section {
 
 
 /* -------------------------------------------------------------------------------- */
+/* --- section newsletter --- */
+/* -------------------------------------------------------------------------------- */
+
+.section_video-full-width {
+  grid-column: 3/12;
+  display: block;
+}
+
+.section_video-full-width div {
+  padding-top: 56.25%;
+  position: relative;
+  border-radius: var(--root40px);
+  overflow: hidden;
+}
+
+.section_video-full-width iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--root40px);
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
 /* --- section pattern--- */
 /* -------------------------------------------------------------------------------- */
 

@@ -55,3 +55,8 @@ sections:
           localizable: true
           validate:
             - required
+  opengraph:
+    display: Open Graph
+    fields:
+      -
+        import: opengraph

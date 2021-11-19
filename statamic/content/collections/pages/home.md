@@ -4,8 +4,8 @@ blueprint: home
 title: Projekt
 author: a213c844-224f-4cde-a891-d1f543fd3b61
 template: home
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1636910763
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1637317403
 intro_headline: 'Dein digitaler Wegweiser durch den Alltag mit Krebs'
 about-project_headline_addition: 'Das ist Pathly'
 about-project_headline: 'Ein digitaler Wegweiser für die Hosentasche.'
@@ -27,4 +27,9 @@ all-supporters_headline_addition: 'Wir & Ihr'
 all-supporters_headline: 'Unsere Unterstützer:innen'
 cta_toggle: false
 cta: f67d9c6c-015c-4d33-af37-dbbdb50d7347
+newsletter_headline: Newsletter
+newsletter_textarea: 'Meld Dich für unseren Newsletter an und erhalte Highlights aus Geschichten, Tipps und Infos direkt auf dein Smartphone!'
+og_title: Pathly
+og_description: 'Dein digitaler Wegweiser durch den Alltag mit Krebs'
+og_image: opengraph/og_home.png
 ---

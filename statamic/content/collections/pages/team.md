@@ -63,7 +63,7 @@ team_profiles:
     team_profile_image: supporter/MarcelWittrin_500.png
     team_profile_name: 'Marcel Wittrin'
     team_profile_responsibilities:
-      - development
+      - webDevelopment
     team_profile_mail: null
   -
     team_profile_image: supporter/SabineAntweiler_500.png
@@ -75,13 +75,13 @@ team_profiles:
     team_profile_image: supporter/JanNaubert_500.png
     team_profile_name: 'Jan Naubert'
     team_profile_responsibilities:
-      - development
+      - webDevelopment
     team_profile_mail: null
   -
     team_profile_image: supporter/Elena-Weber_500.png
     team_profile_name: 'Elena Weber'
     team_profile_responsibilities:
-      - contentCreation
+      - publicRelations
     team_profile_mail: null
   -
     team_profile_image: supporter/RonahiSolmaz_500.png
@@ -89,10 +89,13 @@ team_profiles:
     team_profile_responsibilities:
       - contentCreation
     team_profile_mail: null
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1637101203
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1637317597
 template: our-team
 cta_toggle: true
 cta: 26cd6f15-97c9-4d5d-b701-6725436ce2b0
 intro_image--small: Team-Mobil.svg
+og_title: 'Unser Team'
+og_description: 'Lerne unser Team kennen!'
+og_image: opengraph/og_team.png
 ---

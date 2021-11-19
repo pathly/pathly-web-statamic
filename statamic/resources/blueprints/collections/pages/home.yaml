@@ -61,6 +61,30 @@ sections:
       -
         import: standard_section_w_image
         prefix: about-founders_
+  newsletter:
+    display: Newsletter
+    fields:
+      -
+        handle: newsletter_headline
+        field:
+          input_type: text
+          antlers: false
+          display: Headline
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: newsletter_textarea
+        field:
+          antlers: false
+          display: Textarea
+          type: textarea
+          icon: textarea
+          listable: hidden
+          validate:
+            - required
   supporter:
     display: All Supporters
     fields:
@@ -91,3 +115,8 @@ sections:
     fields:
       -
         import: prefooter
+  opengraph:
+    display: Open Graph
+    fields:
+      -
+        import: opengraph

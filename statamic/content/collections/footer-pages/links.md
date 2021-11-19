@@ -48,4 +48,7 @@ cta_toggle: true
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1636747549
 cta: fff42fe4-4d5c-484a-b43d-f5eecec74f70
+og_title: Pathly
+og_description: 'Dein digitaler Wegweiser durch den Alltag mit Krebs'
+og_image: opengraph/og_home.png
 ---

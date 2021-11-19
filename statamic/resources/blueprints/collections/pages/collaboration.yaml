@@ -200,3 +200,15 @@ sections:
           type: grid
           icon: grid
           listable: hidden
+          validate:
+            - required
+  prefooter:
+    display: Prefooter
+    fields:
+      -
+        import: prefooter
+  opengraph:
+    display: Open Graph
+    fields:
+      -
+        import: opengraph

@@ -8,14 +8,18 @@
     <meta name="designer" content="{{ designer }}">
     <meta name="copyright" content="{{ copyright }}">
     <meta name="geo.position" content="{{ geo_position }}">
-
-    <meta property="og:title" content="{{ title }}"/>
-    <meta property="og:description" content="{{ description }}" />
-    <meta property="og:locale" content="de_DE" />
-    <meta property="og:url" content="https://pathly.app" />
-    <meta property="og:image" content="" />
-    <meta property="og:type" content="website" />
   {{ /meta-data }}
+
+  {{ opengraph }}
+    <meta property="og:title" content="{{ og_title }}"/>
+    <meta property="og:description" content="{{ og_description }}" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:url" content="{{ current_url }}" />
+    {{ og_image }}
+      <meta property="og:image" content="{{ url }}" />
+    {{ /og_image }}
+    <meta property="og:type" content="website" />
+  {{ opengraph }}
 
   <link rel="canonical" href="https://pathly.app" />
 

@@ -158,9 +158,11 @@ sections:
                   headDesign: 'Head of Design'
                   contentCreation: 'Content Creation'
                   illustration: Illustration
-                  development: Development
+                  webDevelopment: 'Web Development'
+                  appDevelopment: 'App Development'
                   design: Design
                   business: Business
+                  publicRelations: 'Öffentlichkeitsarbeit'
                 taggable: false
                 push_tags: false
                 cast_booleans: false
@@ -193,3 +195,8 @@ sections:
     fields:
       -
         import: prefooter
+  opengraph:
+    display: Open Graph
+    fields:
+      -
+        import: opengraph

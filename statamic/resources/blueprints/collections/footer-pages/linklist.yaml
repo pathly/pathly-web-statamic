@@ -92,3 +92,8 @@ sections:
     fields:
       -
         import: prefooter
+  opengraph:
+    display: Open Graph
+    fields:
+      -
+        import: opengraph

@@ -7,10 +7,10 @@
   <nav id="header_nav" class="header_nav">
     <img class="header_nav_mobile-burger-button" src="/images/menu_burgermenu.svg" alt="burger menu" loading="lazy"/>
 
-    <a href="/organisation/donate" class="cta-button donation-button">Spenden</a>
+    <a href="/donate" class="cta-button donation-button">Spenden</a>
 
     <ul class="header_nav_list">
-      {{ nav:collection:pages include_home="true" }}
+      {{ nav:main-nav include_home="true" }}
         {{ if children }}
           <li class="is-parent">
             <a class="link {{ is_current || is_parent ?= 'active' }}">{{ title }}</a>
@@ -41,7 +41,7 @@
             <a class="link {{ is_current || is_parent ?= 'active' }}" href="{{ url }}">{{ title }}</a>
           </li>
         {{ /if }}
-      {{ /nav:collection:pages }}
+      {{ /nav:main-nav }}
     </ul>
 
     <ul class="header_nav_list header_footer_nav_list">

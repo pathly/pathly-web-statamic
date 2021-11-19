@@ -2,8 +2,6 @@ tree:
   -
     entry: 1250a9ec-aa51-401c-8f93-5a0d7e6844fd
   -
-    entry: 66978426-e477-48bd-a511-b4593d8e02f9
-  -
     entry: fb9b709e-70d1-4b44-8658-b9d4a845c495
     children:
       -
@@ -16,5 +14,5 @@ tree:
         entry: 447a7021-51fa-4939-903c-15f8a32d604a
       -
         entry: ca52693e-4925-4fb8-ac76-e362f473e61a
-  -
-    entry: cab13a7b-8846-4c47-8ec4-8424d0d68f31
+      -
+        entry: cab13a7b-8846-4c47-8ec4-8424d0d68f31

@@ -1,0 +1,103 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        working-directory: statamic/
+        run: composer install --no-progress
+
+      - name: Create archive
+        run: tar czf build.tar.gz statamic/
+
+      - name: 
+        uses: actions/upload-artifact@v2
+        
+        with:
+          name: build-archive
+          path: build.tar.gz
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    env:
+      SSH_HOST: ${{ secrets.SSH_HOST }}
+      SSH_PORT: ${{ secrets.SSH_PORT }}
+      SSH_USER: ${{ secrets.SSH_USER }}
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: build-archive
+
+      - name: Prepare .ssh
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+
+      - name: Add fingerprint of remote host
+        env:
+          SSH_FINGERPRINT: ${{ secrets.SSH_FINGERPRINT }}
+        run: |
+          echo "$SSH_FINGERPRINT" > ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Add SSH private key
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+      - name: Create necessary folders on remote machine
+        run: |
+            ssh -p$SSH_PORT $SSH_USER@$SSH_HOST << CODE
+              mkdir -p ~/releases/uploading
+              mkdir -p ~/releases/current
+              mkdir -p ~/shared
+            CODE
+
+      - name: Transfer build archive to remote machine
+        run: rsync -azP --rsh="ssh -p$SSH_PORT" build.tar.gz $SSH_USER@$SSH_HOST:~/releases/uploading
+
+      - name: Deploy build
+        run: |
+          ssh -p$SSH_PORT $SSH_USER@$SSH_HOST << CODE
+            cd ~/releases/uploading
+
+            # Extract build archive
+            tar xzf build.tar.gz
+
+            # Move build to releases directory
+            mv statamic next
+            cp -r next ~/releases/
+
+            # Remove uploaded build archive
+            rm -rf ~/releases/uploading
+
+            # Add .env file
+            cd ~/releases/next
+            ln -sfn ~/shared/.env .env
+
+            # Prepare Statamic
+            cd ~/releases/next
+            php please route:clear
+            php please cache:clear
+            php please view:clear
+            php please config:clear
+
+            # Replace previous release with next one
+            mv ~/releases/current ~/releases/previous
+            mv ~/releases/next ~/releases/current
+
+            # Remove previous release
+            rm -rf ~/releases/previous
+          CODE

@@ -15,7 +15,7 @@
 }
 
 #sponsors_profile .alternating-tiles_image-container {
-  background-color: rgb(var(--blueUltraLightViolett));
+  background-color: rgb(var(--primaryTextLight));
   aspect-ratio: 1;
   padding: var(--root40px);
 }

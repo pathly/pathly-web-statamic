@@ -102,6 +102,7 @@
 
 .footer_nav_list {
   display: flex;
+  margin-left: var(--root32px);
 }
 
 .footer_nav_list li {

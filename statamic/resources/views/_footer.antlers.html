@@ -1,32 +1,36 @@
 <footer class="main-footer main-grid section--big-top-spacing">
-  <section class="footer_social-media">
-    {{ social-media }}
-      <p>
-        {{ social-media_textarea }}
+  {{ if current_template !== "errors.404" }}
+    <section class="footer_social-media">
+      {{ social-media }}
+        <p>
+          {{ social-media_textarea }}
 
-        {{ social-media_profiles }}
-          {{ if last }}
-            <a target="_blank" href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a>.
-          {{ elseif social-media_profiles|count > 2 && index !== social-media_profiles|count|subtract:2 }}
-            <a target="_blank" href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a>,
-          {{ else }}
-            <a target="_blank" href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a> und
-          {{ /if }}
-        {{ /social-media_profiles }}
+          {{ social-media_profiles }}
+            {{ if last }}
+              <a target="_blank" href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a>.
+            {{ elseif social-media_profiles|count > 2 && index !== social-media_profiles|count|subtract:2 }}
+              <a target="_blank" href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a>,
+            {{ else }}
+              <a target="_blank" href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a> und
+            {{ /if }}
+          {{ /social-media_profiles }}
 
-        {{ mail_textarea }}
-        <a href="mailto:{{ mail_address }}?subject={{ mail_subject }}&body={{ mail_body }}">Mail</a>.
-      </p>
-    {{ /social-media }}
-    <img src="/images/social-media_background.svg" alt="background" loading="lazy"/>
-  </section>
+          {{ mail_textarea }}
+          <a href="mailto:{{ mail_address }}?subject={{ mail_subject }}&body={{ mail_body }}">Mail</a>.
+        </p>
+      {{ /social-media }}
+      <img src="/images/social-media_background.svg" alt="background" loading="lazy"/>
+    </section>
+  {{ endif }}
 
   <nav id="footer_nav" class="footer_nav">
     <a href="/">&copy; 2021 <span>{{ meta-data }}{{ copyright }}{{ /meta-data }}</span></a>
     <ul class="footer_nav_list">
       {{ nav:collection:footer-pages include_home="true" }}
-        <li><a class="link {{ is_current ?= 'active' }}" href="{{ url }}">{{ title }}</a></li>
+        <li><a class="{{ is_current ?= 'active' }}" href="{{ url }}">{{ title }}</a></li>
       {{ /nav:collection:footer-pages }}
     </ul>
   </nav>
+
+  {{ oreos:popup }}
 </footer>

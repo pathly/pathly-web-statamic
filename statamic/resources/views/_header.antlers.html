@@ -13,7 +13,7 @@
       {{ nav:main-nav include_home="true" }}
         {{ if children }}
           <li class="is-parent">
-            <a class="link {{ is_current || is_parent ?= 'active' }}">{{ title }}</a>
+            <a class="{{ is_current || is_parent ?= 'active' }}">{{ title }}</a>
             <div class="header_nav_sub">
               <ul class="header_nav_sub_list shadow">
                 <div class="header_nav_sub_mobile-back-button">

@@ -41,13 +41,16 @@
   <script src="{{ mix src='js/site.js' }}"></script>
   <script type="text/javascript" src="https://app.mailjet.com/statics/js/iframeResizer.min.js"></script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-94KK41FZVL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-94KK41FZVL', { 'anonymize_ip': true } );
-  </script>
+  {{ if {oreo:analytics} }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-94KK41FZVL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-94KK41FZVL', { 'anonymize_ip': true } );
+    </script>
+  {{ /if }}
+
 </head>
 
 {{ partial:header }}
@@ -59,7 +62,5 @@
   </main>
 </body>
 
-{{ if current_template !== "errors.404" }}
-  {{ partial:footer }}
-{{ endif }}
+{{ partial:footer }}
 </html>

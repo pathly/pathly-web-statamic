@@ -21,6 +21,13 @@ $(document).ready(function() {
     obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
   }
 
+  // open and close configure menu of cookie banner
+  $(".oreos-form_buttons .configure-button").on("click", function () {
+      $(this).addClass("hidden");
+      $(".oreos-form_buttons .save-button").removeClass("hidden");
+      $(".oreos-form_options").removeClass("hidden");
+  });
+
 // ------------------------------
 // ----- Slick Slider
 // ------------------------------

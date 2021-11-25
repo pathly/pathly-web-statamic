@@ -2,7 +2,7 @@
 id: 447a7021-51fa-4939-903c-15f8a32d604a
 blueprint: our-mission
 title: 'Unsere Mission'
-intro_image--big: mission-big.svg
+intro_image--big: ribbons-big.svg
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1637359814
@@ -17,7 +17,7 @@ mission_section:
         enabled: true
       -
         textarea: |-
-          Viele Infos rund um das Thema Krebs fokussieren sich auf medizinische Informationen, sind stigmatisierend, umständlich und kompliziert formuliert. Oft werden Betroffene nach der Diagnose mit Infos überschüttet, man fühlt sich überfordert und irgendwie auch alleingelassen. Etliche neue Herausforderungen kommen auf einen zu. Physische, psychische und soziale. Viele dieser Herausforderungen betreffen nicht nur die Patient:innen selbst, sondern auch auf ihre Angehörigen, welche leider häufig vergessen werden. Also was ist mit Mama, Papa, Partner:in oder Freund:in? Auch für sie gibt es Pathly. 
+          Viele Infos rund um das Thema Krebs fokussieren sich auf medizinische Informationen, sind stigmatisierend, umständlich und kompliziert formuliert. Oft werden Betroffene nach der Diagnose mit Infos überschüttet, man fühlt sich überfordert und irgendwie auch alleingelassen. Etliche neue Herausforderungen kommen auf einen zu. Physische, psychische und soziale. Viele dieser Herausforderungen betreffen nicht nur die Patient:innen selbst, sondern auch auf ihre Angehörigen, welche leider häufig vergessen werden. Also was ist mit Mama, Papa, Partner:in oder Freund:in? Auch für sie gibt es Pathly.
 
           Wir möchten auch diejenigen abholen, die bisher vergessen wurden. Wir wollen aufstehen und über Themen reden, über die bisher meist nur mit vorgehaltener Hand gesprochen wurde. Wir möchten den Alltag mit Krebs verändern.
         type: textarea
@@ -41,7 +41,7 @@ mission_section:
         enabled: true
       -
         textarea: |-
-          Pathly unterstützt Betroffene ab dem Augenblick der Diagnose, über die Therapie, bei der Nachsorge bis hin zum Leben nach dem Krebs. Pathly soll sie dabei in ihrer ganz individuellen Lebenssituation abholen und Schritt für Schritt durch den Alltag mit Krebs begleiten. Wichtige Tipps und Infos werden Stück für Stück zur Verfügung gestellt. Geschichten von Krebspatient:innen und Angehörigen sollen Mut, Kraft und Zuversicht schenken und den Betroffenen zeigen, dass sie nicht allein sind. 
+          Pathly unterstützt Betroffene ab dem Augenblick der Diagnose, über die Therapie, bei der Nachsorge bis hin zum Leben nach dem Krebs. Pathly soll sie dabei in ihrer ganz individuellen Lebenssituation abholen und Schritt für Schritt durch den Alltag mit Krebs begleiten. Wichtige Tipps und Infos werden Stück für Stück zur Verfügung gestellt. Geschichten von Krebspatient:innen und Angehörigen sollen Mut, Kraft und Zuversicht schenken und den Betroffenen zeigen, dass sie nicht allein sind.
 
           Auf spielerische Art und Weise möchten wir Motivation aufbauen und mentale Stärke aufbauen. Wir möchten dabei helfen das Leben trotz Krebs zu genießen und sich nicht fallen zu lassen. Kleine Challenges sollen dabei helfen, natürlich angepasst auf die jeweilige körperliche und mentale Verfassung, in der sich die Betroffenen an diesem Tag befinden.
         type: textarea
@@ -85,7 +85,7 @@ template: our-mission
 description: 'Deswegen gibt es Pathly'
 icon: icons/nav_mission.svg
 cta_toggle: true
-intro_image--small: mission-small.svg
+intro_image--small: ribbons-small.svg
 cta: 4257810f-4ba7-44ca-a0a2-8ee85aa3439f
 og_title: 'Unsere Mission'
 og_description: 'Unsere Mission'

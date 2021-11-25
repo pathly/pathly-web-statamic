@@ -1,7 +1,6 @@
 {{ if cta_toggle }}
   {{ cta }}
     <section class="{{ cta_image_position == 'left' ?= 'section_text-w-image-left' }}{{ cta_image_position == 'right' ?= 'section_text-w-image-right' }} section--small-top-spacing">
-
       {{ cta_image }}
         <img src="{{ url }}" alt="{{ alt }}" loading="lazy">
       {{ /cta_image }}

@@ -4,15 +4,15 @@ blueprint: home
 title: Projekt
 author: a213c844-224f-4cde-a891-d1f543fd3b61
 template: home
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1637364727
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1637876747
 intro_headline: 'Dein digitaler Wegweiser durch den Alltag mit Krebs'
 about-project_headline_addition: 'Das ist Pathly'
 about-project_headline: 'Ein digitaler Wegweiser für die Hosentasche.'
 about-project_textarea: |-
-  Krebs. Eine Diagnose, die einen extremen Einschnitt im Leben der Betroffenen bedeutet. Das Leben ändert sich schlagartig. 
-  Mit Pathly solle eine Plattform entstehen, die Krebspatient:innen und ihre Angehörigen auf dem Weg durch die Erkrankung begleitet, ihnen dabei hilft, den richtigen Umgang mit der Erkrankung und auch den möglichen Folgen zu finden. Pathly informiert, inspiriert und macht Mut!
-about-project_image: ribbons_small.svg
+  Krebs. Eine Diagnose, die einen extremen Einschnitt im Leben der Betroffenen bedeutet. Das Leben ändert sich schlagartig.
+  Mit Pathly solle eine Plattform entstehen, die Krebspatient:innen und ihre Angehörigen auf dem Weg durch die Erkrankung begleitet, ihnen dabei hilft, den richtigen Umgang mit der Erkrankung und auch den möglichen Folgen zu finden. Pathly informiert, inspiriert und macht Mut!
+about-project_image: ribbons-small.svg
 about-project_image_position: right
 about-founders_headline_addition: Hallo!
 about-founders_headline: 'Wir sind Thora und Rebecca.'
@@ -24,11 +24,10 @@ about-founders_image: cofounders.png
 about-founders_image_position: left
 all-supporters_headline_addition: 'Wir & Ihr'
 all-supporters_headline: 'Unsere Unterstützer:innen'
-cta_toggle: false
-cta: f67d9c6c-015c-4d33-af37-dbbdb50d7347
 newsletter_headline: Newsletter
 newsletter_textarea: 'Meld Dich für unseren Newsletter an und erhalte Highlights aus Geschichten, Tipps und Infos direkt auf dein Smartphone!'
 og_title: Pathly
 og_description: 'Dein digitaler Wegweiser durch den Alltag mit Krebs'
 og_image: opengraph/og_home.png
+collaboration: f67d9c6c-015c-4d33-af37-dbbdb50d7347
 ---

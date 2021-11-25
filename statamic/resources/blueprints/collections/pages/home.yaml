@@ -61,6 +61,23 @@ sections:
       -
         import: standard_section_w_image
         prefix: about-founders_
+  collaboration:
+    display: 'Collaboration'
+    fields:
+      -
+        handle: collaboration
+        field:
+          max_items: 1
+          mode: default
+          create: true
+          collections:
+            - ctas
+          display: Choose CTA
+          type: entries
+          icon: entries
+          listable: hidden
+          validate:
+            - required
   newsletter:
     display: Newsletter
     fields:
@@ -110,11 +127,6 @@ sections:
           listable: hidden
           validate:
             - required
-  prefooter:
-    display: Prefooter
-    fields:
-      -
-        import: prefooter
   opengraph:
     display: Open Graph
     fields:

@@ -59,6 +59,22 @@
   <iframe class="mj-w-res-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/7gL6/L8b" width="100%"></iframe>
 </section>
 
+{{ collaboration }}
+  <section class="{{ cta_image_position == 'left' ?= 'section_text-w-image-left' }}{{ cta_image_position == 'right' ?= 'section_text-w-image-right' }} section--small-top-spacing">
+    {{ cta_image }}
+      <img src="{{ url }}" alt="{{ alt }}" loading="lazy"/>
+    {{ /cta_image }}
+
+    <div>
+      {{ if cta_headline_addition }}
+        <h2 class="section-headline--addition">{{ cta_headline_addition }}</h2>
+      {{ /if }}
+      <h2 id="home_project" class="section-headline">{{ cta_headline }}</h2>
+      <p>{{ cta_textarea }}</p>
+    </div>
+  </section>
+{{ /collaboration }}
+
 <section class="section_pattern section--small-top-spacing">
   {{ if all-supporters_headline_addition }}
     <h2 class="section-headline--addition">{{ all-supporters_headline_addition }}</h2>

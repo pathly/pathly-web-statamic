@@ -4,7 +4,7 @@ blueprint: our-team
 title: 'Das sind wir'
 description: 'Das Team von Pathly'
 icon: icons/nav_team.svg
-intro_image--big: supporter_crowd_big.svg
+intro_image--big: team-big.svg
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
 team_headline_addition: 'Das sind wir'
 team_headline: 'Lerne unser Team kennen'
@@ -112,7 +112,7 @@ updated_at: 1637524566
 template: our-team
 cta_toggle: true
 cta: 26cd6f15-97c9-4d5d-b701-6725436ce2b0
-intro_image--small: Team-Mobil.svg
+intro_image--small: team-small.svg
 og_title: 'Unser Team'
 og_description: 'Lerne unser Team kennen!'
 og_image: opengraph/og_team.png

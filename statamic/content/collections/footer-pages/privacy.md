@@ -264,12 +264,34 @@ textarea:
     content:
       -
         type: text
-        text: 'Telefon: 01578 455 3833'
+        text: 'Telefon: '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: '0151 6112 1523'
+              rel: null
+              target: _blank
+              title: null
+        text: '+49 151 6112 1523'
       -
         type: hard_break
       -
         type: text
-        text: 'E-Mail: rebecca@pathly.app'
+        text: 'E-Mail: '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: rebecca@pathly.app
+              rel: null
+              target: _blank
+              title: null
+        text: rebecca@pathly.app
   -
     type: paragraph
     content:
@@ -1222,6 +1244,8 @@ textarea:
         type: text
         text: "Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Kommission gestützt. Details finden Sie hier:\_"
       -
+        type: hard_break
+      -
         type: text
         marks:
           -
@@ -1234,7 +1258,9 @@ textarea:
         text: 'https://www.facebook.com/legal/EU_data_transfer_addendum'
       -
         type: text
-        text: "\_und\_"
+        text: "\_und"
+      -
+        type: hard_break
       -
         type: text
         marks:
@@ -1291,6 +1317,8 @@ textarea:
         type: text
         text: "Sie können Ihre Twitter-Datenschutzeinstellungen selbstständig in Ihrem Nutzer-Account anpassen. Klicken Sie hierzu auf folgenden Link und loggen Sie sich ein:\_"
       -
+        type: hard_break
+      -
         type: text
         marks:
           -
@@ -1311,6 +1339,8 @@ textarea:
         type: text
         text: "Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Kommission gestützt. Details finden Sie hier:\_"
       -
+        type: hard_break
+      -
         type: text
         marks:
           -
@@ -1330,6 +1360,8 @@ textarea:
       -
         type: text
         text: "Details entnehmen Sie der Datenschutzerklärung von Twitter:\_"
+      -
+        type: hard_break
       -
         type: text
         marks:
@@ -1366,6 +1398,8 @@ textarea:
         type: text
         text: "Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Kommission gestützt. Details finden Sie hier:\_"
       -
+        type: hard_break
+      -
         type: text
         marks:
           -
@@ -1378,7 +1412,9 @@ textarea:
         text: 'https://www.facebook.com/legal/EU_data_transfer_addendum'
       -
         type: text
-        text: ",\_"
+        text: "\_"
+      -
+        type: hard_break
       -
         type: text
         marks:
@@ -1392,7 +1428,9 @@ textarea:
         text: 'https://help.instagram.com/519522125107875'
       -
         type: text
-        text: "\_und\_"
+        text: "\_"
+      -
+        type: hard_break
       -
         type: text
         marks:
@@ -1442,6 +1480,8 @@ textarea:
       -
         type: text
         text: "Wir verfügen über ein Profil bei XING. Anbieter ist die New Work SE, Dammtorstraße 30, 20354 Hamburg, Deutschland. Details zu deren Umgang mit Ihren personenbezogenen Daten entnehmen Sie der Datenschutzerklärung von XING:\_"
+      -
+        type: hard_break
       -
         type: text
         marks:
@@ -1498,6 +1538,8 @@ textarea:
         type: text
         text: "Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Kommission gestützt. Details finden Sie hier:\_"
       -
+        type: hard_break
+      -
         type: text
         marks:
           -
@@ -1510,7 +1552,9 @@ textarea:
         text: 'https://www.linkedin.com/legal/l/dpa'
       -
         type: text
-        text: "\_und\_"
+        text: "\_"
+      -
+        type: hard_break
       -
         type: text
         marks:
@@ -1532,6 +1576,8 @@ textarea:
         type: text
         text: "Details zu deren Umgang mit Ihren personenbezogenen Daten entnehmen Sie der Datenschutzerklärung von LinkedIn:\_"
       -
+        type: hard_break
+      -
         type: text
         marks:
           -
@@ -1545,9 +1591,2033 @@ textarea:
       -
         type: text
         text: .
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: '10. Facebook Pixel Datenschutzerklärung'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wir verwenden auf unserer Website das Facebook-Pixel von Facebook. Dafür haben wir einen Code auf unserer Webseite implementiert. Der Facebook-Pixel ist ein Ausschnitt aus JavaScript-Code, der eine Ansammlung von Funktionen lädt, mit denen Facebook Ihre Userhandlungen verfolgen kann, sofern Sie über Facebook-Ads auf unsere Webseite gekommen sind. Wenn Sie beispielsweise ein Produkt auf unserer Webseite erwerben, wird das Facebook-Pixel ausgelöst und speichert Ihre Handlungen auf unserer Webseite in einem oder mehreren Cookies. Diese Cookies ermöglichen es Facebook Ihre Userdaten (Kundendaten wie IP-Adresse, User-ID) mit den Daten Ihres Facebook-Kontos abzugleichen. Dann löscht Facebook diese Daten wieder. Die erhobenen Daten sind für uns anonym und nicht einsehbar und werden nur im Rahmen von Werbeanzeigenschaltungen nutzbar. Wenn Sie selbst Facebook-User sind und angemeldet sind, wird der Besuch unserer Webseite automatisch Ihrem Facebook-Benutzerkonto zugeordnet.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wir wollen unsere Dienstleistungen bzw. Produkte nur jenen Menschen zeigen, die sich auch wirklich dafür interessieren. Mithilfe von Facebook-Pixel können unsere Werbemaßnahmen besser auf Ihre Wünsche und Interessen abgestimmt werden. So bekommen Facebook-User (sofern sie personalisierte Werbung erlaubt haben) passende Werbung zu sehen. Weiters verwendet Facebook die erhobenen Daten zu Analysezwecken und eigenen Werbeanzeigen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Im Folgenden zeigen wir Ihnen jene Cookies, die durch das Einbinden von Facebook-Pixel auf einer Testseite gesetzt wurden. Bitte beachten Sie, dass dies nur Beispiel-Cookies sind. Je nach Interaktion auf unserer Webseite werden unterschiedliche Cookies gesetzt.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\__fbp"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_fb.1.1568287647279.257405483-6311883099-7"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Dieses Cookie verwendet Facebook, um Werbeprodukte anzuzeigen."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 3 Monaten"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_fr"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_0aPf312HOS5Pboo2r..Bdeiuf…1.0.Bdeiuf."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Dieses Cookie wird verwendet, damit Facebook-Pixel auch ordentlich funktioniert."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 3 Monaten"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_comment_author_50ae8267e2bdf1253ec1a5769f48e062311883099-3"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_Name des Autors"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Dieses Cookie speichert den Text und den Namen eines Users, der beispielsweise einen Kommentar hinterlässt."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 12 Monaten"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_comment_author_url_50ae8267e2bdf1253ec1a5769f48e062"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_https%3A%2F%2Fwww.testseite…%2F (URL des Autors)"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Dieses Cookie speichert die URL der Website, die der User in einem Textfeld auf unserer Webseite eingibt."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 12 Monaten"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_comment_author_email_50ae8267e2bdf1253ec1a5769f48e062"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_E-Mail-Adresse des Autors"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Dieses Cookie speichert die E-Mail-Adresse des Users, sofern er sie auf der Website bekannt gegeben hat."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 12 Monaten"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: "Anmerkung:\_"
+      -
+        type: text
+        text: 'Die oben genannten Cookies beziehen sich auf ein individuelles Userverhalten. Speziell bei der Verwendung von Cookies sind Veränderungen bei Facebook nie auszuschließen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Sofern Sie bei Facebook angemeldet sind, können Sie Ihre Einstellungen für Werbeanzeigen unter\_"
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen'
+              rel: null
+              target: null
+              title: null
+        text: 'https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen'
+      -
+        type: text
+        text: "\_selbst verändern. Falls Sie kein Facebook-User sind, können Sie auf\_"
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'http://www.youronlinechoices.com/de/praferenzmanagement/'
+              rel: null
+              target: null
+              title: null
+        text: 'http://www.youronlinechoices.com/de/praferenzmanagement/'
+      -
+        type: text
+        text: "\_grundsätzlich Ihre nutzungsbasierte Online-Werbung verwalten. Dort haben Sie die Möglichkeit, Anbieter zu deaktivieren bzw. zu aktivieren."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Facebook verarbeitet Daten von Ihnen u.a. auch in den USA. Wir weisen darauf hin, dass nach Meinung des Europäischen Gerichtshofs derzeit kein angemessenes Schutzniveau für den Datentransfer in die USA besteht. Dies kann mit verschiedenen Risiken für die Rechtmäßigkeit und Sicherheit der Datenverarbeitung einhergehen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Als Grundlage der Datenverarbeitung bei Empfängern mit Sitz in Drittstaaten (außerhalb der Europäischen Union, Island, Liechtenstein, Norwegen, also insbesondere in den USA) oder einer Datenweitergabe dorthin verwendet Facebook sogenannte Standardvertragsklauseln (= Art. 46. Abs. 2 und 3 DSGVO). Standardvertragsklauseln (Standard Contractual Clauses – SCC) sind von der EU-Kommission bereitgestellte Mustervorlagen und sollen sicherstellen, dass Ihre Daten auch dann den europäischen Datenschutzstandards entsprechen, wenn diese in Drittländer (wie beispielsweise in die USA) überliefert und dort gespeichert werden. Durch diese Klauseln verpflichtet sich Facebook, bei der Verarbeitung Ihrer relevanten Daten, das europäische Datenschutzniveau einzuhalten, selbst wenn die Daten in den USA gespeichert, verarbeitet und verwaltet werden. Diese Klauseln basieren auf einem Durchführungsbeschluss der EU-Kommission. Sie finden den Beschluss und die entsprechenden Standardvertragsklauseln u.a. hier:\_"
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de'
+              rel: null
+              target: null
+              title: null
+        text: 'https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Die Facebook Datenverarbeitungsbedingung, welche den Standardvertragsklauseln entsprechen, finden Sie unter\_"
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.facebook.com/legal/terms/dataprocessing'
+              rel: null
+              target: null
+              title: null
+        text: 'https://www.facebook.com/legal/terms/dataprocessing'
+      -
+        type: text
+        text: .
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Wenn Sie mehr über den Datenschutz von Facebook erfahren wollen, empfehlen wir Ihnen die eigenen Datenrichtlinien des Unternehmens auf\_"
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.facebook.com/policy.php'
+              rel: null
+              target: null
+              title: null
+        text: 'https://www.facebook.com/policy.php'
+      -
+        type: text
+        text: .
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: '11. '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: E-Mail-Marketing
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'E-Mail-Marketing Zusammenfassung'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '👥 Betroffene: Newsletter-Abonnenten'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '🤝 Zweck: Direktwerbung per E-Mail, Benachrichtigung über systemrelevante Ereignisse'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '📓 Verarbeitete Daten: Eingegebene Daten bei der Registrierung jedoch mindestens die E-Mail-Adresse. Mehr Details dazu finden Sie beim jeweils eingesetzten E-Mail-Marketing-Tool.'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '📅 Speicherdauer: Dauer des Bestehens des Abonnements'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '⚖️ Rechtsgrundlagen: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 6 Abs. 1 lit. f DSGVO (berechtigte Interessen)'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Was '
+      -
+        type: text
+        text: ist
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: ' E-Mail-Marketing?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Um Sie stets auf dem Laufenden zu halten, nutzen wir auch die Möglichkeit des E-Mail-Marketings. Dabei werden, sofern Sie dem Empfang unserer E-Mails bzw. Newsletter zugestimmt haben, auch Daten von Ihnen verarbeitet und gespeichert. E-Mail-Marketing ist ein Teilbereich des Online-Marketings. Dabei werden Neuigkeiten oder allgemeine Informationen über ein Unternehmen, Produkte oder Dienstleistungen per E-Mail an eine bestimmte Gruppe an Menschen, die sich dafür interessieren, gesendet.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wenn Sie an unserem E-Mail-Marketing (meist per Newsletter) teilnehmen wollen, müssen Sie sich im Normalfall einfach nur mit Ihrer E-Mail-Adresse anmelden. Dafür füllen Sie ein Online-Formular aus und senden es ab. Es kann aber auch vorkommen, dass wir Sie etwa um Ihre Anrede und Ihren Namen bitten, damit wir Sie auch persönlich anschreiben können.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Grundsätzlich funktioniert das Anmelden zu Newslettern mit Hilfe des sogenannten „Double-Opt-In-Verfahrens“. Nachdem Sie sich für unseren Newsletter auf unserer Website angemeldet haben, bekommen Sie eine E-Mail, über die Sie die Newsletter-Anmeldung bestätigen. So wird sichergestellt, dass Ihnen die E-Mail-Adresse gehört und sich niemand mit einer fremden E-Mail-Adresse angemeldet hat. Wir oder ein von uns verwendetes Benachrichtigungs-Tool protokolliert jede einzelne Anmeldung. Dies ist nötig, damit wir den rechtlich korrekten Anmeldevorgang auch nachweisen können. Dabei wird in der Regel der Zeitpunkt der Anmeldung, der Zeitpunkt der Anmeldebestätigung und Ihre IP-Adresse gespeichert. Zusätzlich wird auch protokolliert, wenn Sie Änderungen Ihrer gespeicherten Daten vornehmen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Warum nutzen wir E-Mail-Marketing?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wir wollen natürlich mit Ihnen in Kontakt bleiben und Ihnen stets die wichtigsten Neuigkeiten über unser Unternehmen präsentieren. Dafür nutzen wir unter anderem E-Mail-Marketing – oft auch nur “Newsletter” bezeichnet – als wesentlichen Bestandteil unseres Online-Marketings. Sofern Sie sich damit einverstanden erklären oder es gesetzlich erlaubt ist, schicken wir Ihnen Newsletter, System-E-Mails oder andere Benachrichtigungen per E-Mail. Wenn wir im folgenden Text den Begriff „Newsletter“ verwenden, meinen wir damit hauptsächlich regelmäßig versandte E-Mails. Natürlich wollen wir Sie mit unseren Newsletter in keiner Weise belästigen. Darum sind wir wirklich stets bemüht, nur relevante und interessante Inhalte zu bieten. So erfahren Sie etwa mehr über unser Unternehmen, unsere Leistungen oder Produkte. Da wir unsere Angebote auch immer verbessern, erfahren Sie über unseren Newsletter auch immer, wenn es Neuigkeiten gibt oder wir gerade spezielle, lukrative Aktionen anbieten. Sofern wir einen Dienstleister, der ein professionelles Versand-Tool anbietet, für unser E-Mail-Marketing beauftragen, machen wir das, um Ihnen schnelle und sichere Newsletter bieten zu können. Zweck unseres E-Mail-Marketings ist grundsätzlich, Sie über neue Angebote zu informieren und auch unseren unternehmerischen Zielen näher zu kommen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Welche Daten werden verarbeitet?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wenn Sie über unsere Website Abonnent unseres Newsletters werden, bestätigen Sie per E-Mail die Mitgliedschaft in einer E-Mail-Liste. Neben IP-Adresse und E-Mail-Adresse können auch Ihre Anrede, Ihr Name, Ihre Adresse und Ihre Telefonnummer gespeichert werden. Allerdings nur, wenn Sie dieser Datenspeicherungen zustimmen. Die als solche markierten Daten sind notwendig, damit Sie an dem angebotenen Dienst teilnehmen können. Die Angabe ist freiwillig, die Nichtangabe führt jedoch dazu, dass Sie den Dienst nicht nutzen können. Zusätzlich können etwa auch Informationen zu Ihrem Gerät oder zu Ihren bevorzugten Inhalten auf unserer Website gespeichert werden. Mehr zur Speicherung von Daten, wenn Sie eine Website besuchen, finden Sie im Abschnitt “Automatische Datenspeicherung”. Ihre Einwilligungserklärung zeichnen wir auf, damit wir stets nachweisen können, dass dieser unseren Gesetzen entspricht.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Dauer der Datenverarbeitung'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wenn Sie Ihre E-Mail-Adresse aus unserem E-Mail/Newsletter-Verteiler austragen, dürfen wir Ihre Adresse bis zu drei Jahren auf Grundlage unserer berechtigten Interessen speichern, damit wir Ihre damalige Einwilligung noch nachweisen können. Verarbeiten dürfen wir diese Daten nur, wenn wir uns gegen etwaige Ansprüche wehren müssen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wenn Sie allerdings bestätigen, dass Sie uns die Einwilligung zur Newsletter-Anmeldung gegeben haben, können Sie jederzeit einen individuellen Löschantrag stellen. Widersprechen Sie der Einwilligung dauerhaft, behalten wir uns das Recht vor, Ihre E-Mail-Adresse in einer Sperrliste zu speichern. Solange Sie freiwillig unseren Newsletter abonniert haben, solange behalten wir selbstverständlich auch Ihre E-Mail-Adresse.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: Widerspruchsrecht
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Sie haben jederzeit die Möglichkeit Ihre Newsletter-Anmeldung zu kündigen. Dafür müssen Sie lediglich Ihre Einwilligung zur Newsletter-Anmeldung widerrufen. Das dauert im Normalfall nur wenige Sekunden bzw. einen oder zwei Klicks. Meistens finden Sie direkt am Ende jeder E-Mail einen Link, um das Newsletter-Abonnement zu kündigen. Wenn der Link im Newsletter wirklich nicht zu finden ist, kontaktieren Sie uns bitte per Mail und wir werden Ihr Newsletter-Abo unverzüglich kündigen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: Rechtsgrundlage
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Das Versenden unseres Newsletters erfolgt auf Grundlage Ihrer\_"
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: Einwilligung
+      -
+        type: text
+        text: "\_(Artikel 6 Abs. 1 lit. a DSGVO). Das heißt, wir dürfen Ihnen nur dann einen Newsletter schicken, wenn Sie sich zuvor aktiv dafür angemeldet haben. Gegebenenfalls können wir Ihnen auch Werbenachrichten auf Grundlage des § 7 Abs. 3 UWG senden, sofern Sie unser Kunde geworden sind und der Verwendung ihrer E-Mailadresse für Direktwerbung nicht widersprochen haben."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Informationen zu speziellen E-Mail-Marketing Diensten und wie diese personenbezogene Daten verarbeiten, erfahren Sie – sofern vorhanden – in den folgenden Abschnitten.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Mailjet Datenschutzerklärung'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Wir verwenden auf unserer Website Mailjet, ein Dienst für unser E-Mail-Marketing. Dienstanbieter ist das deutsche Unternehmen Mailjet GmbH, Alt-Moabit 2, 10557 Berlin, Deutschland. Mehr über die Daten, die durch die Verwendung von Mailjet verarbeitet werden, erfahren Sie in der Privacy Policy auf\_"
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.mailjet.de/privacy-policy/'
+              rel: null
+              target: null
+              title: null
+        text: 'https://www.mailjet.de/privacy-policy/'
+      -
+        type: text
+        text: ".\_"
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: '12. Blogs und Publikationsmedien'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Blogs und Publikationsmedien Datenschutzerklärung Zusammenfassung'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '👥 Betroffene: Besucher der Website'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '🤝 Zweck: Darstellung und Optimierung unserer Serviceleistung sowie Kommunikation zwischen Websitebesuchern, Sicherheitsmaßnahmen und Verwaltung'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '📓 Verarbeitete Daten: Daten wie etwa Kontaktdaten, IP-Adresse und veröffentlichte Inhalte.'
+      -
+        type: hard_break
+      -
+        type: text
+        text: 'Mehr Details dazu finden Sie bei den eingesetzten Tools.'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '📅 Speicherdauer: abhängig von den verwendeten Tools'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '⚖️ Rechtsgrundlagen: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen), Art. 6 Abs. 1 S. 1 lit. b. DSGVO (Vertrag)'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Was sind Blogs und Publikationsmedien?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wir nutzen auf unsere Website Blogs oder auch andere Kommunikationsmittel, mit denen wir einerseits mit Ihnen und andererseits Sie auch mit uns kommunizieren können. Dabei können auch Daten von Ihnen bei uns gespeichert und verarbeitet werden. Das kann notwendig sein, damit wir Inhalte entsprechend darstellen können, die Kommunikation funktioniert und die Sicherheit erhöht wird. In unserem Datenschutztext gehen wir allgemein darauf ein, welche Daten von Ihnen verarbeitet werden können. Exakte Angaben zur Datenverarbeitung hängen stets auch von den verwendeten Tools und Funktionen ab. In den Datenschutzhinweisen der einzelnen Anbieter finden Sie genaue Informationen über die Datenverarbeitung.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Warum nutzen wir Blogs und Publikationsmedien?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Unser größtes Anliegen mit unserer Website ist Ihnen interessante und spannende Inhalte zu bieten und gleichzeitig sind uns auch Ihre Meinungen und Inhalte wichtig. Darum wollen wir einen guten interaktiven Austausch zwischen uns und Ihnen schaffen. Mit diversen Blogs und Publikationsmöglichkeiten können wir genau das erreichen. Sie können beispielsweise Kommentare zu unseren Inhalten verfassen, andere Kommentare kommentieren oder auch in manchen Fällen selbst Beiträge verfassen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Welche Daten werden verarbeitet?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Welche Daten genau verarbeitet werden, hängt stets von den von uns verwendeten Kommunikationsfunktionen ab. Sehr oft werden IP-Adresse, Benutzername und der veröffentlichte Inhalt gespeichert. Das geschieht in erster Linie, um einen Sicherheitsschutz zu gewährleisten, Spam vorzubeugen und um gegen widerrechtliche Inhalte vorgehen zu können. Für die Datenspeicherung können auch Cookies verwendet werden. Das sind kleine Text-Dateien, die mit Informationen in Ihrem Browser abgespeichert werden. Näheres zu den erhobenen und gespeicherten Daten finden Sie in unseren einzelnen Abschnitten und in der Datenschutzerklärung des jeweiligen Anbieters.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Dauer der Datenverarbeitung'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Über die Dauer der Datenverarbeitung informieren wir Sie weiter unten, sofern wir weitere Informationen dazu haben. Beispielsweise speichern Beitrags- und Kommentarfunktionen Daten, bis Sie die Datenspeicherung widerrufen. Generell werden personenbezogene Daten nur so lange, wie es für die Bereitstellung unserer Dienstleistungen unbedingt notwendig ist, gespeichert.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: Widerspruchsrecht
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Sie haben auch jederzeit das Recht und die Möglichkeit Ihre Einwilligung zur Verwendung von Cookies bzw. Drittanbietern von Kommunikations-Tools zu widerrufen. Das funktioniert entweder über unser Cookie-Management-Tool oder über andere Opt-Out-Funktionen. Zum Bespiel können Sie auch die Datenerfassung durch Cookies verhindern, indem Sie in Ihrem Browser die Cookies verwalten, deaktivieren oder löschen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Da bei Publikationsmedien auch Cookies zum Einsatz kommen können, empfehlen wir Ihnen auch unsere allgemeine Datenschutzerklärung über Cookies. Um zu erfahren, welche Daten von Ihnen genau gespeichert und verarbeitet werden, sollten Sie die Datenschutzerklärungen der jeweiligen Tools durchlesen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: Rechtsgrundlage
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wir setzen die Kommunikationsmittel hauptsächlich auf Grundlage unserer berechtigten Interessen (Art. 6 Abs. 1 lit. f DSGVO) an einer schnellen und guten Kommunikation mit Ihnen oder anderen Kunden, Geschäftspartnern und Besuchern ein. Soweit die Nutzung der Abwicklung von vertraglichen Beziehungen oder deren Anbahnung dient, ist Rechtsgrundlage ferner Art. 6 Abs. 1 S. 1 lit. b. DSGVO.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Bestimmte Verarbeitungen, insbesondere der Einsatz von Cookies sowie die Nutzung von Kommentar- oder Nachrichtenfunktionen bedürfen Ihrer Einwilligung. Wenn und soweit Sie eingewilligt haben, dass Daten von Ihnen durch eingebundene Publikationsmedien verarbeitet und gespeichert werden können, gilt diese Einwilligung als Rechtsgrundlage der Datenverarbeitung (Art. 6 Abs. 1 lit. a DSGVO).\_Die meisten von uns verwendeten Kommunikationsfunktionen setzen Cookies in Ihrem Browser, um Daten zu speichern. Darum empfehlen wir Ihnen, unseren Datenschutztext über Cookies genau durchzulesen und die Datenschutzerklärung oder die Cookie-Richtlinien des jeweiligen Dienstanbieters anzusehen."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Informationen zu speziellen Tools erfahren Sie – sofern vorhanden – in den folgenden Abschnitten.'
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: '13. YouTube'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'YouTube Datenschutzerklärung Zusammenfassung'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '👥 Betroffene: Besucher der Website'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '🤝 Zweck: Optimierung unserer Serviceleistung'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '📓 Verarbeitete Daten: Daten wie etwa Kontaktdaten, Daten zum Nutzerverhalten, Informationen zu Ihrem Gerät und Ihre IP-Adresse können gespeichert werden.'
+      -
+        type: hard_break
+      -
+        type: text
+        text: 'Mehr Details dazu finden Sie weiter unten in dieser Datenschutzerklärung.'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '📅 Speicherdauer: Daten bleiben grundsätzlich gespeichert, solange sie für den Dienstzweck nötig sind'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '⚖️ Rechtsgrundlagen: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen)'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Was ist YouTube?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wir haben auf unserer Website YouTube-Videos eingebaut. So können wir Ihnen interessante Videos direkt auf unserer Seite präsentieren. YouTube ist ein Videoportal, das seit 2006 eine Tochterfirma von Google ist. Betrieben wird das Videoportal durch YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. Wenn Sie auf unserer Website eine Seite aufrufen, die ein YouTube-Video eingebettet hat, verbindet sich Ihr Browser automatisch mit den Servern von YouTube bzw. Google. Dabei werden (je nach Einstellungen) verschiedene Daten übertragen. Für die gesamte Datenverarbeitung im europäischen Raum ist Google Ireland Limited (Gordon House, Barrow Street Dublin 4, Irland) verantwortlich.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Im Folgenden wollen wir Ihnen genauer erklären, welche Daten verarbeitet werden, warum wir YouTube-Videos eingebunden haben und wie Sie Ihre Daten verwalten oder löschen können.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Auf YouTube können die User kostenlos Videos ansehen, bewerten, kommentieren und selbst hochladen. Über die letzten Jahre wurde YouTube zu einem der wichtigsten Social-Media-Kanäle weltweit. Damit wir Videos auf unserer Webseite anzeigen können, stellt YouTube einen Codeausschnitt zur Verfügung, den wir auf unserer Seite eingebaut haben.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Warum verwenden wir YouTube-Videos auf unserer Website?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'YouTube ist die Videoplattform mit den meisten Besuchern und dem besten Content. Wir sind bemüht, Ihnen die bestmögliche User-Erfahrung auf unserer Webseite zu bieten. Und natürlich dürfen interessante Videos dabei nicht fehlen. Mithilfe unserer eingebetteten Videos stellen wir Ihnen neben unseren Texten und Bildern weiteren hilfreichen Content zur Verfügung. Zudem wird unsere Webseite auf der Google-Suchmaschine durch die eingebetteten Videos leichter gefunden. Auch wenn wir über Google Ads Werbeanzeigen schalten, kann Google – dank der gesammelten Daten – diese Anzeigen wirklich nur Menschen zeigen, die sich für unsere Angebote interessieren.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Welche Daten werden von YouTube gespeichert?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Sobald Sie eine unserer Seiten besuchen, die ein YouTube-Video eingebaut hat, setzt YouTube zumindest ein Cookie, das Ihre IP-Adresse und unsere URL speichert. Wenn Sie in Ihrem YouTube-Konto eingeloggt sind, kann YouTube Ihre Interaktionen auf unserer Webseite meist mithilfe von Cookies Ihrem Profil zuordnen. Dazu zählen Daten wie Sitzungsdauer, Absprungrate, ungefährer Standort, technische Informationen wie Browsertyp, Bildschirmauflösung oder Ihr Internetanbieter. Weitere Daten können Kontaktdaten, etwaige Bewertungen, das Teilen von Inhalten über Social Media oder das Hinzufügen zu Ihren Favoriten auf YouTube sein.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wenn Sie nicht in einem Google-Konto oder einem Youtube-Konto angemeldet sind, speichert Google Daten mit einer eindeutigen Kennung, die mit Ihrem Gerät, Browser oder App verknüpft sind. So bleibt beispielsweise Ihre bevorzugte Spracheinstellung beibehalten. Aber viele Interaktionsdaten können nicht gespeichert werden, da weniger Cookies gesetzt werden.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'In der folgenden Liste zeigen wir Cookies, die in einem Test im Browser gesetzt wurden. Wir zeigen einerseits Cookies, die ohne angemeldetes YouTube-Konto gesetzt werden. Andererseits zeigen wir Cookies, die mit angemeldetem Account gesetzt werden. Die Liste kann keinen Vollständigkeitsanspruch erheben, weil die Userdaten immer von den Interaktionen auf YouTube abhängen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_YSC"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_b9-CV6ojI5Y311883099-1"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Dieses Cookie registriert eine eindeutige ID, um Statistiken des gesehenen Videos zu speichern."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach Sitzungsende"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_PREF"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_f1=50000000"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Dieses Cookie registriert ebenfalls Ihre eindeutige ID. Google bekommt über PREF Statistiken, wie Sie YouTube-Videos auf unserer Webseite verwenden."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 8 Monaten"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_GPS"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_1"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Dieses Cookie registriert Ihre eindeutige ID auf mobilen Geräten, um den GPS-Standort zu tracken."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 30 Minuten"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_VISITOR_INFO1_LIVE"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_95Chz8bagyU"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Dieses Cookie versucht die Bandbreite des Users auf unseren Webseiten (mit eingebautem YouTube-Video) zu schätzen."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 8 Monaten"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Weitere Cookies, die gesetzt werden, wenn Sie mit Ihrem YouTube-Konto angemeldet sind:'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_APISID"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_zILlvClZSkqGsSwI/AU1aZI6HY7311883099-"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Dieses Cookie wird verwendet, um ein Profil über Ihre Interessen zu erstellen. Genützt werden die Daten für personalisierte Werbeanzeigen."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 2 Jahren"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_CONSENT"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_YES+AT.de+20150628-20-0"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Das Cookie speichert den Status der Zustimmung eines Users zur Nutzung unterschiedlicher Services von Google. CONSENT dient auch der Sicherheit, um User zu überprüfen und Userdaten vor unbefugten Angriffen zu schützen."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: "Ablaufdatum:\_"
+      -
+        type: text
+        text: 'nach 19 Jahren'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_HSID"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_AcRwpgUik9Dveht0I"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Dieses Cookie wird verwendet, um ein Profil über Ihre Interessen zu erstellen. Diese Daten helfen personalisierte Werbung anzeigen zu können."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 2 Jahren"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_LOGIN_INFO"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_AFmmF2swRQIhALl6aL…"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_In diesem Cookie werden Informationen über Ihre Login-Daten gespeichert."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 2 Jahren"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_SAPISID"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_7oaPxoG-pZsJuuF5/AnUdDUIsJ9iJz2vdM"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Dieses Cookie funktioniert, indem es Ihren Browser und Ihr Gerät eindeutig identifiziert. Es wird verwendet, um ein Profil über Ihre Interessen zu erstellen."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 2 Jahren"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_SID"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_oQfNKjAsI311883099-"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Dieses Cookie speichert Ihre Google-Konto-ID und Ihren letzten Anmeldezeitpunkt in digital signierter und verschlüsselter Form."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 2 Jahren"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_SIDCC"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_AN0-TYuqub2JOcDTyL"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Dieses Cookie speichert Informationen, wie Sie die Webseite nutzen und welche Werbung Sie vor dem Besuch auf unserer Seite möglicherweise gesehen haben."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 3 Monaten"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wie lange und wo werden die Daten gespeichert?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Die Daten, die YouTube von Ihnen erhält und verarbeitet werden auf den Google-Servern gespeichert. Die meisten dieser Server befinden sich in Amerika. Unter\_"
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.google.com/about/datacenters/inside/locations/?hl=de'
+              rel: null
+              target: null
+              title: null
+        text: 'https://www.google.com/about/datacenters/inside/locations/?hl=de'
+      -
+        type: text
+        text: "\_\_sehen Sie genau wo sich die Google-Rechenzentren befinden. Ihre Daten sind auf den Servern verteilt. So sind die Daten schneller abrufbar und vor Manipulation besser geschützt."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Die erhobenen Daten speichert Google unterschiedlich lang. Manche Daten können Sie jederzeit löschen, andere werden automatisch nach einer begrenzten Zeit gelöscht und wieder andere werden von Google über längere Zeit gespeichert. Einige Daten (wie Elemente aus „Meine Aktivität“, Fotos oder Dokumente, Produkte), die in Ihrem Google-Konto gespeichert sind, bleiben so lange gespeichert, bis Sie sie löschen. Auch wenn Sie nicht in einem Google-Konto angemeldet sind, können Sie einige Daten, die mit Ihrem Gerät, Browser oder App verknüpft sind, löschen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wie kann ich meine Daten löschen bzw. die Datenspeicherung verhindern?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Grundsätzlich können Sie Daten im Google Konto manuell löschen. Mit der 2019 eingeführten automatischen Löschfunktion von Standort- und Aktivitätsdaten werden Informationen abhängig von Ihrer Entscheidung – entweder 3 oder 18 Monate gespeichert und dann gelöscht.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Unabhängig, ob Sie ein Google-Konto haben oder nicht, können Sie Ihren Browser so konfigurieren, dass Cookies von Google gelöscht bzw. deaktiviert werden. Je nachdem welchen Browser Sie verwenden, funktioniert dies auf unterschiedliche Art und Weise. Die folgenden Anleitungen zeigen, wie Sie Cookies in Ihrem Browser verwalten:'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://support.google.com/chrome/answer/95647?tid=311883099'
+              rel: 'noopener noreferrer'
+              target: _blank
+              title: null
+        text: 'Chrome: Cookies in Chrome löschen, aktivieren und verwalten'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://support.apple.com/de-at/guide/safari/sfri11471/mac?tid=311883099'
+              rel: 'noopener noreferrer'
+              target: _blank
+              title: null
+        text: 'Safari: Verwalten von Cookies und Websitedaten mit Safari'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://support.mozilla.org/de/kb/cookies-und-website-daten-in-firefox-loschen?tid=311883099'
+              rel: 'noopener noreferrer'
+              target: _blank
+              title: null
+        text: 'Firefox: Cookies löschen, um Daten zu entfernen, die Websites auf Ihrem Computer abgelegt haben'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://support.microsoft.com/de-at/help/17442/windows-internet-explorer-delete-manage-cookies?tid=311883099'
+              rel: 'noopener noreferrer'
+              target: _blank
+              title: null
+        text: 'Internet Explorer: Löschen und Verwalten von Cookies'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://support.microsoft.com/de-at/help/4027947/windows-delete-cookies?tid=311883099'
+              rel: 'noopener noreferrer'
+              target: _blank
+              title: null
+        text: 'Microsoft Edge: Löschen und Verwalten von Cookies'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Falls Sie grundsätzlich keine Cookies haben wollen, können Sie Ihren Browser so einrichten, dass er Sie immer informiert, wenn ein Cookie gesetzt werden soll. So können Sie bei jedem einzelnen Cookie entscheiden, ob Sie es erlauben oder nicht.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: Rechtsgrundlage
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Wenn Sie eingewilligt haben, dass Daten von Ihnen durch eingebundene YouTube-Elemente verarbeitet und gespeichert werden können, gilt diese Einwilligung als Rechtsgrundlage der Datenverarbeitung\_"
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: '(Art. 6 Abs. 1 lit. a DSGVO)'
+      -
+        type: text
+        text: ". Grundsätzlich werden Ihre Daten auch auf Grundlage unseres berechtigten Interesses\_"
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: '(Art. 6 Abs. 1 lit. f DSGVO)'
+      -
+        type: text
+        text: "\_an einer schnellen und guten Kommunikation mit Ihnen oder anderen Kunden und Geschäftspartnern gespeichert und verarbeitet. Wir setzen die eingebundenen YouTube-Elemente gleichwohl nur ein, soweit Sie eine Einwilligung erteilt haben. YouTube setzt auch Cookies in Ihrem Browser, um Daten zu speichern. Darum empfehlen wir Ihnen, unseren Datenschutztext über Cookies genau durchzulesen und die Datenschutzerklärung oder die Cookie-Richtlinien des jeweiligen Dienstanbieters anzusehen."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'YouTube verarbeitet Daten u.a. auch in den USA. Wir weisen darauf hin, dass nach Meinung des Europäischen Gerichtshofs derzeit kein angemessenes Schutzniveau für den Datentransfer in die USA besteht. Dies kann mit verschiedenen Risiken für die Rechtmäßigkeit und Sicherheit der Datenverarbeitung einhergehen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Als Grundlage der Datenverarbeitung bei Empfängern mit Sitz in Drittstaaten (außerhalb der Europäischen Union, Island, Liechtenstein, Norwegen, also insbesondere in den USA) oder einer Datenweitergabe dorthin verwendet YouTube von der EU-Kommission genehmigte Standardvertragsklauseln (= Art. 46. Abs. 2 und 3 DSGVO). Diese Klauseln verpflichten YouTube, das EU-Datenschutzniveau bei der Verarbeitung relevanter Daten auch außerhalb der EU einzuhalten. Diese Klauseln basieren auf einem Durchführungsbeschluss der EU-Kommission. Sie finden den Beschluss sowie die Klauseln u.a. hier:\_"
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://ec.europa.eu/germany/news/20210604-datentransfers-eu_de'
+              rel: null
+              target: null
+              title: null
+        text: 'https://ec.europa.eu/germany/news/20210604-datentransfers-eu_de'
+      -
+        type: text
+        text: .
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Da YouTube ein Tochterunternehmen von Google ist, gibt es eine gemeinsame Datenschutzerklärung. Wenn Sie mehr über den Umgang mit Ihren Daten erfahren wollen, empfehlen wir Ihnen die Datenschutzerklärung unter\_"
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://policies.google.com/privacy?hl=de.'
+              rel: null
+              target: null
+              title: null
+        text: 'https://policies.google.com/privacy?hl=de.'
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: '14. Google Ads (Google AdWords) Conversion-Tracking Datenschutzerklärung'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Google Ads (Google AdWords) Conversion-Tracking Datenschutzerklärung Zusammenfassung'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '👥 Betroffene: Besucher der Website'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '🤝 Zweck: wirtschaftlicher Erfolg und die Optimierung unserer Serviceleistung.'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '📓 Verarbeitete Daten: Zugriffsstatistiken, die Daten wie Standorte der Zugriffe, Gerätedaten, Zugriffsdauer und Zeitpunkt, Navigationsverhalten, Klickverhalten und IP-Adressen enthalten. Auch personenbezogene Daten wie Name oder E-Mail-Adresse können verarbeitet werden.'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '📅 Speicherdauer: Conversion-Cookies laufen in der Regel nach 30 Tagen ab und übermitteln keine personenbezogenen Daten'
+      -
+        type: hard_break
+      -
+        type: text
+        text: '⚖️ Rechtsgrundlagen: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 6 Abs. 1 lit.f DSGVO (Berechtigte Interessen)'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Was ist Google Ads Conversion-Tracking?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wir verwenden als Online-Marketing-Maßnahme Google Ads (früher Google AdWords), um unsere Produkte und Dienstleistungen zu bewerben. So wollen wir im Internet mehr Menschen auf die hohe Qualität unserer Angebote aufmerksam machen. Im Rahmen unserer Werbe-Maßnahmen durch Google Ads verwenden wir auf unserer Website das Conversion-Tracking der Firma Google Inc. In Europa ist allerdings für alle Google-Dienste das Unternehmen Google Ireland Limited (Gordon House, Barrow Street Dublin 4, Irland) verantwortlich. Mithilfe dieses kostenlosen Tracking-Tools können wir unser Werbeangebot an Ihre Interessen und Bedürfnisse besser anpassen. Im Folgenden Artikel wollen wir genauer darauf eingehen, warum wir Conversion-Tracking benutzen, welche Daten dabei gespeichert werden und wie Sie diese Datenspeicherung verhindern.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Google Ads (früher Google AdWords) ist das hauseigene Online-Werbesystem der Firma Google Inc. Wir sind von der Qualität unseres Angebots überzeugt und wollen, dass so viele Menschen wie möglich unsere Webseite kennenlernen. Im Onlinebereich bietet Google Ads dafür die beste Plattform. Natürlich wollen wir auch einen genauen Überblick über den Kosten-Nutzen-Faktor unserer Werbeaktionen gewinnen. Darum verwenden wir das Conversion-Tracking-Tool von Google Ads.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Doch was ist eine Conversion eigentlich? Eine Conversion entsteht, wenn Sie von einem rein interessierten Webseitenbesucher zu einem handelnden Besucher werden. Dies passiert immer dann, wenn Sie auf unsere Anzeige klicken und im Anschluss eine andere Aktion ausführen, wie zum Beispiel unsere Webseite besuchen.\_Mit dem Conversion-Tracking-Tool von Google erfassen wir, was nach einem Klick eines Users auf unsere Google Ads-Anzeige geschieht. Zum Beispiel können wir so sehen, ob Produkte gekauft werden, Dienstleistungen in Anspruch genommen werden oder ob sich User für unseren Newsletter angemeldet haben."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Warum verwenden wir Google Ads Conversion-Tracking auf unserer Website?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Wir setzen Google Ads ein, um auch auf anderen Webseiten auf unser Angebot aufmerksam zu machen. Ziel ist es, dass unsere Werbekampagnen wirklich auch nur jene Menschen erreichen, die sich für unsere Angebote interessieren. Mit dem Conversion-Tracking Tool sehen wir welche Keywords, Anzeigen, Anzeigengruppen und Kampagnen zu den gewünschten Kundenaktionen führen.\_Wir sehen wie viele Kunden mit unseren Anzeigen auf einem Gerät interagieren und dann eine Conversion durchführen. Durch diese Daten können wir unseren\_Kosten-Nutzen-Faktor berechnen,\_den Erfolg einzelner Werbemaßnahmen messen und folglich unsere Online-Marketing-Maßnahmen optimieren.\_Wir können weiters mithilfe der gewonnenen Daten unsere Webseite für Sie interessanter gestalten und unser Werbeangebot noch individueller an Ihre Bedürfnisse anpassen."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Welche Daten werden bei Google Ads Conversion-Tracking gespeichert?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wir haben ein Conversion-Tracking-Tag oder Code-Snippet auf unserer Webseite eingebunden, um gewisse User-Aktionen besser analysieren zu können. Wenn Sie nun eine unserer Google Ads-Anzeigen anklicken, wird auf Ihrem Computer (meist im Browser) oder Mobilgerät das Cookie „Conversion“ von einer Google-Domain gespeichert. Cookies sind kleine Textdateien, die Informationen auf Ihrem Computer speichern.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Hier die Daten der wichtigsten Cookies für das Conversion-Tracking von Google:'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\_Conversion"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_EhMI_aySuoyv4gIVled3Ch0llweVGAEgt-mr6aXd7dYlSAGQ311883099-3"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: "Verwendungszweck:\_"
+      -
+        type: text
+        text: 'Dieses Cookie speichert jede Conversion, die Sie auf unserer Seite machen, nachdem Sie über eine Google Ad zu uns gekommen sind.'
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 3 Monaten"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Name:'
+      -
+        type: text
+        text: "\__gac"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wert:'
+      -
+        type: text
+        text: "\_1.1558695989.EAIaIQobChMIiOmEgYO04gIVj5AYCh2CBAPrEAAYASAAEgIYQfD_BwE"
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Verwendungszweck:'
+      -
+        type: text
+        text: "\_Dies ist ein klassisches Google Analytics-Cookie und dient dem Erfassen verschiedener Handlungen auf unserer Webseite."
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ablaufdatum:'
+      -
+        type: text
+        text: "\_nach 3 Monaten"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Anmerkung:'
+      -
+        type: text
+        text: "\_Das Cookie _gac scheint nur in Verbindung mit Google Analytics auf. Die oben angeführte Aufzählung hat keinen Anspruch auf Vollständigkeit, da Google für analytische Auswertung immer wieder auch andere Cookies verwendet."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Sobald Sie eine Aktion auf unserer Webseite abschließen, erkennt Google das Cookie und speichert Ihre Handlung als sogenannte Conversion. Solange Sie auf unserer Webseite surfen und das Cookie noch nicht abgelaufen ist, erkennen wir und Google, dass Sie über unsere Google-Ads-Anzeige zu uns gefunden haben. Das Cookie wird ausgelesen und mit den Conversion-Daten zurück an Google Ads gesendet. Es ist auch möglich, dass noch andere Cookies zur Messung von Conversions verwendet werden. Das Conversion-Tracking von Google Ads kann mithilfe von Google Analytics noch verfeinert und verbessert werden. Bei Anzeigen, die Google an verschiedenen Orten im Web anzeigt, werden unter unserer Domain möglicherweise Cookies mit dem Namen “__gads” oder “_gac” gesetzt. Seit September 2017 werden diverse Kampagneninformationen von analytics.js mit dem _gac-Cookie gespeichert. Das Cookie speichert diese Daten, sobald Sie eine unserer Seiten aufrufen, für die die automatische Tag-Kennzeichnung von Google Ads eingerichtet wurde. Im Gegensatz zu Cookies, die für Google-Domains gesetzt werden, kann Google diese Conversion-Cookies nur lesen, wenn Sie sich auf unserer Webseite befinden. Wir erheben und erhalten keine personenbezogenen Daten. Wir bekommen von Google einen Bericht mit statistischen Auswertungen. So erfahren wir beispielsweise die Gesamtanzahl der User, die unsere Anzeige angeklickt haben und wir sehen, welche Werbemaßnahmen gut ankamen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wie lange und wo werden die Daten gespeichert?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'An dieser Stelle wollen wir darauf hinweisen, dass wir keinen Einfluss darauf haben, wie Google die erhobenen Daten weiterverwendet. Laut Google werden die Daten verschlüsselt und auf sicheren Servern gespeichert. In den meisten Fällen laufen Conversion-Cookies nach 30 Tagen ab und übermitteln keine personenbezogenen Daten. Die Cookies mit dem Namen „Conversion“ und „_gac“ (das in Verbindung mit Google Analytics zum Einsatz kommt) haben ein Ablaufdatum von 3 Monaten.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Wie kann ich meine Daten löschen bzw. die Datenspeicherung verhindern?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Sie haben die Möglichkeit am Conversion-Tracking von Google Ads nicht teilzunehmen. Wenn Sie das Cookie des Google Conversion-Trackings über Ihren Browser deaktivieren, blockieren Sie das Conversion-Tracking. In diesem Fall werden Sie in der Statistik des Tracking-Tools nicht berücksichtigt. Sie können die Cookie-Einstellungen in Ihrem Browser jederzeit verändern. Bei jedem Browser funktioniert dies etwas anders. Hier finden Sie die Anleitung, wie Sie Cookies in Ihrem Browser verwalten:'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://support.google.com/chrome/answer/95647?tid=311883099'
+              rel: 'noopener noreferrer'
+              target: _blank
+              title: null
+        text: 'Chrome: Cookies in Chrome löschen, aktivieren und verwalten'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://support.apple.com/de-at/guide/safari/sfri11471/mac?tid=311883099'
+              rel: 'noopener noreferrer'
+              target: _blank
+              title: null
+        text: 'Safari: Verwalten von Cookies und Websitedaten mit Safari'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://support.mozilla.org/de/kb/cookies-und-website-daten-in-firefox-loschen?tid=311883099'
+              rel: 'noopener noreferrer'
+              target: _blank
+              title: null
+        text: 'Firefox: Cookies löschen, um Daten zu entfernen, die Websites auf Ihrem Computer abgelegt haben'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://support.microsoft.com/de-at/help/17442/windows-internet-explorer-delete-manage-cookies?tid=311883099'
+              rel: 'noopener noreferrer'
+              target: _blank
+              title: null
+        text: 'Internet Explorer: Löschen und Verwalten von Cookies'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://support.microsoft.com/de-at/help/4027947/windows-delete-cookies?tid=311883099'
+              rel: 'noopener noreferrer'
+              target: _blank
+              title: null
+        text: 'Microsoft Edge: Löschen und Verwalten von Cookies'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Falls Sie grundsätzlich keine Cookies haben wollen, können Sie Ihren Browser so einrichten, dass er Sie immer informiert, wenn ein Cookie gesetzt werden soll. So können Sie bei jedem einzelnen Cookie entscheiden, ob Sie das Cookie erlauben oder nicht. Durch das Herunterladen und Installieren dieses Browser-Plug-ins auf\_"
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://support.google.com/ads/answer/7395996'
+              rel: null
+              target: null
+              title: null
+        text: 'https://support.google.com/ads/answer/7395996'
+      -
+        type: text
+        text: "\_werden ebenfalls alle „Werbecookies“ deaktiviert. Bedenken Sie, dass Sie durch das Deaktivieren dieser Cookies nicht die Werbeanzeigen verhindern, sondern nur die personalisierte Werbung."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: Rechtsgrundlage
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wenn Sie eingewilligt haben, dass das Google Ads Conversion Tracking eingesetzt werden darf, ist die Rechtsgrundlage der entsprechenden Datenverarbeitung diese Einwilligung. Diese Einwilligung stellt laut'
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: "\_Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)"
+      -
+        type: text
+        text: "\_die Rechtsgrundlage für die Verarbeitung personenbezogener Daten, wie sie bei der Erfassung durch das Google Ads Conversion Tracking vorkommen kann, dar."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Von unserer Seite besteht zudem ein berechtigtes Interesse, das Google Ads Conversion Tracking zu verwenden, um unser Online-Service und unsere Marketingmaßnahmen zu optimieren. Die dafür entsprechende Rechtsgrundlage ist\_"
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen)'
+      -
+        type: text
+        text: '. Wir setzen das Google Ads Conversion Tracking gleichwohl nur ein, soweit Sie eine Einwilligung erteilt haben.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Google verarbeitet Daten von Ihnen u.a. auch in den USA. Wir weisen darauf hin, dass nach Meinung des Europäischen Gerichtshofs derzeit kein angemessenes Schutzniveau für den Datentransfer in die USA besteht. Dies kann mit verschiedenen Risiken für die Rechtmäßigkeit und Sicherheit der Datenverarbeitung einhergehen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Als Grundlage der Datenverarbeitung bei Empfängern mit Sitz in Drittstaaten (außerhalb der Europäischen Union, Island, Liechtenstein, Norwegen, also insbesondere in den USA) oder einer Datenweitergabe dorthin verwendet Google sogenannte Standardvertragsklauseln (= Art. 46. Abs. 2 und 3 DSGVO). Standardvertragsklauseln (Standard Contractual Clauses – SCC) sind von der EU-Kommission bereitgestellte Mustervorlagen und sollen sicherstellen, dass Ihre Daten auch dann den europäischen Datenschutzstandards entsprechen, wenn diese in Drittländer (wie beispielsweise in die USA) überliefert und dort gespeichert werden. Durch diese Klauseln verpflichtet sich Google, bei der Verarbeitung Ihrer relevanten Daten, das europäische Datenschutzniveau einzuhalten, selbst wenn die Daten in den USA gespeichert, verarbeitet und verwaltet werden. Diese Klauseln basieren auf einem Durchführungsbeschluss der EU-Kommission. Sie finden den Beschluss und die entsprechenden Standardvertragsklauseln u.a. hier:\_"
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de'
+              rel: null
+              target: null
+              title: null
+        text: 'https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Die Datenverarbeitungsbedingungen für Google Werbeprodukte (Google Ads Controller-Controller Data Protection Terms), welche den Standardvertragsklauseln entsprechen und auch für Google Ads geltend sind, finden Sie unter\_"
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://business.safety.google/adscontrollerterms/'
+              rel: null
+              target: null
+              title: null
+        text: 'https://business.safety.google/adscontrollerterms/'
+      -
+        type: text
+        text: .
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Wenn Sie Näheres über den Datenschutz bei Google erfahren möchten, empfehlen wir die allgemeine Datenschutzerklärung von Google:\_"
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://policies.google.com/privacy?hl=de'
+              rel: null
+              target: null
+              title: null
+        text: 'https://policies.google.com/privacy?hl=de'
+      -
+        type: text
+        text: .
+  -
+    type: paragraph
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Alle Texte sind urheberrechtlich geschützt.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Quelle: Erstellt mit dem\_"
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.adsimple.de/datenschutz-generator/'
+              rel: null
+              target: null
+              title: 'Datenschutz Generator von AdSimple für Deutschland'
+        text: 'Datenschutz Generator'
+      -
+        type: text
+        text: "\_von AdSimple"
 template: footer-pages/meta-page
-updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1635947918
+updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
+updated_at: 1637363456
 og_title: Pathly
 og_description: 'Dein digitaler Wegweiser durch den Alltag mit Krebs'
 og_image: opengraph/og_home.png

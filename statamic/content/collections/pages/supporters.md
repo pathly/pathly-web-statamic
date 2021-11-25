@@ -14,7 +14,7 @@ cooperations_headline_addition: 'Ein Danke an'
 cooperations_headline: 'Unsere Unterstützer:innen'
 cooperations_profiles:
   -
-    cooperations_profile_image: supporter/mndstudio.svg
+    cooperations_profile_image: supporter/m_ndstudio.svg
     cooperations_profile_name: 'm[ ]nd studio'
     cooperations_profile_url: 'https://mndstudio.de/'
   -
@@ -41,6 +41,10 @@ cooperations_profiles:
     cooperations_profile_image: supporter/Servivum.svg
     cooperations_profile_name: Servivum
     cooperations_profile_url: 'https://servivum.com/'
+  -
+    cooperations_profile_image: supporter/Uberdosis.svg
+    cooperations_profile_name: Überdosis
+    cooperations_profile_url: 'https://ueberdosis.io/'
 sponsors_headline_addition: 'Ein Danke an'
 sponsors_headline: 'Unsere Sponsoren'
 sponsors_profiles:
@@ -55,7 +59,7 @@ sponsors_profiles:
     sponsors_profile_description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.'
     sponsors_profile_url: 'https://www.facebook.com/pathlyev'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1637359397
+updated_at: 1637700248
 cta_toggle: true
 cta: a49460ee-26f4-49ef-9d7c-108f6993d8bf
 og_title: 'Unterstützer:innen'

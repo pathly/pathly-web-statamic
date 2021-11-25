@@ -23,26 +23,32 @@ more-options_headline_addition: 'Das kannst du machen'
 more-options_headline: 'Hilf uns mit deinem Engagement!'
 more-options_options:
   -
-    more-options_option_headline: Geburtstags-Spendenaktion
-    more-options_option_textarea: 'Du kannst Pathly helfen, zum Beispiel mit einer Geburtstags-Spendenaktion auf Facebook oder Instagram, so können deine Freunde an deinem Geburtstag für uns spenden.'
+    more-options_option_headline: '🙂 Amazon Smile'
+    more-options_option_textarea: 'Unterstütz uns ganz einfach nebenbei, jedesmal wenn du über Amazon Smile bestellst und Pathly als Organisation ausgewählt hast..'
   -
-    more-options_option_headline: 'Als Unternehmen spenden'
+    more-options_option_headline: '🎄 Dein Weihnachtsgeschenk für Pathly'
+    more-options_option_textarea: 'Du hast kein Bock auf langes Weihnachtsgeschenke suchen? Wir haben dir Lösung für dich. Verschenk doch zu Weihnachten eine Spende an Pathly. Vielleicht gibt es ja auch ein kleines Geschenk für die Person die du beschenkst. 😊'
+  -
+    more-options_option_headline: '🎁 Geburtstags-Spendenaktion'
+    more-options_option_textarea: 'Du kannst Pathly helfen, zum Beispiel mit einer Geburtstags-Spendenaktion auf Facebook oder Instagram, so können deine Freunde an deinem Geburtstag für uns spenden. Vielleicht gibt es dann ja auch ein kleines Geschenk von uns für dich. 😊'
+  -
+    more-options_option_headline: '🏙 Als Unternehmen spenden'
     more-options_option_textarea: 'Du hast ein Unternehmen und machst zum Beispiel eine Weihnachts-Spendenaktion? Dann denk bei der Planung deiner Spendenaktion an uns und unterstützt damit das Engagement von Pathly.'
   -
-    more-options_option_headline: 'Social Media „Shoutout“'
+    more-options_option_headline: '📱 Social Media „Shoutout“'
     more-options_option_textarea: 'Du bist auf Social-Media unterwegs und hast Lust Pathly zu unterstützen? Dann schenk unserem Account ein „Shoutout“ und erzähl etwas über unser Initiative.'
   -
-    more-options_option_headline: 'Mit deinem Produkt Gutes tun'
+    more-options_option_headline: '💜 Mit deinem Produkt Gutes tun'
     more-options_option_textarea: 'Du hast ein Produkt und willst dich engagieren? Dann erklär dein Produkt zum Benefiz-Produkt und unterstütze unsere Verein mit einem Teil deines Verkaufserlöses.'
   -
-    more-options_option_headline: 'Starte eine eigene Spendenaktion'
+    more-options_option_headline: '🚀 Starte eine eigene Spendenaktion'
     more-options_option_textarea: 'Du hast Lust dich selbst ehrenamtlich zu engagieren? Dann starte doch deine eigene Spendenaktion und melde dich bei uns mit deiner Idee!'
 cta_toggle: true
 cta: f67d9c6c-015c-4d33-af37-dbbdb50d7347
-updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1637360461
+updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
+updated_at: 1637525464
 donation-options_bank-transfer_headline: 'Oder per Überweisung spenden!'
-donation-options_contribution-receipt_headline: 'Spendenquittung fürs Finanzamt'
+donation-options_contribution-receipt_headline: '🧾 Spendenquittung fürs Finanzamt'
 donation-options_contribution-receipt_textarea: 'Bei einer Spende unter 200€ reicht dem Finanzamt der Nachweis auf deinem Kontoauszug, bei Spenden über 200€ stellen wir dir selbstverständlich eine Spenden Quittung aus.'
 template: donation
 options_headline_addition: 'Diese Optionen hast du'

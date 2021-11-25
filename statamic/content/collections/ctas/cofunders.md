@@ -16,5 +16,5 @@ cta_mail_address: mail@pathly.app
 cta_mail_subject: Mission
 cta_mail_body: 'Hallo liebe Thora und Rebecca!'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1637329041
+updated_at: 1637365548
 ---

@@ -80,14 +80,11 @@ textarea:
           -
             type: link
             attrs:
-              href: 'tel:+4915784553833'
+              href: '0151 6112 1523'
               rel: null
-              target: null
+              target: _blank
               title: null
-        text: '+49 157 845 538 33'
-      -
-        type: text
-        text: "\_"
+        text: '+49 151 6112 1523'
       -
         type: hard_break
       -
@@ -235,8 +232,8 @@ textarea:
       -
         type: text
         text: 'Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.'
-updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1635930879
+updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
+updated_at: 1637363416
 template: footer-pages/meta-page
 og_title: Pathly
 og_description: 'Dein digitaler Wegweiser durch den Alltag mit Krebs'

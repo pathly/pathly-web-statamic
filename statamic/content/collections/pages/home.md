@@ -4,15 +4,14 @@ blueprint: home
 title: Projekt
 author: a213c844-224f-4cde-a891-d1f543fd3b61
 template: home
-updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1637317403
+updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
+updated_at: 1637364727
 intro_headline: 'Dein digitaler Wegweiser durch den Alltag mit Krebs'
 about-project_headline_addition: 'Das ist Pathly'
 about-project_headline: 'Ein digitaler Wegweiser für die Hosentasche.'
 about-project_textarea: |-
-  Krebs. Eine Diagnose, die einen extremen Einschnitt im Leben der Betroffenen bedeutet. Das Leben ändert sich schlagartig.
-
-  Pathly soll Krebspatient:innen und ihre Angehörigen auf dem Weg durch die Erkrankung begleitet, ihnen dabei hilft, den richtigen Umgang mit der Erkrankung und auch den möglichen Folgen zu finden. Pathly soll informieren, Pathly soll auffangen. Pathly soll Halt gebe, Inspiration und Mut schenken.
+  Krebs. Eine Diagnose, die einen extremen Einschnitt im Leben der Betroffenen bedeutet. Das Leben ändert sich schlagartig. 
+  Mit Pathly solle eine Plattform entstehen, die Krebspatient:innen und ihre Angehörigen auf dem Weg durch die Erkrankung begleitet, ihnen dabei hilft, den richtigen Umgang mit der Erkrankung und auch den möglichen Folgen zu finden. Pathly informiert, inspiriert und macht Mut!
 about-project_image: ribbons_small.svg
 about-project_image_position: right
 about-founders_headline_addition: Hallo!

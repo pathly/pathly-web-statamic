@@ -16,6 +16,14 @@ jobs:
         working-directory: statamic/
         run: composer install --no-progress
 
+      - name: Install Node dependencies
+        working-directory: statamic/
+        run: npm install
+
+      - name: Run Node build
+        working-directory: statamic/
+        run: npm run production
+
       - name: Create archive
         run: tar czf build.tar.gz statamic/
 

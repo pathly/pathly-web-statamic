@@ -62,14 +62,14 @@
   align-items: center;
   margin-left: var(--root64px);
   margin-top: 0;
-  padding-left: var(--root72px);
+  padding-left: var(--root80px);
   position: relative;
 }
 
 .header_nav .donation-button::before {
   content: "";
-  width: var(--root24px);
-  height: var(--root24px);
+  width: var(--root32px);
+  height: var(--root32px);
   position: absolute;
   left: var(--root40px);
   background-image: url("/images/heart.svg");

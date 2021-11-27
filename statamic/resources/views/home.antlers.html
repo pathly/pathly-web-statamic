@@ -56,7 +56,7 @@
     <p>{{ newsletter_textarea }}</p>
   </div>
 
-  <iframe class="mj-w-res-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/7gL6/L8b" width="100%"></iframe>
+  <iframe class="mj-w-res-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/7gL6/L8b" width="100%" height="100%"></iframe>
 </section>
 
 {{ collaboration }}
@@ -71,6 +71,24 @@
       {{ /if }}
       <h2 id="home_project" class="section-headline">{{ cta_headline }}</h2>
       <p>{{ cta_textarea }}</p>
+
+      {{ if cta_button_type === 'mail' }}
+        <a class="cta-button" href="mailto:{{ cta_mail_address }}?subject={{ cta_mail_subject }}&body={{ cta_mail_body }}">
+          {{ cta_button_icon }}
+            <img src="{{ url }}" alt="{{ alt }}" loading="lazy">
+          {{ /cta_button_icon }}
+          Schreib uns!
+        </a>
+      {{ elseif cta_button_type === 'subpage' }}
+        {{ cta_subpage }}
+          <a class="cta-button" href="{{ url }}">
+            {{ cta_button_icon }}
+              <img src="{{ url }}" alt="{{ alt }}" loading="lazy">
+            {{ /cta_button_icon }}
+            {{ title }}
+          </a>
+        {{ /cta_subpage }}
+      {{ /if }}
     </div>
   </section>
 {{ /collaboration }}

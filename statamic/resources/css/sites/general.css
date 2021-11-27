@@ -336,12 +336,8 @@ section {
   width: 100%;
 }
 
-.section_slider > ul li {
-  width: auto !important;
-}
-
 .section_slider > ul img {
-  width: 400px;
+  width: 100%;
   padding: 0 var(--root24px);
 }
 

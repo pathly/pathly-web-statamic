@@ -322,6 +322,7 @@ section {
 .section_slider p  {
   grid-column: 2/13;
   margin-bottom: var(--root40px);
+  max-width: 700px;
 }
 
 .slick-list {

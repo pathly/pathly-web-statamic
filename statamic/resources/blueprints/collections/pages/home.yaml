@@ -78,6 +78,12 @@ sections:
           listable: hidden
           validate:
             - required
+  stories:
+    display: Stories
+    fields:
+      -
+        import: standard_section
+        prefix: stories_
   newsletter:
     display: Newsletter
     fields:

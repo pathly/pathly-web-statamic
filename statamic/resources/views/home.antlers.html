@@ -1,6 +1,6 @@
 <!-- Section Header -->
 <section class="home-header">
-  <img class="home-header_image" src="/images/home_header.svg">
+  <img class="home-header_image" src="/images/home_header.svg" loading="lazy">
 
   <div class="home-header_text">
     <h1 id="home_intro">{{ intro_headline }}</h1>
@@ -31,6 +31,26 @@
     {{ /if }}
     <h2 id="home_project" class="section-headline">{{ about-project_headline }}</h2>
     <p>{{ about-project_textarea }}</p>
+  </div>
+</section>
+
+<section class="section_slider section--small-top-spacing">
+  {{ if stories_headline_addition }}
+    <h2 class="section-headline--addition">{{ stories_headline_addition }}</h2>
+  {{ /if }}
+  <h2 id="home_stories" class="section-headline">{{ stories_headline }}</h2>
+  <p>{{ stories_textarea }}</p>
+
+  <ul>
+    <li><img src="/images/story1.png" loading="lazy"></li>
+    <li><img src="/images/story2.png" loading="lazy"></li>
+    <li><img src="/images/story3.png" loading="lazy"></li>
+    <li><img src="/images/story4.png" loading="lazy"></li>
+    <li><img src="/images/story5.png" loading="lazy"></li>
+  </ul>
+
+  <div class="comming-soon">
+    <button class="cta-button">Comming soon!</button>
   </div>
 </section>
 

@@ -310,6 +310,59 @@ section {
 
 
 /* -------------------------------------------------------------------------------- */
+/* --- section slider--- */
+/* -------------------------------------------------------------------------------- */
+
+.section_slider .section-headline--addition {
+  grid-column: 2/13;
+}
+
+.section_slider h1,
+.section_slider .section-headline,
+.section_slider p  {
+  grid-column: 2/13;
+  margin-bottom: var(--root40px);
+}
+
+.slick-list {
+  overflow: visible !important;
+}
+
+.section_slider > ul {
+  grid-column: 2/13;
+  margin-top: var(--root40px);
+  opacity: 0.4;
+}
+
+.section_slider > ul img {
+  width: 100%;
+  padding: 0 var(--root24px);
+}
+
+@media (max-width: 450px) {
+  .section_slider h1,
+  .section_slider .section-headline,
+  .section_slider .section-headline--addition,
+  .section_slider p {
+    grid-column: 1/14;
+  }
+}
+
+.comming-soon {
+  grid-column: 1/14;
+  text-align: center;
+}
+
+.comming-soon .cta-button {
+  background-color: rgb(76, 73, 129);
+  box-shadow: 0 var(--root8px) var(--root48px) rgba(76, 73, 129, 0.2);
+  -moz-box-shadow: 0 var(--root8px) var(--root48px) rgba(76, 73, 129, 0.2);
+  -webkit-box-shadow: 0 var(--root8px) var(--root48px) rgba(76, 73, 129, 0.2);
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
 /* --- section pattern--- */
 /* -------------------------------------------------------------------------------- */
 
@@ -684,8 +737,8 @@ button {
 
   background-color: rgb(var(--primaryRed));
   box-shadow: 0 var(--root8px) var(--root48px) rgba(var(--primaryRed), 0.2);
-  -moz-box-shadow:  0 var(--root8px) var(--root48px) rgba(var(--primaryRed), 0.2);
-  -webkit-box-shadow:  0 var(--root8px) var(--root48px) rgba(var(--primaryRed), 0.2);
+  -moz-box-shadow: 0 var(--root8px) var(--root48px) rgba(var(--primaryRed), 0.2);
+  -webkit-box-shadow: 0 var(--root8px) var(--root48px) rgba(var(--primaryRed), 0.2);
   color: rgb(var(--primaryTextLight));
 
   transition: all 0.5s ease;

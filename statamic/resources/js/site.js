@@ -28,9 +28,37 @@ $(document).ready(function() {
       $(".oreos-form_options").removeClass("hidden");
   });
 
-// ------------------------------
-// ----- Slick Slider
-// ------------------------------
+  // ------------------------------
+  // ----- Section Slider – Slick Slider
+  // ------------------------------
+
+  $('.section_slider ul').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1000,
+    arrows: false,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+
+  // ------------------------------
+  // ----- Home – All Supporters – Slick Slider
+  // ------------------------------
 
   $('.all-supporters_slick-slider_list').slick({
     arrows: false,

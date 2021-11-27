@@ -7,7 +7,7 @@ icon: icons/nav_supporters.svg
 template: our-supporters
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
 intro_headline: 'Wir schicken all unseren tollen Unterstützer:innen und Spender:innen ein großes, herzliches Dankeschön.'
-intro_textarea: 'Durch die Hilfe unsere Unterstützer:innen können wir unsere Mission, den Alltag mit Krebs zu verändern, vorantreiben. Wir freuen uns über jede Person und jeden Verein, jedes Unternehmen, das uns auf unserer Weg begleitet. Toll, dass es euch gibt!'
+intro_textarea: 'Durch die Hilfe unserer Unterstützer:innen können wir unsere Mission, den Alltag mit Krebs zu verändern, vorantreiben. Wir freuen uns über jede Person und jeden Verein, jedes Unternehmen, das uns auf unserer Weg begleitet. Toll, dass es euch gibt!'
 intro_image: support.svg
 intro_image_position: left
 cooperations_headline_addition: 'Ein Danke an'

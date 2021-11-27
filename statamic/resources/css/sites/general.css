@@ -723,6 +723,10 @@ button {
   margin-top: var(--root40px);
 }
 .replicator > * + * {
+  margin-top: var(--root40px);
+}
+
+.replicator > * + img {
   margin-top: var(--root80px);
 }
 

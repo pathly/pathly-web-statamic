@@ -107,8 +107,8 @@ team_profiles:
     team_profile_responsibilities:
       - illustration
     team_profile_mail: yana@pathly.app
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1637524566
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1638022822
 template: our-team
 cta_toggle: true
 cta: 26cd6f15-97c9-4d5d-b701-6725436ce2b0

@@ -6,7 +6,7 @@ description: 'Warum für Pathly spenden?'
 icon: icons/nav_donation.svg
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
 intro_headline: 'Hilf uns beim Helfen – Jede Spende zählt!'
-intro_textarea: 'Als gemeinnütziger Verein, sind wir auf Unterstützer:innen und Spenden angewiesen. Schon mit einer kleinen Spende kannst Du Pathly unterstützen und damit unsere Mission Krebspatient:innen und ihre Angehörigen auf ihrem Weg durch die Erkrankung zu begleiten.'
+intro_textarea: 'Als gemeinnütziger Verein, sind wir auf Unterstützer:innen und Spenden angewiesen. Schon mit einer kleinen Spende kannst Du Pathly unterstützen und uns dabei helfen unsere Mission – Krebspatient:innen und ihre Angehörigen auf ihrem Weg durch die Erkrankung zu begleiten – umzusetzen.'
 intro_image: piggybank.svg
 intro_image_position: right
 donation-options_headline: 'So kannst du spenden!'
@@ -24,22 +24,22 @@ more-options_headline: 'Hilf uns mit deinem Engagement!'
 more-options_options:
   -
     more-options_option_headline: '🙂 Amazon Smile'
-    more-options_option_textarea: 'Unterstütz uns ganz einfach nebenbei, jedesmal wenn du über Amazon Smile bestellst und Pathly als Organisation ausgewählt hast..'
+    more-options_option_textarea: 'Unterstütz uns ganz einfach nebenbei, jedesmal wenn du über Amazon Smile bestellst und Pathly als Organisation ausgewählt hast.'
   -
     more-options_option_headline: '🎄 Dein Weihnachtsgeschenk für Pathly'
-    more-options_option_textarea: 'Du hast kein Bock auf langes Weihnachtsgeschenke suchen? Wir haben dir Lösung für dich. Verschenk doch zu Weihnachten eine Spende an Pathly. Vielleicht gibt es ja auch ein kleines Geschenk für die Person die du beschenkst. 😊'
+    more-options_option_textarea: 'Du hast kein Bock auf langes Weihnachtsgeschenke-Suchen? Wir haben die Lösung für dich: Verschenk doch zu Weihnachten eine Spende an Pathly. Vielleicht gibt es ja auch ein kleines Geschenk für die Person die du beschenkst. 😊'
   -
     more-options_option_headline: '🎁 Geburtstags-Spendenaktion'
-    more-options_option_textarea: 'Du kannst Pathly helfen, zum Beispiel mit einer Geburtstags-Spendenaktion auf Facebook oder Instagram, so können deine Freunde an deinem Geburtstag für uns spenden. Vielleicht gibt es dann ja auch ein kleines Geschenk von uns für dich. 😊'
+    more-options_option_textarea: 'Du kannst Pathly helfen, zum Beispiel mit Hilfe einer Geburtstags-Spendenaktion auf Facebook oder Instagram. So können deine Freunde an deinem Geburtstag für uns spenden. Vielleicht gibt es dann ja auch ein kleines Geschenk von uns für dich. 😊'
   -
     more-options_option_headline: '🏙 Als Unternehmen spenden'
     more-options_option_textarea: 'Du hast ein Unternehmen und machst zum Beispiel eine Weihnachts-Spendenaktion? Dann denk bei der Planung deiner Spendenaktion an uns und unterstützt damit das Engagement von Pathly.'
   -
     more-options_option_headline: '📱 Social Media „Shoutout“'
-    more-options_option_textarea: 'Du bist auf Social-Media unterwegs und hast Lust Pathly zu unterstützen? Dann schenk unserem Account ein „Shoutout“ und erzähl etwas über unser Initiative.'
+    more-options_option_textarea: 'Du bist auf Social Media unterwegs und hast Lust Pathly zu unterstützen? Dann schenk unserem Account ein „Shoutout“ und erzähl etwas über unsere Initiative.'
   -
     more-options_option_headline: '💜 Mit deinem Produkt Gutes tun'
-    more-options_option_textarea: 'Du hast ein Produkt und willst dich engagieren? Dann erklär dein Produkt zum Benefiz-Produkt und unterstütze unsere Verein mit einem Teil deines Verkaufserlöses.'
+    more-options_option_textarea: 'Du hast ein Produkt und willst dich engagieren? Dann erklär dein Produkt zum Benefiz-Produkt und unterstütze unseren Verein mit einem Teil deines Verkaufserlöses.'
   -
     more-options_option_headline: '🚀 Starte eine eigene Spendenaktion'
     more-options_option_textarea: 'Du hast Lust dich selbst ehrenamtlich zu engagieren? Dann starte doch deine eigene Spendenaktion und melde dich bei uns mit deiner Idee!'

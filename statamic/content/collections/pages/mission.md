@@ -12,14 +12,8 @@ mission_section:
     headline: 'Deswegen gibt es Pathly'
     replicator:
       -
-        textarea: 'Die Diagnose Krebs bedeutet einen extremen Einschnitt in das Leben jener, die von der Krankheit betroffen sind. Mit der Diagnose ändert sich das Leben der Betroffenen schlagartig. Neben lebensverändernden Entscheidungen, Sorgen und Ängsten, kommen körperliche Einschränkungen und auch finanzielle Belastungen auf die Patient:innen zu. Die Belastung durch die Erkrankung wirkt sich dabei nicht selten auch auf die Psyche der Patient:innen und auch ihrer Angehörigen  aus. Gefühle wie Angst und Hilflosigkeit sind nach so einer Diagnose sozusagen ganz ›normal‹. Krebs zu haben – macht Angst.'
-        type: textarea
-        enabled: true
-      -
         textarea: |-
-          Viele Infos rund um das Thema Krebs fokussieren sich auf medizinische Informationen, sind stigmatisierend, umständlich und kompliziert formuliert. Oft werden Betroffene nach der Diagnose mit Infos überschüttet, man fühlt sich überfordert und irgendwie auch alleingelassen. Etliche neue Herausforderungen kommen auf einen zu. Physische, psychische und soziale. Viele dieser Herausforderungen betreffen nicht nur die Patient:innen selbst, sondern auch auf ihre Angehörigen, welche leider häufig vergessen werden. Also was ist mit Mama, Papa, Partner:in oder Freund:in? Auch für sie gibt es Pathly.
-
-          Wir möchten auch diejenigen abholen, die bisher vergessen wurden. Wir wollen aufstehen und über Themen reden, über die bisher meist nur mit vorgehaltener Hand gesprochen wurde. Wir möchten den Alltag mit Krebs verändern.
+          Die Diagnose Krebs bedeutet einen extremen Einschnitt in das Leben jener, die von der Krankheit betroffen sind. Gefühle wie Angst und Hilflosigkeit sind dabei ganz normal. Viele Infos rund um das Thema Krebs fokussieren sich auf medizinische Informationen, sind stigmatisierend, umständlich und kompliziert formuliert. Oft werden Betroffene nach der Diagnose mit Informationen überschüttet. Etliche neue Herausforderungen kommen auf sie zu – physische, psychische als auch soziale. Viele dieser Herausforderungen betreffen allerdings nicht nur die Patient:innen selbst, sondern auch ihre Angehörigen, welche leider häufig vergessen werden. Wir möchten auch diejenigen abholen, die bisher vergessen wurden. Wir wollen aufstehen und über Themen reden, über die bisher meist nur mit vorgehaltener Hand gesprochen wurde. Wir möchten den Alltag mit Krebs verändern!
         type: textarea
         enabled: true
       -
@@ -36,21 +30,25 @@ mission_section:
     headline: 'Ein Wegweiser für die Hosentaschen'
     replicator:
       -
-        textarea: 'Pathly soll Menschen mit Krebs und Angehörige bei der Bewältigung ihres Alltags unterstützen, ihnen dabei helfen, das Leben trotz Krebs zu genießen und zum Weitermachen inspirieren. Mit Pathly soll eine Plattform entstehen, die Betroffenen dabei hilft, den richtigen Umgang mit der Erkrankung und auch den möglichen Folgen zu finden. Pathly soll auffangen, inspirieren, Halt geben und Mut machen.'
+        textarea: 'Mit Pathly soll eine digitale Plattform entstehen, die Krebspatient:innen und Angehörigen durch ihren Alltag mit dem Krebs begleitet. Diese Plattform soll dabei nicht nur als Website sondern auch als App realisiert werden. Das bietet die Möglichkeit, Patient:innen und Angehörige in ihrer ganz persönlichen Lebenssituation abzuholen und ihnen wichtige Informationen zur richtigen Zeit bereitzustellen.'
         type: textarea
         enabled: true
       -
         textarea: |-
-          Pathly unterstützt Betroffene ab dem Augenblick der Diagnose, über die Therapie, bei der Nachsorge bis hin zum Leben nach dem Krebs. Pathly soll sie dabei in ihrer ganz individuellen Lebenssituation abholen und Schritt für Schritt durch den Alltag mit Krebs begleiten. Wichtige Tipps und Infos werden Stück für Stück zur Verfügung gestellt. Geschichten von Krebspatient:innen und Angehörigen sollen Mut, Kraft und Zuversicht schenken und den Betroffenen zeigen, dass sie nicht allein sind.
-
-          Auf spielerische Art und Weise möchten wir Motivation aufbauen und mentale Stärke aufbauen. Wir möchten dabei helfen das Leben trotz Krebs zu genießen und sich nicht fallen zu lassen. Kleine Challenges sollen dabei helfen, natürlich angepasst auf die jeweilige körperliche und mentale Verfassung, in der sich die Betroffenen an diesem Tag befinden.
+          Tipps, Tricks und Infos sollen dabei Stück für Stück und in verständlicher Sprache zur Verfügung gestellt werden, um sich langsam in das Thema einzuarbeiten und nicht mit einer Flut an Informationen überfordert zu werden.
+          Geschichten von anderen Krebspatient:innen und Angehörigen sollen Mut, Kraft und Zuversicht schenken und Betroffenen zeigen, dass sie nicht alleine sind.
+          Mit Hilfe kleiner Challenges, die auf die körperliche und mentale Gesundheit der Nutzer:innen abgestimmt sind, möchten wir auf spielerische Art und Weise Motivation und die mentale Stärke aufbauen und dabei helfen, sich nicht fallen zu lassen.
         type: textarea
         enabled: true
       -
         textarea: |-
-          Mit Pathly möchten wir den Zusammenhalt stärken und eine Plattform kreieren, die Patient:innen, Freunde und Familie zusammenbringt, den Austausch erleichtert und damit ein digitaler Raum der unbeschwerten Kommunikation werden. Wir möchten dem Krebs mit mehr Humor, Lebensfreude und Mumm begegnen.
-
-          Pathly soll Patient:innen und Angehörige digital durch die Therapie begleiten und dabei helfen zurück ins Leben zu kommen.
+          Mit Pathly möchten wir den Zusammenhalt stärken und eine Plattform kreieren, die Patient:innen, Freunde und Familie zusammenbringt, den Austausch erleichtert und damit einen digitalen Raum der unbeschwerten Kommunikation schafft.
+          Pathly soll Patient:innen und Angehörige digital durch die Erkrankung begleiten und dabei helfen zurück ins Leben zu kommen.
+        type: textarea
+        enabled: true
+      -
+        textarea: |-
+          Übrigens: Langfristig möchten wir Pathly als Medizinprodukt zertifizieren lassen.
         type: textarea
         enabled: true
       -
@@ -78,7 +76,7 @@ mission_section:
         type: list
         enabled: true
       -
-        textarea: 'Angst, Verzweiflung und Hilflosigkeit sind Gefühle, die bei so einer Diagnose nicht selten mitschwingen. Deswegen möchten wir mit Pathly eine Plattform kreieren, auf der wir aufklären, Erfahrungen weiter geben, hilfreiche Tipps zur Verfügung stellen und die Patient:innen und ihre Angehörigen vom ersten Moment an begleiten. Unser Ziel ist es, mit unserer App personalisierte Informationen und Hilfestellungen mit den Betroffenen zu teilen, sodass gar nicht erst eine Überflut an Informationen entsteht. Wir setzen uns dafür ein, Inhalte so aufzuarbeiten, dass sie leicht zu verstehen, immer abrufbar und frei von Stigmen und Tabus sind. Wir möchten aufklären, enttabuisieren und einem schwierigen Thema wie Krebs mit ein bisschen mehr Farbe begegnen.'
+        textarea: 'Angst, Verzweiflung und Hilflosigkeit sind Gefühle, die bei so einer Diagnose nicht selten mitschwingen. Deswegen möchten wir mit Pathly eine Plattform kreieren, auf der wir aufklären, Erfahrungen weitergeben, hilfreiche Tipps zur Verfügung stellen und die Patient:innen und ihre Angehörigen vom ersten Moment an begleiten. Unser Ziel ist es, mit unserer App personalisierte Informationen und Hilfestellungen mit den Betroffenen zu teilen, sodass gar nicht erst eine Überflut an Informationen entsteht. Wir setzen uns dafür ein, Inhalte so aufzuarbeiten, dass sie leicht zu verstehen, immer abrufbar und frei von Stigmen und Tabus sind. Wir möchten aufklären, enttabuisieren und einem schwierigen Thema wie Krebs mit ein bisschen mehr Farbe begegnen.'
         type: textarea
         enabled: true
 template: our-mission

@@ -1,11 +1,11 @@
 <section class="section_image-full-width">
   <picture>
     {{ intro_image--big }}
-      <source class="full-width" srcset="{{ url }}" alt="{{ alt }}" loading="lazy" media="(min-width: 700px)">
+      <source class="full-width" srcset="{{ url }}" alt="{{ alt }}" media="(min-width: 700px)"/>
     {{ /intro_image--big }}
 
     {{ intro_image--small }}
-      <img class="full-width" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+      <img class="full-width" src="{{ url }}" alt="{{ alt }}"/>
     {{ /intro_image--small }}
   </picture>
 </section>
@@ -21,7 +21,7 @@
       {{ team_profiles }}
         <li id="team_profile">
           {{ team_profile_image }}
-            <img class="round-image shadow" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+            <img class="round-image shadow" src="{{ url }}" alt="{{ alt }}"/>
           {{ /team_profile_image }}
 
           <h3>{{ team_profile_name }}</h3>

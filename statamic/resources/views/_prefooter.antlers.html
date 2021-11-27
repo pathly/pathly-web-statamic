@@ -2,7 +2,7 @@
   {{ cta }}
     <section class="{{ cta_image_position == 'left' ?= 'section_text-w-image-left' }}{{ cta_image_position == 'right' ?= 'section_text-w-image-right' }} section--small-top-spacing">
       {{ cta_image }}
-        <img src="{{ url }}" alt="{{ alt }}" loading="lazy">
+        <img src="{{ url }}" alt="{{ alt }}"/>
       {{ /cta_image }}
 
       <div>
@@ -15,7 +15,7 @@
         {{ if cta_button_type === 'mail' }}
           <a class="cta-button" href="mailto:{{ cta_mail_address }}?subject={{ cta_mail_subject }}&body={{ cta_mail_body }}">
             {{ cta_button_icon }}
-              <img src="{{ url }}" alt="{{ alt }}" loading="lazy">
+              <img src="{{ url }}" alt="{{ alt }}"/>
             {{ /cta_button_icon }}
             Schreib uns!
           </a>
@@ -23,7 +23,7 @@
           {{ cta_subpage }}
             <a class="cta-button" href="{{ url }}">
               {{ cta_button_icon }}
-                <img src="{{ url }}" alt="{{ alt }}" loading="lazy">
+                <img src="{{ url }}" alt="{{ alt }}"/>
               {{ /cta_button_icon }}
               {{ title }}
             </a>

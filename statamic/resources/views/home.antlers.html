@@ -1,6 +1,6 @@
 <!-- Section Header -->
 <section class="home-header">
-  <img class="home-header_image" src="/images/home_header.svg" loading="lazy">
+  <img class="home-header_image" src="/images/home_header.svg"/>
 
   <div class="home-header_text">
     <h1 id="home_intro">{{ intro_headline }}</h1>
@@ -22,7 +22,7 @@
 
 <section class="{{ about-project_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-project_image_position == 'right' ?= 'section_text-w-image-right' }} section--small-top-spacing">
   {{ about-project_image }}
-    <img src="{{ url }}" alt="{{ alt }}" loading="lazy"/>
+    <img src="{{ url }}" alt="{{ alt }}"/>
   {{ /about-project_image }}
 
   <div>
@@ -42,11 +42,11 @@
   <p>{{ stories_textarea }}</p>
 
   <ul>
-    <li><img src="/images/story1.png" loading="lazy"></li>
-    <li><img src="/images/story2.png" loading="lazy"></li>
-    <li><img src="/images/story3.png" loading="lazy"></li>
-    <li><img src="/images/story4.png" loading="lazy"></li>
-    <li><img src="/images/story5.png" loading="lazy"></li>
+    <li><img src="/images/story1.png"/></li>
+    <li><img src="/images/story2.png"/></li>
+    <li><img src="/images/story3.png"/></li>
+    <li><img src="/images/story4.png"/></li>
+    <li><img src="/images/story5.png"/></li>
   </ul>
 
   <div class="comming-soon">
@@ -56,7 +56,7 @@
 
 <section class="{{ about-founders_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-founders_image_position == 'right' ?= 'section_text-w-image-right' }} section--small-top-spacing">
   {{ about-founders_image }}
-    <img src="{{ url }}" alt="{{ alt }}" loading="lazy"/>
+    <img src="{{ url }}" alt="{{ alt }}"/>
   {{ /about-founders_image }}
 
   <div>
@@ -70,7 +70,7 @@
 
 <section class="section_newsletter section--small-top-spacing">
   <div class="newsletter_header">
-    <img class="newsletter_mailbox-image" src="/images/mailbox.svg" alt="Newsletter" loading="lazy"/>
+    <img class="newsletter_mailbox-image" src="/images/mailbox.svg" alt="Newsletter"/>
 
     <h2 id="home_newsletter" class="section-headline">{{ newsletter_headline }}</h2>
     <p>{{ newsletter_textarea }}</p>
@@ -82,7 +82,7 @@
 {{ collaboration }}
   <section class="{{ cta_image_position == 'left' ?= 'section_text-w-image-left' }}{{ cta_image_position == 'right' ?= 'section_text-w-image-right' }} section--small-top-spacing">
     {{ cta_image }}
-      <img src="{{ url }}" alt="{{ alt }}" loading="lazy"/>
+      <img src="{{ url }}" alt="{{ alt }}"/>
     {{ /cta_image }}
 
     <div>
@@ -95,7 +95,7 @@
       {{ if cta_button_type === 'mail' }}
         <a class="cta-button" href="mailto:{{ cta_mail_address }}?subject={{ cta_mail_subject }}&body={{ cta_mail_body }}">
           {{ cta_button_icon }}
-            <img src="{{ url }}" alt="{{ alt }}" loading="lazy">
+            <img src="{{ url }}" alt="{{ alt }}"/>
           {{ /cta_button_icon }}
           Schreib uns!
         </a>
@@ -103,7 +103,7 @@
         {{ cta_subpage }}
           <a class="cta-button" href="{{ url }}">
             {{ cta_button_icon }}
-              <img src="{{ url }}" alt="{{ alt }}" loading="lazy">
+              <img src="{{ url }}" alt="{{ alt }}"/>
             {{ /cta_button_icon }}
             {{ title }}
           </a>
@@ -123,7 +123,7 @@
     <ul class="all-supporters_slick-slider_list">
       {{ assets container="assets" folder="supporter" sort="rating" }}
         <li class="all-supporters_slick-slider_list_item">
-          <img class="round-image shadow" src="{{ url }}" alt="{{ alt }}" loading="lazy">
+          <img class="round-image shadow" src="{{ url }}" alt="{{ alt }}"/>
         </li>
       {{ /assets }}
     </ul>

@@ -333,10 +333,15 @@ section {
   grid-column: 2/13;
   margin-top: var(--root40px);
   opacity: 0.4;
+  width: 100%;
+}
+
+.section_slider > ul li {
+  width: auto !important;
 }
 
 .section_slider > ul img {
-  width: 100%;
+  width: 400px;
   padding: 0 var(--root24px);
 }
 

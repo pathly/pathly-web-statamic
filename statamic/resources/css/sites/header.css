@@ -4,8 +4,9 @@
 
 .header {
   position: fixed;
-  background-color: #ffffff60;
-  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95); /* fallback for FF, FF Android, IE */
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px); /* not working in FF, FF Android, IE */
   width: 90vw;
   display: flex;
   justify-content: space-between;

@@ -14,11 +14,11 @@ donation-options_buttons:
   -
     donation-options_buttons_icon: icons/PayPal.png
     donation-options_button_headline: 'Mit PayPal spenden'
-    donation-options_button_url: 'https://www.google.com'
+    donation-options_button_url: 'https://www.paypal.com/donate/?hosted_button_id=XR6MXEY4F6WHQ'
   -
     donation-options_buttons_icon: icons/Betterplace.png
     donation-options_button_headline: 'Mit Betterplace einmalig oder regelmäßig spenden'
-    donation-options_button_url: 'https://www.google.com'
+    donation-options_button_url: 'https://www.betterplace.org/de/projects/102174-pathly-dein-wegweiser-durch-den-alltag-mit-krebs'
 more-options_headline_addition: 'Das kannst du machen'
 more-options_headline: 'Hilf uns mit deinem Engagement!'
 more-options_options:
@@ -45,8 +45,8 @@ more-options_options:
     more-options_option_textarea: 'Du hast Lust dich selbst ehrenamtlich zu engagieren? Dann starte doch deine eigene Spendenaktion und melde dich bei uns mit deiner Idee!'
 cta_toggle: true
 cta: f67d9c6c-015c-4d33-af37-dbbdb50d7347
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1637525464
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1638271077
 donation-options_bank-transfer_headline: 'Oder per Überweisung spenden!'
 donation-options_contribution-receipt_headline: '🧾 Spendenquittung fürs Finanzamt'
 donation-options_contribution-receipt_textarea: 'Bei einer Spende unter 200€ reicht dem Finanzamt der Nachweis auf deinem Kontoauszug, bei Spenden über 200€ stellen wir dir selbstverständlich eine Spenden Quittung aus.'
@@ -59,5 +59,5 @@ og_title: Spenden
 og_description: 'Hilf uns beim Helfen – Jede Spende zählt!'
 og_image: opengraph/og_donation.png
 donation_video_headline: 'Warum für Pathly spenden?'
-donation_video_url: 'https://www.youtube-nocookie.com/embed/xSzyNXDDIfg'
+donation_video_url: 'https://www.youtube-nocookie.com/embed/xOB6D-scczg?rel=0'
 ---

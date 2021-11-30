@@ -93,7 +93,7 @@ sections:
           listable: hidden
           validate:
             - required
-          instructions: 'Youtube Video > Teilen > Einbetten > Erweiterten Datenschutzmodus aktivieren > Inhalt von src="" kopieren'
+          instructions: 'Youtube Video > Teilen > Einbetten > Erweiterten Datenschutzmodus aktivieren > Inhalt von src="" kopieren und hier einfügen + hinter der URL "?rel=0" anhängen, damit nicht der Banner mit mehr Videos angezeigt wird'
   donation-options:
     display: 'Donation Options'
     fields:

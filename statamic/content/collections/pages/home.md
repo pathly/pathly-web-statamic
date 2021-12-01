@@ -10,8 +10,8 @@ intro_headline: 'Dein digitaler Wegweiser durch den Alltag mit Krebs'
 about-project_headline_addition: 'Das ist Pathly'
 about-project_headline: 'Ein digitaler Wegweiser für die Hosentasche.'
 about-project_textarea: |-
-  Krebs. Eine Diagnose, die einen extremen Einschnitt im Leben der Betroffenen bedeutet. Das Leben ändert sich schlagartig.
-  Mit Pathly solle eine Plattform entstehen, die Krebspatient:innen und ihre Angehörigen auf dem Weg durch die Erkrankung begleitet, ihnen dabei hilft, den richtigen Umgang mit der Erkrankung und auch den möglichen Folgen zu finden. Pathly informiert, inspiriert und macht Mut!
+  Pathly ist eine Plattform, die Krebspatient:innen und Angehörige durch den Alltag mit Krebs begleitet. Dabei wollen wir alle Seiten des Krebs beleuchten, wir möchten uns untereinander austauschen, inspirieren, Mut machen und Kraft spenden.
+  Pathly soll die Suche nach wichtigen Informationen erleichtern und Betroffene mit wertvollen Tipps und Tricks unterstützen. Wir wollen einen Ort schaffen, an dem jede:r willkommen ist und den Raum hat seine oder ihre Geschichte zu erzählen.
 about-project_image: ribbons-small.svg
 about-project_image_position: right
 about-founders_headline_addition: Hallo!

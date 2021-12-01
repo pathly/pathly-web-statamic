@@ -60,7 +60,7 @@ mission_section:
     headline: 'Halt geben, Informieren und Mut machen'
     replicator:
       -
-        textarea: 'Eine Krebsdiagnose ist für Patient:innen und ihre Angehörigen ein Schock. Oft muss der Krebs sofort behandelt werden, es bleibt wenig bis keine Zeit, sich auf die Therapie vorzubereiten oder über mögliche Folgen nachzudenken. Trotzdem schwirren den Betroffenen Fragen über Fragen durch den Kopf. Ärzte überschütten sie mit Informationen, die sie sich gar nicht alle merken können. Familie und Freunde überschütten sie mit Fragen, die sie meist gar nicht beantworten können.'
+        textarea: 'Die Diagnose Krebs ist für alle zunächst ein Schock. Oft muss der Krebs sofort behandelt werden, es bleibt wenig bis keine Zeit, sich auf die Therapie vorzubereiten oder über mögliche Folgen nachzudenken. Trotzdem schwirren den Betroffenen Fragen über Fragen durch den Kopf. Ärzte überschütten sie mit Informationen, die sie sich gar nicht alle merken können. Familie und Freunde überschütten sie mit Fragen, die sie meist gar nicht beantworten können.'
         type: textarea
         enabled: true
       -
@@ -76,7 +76,7 @@ mission_section:
         type: list
         enabled: true
       -
-        textarea: 'Angst, Verzweiflung und Hilflosigkeit sind Gefühle, die bei so einer Diagnose nicht selten mitschwingen. Deswegen möchten wir mit Pathly eine Plattform kreieren, auf der wir aufklären, Erfahrungen weitergeben, hilfreiche Tipps zur Verfügung stellen und die Patient:innen und ihre Angehörigen vom ersten Moment an begleiten. Unser Ziel ist es, mit unserer App personalisierte Informationen und Hilfestellungen mit den Betroffenen zu teilen, sodass gar nicht erst eine Überflut an Informationen entsteht. Wir setzen uns dafür ein, Inhalte so aufzuarbeiten, dass sie leicht zu verstehen, immer abrufbar und frei von Stigmen und Tabus sind. Wir möchten aufklären, enttabuisieren und einem schwierigen Thema wie Krebs mit ein bisschen mehr Farbe begegnen.'
+        textarea: 'Angst, Verzweiflung und Hilflosigkeit sind ganz normale Gefühle, die bei so einer Diagnose mitschwingen. Deswegen möchten wir mit Pathly eine Plattform kreieren, auf der wir aufklären, Erfahrungen weitergeben, hilfreiche Tipps zur Verfügung stellen und die Patient:innen und ihre Angehörigen vom ersten Moment an begleiten. Wichtig ist uns dabei, Inhalte so aufzuarbeiten, dass sie leicht zu verstehen, immer abrufbar und frei von Stigmen und Tabus sind. Wir möchten aufklären, enttabuisieren und einem schwierigen Thema wie Krebs mit ein bisschen mehr Farbe begegnen.'
         type: textarea
         enabled: true
 template: our-mission

@@ -27,7 +27,7 @@ more-options_options:
     more-options_option_textarea: 'Unterstütz uns ganz einfach nebenbei, jedesmal wenn du über Amazon Smile bestellst und Pathly als Organisation ausgewählt hast.'
   -
     more-options_option_headline: '🎄 Dein Weihnachtsgeschenk für Pathly'
-    more-options_option_textarea: 'Du hast kein Bock auf langes Weihnachtsgeschenke-Suchen? Wir haben die Lösung für dich: Verschenk doch zu Weihnachten eine Spende an Pathly. Vielleicht gibt es ja auch ein kleines Geschenk für die Person die du beschenkst. 😊'
+    more-options_option_textarea: 'Du hast kein Bock auf langes Weihnachtsgeschenke-Suchen? Wir haben die Lösung für dich: Verschenk doch zu Weihnachten eine Spende an Pathly. Als "physischen" Ersatz erhält die beschenkte Person dann eine Kleinigkeit von uns. 😊'
   -
     more-options_option_headline: '🎁 Geburtstags-Spendenaktion'
     more-options_option_textarea: 'Du kannst Pathly helfen, zum Beispiel mit Hilfe einer Geburtstags-Spendenaktion auf Facebook oder Instagram. So können deine Freunde an deinem Geburtstag für uns spenden. Vielleicht gibt es dann ja auch ein kleines Geschenk von uns für dich. 😊'

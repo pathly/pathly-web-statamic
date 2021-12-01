@@ -51,12 +51,12 @@ sponsors_profiles:
   -
     sponsors_profile_image: supporter/Creative-Mod.png
     sponsors_profile_name: CreativeMod
-    sponsors_profile_description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.'
+    sponsors_profile_description: '»Wir finden, dass die Message von Pathly wichtig ist und hinaus in die Welt getragen werden muss. Deshalb haben wir von CreativeMod als Medienproduktion für Pathly das Fundraising Video umgesetzt und im Animationsspot Pathly zum Leben erweckt.«'
     sponsors_profile_url: 'https://creativemod.de/'
   -
     sponsors_profile_image: supporter/Meta.svg
     sponsors_profile_name: 'Meta (Facebook)'
-    sponsors_profile_description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.'
+    sponsors_profile_description: ' '
     sponsors_profile_url: 'https://www.facebook.com/pathlyev'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1637700248

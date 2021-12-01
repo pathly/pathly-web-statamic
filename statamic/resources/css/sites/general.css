@@ -613,10 +613,6 @@ section {
     grid-area: 2/1/2/12;
     margin-top: var(--root40px);
   }
-
-  .alternating-tiles h3 {
-    text-align: center;
-  }
 }
 
 @media (max-width: 650px) {

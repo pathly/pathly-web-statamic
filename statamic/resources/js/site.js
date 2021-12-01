@@ -116,4 +116,32 @@ $(document).ready(function() {
     ]
   });
 
+  // ------------------------------
+  // ----- Youtube 2 Click Solution
+  // ------------------------------
+
+  function get_source_url() {
+  	return "{SOURCE}?rel=0&showinfo=0&autoplay=1";
+  }
+
+  $(".video_thumbnail_disclaimer_button").on("click", function () {
+      var trigger = $(this).parent();
+      var wrapper = trigger.parent();
+      var layer = wrapper.find(".video_layer");
+      console.log(layer);
+      var section = wrapper.parent();
+
+      var source = get_source_url();
+      var data_source = trigger.attr("data-source");
+      source = source.replace("{SOURCE}", data_source);
+
+      layer.css("display", "block");
+      layer.find("iframe").attr("src", source);
+
+      wrapper.css("backgroundImage","");
+      wrapper.css("height", "auto");
+      trigger.hide();
+      section.find(".video_thumbnail_disclaimer_text").hide();
+  });
+
 });

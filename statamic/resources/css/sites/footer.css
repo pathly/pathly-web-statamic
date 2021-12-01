@@ -2,6 +2,10 @@
 /* --- footer --- */
 /* -------------------------------------------------------------------------------- */
 
+.main-footer {
+  z-index: 999;
+}
+
 .footer_social-media {
   grid-column: 6/13;
   display: block;

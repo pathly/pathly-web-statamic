@@ -29,10 +29,6 @@ body {
   display: none !important;
 }
 
-.z1000 {
-  z-index: 1000;
-}
-
 
 
 /* -------------------------------------------------------------------------------- */
@@ -46,6 +42,7 @@ body {
   padding: 0 5vw;
   margin: calc(2 * var(--root48px) + var(--root80px) + var(--root40px)) auto 0 auto; /* 2 * (header padding+margin) + header content height + bottom spacing */
   max-width: 1800px;
+  z-index: 1000;
 }
 
 @media (min-width: 2000px) {
@@ -314,6 +311,8 @@ section {
 }
 
 .section_video-full-width .video_thumbnail_disclaimer_text a {
+  font-family: 'azo-sans-web';
+  font-size: var(--root20px);
   color: white;
   text-decoration: underline;
 }

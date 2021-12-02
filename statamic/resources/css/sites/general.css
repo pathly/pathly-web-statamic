@@ -84,13 +84,20 @@ section {
 /* --- section text--- */
 /* -------------------------------------------------------------------------------- */
 
+.section_text .section-headline--addition,
+.section_text h1,
+.section_text .section-headline,
+.section_text p {
+  max-width: 800px;
+}
+
 .section_text .section-headline--addition {
-  grid-column: 3/12;
+  grid-column: 4/11;
 }
 
 .section_text h1,
 .section_text .section-headline {
-  grid-column: 3/12;
+  grid-column: 4/11;
   margin-bottom: var(--root40px);
 }
 
@@ -101,10 +108,26 @@ section {
 }
 
 .section_text > div > *:not(img) {
-  grid-column: 2/11;
+  grid-column: 3/10;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1400px) {
+  .section_text .section-headline--addition {
+    grid-column: 3/12;
+  }
+
+  .section_text h1,
+  .section_text .section-headline {
+    grid-column: 3/12;
+    margin-bottom: var(--root40px);
+  }
+
+  .section_text > div > *:not(img) {
+    grid-column: 2/11;
+  }
+}
+
+@media (max-width: 800px) {
   .section_text h1,
   .section_text .section-headline,
   .section_text .section-headline--addition {
@@ -892,7 +915,7 @@ button {
 
 .accordion_title h3 {
   font-size: var(--root24px);
-  padding-right: var(--root8px);
+  padding-right: var(--root16px);
 }
 
 .accordion_indicator {
@@ -909,6 +932,10 @@ button {
   max-height: 0;
   opacity: 0;
   transition: max-height 1s ease, opacity 0.4s ease;
+}
+
+.accordion_content p {
+  max-width: 800px;
 }
 
 .accordion_content > *:first-child {

@@ -4,7 +4,6 @@
 
 .header {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.95); /* fallback for FF, FF Android, IE */
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px); /* not working in FF, FF Android, IE */
   width: 90vw;
@@ -15,6 +14,12 @@
   border-radius: var(--root24px);
   margin: var(--root24px) 5vw;
   z-index: 2000;
+}
+
+@supports (-moz-appearance:none) {
+  .header {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
 }
 
 .header_logo {

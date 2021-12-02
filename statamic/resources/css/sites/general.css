@@ -73,9 +73,8 @@ section {
 }
 
 @media (max-width: 500px) {
-  .section--big-top-spacing,
-  .section--small-top-spacing {
-    margin-top: 5em;
+  .section--big-top-spacing {
+    margin-top: 10.42em; /* 250px // based on 24px */
   }
 }
 
@@ -612,6 +611,10 @@ section {
     grid-area: 2/1/2/12;
     margin-top: var(--root40px);
   }
+
+  .alternating-tiles h3 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 650px) {
@@ -889,6 +892,7 @@ button {
 
 .accordion_title h3 {
   font-size: var(--root24px);
+  padding-right: var(--root8px);
 }
 
 .accordion_indicator {

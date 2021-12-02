@@ -3,7 +3,7 @@
   <div class="link-list">
     {{ links }}
       <a target="_blank" class="link-list_button" href="{{ link_url }}">
-        <div class="link-list_button_icon-container">
+        <div class="link-list_button_icon-container {{ if !link_icon }} colored {{ /if }}">
           {{ link_icon }}
             <img src="{{ url }}" alt="{{ alt }}">
           {{ /link_icon }}

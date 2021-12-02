@@ -675,15 +675,19 @@ section {
 .link-list_button_icon-container {
   width: var(--root40px);
   height: var(--root40px);
-  background-color: rgb(var(--primaryPurple));
   border-radius: var(--root8px);
   margin-right: var(--root16px);
   flex-shrink: 0;
   overflow: hidden;
 }
 
+.link-list_button_icon-container.colored {
+  background-color: rgb(var(--primaryPurple));
+}
+
 .link-list_button_icon-container img {
   width: 100%;
+  height: 100%;
 }
 
 .link-list_button p {

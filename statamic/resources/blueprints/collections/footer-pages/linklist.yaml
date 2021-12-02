@@ -48,7 +48,7 @@ sections:
         field:
           fields:
             -
-              handle: link_image
+              handle: link_icon
               field:
                 mode: grid
                 restrict: false
@@ -57,6 +57,7 @@ sections:
                 type: assets
                 icon: assets
                 listable: hidden
+                max_files: 1
             -
               handle: link_headline
               field:

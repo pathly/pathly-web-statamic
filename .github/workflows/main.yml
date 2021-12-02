@@ -132,15 +132,11 @@ jobs:
           chmod 700 ~/.ssh
 
       - name: Add fingerprint of remote host
-        env:
-          SSH_FINGERPRINT: ${{ secrets.SSH_FINGERPRINT }}
         run: |
           echo "$SSH_FINGERPRINT" > ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
 
       - name: Add SSH private key
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         run: |
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa

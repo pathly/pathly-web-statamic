@@ -38,7 +38,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     concurrency: production
-    if: ${{ env.GITHUB_REF_NAME == 'master' }}
+    if: ${{ github.ref_name == 'master' }}
     env:
       SSH_HOST: ${{ secrets.SSH_HOST }}
       SSH_PORT: ${{ secrets.SSH_PORT }}
@@ -114,7 +114,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     concurrency: development
-    if: ${{ env.GITHUB_REF_NAME == 'development' }}
+    if: ${{ github.ref_name == 'development' }}
     env:
       SSH_HOST: ${{ secrets.DEV_SSH_HOST }}
       SSH_PORT: ${{ secrets.DEV_SSH_PORT }}

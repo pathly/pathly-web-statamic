@@ -1,6 +1,6 @@
 <div class="oreos-popup shadow">
-    <h2>Wir nutzen Cookies 🍪</h2>
-    <p>Einige Cookies sind für den Betrieb der Website notwendig. Andere helfen uns, unser Angebot für dich zu verbessern. Da uns Datenschutz sehr wichtig ist, bitten wir dich selbst über den Umfang der Cookies bei deinem Besuch zu entscheiden.</p>
+    <h2>{{ cookie-consent:popup_headline }}</h2>
+    {{ cookie-consent:popup_copytext | markdown }}
 
     {{ oreos:form
       description="false"
@@ -10,7 +10,8 @@
     }}
 
     <div>
-      <a href="/imprint">Impressum</a>
-      <a href="/privacy">Datenschutz</a>
+        {{ cookie-consent:popup_footer_links }}
+            <a href="{{ link_url }}">{{ link_label }}</a>
+        {{ /cookie-consent:popup_footer_links }}
     </div>
 </div>

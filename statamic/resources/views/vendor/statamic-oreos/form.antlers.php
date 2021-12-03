@@ -27,16 +27,16 @@
 
   <div class="oreos-form_buttons">
     <button class="cta-button configure-button" type="button" name="configure" value="none">
-      Konfigurieren
+      {{ cookie-consent:btn_configure_label }}
     </button>
 
     <button class="cta-button save-button hidden" type="submit" name="action" value="save">
-      Speichern
+        {{ cookie-consent:btn_save_label }}
     </button>
 
     {{ if showAcceptall }}
       <button class="cta-button accept-all-button" type="submit" name="action" value="accept-all">
-        Alle akzeptieren
+        {{ cookie-consent:btn_accept_all_label }}
       </button>
     {{ /if }}
 

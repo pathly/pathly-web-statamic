@@ -336,7 +336,6 @@ section {
   font-family: 'azo-sans-web';
   font-size: var(--root20px);
   color: white;
-  text-decoration: underline;
 }
 
 .section_video-full-width iframe {
@@ -383,7 +382,6 @@ section {
     position: relative;
     padding: 0;
     color: rgb(var(--primaryTextDark));
-    text-decoration: none;
     margin-top: var(--root48px);
   }
 }

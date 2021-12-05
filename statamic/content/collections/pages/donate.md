@@ -13,7 +13,7 @@ donation-options_headline: 'So kannst du spenden!'
 donation-options_buttons:
   -
     donation-options_buttons_icon: icons/PayPal.png
-    donation-options_button_headline: 'Mit PayPal spenden'
+    donation-options_button_headline: 'Mit PayPal einmalig oder regelmäßig spenden'
     donation-options_button_url: 'https://www.paypal.com/donate/?hosted_button_id=XR6MXEY4F6WHQ'
   -
     donation-options_buttons_icon: icons/Betterplace.png

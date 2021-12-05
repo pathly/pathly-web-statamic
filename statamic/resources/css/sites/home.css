@@ -36,6 +36,7 @@
 
 .home-header_text_scroller_animation {
   height: var(--root16px);
+  background-color: rgb(var(--primaryPurple));
   border: calc(var(--root4px) / 2) solid rgb(var(--primaryPurple));
   border-radius: calc(var(--root4px) / 2);
   margin-top: calc(-1 * var(--root8px));

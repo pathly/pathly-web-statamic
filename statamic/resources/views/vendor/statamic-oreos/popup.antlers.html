@@ -1,6 +1,6 @@
 <div class="oreos-popup shadow">
-    <h2>{{ cookie-consent:popup_headline }}</h2>
-    {{ cookie-consent:popup_copytext | markdown }}
+    <h2>{{ cookie-consent:cookie-banner_headline }}</h2>
+    {{ cookie-consent:cookie-banner_copytext | markdown }}
 
     {{ oreos:form
       description="false"
@@ -10,8 +10,7 @@
     }}
 
     <div>
-        {{ cookie-consent:popup_footer_links }}
-            <a href="{{ link_url }}">{{ link_label }}</a>
-        {{ /cookie-consent:popup_footer_links }}
+      <a href="/imprint">Impressum</a>
+      <a href="/privacy">Datenschutz</a>
     </div>
 </div>

@@ -1,9 +1,9 @@
 sections:
-  popup_content:
-    display: 'Popup Content'
+  main:
+    display: 'Cookie Banner'
     fields:
       -
-        handle: popup_headline
+        handle: cookie-banner_headline
         field:
           input_type: text
           antlers: false
@@ -13,7 +13,7 @@ sections:
           listable: hidden
           instructions_position: above
       -
-        handle: popup_copytext
+        handle: cookie-banner_textarea
         field:
           antlers: false
           display: 'Popup Copytext'
@@ -21,72 +21,3 @@ sections:
           icon: textarea
           listable: hidden
           instructions_position: above
-      -
-        handle: popup_footer_links
-        field:
-          fields:
-            -
-              handle: link_label
-              field:
-                input_type: text
-                antlers: false
-                display: Label
-                type: text
-                icon: text
-                width: 50
-                listable: hidden
-                instructions_position: above
-            -
-              handle: link_url
-              field:
-                display: 'Link URL'
-                type: link
-                icon: link
-                width: 50
-                listable: hidden
-                instructions_position: above
-          mode: table
-          max_rows: 3
-          add_row: 'Add Link'
-          reorderable: true
-          display: 'Popup Footer Links'
-          type: grid
-          icon: grid
-          listable: hidden
-          instructions_position: above
-  button_config:
-    display: 'Button Label Config'
-    fields:
-      -
-        handle: btn_configure_label
-        field:
-          input_type: text
-          antlers: false
-          display: 'Button Configure Label'
-          type: text
-          icon: text
-          width: 50
-          listable: hidden
-          instructions_position: above
-      -
-        handle: btn_accept_all_label
-        field:
-          input_type: text
-          antlers: false
-          display: 'Button Accept All Label'
-          type: text
-          icon: text
-          width: 50
-          listable: hidden
-          instructions_position: above
-      -
-        handle: btn_save_label
-        field:
-          input_type: text
-          antlers: false
-          display: 'Button Save Label'
-          type: text
-          icon: text
-          listable: hidden
-          instructions_position: above
-          width: 50

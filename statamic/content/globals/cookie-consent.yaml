@@ -1,20 +1,4 @@
 title: 'Cookie Consent Popup'
 data:
-  popup_headline: 'Wir nutzen Cookies 🍪'
-  popup_copytext: 'Einige Cookies sind für den Betrieb der Website notwendig. Andere helfen uns, unser Angebot für dich zu verbessern. Da uns Datenschutz sehr wichtig ist, bitten wir dich selbst über den Umfang der Cookies bei deinem Besuch zu entscheiden.'
-  popup_footer_links:
-    -
-      link: 'entry::0f74bcd0-7fd0-4e1c-8065-c5cb60236366'
-      type: link
-      enabled: true
-      link_label: Impressum
-      link_url: 'entry::0f74bcd0-7fd0-4e1c-8065-c5cb60236366'
-    -
-      link: 'entry::36763c83-3210-49f6-8951-8cf4c62d7b74'
-      type: link
-      enabled: true
-      link_label: Datenschutz
-      link_url: 'entry::36763c83-3210-49f6-8951-8cf4c62d7b74'
-  btn_configure_label: Konfigurieren
-  btn_accept_all_label: 'Alle akzeptieren'
-  btn_save_label: Speichern
+  cookie-banner_headline: 'Wir nutzen Cookies 🍪'
+  cookie-banner_copytext: 'Einige Cookies sind für den Betrieb der Website notwendig. Andere helfen uns, unser Angebot für dich zu verbessern. Da uns Datenschutz sehr wichtig ist, bitten wir dich selbst über den Umfang der Cookies bei deinem Besuch zu entscheiden.'

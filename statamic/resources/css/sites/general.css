@@ -397,7 +397,7 @@ section {
 
 
 /* -------------------------------------------------------------------------------- */
-/* --- section slider--- */
+/* --- section slider --- */
 /* -------------------------------------------------------------------------------- */
 
 .section_slider .section-headline--addition {
@@ -453,7 +453,40 @@ section {
 
 
 /* -------------------------------------------------------------------------------- */
-/* --- section pattern--- */
+/* --- section confirmation --- */
+/* -------------------------------------------------------------------------------- */
+
+.section_confirmation {
+  grid-column: 3/12;
+  display: block;
+}
+
+.section_confirmation img {
+  width: 100%;
+}
+
+.section_confirmation h2 {
+  color: rgb(var(--primaryPurple));
+  margin-top: var(--root80px);
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .section_confirmation {
+    grid-column: 2/13;
+  }
+}
+
+@media (max-width: 500px) {
+  .section_confirmation {
+    grid-column: 1/14;
+  }
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+/* --- section pattern --- */
 /* -------------------------------------------------------------------------------- */
 
 .section_pattern .section-headline--addition {

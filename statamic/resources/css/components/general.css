@@ -196,6 +196,14 @@ section {
   }
 }
 
+@media (max-width: 650px) {
+  .section_text-w-image-right > img {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+}
+
 @media (max-width: 450px) {
   .section_text-w-image-right > img,
   .section_text-w-image-right > .img-wrapper,
@@ -256,6 +264,14 @@ section {
 
   .section_text-w-image-left > div {
     grid-area: 2/2/2/13;
+  }
+}
+
+@media (max-width: 650px) {
+  .section_text-w-image-left > img {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
   }
 }
 

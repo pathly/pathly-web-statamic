@@ -32,8 +32,29 @@
 }
 
 .footer_contact a {
+  position: relative;
   font-size: var(--root32px);
   color: rgb(var(--primaryRed));
+}
+
+/* underline animation */
+.footer_contact a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--root4px);
+  border-radius: var(--root4px);
+  transform: scaleX(0);
+  transform-origin: center;
+  background-color: rgb(var(--primaryRed));
+  transition: opacity 0.4s, transform 0.4s;
+}
+
+.footer_contact a:hover::after {
+  transform: scaleX(1);
+  background-color: rgb(var(--primaryRed));
 }
 
 .footer_contact img {

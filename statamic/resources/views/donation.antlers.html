@@ -12,7 +12,7 @@
   </div>
 </section>
 
-<section class="section_video-full-width section--small-top-spacing">
+<section class="section_video-full-width section--top-spacing">
   <h2 id="donation_options" class="section-headline">{{ donation_video_headline }}</h2>
 
   {{ donation_video_thumbnail }}
@@ -32,14 +32,14 @@
   {{ /donation_video_thumbnail }}
 </section>
 
-<section class="section_pattern section--small-top-spacing">
+<section class="section_pattern section--top-spacing">
   {{ if intro_headline_addition }}
     <h2 class="section-headline--addition">{{ options_headline_addition }}</h2>
   {{ /if }}
   <h2 id="donation_options" class="section-headline">{{ donation-options_headline }}</h2>
   <div class="link-list">
     {{ donation-options_buttons }}
-      <a target="_blank" class="link-list_button" href="{{ donation-options_button_url }}">
+      <a class="link-list_button" href="{{ donation-options_button_url }}" target="_blank">
         <div class="link-list_button_icon-container">
           {{ donation-options_buttons_icon }}
             <img src="{{ url }}" alt="{{ alt }}">
@@ -75,7 +75,7 @@
   </div>
 </section>
 
-<section class="section_pattern section--small-top-spacing">
+<section class="section_pattern section--top-spacing">
   {{ if intro_headline_addition }}
     <h2 class="section-headline--addition">{{ more-options_headline_addition }}</h2>
   {{ /if }}
@@ -90,6 +90,9 @@
 
       <div class="accordion_content">
         <p>{{ more-options_option_textarea }}</p>
+        {{ if more-options_option_url-label && more-options_option_url }}
+          <a class="arrow-link" href="{{ more-options_option_url }}" target="_blank">{{ more-options_option_url-label }}</a>
+        {{ /if }}
       </div>
     </div>
   {{ /more-options_options }}

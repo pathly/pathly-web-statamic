@@ -1,6 +1,6 @@
 ---
 id: b8895441-800c-4b94-8a91-4bf2fe14584b
-blueprint: our-nonprofit
+blueprint: nonprofit
 title: 'Unser Verein'
 description: 'Unsere Satzung'
 icon: icons/nav_nonprofit.svg
@@ -301,7 +301,7 @@ statutes_sections:
         statutes_section_subsection_list: {  }
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
 updated_at: 1637317680
-template: our-nonprofit
+template: nonprofit
 cta_toggle: true
 cta: 26cd6f15-97c9-4d5d-b701-6725436ce2b0
 og_title: 'Unser Verein'

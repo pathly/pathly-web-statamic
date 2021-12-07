@@ -11,7 +11,7 @@ links:
   -
     link_icon: icons/amazon.jpg
     link_headline: 'Amazon Smile'
-    link_url: 'https://smile.amazon.de/ref=smi_ext_ch_27-675-51060_dl?_encoding=UTF8&ein=27-675-51060&ref_=smi_chpf_redirect&ref_=smi_ext_ch_27-675-51060_cl'
+    link_url: 'https://smile.amazon.de/ch/27-675-51060'
   -
     link_icon: icons/mndstudio.svg
     link_headline: 'Workshop: Mind full oder mindful?'

@@ -14,7 +14,7 @@ cooperations_headline_addition: 'Ein Danke an'
 cooperations_headline: 'Unsere Unterstützer:innen'
 cooperations_profiles:
   -
-    cooperations_profile_image: supporter/m_ndstudio.svg
+    cooperations_profile_image: supporter/mndstudio.svg
     cooperations_profile_name: 'm[ ]nd studio'
     cooperations_profile_url: 'https://mndstudio.de/'
   -

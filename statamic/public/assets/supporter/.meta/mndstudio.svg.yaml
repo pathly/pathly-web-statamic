@@ -1,6 +1,6 @@
 data: {  }
-size: 4047
-last_modified: 1637080919
-width: '1000'
-height: '1000'
+size: 5204
+last_modified: 1638909979
+width: !!float 500
+height: !!float 500
 mime_type: image/svg

@@ -878,7 +878,14 @@ button {
   padding-left: var(--root40px);
 }
 
-.mail-link::before {
+.arrow-link {
+  display: block;
+  position: relative;
+  padding-left: var(--root24px);
+}
+
+.mail-link::before,
+.arrow-link::before {
   width: var(--root24px);
   height: 100%;
   position: absolute;
@@ -889,6 +896,11 @@ button {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+.arrow-link::before {
+  width: var(--root16px);
+  background-image: url("../images/arrow.svg");
 }
 
 
@@ -982,7 +994,7 @@ button {
   margin-right: var(--root48px);
 }
 
-.accordion_content > *:last-child {
+.accordion_content > * {
   margin-bottom: var(--root40px);
 }
 

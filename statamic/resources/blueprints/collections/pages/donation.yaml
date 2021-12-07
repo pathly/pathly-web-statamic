@@ -281,14 +281,32 @@ sections:
             -
               handle: more-options_option_textarea
               field:
-                input_type: text
+                input_type: textarea
                 antlers: false
                 display: Textarea
-                type: text
-                icon: text
+                type: textarea
+                icon: textarea
                 listable: hidden
                 validate:
                   - required
+            -
+              handle: more-options_option_url-label
+              field:
+                input_type: text
+                antlers: false
+                display: 'URL Label'
+                type: text
+                icon: text
+                listable: hidden
+            -
+              handle: more-options_option_url
+              field:
+                input_type: url
+                antlers: false
+                display: URL
+                type: text
+                icon: text
+                listable: hidden
           mode: stacked
           reorderable: true
           display: Options

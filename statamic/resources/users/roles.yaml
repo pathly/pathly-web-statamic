@@ -38,7 +38,7 @@ editor:
     - 'edit other authors footer-pages entries'
     - 'publish other authors footer-pages entries'
     - 'delete other authors footer-pages entries'
-    - 'edit social-media globals'
+    - 'edit contact globals'
     - 'edit meta-data globals'
     - 'configure asset containers'
     - 'view assets assets'

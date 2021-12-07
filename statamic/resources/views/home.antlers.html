@@ -11,7 +11,7 @@
   </div>
 </section>
 
-<section class="{{ about-project_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-project_image_position == 'right' ?= 'section_text-w-image-right' }} section--small-top-spacing">
+<section class="{{ about-project_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-project_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
   {{ about-project_image }}
     <img src="{{ url }}" alt="{{ alt }}"/>
   {{ /about-project_image }}
@@ -25,7 +25,7 @@
   </div>
 </section>
 
-<section class="section_slider section--small-top-spacing">
+<section class="section_slider section--top-spacing">
   {{ if stories_headline_addition }}
     <h2 class="section-headline--addition">{{ stories_headline_addition }}</h2>
   {{ /if }}
@@ -44,7 +44,7 @@
   </div>
 </section>
 
-<section class="{{ about-founders_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-founders_image_position == 'right' ?= 'section_text-w-image-right' }} section--small-top-spacing">
+<section class="{{ about-founders_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-founders_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
   {{ about-founders_image }}
     <img src="{{ url }}" alt="{{ alt }}"/>
   {{ /about-founders_image }}
@@ -58,7 +58,7 @@
   </div>
 </section>
 
-<section class="section_newsletter section--small-top-spacing">
+<section class="section_newsletter section--top-spacing">
   <div class="newsletter_header">
     <img class="newsletter_mailbox-image" src="/images/mailbox.svg" alt="Newsletter"/>
 
@@ -70,7 +70,7 @@
 </section>
 
 {{ collaboration }}
-  <section class="{{ cta_image_position == 'left' ?= 'section_text-w-image-left' }}{{ cta_image_position == 'right' ?= 'section_text-w-image-right' }} section--small-top-spacing">
+  <section class="{{ cta_image_position == 'left' ?= 'section_text-w-image-left' }}{{ cta_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
     {{ cta_image }}
       <img src="{{ url }}" alt="{{ alt }}"/>
     {{ /cta_image }}
@@ -103,7 +103,7 @@
   </section>
 {{ /collaboration }}
 
-<section class="section_pattern section--small-top-spacing">
+<section class="section_pattern section--top-spacing">
   {{ if all-supporters_headline_addition }}
     <h2 class="section-headline--addition">{{ all-supporters_headline_addition }}</h2>
   {{ /if }}

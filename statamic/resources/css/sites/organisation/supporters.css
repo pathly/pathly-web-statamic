@@ -11,7 +11,7 @@
 }
 
 #cooperations_profile img {
-  width: 100%;
+  width: 100% !important;
 }
 
 #sponsors_profile .alternating-tiles_image-container {
@@ -20,6 +20,9 @@
   padding: var(--root40px);
 }
 
-#sponsors_profile .alternating-tiles_image-container img {
-  width: 100%;
+@media (max-width: 650px) {
+  #cooperations_profile {
+    margin: 0 10%;
+    width: 80%;
+  }
 }

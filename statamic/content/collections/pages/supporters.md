@@ -1,10 +1,10 @@
 ---
 id: ca52693e-4925-4fb8-ac76-e362f473e61a
-blueprint: our-supporters
+blueprint: supporters
 title: 'Unterstützer:innen'
 description: 'Ein Danke an alle!'
 icon: icons/nav_supporters.svg
-template: our-supporters
+template: supporters
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
 intro_headline: 'Wir schicken all unseren tollen Unterstützer:innen und Spender:innen ein großes, herzliches Dankeschön.'
 intro_textarea: 'Durch die Hilfe unserer Unterstützer:innen können wir unsere Mission, den Alltag mit Krebs zu verändern, vorantreiben. Wir freuen uns über jede Person und jeden Verein, jedes Unternehmen, das uns auf unserer Weg begleitet. Toll, dass es euch gibt!'

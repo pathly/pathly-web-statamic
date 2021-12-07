@@ -1,6 +1,6 @@
 ---
 id: 78ffdf4a-62f6-4492-83ff-0363973150da
-blueprint: our-team
+blueprint: team
 title: 'Das sind wir'
 description: 'Das Team von Pathly'
 icon: icons/nav_team.svg
@@ -109,7 +109,7 @@ team_profiles:
     team_profile_mail: yana@pathly.app
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
 updated_at: 1638022822
-template: our-team
+template: team
 cta_toggle: true
 cta: 26cd6f15-97c9-4d5d-b701-6725436ce2b0
 intro_image--small: team-small.svg

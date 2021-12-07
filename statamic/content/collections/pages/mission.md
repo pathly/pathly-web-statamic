@@ -1,6 +1,6 @@
 ---
 id: 447a7021-51fa-4939-903c-15f8a32d604a
-blueprint: our-mission
+blueprint: mission
 title: 'Unsere Mission'
 intro_image--big: ribbons-big.svg
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
@@ -79,7 +79,7 @@ mission_section:
         textarea: 'Angst, Verzweiflung und Hilflosigkeit sind ganz normale Gefühle, die bei so einer Diagnose mitschwingen. Deswegen möchten wir mit Pathly eine Plattform kreieren, auf der wir aufklären, Erfahrungen weitergeben, hilfreiche Tipps zur Verfügung stellen und die Patient:innen und ihre Angehörigen vom ersten Moment an begleiten. Wichtig ist uns dabei, Inhalte so aufzuarbeiten, dass sie leicht zu verstehen, immer abrufbar und frei von Stigmen und Tabus sind. Wir möchten aufklären, enttabuisieren und einem schwierigen Thema wie Krebs mit ein bisschen mehr Farbe begegnen.'
         type: textarea
         enabled: true
-template: our-mission
+template: mission
 description: 'Deswegen gibt es Pathly'
 icon: icons/nav_mission.svg
 cta_toggle: true

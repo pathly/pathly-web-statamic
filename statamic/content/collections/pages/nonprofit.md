@@ -59,7 +59,7 @@ statutes_sections:
           - 'Die digitale Unterstützung, Begleitung und Motivation von Krebsbetroffenen und ihren Angehörigen nach der Diagnose, während der Therapie sowie der Nachsorge'
           - 'Die Entwicklung und Verbreitung von Aufklärungs- und Präventionsmaßnahmen'
           - 'Die Konzeption, Gestaltung und Entwicklung eines digitalen Wegweisers für Krebspatient:inn:en und Angehörige'
-          - "\aInhalte, Anregungen und Geschichten zur Stärkung der Resilienz-Fähigkeit und Förderung der mentalen Gesundheit"
+          - "Inhalte, Anregungen und Geschichten zur Stärkung der Resilienz-Fähigkeit und Förderung der mentalen Gesundheit"
           - 'Die Aufarbeitung und Visualisierung von unterstützenden, hilfreichen und leicht verständlichen Inhalten zu therapierelevanten Themen'
           - 'Die Konzeption, Planung und Durchführungen von öffentlichen Veranstaltungen zur Sensibilisierung und Aufklärung gegen die Tabuisierung von Krebserkrankungen.'
   -

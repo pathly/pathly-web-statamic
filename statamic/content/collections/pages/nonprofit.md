@@ -84,6 +84,16 @@ statutes_sections:
     statutes_section_headline: Mitgliedschaften
     statutes_section_subsections:
       -
+        statutes_section_subsection_textarea: 'Der Verein führt ordentliche Mitglieder und Fördermitglieder.'
+        statutes_section_subsection_list: {  }
+      -
+        statutes_section_subsection_textarea: 'Nur ordentliche Mitglieder besitzen ein Stimmrecht und können in Vereinsämter
+        gewählt werden.'
+        statutes_section_subsection_list: {  }
+  -
+    statutes_section_headline: Erwerb der Mitgliedschaft
+    statutes_section_subsections:
+      -
         statutes_section_subsection_textarea: 'Die Mitgliedschaft im Verein kann jede natürliche und juristische Person erwerben, die gewillt ist, den Vereinszweck zu fördern.'
         statutes_section_subsection_list: {  }
       -

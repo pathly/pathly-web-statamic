@@ -11,7 +11,7 @@
   </div>
 </section>
 
-<section class="{{ about-project_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-project_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
+<section id="home_project" class="{{ about-project_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-project_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
   {{ about-project_image }}
     <img src="{{ url }}" alt="{{ alt }}"/>
   {{ /about-project_image }}
@@ -20,16 +20,16 @@
     {{ if about-project_headline_addition }}
       <h2 class="section-headline--addition">{{ about-project_headline_addition }}</h2>
     {{ /if }}
-    <h2 id="home_project" class="section-headline">{{ about-project_headline }}</h2>
+    <h2 class="section-headline">{{ about-project_headline }}</h2>
     <p>{{ about-project_textarea }}</p>
   </div>
 </section>
 
-<section class="section_slider section--top-spacing">
+<section id="home_stories" class="section_slider section--top-spacing">
   {{ if stories_headline_addition }}
     <h2 class="section-headline--addition">{{ stories_headline_addition }}</h2>
   {{ /if }}
-  <h2 id="home_stories" class="section-headline">{{ stories_headline }}</h2>
+  <h2 class="section-headline">{{ stories_headline }}</h2>
 
   <ul>
     <li><img src="/images/story1.png"/></li>
@@ -44,7 +44,7 @@
   </div>
 </section>
 
-<section class="{{ about-founders_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-founders_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
+<section id="home_founders" class="{{ about-founders_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-founders_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
   {{ about-founders_image }}
     <img src="{{ url }}" alt="{{ alt }}"/>
   {{ /about-founders_image }}
@@ -53,16 +53,16 @@
     {{ if about-founders_headline_addition }}
       <h2 class="section-headline--addition">{{ about-founders_headline_addition }}</h2>
     {{ /if }}
-    <h2 id="home_founders" class="section-headline">{{ about-founders_headline }}</h2>
+    <h2 class="section-headline">{{ about-founders_headline }}</h2>
     <p>{{ about-founders_textarea }}</p>
   </div>
 </section>
 
-<section class="section_newsletter section--top-spacing">
+<section id="home_newsletter" class="section_newsletter section--top-spacing">
   <div class="newsletter_header">
     <img class="newsletter_mailbox-image" src="/images/mailbox.svg" alt="Newsletter"/>
 
-    <h2 id="home_newsletter" class="section-headline">{{ newsletter_headline }}</h2>
+    <h2 class="section-headline">{{ newsletter_headline }}</h2>
     <p>{{ newsletter_textarea }}</p>
   </div>
 
@@ -70,7 +70,7 @@
 </section>
 
 {{ collaboration }}
-  <section class="{{ cta_image_position == 'left' ?= 'section_text-w-image-left' }}{{ cta_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
+  <section id="home_project" class="{{ cta_image_position == 'left' ?= 'section_text-w-image-left' }}{{ cta_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
     {{ cta_image }}
       <img src="{{ url }}" alt="{{ alt }}"/>
     {{ /cta_image }}
@@ -79,7 +79,7 @@
       {{ if cta_headline_addition }}
         <h2 class="section-headline--addition">{{ cta_headline_addition }}</h2>
       {{ /if }}
-      <h2 id="home_project" class="section-headline">{{ cta_headline }}</h2>
+      <h2 class="section-headline">{{ cta_headline }}</h2>
       <p>{{ cta_textarea }}</p>
 
       {{ if cta_button_type === 'mail' }}
@@ -103,11 +103,11 @@
   </section>
 {{ /collaboration }}
 
-<section class="section_pattern section--top-spacing">
+<section id="home_supporters" class="section_pattern section--top-spacing">
   {{ if all-supporters_headline_addition }}
     <h2 class="section-headline--addition">{{ all-supporters_headline_addition }}</h2>
   {{ /if }}
-  <h2 id="home_supporters" class="section-headline">{{ all-supporters_headline }}</h2>
+  <h2 class="section-headline">{{ all-supporters_headline }}</h2>
 
   <div class="all-supporters_slick-slider">
     <ul class="all-supporters_slick-slider_list">

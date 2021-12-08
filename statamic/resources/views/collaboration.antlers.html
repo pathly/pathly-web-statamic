@@ -1,4 +1,4 @@
-<section class="{{ intro_image_position == 'left' ?= 'section_text-w-image-left' }}{{ intro_image_position == 'right' ?= 'section_text-w-image-right' }}">
+<section id="collaboration_intro" class="{{ intro_image_position == 'left' ?= 'section_text-w-image-left' }}{{ intro_image_position == 'right' ?= 'section_text-w-image-right' }}">
   {{ intro_image }}
     <img src="{{ url }}" alt="{{ alt }}"/>
   {{ /intro_image }}
@@ -7,16 +7,16 @@
     {{ if intro_headline_addition }}
       <h2 class="section-headline--addition">{{ intro_headline_addition }}</h2>
     {{ /if }}
-    <h2 id="collaboration_intro" class="section-headline">{{ intro_headline }}</h2>
+    <h2 class="section-headline">{{ intro_headline }}</h2>
     <p>{{ intro_textarea }}</p>
   </div>
 </section>
 
-<section class="section_alternating-pattern section--top-spacing">
+<section id="collaboration_support" class="section_alternating-pattern section--top-spacing">
   {{ if support_headline_addition }}
     <h2 class="section-headline--addition">{{ support_headline_addition }}</h2>
   {{ /if }}
-  <h2 id="collaboration_support" class="section-headline">{{ support_headline }}</h2>
+  <h2 class="section-headline">{{ support_headline }}</h2>
 
   <div>
     <ul class="alternating-tiles">

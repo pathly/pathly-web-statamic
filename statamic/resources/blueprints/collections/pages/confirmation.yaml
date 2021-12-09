@@ -64,3 +64,8 @@ sections:
           listable: hidden
           validate:
             - required
+  opengraph:
+    display: Open Graph
+    fields:
+      -
+        import: opengraph

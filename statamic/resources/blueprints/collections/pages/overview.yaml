@@ -38,3 +38,8 @@ sections:
           type: template
           icon: template
           listable: hidden
+  opengraph:
+    display: Open Graph
+    fields:
+      -
+        import: opengraph

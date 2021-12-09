@@ -24,8 +24,6 @@ about-founders_image: cofounders.png
 about-founders_image_position: left
 all-supporters_headline_addition: 'Wir & Ihr'
 all-supporters_headline: 'Unsere Unterstützer:innen'
-newsletter_headline: Newsletter
-newsletter_textarea: 'Meld Dich für unseren Newsletter an und erhalte Highlights aus Geschichten, Tipps und Infos direkt auf dein Smartphone!'
 og_title: Pathly
 og_description: 'Dein digitaler Wegweiser durch den Alltag mit Krebs'
 og_image: opengraph/og_home.png

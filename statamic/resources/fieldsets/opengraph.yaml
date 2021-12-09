@@ -8,8 +8,6 @@ fields:
       type: text
       icon: text
       listable: hidden
-      validate:
-        - required
   -
     handle: og_description
     field:
@@ -18,8 +16,6 @@ fields:
       type: textarea
       icon: textarea
       listable: hidden
-      validate:
-        - required
   -
     handle: og_image
     field:
@@ -31,5 +27,3 @@ fields:
       type: assets
       icon: assets
       listable: hidden
-      validate:
-        - required

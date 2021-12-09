@@ -8,7 +8,8 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(13, 1fr);
-  margin: 14.58rem 5vw var(--root40px) 5vw; /* 350px // based on 24px */
+  margin: auto 5vw var(--root40px) 5vw; /* 350px // based on 24px */
+  padding-top: 14.58rem;
 }
 
 
@@ -22,6 +23,7 @@
   display: block;
   position: revert;
   z-index: 1;
+  margin-bottom: 10.42rem; /* 250px // based on 24px */
 }
 
 .footer_contact p {
@@ -59,7 +61,7 @@
 
 .footer_contact img {
   position: absolute;
-  bottom: 10rem;
+  bottom: 8rem;
   left: 10vw;
   width: 40%;
   height: auto;

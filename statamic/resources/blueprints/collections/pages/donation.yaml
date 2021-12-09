@@ -290,7 +290,7 @@ sections:
                 validate:
                   - required
             -
-              handle: more-options_option_url-label
+              handle: more-options_option_link_label
               field:
                 input_type: text
                 antlers: false
@@ -299,7 +299,17 @@ sections:
                 icon: text
                 listable: hidden
             -
-              handle: more-options_option_url
+              handle: more-options_option_link_type
+              field:
+                options:
+                  mail: 'Mail'
+                  url: 'URL'
+                display: 'Which Link Type?'
+                type: button_group
+                icon: button_group
+                listable: hidden
+            -
+              handle: more-options_option_link_url
               field:
                 input_type: url
                 antlers: false
@@ -307,6 +317,19 @@ sections:
                 type: text
                 icon: text
                 listable: hidden
+                if:
+                  more-options_option_link_type: 'equals url'
+            -
+              handle: more-options_option_link_mail
+              field:
+                input_type: email
+                antlers: false
+                display: Mail
+                type: text
+                icon: text
+                listable: hidden
+                if:
+                  more-options_option_link_type: 'equals mail'
           mode: stacked
           reorderable: true
           display: Options

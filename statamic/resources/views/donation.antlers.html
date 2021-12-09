@@ -90,8 +90,12 @@
 
       <div class="accordion_content">
         <p>{{ more-options_option_textarea }}</p>
-        {{ if more-options_option_url-label && more-options_option_url }}
-          <a class="arrow-link" href="{{ more-options_option_url }}" target="_blank">{{ more-options_option_url-label }}</a>
+        {{ if more-options_option_link_label }}
+          {{ if more-options_option_link_type == 'url' && more-options_option_link_url }}
+            <a class="arrow-link" href="{{ more-options_option_link_url }}" target="_blank">{{ more-options_option_link_label }}</a>
+          {{ elseif more-options_option_link_type == 'mail' && more-options_option_link_mail }}
+            <a class="mail-link" href="mailto:{{ more-options_option_link_mail }}">{{ more-options_option_link_label }}</a>
+          {{ /if }}
         {{ /if }}
       </div>
     </div>

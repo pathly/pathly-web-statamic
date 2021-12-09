@@ -1003,6 +1003,10 @@ button {
   margin-bottom: var(--root40px);
 }
 
+.accordion_content a {
+  display: block;
+}
+
 .accordion_content::-webkit-scrollbar {
   display: none;
 }

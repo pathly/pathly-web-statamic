@@ -17,4 +17,5 @@
 
 .section_meta a {
   color: rgb(var(--primaryTextDark));
+  word-break: break-all;
 }

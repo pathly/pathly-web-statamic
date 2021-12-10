@@ -210,7 +210,7 @@ section {
   .section_text-w-image-right > div {
     grid-column: 1/14;
   }
-} 
+}
 
 
 
@@ -1043,6 +1043,7 @@ button {
 .oreos-popup > div > a {
   padding: var(--root8px) var(--root16px);
   border-radius: calc(var(--root24px) + 2 * var(--root16px)); /* fontsize + 2 * padding */
+  margin-right: 8px; /* fix 8px for search console mobile usability */
 }
 
 .oreos-popup > div > a:hover {

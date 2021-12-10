@@ -1,6 +1,26 @@
 <footer class="footer">
   {{ if current_template !== "errors.404" && current_template !== "confirmation" }}
-    
+    <section class="footer_contact">
+      {{ contact }}
+        <p>
+          {{ social-media_textarea }}
+
+          {{ social-media_profiles }}
+            {{ if last }}
+              <a target="_blank" href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a>.
+            {{ elseif social-media_profiles|count > 2 && index !== social-media_profiles|count|subtract:2 }}
+              <a target="_blank" href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a>,
+            {{ else }}
+              <a target="_blank" href="{{ social-media_profile_url }}">{{ social-media_profile_name }}</a> und
+            {{ /if }}
+          {{ /social-media_profiles }}
+
+          {{ mail_textarea }}
+          <a href="mailto:{{ mail_address }}?subject={{ mail_subject }}&body={{ mail_body }}">Mail</a>.
+        </p>
+      {{ /contact }}
+      <img src="/images/contact_background.svg" alt="background"/>
+    </section>
   {{ endif }}
 
   <nav id="footer_nav" class="footer_nav section--top-spacing">

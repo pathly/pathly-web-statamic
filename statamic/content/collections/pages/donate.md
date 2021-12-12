@@ -80,7 +80,7 @@ donation-options_contribution-receipt_headline: '🧾 Spendenquittung fürs Fina
 donation-options_contribution-receipt_textarea: 'Bei einer Spende unter 200€ reicht dem Finanzamt der Nachweis auf deinem Kontoauszug, bei Spenden über 200€ stellen wir dir selbstverständlich eine Spenden Quittung aus.'
 template: donation
 options_headline_addition: 'Diese Optionen hast du'
-donation-options_bank-transfer_name: Skatbank
+donation-options_bank-transfer_name: 'Deutsche Skatbank'
 donation-options_bank-transfer_iban: 'DE11 8306 5408 0004 2983 06'
 donation-options_bank-transfer_bic: GENODEF1SLR
 og_title: Spenden

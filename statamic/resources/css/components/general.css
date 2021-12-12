@@ -689,10 +689,8 @@ section {
 /* --- link list --- */
 /* -------------------------------------------------------------------------------- */
 
-.link-list {
-  display: grid;
-  gap: var(--root40px);
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+.link-list > *:not(:last-child) {
+  margin-bottom: var(--root40px);
 }
 
 .link-list_button {
@@ -728,12 +726,6 @@ section {
 
 .link-list_button p {
   color: rgb(var(--primaryTextDark));
-}
-
-@media (max-width: 550px) {
-  .link-list {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
 }
 
 
@@ -1054,6 +1046,7 @@ button {
 .oreos-popup > div > a {
   padding: var(--root8px) var(--root16px);
   border-radius: calc(var(--root24px) + 2 * var(--root16px)); /* fontsize + 2 * padding */
+  margin-right: 8px; /* fix 8px for search console mobile usability */
 }
 
 .oreos-popup > div > a:hover {

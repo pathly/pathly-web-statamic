@@ -13,9 +13,9 @@ links:
     link_headline: 'Amazon Smile'
     link_url: 'https://smile.amazon.de/ch/27-675-51060'
   -
-    link_icon: icons/mndstudio.svg
-    link_headline: 'Workshop: Mind full oder mindful?'
-    link_url: 'https://www.eventbrite.de/e/mind-full-oder-mindful-gib-deinen-emotionen-einen-geschutzten-raum-tickets-185749671267'
+    link_icon: icons/newsletter.png
+    link_headline: Newsletter
+    link_url: 'https://pathly.app/newsletter/'
   -
     link_icon: icons/patientenverfuegung.png
     link_headline: 'Textbausteine für deine Patientenverfügung'
@@ -50,7 +50,7 @@ links:
     link_url: 'https://www.pathly.app/privacy'
 cta_toggle: true
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1638487533
+updated_at: 1639842907
 cta: fff42fe4-4d5c-484a-b43d-f5eecec74f70
 og_title: Pathly
 og_description: 'Dein digitaler Wegweiser durch den Alltag mit Krebs'

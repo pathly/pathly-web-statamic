@@ -198,6 +198,17 @@ sections:
           validate:
             - required
       -
+        handle: donation-options_bank-transfer_owner
+        field:
+          input_type: text
+          antlers: false
+          display: Account Holder
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
         handle: donation-options_bank-transfer_iban
         field:
           input_type: text

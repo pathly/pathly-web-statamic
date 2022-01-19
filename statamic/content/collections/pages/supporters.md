@@ -45,8 +45,16 @@ cooperations_profiles:
     cooperations_profile_image: supporter/Uberdosis.svg
     cooperations_profile_name: Überdosis
     cooperations_profile_url: 'https://ueberdosis.io/'
-sponsors_headline_addition: 'Ein Danke an'
-sponsors_headline: 'Unsere Sponsoren'
+  -
+    cooperations_profile_image: supporter/Cancer-Rebels.svg
+    cooperations_profile_name: 'Cancer Rebels'
+    cooperations_profile_url: 'https://cancer-rebels.club'
+  -
+    cooperations_profile_image: supporter/ASC-Oncology.svg
+    cooperations_profile_name: 'ASC Oncology'
+    cooperations_profile_url: 'https://www.asc-oncology.ch'
+sponsors_headline_addition: 'Für großartige Unterstützung ein'
+sponsors_headline: 'Besonderes Dankeschön'
 sponsors_profiles:
   -
     sponsors_profile_image: supporter/Creative-Mod.png
@@ -54,7 +62,7 @@ sponsors_profiles:
     sponsors_profile_description: '»Wir finden, dass die Message von Pathly wichtig ist und hinaus in die Welt getragen werden muss. Deshalb haben wir von CreativeMod als Medienproduktion für Pathly das Fundraising Video umgesetzt und im Animationsspot Pathly zum Leben erweckt.«'
     sponsors_profile_url: 'https://creativemod.de/'
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1638485476
+updated_at: 1642521283
 cta_toggle: true
 cta: a49460ee-26f4-49ef-9d7c-108f6993d8bf
 og_title: 'Unterstützer:innen'

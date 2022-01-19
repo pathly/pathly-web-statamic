@@ -163,6 +163,9 @@ sections:
                   design: Design
                   business: Business
                   publicRelations: 'Öffentlichkeitsarbeit'
+                  workshop: Workshops
+                  nutritionCounseling: 'Ernährungsberatung'
+                  mentalHealthCoach: 'Mental Health Coach'
                 taggable: false
                 push_tags: false
                 cast_booleans: false

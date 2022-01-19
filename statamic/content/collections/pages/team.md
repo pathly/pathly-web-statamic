@@ -27,7 +27,9 @@ team_profiles:
     team_profile_image: supporter/AnnaGuttler_500.png
     team_profile_name: 'Anna Güttler'
     team_profile_responsibilities:
+      - mentalHealthCoach
       - contentCreation
+      - workshop
     team_profile_mail: null
   -
     team_profile_image: supporter/Christine_Farbe_500.png
@@ -107,8 +109,16 @@ team_profiles:
     team_profile_responsibilities:
       - illustration
     team_profile_mail: yana@pathly.app
+  -
+    team_profile_image: supporter/Vanessa-Till.png
+    team_profile_name: 'Vanessa Till'
+    team_profile_responsibilities:
+      - nutritionCounseling
+      - contentCreation
+      - workshop
+    team_profile_mail: null
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1638022822
+updated_at: 1642530962
 template: team
 cta_toggle: true
 cta: 26cd6f15-97c9-4d5d-b701-6725436ce2b0

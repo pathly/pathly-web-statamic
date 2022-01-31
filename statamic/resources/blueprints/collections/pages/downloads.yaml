@@ -1,0 +1,163 @@
+title: Downloads
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: description
+        field:
+          input_type: text
+          antlers: false
+          display: 'Navigation Description'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: icon
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Navigation Icon'
+          type: assets
+          icon: assets
+          listable: hidden
+          validate:
+            - required
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - footer-pages
+          max_items: 1
+          listable: false
+          localizable: true
+      -
+        handle: template
+        field:
+          hide_partials: true
+          display: Template
+          type: template
+          icon: template
+          listable: hidden
+          validate:
+            - required
+  downloads:
+    display: Downloads
+    fields:
+      -
+        handle: downloads_headline_addition
+        field:
+          input_type: text
+          antlers: false
+          display: 'Headline Addition'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: downloads_headline
+        field:
+          input_type: text
+          antlers: false
+          display: Headline
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: downloads
+        field:
+          fields:
+            -
+              handle: download_image
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                display: Image
+                type: assets
+                icon: assets
+                listable: hidden
+                validate:
+                  - required
+                max_files: 1
+            -
+              handle: download_headline
+              field:
+                input_type: text
+                antlers: false
+                display: Headline
+                type: text
+                icon: text
+                listable: hidden
+                validate:
+                  - required
+            -
+              handle: download_background-color
+              field:
+                input_type: color
+                antlers: false
+                display: 'Background Color'
+                type: text
+                icon: text
+                listable: hidden
+                validate:
+                  - required
+            -
+              handle: download_file
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                display: File
+                type: assets
+                icon: assets
+                listable: hidden
+                validate:
+                  - required
+                max_files: 1
+          mode: stacked
+          max_rows: 0
+          reorderable: true
+          display: Grid
+          type: grid
+          icon: grid
+          listable: hidden
+          validate:
+            - required
+          instructions_position: above
+  prefooter:
+    display: Prefooter
+    fields:
+      -
+        import: prefooter
+  opengraph:
+    display: 'Open Graph'
+    fields:
+      -
+        import: opengraph

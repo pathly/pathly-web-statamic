@@ -83,30 +83,8 @@ sections:
           validate:
             - required
       -
-        handle: donation_video_url
-        field:
-          input_type: url
-          antlers: false
-          display: 'Video URL'
-          type: text
-          icon: text
-          listable: hidden
-          validate:
-            - required
-          instructions: 'Youtube Video > Teilen > Einbetten > Erweiterten Datenschutzmodus aktivieren > Inhalt von src="" kopieren und hier einfügen'
-      -
-        handle: donation_video_thumbnail
-        field:
-          mode: grid
-          restrict: false
-          allow_uploads: true
-          max_files: 1
-          display: 'Video Thumbnail'
-          type: assets
-          icon: assets
-          listable: hidden
-          validate:
-            - required
+        import: video_section
+        prefix: donation_
   donation-options:
     display: 'Donation Options'
     fields:

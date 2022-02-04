@@ -30,10 +30,10 @@ return [
 
     'schemes' => [
 
-        'ip_address' => [
-            'driver' => 'ip_address',
-            'allowed' => ['127.0.0.1'],
-        ],
+        // 'ip_address' => [
+        //     'driver' => 'ip_address',
+        //     'allowed' => ['127.0.0.1'],
+        // ],
 
         'logged_in' => [
             'driver' => 'auth',
@@ -42,8 +42,8 @@ return [
         ],
 
         'password' => [
-            'driver' => 'password',
-            'allowed' => ['secret'],
+            'driver'   => 'password',
+            'allowed'  => ['secret'],
             'form_url' => null,
         ],
 

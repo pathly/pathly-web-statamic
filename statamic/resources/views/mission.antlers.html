@@ -1,0 +1,43 @@
+<section class="section_image-full-width">
+  <picture>
+    {{ intro_image--big }}
+      <source class="full-width" srcset="{{ url }}" alt="{{ alt }}" media="(min-width: 700px)"/>
+    {{ /intro_image--big }}
+
+    {{ intro_image--small }}
+      <img class="full-width" src="{{ url }}" alt="{{ alt }}"/>
+    {{ /intro_image--small }}
+  </picture>
+</section>
+
+{{ mission_section }}
+  <section class="section_text section--top-spacing">
+      {{ if headline_addition }}
+        <h2 class="section-headline--addition">{{ headline_addition }}</h2>
+      {{ /if }}
+      <h2 class="section-headline">{{ headline }}</h2>
+
+      <div class="replicator">
+          {{ replicator }}
+            {{ if type == "quote" }}
+              <div class="simple-quote">
+                <blockquote>{{ quote_textarea }}</blockquote>
+                <p>{{ quote_author }}</p>
+              </div>
+            {{ elseif type == "image" }}
+              <img class="full-width" src="{{ image }}" alt="{{ caption }}">
+            {{ elseif type == "textarea" }}
+              <p>{{ textarea }}</p>
+            {{ elseif type == "list" }}
+              <ul>
+                {{ list }}
+                  <li>
+                    <p>{{ value }}</p>
+                  </li>
+                {{ /list }}
+              </ul>
+            {{ /if }}
+          {{ /replicator }}
+      </div>
+  </section>
+{{ /mission_section }}

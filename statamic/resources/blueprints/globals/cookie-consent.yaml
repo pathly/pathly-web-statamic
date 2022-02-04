@@ -1,0 +1,23 @@
+sections:
+  main:
+    display: 'Cookie Banner'
+    fields:
+      -
+        handle: cookie-banner_headline
+        field:
+          input_type: text
+          antlers: false
+          display: 'Popup Headline'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: cookie-banner_textarea
+        field:
+          antlers: false
+          display: 'Popup Copytext'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above

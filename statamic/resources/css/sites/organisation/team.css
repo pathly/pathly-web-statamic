@@ -1,0 +1,8 @@
+#team_profile.inactive {
+  opacity: 0.2;
+}
+
+#team_profile img {
+  width: 100%;
+  margin-bottom: var(--root24px);
+}

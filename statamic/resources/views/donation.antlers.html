@@ -1,0 +1,106 @@
+<section id="donation_intro" class="{{ intro_image_position == 'left' ?= 'section_text-w-image-left' }}{{ intro_image_position == 'right' ?= 'section_text-w-image-right' }}">
+  {{ intro_image }}
+    <img src="{{ url }}" alt="{{ alt }}"/>
+  {{ /intro_image }}
+
+  <div>
+    {{ if intro_headline_addition }}
+      <h2 class="section-headline--addition">{{ intro_headline_addition }}</h2>
+    {{ /if }}
+    <h2 class="section-headline">{{ intro_headline }}</h2>
+    <p>{{ intro_textarea }}</p>
+  </div>
+</section>
+
+<section id="donation_options" class="section_video-full-width section--top-spacing">
+  <h2 class="section-headline">{{ donation_video_headline }}</h2>
+
+  {{ donation_video_thumbnail }}
+    <div class="video_wrapper" style="background-image: url('{{ url }}');">
+      <div class="video_layer">
+        <iframe src="" title="YouTube Video Player" border="0" data-scaling="true" data-format="16:9" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="video_trigger" data-source="{{ donation_video_url }}">
+        <button class="video_thumbnail_disclaimer_button">
+          <img src="/images/play.svg" alt="Play"/>
+        </button>
+      </div>
+    </div>
+
+    <p class="video_thumbnail_disclaimer_text">Wenn du dieses Video anschaust, stimmst du automatisch unseren <a href="/privacy" target="_blank">Datenschutzbestimmungen</a> in Bezug auf die Verwendung von YouTube zu.</p>
+  {{ /donation_video_thumbnail }}
+</section>
+
+<section id="donation_options" class="section_pattern section--top-spacing">
+  {{ if intro_headline_addition }}
+    <h2 class="section-headline--addition">{{ options_headline_addition }}</h2>
+  {{ /if }}
+  <h2 class="section-headline">{{ donation-options_headline }}</h2>
+  <div class="link-list">
+    {{ donation-options_buttons }}
+      <a class="link-list_button" href="{{ donation-options_button_url }}" target="_blank">
+        <div class="link-list_button_icon-container">
+          {{ donation-options_buttons_icon }}
+            <img src="{{ url }}" alt="{{ alt }}">
+          {{ /donation-options_buttons_icon }}
+        </div>
+        <p>{{ donation-options_button_headline }}</p>
+      </a>
+    {{ /donation-options_buttons }}
+  </div>
+
+  <div class="bank-transfer">
+    <h2>{{ donation-options_bank-transfer_headline }}</h2>
+    <p>
+      <b>{{ donation-options_bank-transfer_name }}</b>
+      <br>
+      <b>IBAN</b> {{ donation-options_bank-transfer_iban }}
+      <br>
+      <b>BIC</b> {{ donation-options_bank-transfer_bic }}
+      <br>
+      <b>Kontoinhaber</b> {{ donation-options_bank-transfer_owner }}
+    </p>
+    {{ donation-options_bank-transfer_textarea }}
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="accordion_button-{{ donation-options_contribution-receipt_headline }}"/>
+    <label for="accordion_button-{{ donation-options_contribution-receipt_headline }}" class="accordion_title">
+      <h3>{{ donation-options_contribution-receipt_headline }}</h3>
+      <span class="accordion_indicator no-select">+</span>
+    </label>
+
+    <div class="accordion_content">
+      <p>{{ donation-options_contribution-receipt_textarea }}</p>
+    </div>
+  </div>
+</section>
+
+<section id="donation_more-options" class="section_pattern section--top-spacing">
+  {{ if intro_headline_addition }}
+    <h2 class="section-headline--addition">{{ more-options_headline_addition }}</h2>
+  {{ /if }}
+  <h2 class="section-headline">{{ more-options_headline }}</h2>
+  {{ more-options_options }}
+    <div class="accordion">
+      <input type="checkbox" id="accordion_button-{{ more-options_option_headline }}"/>
+      <label for="accordion_button-{{ more-options_option_headline }}" class="accordion_title">
+        <h3>{{ more-options_option_headline }}</h3>
+        <span class="accordion_indicator no-select">+</span>
+      </label>
+
+      <div class="accordion_content">
+        <p>{{ more-options_option_textarea }}</p>
+        {{ if more-options_option_link_label }}
+          {{ if more-options_option_link_type == 'url' && more-options_option_link_url }}
+            <a class="arrow-link" href="{{ more-options_option_link_url }}" target="_blank">{{ more-options_option_link_label }}</a>
+          {{ elseif more-options_option_link_type == 'mail' && more-options_option_link_mail }}
+            <a class="mail-link" href="mailto:{{ more-options_option_link_mail }}">{{ more-options_option_link_label }}</a>
+          {{ /if }}
+        {{ /if }}
+      </div>
+    </div>
+  {{ /more-options_options }}
+
+</section>

@@ -1,4 +1,5 @@
-html {
+html,
+body {
   font-family: "azo-sans-web";
   font-weight: 400;
   font-style: normal;
@@ -12,29 +13,21 @@ html {
 }
 
 @media (max-width: 1600px) {
-  html {
+  html,
+  body {
     font-size: 22px;
   }
 }
 
 @media (max-width: 1200px) {
-  html {
+  html,
+  body {
     font-size: 20px;
   }
 }
 
-@media (max-width: 800px) {
-  html {
-    font-size: 18px;
-  }
-}
 
-h1 {
-  font-family: "neue-kabel";
-  font-weight: 700;
-  font-size: var(--root64px);
-}
-
+h1,
 h2 {
   font-family: "neue-kabel";
   font-weight: 700;
@@ -42,62 +35,48 @@ h2 {
   line-height: 1.2;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
+  h1,
   h2 {
-    font-size: var(--root32px);
+    font-size: var(--root40px);
   }
 }
 
-/* TODO: section-headline-addition will be outdated */
-h2.section-headline-addition,
 h2.section-headline--addition {
-  font-size: var(--root80px);
-  line-height: 1;
-  margin-left: 1em;
-  margin-bottom: -0.4em;
-  color: rgba(var(--primaryPurple), 0.2);
-}
-
-@media (max-width: 500px) {
-  h2.section-headline-addition,
-  h2.section-headline--addition {
-    font-size: var(--root64px);
-  }
+  font-size: var(--root24px);
+  font-weight: 500;
+  color: var(--primary_purple);
 }
 
 h2.section-headline {
-  margin-bottom: var(--root40px);
+  margin-bottom: var(--root48px);
 }
 
 h3 {
   font-family: "neue-kabel";
   font-weight: 700;
-  font-size: var(--root40px);
+  font-size: var(--root32px);
 }
 
-li h3 {
-  font-family: "neue-kabel";
-  font-weight: 700;
-  font-size: var(--root40px);
-  line-height: 1.2;
-  color: rgba(var(--primaryPurple));
-  margin-bottom: var(--root16px);
+@media (max-width: 650px) {
+  h3 {
+    font-size: var(--root24px);
+  }
 }
 
 p {
   font-family: "azo-sans-web";
-  font-size: var(--root24px);
-  line-height: 1.5;
+  font-size: var(--root20px);
+  line-height: 1.6;
 }
 
 p + p {
   margin-top: var(--root24px);
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none;
-  cursor: pointer;
+a {
+  font-family: 'neue-kabel';
+  font-weight: 700;
+  font-size: var(--root24px);
+  color: var(--primary_purple);
 }

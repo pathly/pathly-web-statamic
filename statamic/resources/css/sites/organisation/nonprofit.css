@@ -1,0 +1,29 @@
+.statutes_sections {
+  counter-reset: statutes_headlines_item;
+  list-style-type: none;
+}
+
+.statutes_sections h3::before {
+  content: "§" counter(statutes_headlines_item) " ";
+  counter-increment: statutes_headlines_item;
+  padding-right: var(--root8px);
+
+}
+
+.statutes_section_subsections {
+  font-weight: normal;
+  padding-left: var(--root32px);
+}
+
+.statutes_section_subsections > li:not(:first-child) {
+  margin-top: var(--root24px);
+}
+
+.statutes_section_subsections ul {
+  padding: revert;
+  list-style: disc;
+}
+
+.statutes_section_subsections ul li::marker {
+  color: var(--primary_purple);
+}

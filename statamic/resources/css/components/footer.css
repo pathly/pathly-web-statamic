@@ -1,0 +1,160 @@
+/* -------------------------------------------------------------------------------- */
+/* --- footer --- */
+/* -------------------------------------------------------------------------------- */
+
+.footer {
+  width: 90vw;
+  z-index: 999;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  margin: auto 5vw var(--root40px) 5vw; /* 350px // based on 24px */
+  padding-top: 14.58rem;
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+/* --- contact --- */
+/* -------------------------------------------------------------------------------- */
+
+.footer_contact {
+  grid-column: 6/13;
+  display: block;
+  position: revert;
+  z-index: 1;
+  margin-bottom: 10.42rem; /* 250px // based on 24px */
+}
+
+.footer_contact p {
+  font-family: "neue-kabel";
+  font-size: var(--root32px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.footer_contact a {
+  position: relative;
+  font-size: var(--root32px);
+  color: var(--primary_red);
+}
+
+/* underline animation */
+.footer_contact a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--root4px);
+  border-radius: var(--root4px);
+  transform: scaleX(0);
+  transform-origin: center;
+  background-color: var(--primary_red);
+  transition: opacity 0.4s, transform 0.4s;
+}
+
+.footer_contact a:hover::after {
+  transform: scaleX(1);
+  background-color: var(--primary_red);
+}
+
+.footer_contact img {
+  position: absolute;
+  bottom: 8rem;
+  left: 10vw;
+  width: 40%;
+  height: auto;
+  z-index: -1;
+}
+
+@media (max-width: 1400px) {
+  .footer_contact img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer_contact img {
+    bottom: 8rem;
+    left: 5vw;
+    width: 70%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer_contact img {
+    left: -15vw;
+    width: 80%;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer_contact {
+    grid-column: 2/13;
+  }
+
+  .footer_contact img {
+    left: 25vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer_contact {
+    grid-column: 2/13;
+  }
+
+  .footer_contact img {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer_contact {
+    grid-column: 1/14;
+  }
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+/* --- navigation --- */
+/* -------------------------------------------------------------------------------- */
+
+.footer_nav {
+  grid-column: 1/14;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer_nav * {
+  font-family: "neue-kabel";
+  font-weight: 700;
+  color: var(--primary_purple);
+}
+
+.footer_nav span {
+  font-weight: 500;
+}
+
+.footer_nav_list {
+  display: flex;
+  margin-left: var(--root32px);
+}
+
+.footer_nav_list li {
+  padding: var(--root8px) var(--root16px);
+  border-radius: calc(var(--root24px) + 2 * var(--root16px)); /* fontsize + 2 * padding */
+  margin-left: var(--root32px);
+}
+
+.footer_nav_list li:hover {
+  background-color: var(--purple_ultraLightViolett);
+}
+
+@media (max-width: 800px) {
+  .footer_nav_list {
+    display: none;
+  }
+}

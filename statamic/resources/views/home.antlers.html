@@ -1,34 +1,120 @@
-<!-- Section Header -->
-<section class="section_home-header">
-  <img class="section_home-header_image" src="/images/home_header.svg">
+<section class="home-header">
+  <img class="home-header_image" src="/images/home_header.svg"/>
 
-  <div class="section_home-header_text">
-    <h2>{{ intro_headline }}</h2>
+  <div class="home-header_text">
+    <h1 id="home_intro">{{ intro_headline }}</h1>
 
-    <svg class="section_home-header_text_svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 200 50" preserveAspectRatio="xMinYMin meet">
-      <path class="section_home-header_text_svg_mouse" d="M25,21c0,5-4,9-9,9l0,0c-4.9,0-9-4-9-9V11c0-4.9,4.1-9,9-9l0,0c5,0,9,4.1,9,9V21z"/>
-      <line class="section_home-header_text_svg_scroller" x1="16" y1="8" x2="16" y2="14">
-        <animate attributeName="y1" values="8;8;8;14;14" dur="1.5s" repeatCount="indefinite" />
-        <animate attributeName="y2" values="8;8;14;14;14" dur="1.5s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="0;1;1;0" dur="1.5s" repeatCount="indefinite" />
-      <line/>
-    </svg>
-
-    <div class="section_home-header_text_scroller">
-      <div class="section_home-header_text_scroller_animation"></div>
+    <div class="home-header_text_scroller">
+      <div class="home-header_text_scroller_animation"></div>
     </div>
   </div>
 </section>
 
-<!-- About Us -->
-<section class="section_standard-w-image-left section--top-spacing" id="">
-  <div class="section_standard-w-image-left_text">
-    <h2 class="section-headline-addition">{{ our-team_headline_addition }}</h2>
-    <h2 class="section-headline">{{ our-team_headline }}</h2>
-    <p>{{ our-team_textarea }}</p>
+<section id="home_project" class="{{ about-project_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-project_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
+  {{ about-project_image }}
+    <img src="{{ url }}" alt="{{ alt }}"/>
+  {{ /about-project_image }}
+
+  <div>
+    {{ if about-project_headline_addition }}
+      <h2 class="section-headline--addition">{{ about-project_headline_addition }}</h2>
+    {{ /if }}
+    <h2 class="section-headline">{{ about-project_headline }}</h2>
+    <p>{{ about-project_textarea }}</p>
+  </div>
+</section>
+
+<section id="home_stories" class="section_slider section--top-spacing">
+  {{ if stories_headline_addition }}
+    <h2 class="section-headline--addition">{{ stories_headline_addition }}</h2>
+  {{ /if }}
+  <h2 class="section-headline">{{ stories_headline }}</h2>
+
+  <ul>
+    <li><img src="/images/story1.png"/></li>
+    <li><img src="/images/story2.png"/></li>
+    <li><img src="/images/story3.png"/></li>
+    <li><img src="/images/story4.png"/></li>
+    <li><img src="/images/story5.png"/></li>
+  </ul>
+
+  <div class="comming-soon">
+    <button class="cta-button">Ab Frühjahr 2022</button>
+  </div>
+</section>
+
+<section id="home_founders" class="{{ about-founders_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-founders_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
+  {{ about-founders_image }}
+    <img src="{{ url }}" alt="{{ alt }}"/>
+  {{ /about-founders_image }}
+
+  <div>
+    {{ if about-founders_headline_addition }}
+      <h2 class="section-headline--addition">{{ about-founders_headline_addition }}</h2>
+    {{ /if }}
+    <h2 class="section-headline">{{ about-founders_headline }}</h2>
+    <p>{{ about-founders_textarea }}</p>
+  </div>
+</section>
+
+<section id="home_newsletter" class="section_newsletter section--top-spacing">
+  <div class="newsletter_header">
+    <img class="newsletter_mailbox-image" src="/images/mailbox.svg" alt="Newsletter"/>
+
+    <h2 class="section-headline">{{ newsletter:newsletter_headline }}</h2>
+    <p>{{ newsletter:newsletter_textarea }}</p>
   </div>
 
-  {{ our-team_image }}
-  <img class="section_standard-w-image-left_image" src="{{ url }}" alt="{{ alt }}" loading="lazy">
-  {{ /our-team_image }}
+  <iframe class="mj-w-res-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/7gL6/L8b" width="100%" height="100%"></iframe>
+</section>
+
+{{ collaboration }}
+  <section id="home_project" class="{{ cta_image_position == 'left' ?= 'section_text-w-image-left' }}{{ cta_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
+    {{ cta_image }}
+      <img src="{{ url }}" alt="{{ alt }}"/>
+    {{ /cta_image }}
+
+    <div>
+      {{ if cta_headline_addition }}
+        <h2 class="section-headline--addition">{{ cta_headline_addition }}</h2>
+      {{ /if }}
+      <h2 class="section-headline">{{ cta_headline }}</h2>
+      <p>{{ cta_textarea }}</p>
+
+      {{ if cta_button_type === 'mail' }}
+        <a class="cta-button" href="mailto:{{ cta_mail_address }}?subject={{ cta_mail_subject }}&body={{ cta_mail_body }}">
+          {{ cta_button_icon }}
+            <img src="{{ url }}" alt="{{ alt }}"/>
+          {{ /cta_button_icon }}
+          Schreib uns!
+        </a>
+      {{ elseif cta_button_type === 'subpage' }}
+        {{ cta_subpage }}
+          <a class="cta-button" href="{{ url }}">
+            {{ cta_button_icon }}
+              <img src="{{ url }}" alt="{{ alt }}"/>
+            {{ /cta_button_icon }}
+            {{ title }}
+          </a>
+        {{ /cta_subpage }}
+      {{ /if }}
+    </div>
+  </section>
+{{ /collaboration }}
+
+<section id="home_supporters" class="section_pattern section--top-spacing">
+  {{ if all-supporters_headline_addition }}
+    <h2 class="section-headline--addition">{{ all-supporters_headline_addition }}</h2>
+  {{ /if }}
+  <h2 class="section-headline">{{ all-supporters_headline }}</h2>
+
+  <div class="all-supporters_slick-slider">
+    <ul class="all-supporters_slick-slider_list">
+      {{ assets container="assets" folder="supporter" sort="rating" }}
+        <li class="all-supporters_slick-slider_list_item">
+          <img class="round-image shadow" src="{{ url }}" alt="{{ alt }}"/>
+        </li>
+      {{ /assets }}
+    </ul>
+  </div>
 </section>

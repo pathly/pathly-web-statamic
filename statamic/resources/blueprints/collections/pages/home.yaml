@@ -38,6 +38,8 @@ sections:
           type: template
           display: Template
           localizable: true
+          validate:
+            - required
       -
         handle: parent
         field:
@@ -47,17 +49,46 @@ sections:
           max_items: 1
           listable: false
           localizable: true
-  about_us:
-    display: 'About us'
+  about_project:
+    display: 'About Project'
     fields:
       -
         import: standard_section_w_image
-        prefix: our-team_
-  supporter:
-    display: Supporter
+        prefix: about-project_
+  about_founders:
+    display: 'About Founders'
     fields:
       -
-        handle: supporter_headline_addition
+        import: standard_section_w_image
+        prefix: about-founders_
+  collaboration:
+    display: 'Collaboration'
+    fields:
+      -
+        handle: collaboration
+        field:
+          max_items: 1
+          mode: default
+          create: true
+          collections:
+            - ctas
+          display: Choose CTA
+          type: entries
+          icon: entries
+          listable: hidden
+          validate:
+            - required
+  stories:
+    display: Stories
+    fields:
+      -
+        import: standard_section
+        prefix: stories_
+  supporter:
+    display: All Supporters
+    fields:
+      -
+        handle: all-supporters_headline_addition
         field:
           input_type: text
           antlers: false
@@ -68,7 +99,7 @@ sections:
           validate:
             - required
       -
-        handle: supporter_headline
+        handle: all-supporters_headline
         field:
           input_type: text
           antlers: false
@@ -78,8 +109,8 @@ sections:
           listable: hidden
           validate:
             - required
-  prefooter:
-    display: Prefooter
+  opengraph:
+    display: Open Graph
     fields:
       -
-        import: prefooter
+        import: opengraph

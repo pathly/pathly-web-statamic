@@ -1,7 +1,7 @@
 title: Overview
 sections:
-  intro:
-    display: Intro
+  main:
+    display: Main
     fields:
       -
         handle: title
@@ -38,3 +38,8 @@ sections:
           type: template
           icon: template
           listable: hidden
+  opengraph:
+    display: Open Graph
+    fields:
+      -
+        import: opengraph

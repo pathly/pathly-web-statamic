@@ -1,0 +1,55 @@
+<header class="header">
+  <a class="header_logo" href="/">
+    <img src="/images/logo_dark.svg" alt="Pathly Logo"/>
+    <h1>Pathly</h1>
+  </a>
+
+  <nav id="header_nav" class="header_nav">
+    <img class="header_nav_mobile-burger-button" src="/images/menu_burgermenu.svg" alt="burger menu"/>
+
+    <a href="/donate" class="cta-button donation-button">Spenden</a>
+
+    <ul class="header_nav_list">
+      {{ nav:main-nav include_home="true" }}
+        {{ if children }}
+          <li class="is-parent">
+            <a class="{{ is_current || is_parent ?= 'active' }}">{{ title }}</a>
+            <div class="header_nav_sub">
+              <ul class="header_nav_sub_list shadow">
+                <div class="header_nav_sub_mobile-back-button">
+                  <img src="/images/menu_arrow.svg" alt="back button"/>
+                </div>
+
+                {{ children }}
+                  <li>
+                    <a href="{{ url }}">
+                      {{ icon }}
+                        <img src="{{ url }}" alt="{{ alt }}"/>
+                      {{ /icon }}
+                      <div>
+                        <span class="header_nav_sub_list_title">{{ title }}</span>
+                        <span class="header_nav_sub_list_description">{{ description }}</span>
+                      </div>
+                    </a>
+                  </li>
+                {{ /children }}
+              </ul>
+            </div>
+          </li>
+          {{ else }}
+          <li>
+            <a class="link {{ is_current || is_parent ?= 'active' }}" href="{{ url }}">{{ title }}</a>
+          </li>
+        {{ /if }}
+      {{ /nav:main-nav }}
+    </ul>
+
+    <ul class="header_nav_list header_footer_nav_list">
+      {{ nav:collection:footer-pages include_home="true" }}
+        <li><a class="link {{ is_current ?= 'active' }}" href="{{ url }}">{{ title }}</a></li>
+      {{ /nav:collection:footer-pages }}
+    </ul>
+
+    <a class="header_scroll-to-top hidden" href="#" onclick="scrollToTop()"></a>
+  </nav>
+</header>

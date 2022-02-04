@@ -3,12 +3,19 @@
 @import "base/typographie.css";
 @import "base/sizes.css";
 @import "base/colors.css";
-@import "sites/general.css";
+
+@import "components/general.css";
+@import "components/header.css";
+@import "components/footer.css";
+
 @import "sites/home.css";
-@import "sites/our-nonprofit.css";
-@import "sites/our-team.css";
-@import "sites/our-supporters.css";
-@import "sites/footer.css";
+@import "sites/donation.css";
+@import "sites/organisation/team.css";
+@import "sites/organisation/nonprofit.css";
+@import "sites/organisation/mission.css";
+@import "sites/organisation/supporters.css";
+@import "sites/organisation/collaboration.css";
+
 @import "sites/stories.css";
-/* @import "slick/slick.css";
-@import "slick/slick-theme.css"; */
+
+@import "sites/meta-page.css";

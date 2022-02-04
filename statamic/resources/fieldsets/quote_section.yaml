@@ -1,0 +1,58 @@
+title: 'Quote Section'
+fields:
+  -
+    handle: quotes
+    field:
+      fields:
+        -
+          handle: quote
+          field:
+            antlers: false
+            display: Quote
+            type: textarea
+            icon: textarea
+            listable: hidden
+            instructions_position: above
+            validate:
+              - required
+        -
+          handle: author_image
+          field:
+            mode: grid
+            restrict: false
+            allow_uploads: true
+            display: Author Image
+            type: assets
+            icon: assets
+            listable: hidden
+            max_files: 1
+        -
+          handle: author_name
+          field:
+            input_type: text
+            antlers: false
+            display: Author Name
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+            validate:
+              - required
+        -
+          handle: author_info
+          field:
+            input_type: text
+            antlers: false
+            display: Author Additional Info
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+      mode: stacked
+      reorderable: true
+      display: Quotes
+      type: grid
+      icon: grid
+      listable: hidden
+      validate:
+        - required

@@ -13,17 +13,24 @@ feedback_headline: 'Das sagt unsere Community'
 support_headline_addition: 'Du & Pathly'
 support_headline: 'So kannst du helfen!'
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1637317774
+updated_at: 1643983270
 template: collaboration
 feedback_quotes:
   -
-    feedback_quotes_textarea: 'Lorem ipsum dolor sit amet, consetetur sadi elitr, sed diam nonumy eirmod tempor invidunt ut labore et do magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
-    feedback_quotes_author: 'Max Mustermann'
-    feedback_quotes_link: null
+    quote: 'Lorem ipsum dolor sit amet, consetetur sadi elitr, sed diam nonumy eirmod tempor invidunt ut labore et do magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
+    author_image: null
+    author_name: 'Max Mustermann'
+    author_info: Brustkrebs
   -
-    feedback_quotes_textarea: 'Lorem ipsum dolor sit amet, consetetur sadi elitr, sed diam nonumy eirmod tempor invidunt ut labore et do magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
-    feedback_quotes_author: 'Maria Musterfraue'
-    feedback_quotes_link: null
+    quote: 'Lorem ipsum dolor sit amet, consetetur sadi elitr, sed diam nonumy eirmod tempor invidunt ut labore et do magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
+    author_image: supporter/ThoraHornburg_500.png
+    author_name: 'Maria Müller'
+    author_info: null
+  -
+    quote: 'Lorem ipsum dolor sit amet, consetetur sadi elitr, sed diam nonumy eirmod tempor invidunt ut labore et do magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
+    author_image: null
+    author_name: Anonym
+    author_info: null
 support_needs:
   -
     support_needs_image: icons/collaboration_content-creation.svg

@@ -94,44 +94,8 @@ sections:
           validate:
             - required
       -
-        handle: feedback_quotes
-        field:
-          fields:
-            -
-              handle: feedback_quotes_textarea
-              field:
-                antlers: false
-                display: Textarea
-                type: textarea
-                icon: textarea
-                listable: hidden
-                validate:
-                  - required
-            -
-              handle: feedback_quotes_author
-              field:
-                input_type: text
-                antlers: false
-                display: Author
-                type: text
-                icon: text
-                listable: hidden
-                validate:
-                  - required
-            -
-              handle: feedback_quotes_link
-              field:
-                display: Link
-                type: link
-                icon: link
-                listable: hidden
-          mode: stacked
-          max_rows: 3
-          reorderable: true
-          display: Notes
-          type: grid
-          icon: grid
-          listable: hidden
+        import: quote_section
+        prefix: feedback_
   support:
     display: 'Support Needs'
     fields:

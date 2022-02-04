@@ -30,14 +30,14 @@
   align-items: center;
   width: var(--root40px);
   height: var(--root64px);
-  border: var(--root4px) solid rgb(var(--primaryPurple));
+  border: var(--root4px) solid rgb(var(--primary_purple));
   border-radius: calc(var(--root64px) / 2);
 }
 
 .home-header_text_scroller_animation {
   height: var(--root16px);
-  background-color: rgb(var(--primaryPurple));
-  border: calc(var(--root4px) / 2) solid rgb(var(--primaryPurple));
+  background-color: rgb(var(--primary_purple));
+  border: calc(var(--root4px) / 2) solid rgb(var(--primary_purple));
   border-radius: calc(var(--root4px) / 2);
   margin-top: calc(-1 * var(--root8px));
   animation: scroll 1.6s infinite;
@@ -151,7 +151,7 @@
 .newsletter_header {
   padding: var(--root80px);
   padding-bottom: var(--root40px);
-  background-color: rgb(var(--primaryTextLight));
+  background-color: rgb(var(--purple_ultraLight));
   border-radius: var(--root16px) var(--root16px) 0 0;
   position: relative;
 }

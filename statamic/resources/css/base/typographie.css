@@ -45,7 +45,7 @@ h2 {
 h2.section-headline--addition {
   font-size: var(--root24px);
   font-weight: 500;
-  color: rgb(var(--primary_purple));
+  color: var(--primary_purple);
 }
 
 h2.section-headline {
@@ -78,5 +78,5 @@ a {
   font-family: 'neue-kabel';
   font-weight: 700;
   font-size: var(--root24px);
-  color: rgb(var(--primary_purple));
+  color: var(--primary_purple);
 }

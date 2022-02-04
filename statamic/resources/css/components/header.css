@@ -33,9 +33,9 @@
   width: auto;
   margin-right: var(--root24px);
   border-radius: var(--root16px);
-  box-shadow: 0 0 var(--root8px) rgba(var(--primary_purple), 0.15);
-  -moz-box-shadow: 0 0 var(--root8px) rgba(var(--primary_purple), 0.15);
-  -webkit-box-shadow: 0 0 var(--root8px) rgba(var(--primary_purple), 0.15);
+  box-shadow: 0 0 var(--root8px) var(--shadow_purple);
+  -moz-box-shadow: 0 0 var(--root8px) var(--shadow_purple);
+  -webkit-box-shadow: 0 0 var(--root8px) var(--shadow_purple);
 }
 
 .header_logo h1 {
@@ -317,7 +317,7 @@
   }
 
   .header_nav_sub_list > li > a:hover {
-    background-color: rgba(var(--primary_purple), 0.25);
+    background-color: var(--purple_ultraLightViolett);
   }
 }
 
@@ -420,11 +420,9 @@
   background-size: var(--root80px);
 
   border-radius: var(--root40px);
-  box-shadow: 0 var(--root8px) var(--root40px) rgba(var(--primary_red), 0.15);
-  -moz-box-shadow: 0 var(--root8px) var(--root40px)
-  rgba(var(--primary_red), 0.15);
-  -webkit-box-shadow: 0 var(--root8px) var(--root40px)
-  rgba(var(--primary_red), 0.15);
+  box-shadow: 0 var(--root8px) var(--root40px) var(--shadow_red);
+  -moz-box-shadow: 0 var(--root8px) var(--root40px) var(--shadow_red);
+  -webkit-box-shadow: 0 var(--root8px) var(--root40px) var(--shadow_red);
 
   transition: all 0.5s ease;
   display: block;

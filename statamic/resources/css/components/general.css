@@ -699,7 +699,7 @@ section {
 }
 
 .link-list_button:hover {
-  background-color: rgba(var(--primary_purple), 0.3);
+  background-color: var(--purple_ultraLightViolett);
 }
 
 .link-list_button_icon-container {
@@ -760,9 +760,9 @@ img,
 }
 
 .shadow {
-  box-shadow: 0 var(--root24px) var(--root40px) rgba(var(--primary_dark), 0.2);
-  -moz-box-shadow: 0 var(--root24px) var(--root40px) rgba(var(--primary_dark), 0.2);
-  -webkit-box-shadow: 0 var(--root24px) var(--root40px) rgba(var(--primary_dark), 0.2);
+  box-shadow: 0 var(--root24px) var(--root40px) var(--primary_dark)20);
+  -moz-box-shadow: 0 var(--root24px) var(--root40px) var(--primary_dark)20);
+  -webkit-box-shadow: 0 var(--root24px) var(--root40px) var(--primary_dark)20);
 }
 
 /* Makes a previously square element round */
@@ -854,9 +854,9 @@ button {
   margin-top: var(--root80px);
 
   background-color: var(--primary_red);
-  box-shadow: 0 var(--root8px) var(--root48px) rgba(var(--primary_red), 0.2);
-  -moz-box-shadow: 0 var(--root8px) var(--root48px) rgba(var(--primary_red), 0.2);
-  -webkit-box-shadow: 0 var(--root8px) var(--root48px) rgba(var(--primary_red), 0.2);
+  box-shadow: 0 var(--root8px) var(--root48px) var(--shadow_red);
+  -moz-box-shadow: 0 var(--root8px) var(--root48px) var(--shadow_red);
+  -webkit-box-shadow: 0 var(--root8px) var(--root48px) var(--shadow_red);
   color: var(--purple_ultraLight);
 
   transition: all 0.5s ease;

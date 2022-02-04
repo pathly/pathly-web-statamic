@@ -16,6 +16,6 @@
 }
 
 .section_meta a {
-  color: rgb(var(--primary_dark));
+  color: var(--primary_dark);
   word-break: break-all;
 }

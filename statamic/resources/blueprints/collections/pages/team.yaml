@@ -1,4 +1,4 @@
-title: 'Our Team'
+title: Team
 sections:
   main:
     display: Main
@@ -162,9 +162,9 @@ sections:
                   appDevelopment: 'App Development'
                   design: Design
                   business: Business
-                  publicRelations: 'Öffentlichkeitsarbeit'
+                  publicRelations: Öffentlichkeitsarbeit
                   workshop: Workshops
-                  nutritionCounseling: 'Ernährungsberatung'
+                  nutritionCounseling: Ernährungsberatung
                   mentalHealthCoach: 'Mental Health Coach'
                 taggable: false
                 push_tags: false
@@ -184,6 +184,15 @@ sections:
                 type: text
                 icon: text
                 listable: hidden
+            -
+              handle: team_profile_is_active
+              field:
+                default: true
+                display: 'Is Active?'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                instructions_position: above
           mode: stacked
           max_rows: 0
           reorderable: true
@@ -193,13 +202,14 @@ sections:
           listable: hidden
           validate:
             - required
+          instructions_position: above
   prefooter:
     display: Prefooter
     fields:
       -
         import: prefooter
   opengraph:
-    display: Open Graph
+    display: 'Open Graph'
     fields:
       -
         import: opengraph

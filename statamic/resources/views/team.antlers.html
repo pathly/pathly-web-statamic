@@ -19,7 +19,7 @@
   <div>
     <ul class="tiles">
       {{ team_profiles }}
-        <li id="team_profile">
+        <li id="team_profile" class="{{ !team_profile_is_active ?= 'inactive' }}">
           {{ team_profile_image }}
             <img class="round-image shadow" src="{{ url }}" alt="{{ alt }}"/>
           {{ /team_profile_image }}

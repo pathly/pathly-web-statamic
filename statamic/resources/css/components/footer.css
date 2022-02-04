@@ -36,7 +36,7 @@
 .footer_contact a {
   position: relative;
   font-size: var(--root32px);
-  color: rgb(var(--primary_red));
+  color: var(--primary_red);
 }
 
 /* underline animation */
@@ -50,13 +50,13 @@
   border-radius: var(--root4px);
   transform: scaleX(0);
   transform-origin: center;
-  background-color: rgb(var(--primary_red));
+  background-color: var(--primary_red);
   transition: opacity 0.4s, transform 0.4s;
 }
 
 .footer_contact a:hover::after {
   transform: scaleX(1);
-  background-color: rgb(var(--primary_red));
+  background-color: var(--primary_red);
 }
 
 .footer_contact img {
@@ -131,7 +131,7 @@
 .footer_nav * {
   font-family: "neue-kabel";
   font-weight: 700;
-  color: rgb(var(--primary_purple));
+  color: var(--primary_purple);
 }
 
 .footer_nav span {
@@ -150,7 +150,7 @@
 }
 
 .footer_nav_list li:hover {
-  background-color: rgb(var(--blueUltraLightViolett));
+  background-color: var(--purple_ultraLightViolett);
 }
 
 @media (max-width: 800px) {

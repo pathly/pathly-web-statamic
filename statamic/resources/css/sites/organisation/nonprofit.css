@@ -25,5 +25,5 @@
 }
 
 .statutes_section_subsections ul li::marker {
-  color: rgb(var(--primary_purple));
+  color: var(--primary_purple);
 }

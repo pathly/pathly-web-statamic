@@ -386,7 +386,7 @@ section {
   .section_video-full-width .video_thumbnail_disclaimer_text a {
     position: relative;
     padding: 0;
-    color: rgb(var(--primary_dark));
+    color: var(--primary_dark);
     margin-top: var(--root48px);
   }
 }
@@ -469,7 +469,7 @@ section {
 }
 
 .section_confirmation h2 {
-  color: rgb(var(--primary_purple));
+  color: var(--primary_purple);
   margin-top: var(--root80px);
   text-align: center;
 }
@@ -656,7 +656,7 @@ section {
 }
 
 .alternating-tiles > li > div ul li::marker {
-  color: rgb(var(--primary_red));
+  color: var(--primary_red);
 }
 
 @media (max-width: 1000px) {
@@ -669,10 +669,6 @@ section {
   .alternating-tiles > li:nth-child(even) > div:not(.alternating-tiles_image-container) {
     grid-area: 2/1/2/12;
     margin-top: var(--root40px);
-  }
-
-  .alternating-tiles h3 {
-    text-align: center;
   }
 }
 
@@ -699,11 +695,11 @@ section {
   align-items: center;
   padding: var(--root16px);
   border-radius: var(--root16px);
-  background-color: rgb(var(--purple_ultraLight));
+  background-color: var(--purple_ultraLight);
 }
 
 .link-list_button:hover {
-  background-color: rgba(var(--primary_purple), 0.3);
+  background-color: var(--purple_ultraLightViolett);
 }
 
 .link-list_button_icon-container {
@@ -716,7 +712,7 @@ section {
 }
 
 .link-list_button_icon-container.colored {
-  background-color: rgb(var(--primary_purple));
+  background-color: var(--primary_purple);
 }
 
 .link-list_button_icon-container img {
@@ -725,7 +721,7 @@ section {
 }
 
 .link-list_button p {
-  color: rgb(var(--primary_dark));
+  color: var(--primary_dark);
 }
 
 
@@ -764,9 +760,9 @@ img,
 }
 
 .shadow {
-  box-shadow: 0 var(--root24px) var(--root40px) rgba(var(--primary_dark), 0.2);
-  -moz-box-shadow: 0 var(--root24px) var(--root40px) rgba(var(--primary_dark), 0.2);
-  -webkit-box-shadow: 0 var(--root24px) var(--root40px) rgba(var(--primary_dark), 0.2);
+  box-shadow: 0 var(--root24px) var(--root40px) var(--primary_dark)20);
+  -moz-box-shadow: 0 var(--root24px) var(--root40px) var(--primary_dark)20);
+  -webkit-box-shadow: 0 var(--root24px) var(--root40px) var(--primary_dark)20);
 }
 
 /* Makes a previously square element round */
@@ -776,7 +772,7 @@ img,
 
 .simple-quote * {
   font-family: "neue-kabel";
-  color: rgb(var(--primary_purple));
+  color: var(--primary_purple);
 }
 
 .simple-quote blockquote {
@@ -857,11 +853,11 @@ button {
   padding: var(--root16px) var(--root48px);
   margin-top: var(--root80px);
 
-  background-color: rgb(var(--primary_red));
-  box-shadow: 0 var(--root8px) var(--root48px) rgba(var(--primary_red), 0.2);
-  -moz-box-shadow: 0 var(--root8px) var(--root48px) rgba(var(--primary_red), 0.2);
-  -webkit-box-shadow: 0 var(--root8px) var(--root48px) rgba(var(--primary_red), 0.2);
-  color: rgb(var(--purple_ultraLight));
+  background-color: var(--primary_red);
+  box-shadow: 0 var(--root8px) var(--root48px) var(--shadow_red);
+  -moz-box-shadow: 0 var(--root8px) var(--root48px) var(--shadow_red);
+  -webkit-box-shadow: 0 var(--root8px) var(--root48px) var(--shadow_red);
+  color: var(--purple_ultraLight);
 
   transition: all 0.5s ease;
 }
@@ -923,7 +919,7 @@ button {
 }
 
 .replicator li::marker {
-  color: rgb(var(--primary_red));
+  color: var(--primary_red);
 }
 
 
@@ -933,7 +929,7 @@ button {
 /* -------------------------------------------------------------------------------- */
 
 .accordion {
-  background-color: rgb(var(--purple_ultraLight));
+  background-color: var(--purple_ultraLight);
   border-radius: var(--root16px);
   margin-top: var(--root40px);
 }
@@ -953,7 +949,7 @@ button {
   cursor: pointer;
   border-radius: 5px;
   font-weight: 700;
-  color: rgb(var(--primary_purple));
+  color: var(--primary_purple);
   padding: var(--root32px);
 }
 
@@ -966,7 +962,7 @@ button {
   float: right;
   width: 10px;
   transition: transform 0.4s ease;
-  color: rgb(var(--primary_purple));
+  color: var(--primary_purple);
 }
 
 .accordion_content {
@@ -1050,7 +1046,7 @@ button {
 }
 
 .oreos-popup > div > a:hover {
-  background-color: rgb(var(--blueUltraLightViolett));
+  background-color: var(--purple_ultraLightViolett);
 }
 
 .oreos-form_options {
@@ -1071,14 +1067,14 @@ button {
   margin-right: var(--root8px);
   height: var(--root24px);
   width: var(--root24px);
-  border: var(--root4px) solid rgb(var(--primary_red));
+  border: var(--root4px) solid var(--primary_red);
   border-radius: var(--root4px);
   display: inline-block;
   position: relative;
 }
 
 .oreos-form_options label input[type=checkbox]:checked + span {
-  background-color: rgb(var(--primary_red));
+  background-color: var(--primary_red);
 }
 
 .oreos-form_options label input[type=checkbox]:checked + span:before {
@@ -1098,12 +1094,12 @@ button {
   margin-top: 0;
   padding: var(--root8px) var(--root32px);
   margin-right: var(--root16px);
-  border: var(--root4px) solid rgb(var(--primary_red));
+  border: var(--root4px) solid var(--primary_red);
 }
 
 .oreos-form_buttons .configure-button,
 .oreos-form_buttons .save-button {
-  color: rgb(var(--primary_red));
+  color: var(--primary_red);
   background-color: white;
 }
 

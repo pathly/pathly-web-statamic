@@ -1,12 +1,12 @@
 #cooperations_profile {
-  background-color: rgb(var(--purple_ultraLight));
+  background-color: var(--purple_ultraLight);
   border-radius: var(--root40px);
 }
 
 #cooperations_profile a {
   display: block;
   padding: var(--root40px);
-  background-color: rgb(var(--purple_ultraLight));
+  background-color: var(--purple_ultraLight);
   border-radius: var(--root40px);
 }
 
@@ -15,7 +15,7 @@
 }
 
 #sponsors_profile .alternating-tiles_image-container {
-  background-color: rgb(var(--purple_ultraLight));
+  background-color: var(--purple_ultraLight);
   aspect-ratio: 1;
   padding: var(--root40px);
 }

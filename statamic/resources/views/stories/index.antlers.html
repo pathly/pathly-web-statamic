@@ -1,30 +1,47 @@
 <h1 class="">{{ title }}</h1>
-<section class="section_card-overview">
-  <div class="filter-list">
-    <button class="filter-list_all-stories active">Alle Geschichten</button>
-    <select class="filter-list_type">
-      <option value="" selected disabled hidden>Krebstyp</option>
-      <option value="cType1">cType1</option>
-      <option value="cType2">cType2</option>
-      <option value="cType3">cType3</option>
-    </select>
-    <select class="filter-list_therapy-form">
-      <option value="" selected disabled hidden>Therapieform</option>
-      <option value="tForm1">tForm1</option>
-      <option value="tForm2">tForm2</option>
-      <option value="tForm3">tForm3</option>
-    </select>
-  </div>
-  <div class="section_card-overview-grid">
-    {{ collection:stories }}
-    <a class="section_card-overview_card" href="{{ url }}">
-      <img class="section_card-overview_card_image" src="{{ image }}" alt="{{ alt }}" loading="lazy">
-      <div class="section_card-overview_card-type-favorite-container">
-        <span class="section_card-overview_card_type">{{ type }}</span>
-        <img class="section_card-overview_card_favorite" src="/images/favorite_off.svg" alt="favorite_off">
-      </div>
-      <h2 class="section_card-overview_card_name">{{ name }}, {{ age }}</h2>
-    </a>
-    {{ /collection:stories }}
+
+<div class="filter">
+  <select class="filter_cancer-type">
+    <option value="" selected disabled hidden>Krebstyp</option>
+    <option value="cType1">cType1</option>
+    <option value="cType2">cType2</option>
+    <option value="cType3">cType3</option>
+  </select>
+
+  <select class="filter_age">
+    <option selected disabled hidden>Alter</option>
+    <option>unter 18</option>
+    <option>18 - 30</option>
+    <option>30 - 40</option>
+    <option>40 - 50</option>
+    <option>über 50</option>
+  </select>
+
+  <select class="filter_therapy-form">
+    <option value="" selected disabled hidden>Therapieform</option>
+    <option value="tForm1">tForm1</option>
+    <option value="tForm2">tForm2</option>
+    <option value="tForm3">tForm3</option>
+  </select>
+</div>
+
+<section class="section_pattern section--top-spacing">
+  <div>
+    <ul class="tiles">
+      {{ collection:stories }}
+        <li class="card shadow">
+          <a href="{{ url }}">
+            <img src="{{ image }}" alt="{{ alt }}">
+
+            <div>
+              <span>{{ type:label }}</span>
+              <img src="/images/favorite_off.svg" alt="favorite_off">
+            </div>
+
+            <h2>{{ name }}, {{ age }}</h2>
+          </a>
+        </li>
+      {{ /collection:stories }}
+    </ul>
   </div>
 </section>

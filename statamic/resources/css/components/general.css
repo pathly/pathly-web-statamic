@@ -760,9 +760,9 @@ img,
 }
 
 .shadow {
-  box-shadow: 0 var(--root24px) var(--root40px) var(--primary_dark)20);
-  -moz-box-shadow: 0 var(--root24px) var(--root40px) var(--primary_dark)20);
-  -webkit-box-shadow: 0 var(--root24px) var(--root40px) var(--primary_dark)20);
+  box-shadow: 0 var(--root24px) var(--root40px) var(--shadow_dark);
+  -moz-box-shadow: 0 var(--root24px) var(--root40px) var(--shadow_dark);
+  -webkit-box-shadow: 0 var(--root24px) var(--root40px) var(--shadow_dark);
 }
 
 /* Makes a previously square element round */

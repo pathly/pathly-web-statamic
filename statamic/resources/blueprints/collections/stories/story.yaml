@@ -45,7 +45,38 @@ sections:
           validate:
             - required
           options:
-            'Breast Cancer': Brustkrebs
+            analCancer: Analkrebs
+            pancreaticCancer: Bauchspeicheldrüsenkrebs
+            bladderCancer: Harnblasenkrebs
+            bloodCancer: Blutkrebs
+            breastCancer: Brustkrebs
+            colonCancer: Darmkrebs
+            ovarianCancer: Eierstockkrebs
+            gallBladderCancer: Gallenblasenkrebs
+            bileDuctCancer: Gallengangkrebs
+            cervicalCancer: Gebärmutterhalskrebs
+            uterineCancer: Gebärmutterkörperkrebs
+            skinCancer: Hautkrebs
+            brainTumor: Hirntumor
+            testicularCancer: Hodenkrebs
+            hodgkinLymphoma: Hodgkin-Lymphom
+            throatCancer: Kehlkopfkrebs
+            boneCancer: Knochenkrebs
+            liverCancer: Leberkrebs
+            lungCancer: Lungenkrebs
+            lymphGlandCancer: Lymphdrüsenkrebs
+            stomachCancer: Magenkrebs
+            oralCavityCancer: Mundhöhlenkrebs
+            neuroblastoma: Neuroblastom
+            kidneyCancer: Nierenkrebs
+            nonHodgkinLymphoma: Non-Hodgkin-Lymphom
+            penileCancer: Peniskrebs
+            prostateCancer: Prostatakrebs
+            vaginalCancer: Scheidenkrebs
+            thyroidCancer: Schilddrüsenkrebs
+            salivaryGlandCancer: Speicheldrüsenkrebs
+            esophagealCancer: Speiseröhrenkrebs
+            softTissueCancer: Weichteilkrebs
       -
         handle: link
         field:
@@ -100,61 +131,46 @@ sections:
       -
         handle: content
         field:
-          collapse: false
+          always_show_set_button: false
           sets:
-            quote_paragraph:
-              display: 'Quote Paragraph'
-              fields:
-                -
-                  handle: quote_start
-                  field:
-                    default: false
-                    display: 'Start of Quote?'
-                    type: toggle
-                    icon: toggle
-                    listable: hidden
-                    validate:
-                      - required
-                -
-                  handle: quote_textarea
-                  field:
-                    antlers: false
-                    display: Textarea
-                    type: textarea
-                    icon: textarea
-                    listable: hidden
-                    validate:
-                      - required
             images:
               display: Images
               fields:
                 -
-                  handle: image
+                  handle: images
                   field:
-                    mode: grid
+                    mode: list
                     restrict: false
                     allow_uploads: true
+                    show_filename: true
                     max_files: 3
-                    display: Image
+                    display: Images
                     type: assets
                     icon: assets
                     listable: hidden
-            highlighted_paragraph:
-              display: 'Highlighted Paragraph'
-              fields:
-                -
-                  handle: highlighted_textarea
-                  field:
-                    antlers: false
-                    display: Textarea
-                    type: textarea
-                    icon: textarea
-                    listable: hidden
+                    instructions_position: above
                     validate:
                       - required
+          buttons:
+            - bold
+            - quote
+            - anchor
+          container: assets
+          save_html: false
+          toolbar_mode: floating
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: true
+          reading_time: true
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
           display: Content
-          type: replicator
-          icon: replicator
+          type: bard
+          icon: bard
           listable: hidden
+          instructions_position: above
           validate:
             - required

@@ -6,18 +6,22 @@ name: Jessica
 age: 36
 type: 'Breast Cancer'
 image: stories/Christine_Raab.png
-updated_by: a213c844-224f-4cde-a891-d1f543fd3b61
-updated_at: 1630672857
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1644263296
 content:
   -
-    quote_start: false
-    quote_textarea: |-
-      Ich bin Jessika 36 und habe im Mai 2020 die Diagnose Gebärmutterhalskrebs bekommen, seitdem her hatte ich eine stressige Krankenhauszeit mit vielen auf und abs!
-      Leider leben ich heute mit starken Ängsten, Panikattacken und immer steht der Krebs hinter mir! Ich bin Mutter einer 7-jährigen Tochter und eines wundervollen Partners, mit den zweien versuche ich jetzt irgendwie mein Leben neu zu strukturieren, den mein altes Leben werde ich nie wieder zurückbekommen ….
-
-      Ich habe mir nie Gedanken gemacht, dass ich mal Krebs kriegen würde. Das war bei mir nie ein Thema. Ich habe 2014 meine Tochter bekommen und mich als Mutter total vergessen. Ich bin nicht mehr zum Arzt gegangen hatte den Fokus nur noch auf mein Kind gehabt. Dann kam die Diagnose: Gebärmutterhalskrebs. Ich hätte zu den Vorsorgen gehen müssen, weil im Nachhinein habe ich dafür 3-Fach gebüßt. 
-
-      Ich empfehle jeder jungen Frau, jedes halbe Jahr zum Frauenarzt zu gehen und sich kontrollieren zu lassen. Lieber die Vorsorge machen anstatt danach was man in der Therapie durchstehen muss.
-    type: quote_paragraph
-    enabled: true
+    type: blockquote
+    content:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: '»Hi, ich bin Christine! Ende 2014 war ich gerade im dritten Jahr meiner Selbstständigkeit als Make-up Artist und Schwimmlehrerin und frisch verheiratet als die Diagnose Brustkrebs mein Leben über den Haufen warf. Gut 6 Wochen voller Arzttermine, Untersuchungen und Besprechungen (von Kinderwunschklinik, über Perücke aussuchen zu „Schwimmlehrer einstellen und alles organisieren“) bis es dann mit dem vollen schulmedizinischen Programm losging. Eizellen vorsorglich einfrieren lassen (auf eigene Kosten), OP im Achselbereich, Chemotherapie, brusterhaltende OP und Bestrahlung. Da ich durch die Selbstständigkeit mit sehr vielen Menschen zu tun hatte, entschied ich mich von Anfang an dazu meine Geschichte öffentlich zu machen und habe die komplette Zeit auf YouTube dokumentiert.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Was die Krankheit außerdem mit sich brachte: Der Switch von konventioneller Kosmetik auf Naturkosmetik und vegane Produkte (wenn man mal sieht wie viele Inhaltsstoffe den Zusatz tragen „könnte krebserregend sein“…) und die Entscheidung eine Ausbildung zur Yogalehrerin zu machen. Inzwischen habe ich 5 Jahre Antihormontherapie hinter mir und bin nun seit fast einem Jahr in der Pause und hoffe, dass sich der Kinderwunsch nun erfüllen kann. Ich bin gesund und unterstütze und begleite nun andere Menschen als Yogalehrerin und ganzheitlicher Coach. Ein besonderes Herzensthema ist mein Onlinekurs für (ehemalige) Krebspatient:innen, der sowohl die Zeit während als auch nach der Therapie mit Ansätzen aus der Yogaphilosophie ganzheitlich unterstützt.«'
 ---

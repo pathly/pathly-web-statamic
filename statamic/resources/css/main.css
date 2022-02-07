@@ -16,6 +16,6 @@
 @import "sites/organisation/supporters.css";
 @import "sites/organisation/collaboration.css";
 
-@import "sites/stories.css";
+@import "sites/stories.scss";
 
 @import "sites/meta-page.css";

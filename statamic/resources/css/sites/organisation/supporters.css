@@ -1,4 +1,4 @@
-#cooperations_profile {
+#cooperations_profile li {
   background-color: var(--purple_ultraLight);
   border-radius: var(--root40px);
 }
@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 650px) {
-  #cooperations_profile {
+  #cooperations_profile li {
     margin: 0 10%;
     width: 80%;
   }

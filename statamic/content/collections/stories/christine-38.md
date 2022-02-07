@@ -6,8 +6,8 @@ name: 'Christine Raab'
 age: 38
 type: 'Breast Cancer'
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1644263418
-image: stories/Christine_Raab.png
+updated_at: 1644267413
+image: stories/Christine-Raab.png
 content:
   -
     type: paragraph

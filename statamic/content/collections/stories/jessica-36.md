@@ -5,7 +5,7 @@ title: 'Jessica, 36'
 name: Jessica
 age: 36
 type: 'Breast Cancer'
-image: stories/Christine_Raab.png
+image: stories/Christine-Raab.png
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
 updated_at: 1644263296
 content:

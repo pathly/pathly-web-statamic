@@ -4,10 +4,14 @@ blueprint: story
 title: 'Christine, 38'
 name: 'Christine Raab'
 age: 38
-type: 'Breast Cancer'
+cancer_type: breastcancer
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1644267413
+updated_at: 1644342648
 image: stories/Christine-Raab.png
+therapy_type:
+  - chemotherapy
+person_type: patient
+image_position: center
 content:
   -
     type: paragraph

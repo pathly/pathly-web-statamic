@@ -4,5 +4,7 @@ blueprint: overview
 title: Geschichten
 template: stories/index
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1643990380
+updated_at: 1644348621
+cta_toggle: true
+cta: f3471284-8cd7-429b-8ce7-82f939699fdc
 ---

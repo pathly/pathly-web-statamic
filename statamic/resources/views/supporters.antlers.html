@@ -1,4 +1,4 @@
-<section id="supporters_intro" class="{{ intro_image_position == 'left' ?= 'section_text-w-image-left' }}{{ intro_image_position == 'right' ?= 'section_text-w-image-right' }}">
+<section id="supporters_intro" {{ if intro_image_position == 'left' }} class="section_text-w-image-left" {{ elseif intro_image_position == 'right' }} class="section_text-w-image-right" {{ endif }}>
   {{ intro_image }}
     <img src="{{ url }}" alt="{{ alt }}"/>
   {{ /intro_image }}

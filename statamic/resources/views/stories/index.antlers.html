@@ -1,47 +1,111 @@
-<h1 class="">{{ title }}</h1>
 
-<div class="filter">
-  <select class="filter_cancer-type">
-    <option value="" selected disabled hidden>Krebstyp</option>
-    <option value="cType1">cType1</option>
-    <option value="cType2">cType2</option>
-    <option value="cType3">cType3</option>
-  </select>
 
-  <select class="filter_age">
-    <option selected disabled hidden>Alter</option>
-    <option>unter 18</option>
-    <option>18 - 30</option>
-    <option>30 - 40</option>
-    <option>40 - 50</option>
-    <option>über 50</option>
-  </select>
+<section class="section_pattern">
+  <h1 class="">{{ title }}</h1>
 
-  <select class="filter_therapy-form">
-    <option value="" selected disabled hidden>Therapieform</option>
-    <option value="tForm1">tForm1</option>
-    <option value="tForm2">tForm2</option>
-    <option value="tForm3">tForm3</option>
-  </select>
-</div>
+  <div class="filter">
 
-<section class="section_pattern section--top-spacing">
+    <form class="" action="">
+      <div class="dropdown" tabindex="1">
+        <input class="options-select" id="default" name="cancer_type" type="radio" checked>
+        <label class="option" for="default">Krebsart</label>
+
+        {{ taxonomy:cancer_type min_count="1" }}
+          <input class="options-select" id="{{ slug }}" name="cancer_type" type="radio">
+          <label class="option" for="{{ slug }}">{{ title }}</label>
+        {{ /taxonomy:cancer_type }}
+      </div>
+    </form>
+
+    <!-- <select class="filter_cancer-type">
+      <option selected disabled>Krebstyp</option>
+        {{ taxonomy:cancer_type min_count="1" }}
+          <option>{{ title }}</option>
+        {{ /taxonomy:cancer_type }}
+    </select> -->
+
+    <select class="filter_age">
+      <option selected disabled hidden>Alter</option>
+      <option>unter 18</option>
+      <option>18 - 30</option>
+      <option>30 - 40</option>
+      <option>40 - 50</option>
+      <option>über 50</option>
+    </select>
+
+    <select class="filter_therapy-form">
+      <option selected disabled>Therapieform</option>
+      {{ taxonomy:therapy_type min_count="1" }}
+        <option>{{ title }}</option>
+      {{ /taxonomy:therapy_type }}
+    </select>
+
+    <select class="filter_therapy-form">
+      <option selected disabled>Betroffenheit</option>
+      <option>Patient:in</option>
+      <option>Angehörige:r</option>
+    </select>
+  </div>
+
   <div>
     <ul class="tiles">
-      {{ collection:stories }}
-        <li class="card shadow">
-          <a href="{{ url }}">
-            <img src="{{ image }}" alt="{{ alt }}">
+      {{ if get:tags }}
 
+        {{ collection:stories paginate="12" as="posts" taxonomy:cancer_type={ get:tags } }}
+        {{ get:tags }}
+          {{ posts }}
+            <li class="card shadow">
+              <a href="{{ url }}">
+                <article>
+                  <img src="{{ image }}" alt="{{ alt }}">
+
+                  <div>
+                    <span>{{ cancer_type:title }}</span>
+                    <div class="favorite-icon"></div>
+                  </div>
+
+                  <h2>{{ title }}</h2>
+                </article>
+              </a>
+            </li>
+          {{ /posts }}
+          {{ paginate }}
             <div>
-              <span>{{ type:label }}</span>
-              <img src="/images/favorite_off.svg" alt="favorite_off">
+              <a href="{{ prev_page }}">Prev</a>
+              <a href="{{ next_page }}">Next</a>
             </div>
+          {{ /paginate }}
+        {{ /collection:stories }}
 
-            <h2>{{ name }}, {{ age }}</h2>
-          </a>
-        </li>
-      {{ /collection:stories }}
+      {{ else }}
+
+        {{ collection:stories paginate="12" as="posts" taxonomy:cancer_type="analcancer" }}
+          {{ posts }}
+            <li class="card shadow">
+              <a href="{{ url }}">
+                <article>
+                  <img src="{{ image }}" alt="{{ alt }}">
+
+                  <div>
+                    <span>{{ cancer_type:title }}</span>
+                    <div class="favorite-icon"></div>
+                  </div>
+
+                  <h2>{{ title }}</h2>
+                </article>
+              </a>
+            </li>
+          {{ /posts }}
+          {{ paginate }}
+            <div>
+              <a href="{{ prev_page }}">Prev</a>
+              <a href="{{ next_page }}">Next</a>
+            </div>
+          {{ /paginate }}
+        {{ /collection:stories }}
+
+      {{ /if }}
+
     </ul>
   </div>
 </section>

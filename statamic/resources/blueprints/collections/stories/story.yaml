@@ -29,54 +29,43 @@ sections:
           icon: integer
           listable: hidden
       -
-        handle: type
+        handle: cancer_type
         field:
-          multiple: false
-          max_items: 1
-          clearable: false
-          searchable: true
-          taggable: true
-          push_tags: false
-          cast_booleans: false
-          display: Type
-          type: select
-          icon: select
+          type: terms
+          taxonomies:
+            - cancer_type
+          display: 'Cancer Type'
+          mode: select
+          create: false
+          icon: taxonomy
           listable: hidden
           validate:
             - required
+          instructions_position: above
+          max_items: 1
+      -
+        handle: therapy_type
+        field:
+          type: terms
+          taxonomies:
+            - therapy_type
+          display: 'Therapy Type'
+          mode: select
+          create: false
+          icon: taxonomy
+          listable: hidden
+      -
+        handle: person_type
+        field:
           options:
-            analCancer: Analkrebs
-            pancreaticCancer: Bauchspeicheldrüsenkrebs
-            bladderCancer: Harnblasenkrebs
-            bloodCancer: Blutkrebs
-            breastCancer: Brustkrebs
-            colonCancer: Darmkrebs
-            ovarianCancer: Eierstockkrebs
-            gallBladderCancer: Gallenblasenkrebs
-            bileDuctCancer: Gallengangkrebs
-            cervicalCancer: Gebärmutterhalskrebs
-            uterineCancer: Gebärmutterkörperkrebs
-            skinCancer: Hautkrebs
-            brainTumor: Hirntumor
-            testicularCancer: Hodenkrebs
-            hodgkinLymphoma: Hodgkin-Lymphom
-            throatCancer: Kehlkopfkrebs
-            boneCancer: Knochenkrebs
-            liverCancer: Leberkrebs
-            lungCancer: Lungenkrebs
-            lymphGlandCancer: Lymphdrüsenkrebs
-            stomachCancer: Magenkrebs
-            oralCavityCancer: Mundhöhlenkrebs
-            neuroblastoma: Neuroblastom
-            kidneyCancer: Nierenkrebs
-            nonHodgkinLymphoma: Non-Hodgkin-Lymphom
-            penileCancer: Peniskrebs
-            prostateCancer: Prostatakrebs
-            vaginalCancer: Scheidenkrebs
-            thyroidCancer: Schilddrüsenkrebs
-            salivaryGlandCancer: Speicheldrüsenkrebs
-            esophagealCancer: Speiseröhrenkrebs
-            softTissueCancer: Weichteilkrebs
+            patient: 'Patient:in'
+            relative: 'Angehörige:r'
+          display: 'Person Type'
+          type: button_group
+          icon: button_group
+          listable: hidden
+          validate:
+            - required
       -
         handle: link
         field:
@@ -94,6 +83,19 @@ sections:
           display: Image
           type: assets
           icon: assets
+          listable: hidden
+          # validate:
+            # - required
+      -
+        handle: image_position
+        field:
+          options:
+            left: Left
+            center: Center
+            right: Right
+          display: 'Image Position on Overview'
+          type: button_group
+          icon: button_group
           listable: hidden
           validate:
             - required

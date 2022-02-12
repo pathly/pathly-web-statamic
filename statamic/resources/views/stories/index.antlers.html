@@ -4,9 +4,17 @@
   <h1 class="">{{ title }}</h1>
 
   <div class="filter">
-
     <div class="dropdown">
-      <button class="dropdown-button">Krebsart</button>
+      <button class="dropdown-button">
+        {{ if get:cancer_type }}
+          {{ taxonomy:cancer_type :slug:is="get:cancer_type" }}
+            {{ title }}
+          {{ /taxonomy:cancer_type }}
+        {{ else }}
+          Krebsart
+        {{ /if }}
+      </button>
+
       <div class="dropdown-select shadow hidden">
         <input id="none" value="none" name="cancer_type" type="radio">
         <label for="none">---</label>
@@ -28,10 +36,38 @@
     </select>
 
     <div class="dropdown">
-      <button class="dropdown-button">Therapieform</button>
+      <button class="dropdown-button">
+        {{ if get:age }}
+          Age
+        {{ else }}
+          Alter
+        {{ /if }}
+      </button>
+
       <div class="dropdown-select shadow hidden">
         <input id="none" value="none" name="cancer_type" type="radio">
         <label for="none">---</label>
+
+        {{ taxonomy:cancer_type min_count="1" }}
+          <input id="{{ slug }}" value="{{ slug }}" name="cancer_type" type="radio">
+          <label for="{{ slug }}">{{ title }}</label>
+        {{ /taxonomy:cancer_type }}
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-button">
+        {{ if get:therapy_type }}
+          {{ taxonomy:therapy_type :slug:is="get:therapy_type" }}
+            {{ title }}
+          {{ /taxonomy:therapy_type }}
+        {{ else }}
+          Therapieform
+        {{ /if }}
+      </button>
+      <div class="dropdown-select shadow hidden">
+        <input id="therapy_none" value="none" name="therapy_type" type="radio">
+        <label for="therapy_none">---</label>
 
         {{ taxonomy:therapy_type min_count="1" }}
           <input id="{{ slug }}" value="{{ slug }}" name="therapy_type" type="radio">
@@ -41,10 +77,18 @@
     </div>
 
     <div class="dropdown">
-      <button class="dropdown-button">Betroffenheit</button>
+      <button class="dropdown-button">
+        {{ if get:person_type == "patient" }}
+          Patient:in
+        {{ elseif get:person_type == "relative" }}
+          Angehörige:r
+        {{ else }}
+          Betroffenheit
+        {{ /if }}
+      </button>
       <div class="dropdown-select shadow hidden">
-        <input id="none" value="none" name="cancer_type" type="radio">
-        <label for="none">---</label>
+        <input id="person_none" value="none" name="person_type" type="radio">
+        <label for="person_none">---</label>
         <input id="patient" value="patient" name="person_type" type="radio">
         <label for="patient">Patient:in</label>
         <input id="relative" value="relative" name="person_type" type="radio">
@@ -57,7 +101,7 @@
     <ul class="tiles">
       {{ collection:stories paginate="12" as="posts"
       :cancer_type:contains="get:cancer_type"
-      :therapy_type:contains="get:therapy_type" 
+      :therapy_type:contains="get:therapy_type"
       :person_type:contains="get:person_type" }}
         {{ posts }}
           <li class="card shadow">

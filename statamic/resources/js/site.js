@@ -181,11 +181,32 @@ $(document).ready(function() {
   });
 
   $(".dropdown-select input").on("change", function() {
-    var url = new URL("http://localhost:8080/stories");
+    var url = new URL(window.location.href);
     var search_params = url.searchParams;
-    var param_type = $(this).attr("name");
-    var param = $(this).val();
-    search_params.append(param_type, param);
+
+    var new_param_type = $(this).attr("name");
+    var new_param = $(this).val();
+    var isParamAdded = false;
+
+    console.log(new_param + " " + new_param_type);
+
+    if (new_param === "none") {
+      search_params.delete(new_param_type);
+    } else {
+      // edit existing param
+      search_params.forEach(function(value, key) {
+        if (key === new_param_type) {
+          search_params.set(key, new_param);
+          isParamAdded = true;
+        }
+      });
+
+      // add new param
+      if (!isParamAdded) {
+        search_params.append(new_param_type, new_param);
+      }
+    }
+
     url.search = search_params.toString();
     var new_url = url.toString();
     window.location.href = new_url;

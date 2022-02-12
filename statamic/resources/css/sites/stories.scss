@@ -67,73 +67,7 @@
       }
     }
   }
-
 }
-
-/*.option {
-  padding:0 30px 0 10px;
-  min-height:40px;
-  display:flex;
-  align-items:center;
-  background:  #E5E5E5;
-  border-top:#222 solid 1px;
-  position:absolute;
-  top:0;
-  width: 100%;
-  pointer-events:none;
-  order:2;
-  z-index:1;
-  transition:background .4s ease-in-out;
-  box-sizing:border-box;
-  overflow:hidden;
-  white-space:nowrap;
-
-}
-
-.option:hover {
-  background: #FF595C;
-}
-
-.select:focus label {
-  position:relative;
-  pointer-events:all;
-}
-
-
-
-label {
-  display: none;
-}
-
-input:checked + label {
-  order: 1;
-  z-index:2;
-  background: #FF595C;
-  border-top:none;
-  position:relative;
-  color: white;
-  display: block;
-}
-
-input:checked + label:after {
-  content:'';
-  width: 0;
- height: 0;
- border-left: 5px solid transparent;
- border-right: 5px solid transparent;
- border-top: 5px solid white;
-  position:absolute;
-  right:10px;
-  top:calc(50% - 2.5px);
-  pointer-events:none;
-  z-index:3;
-}*/
-
-
-
-
-
-
 
 .card {
   border-radius: var(--root24px);
@@ -173,6 +107,7 @@ input:checked + label:after {
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
+          margin-right: var(--root16px);
         }
 
         .favorite-icon {

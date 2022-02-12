@@ -2,54 +2,75 @@
   grid-column: 1/14;
   margin-top: var(--root80px);
   margin-bottom: var(--root120px);
+  display: flex;
 
   .dropdown {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 350px;
-    height: calc(var(--root24px) + 2 * var(--root8px)); /* font-size + 2 * padding */
-    border: var(--root4px) solid var(--primary_red);
-    border-radius: var(--root96px);
-    background: none;
-    color: var(--primary_red);
-    padding: var(--root8px) var(--root16px);
-    margin-right: var(--root16px);
-    cursor: pointer;
-    font-family: "neue-kabel";
-    font-weight: 700;
-    
-    /*&::after {
-      content: '';
-      position: absolute;
-      right: 10px;
-      transform: translate(calc(100% + 7px), 100%) rotate(45deg);
-      height: 0.33rem;
-      height: var(--root8px);
-      width: 0.33rem;
-      width: var(--root8px);
-      border: #9AA9FB solid;
-      border: var(--primary_purple) solid;
-      border-width: 0 2px 2px 0;
-      transition: border 0.4s, transform 0.4s;
-    }*/
+    .dropdown-button {
+      font-family: "neue-kabel";
+      font-weight: 700;
+      font-size: var(--root24px);
+      padding: var(--root8px) var(--root32px) var(--root8px) var(--root16px);
+      margin-right: var(--root16px);
+      border: var(--root4px) solid var(--primary_red);
+      border-radius: var(--root96px);
+      color: var(--primary_red);
+      position: relative;
 
-    input {
-      opacity: 0;
-      position: absolute;
+      &::after {
+        content: '';
+        position: absolute;
+        right: var(--root32px);
+        transform: translate(calc(100% + 7px), 100%) rotate(45deg);
+        height: var(--root8px);
+        width: var(--root8px);
+        border: var(--primary_red) solid;
+        border-width: 0 2px 2px 0;
+      }
+
+      &:hover {
+        background-color: var(--primary_red);
+        color: var(--purple_ultraLight);
+
+        &::after {
+          border-color: var(--purple_ultraLight);
+        }
+      }
     }
 
-    label {
-      padding: var(--root8px) var(--root16px);
+    .dropdown-select {
+      display: flex;
+      flex-direction: column;
       position: absolute;
+      font-family: "neue-kabel";
+      font-weight: 700;
+      color: var(--primary_red);
+      background-color: white;
+      border-radius: var(--root16px);
+      padding: var(--root16px) var(--root8px);
+      margin-top: var(--root24px);
+      cursor: pointer;
+      z-index: 2000;
 
+      input {
+        display: none;
+      }
 
+      label {
+        padding: var(--root8px);
+        cursor: pointer;
 
+        &:hover {
+          background-color: var(--primary_red);
+          color: var(--purple_ultraLight);
+          border-radius: var(--root8px);
+        }
+      }
     }
   }
+
 }
 
-.option {
+/*.option {
   padding:0 30px 0 10px;
   min-height:40px;
   display:flex;
@@ -106,7 +127,7 @@ input:checked + label:after {
   top:calc(50% - 2.5px);
   pointer-events:none;
   z-index:3;
-}
+}*/
 
 
 

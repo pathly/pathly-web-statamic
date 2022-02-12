@@ -5,24 +5,18 @@
 
   <div class="filter">
 
-    <form class="" action="">
-      <div class="dropdown" tabindex="1">
-        <input class="options-select" id="default" name="cancer_type" type="radio" checked>
-        <label class="option" for="default">Krebsart</label>
+    <div class="dropdown">
+      <button class="dropdown-button">Krebsart</button>
+      <div class="dropdown-select shadow hidden">
+        <input id="none" value="none" name="cancer_type" type="radio">
+        <label for="none">---</label>
 
         {{ taxonomy:cancer_type min_count="1" }}
-          <input class="options-select" id="{{ slug }}" name="cancer_type" type="radio">
-          <label class="option" for="{{ slug }}">{{ title }}</label>
+          <input id="{{ slug }}" value="{{ slug }}" name="cancer_type" type="radio">
+          <label for="{{ slug }}">{{ title }}</label>
         {{ /taxonomy:cancer_type }}
       </div>
-    </form>
-
-    <!-- <select class="filter_cancer-type">
-      <option selected disabled>Krebstyp</option>
-        {{ taxonomy:cancer_type min_count="1" }}
-          <option>{{ title }}</option>
-        {{ /taxonomy:cancer_type }}
-    </select> -->
+    </div>
 
     <select class="filter_age">
       <option selected disabled hidden>Alter</option>
@@ -33,79 +27,61 @@
       <option>über 50</option>
     </select>
 
-    <select class="filter_therapy-form">
-      <option selected disabled>Therapieform</option>
-      {{ taxonomy:therapy_type min_count="1" }}
-        <option>{{ title }}</option>
-      {{ /taxonomy:therapy_type }}
-    </select>
+    <div class="dropdown">
+      <button class="dropdown-button">Therapieform</button>
+      <div class="dropdown-select shadow hidden">
+        <input id="none" value="none" name="cancer_type" type="radio">
+        <label for="none">---</label>
 
-    <select class="filter_therapy-form">
-      <option selected disabled>Betroffenheit</option>
-      <option>Patient:in</option>
-      <option>Angehörige:r</option>
-    </select>
+        {{ taxonomy:therapy_type min_count="1" }}
+          <input id="{{ slug }}" value="{{ slug }}" name="therapy_type" type="radio">
+          <label for="{{ slug }}">{{ title }}</label>
+        {{ /taxonomy:therapy_type }}
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-button">Betroffenheit</button>
+      <div class="dropdown-select shadow hidden">
+        <input id="none" value="none" name="cancer_type" type="radio">
+        <label for="none">---</label>
+        <input id="patient" value="patient" name="person_type" type="radio">
+        <label for="patient">Patient:in</label>
+        <input id="relative" value="relative" name="person_type" type="radio">
+        <label for="relative">Angehörige:r</label>
+      </div>
+    </div>
   </div>
 
   <div>
     <ul class="tiles">
-      {{ if get:tags }}
+      {{ collection:stories paginate="12" as="posts"
+      :cancer_type:contains="get:cancer_type"
+      :therapy_type:contains="get:therapy_type" 
+      :person_type:contains="get:person_type" }}
+        {{ posts }}
+          <li class="card shadow">
+            <a href="{{ url }}">
+              <article>
+                <img src="{{ image }}" alt="{{ alt }}">
 
-        {{ collection:stories paginate="12" as="posts" taxonomy:cancer_type={ get:tags } }}
-        {{ get:tags }}
-          {{ posts }}
-            <li class="card shadow">
-              <a href="{{ url }}">
-                <article>
-                  <img src="{{ image }}" alt="{{ alt }}">
+                <div>
+                  <span>{{ cancer_type:title }}</span>
+                  <div class="favorite-icon"></div>
+                </div>
 
-                  <div>
-                    <span>{{ cancer_type:title }}</span>
-                    <div class="favorite-icon"></div>
-                  </div>
-
-                  <h2>{{ title }}</h2>
-                </article>
-              </a>
-            </li>
-          {{ /posts }}
-          {{ paginate }}
-            <div>
-              <a href="{{ prev_page }}">Prev</a>
-              <a href="{{ next_page }}">Next</a>
-            </div>
-          {{ /paginate }}
-        {{ /collection:stories }}
-
-      {{ else }}
-
-        {{ collection:stories paginate="12" as="posts" taxonomy:cancer_type="analcancer" }}
-          {{ posts }}
-            <li class="card shadow">
-              <a href="{{ url }}">
-                <article>
-                  <img src="{{ image }}" alt="{{ alt }}">
-
-                  <div>
-                    <span>{{ cancer_type:title }}</span>
-                    <div class="favorite-icon"></div>
-                  </div>
-
-                  <h2>{{ title }}</h2>
-                </article>
-              </a>
-            </li>
-          {{ /posts }}
-          {{ paginate }}
-            <div>
-              <a href="{{ prev_page }}">Prev</a>
-              <a href="{{ next_page }}">Next</a>
-            </div>
-          {{ /paginate }}
-        {{ /collection:stories }}
-
-      {{ /if }}
-
+                <h2>{{ title }}</h2>
+              </article>
+            </a>
+          </li>
+        {{ /posts }}
+        {{ paginate }}
+          <div>
+            <a href="{{ prev_page }}">Prev</a>
+            <a href="{{ next_page }}">Next</a>
+          </div>
+        {{ /paginate }}
+      {{ /collection:stories }}
     </ul>
   </div>
 </section>

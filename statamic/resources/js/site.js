@@ -13,12 +13,12 @@ $(document).ready(function() {
   });
 
   // move back from sub menu to main menu part
-  $( document ).on("click" , ".header_nav_sub_mobile-back-button", function(){
+  $(document).on("click", ".header_nav_sub_mobile-back-button", function() {
       $("#header_nav").removeClass("sub-menu-active");
   });
 
   function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + "px";
   }
 
   // open and close configure menu of cookie banner
@@ -32,7 +32,7 @@ $(document).ready(function() {
   // ----- Section Slider – Slick Slider
   // ------------------------------
 
-  $('.section_slider ul').slick({
+  $(".section_slider ul").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -60,14 +60,14 @@ $(document).ready(function() {
   // ----- Home – All Supporters – Slick Slider
   // ------------------------------
 
-  $('.all-supporters_slick-slider_list').slick({
+  $(".all-supporters_slick-slider_list").slick({
     arrows: false,
     infinite: true,
     loop: true,
     autoplay: true,
     autoplaySpeed: 0,
     speed: 5000,
-    cssEase: 'linear',
+    cssEase: "linear",
     draggable: false,
     swipe: false,
     swipeToSlide: false,
@@ -142,6 +142,53 @@ $(document).ready(function() {
       wrapper.css("height", "auto");
       trigger.hide();
       section.find(".video_thumbnail_disclaimer_text").hide();
+  });
+
+  // ------------------------------
+  // ----- Change URL Params
+  // ------------------------------
+
+  $(".filter_age").on("change", function() {
+    // var url = new URL("http://localhost:8080/stories");
+    // var search_params = url.searchParams;
+    // search_params.append("cancertype", "breastcancer");
+    // url.search = search_params.toString();
+    // var new_url = url.toString();
+    // window.location.href = new_url;
+    addState();
+  });
+
+  function addState() {
+            let stateObj = { id: "100" };
+
+            window.history.pushState(stateObj,
+                     "Page 2", "?cancer_type=breastcancer");
+        }
+
+  $(".dropdown-button").on("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    $(this).siblings(".dropdown-select").toggleClass("hidden");
+
+    $(document).one("click", function closeMenu (e) {
+      if($(".dropdown-select").has(e.target).length === 0) {
+        $(".dropdown-select").addClass("hidden");
+      } else {
+        $(document).one("click", closeMenu);
+      }
+    });
+  });
+
+  $(".dropdown-select input").on("change", function() {
+    var url = new URL("http://localhost:8080/stories");
+    var search_params = url.searchParams;
+    var param_type = $(this).attr("name");
+    var param = $(this).val();
+    search_params.append(param_type, param);
+    url.search = search_params.toString();
+    var new_url = url.toString();
+    window.location.href = new_url;
   });
 
 });

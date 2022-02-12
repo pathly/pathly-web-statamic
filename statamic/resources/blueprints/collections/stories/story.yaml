@@ -84,8 +84,6 @@ sections:
           type: assets
           icon: assets
           listable: hidden
-          # validate:
-            # - required
       -
         handle: image_position
         field:

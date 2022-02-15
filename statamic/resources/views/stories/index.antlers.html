@@ -53,6 +53,8 @@
           <label for="{{ slug }}">{{ title }}</label>
         {{ /taxonomy:cancer_type }}
       </div>
+
+      <button class="favorites-mode"></button>
     </div>
 
     <div class="dropdown">
@@ -108,10 +110,12 @@
             <a href="{{ url }}">
               <article>
                 <img src="{{ image }}" alt="{{ alt }}">
-
                 <div>
                   <span>{{ cancer_type:title }}</span>
-                  <div class="favorite-icon"></div>
+                  <div class="favorite-button">
+                    <input value="{{ id }}" name="favorite" type="checkbox">
+                    <label for="favorite"></label>
+                  </div>
                 </div>
 
                 <h2>{{ title }}</h2>

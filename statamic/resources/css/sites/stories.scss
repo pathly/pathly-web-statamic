@@ -67,6 +67,25 @@
       }
     }
   }
+
+  .favorites-mode {
+    display: block;
+    width: var(--root32px);
+    height: var(--root32px);
+    background-image: url("../images/heart_inactive.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    cursor: pointer;
+
+    &:hover {
+      background-image: url("../images/heart_hover.svg");
+    }
+
+    &.active {
+      background-image: url("../images/heart_active.svg");
+    }
+  }
 }
 
 .card {
@@ -110,21 +129,30 @@
           margin-right: var(--root16px);
         }
 
-        .favorite-icon {
-          width: var(--root32px) !important;
-          height: auto;
-          background-image: url("../images/heart_inactive.svg");
-          background-repeat: no-repeat;
-          background-position: right;
-          background-size: contain;
+        .favorite-button {
+          input {
+            display: none;
 
-          &.active {
-            background-image: url("../images/heart_active.svg");
+            &:checked + label {
+              background-image: url("../images/heart_active.svg");
+            }
           }
 
-          &:hover {
-            background-image: url("../images/heart_hover.svg");
+          label {
+            display: block;
+            width: var(--root32px);
+            height: var(--root32px);
+            background-image: url("../images/heart_inactive.svg");
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            cursor: pointer;
+
+            &:hover {
+              background-image: url("../images/heart_hover.svg");
+            }
           }
+
         }
       }
 

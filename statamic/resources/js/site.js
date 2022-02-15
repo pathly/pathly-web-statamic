@@ -1,35 +1,43 @@
 $(document).ready(function() {
 
+  // ------------------------------
+  // ----- Menu
+  // ------------------------------
+
   // open and close mobile menu
   $(".header_nav_mobile-burger-button").on("click", function () {
-      $(this).parent().toggleClass("active");
+    $(this).parent().toggleClass("active");
   });
 
   // move to sub menu
   $(".header_nav_list .is-parent").on("click", function () {
-      $(".header_nav_list .is-parent.active").removeClass("active");
-      $(this).toggleClass("active");
-      $("#header_nav").addClass("sub-menu-active");
+    $(".header_nav_list .is-parent.active").removeClass("active");
+    $(this).toggleClass("active");
+    $("#header_nav").addClass("sub-menu-active");
   });
 
   // move back from sub menu to main menu part
   $(document).on("click", ".header_nav_sub_mobile-back-button", function() {
-      $("#header_nav").removeClass("sub-menu-active");
+    $("#header_nav").removeClass("sub-menu-active");
   });
 
   function resizeIframe(obj) {
     obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + "px";
   }
 
+  // ------------------------------
+  // ----- Cookies
+  // ------------------------------
+
   // open and close configure menu of cookie banner
   $(".oreos-form_buttons .configure-button").on("click", function () {
-      $(this).addClass("hidden");
-      $(".oreos-form_buttons .save-button").removeClass("hidden");
-      $(".oreos-form_options").removeClass("hidden");
+    $(this).addClass("hidden");
+    $(".oreos-form_buttons .save-button").removeClass("hidden");
+    $(".oreos-form_options").removeClass("hidden");
   });
 
   // ------------------------------
-  // ----- Section Slider – Slick Slider
+  // ----- Slick Slider
   // ------------------------------
 
   $(".section_slider ul").slick({
@@ -55,10 +63,6 @@ $(document).ready(function() {
       }
     ]
   });
-
-  // ------------------------------
-  // ----- Home – All Supporters – Slick Slider
-  // ------------------------------
 
   $(".all-supporters_slick-slider_list").slick({
     arrows: false,
@@ -125,45 +129,28 @@ $(document).ready(function() {
   }
 
   $(".video_thumbnail_disclaimer_button").on("click", function () {
-      var trigger = $(this).parent();
-      var wrapper = trigger.parent();
-      var layer = wrapper.find(".video_layer");
-      console.log(layer);
-      var section = wrapper.parent();
+    var trigger = $(this).parent();
+    var wrapper = trigger.parent();
+    var layer = wrapper.find(".video_layer");
+    console.log(layer);
+    var section = wrapper.parent();
 
-      var source = get_source_url();
-      var data_source = trigger.attr("data-source");
-      source = source.replace("{SOURCE}", data_source);
+    var source = get_source_url();
+    var data_source = trigger.attr("data-source");
+    source = source.replace("{SOURCE}", data_source);
 
-      layer.css("display", "block");
-      layer.find("iframe").attr("src", source);
+    layer.css("display", "block");
+    layer.find("iframe").attr("src", source);
 
-      wrapper.css("backgroundImage","");
-      wrapper.css("height", "auto");
-      trigger.hide();
-      section.find(".video_thumbnail_disclaimer_text").hide();
+    wrapper.css("backgroundImage","");
+    wrapper.css("height", "auto");
+    trigger.hide();
+    section.find(".video_thumbnail_disclaimer_text").hide();
   });
 
   // ------------------------------
-  // ----- Change URL Params
+  // ----- Change URL Params (Filter)
   // ------------------------------
-
-  $(".filter_age").on("change", function() {
-    // var url = new URL("http://localhost:8080/stories");
-    // var search_params = url.searchParams;
-    // search_params.append("cancertype", "breastcancer");
-    // url.search = search_params.toString();
-    // var new_url = url.toString();
-    // window.location.href = new_url;
-    addState();
-  });
-
-  function addState() {
-            let stateObj = { id: "100" };
-
-            window.history.pushState(stateObj,
-                     "Page 2", "?cancer_type=breastcancer");
-        }
 
   $(".dropdown-button").on("click", function(e) {
     e.preventDefault();
@@ -211,5 +198,59 @@ $(document).ready(function() {
     var new_url = url.toString();
     window.location.href = new_url;
   });
+
+  // ------------------------------
+  // ----- Favorites
+  // ------------------------------
+
+  $(".favorite-button").on("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const checkbox = $(this).find("input");
+    const new_data = checkbox.val();
+
+    // if nothing stored yet, then store empty array
+    if (localStorage.getItem("favorites") == null) {
+      localStorage.setItem("favorites", "[]");
+    }
+    // get stored data
+    let stored_data = JSON.parse(localStorage.getItem("favorites"));
+    console.log(stored_data);
+    const index = stored_data.indexOf(new_data);
+
+    if (index > -1) {
+      checkbox.prop("checked", false);
+      stored_data.splice(index, 1);
+    } else {
+      checkbox.prop("checked", true);
+      // merge old and new data
+      stored_data.push(new_data);
+    }
+
+    console.log(stored_data);
+
+    // push them data to local storage
+    localStorage.setItem("favorites", JSON.stringify(stored_data));
+  });
+
+  $(".favorites-mode").on("click", function() {
+    if ($(".favorites-mode").hasClass("active")) {
+      $(".favorites-mode").removeClass("active");
+      localStorage.setItem("favoritesMode", false);
+    } else {
+      $(".favorites-mode").addClass("active");
+      localStorage.setItem("favoritesMode", true);
+    }
+  });
+
+  $(window).on("load", function() {
+    if (localStorage.getItem("favoritesMode")) {
+      $(".favorites-mode").addClass("active");
+    } else {
+      $(".favorites-mode").removeClass("active");
+    }
+  });
+
 
 });

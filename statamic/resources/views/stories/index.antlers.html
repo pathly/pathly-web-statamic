@@ -1,118 +1,124 @@
-
+<script src="{{ mix src='js/stories.js' }}"></script>
 
 <section class="section_pattern">
   <h1 class="">{{ title }}</h1>
 
   <div class="filter">
-    <div class="dropdown">
-      <button class="dropdown-button">
-        {{ if get:cancer_type }}
-          {{ taxonomy:cancer_type :slug:is="get:cancer_type" }}
-            {{ title }}
+    <div>
+      <div class="dropdown">
+        <button class="dropdown-button">
+          {{ if get:cancer_type }}
+            {{ taxonomy:cancer_type :slug:is="get:cancer_type | sanitize" }}
+              {{ title }}
+            {{ /taxonomy:cancer_type }}
+          {{ else }}
+            Krebsart
+          {{ /if }}
+        </button>
+
+        <div class="dropdown-menu dropdown-menu--select shadow hidden">
+          <input id="type_none" value="none" name="cancer_type" type="radio">
+          <label for="type_none">– zurücksetzen –</label>
+          <hr>
+
+          {{ taxonomy:cancer_type min_count="1" }}
+            <input id="{{ slug }}" value="{{ slug }}" name="cancer_type" type="radio">
+            <label for="{{ slug }}">{{ title }}</label>
           {{ /taxonomy:cancer_type }}
-        {{ else }}
-          Krebsart
-        {{ /if }}
-      </button>
-
-      <div class="dropdown-select shadow hidden">
-        <input id="none" value="none" name="cancer_type" type="radio">
-        <label for="none">---</label>
-
-        {{ taxonomy:cancer_type min_count="1" }}
-          <input id="{{ slug }}" value="{{ slug }}" name="cancer_type" type="radio">
-          <label for="{{ slug }}">{{ title }}</label>
-        {{ /taxonomy:cancer_type }}
-      </div>
-    </div>
-
-    <select class="filter_age">
-      <option selected disabled hidden>Alter</option>
-      <option>unter 18</option>
-      <option>18 - 30</option>
-      <option>30 - 40</option>
-      <option>40 - 50</option>
-      <option>über 50</option>
-    </select>
-
-    <div class="dropdown">
-      <button class="dropdown-button">
-        {{ if get:age }}
-          Age
-        {{ else }}
-          Alter
-        {{ /if }}
-      </button>
-
-      <div class="dropdown-select shadow hidden">
-        <input id="none" value="none" name="cancer_type" type="radio">
-        <label for="none">---</label>
-
-        {{ taxonomy:cancer_type min_count="1" }}
-          <input id="{{ slug }}" value="{{ slug }}" name="cancer_type" type="radio">
-          <label for="{{ slug }}">{{ title }}</label>
-        {{ /taxonomy:cancer_type }}
+        </div>
       </div>
 
-      <button class="favorites-mode"></button>
-    </div>
+      <div class="dropdown">
+        <button class="dropdown-button">
+          {{ if get:from_age && get:to_age }}
+            {{ get:from_age | sanitize }} - {{ get:to_age | sanitize }}
+          {{ elseif get:from_age }}
+            ab {{ get:from_age | sanitize }}
+          {{ elseif get:to_age }}
+            bis {{ get:to_age | sanitize }}
+          {{ else }}
+            Alter
+          {{ /if }}
+        </button>
 
-    <div class="dropdown">
-      <button class="dropdown-button">
-        {{ if get:therapy_type }}
-          {{ taxonomy:therapy_type :slug:is="get:therapy_type" }}
-            {{ title }}
+        <div class="dropdown-menu dropdown-menu--range shadow hidden">
+          <input id="from" name="from_age" type="number" value="{{ get:from_age | sanitize }}">
+          -
+          <input id="to" name="to_age" type="number" value="{{ get:to_age | sanitize }}">
+          <input name="age" type="submit">
+          <input name="age" type="reset">
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropdown-button">
+          {{ if get:therapy_type }}
+            {{ taxonomy:therapy_type :slug:is="get:therapy_type | sanitize" }}
+              {{ title }}
+            {{ /taxonomy:therapy_type }}
+          {{ else }}
+            Therapieform
+          {{ /if }}
+        </button>
+
+        <div class="dropdown-menu dropdown-menu--select shadow hidden">
+          <input id="therapy_none" value="none" name="therapy_type" type="radio">
+          <label for="therapy_none">– zurücksetzen –</label>
+          <hr>
+
+          {{ taxonomy:therapy_type min_count="1" }}
+            <input id="{{ slug }}" value="{{ slug }}" name="therapy_type" type="radio">
+            <label for="{{ slug }}">{{ title }}</label>
           {{ /taxonomy:therapy_type }}
-        {{ else }}
-          Therapieform
-        {{ /if }}
-      </button>
-      <div class="dropdown-select shadow hidden">
-        <input id="therapy_none" value="none" name="therapy_type" type="radio">
-        <label for="therapy_none">---</label>
+        </div>
+      </div>
 
-        {{ taxonomy:therapy_type min_count="1" }}
-          <input id="{{ slug }}" value="{{ slug }}" name="therapy_type" type="radio">
-          <label for="{{ slug }}">{{ title }}</label>
-        {{ /taxonomy:therapy_type }}
+      <div class="dropdown">
+        <button class="dropdown-button">
+          {{ if get:person_type == "patient" }}
+            Patient:in
+          {{ elseif get:person_type == "relative" }}
+            Angehörige:r
+          {{ else }}
+            Betroffenheit
+          {{ /if }}
+        </button>
+        <div class="dropdown-menu dropdown-menu--select shadow hidden">
+          <input id="person_none" value="none" name="person_type" type="radio">
+          <label for="person_none">– zurücksetzen –</label>
+          <hr>
+
+          <input id="patient" value="patient" name="person_type" type="radio">
+          <label for="patient">Patient:in</label>
+          <input id="relative" value="relative" name="person_type" type="radio">
+          <label for="relative">Angehörige:r</label>
+        </div>
       </div>
     </div>
 
-    <div class="dropdown">
-      <button class="dropdown-button">
-        {{ if get:person_type == "patient" }}
-          Patient:in
-        {{ elseif get:person_type == "relative" }}
-          Angehörige:r
-        {{ else }}
-          Betroffenheit
-        {{ /if }}
-      </button>
-      <div class="dropdown-select shadow hidden">
-        <input id="person_none" value="none" name="person_type" type="radio">
-        <label for="person_none">---</label>
-        <input id="patient" value="patient" name="person_type" type="radio">
-        <label for="patient">Patient:in</label>
-        <input id="relative" value="relative" name="person_type" type="radio">
-        <label for="relative">Angehörige:r</label>
-      </div>
+    <div>
+      <button class="favorites-mode"></button>
     </div>
   </div>
 
   <div>
-    <ul class="tiles">
+    <ul id="stories" class="tiles">
       {{ collection:stories paginate="12" as="posts"
+      :filter_from_age="get:from_age"
+      :filter_to_age="get:to_age"
       :cancer_type:contains="get:cancer_type"
       :therapy_type:contains="get:therapy_type"
-      :person_type:contains="get:person_type" }}
+      :person_type:contains="get:person_type"
+      :filter_favorites="get:favorite"
+      query_scope="stories" }}
         {{ posts }}
           <li class="card shadow">
-            <a href="{{ url }}">
+            <a href="{{ url }}" target="_blank">
               <article>
                 <img src="{{ image }}" alt="{{ alt }}">
                 <div>
                   <span>{{ cancer_type:title }}</span>
-                  <div class="favorite-button">
+                  <div class="favorite-toggle favorite-toggle--stories">
                     <input value="{{ id }}" name="favorite" type="checkbox">
                     <label for="favorite"></label>
                   </div>

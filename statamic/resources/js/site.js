@@ -149,108 +149,111 @@ $(document).ready(function() {
   });
 
   // ------------------------------
-  // ----- Change URL Params (Filter)
+  // ----- Filter – Change URL Params
   // ------------------------------
 
   $(".dropdown-button").on("click", function(e) {
     e.preventDefault();
     e.stopPropagation();
 
-    $(this).siblings(".dropdown-select").toggleClass("hidden");
+    $(this).siblings(".dropdown-menu").toggleClass("hidden");
 
     $(document).one("click", function closeMenu (e) {
-      if($(".dropdown-select").has(e.target).length === 0) {
-        $(".dropdown-select").addClass("hidden");
+      if($(".dropdown-menu").has(e.target).length === 0) {
+        $(".dropdown-menu").addClass("hidden");
       } else {
         $(document).one("click", closeMenu);
       }
     });
   });
 
-  $(".dropdown-select input").on("change", function() {
-    var url = new URL(window.location.href);
-    var search_params = url.searchParams;
+  $(".dropdown-menu--select input").on("change", function() {
+    const new_param_type = $(this).attr("name");
+    const new_param = $(this).val();
 
-    var new_param_type = $(this).attr("name");
-    var new_param = $(this).val();
-    var isParamAdded = false;
-
-    console.log(new_param + " " + new_param_type);
-
-    if (new_param === "none") {
-      search_params.delete(new_param_type);
-    } else {
-      // edit existing param
-      search_params.forEach(function(value, key) {
-        if (key === new_param_type) {
-          search_params.set(key, new_param);
-          isParamAdded = true;
-        }
-      });
-
-      // add new param
-      if (!isParamAdded) {
-        search_params.append(new_param_type, new_param);
+    const params = [
+      {
+        "param_type": new_param_type,
+        "param": new_param
       }
-    }
+    ];
+
+    set_url_params(params);
+  });
+
+  $(".dropdown-menu--range input[type=submit]").on("click", function() {
+    const sibling_from = $(this).siblings("#from");
+    const new_param_type_from = sibling_from.attr("name");
+    const new_param_from = sibling_from.val();
+
+    const sibling_to = $(this).siblings("#to");
+    const new_param_type_to = sibling_to.attr("name");
+    const new_param_to = sibling_to.val();
+
+    const params = [
+      {
+        "param_type": new_param_type_from,
+        "param": new_param_from
+      },
+      {
+        "param_type": new_param_type_to,
+        "param": new_param_to
+      }
+    ];
+
+    set_url_params(params);
+  });
+
+  $(".dropdown-menu--range input[type=reset]").on("click", function() {
+    const sibling_from = $(this).siblings("#from");
+    const new_param_type_from = sibling_from.attr("name");
+
+    const sibling_to = $(this).siblings("#to");
+    const new_param_type_to = sibling_to.attr("name");
+
+    const params = [
+      {
+        "param_type": new_param_type_from,
+        "param": "none"
+      },
+      {
+        "param_type": new_param_type_to,
+        "param": "none"
+      }
+    ];
+
+    set_url_params(params);
+  });
+
+  function set_url_params(params) {
+    const url = new URL(window.location.href);
+    let search_params = url.searchParams;
+
+    params.forEach(function(item) {
+      let is_param_added = false;
+
+      if (item.param === "none") {
+        // reset/delete param
+        search_params.delete(item.param_type);
+      } else {
+        // edit existing param
+        search_params.forEach(function(value, key) {
+          if (key === item.param_type) {
+            search_params.set(key, item.param);
+            is_param_added = true;
+          }
+        });
+
+        // add new param
+        if (!is_param_added) {
+          search_params.append(item.param_type, item.param);
+        }
+      }
+    });
 
     url.search = search_params.toString();
-    var new_url = url.toString();
+    let new_url = url.toString();
     window.location.href = new_url;
-  });
-
-  // ------------------------------
-  // ----- Favorites
-  // ------------------------------
-
-  $(".favorite-button").on("click", function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-
-    const checkbox = $(this).find("input");
-    const new_data = checkbox.val();
-
-    // if nothing stored yet, then store empty array
-    if (localStorage.getItem("favorites") == null) {
-      localStorage.setItem("favorites", "[]");
-    }
-    // get stored data
-    let stored_data = JSON.parse(localStorage.getItem("favorites"));
-    console.log(stored_data);
-    const index = stored_data.indexOf(new_data);
-
-    if (index > -1) {
-      checkbox.prop("checked", false);
-      stored_data.splice(index, 1);
-    } else {
-      checkbox.prop("checked", true);
-      // merge old and new data
-      stored_data.push(new_data);
-    }
-
-    console.log(stored_data);
-
-    // push them data to local storage
-    localStorage.setItem("favorites", JSON.stringify(stored_data));
-  });
-
-  $(".favorites-mode").on("click", function() {
-    if ($(".favorites-mode").hasClass("active")) {
-      $(".favorites-mode").removeClass("active");
-      localStorage.setItem("favoritesMode", false);
-    } else {
-      $(".favorites-mode").addClass("active");
-      localStorage.setItem("favoritesMode", true);
-    }
-  });
-
-  $(window).on("load", function() {
-    if (localStorage.getItem("favoritesMode")) {
-      $(".favorites-mode").addClass("active");
-    } else {
-      $(".favorites-mode").removeClass("active");
-    }
-  });
-
+  }
 
 });

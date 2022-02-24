@@ -3,66 +3,101 @@
   margin-top: var(--root80px);
   margin-bottom: var(--root120px);
   display: flex;
+  justify-content: space-between;
 
-  .dropdown {
-    .dropdown-button {
-      font-family: "neue-kabel";
-      font-weight: 700;
-      font-size: var(--root24px);
-      padding: var(--root8px) var(--root32px) var(--root8px) var(--root16px);
-      margin-right: var(--root16px);
-      border: var(--root4px) solid var(--primary_red);
-      border-radius: var(--root96px);
-      color: var(--primary_red);
-      position: relative;
+  > div {
+    display: flex;
 
-      &::after {
-        content: '';
-        position: absolute;
-        right: var(--root32px);
-        transform: translate(calc(100% + 7px), 100%) rotate(45deg);
-        height: var(--root8px);
-        width: var(--root8px);
-        border: var(--primary_red) solid;
-        border-width: 0 2px 2px 0;
-      }
-
-      &:hover {
-        background-color: var(--primary_red);
-        color: var(--purple_ultraLight);
+    .dropdown {
+      .dropdown-button {
+        font-family: "neue-kabel";
+        font-weight: 700;
+        font-size: var(--root24px);
+        padding: var(--root8px) var(--root32px) var(--root8px) var(--root16px);
+        margin-right: var(--root16px);
+        border: 3px solid var(--primary_red);
+        border-radius: var(--root96px);
+        color: var(--primary_red);
+        position: relative;
 
         &::after {
-          border-color: var(--purple_ultraLight);
+          content: '';
+          position: absolute;
+          right: var(--root32px);
+          transform: translate(calc(100% + 7px), 100%) rotate(45deg);
+          height: var(--root8px);
+          width: var(--root8px);
+          border: var(--primary_red) solid;
+          border-width: 0 2px 2px 0;
         }
-      }
-    }
-
-    .dropdown-select {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      font-family: "neue-kabel";
-      font-weight: 700;
-      color: var(--primary_red);
-      background-color: white;
-      border-radius: var(--root16px);
-      padding: var(--root16px) var(--root8px);
-      margin-top: var(--root24px);
-      cursor: pointer;
-      z-index: 2000;
-
-      input {
-        display: none;
-      }
-
-      label {
-        padding: var(--root8px);
-        cursor: pointer;
 
         &:hover {
           background-color: var(--primary_red);
           color: var(--purple_ultraLight);
-          border-radius: var(--root8px);
+
+          &::after {
+            border-color: white;
+          }
+        }
+      }
+
+      .dropdown-menu {
+        position: absolute;
+        font-family: "neue-kabel";
+        font-weight: 700;
+        color: var(--primary_red);
+        background-color: white;
+        border-radius: var(--root16px);
+        padding: var(--root16px) var(--root8px);
+        margin-top: var(--root24px);
+        cursor: pointer;
+        z-index: 2000;
+
+        hr {
+          border: calc(var(--root4px) / 2) solid var(--primary_red);
+          margin: var(--root8px);
+        }
+
+        &.dropdown-menu--select {
+          display: flex;
+          flex-direction: column;
+
+          input[type=radio] {
+            display: none;
+          }
+
+          label {
+            padding: var(--root8px);
+            cursor: pointer;
+
+            &:hover {
+              background-color: var(--primary_red);
+              color: white;
+              border-radius: var(--root8px);
+            }
+          }
+        }
+
+        &.dropdown-menu--range {
+          padding: var(--root16px);
+
+          input[type=number] {
+            appearance: none;
+            font-family: "neue-kabel";
+            font-weight: 700;
+            font-size: var(--root24px);
+            color: var(--primary_red);
+            text-align: center;
+            width: var(--root80px);
+            height: var(--root48px);
+            border: var(--root4px) solid var(--primary_red);
+            border-radius: var(--root8px);
+
+            &::-webkit-inner-spin-button,
+            &::-webkit-outer-spin-button {
+              appearance: none;
+            }
+          }
         }
       }
     }
@@ -70,20 +105,16 @@
 
   .favorites-mode {
     display: block;
-    width: var(--root32px);
-    height: var(--root32px);
-    background-image: url("../images/heart_inactive.svg");
+    width: var(--root56px);
+    height: var(--root56px);
+    background-image: url("../images/favorites_mode_off.svg");
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
     cursor: pointer;
 
-    &:hover {
-      background-image: url("../images/heart_hover.svg");
-    }
-
     &.active {
-      background-image: url("../images/heart_active.svg");
+      background-image: url("../images/favorites_mode_on.svg");
     }
   }
 }
@@ -127,9 +158,10 @@
           text-overflow: ellipsis;
           white-space: nowrap;
           margin-right: var(--root16px);
+          line-height: 1.6;
         }
 
-        .favorite-button {
+        .favorite-toggle {
           input {
             display: none;
 

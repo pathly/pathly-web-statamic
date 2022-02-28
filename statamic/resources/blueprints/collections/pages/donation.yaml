@@ -111,7 +111,7 @@ sections:
     display: 'Donation Options'
     fields:
       -
-        handle: options_headline_addition
+        handle: donation-options_headline_addition
         field:
           input_type: text
           antlers: false

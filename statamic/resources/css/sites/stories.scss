@@ -1,3 +1,5 @@
+// story overview
+
 .filter {
   grid-column: 1/14;
   margin-top: var(--root80px);
@@ -119,7 +121,7 @@
   }
 }
 
-.card {
+.story-card {
   border-radius: var(--root24px);
   background-color: white;
   transition: all 0.5s ease;
@@ -195,14 +197,25 @@
       }
     }
   }
-
-
 }
 
+// story detail
 
-.section_card-overview_card_type {
+.story {
+  grid-column: 2/13;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  position: relative;
 
+  .story_header {
+    grid-column: 3/10;
+    margin-bottom: var(--root80px);
+
+    h1 {
+    }
+  }
 }
+
 .section_card-overview_card_favorite.active {
     content: url("/images/favorite_on.svg");
 }

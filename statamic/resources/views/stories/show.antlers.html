@@ -1,13 +1,22 @@
 <main class="main-grid">
-  <h1 class="">{{ title }}</h1>
-
-  <section class="section_card-overview">
+  <article class="story">
     {{ collection:stories paginate="1" }}
-    <a class="section_card-overview_card" href="{{ url }}">
-      <img class="section_card-overview_card_image" src="{{ image }}" alt="{{ alt }}" loading="lazy">
-      <span class="section_card-overview_card_type">{{ type }}</span>
-      <h2 class="section_card-overview_card_name">{{ name }}, {{ age }}</h2>
-    </a>
+    <div class="story_header">
+      <div>
+        <span>Geschichte</span>
+        <span>{{ cancer_type:title }}</span>
+      </div>
+
+      <h1 class="">{{ title }}</h1>
+      <img src="{{ image }}" alt="{{ alt }}">
+    </div>
+
+    <div class="story_body">
+
+    </div>
+
+
+
     {{ /collection:stories }}
-  </section>
+  </article>
 </main>

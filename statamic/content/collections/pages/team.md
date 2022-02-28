@@ -67,7 +67,7 @@ team_profiles:
     team_profile_name: 'Friderike Krafczyk'
     team_profile_responsibilities:
       - contentCreation
-    team_profile_mail: fritzi@pathly.app
+    team_profile_mail: null
     team_profile_is_active: false
   -
     team_profile_image: supporter/JanNaubert_500.png
@@ -116,26 +116,26 @@ team_profiles:
     team_profile_name: 'Sarah Decker'
     team_profile_responsibilities:
       - contentCreation
-    team_profile_mail: sarah@pathly.app
-    team_profile_is_active: true
+    team_profile_mail: null
+    team_profile_is_active: false
   -
     team_profile_image: supporter/YanaSokova_500.png
     team_profile_name: 'Yana Sorkova'
     team_profile_responsibilities:
       - illustration
-    team_profile_mail: yana@pathly.app
-    team_profile_is_active: true
+    team_profile_mail: null
+    team_profile_is_active: false
   -
     team_profile_image: supporter/Vanessa-Till.png
-    team_profile_name: 'Vanessa Till'
+    team_profile_name: 'Vanessa Thill'
     team_profile_responsibilities:
       - nutritionCounseling
       - workshop
       - contentCreation
     team_profile_mail: null
     team_profile_is_active: true
-updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1643985770
+updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
+updated_at: 1645013062
 template: team
 cta_toggle: true
 cta: 26cd6f15-97c9-4d5d-b701-6725436ce2b0

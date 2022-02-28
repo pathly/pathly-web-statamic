@@ -5,15 +5,14 @@ title: 'Unsere Mission'
 intro_image--big: ribbons-big.svg
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1637359814
+updated_at: 1645196440
 mission_section:
   -
     headline_addition: 'Unsere Mission'
     headline: 'Deswegen gibt es Pathly'
     replicator:
       -
-        textarea: |-
-          Die Diagnose Krebs bedeutet einen extremen Einschnitt in das Leben jener, die von der Krankheit betroffen sind. Gefühle wie Angst und Hilflosigkeit sind dabei ganz normal. Viele Infos rund um das Thema Krebs fokussieren sich auf medizinische Informationen, sind stigmatisierend, umständlich und kompliziert formuliert. Oft werden Betroffene nach der Diagnose mit Informationen überschüttet. Etliche neue Herausforderungen kommen auf sie zu – physische, psychische als auch soziale. Viele dieser Herausforderungen betreffen allerdings nicht nur die Patient:innen selbst, sondern auch ihre Angehörigen, welche leider häufig vergessen werden. Wir möchten auch diejenigen abholen, die bisher vergessen wurden. Wir wollen aufstehen und über Themen reden, über die bisher meist nur mit vorgehaltener Hand gesprochen wurde. Wir möchten den Alltag mit Krebs verändern!
+        textarea: 'Die Diagnose Krebs bedeutet einen extremen Einschnitt in das Leben jener, die von der Krankheit betroffen sind. Gefühle wie Angst und Hilflosigkeit sind dabei ganz normal. Viele Informationen rund um das Thema Krebs fokussieren sich auf medizinische Inhalte, sind stigmatisierend, umständlich und kompliziert formuliert. Oft werden Betroffene nach der Diagnose mit Informationen überschüttet. Etliche neue Herausforderungen kommen auf sie zu – physische, psychische als auch soziale. Viele dieser Herausforderungen betreffen allerdings nicht nur die Patient:innen selbst, sondern auch ihre Angehörigen, welche leider häufig vergessen werden. Wir möchten auch diejenigen abholen, die bisher vergessen wurden. Wir wollen aufstehen und über Themen reden, über die bisher meist nur mit vorgehaltener Hand gesprochen wurde. Wir möchten den Alltag mit Krebs verändern!'
         type: textarea
         enabled: true
       -
@@ -30,7 +29,7 @@ mission_section:
     headline: 'Ein Wegweiser für die Hosentaschen'
     replicator:
       -
-        textarea: 'Mit Pathly soll eine digitale Plattform entstehen, die Krebspatient:innen und Angehörigen durch ihren Alltag mit dem Krebs begleitet. Diese Plattform soll dabei nicht nur als Website sondern auch als App realisiert werden. Das bietet die Möglichkeit, Patient:innen und Angehörige in ihrer ganz persönlichen Lebenssituation abzuholen und ihnen wichtige Informationen zur richtigen Zeit bereitzustellen.'
+        textarea: 'Mit Pathly soll eine digitale Plattform entstehen, die Krebspatient:innen und Angehörigen durch ihren Alltag mit dem Krebs begleitet. Diese Plattform soll dabei nicht nur als Website sondern auch als App realisiert werden. Das bietet uns die Möglichkeit, Patient:innen und Angehörige in ihrer ganz persönlichen Lebenssituation abzuholen und ihnen wichtige Informationen zur richtigen Zeit bereitzustellen.'
         type: textarea
         enabled: true
       -
@@ -47,8 +46,7 @@ mission_section:
         type: textarea
         enabled: true
       -
-        textarea: |-
-          Übrigens: Langfristig möchten wir Pathly als Medizinprodukt zertifizieren lassen.
+        textarea: 'Übrigens: Langfristig möchten wir Pathly als Medizinprodukt zertifizieren lassen.'
         type: textarea
         enabled: true
       -
@@ -65,7 +63,6 @@ mission_section:
         enabled: true
       -
         list:
-          - 'Welche Therapieform ist die Richtige für mich?'
           - 'Wer könnte mir helfen?'
           - 'Was für Nebenwirkungen werde ich haben?'
           - 'Wie ist das mit der Fruchtbarkeit?'

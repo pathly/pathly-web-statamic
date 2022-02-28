@@ -5,7 +5,7 @@ title: Projekt
 author: a213c844-224f-4cde-a891-d1f543fd3b61
 template: home
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1638032477
+updated_at: 1644597272
 intro_headline: 'Dein digitaler Wegweiser durch den Alltag mit Krebs'
 about-project_headline_addition: 'Das ist Pathly'
 about-project_headline: 'Ein digitaler Wegweiser für die Hosentasche.'

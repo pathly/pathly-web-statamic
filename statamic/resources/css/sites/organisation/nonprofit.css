@@ -23,7 +23,3 @@
   padding: revert;
   list-style: disc;
 }
-
-.statutes_section_subsections ul li::marker {
-  color: var(--primary_purple);
-}

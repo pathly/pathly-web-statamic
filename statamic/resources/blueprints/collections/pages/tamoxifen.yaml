@@ -11,6 +11,25 @@ sections:
           validate:
             - required
       -
+        handle: type
+        field:
+          options:
+            info: Info
+          multiple: false
+          max_items: 1
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: 'Content Type'
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
         handle: image
         field:
           mode: grid
@@ -69,7 +88,6 @@ sections:
           mode: single
           time_enabled: false
           time_required: false
-          earliest_date: '2019-01-01'
           full_width: false
           inline: false
           columns: 1
@@ -79,15 +97,6 @@ sections:
           listable: hidden
           validate:
             - required
-      -
-        handle: parent
-        field:
-          type: entries
-          collections:
-            - pages
-          max_items: 1
-          listable: false
-          localizable: true
   content:
     display: Content
     fields:
@@ -118,14 +127,13 @@ sections:
               display: Callout
               fields:
                 -
-                  handle: content_callout
+                  handle: content_callout_content
                   field:
                     always_show_set_button: false
                     buttons:
                       - h2
                       - bold
                       - unorderedlist
-                      - quote
                       - anchor
                     save_html: false
                     toolbar_mode: fixed
@@ -145,11 +153,99 @@ sections:
                     instructions_position: above
                     validate:
                       - required
+                -
+                  handle: content_callout_color
+                  field:
+                    theme: classic
+                    lock_opacity: false
+                    default_color_mode: HEXA
+                    color_modes:
+                      - HEXA
+                    display: Color
+                    type: color
+                    icon: color
+                    listable: hidden
+                    instructions_position: above
+                    validate:
+                      - required
+            quote:
+              display: Quote
+              fields:
+                -
+                  handle: content_quote_paragraph
+                  field:
+                    antlers: false
+                    display: 'Quote Paragraph'
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                    instructions_position: above
+                    validate:
+                      - required
+                -
+                  handle: content_quote_author
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: 'Quote Author'
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    validate:
+                      - required
+            links:
+              display: Links
+              fields:
+                -
+                  handle: content_links
+                  field:
+                    fields:
+                      -
+                        handle: content_link_icon
+                        field:
+                          mode: grid
+                          restrict: false
+                          allow_uploads: true
+                          max_files: 1
+                          display: 'Icon'
+                          type: assets
+                          icon: assets
+                          listable: hidden
+                      -
+                        handle: content_link_title
+                        field:
+                          input_type: text
+                          antlers: false
+                          display: 'Title'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          validate:
+                            - required
+                      -
+                        handle: content_link_url
+                        field:
+                          input_type: url
+                          antlers: false
+                          display: 'URL'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          validate:
+                            - required
+                    mode: stacked
+                    reorderable: true
+                    display: Links
+                    type: grid
+                    icon: grid
+                    listable: hidden
+                    validate:
+                      - required
           buttons:
             - h2
             - bold
             - unorderedlist
-            - quote
             - anchor
           container: assets
           save_html: false

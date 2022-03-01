@@ -655,10 +655,6 @@ section {
   margin-left: 1.1rem;
 }
 
-.alternating-tiles > li > div ul li::marker {
-  color: var(--primary_red);
-}
-
 @media (max-width: 1000px) {
   .alternating-tiles > li:nth-child(odd) > .alternating-tiles_image-container,
   .alternating-tiles > li:nth-child(even) > .alternating-tiles_image-container {
@@ -693,7 +689,7 @@ section {
   font-weight: 500;
   display: flex;
   align-items: center;
-  padding: var(--root16px);
+  padding: var(--root24px);
   border-radius: var(--root16px);
   background-color: var(--purple_ultraLight);
 }
@@ -916,10 +912,6 @@ button {
 .replicator > ul {
   list-style: disc;
   padding-left: var(--root24px);
-}
-
-.replicator li::marker {
-  color: var(--primary_red);
 }
 
 

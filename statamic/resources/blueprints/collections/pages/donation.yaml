@@ -135,7 +135,7 @@ sections:
         field:
           fields:
             -
-              handle: donation-options_buttons_icon
+              handle: donation-options_button_icon
               field:
                 mode: grid
                 restrict: false

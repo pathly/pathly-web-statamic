@@ -28,36 +28,32 @@
   {{ /if }}
   <h2 class="section-headline">{{ statutes_headline }}</h2>
 
-  <div>
-    <ol class="statutes_sections">
-      {{ statutes_sections }}
-        <li>
-          <div class="accordion">
-            <input type="checkbox" id="accordion_button-{{ statutes_section_headline }}"/>
-            <label for="accordion_button-{{ statutes_section_headline }}" class="accordion_title">
-              <h3>{{ statutes_section_headline }}</h3>
-              <span class="accordion_indicator no-select">+</span>
-            </label>
+  <div class="statutes_sections">
+    {{ statutes_sections }}
+      <div class="accordion">
+        <input type="checkbox" id="accordion_button-{{ statutes_section_headline }}"/>
+        <label for="accordion_button-{{ statutes_section_headline }}" class="accordion_title">
+          <h3>{{ statutes_section_headline }}</h3>
+          <span class="accordion_indicator no-select">+</span>
+        </label>
 
-            <div class="accordion_content">
-              <ol class="statutes_section_subsections">
-                {{ statutes_section_subsections }}
-                  <li>
-                    <p>{{ statutes_section_subsection_textarea }}<p>
-                    <ul>
-                      {{ statutes_section_subsection_list }}
-                        <li>
-                          <p>{{ value }}</p>
-                        </li>
-                      {{ /statutes_section_subsection_list }}
-                    </ul>
-                  </li>
-                {{ /statutes_section_subsections }}
-              </ol>
-            </div>
-          </div>
-        </li>
-      {{ /statutes_sections }}
-    </ol>
+        <div class="accordion_content">
+          <ol class="statutes_section_subsections">
+            {{ statutes_section_subsections }}
+              <li>
+                <p>{{ statutes_section_subsection_textarea }}<p>
+                <ul>
+                  {{ statutes_section_subsection_list }}
+                    <li>
+                      <p>{{ value }}</p>
+                    </li>
+                  {{ /statutes_section_subsection_list }}
+                </ul>
+              </li>
+            {{ /statutes_section_subsections }}
+          </ol>
+        </div>
+      </div>
+    {{ /statutes_sections }}
   </div>
 </section>

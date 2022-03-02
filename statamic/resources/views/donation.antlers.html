@@ -33,17 +33,17 @@
 </section>
 
 <section id="donation_options" class="section_pattern section--top-spacing">
-  {{ if intro_headline_addition }}
-    <h2 class="section-headline--addition">{{ options_headline_addition }}</h2>
+  {{ if donation-options_headline_addition }}
+    <h2 class="section-headline--addition">{{ donation-options_headline_addition }}</h2>
   {{ /if }}
   <h2 class="section-headline">{{ donation-options_headline }}</h2>
   <div class="link-list">
     {{ donation-options_buttons }}
       <a class="link-list_button" href="{{ donation-options_button_url }}" target="_blank">
         <div class="link-list_button_icon-container">
-          {{ donation-options_buttons_icon }}
+          {{ donation-options_button_icon }}
             <img src="{{ url }}" alt="{{ alt }}">
-          {{ /donation-options_buttons_icon }}
+          {{ /donation-options_button_icon }}
         </div>
         <p>{{ donation-options_button_headline }}</p>
       </a>

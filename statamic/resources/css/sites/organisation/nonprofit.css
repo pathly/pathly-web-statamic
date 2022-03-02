@@ -7,7 +7,6 @@
   content: "§" counter(statutes_headlines_item) " ";
   counter-increment: statutes_headlines_item;
   padding-right: var(--root8px);
-
 }
 
 .statutes_section_subsections {
@@ -22,8 +21,4 @@
 .statutes_section_subsections ul {
   padding: revert;
   list-style: disc;
-}
-
-.statutes_section_subsections ul li::marker {
-  color: var(--primary_purple);
 }

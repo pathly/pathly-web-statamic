@@ -1,11 +1,11 @@
 .info {
-  grid-column: 2/13;
+  grid-column: 1/14;
   display: grid;
-  grid-template-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(13, 1fr);
   position: relative;
 
   .info_header {
-    grid-column: 3/10;
+    grid-column: 4/11;
     margin-bottom: var(--root80px);
 
     div span {
@@ -34,12 +34,12 @@
   }
 
   .info_body {
-    grid-column: 1/12;
+    grid-column: 1/14;
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(13, 1fr);
 
     .text {
-      grid-column: 3/10;
+      grid-column: 4/11;
 
       &.callout {
         padding: var(--root40px);
@@ -75,7 +75,7 @@
     }
 
     .quote {
-      grid-column: 4/10;
+      grid-column: 5/11;
       font-family: "neue-kabel";
       font-weight: 700;
       color: var(--primary_purple);
@@ -91,7 +91,7 @@
     }
 
     .images {
-      grid-column: 1/12;
+      grid-column: 2/13;
       display: flex;
       justify-content: space-between;
 
@@ -109,23 +109,105 @@
       }
     }
 
-    .link-list {
-      grid-column: 1/12;
+    .table {
+      grid-column: 2/13;
+      width: 100%;
+      overflow-x: scroll;
+
+      th {
+        text-align: left;
+        padding-right: var(--root24px);
+      }
+
+      td {
+        max-width: 220px;
+        padding-right: var(--root24px);
+      }
+    }
+
+    @media (max-width: 600px) {      
+      th, td {
+        min-width: 200px;
+      }
+    }
+
+    .link-list,
+    .accordion-list {
+      grid-column: 4/11;
     }
 
     .images + *,
     * + .images,
     .link-list + *,
-    * + .link-list {
+    * + .link-list,
+    .accordion-list + *,
+    * + .accordion-list {
       margin-top: var(--root80px);
     }
 
     .images + .images,
     .text + .text,
     .text + .quote,
+    .text + .table,
+    .quote + .quote,
     .quote + .text,
-    .quote + .quote {
+    .quote + .table,
+    .table + .table,
+    .table + .text,
+    .table + .quote {
       margin-top: var(--root40px);
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .info {
+    .info_header {
+      grid-column: 3/12;
+    }
+    .info_body {
+      .text,
+      .link-list,
+      .accordion-list {
+        grid-column: 3/12;
+      }
+      .quote {
+        grid-column: 4/12;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .info {
+    .info_header {
+      grid-column: 2/13;
+    }
+    .info_body {
+      .text,
+      .quote,
+      .link-list,
+      .accordion-list {
+        grid-column: 2/13;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .info {
+    .info_header {
+      grid-column: 1/14;
+    }
+    .info_body {
+      .text,
+      .quote,
+      .images,
+      .table,
+      .link-list,
+      .accordion-list {
+        grid-column: 1/14;
+      }
     }
   }
 }

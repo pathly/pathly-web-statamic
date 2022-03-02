@@ -26,6 +26,31 @@
           <blockquote>{{ content_quote_paragraph }}</blockquote>
         </div>
 
+      {{ elseif type == "table" }}
+        <table class="table">
+          {{ content_table }}
+            {{ if first }}
+                <thead>
+                  <tr>
+                    {{ cells }}
+                      <th>{{ value | markdown }}</th>
+                    {{ /cells }}
+                  </tr>
+                </thead>
+                <tbody>
+            {{ else }}
+                  <tr>
+                    {{ cells }}
+                      <td>{{ value|markdown }}</td>
+                    {{ /cells }}
+                  </tr>
+              {{ if last }}
+                </tbody>
+              {{ /if }}
+            {{ /if }}
+          {{ /content_table }}
+        </table>
+
       {{ elseif type == "links" }}
         <div class="link-list">
           {{ content_links }}
@@ -40,17 +65,21 @@
           {{ /content_links }}
         </div>
 
-      {{ elseif type == "accordion" }}
-        <div class="accordion">
-          <input type="checkbox" id="accordion_button-{{ content_accordion_headline }}"/>
-          <label for="accordion_button-{{ content_accordion_headline }}" class="accordion_title">
-            <h3>{{ content_accordion_headline }}</h3>
-            <span class="accordion_indicator no-select">+</span>
-          </label>
+      {{ elseif type == "accordions" }}
+        <div class="accordion-list">
+          {{ content_accordions }}
+            <div class="accordion">
+              <input type="checkbox" id="accordion_button-{{ content_accordion_headline }}"/>
+              <label for="accordion_button-{{ content_accordion_headline }}" class="accordion_title">
+                <h3>{{ content_accordion_headline }}</h3>
+                <span class="accordion_indicator no-select">+</span>
+              </label>
 
-          <div class="accordion_content">
-            <p>{{ content_accordion_textarea }}</p>
-          </div>
+              <div class="accordion_content">
+                <p>{{ content_accordion_textarea }}</p>
+              </div>
+            </div>
+          {{ /content_accordions }}
         </div>
 
       {{ elseif type == "images" }}

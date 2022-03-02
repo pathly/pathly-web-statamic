@@ -208,7 +208,7 @@ sections:
                           restrict: false
                           allow_uploads: true
                           max_files: 1
-                          display: 'Icon'
+                          display: Icon
                           type: assets
                           icon: assets
                           listable: hidden
@@ -217,7 +217,7 @@ sections:
                         field:
                           input_type: text
                           antlers: false
-                          display: 'Title'
+                          display: Title
                           type: text
                           icon: text
                           listable: hidden
@@ -228,7 +228,7 @@ sections:
                         field:
                           input_type: url
                           antlers: false
-                          display: 'URL'
+                          display: URL
                           type: text
                           icon: text
                           listable: hidden
@@ -242,11 +242,64 @@ sections:
                     listable: hidden
                     validate:
                       - required
+            accordions:
+              display: Accordions
+              fields:
+                -
+                  handle: content_accordions
+                  field:
+                    fields:
+                      -
+                        handle: content_accordion_headline
+                        field:
+                          input_type: text
+                          antlers: false
+                          display: 'Accordion Headline'
+                          type: text
+                          icon: text
+                          listable: hidden
+                          validate:
+                            - required
+                      -
+                        handle: content_accordion_textarea
+                        field:
+                          antlers: false
+                          display: 'Accordion Textarea'
+                          type: textarea
+                          icon: textarea
+                          listable: hidden
+                          validate:
+                            - required
+                    mode: stacked
+                    reorderable: true
+                    display: Accordions
+                    type: grid
+                    icon: grid
+                    listable: hidden
+                    validate:
+                      - required
+            table:
+              display: Table
+              fields:
+                -
+                  handle: content_table
+                  field:
+                    display: Table
+                    type: table
+                    icon: table
+                    listable: hidden
+                    instructions_position: above
+                    validate:
+                      - required
           buttons:
             - h2
             - bold
             - unorderedlist
+            - orderedlist
             - anchor
+            - table
+            - code
+            - horizontalrule
           container: assets
           save_html: false
           toolbar_mode: floating

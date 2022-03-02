@@ -96,7 +96,7 @@ section {
   grid-template-columns: repeat(13, 1fr);
 }
 
-.section_text > div > *:not(img) {
+.section_text > div > * {
   grid-column: 4/11;
 }
 
@@ -106,7 +106,7 @@ section {
 
 @media (max-width: 1400px) {
   .section_text .section-headline--addition,
-  .section_text > div > *:not(img) {
+  .section_text > div > * {
     grid-column: 3/12;
   }
 
@@ -121,7 +121,7 @@ section {
   .section_text h1,
   .section_text .section-headline,
   .section_text .section-headline--addition,
-  .section_text > div > *:not(img)  {
+  .section_text > div > *  {
     grid-column: 2/13;
   }
 }
@@ -131,7 +131,7 @@ section {
   .section_text .section-headline,
   .section_text .section-headline--addition,
   .section_text > div > * {
-    grid-column: 1/14;
+    grid-column: 1/14 !important;
   }
 }
 

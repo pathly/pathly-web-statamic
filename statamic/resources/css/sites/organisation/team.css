@@ -9,7 +9,8 @@
 
 @media (max-width: 650px) {
   #team_profile img {
-    margin: 0 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     width: 80%;
   }
 }

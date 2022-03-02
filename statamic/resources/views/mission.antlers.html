@@ -1,11 +1,11 @@
 <section class="section_image-full-width">
   <picture>
     {{ intro_image--big }}
-      <source class="full-width" srcset="{{ url }}" alt="{{ alt }}" media="(min-width: 700px)"/>
+      <source srcset="{{ url }}" alt="{{ alt }}" media="(min-width: 700px)"/>
     {{ /intro_image--big }}
 
     {{ intro_image--small }}
-      <img class="full-width" src="{{ url }}" alt="{{ alt }}"/>
+      <img src="{{ url }}" alt="{{ alt }}"/>
     {{ /intro_image--small }}
   </picture>
 </section>
@@ -25,7 +25,7 @@
                 <p>{{ quote_author }}</p>
               </div>
             {{ elseif type == "image" }}
-              <img class="full-width" src="{{ image }}" alt="{{ caption }}">
+              <img src="{{ image }}" alt="{{ caption }}">
             {{ elseif type == "textarea" }}
               <p>{{ textarea }}</p>
             {{ elseif type == "list" }}

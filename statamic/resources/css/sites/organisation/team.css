@@ -6,3 +6,10 @@
   width: 100%;
   margin-bottom: var(--root24px);
 }
+
+@media (max-width: 650px) {
+  #team_profile img {
+    margin: 0 10%;
+    width: 80%;
+  }
+}

@@ -131,7 +131,7 @@
       width: 100%;
       overflow-x: scroll;
       border-collapse: collapse;
-
+      display: block;
 
 
       tr {
@@ -141,11 +141,13 @@
           text-align: left;
           color: var(--primary_purple);
           max-width: 220px;
+          min-width: 200px;
           padding: var(--root16px);
         }
 
         td {
           max-width: 220px;
+          min-width: 200px;
           padding: var(--root16px);
         }
 
@@ -158,12 +160,6 @@
       tr + tr,
       thead + tbody {
         border-top: calc(var(--root4px) / 2) solid var(--primary_purple);
-      }
-    }
-
-    @media (max-width: 600px) {
-      th, td {
-        min-width: 200px;
       }
     }
 

@@ -150,12 +150,12 @@
           min-width: 150px;
           padding: var(--root16px);
           background-color: var(--purple_ultraLight);
-          border-radius: var(--root8px);
+          border-radius: var(--root4px);
         }
 
         th + th,
         td + td {
-          border-left: var(--root8px) solid var(--background);
+          border-left: var(--root4px) solid var(--background);
         }
       }
 

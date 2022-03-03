@@ -38,15 +38,21 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: repeat(13, 1fr);
-  padding: 0 5vw;
+  padding: 0;
   margin: calc(2 * var(--root48px) + var(--root80px) + var(--root40px)) auto 0 auto; /* 2 * (header padding+margin) + header content height + bottom spacing */
   max-width: 1800px;
   z-index: 1000;
 }
 
-@media (min-width: 2000px) {
+@media (max-width: 2000px) {
   .main-grid {
-    padding: 0;
+    padding: 0 5vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .main-grid {
+    margin-top: calc(var(--root48px) + var(--root80px) + var(--root40px));
   }
 }
 

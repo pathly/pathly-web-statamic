@@ -18,7 +18,7 @@ body {
   -ms-text-size-adjust: 100%;
   scroll-padding-top: calc(var(--root24px) * 4 + var(--root80px) + var(--root40px));
   scroll-behavior: smooth;
-  background-color: #FBFDFF;
+  background-color: var(--background);
   display: flex;
   flex-direction: column;
   min-height: 100vh;

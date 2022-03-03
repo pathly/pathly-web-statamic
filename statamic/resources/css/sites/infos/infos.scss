@@ -140,26 +140,24 @@
         th {
           text-align: left;
           color: var(--primary_purple);
-          max-width: 220px;
-          min-width: 150px;
-          padding: var(--root16px);
         }
 
-        td {
+        th, td {
           max-width: 220px;
           min-width: 150px;
           padding: var(--root16px);
+          background-color: var(--purple_ultraLight);
         }
 
         th + th,
         td + td {
-          border-left: calc(var(--root4px) / 2) solid var(--primary_purple);
+          border-left: var(--root4px) solid var(--background);
         }
       }
 
       tr + tr,
       thead + tbody {
-        border-top: calc(var(--root4px) / 2) solid var(--primary_purple);
+        border-top: var(--root4px) solid var(--background);
       }
     }
 

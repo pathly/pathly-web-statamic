@@ -140,24 +140,30 @@
         th {
           text-align: left;
           color: var(--primary_purple);
+          background-color: var(--purple_ultraLightViolett);
+          max-width: 220px;
+          min-width: 150px;
+          padding: var(--root16px);
+          border-radius: var(--root8px);
         }
 
-        th, td {
+        td {
           max-width: 220px;
           min-width: 150px;
           padding: var(--root16px);
           background-color: var(--purple_ultraLight);
+          border-radius: var(--root8px);
         }
 
         th + th,
         td + td {
-          border-left: var(--root4px) solid var(--background);
+          border-left: var(--root8px) solid var(--background);
         }
       }
 
       tr + tr,
       thead + tbody {
-        border-top: var(--root4px) solid var(--background);
+        border-top: var(--root8px) solid var(--background);
       }
     }
 

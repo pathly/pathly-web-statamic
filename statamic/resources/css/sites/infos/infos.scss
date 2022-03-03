@@ -30,6 +30,13 @@
 
     img {
       width: 100%;
+      border-radius: var(--root40px);
+      margin-bottom: var(--root40px);
+    }
+
+    p {
+      font-size: var(--root24px);
+      font-weight: 700;
     }
   }
 
@@ -48,7 +55,10 @@
 
       h2 {
         font-size: var(--root32px);
-        margin-bottom: var(--root40px);
+      }
+
+      h3 {
+        font-size: var(--roo24px);
       }
 
       ul {
@@ -66,11 +76,16 @@
         }
       }
 
-      p + h2,
+      h2 + *,
+      h3 + *,
+      * + h3,
       p + ul,
-      ul + h2,
       ul + p {
         margin-top: var(--root40px);
+      }
+
+      * + h2 {
+        margin-top: var(--root80px);
       }
     }
 
@@ -97,7 +112,7 @@
 
       div {
         width: 100%;
-        
+
         &:not(:last-child) {
           margin-right: var(--root40px);
         }
@@ -115,15 +130,34 @@
       grid-column: 2/13;
       width: 100%;
       overflow-x: scroll;
+      border-collapse: collapse;
 
-      th {
-        text-align: left;
-        padding-right: var(--root24px);
+
+
+      tr {
+        padding: var(--root8px) 0;
+
+        th {
+          text-align: left;
+          color: var(--primary_purple);
+          max-width: 220px;
+          padding: var(--root16px);
+        }
+
+        td {
+          max-width: 220px;
+          padding: var(--root16px);
+        }
+
+        th + th,
+        td + td {
+          border-left: calc(var(--root4px) / 2) solid var(--primary_purple);
+        }
       }
 
-      td {
-        max-width: 220px;
-        padding-right: var(--root24px);
+      tr + tr,
+      thead + tbody {
+        border-top: calc(var(--root4px) / 2) solid var(--primary_purple);
       }
     }
 
@@ -138,27 +172,20 @@
       grid-column: 4/11;
     }
 
+    > * + * {
+      margin-top: var(--root40px);
+    }
+
+    *:not(.text) + .text,
+    *:not(.text) + .table,
     .images + *,
     * + .images,
-    .link-list + *,
-    * + .link-list,
-    .accordion-list + *,
-    * + .accordion-list {
+    .callout + *,
+    * + .callout,
+    * + h2 {
       margin-top: var(--root80px);
     }
 
-    .images + .images,
-    .text + .text,
-    .text + .quote,
-    .text + .table,
-    .quote + .quote,
-    .quote + .text,
-    .quote + .table,
-    .table + .table,
-    .table + .text,
-    .table + .quote {
-      margin-top: var(--root40px);
-    }
   }
 }
 

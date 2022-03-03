@@ -6,6 +6,8 @@
 
     <h1 class="">{{ title }}</h1>
     <img src="{{ image }}" alt="{{ alt }}">
+
+    {{ description }}
   </div>
 
   <div class="info_body">
@@ -69,14 +71,14 @@
         <div class="accordion-list">
           {{ content_accordions }}
             <div class="accordion">
-              <input type="checkbox" id="accordion_button-{{ content_accordion_headline }}"/>
-              <label for="accordion_button-{{ content_accordion_headline }}" class="accordion_title">
-                <h3>{{ content_accordion_headline }}</h3>
+              <input type="checkbox" id="accordion_button-{{ content_accordion_title }}"/>
+              <label for="accordion_button-{{ content_accordion_title }}" class="accordion_title">
+                <h3>{{ content_accordion_title }}</h3>
                 <span class="accordion_indicator no-select">+</span>
               </label>
 
               <div class="accordion_content">
-                <p>{{ content_accordion_textarea }}</p>
+                <p>{{ content_accordion_content }}</p>
               </div>
             </div>
           {{ /content_accordions }}

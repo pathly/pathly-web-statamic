@@ -11,6 +11,36 @@ sections:
           validate:
             - required
       -
+        handle: headline
+        field:
+          type: text
+          validate:
+            - required
+      -
+        handle: description
+        field:
+          always_show_set_button: false
+          buttons:
+            - bold
+            - italic
+            - anchor
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: true
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: false
+          enable_paste_rules: false
+          antlers: false
+          display: Description
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+      -
         handle: type
         field:
           options:
@@ -40,6 +70,8 @@ sections:
           type: assets
           icon: assets
           listable: hidden
+          validate:
+            - required
       -
         handle: image_position
         field:
@@ -132,7 +164,9 @@ sections:
                     always_show_set_button: false
                     buttons:
                       - h2
+                      - h3
                       - bold
+                      - italic
                       - unorderedlist
                       - anchor
                     save_html: false
@@ -250,24 +284,40 @@ sections:
                   field:
                     fields:
                       -
-                        handle: content_accordion_headline
+                        handle: content_accordion_title
                         field:
                           input_type: text
                           antlers: false
-                          display: 'Accordion Headline'
+                          display: 'Accordion Title'
                           type: text
                           icon: text
                           listable: hidden
                           validate:
                             - required
                       -
-                        handle: content_accordion_textarea
+                        handle: content_accordion_content
                         field:
+                          always_show_set_button: false
+                          buttons:
+                            - bold
+                            - italic
+                            - anchor
+                          save_html: false
+                          toolbar_mode: fixed
+                          link_noopener: false
+                          link_noreferrer: false
+                          target_blank: true
+                          reading_time: false
+                          fullscreen: true
+                          allow_source: true
+                          enable_input_rules: false
+                          enable_paste_rules: false
                           antlers: false
-                          display: 'Accordion Textarea'
-                          type: textarea
-                          icon: textarea
+                          display: Accordion Content
+                          type: bard
+                          icon: bard
                           listable: hidden
+                          instructions_position: above
                           validate:
                             - required
                     mode: stacked
@@ -293,7 +343,9 @@ sections:
                       - required
           buttons:
             - h2
+            - h3
             - bold
+            - italic
             - unorderedlist
             - orderedlist
             - anchor

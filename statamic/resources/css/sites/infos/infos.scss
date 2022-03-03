@@ -150,7 +150,7 @@
           min-width: 150px;
           padding: var(--root16px);
           background-color: var(--purple_ultraLight);
-          border-radius: var(--root4px);
+          border-radius: var(--root8px);
         }
 
         th + th,
@@ -161,7 +161,7 @@
 
       tr + tr,
       thead + tbody {
-        border-top: var(--root8px) solid var(--background);
+        border-top: var(--root4px) solid var(--background);
       }
     }
 

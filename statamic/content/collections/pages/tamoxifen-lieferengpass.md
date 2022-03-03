@@ -4,7 +4,7 @@ blueprint: tamoxifen
 title: Tamoxifen-Lieferengpass
 image_position: center
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1646318488
+updated_at: 1646337391
 image: infos/Tamoxifen--2.png
 template: tamoxifen
 type: info
@@ -76,16 +76,31 @@ content:
         content_accordions:
           -
             content_accordion_title: 'Was ist bisher passiert?'
-            content_accordion_content: "Im Januar haben Hersteller und Lieferanten das BfArM über die eingeschränkte Verfügbarkeit von Tamoxifen informiert. Die Versorgungslage wurde daraufhin überprüft und der Beirat für Liefer- und Versorgungsengpässe wurde einberufen. Dieser beschloss am 09. Februar verschiedene kurz- und langfristige Maßnahmen, die den Engpass abpuffern und die Versorgung von Patient:innen sichern sollen. Es wurde beschlossen, dass die Betroffenen keine zusätzlichen Kosten für die Maßnahmen tragen sollen.\_"
+            content_accordion_content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Im Januar haben Hersteller und Lieferanten das BfArM über die eingeschränkte Verfügbarkeit von Tamoxifen informiert. Die Versorgungslage wurde daraufhin überprüft und der Beirat für Liefer- und Versorgungsengpässe wurde einberufen. Dieser beschloss am 09. Februar verschiedene kurz- und langfristige Maßnahmen, die den Engpass abpuffern und die Versorgung von Patient:innen sichern sollen. Es wurde beschlossen, dass die Betroffenen keine zusätzlichen Kosten für die Maßnahmen tragen sollen.'
           -
             content_accordion_title: 'Wie kam es zu dem Engpass?'
-            content_accordion_content: 'Der momentane Engpass hat mehr als nur eine Ursache. Unter anderem spielt der aufwendige Herstellungsprozess eine Rolle. Dieser führt dazu, dass es mehrere Wochen dauert, bis eine Produktionsreihe abgeschlossen ist und eine neue beginnen kann. So konnte ein Produktionsausfall eines Herstellers, der große Mengen Tamoxifen in Deutschland bereitstellt, kurzfristig nicht von anderen Anbietern kompensiert werden.'
+            content_accordion_content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Der momentane Engpass hat mehr als nur eine Ursache. Unter anderem spielt der aufwendige Herstellungsprozess eine Rolle. Dieser führt dazu, dass es mehrere Wochen dauert, bis eine Produktionsreihe abgeschlossen ist und eine neue beginnen kann. So konnte ein Produktionsausfall eines Herstellers, der große Mengen Tamoxifen in Deutschland bereitstellt, kurzfristig nicht von anderen Anbietern kompensiert werden.'
           -
             content_accordion_title: 'Wie wird der Engpass behoben?'
-            content_accordion_content: |-
-              Behörden, Hersteller und Vertreiber haben eine Vielzahl an kurz- und langfristigen Maßnahmen veranlasst. Zum einen wurde die Produktion weiterer Chargen (eine bestimmte Produktionsmenge) Tamoxifen vorgezogen, sodass es schneller einen Nachschub neuer Tabletten geben wird. Außerdem wurde der Import von Tamoxifen aus anderen EU-Ländern, wie der Schweiz und den Niederlanden, genehmigt. Dadurch können Vorräte aus eigene Produktion aufgestockt werden. Der Export tamoxifenhaltiger Arzneimittel wurde vorübergehend untersagt.
-
-              Damit für alle Patient:innen zu jedem Zeitpunkt ausreichend Tamoxifen verfügbar ist, ist eine Bestellung auf Vorrat weder für Ärzt:innen noch für Apotheken zulässig. Ärzt:innen sind dazu aufgerufen kleinere Packungsgrößen zu verschreiben oder wenn möglich, anstelle der besonders gefragten Tabletten à 20 mg, die doppelte Menge Tabletten à 10 mg zu verschreiben. Hersteller, der Großhandel und Apotheken wurden angewiesen, nur so viel Tamoxifen zu liefern oder abzugeben, wie für eine Behandlung akut benötigt wird. Apotheker:innen sollen die Möglichkeit bekommen vorhandene Großpackungen unter Patient:innen aufzuteilen. So wird Sichergestellt, dass du eine ausreichende Menge an Tamoxifen bekommst.
+            content_accordion_content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Behörden, Hersteller und Vertreiber haben eine Vielzahl an kurz- und langfristigen Maßnahmen veranlasst. Zum einen wurde die Produktion weiterer Chargen (eine bestimmte Produktionsmenge) Tamoxifen vorgezogen, sodass es schneller einen Nachschub neuer Tabletten geben wird. Außerdem wurde der Import von Tamoxifen aus anderen EU-Ländern, wie der Schweiz und den Niederlanden, genehmigt. Dadurch können Vorräte aus eigene Produktion aufgestockt werden. Der Export tamoxifenhaltiger Arzneimittel wurde vorübergehend untersagt.Damit für alle Patient:innen zu jedem Zeitpunkt ausreichend Tamoxifen verfügbar ist, ist eine Bestellung auf Vorrat weder für Ärzt:innen noch für Apotheken zulässig. Ärzt:innen sind dazu aufgerufen kleinere Packungsgrößen zu verschreiben oder wenn möglich, anstelle der besonders gefragten Tabletten à 20 mg, die doppelte Menge Tabletten à 10 mg zu verschreiben. Hersteller, der Großhandel und Apotheken wurden angewiesen, nur so viel Tamoxifen zu liefern oder abzugeben, wie für eine Behandlung akut benötigt wird. Apotheker:innen sollen die Möglichkeit bekommen vorhandene Großpackungen unter Patient:innen aufzuteilen. So wird Sichergestellt, dass du eine ausreichende Menge an Tamoxifen bekommst.'
   -
     type: set
     attrs:
@@ -101,16 +116,31 @@ content:
         content_accordions:
           -
             content_accordion_title: 'Wann wird der Engpass behoben sein?'
-            content_accordion_content: 'Derzeit wird damit gerechnet, dass bis Ende April 2022 die Produktion wieder zu normalem Umfang zurückfindet.'
+            content_accordion_content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Derzeit wird damit gerechnet, dass bis Ende April 2022 die Produktion wieder zu normalem Umfang zurückfindet.'
           -
             content_accordion_title: 'Wird mich der Engpass betreffen, wenn ich aktuell noch mehr als 60 Tabletten zuhause habe?'
-            content_accordion_content: 'Nein. Es wird davon ausgegangen, dass ab Mai 2022 alle Patient:innen mit normalen Tablettenmengen versorgt werden können.'
+            content_accordion_content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Nein. Es wird davon ausgegangen, dass ab Mai 2022 alle Patient:innen mit normalen Tablettenmengen versorgt werden können.'
           -
             content_accordion_title: 'Ich habe weniger als 60 Tabletten zuhause. Was soll ich tun? Was kommt auf mich zu?'
-            content_accordion_content: |-
-              Zuallererst Ruhe bewahren. Die bisherigen Maßnahmen der zuständigen Behörden haben dazu geführt, dass aktuell ausreichen Tamoxifen für jede Patient:in vorhanden ist. Die Herausforderung des Engpasses ist jetzt nur, wie und in welcher Form das Medikament den Weg zu dir findet. Bekommst du normalerweise Tamoxifen in einer sogenannten N3-Packungsgröße mit 100 Tabletten verschrieben, kann es sein, dass dein:e Ärzt:in dir wegen der aktuellen Lage eine kleinere Packungsgröße verschreiben muss. Es kann auch sein, dass du anstelle von 20mg, 2 x 10mg am Tag nehmen musst. Warum? Damit alle Patient:innen ausreichend versorgt werden können und damit nicht einige Betroffenen mehr als nötig und andere gar keine Tabletten haben.
-
-              Ab Mai hat sich die Versorgungssituation aber vermutlich wieder eingependelt.
+            content_accordion_content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Zuallererst Ruhe bewahren. Die bisherigen Maßnahmen der zuständigen Behörden haben dazu geführt, dass aktuell ausreichen Tamoxifen für jede Patient:in vorhanden ist. Die Herausforderung des Engpasses ist jetzt nur, wie und in welcher Form das Medikament den Weg zu dir findet. Bekommst du normalerweise Tamoxifen in einer sogenannten N3-Packungsgröße mit 100 Tabletten verschrieben, kann es sein, dass dein:e Ärzt:in dir wegen der aktuellen Lage eine kleinere Packungsgröße verschreiben muss. Es kann auch sein, dass du anstelle von 20mg, 2 x 10mg am Tag nehmen musst. Warum? Damit alle Patient:innen ausreichend versorgt werden können und damit nicht einige Betroffenen mehr als nötig und andere gar keine Tabletten haben.Ab Mai hat sich die Versorgungssituation aber vermutlich wieder eingependelt.'
   -
     type: heading
     attrs:
@@ -263,7 +293,7 @@ content:
                   -
                     type: link
                     attrs:
-                      href: mail@pathly.app
+                      href: 'mailto:mail@pathly.app'
                       rel: null
                       target: _blank
                       title: null

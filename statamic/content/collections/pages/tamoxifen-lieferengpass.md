@@ -1,7 +1,7 @@
 ---
 id: 0c70512f-c4ec-4640-8e88-707b66cb0aac
 blueprint: tamoxifen
-title: Tamoxifen-Lieferengpass
+title: Tamoxifen
 image_position: center
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
 updated_at: 1646337391

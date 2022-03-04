@@ -1,8 +1,3 @@
-#cooperations_profile li {
-  background-color: var(--purple_ultraLight);
-  border-radius: var(--root40px);
-}
-
 #cooperations_profile a {
   display: block;
   padding: var(--root40px);

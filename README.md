@@ -105,3 +105,11 @@ Then run:
 ```
 docker compose exec statamic composer update statamic/cms --with-dependencies
 ```
+
+### How do I import the remote content?
+
+Place your SSH public key on the production system and run the import script:
+
+```
+./import.sh
+```

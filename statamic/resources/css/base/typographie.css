@@ -80,3 +80,7 @@ a {
   font-size: var(--root24px);
   color: var(--primary_purple);
 }
+
+li::marker {
+  color: var(--primary_purple);
+}

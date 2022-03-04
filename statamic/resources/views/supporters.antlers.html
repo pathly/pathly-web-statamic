@@ -18,18 +18,16 @@
   {{ /if }}
   <h2 class="section-headline">{{ cooperations_headline }}</h2>
 
-  <div>
-    <ul id="cooperations_profile" class="tiles">
-      {{  cooperations_profiles }}
-        <li>
-          <a target="_blank" href="{{ cooperations_profile_url }}">
-              {{ cooperations_profile_image }}
-                <img src="{{ url }}" alt="{{ alt }}"/>
-              {{ /cooperations_profile_image }}
-          </a>
-        </li>
-      {{ /cooperations_profiles }}
-    </ul>
+  <div id="cooperations_profile" class="tiles">
+    {{ cooperations_profiles }}
+      <div>
+        <a target="_blank" href="{{ cooperations_profile_url }}">
+          {{ cooperations_profile_image }}
+            <img src="{{ url }}" alt="{{ alt }}"/>
+          {{ /cooperations_profile_image }}
+        </a>
+      </div>
+    {{ /cooperations_profiles }}
   </div>
 </section>
 
@@ -39,10 +37,9 @@
   {{ /if }}
   <h2 class="section-headline">{{ sponsors_headline }}</h2>
 
-  <div>
-    <ul class="alternating-tiles">
+  <div class="alternating-tiles">
       {{ sponsors_profiles }}
-        <li id="sponsors_profile">
+        <div id="sponsors_profile">
           <div class="alternating-tiles_image-container">
             {{ sponsors_profile_image }}
               <img src="{{ url }}" alt="{{ alt }}"/>
@@ -54,8 +51,7 @@
             <p>{{ sponsors_profile_description }}</p>
             <a class="arrow-link" href="{{ sponsors_profile_url }}" target="_blank">Website</a>
           </div>
-        </li>
+        </div>
       {{ /sponsors_profiles }}
-    </ul>
   </div>
 </section>

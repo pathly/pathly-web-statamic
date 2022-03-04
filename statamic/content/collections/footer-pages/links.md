@@ -5,6 +5,10 @@ title: Links
 template: footer-pages/linklist
 links:
   -
+    link_icon: Tamoxifen--1.png
+    link_headline: 'Umfrage Lieferengpass Tamoxifen'
+    link_url: 'https://sw1bw3y4xtq.typeform.com/to/YOJaPPjj'
+  -
     link_icon: icons/spende.png
     link_headline: 'Deine Spende für Pathly'
     link_url: 'https://www.paypal.com/donate/?hosted_button_id=XR6MXEY4F6WHQ'
@@ -49,8 +53,8 @@ links:
     link_headline: Datenschutz
     link_url: 'https://www.pathly.app/privacy'
 cta_toggle: true
-updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1639842907
+updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
+updated_at: 1645310375
 cta: fff42fe4-4d5c-484a-b43d-f5eecec74f70
 og_title: Pathly
 og_description: 'Dein digitaler Wegweiser durch den Alltag mit Krebs'

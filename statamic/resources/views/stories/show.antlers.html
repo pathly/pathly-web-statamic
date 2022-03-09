@@ -1,7 +1,6 @@
-<main class="main-grid">
-  <article class="story">
-    {{ collection:stories paginate="1" }}
-    <div class="story_header">
+<article class="card-detail">
+  {{ collection:stories paginate="1" }}
+    <div class="card-detail_header">
       <div>
         <span>Geschichte</span>
         <span>{{ cancer_type:title }}</span>
@@ -9,14 +8,44 @@
 
       <h1 class="">{{ title }}</h1>
       <img src="{{ image }}" alt="{{ alt }}">
+
+      {{ description }}
     </div>
 
-    <div class="story_body">
+    <div class="card-detail_body">
+      {{ content }}
+        {{ if type == "text" }}
+          <div class="text">
+            {{ text }}
+          </div>
 
+        {{ elseif type == "images" }}
+          <div class="images">
+            {{ content_images }}
+              <div>
+                <img src="{{ url }}" alt="{{ alt }}" />
+              </div>
+            {{ /content_images }}
+          </div>
+        {{ /if }}
+      {{ /content }}
     </div>
 
+    <address class="card-detail_footer">
+      <img src="{{ image }}" alt="{{ alt }}">
+      <div>
+        <p>{{ name }}</p>
 
+        <div>
+          {{ contact }}
+          <span>{{ contact_type:label }}</span>
+          <a href="{{ contact_url }}" target="_blank">{{ contact_text }}</a>
+          {{ /contact }}
 
-    {{ /collection:stories }}
-  </article>
-</main>
+          <span>Datum</span>
+          <time datetime="{{ date format="Y-m-d" }}">{{ date format="d.m.Y" }}</time>
+        </div>
+      </div>
+    </address>
+  {{ /collection:stories }}
+</article>

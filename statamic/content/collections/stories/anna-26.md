@@ -9,17 +9,33 @@ person_type: patient
 image: stories/Christine-Raab.png
 image_position: center
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1644346343
-content:
+updated_at: 1646829916
+contact:
+  -
+    contact_type: website
+    contact_text: www.google.com
+    contact_url: www.google.com
+    type: links
+    enabled: true
+  -
+    contact_type: facebook
+    contact_text: blub
+    contact_url: www.google.com
+    type: links
+    enabled: true
+description:
   -
     type: paragraph
     content:
       -
         type: text
+        text: Jährlich
+      -
+        type: text
         marks:
           -
             type: bold
-        text: "Jährlich erkranken fast eine halbe Millionen Menschen an Krebs. Doch wer sind diese Patient:innen?\_In den kommenden Wochen wollen wir derzeitigen Krebskämpfer:innen und ehemaligen Erkrankten ein Gesicht geben. Unsere erste Biografie ist von Anna Esposito, 26 Jahre. Vielen Dank für deine Geschichte,\_"
+        text: " erkranken fast eine halbe Millionen Menschen an Krebs. Doch wer sind diese Patient:innen?\_In den kommenden Wochen wollen wir derzeitigen Krebskämpfer:innen und ehemaligen Erkrankten ein Gesicht geben. Unsere erste Biografie ist von Anna Esposito, 26 Jahre. Vielen Dank für deine Geschichte,\_"
       -
         type: text
         marks:
@@ -39,6 +55,7 @@ content:
           -
             type: bold
         text: '!'
+content:
   -
     type: blockquote
     content:

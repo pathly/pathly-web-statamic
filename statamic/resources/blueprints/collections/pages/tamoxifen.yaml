@@ -17,30 +17,6 @@ sections:
           validate:
             - required
       -
-        handle: description
-        field:
-          always_show_set_button: false
-          buttons:
-            - bold
-            - italic
-            - anchor
-          save_html: false
-          toolbar_mode: fixed
-          link_noopener: false
-          link_noreferrer: false
-          target_blank: true
-          reading_time: false
-          fullscreen: true
-          allow_source: true
-          enable_input_rules: false
-          enable_paste_rules: false
-          antlers: false
-          display: Description
-          type: bard
-          icon: bard
-          listable: hidden
-          instructions_position: above
-      -
         handle: type
         field:
           options:
@@ -132,6 +108,30 @@ sections:
   content:
     display: Content
     fields:
+      -
+        handle: description
+        field:
+          always_show_set_button: false
+          buttons:
+            - bold
+            - italic
+            - anchor
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: true
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: false
+          enable_paste_rules: false
+          antlers: false
+          display: Description
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
       -
         handle: content
         field:
@@ -349,9 +349,6 @@ sections:
             - unorderedlist
             - orderedlist
             - anchor
-            - table
-            - code
-            - horizontalrule
           container: assets
           save_html: false
           toolbar_mode: floating

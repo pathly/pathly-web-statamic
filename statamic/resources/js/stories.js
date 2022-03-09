@@ -45,20 +45,15 @@ $(document).ready(function() {
     localStorage.setItem("favoritedStories", JSON.stringify(stored_data));
   });
 
-  $(".favorites-mode").on("click", function() {
+  $(".favorites-mode-toggle").on("click", function() {
     const url = new URL(window.location.href);
     let search_params = url.searchParams;
 
     let stored_data = JSON.parse(localStorage.getItem("favoritedStories"));
 
-    if ($(".favorites-mode").hasClass("active")) {
-      $(".favorites-mode").removeClass("active");
-      localStorage.setItem("favoritesMode", false);
-      // search_params.delete(item.param_type);
+    if ($(".favorites-mode-toggle").hasClass("active")) {
+      search_params.delete("favorite[]");
     } else {
-      $(".favorites-mode").addClass("active");
-      localStorage.setItem("favoritesMode", true);
-
       stored_data.forEach(function(item) {
         // add new param
         search_params.append("favorite" + "[]", item);

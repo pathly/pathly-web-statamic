@@ -67,13 +67,6 @@ sections:
           validate:
             - required
       -
-        handle: link
-        field:
-          display: Link
-          type: link
-          icon: link
-          listable: hidden
-      -
         handle: image
         field:
           mode: grid
@@ -97,6 +90,66 @@ sections:
           listable: hidden
           validate:
             - required
+      -
+        handle: contact
+        field:
+          collapse: false
+          sets:
+            links:
+              display: Links
+              fields:
+                -
+                  handle: contact_type
+                  field:
+                    options:
+                      website: Website
+                      facebook: Facebook
+                      instagram: Instagram
+                      tiktok: TikTok
+                      'null': null
+                    multiple: false
+                    max_items: 1
+                    clearable: false
+                    searchable: true
+                    taggable: false
+                    push_tags: false
+                    cast_booleans: false
+                    display: 'Type'
+                    type: select
+                    icon: select
+                    listable: hidden
+                    instructions_position: above
+                    validate:
+                      - required
+                -
+                  handle: contact_text
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: 'Displayed Text'
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    validate:
+                      - required
+                -
+                  handle: contact_url
+                  field:
+                    input_type: url
+                    antlers: false
+                    display: 'URL'
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    validate:
+                      - required
+          display: Contact
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
   sidebar:
     display: Sidebar
     fields:
@@ -129,6 +182,30 @@ sections:
     display: Content
     fields:
       -
+        handle: description
+        field:
+          always_show_set_button: false
+          buttons:
+            - bold
+            - italic
+            - anchor
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: true
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: false
+          enable_paste_rules: false
+          antlers: false
+          display: Description
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+      -
         handle: content
         field:
           always_show_set_button: false
@@ -153,6 +230,7 @@ sections:
                       - required
           buttons:
             - bold
+            - italic
             - quote
             - anchor
           container: assets

@@ -1,7 +1,7 @@
 ---
 id: 9ce8005e-0a5e-4600-8d28-65c42ed3b1d5
 blueprint: story
-title: 'Manuela, 36'
+title: 'Manuela Suttner, 36'
 name: Manuela
 age: 36
 cancer_type: lungcancer

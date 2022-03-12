@@ -102,18 +102,22 @@
     </div>
   </div>
 
-  <div>
-    <ul id="stories" class="tiles">
-      {{ collection:stories paginate="12" as="posts"
-      :filter_from_age="get:from_age"
-      :filter_to_age="get:to_age"
-      :cancer_type:contains="get:cancer_type"
-      :therapy_type:contains="get:therapy_type"
-      :person_type:contains="get:person_type"
-      :filter_favorites="get:favorite"
-      query_scope="stories" }}
+  <div class="blog">
+    {{ collection:stories paginate="6" as="posts"
+    :filter_from_age="get:from_age"
+    :filter_to_age="get:to_age"
+    :cancer_type:contains="get:cancer_type"
+    :therapy_type:contains="get:therapy_type"
+    :person_type:contains="get:person_type"
+    :filter_favorites="get:favorite"
+    query_scope="stories" }}
+
+      <p class="favorites-disclaimer {{ if !get:favorite }}hidden{{ /if }}">Hier kannst du deine Lieblingsgeschichten speichern.
+      <br>Achtung: Sobald du die Cookies in deinem Browser löschst, sind auch deine Favoriten weg.</p>
+
+      <div id="stories" class="tiles">
         {{ posts }}
-          <li class="card shadow">
+          <div class="card shadow">
             <a href="{{ url }}" target="_blank">
               <article>
                 <img src="{{ image }}" alt="{{ alt }}">
@@ -125,18 +129,34 @@
                   </div>
                 </div>
 
-                <h2>{{ title }}</h2>
+                <h2>{{ name }}, {{ age }}</h2>
               </article>
             </a>
-          </li>
-        {{ /posts }}
-        {{ paginate }}
-          <div>
-            <a href="{{ prev_page }}">Prev</a>
-            <a href="{{ next_page }}">Next</a>
           </div>
-        {{ /paginate }}
-      {{ /collection:stories }}
-    </ul>
+        {{ /posts }}
+      </div>
+
+      <div class="pagination">
+        <ul>
+          {{ paginate }}
+            {{ if prev_page }}
+              <li><a href="{{ prev_page }}"><</a></li>
+            {{ else }}
+              <li><a href="{{ prev_page }}" class="disabled"><</a></li>
+            {{ /if }}
+
+            {{ links:all }}
+              <li><a href="{{ url }}">{{ page }}</a></li>
+            {{ /links:all }}
+
+            {{ if next_page }}
+              <li><a href="{{ next_page }}">></a></li>
+            {{ else }}
+              <li><a href="{{ next_page }}" class="disabled">></a></li>
+            {{ /if }}
+          {{ /paginate }}
+        </ul>
+      </div>
+    {{ /collection:stories }}
   </div>
 </section>

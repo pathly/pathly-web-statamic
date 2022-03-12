@@ -53,16 +53,27 @@ $(document).ready(function() {
 
     if ($(".favorites-mode-toggle").hasClass("active")) {
       search_params.delete("favorite[]");
+      url.search = search_params.toString();
+      let new_url = url.toString();
+      window.location.href = new_url;
     } else {
-      stored_data.forEach(function(item) {
-        // add new param
-        search_params.append("favorite" + "[]", item);
-      });
+      if (stored_data.length > 0) {
+        // add new params
+        stored_data.forEach(function(item) {
+          search_params.append("favorite" + "[]", item);
+        });
+        // reload
+        url.search = search_params.toString();
+        let new_url = url.toString();
+        window.location.href = new_url;
+      } else {
+        // no favorites yet
+        $(this).toggleClass("active");
+        $(".blog .favorites-disclaimer").toggleClass("hidden");
+        $(".blog .tiles").toggleClass("hidden");
+        $(".blog .pagination").toggleClass("hidden");
+      }
     }
-
-    url.search = search_params.toString();
-    let new_url = url.toString();
-    window.location.href = new_url;
   });
 
 });

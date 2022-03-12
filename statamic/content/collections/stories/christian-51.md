@@ -1,7 +1,7 @@
 ---
 id: 12d59c23-4863-4038-8050-ede965bc6b64
 blueprint: story
-title: 'Christian, 51'
+title: 'Christian Nübling, 51'
 name: Christian
 age: 51
 cancer_type: gallbladdercancer
@@ -18,7 +18,9 @@ contact:
     type: links
     enabled: true
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1646859813
+updated_at: 1647097098
+passed_away: false
+release_date: '2022-03-12'
 content:
   -
     type: paragraph

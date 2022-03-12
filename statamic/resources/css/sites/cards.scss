@@ -131,79 +131,115 @@
   }
 }
 
-.card {
-  border-radius: var(--root24px);
-  background-color: white;
-  transition: all 0.5s ease;
+/* blog */
 
-  &:hover {
-    transform: translateY(-0.5em);
+.blog {
+  margin-top: 0;
+
+  .favorites-disclaimer {
+    margin-bottom: var(--root40px);
   }
 
-  a {
-    display: block;
-    padding: var(--root32px);
+  .card {
+    border-radius: var(--root24px);
+    background-color: white;
+    transition: all 0.5s ease;
 
-    article {
-      img {
-        border-radius: var(--root16px);
-        width: 100% !important;
-        aspect-ratio: 1;
-        object-fit: cover;
-      }
+    &:hover {
+      transform: translateY(-0.5em);
+    }
 
-      > div {
-        display: flex;
-        justify-content: space-between;
-        margin-top: var(--root32px);
-        margin-bottom: var(--root16px);
+    a {
+      display: block;
+      padding: var(--root32px);
 
-        span {
-          font-family: "azo-sans-web";
-          font-size: var(--root16px);
-          font-weight: 400;
-          padding: var(--root4px) var(--root16px);
-          border-radius: calc(var(--root16px) + 2 * var(--root4px)); /* font size + 2 * padding */
-          background-color: var(--purple_ultraLightViolett);
-          color: var(--purple_darkViolett);
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          margin-right: var(--root16px);
-          line-height: 1.6;
+      article {
+        img {
+          border-radius: var(--root16px);
+          width: 100% !important;
+          aspect-ratio: 1;
+          object-fit: cover;
         }
 
-        .favorite-toggle {
-          input {
-            display: none;
+        > div {
+          display: flex;
+          justify-content: space-between;
+          margin-top: var(--root32px);
+          margin-bottom: var(--root16px);
 
-            &:checked + label {
-              background-image: url("../images/heart_active.svg");
-            }
+          span {
+            font-family: "azo-sans-web";
+            font-size: var(--root16px);
+            font-weight: 400;
+            padding: var(--root4px) var(--root16px);
+            border-radius: calc(var(--root16px) + 2 * var(--root4px)); /* font size + 2 * padding */
+            background-color: var(--purple_ultraLightViolett);
+            color: var(--purple_darkViolett);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-right: var(--root16px);
+            line-height: 1.6;
           }
 
-          label {
-            display: block;
-            width: var(--root32px);
-            height: var(--root32px);
-            background-image: url("../images/heart_inactive.svg");
-            background-repeat: no-repeat;
-            background-position: right;
-            background-size: contain;
-            cursor: pointer;
+          .favorite-toggle {
+            input {
+              display: none;
 
-            &:hover {
-              background-image: url("../images/heart_hover.svg") !important;
+              &:checked + label {
+                background-image: url("../images/heart_active.svg");
+              }
             }
-          }
 
+            label {
+              display: block;
+              width: var(--root32px);
+              height: var(--root32px);
+              background-image: url("../images/heart_inactive.svg");
+              background-repeat: no-repeat;
+              background-position: right;
+              background-size: contain;
+              cursor: pointer;
+
+              &:hover {
+                background-image: url("../images/heart_hover.svg") !important;
+              }
+            }
+
+          }
+        }
+
+        h2 {
+          font-size: var(--root32px);
+          color: var(--primary_dark);
+          text-align: left;
         }
       }
+    }
+  }
 
-      h2 {
-        font-size: var(--root32px);
-        color: var(--primary_dark);
-        text-align: left;
+  .pagination {
+    margin-top: var(--root80px);
+    display: flex;
+    justify-content: center;
+
+    ul {
+      display: inline-flex;
+      justify-content: center;
+      border: 3px solid var(--primary_red);
+      border-radius: var(--root8px);
+
+      li {
+        background: white;
+        padding: var(--root8px) var(--root16px);
+
+        &:not(:last-child) {
+          border-right: 3px solid var(--primary_red);
+        }
+
+        a {
+          color: var(--primary_dark);
+        }
       }
     }
   }
@@ -426,7 +462,7 @@
 
     img {
       width: var(--root200px);
-      height: var(--root200px);
+      aspect-ratio: 1;
       border-radius: var(--root16px);
       object-fit: cover;
       margin-right: var(--root80px);
@@ -484,6 +520,8 @@
     .card-detail_body {
       .text {
         blockquote {
+          margin-top: var(--root40px);
+
           &::before {
             top: calc(-1 * var(--root40px));
           }

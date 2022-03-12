@@ -6,7 +6,7 @@
         <span>{{ cancer_type:title }}</span>
       </div>
 
-      <h1 class="">{{ title }}</h1>
+      <h1 class="">{{ name }}, {{ age }}</h1>
       <img src="{{ image }}" alt="{{ alt }}">
 
       {{ description }}
@@ -43,7 +43,7 @@
           {{ /contact }}
 
           <span>Datum</span>
-          <time datetime="{{ date format="Y-m-d" }}">{{ date format="d.m.Y" }}</time>
+          <time datetime="{{ date format="Y-m-d" }}">{{ release_date format="d.m.Y" }}</time>
         </div>
       </div>
     </address>

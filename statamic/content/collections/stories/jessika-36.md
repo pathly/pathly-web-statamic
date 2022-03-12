@@ -1,7 +1,7 @@
 ---
 id: 4564f690-4663-413b-9de6-ceb342a5e344
 blueprint: story
-title: 'Jessika, 36'
+title: 'Jessika Schliebe, 36'
 name: Jessika
 age: 36
 cancer_type: cervicalcancer

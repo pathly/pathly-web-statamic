@@ -66,7 +66,7 @@
 .header_nav .donation-button {
   display: flex;
   align-items: center;
-  margin-left: var(--root64px);
+  margin-left: var(--root40px);
   margin-top: 0;
   padding-left: var(--root80px);
   position: relative;
@@ -94,7 +94,6 @@
   position: relative;
   font-weight: 700;
   color: var(--primary_purple);
-  margin-left: var(--root40px);
   padding: var(--root24px);
 }
 

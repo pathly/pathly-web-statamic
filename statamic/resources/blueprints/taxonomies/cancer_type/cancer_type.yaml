@@ -1,0 +1,68 @@
+title: 'Cancer Type'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: additional_terms
+        field:
+          fields:
+            -
+              handle: term
+              field:
+                input_type: text
+                antlers: false
+                display: Term
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                validate:
+                  - required
+          mode: stacked
+          reorderable: true
+          display: 'Additional Terms'
+          type: grid
+          icon: grid
+          listable: hidden
+          instructions_position: above
+      -
+        handle: is_cancer_sub_type
+        field:
+          default: false
+          display: 'Is Cancer Sub Type?'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+      -
+        handle: cancer_parent_type
+        field:
+          mode: select
+          create: false
+          taxonomies:
+            - cancer_type
+          display: 'Cancer Parent Type'
+          type: terms
+          icon: taxonomy
+          listable: hidden
+          instructions_position: above
+          if:
+            is_cancer_sub_type: 'equals true'
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          validate:
+            - required

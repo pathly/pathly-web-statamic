@@ -1,38 +1,46 @@
 $(document).ready(function() {
 
+  // ------------------------------
+  // ----- Menu
+  // ------------------------------
+
   // open and close mobile menu
   $(".header_nav_mobile-burger-button").on("click", function () {
-      $(this).parent().toggleClass("active");
+    $(this).parent().toggleClass("active");
   });
 
   // move to sub menu
   $(".header_nav_list .is-parent").on("click", function () {
-      $(".header_nav_list .is-parent.active").removeClass("active");
-      $(this).toggleClass("active");
-      $("#header_nav").addClass("sub-menu-active");
+    $(".header_nav_list .is-parent.active").removeClass("active");
+    $(this).toggleClass("active");
+    $("#header_nav").addClass("sub-menu-active");
   });
 
   // move back from sub menu to main menu part
-  $( document ).on("click" , ".header_nav_sub_mobile-back-button", function(){
-      $("#header_nav").removeClass("sub-menu-active");
+  $(document).on("click", ".header_nav_sub_mobile-back-button", function() {
+    $("#header_nav").removeClass("sub-menu-active");
   });
 
   function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + "px";
   }
+
+  // ------------------------------
+  // ----- Cookies
+  // ------------------------------
 
   // open and close configure menu of cookie banner
   $(".oreos-form_buttons .configure-button").on("click", function () {
-      $(this).addClass("hidden");
-      $(".oreos-form_buttons .save-button").removeClass("hidden");
-      $(".oreos-form_options").removeClass("hidden");
+    $(this).addClass("hidden");
+    $(".oreos-form_buttons .save-button").removeClass("hidden");
+    $(".oreos-form_options").removeClass("hidden");
   });
 
   // ------------------------------
-  // ----- Section Slider – Slick Slider
+  // ----- Slick Slider
   // ------------------------------
 
-  $('.section_slider ul').slick({
+  $(".section_slider ul").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -56,18 +64,14 @@ $(document).ready(function() {
     ]
   });
 
-  // ------------------------------
-  // ----- Home – All Supporters – Slick Slider
-  // ------------------------------
-
-  $('.all-supporters_slick-slider_list').slick({
+  $(".all-supporters_slick-slider_list").slick({
     arrows: false,
     infinite: true,
     loop: true,
     autoplay: true,
     autoplaySpeed: 0,
     speed: 5000,
-    cssEase: 'linear',
+    cssEase: "linear",
     draggable: false,
     swipe: false,
     swipeToSlide: false,
@@ -125,23 +129,131 @@ $(document).ready(function() {
   }
 
   $(".video_thumbnail_disclaimer_button").on("click", function () {
-      var trigger = $(this).parent();
-      var wrapper = trigger.parent();
-      var layer = wrapper.find(".video_layer");
-      console.log(layer);
-      var section = wrapper.parent();
+    var trigger = $(this).parent();
+    var wrapper = trigger.parent();
+    var layer = wrapper.find(".video_layer");
+    console.log(layer);
+    var section = wrapper.parent();
 
-      var source = get_source_url();
-      var data_source = trigger.attr("data-source");
-      source = source.replace("{SOURCE}", data_source);
+    var source = get_source_url();
+    var data_source = trigger.attr("data-source");
+    source = source.replace("{SOURCE}", data_source);
 
-      layer.css("display", "block");
-      layer.find("iframe").attr("src", source);
+    layer.css("display", "block");
+    layer.find("iframe").attr("src", source);
 
-      wrapper.css("backgroundImage","");
-      wrapper.css("height", "auto");
-      trigger.hide();
-      section.find(".video_thumbnail_disclaimer_text").hide();
+    wrapper.css("backgroundImage","");
+    wrapper.css("height", "auto");
+    trigger.hide();
+    section.find(".video_thumbnail_disclaimer_text").hide();
   });
+
+  // ------------------------------
+  // ----- Filter – Change URL Params
+  // ------------------------------
+
+  $(".dropdown-button").on("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    $(this).siblings(".dropdown-menu").toggleClass("hidden");
+
+    $(document).one("click", function closeMenu (e) {
+      if($(".dropdown-menu").has(e.target).length === 0) {
+        $(".dropdown-menu").addClass("hidden");
+      } else {
+        $(document).one("click", closeMenu);
+      }
+    });
+  });
+
+  $(".dropdown-menu--select input").on("change", function() {
+    const new_param_type = $(this).attr("name");
+    const new_param = $(this).val();
+
+    const params = [
+      {
+        "param_type": new_param_type,
+        "param": new_param
+      }
+    ];
+
+    set_url_params(params);
+  });
+
+  $(".dropdown-menu--range input[type=submit]").on("click", function() {
+    const sibling_from = $(this).siblings("#from");
+    const new_param_type_from = sibling_from.attr("name");
+    const new_param_from = sibling_from.val();
+
+    const sibling_to = $(this).siblings("#to");
+    const new_param_type_to = sibling_to.attr("name");
+    const new_param_to = sibling_to.val();
+
+    const params = [
+      {
+        "param_type": new_param_type_from,
+        "param": new_param_from
+      },
+      {
+        "param_type": new_param_type_to,
+        "param": new_param_to
+      }
+    ];
+
+    set_url_params(params);
+  });
+
+  $(".dropdown-menu--range input[type=reset]").on("click", function() {
+    const sibling_from = $(this).siblings("#from");
+    const new_param_type_from = sibling_from.attr("name");
+
+    const sibling_to = $(this).siblings("#to");
+    const new_param_type_to = sibling_to.attr("name");
+
+    const params = [
+      {
+        "param_type": new_param_type_from,
+        "param": "none"
+      },
+      {
+        "param_type": new_param_type_to,
+        "param": "none"
+      }
+    ];
+
+    set_url_params(params);
+  });
+
+  function set_url_params(params) {
+    const url = new URL(window.location.href);
+    let search_params = url.searchParams;
+
+    params.forEach(function(item) {
+      let is_param_added = false;
+
+      if (item.param === "none") {
+        // reset/delete param
+        search_params.delete(item.param_type);
+      } else {
+        // edit existing param
+        search_params.forEach(function(value, key) {
+          if (key === item.param_type) {
+            search_params.set(key, item.param);
+            is_param_added = true;
+          }
+        });
+
+        // add new param
+        if (!is_param_added) {
+          search_params.append(item.param_type, item.param);
+        }
+      }
+    });
+
+    url.search = search_params.toString();
+    let new_url = url.toString();
+    window.location.href = new_url;
+  }
 
 });

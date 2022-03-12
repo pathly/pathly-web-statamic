@@ -10,7 +10,7 @@
   </div>
 </section>
 
-<section id="home_project" class="{{ about-project_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-project_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
+<section id="home_project" {{ if about-project_image_position == 'left' }} class="section_text-w-image-left section--top-spacing" {{ elseif about-project_image_position == 'right' }} class="section_text-w-image-right section--top-spacing" {{ endif }}>
   {{ about-project_image }}
     <img src="{{ url }}" alt="{{ alt }}"/>
   {{ /about-project_image }}
@@ -43,7 +43,7 @@
   </div>
 </section>
 
-<section id="home_founders" class="{{ about-founders_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-founders_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
+<section id="home_founders" {{ if about-founders_image_position == 'left' }} class="section_text-w-image-left section--top-spacing" {{ elseif about-founders_image_position == 'right' }} class="section_text-w-image-right section--top-spacing" {{ endif }}>
   {{ about-founders_image }}
     <img src="{{ url }}" alt="{{ alt }}"/>
   {{ /about-founders_image }}
@@ -69,7 +69,7 @@
 </section>
 
 {{ collaboration }}
-  <section id="home_project" class="{{ cta_image_position == 'left' ?= 'section_text-w-image-left' }}{{ cta_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
+  <section id="home_project" {{ if cta_image_position == 'left' }} class="section_text-w-image-left section--top-spacing" {{ elseif cta_image_position == 'right' }} class="section_text-w-image-right section--top-spacing" {{ endif }}>
     {{ cta_image }}
       <img src="{{ url }}" alt="{{ alt }}"/>
     {{ /cta_image }}

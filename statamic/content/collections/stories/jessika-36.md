@@ -6,10 +6,19 @@ name: Jessika
 age: 36
 cancer_type: cervicalcancer
 person_type: patient
-image: stories/Christine-Raab.png
+image: stories/j/Jessika-1-Titelbild.png
 image_position: center
-updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1646857884
+updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
+updated_at: 1647184720
+passed_away: false
+contact:
+  -
+    contact_type: instagram
+    contact_text: vj.ella
+    contact_url: 'https://www.instagram.com/vj.ella/'
+    type: links
+    enabled: true
+release_date: '2021-09-02'
 content:
   -
     type: blockquote
@@ -32,4 +41,13 @@ content:
           -
             type: text
             text: 'Ich empfehle jeder jungen Frau, jedes halbe Jahr zum Frauenarzt zu gehen und sich kontrollieren zu lassen. Lieber regelmäßig die Vorsorge machen lassen, als Gefahr zu laufen, die Therapie durchstehen zu müssen.«'
+  -
+    type: set
+    attrs:
+      values:
+        type: images
+        images:
+          - stories/j/Jessika-2.png
+          - stories/j/Jessika-3.png
+          - stories/j/Jessika-4.png
 ---

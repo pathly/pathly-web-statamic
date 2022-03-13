@@ -8,7 +8,6 @@ cancer_type: lungcancer
 therapy_type:
   - surgery
 person_type: patient
-image: stories/Christine-Raab.png
 image_position: center
 contact:
   -
@@ -17,21 +16,27 @@ contact:
     contact_url: 'https://www.instagram.com/halbelungevollepower/'
     type: links
     enabled: true
-updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1646858861
+updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
+updated_at: 1647183119
+passed_away: false
+release_date: '2021-12-20'
+image: stories/m/Melanie-Titelbild.png
 content:
   -
-    type: paragraph
+    type: blockquote
     content:
       -
-        type: text
-        text: '»Hallo, ich bin Mel, 42 Jahre alt, verheiratet und Mutter eines 6-Jährigen. Im April 2020 sagte mir der Arzt: ›Sie haben einen Tumor, aber den können wir entfernen. Allerdings werden Sie einen Teil des rechten Lungenflügels verlieren.‹ Ich war baff, das geht? Und wie das geht!'
-  -
-    type: paragraph
-    content:
+        type: paragraph
+        content:
+          -
+            type: text
+            text: '»Hallo, ich bin Mel, 42 Jahre alt, verheiratet und Mutter eines 6-Jährigen. Im April 2020 sagte mir der Arzt: ›Sie haben einen Tumor, aber den können wir entfernen. Allerdings werden Sie einen Teil des rechten Lungenflügels verlieren.‹ Ich war baff, das geht? Und wie das geht!'
       -
-        type: text
-        text: 'Letztendlich wurde mir im Mai 2021 fast der gesamte rechte Lungenflügel entfernt, da der Tumor ungünstig lag. Der restliche rechte Oberlappen, der geblieben war, war eingeschnappt und breitete sich nicht mehr aus.'
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Letztendlich wurde mir im Mai 2021 fast der gesamte rechte Lungenflügel entfernt, da der Tumor ungünstig lag. Der restliche rechte Oberlappen, der geblieben war, war eingeschnappt und breitete sich nicht mehr aus.'
   -
     type: paragraph
     content:
@@ -44,6 +49,14 @@ content:
       -
         type: text
         text: 'Wieder merkte ich, dass etwas nicht stimmt. Ich wurde aus der Klinik entlassen, ging in die Reha. Dort brach ich nach anderthalb Wochen zusammen. Ich konnte nicht mehr. Keiner wusste was los ist, wieder keiner glaubte mir, dass ich Eiter schmeckte. Von einem Krankenhaus kam ich ins nächste, dann die Diagnose: Empyem der Lunge (Eiterkapsel).'
+  -
+    type: set
+    attrs:
+      values:
+        type: images
+        images:
+          - stories/m/Melanie-2.png
+          - stories/m/Melanie-3.png
   -
     type: paragraph
     content:

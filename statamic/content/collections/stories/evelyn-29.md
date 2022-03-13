@@ -9,10 +9,19 @@ therapy_type:
   - hormonetherapy
   - surgery
 person_type: patient
-image: stories/Christine-Raab.png
+image: stories/e/Evelyn-1-Titelbild.png
 image_position: center
-updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1646859889
+updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
+updated_at: 1647186488
+passed_away: false
+contact:
+  -
+    contact_type: instagram
+    contact_text: simplyme.ev
+    contact_url: 'https://www.instagram.com/simplyme.ev/'
+    type: links
+    enabled: true
+release_date: '2021-12-09'
 content:
   -
     type: blockquote
@@ -35,4 +44,11 @@ content:
           -
             type: text
             text: 'Schon bald findet der Wechsel meines Implantates von über dem Muskel zu unter dem Muskel statt und auch meine erste große Nachuntersuchung steht an. Bitte drückt mir die Daumen ❤️ Ich drücke euch, Eure Evelyn«'
+  -
+    type: set
+    attrs:
+      values:
+        type: images
+        images:
+          - stories/e/Evelyn-2.png
 ---

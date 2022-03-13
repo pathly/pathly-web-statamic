@@ -10,7 +10,7 @@ therapy_type:
   - surgery
   - chemotherapy
 person_type: patient
-image: stories/Christine-Raab.png
+image: stories/m/Manuela-Titelbild.png
 image_position: center
 contact:
   -
@@ -19,8 +19,10 @@ contact:
     contact_url: 'https://www.instagram.com/ma_sutty/'
     type: links
     enabled: true
-updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1646859651
+updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
+updated_at: 1647183247
+passed_away: false
+release_date: '2021-12-07'
 content:
   -
     type: blockquote
@@ -49,16 +51,25 @@ content:
           -
             type: text
             text: 'Eine Mutationsanalyse wurde durchgeführt – Ergebnis EGFR-Mutation. Es kam eine zielgerichtete Therapie infrage. Eine Tablette pro Tag und alle drei Wochen eine Antikörperinfusion. Damit konnte ich leben – Hauptsache ›ich lebe‹ für meine Kinder und meine Familie. Ich habe die ersten Wochen so sehr geweint, als ich meine kleine Tochter im Arm hielt oder mit meiner Großen kuschelte! Die Gedanken, dass ich sie nicht aufwachsen sehen könnte, waren für mich die Hölle. Mein Mann hat mich immer aufgebaut und mir gesagt: ›Das war noch nicht alles!‹ Er hat Recht behalten! Schon nach dem ersten Kontroll-CT hieß es, die Therapie würde super anschlagen, die Metastase am Rippenfell seien nicht mehr sichtbar! Die Ärzte waren sich einig: Wir können operieren, wenn ich es wünsche! Denn nach ärztlichen Richtlinien war das eigentlich nicht mehr vorgesehen. Wieder blieb mir der Atem stehen, allerdings diesmal voller Freude und Glück – dieses Gefühl der Dankbarkeit. Es waren noch einige Krankenhausbesuche nötig und etliche Untersuchungen, aber diesmal mit dem Ziel, das Mistding aus meinem Körper zu bekommen. Schon allein dieser Gedanke hat mich noch mehr gestärkt und motiviert!'
+  -
+    type: set
+    attrs:
+      values:
+        type: images
+        images:
+          - stories/m/Manuela-3.png
+          - stories/m/Manuela-2.png
+          - stories/m/Manuela-4.png
+  -
+    type: paragraph
+    content:
       -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Leider wurde mein Nervenkostüm noch mehr strapaziert, da Corona auf dem Vormarsch war – mein erster OP-Termin musste aufgrund der damaligen Situation dann sogar verschoben werden. Im April 2020 war es dann aber soweit: Mir wurde der rechte obere Lungenlappen entfernt, das komplette Rippenfell wegen der Metastasen abgezogen und ein Teil vom Zwerchfell wurde vorsichtshalber auch entfernt. On top gab es eine Chemospülung in den Bauchraum. Die Zeit nach der Operation war schwieriger als gedacht: Ich habe sehr lange gebraucht bis ich wieder auf die Füße gekommen bin. Ohne fremde Hilfe ging am Anfang gar nichts! Nichtsdestotrotz wusste ich immer, wofür ich das Ganze mache: Für meine Kinder! Den Gedanken, dass die beiden mal ohne Mutter da stehen würden, wollte ich nicht akzeptieren – SO NICHT, nicht mit mir! Das sagte ich mir immer wieder!'
+        type: text
+        text: 'Leider wurde mein Nervenkostüm noch mehr strapaziert, da Corona auf dem Vormarsch war – mein erster OP-Termin musste aufgrund der damaligen Situation dann sogar verschoben werden. Im April 2020 war es dann aber soweit: Mir wurde der rechte obere Lungenlappen entfernt, das komplette Rippenfell wegen der Metastasen abgezogen und ein Teil vom Zwerchfell wurde vorsichtshalber auch entfernt. On top gab es eine Chemospülung in den Bauchraum. Die Zeit nach der Operation war schwieriger als gedacht: Ich habe sehr lange gebraucht bis ich wieder auf die Füße gekommen bin. Ohne fremde Hilfe ging am Anfang gar nichts! Nichtsdestotrotz wusste ich immer, wofür ich das Ganze mache: Für meine Kinder! Den Gedanken, dass die beiden mal ohne Mutter da stehen würden, wollte ich nicht akzeptieren – SO NICHT, nicht mit mir! Das sagte ich mir immer wieder!'
+  -
+    type: paragraph
+    content:
       -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Mittlerweile bin ich seit über einem Jahr krebsfrei – geheilt darf ich mich nicht nennen, da ich weiterhin meine Tabletten nehme, aber für mich fühlt es sich so an. Das das ist das, was für mich zählt.«'
+        type: text
+        text: 'Mittlerweile bin ich seit über einem Jahr krebsfrei – geheilt darf ich mich nicht nennen, da ich weiterhin meine Tabletten nehme, aber für mich fühlt es sich so an. Das das ist das, was für mich zählt.«'
 ---

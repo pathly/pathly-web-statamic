@@ -90,7 +90,6 @@ section {
   grid-column: 4/11;
 }
 
-.section_text h1,
 .section_text .section-headline {
   grid-column: 4/11;
   margin-bottom: var(--root40px);
@@ -149,6 +148,10 @@ section {
 
 .section_text-w-image-right {
   align-items: center;
+}
+
+.section_text-w-image-right .section-headline {
+  margin-bottom: var(--root40px);
 }
 
 .section_text-w-image-right > img,
@@ -220,6 +223,10 @@ section {
 
 .section_text-w-image-left {
   align-items: center;
+}
+
+.section_text-w-image-left .section-headline {
+  margin-bottom: var(--root40px);
 }
 
 .section_text-w-image-left > img,
@@ -419,7 +426,6 @@ section {
   grid-column: 2/13;
 }
 
-.section_slider h1,
 .section_slider .section-headline,
 .section_slider p  {
   grid-column: 2/13;
@@ -506,23 +512,18 @@ section {
 
 .section_pattern .section-headline--addition {
   grid-column: 2/13;
-  text-align: center;
 }
 
-.section_pattern h1,
 .section_pattern .section-headline {
   grid-column: 2/13;
-  margin-bottom: var(--root40px);
-  text-align: center;
+  margin-bottom: var(--root80px);
 }
 
 .section_pattern > div {
   grid-column: 2/13;
-  margin-top: var(--root40px);
 }
 
 @media (max-width: 450px) {
-  .section_pattern h1,
   .section_pattern .section-headline,
   .section_pattern .section-headline--addition {
     grid-column: 1/14;
@@ -578,17 +579,15 @@ section {
   grid-column: 2/13;
 }
 
-.section_alternating-pattern h1,
 .section_alternating-pattern .section-headline {
   grid-column: 2/13;
-  margin-bottom: var(--root40px);
+  margin-bottom: var(--root80px);
 }
 
 .section_alternating-pattern > div {
   grid-column: 1/14;
   display: grid;
   grid: inherit;
-  margin-top: var(--root40px);
 }
 
 .section_alternating-pattern > div a {
@@ -597,7 +596,6 @@ section {
 }
 
 @media (max-width: 450px) {
-  .section_alternating-pattern h1,
   .section_alternating-pattern .section-headline,
   .section_alternating-pattern .section-headline--addition {
     grid-column: 1/14;
@@ -892,10 +890,6 @@ button {
 /* -------------------------------------------------------------------------------- */
 /* --- replicator --- */
 /* -------------------------------------------------------------------------------- */
-
-.replicator {
-  margin-top: var(--root40px);
-}
 
 .replicator img {
   width: 100%;

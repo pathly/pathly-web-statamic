@@ -37,7 +37,7 @@ content:
     attrs:
       values:
         type: images
-        images:
+        content_images:
           - stories/s/Sabine--2.png
           - stories/s/Sabine--1.png
   -

@@ -71,7 +71,7 @@ content:
     attrs:
       values:
         type: images
-        images:
+        content_images:
           - stories/s/Sandra-3.png
           - stories/s/Sandra-2.png
   -

@@ -11,10 +11,19 @@ therapy_type:
   - hormonetherapy
   - radiationtherapy
 person_type: patient
-image: stories/Christine-Raab.png
+image: stories/s/Sophie-G-Titelbild.png
 image_position: center
-updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1646857698
+updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
+updated_at: 1647126368
+passed_away: false
+release_date: '2021-05-22'
+contact:
+  -
+    contact_type: instagram
+    contact_text: chaosmum_sophie
+    contact_url: 'https://www.instagram.com/chaosmum_sophie/'
+    type: links
+    enabled: true
 content:
   -
     type: blockquote
@@ -43,16 +52,38 @@ content:
           -
             type: text
             text: 'Nach 11 Monaten dauerhafter Chemotherapie wuchs mein Tumor plötzlich wieder. Amputation der linken Brust sowie Entfernung von 20 Lymphknoten folgte. Seit Januar 2021 befinde ich mich in Antihormontherapie, nehme Kisquali und hatte 30 Bestrahlungen.'
+  -
+    type: set
+    attrs:
+      values:
+        type: images
+        images:
+          - stories/s/Sophie-G-2.png
+          - stories/s/Sophie-G-3.png
+  -
+    type: paragraph
+    content:
       -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Dank Ernährungs- und allgemeiner Lebensumstellung geht es mir wieder richtig gut, ich bin froh über alles, was ich genießen kann und bin gespannt was das Leben noch für mich und meine Familie bereithält. Ich versuche immer das Positive zu sehen und lebe viel bewusster und intensiver seit ich die Diagnose erhalten habe.'
+        type: text
+        text: 'Dank Ernährungs- und allgemeiner Lebensumstellung geht es mir wieder richtig gut, ich bin froh über alles, was ich genießen kann und bin gespannt was das Leben noch für mich und meine Familie bereithält. Ich versuche immer das Positive zu sehen und lebe viel bewusster und intensiver seit ich die Diagnose erhalten habe.'
+  -
+    type: paragraph
+    content:
       -
-        type: paragraph
-        content:
+        type: text
+        text: 'Auf meiner Seite '
+      -
+        type: text
+        marks:
           -
-            type: text
-            text: 'Auf meiner Seite @chaosmum_sophie nehme ich euch mit in mein verrücktes Leben zwischen Therapie, Kindergarten, Homeschooling und normalen Alltag ♥️«'
+            type: link
+            attrs:
+              href: 'https://www.instagram.com/chaosmum_sophie/'
+              rel: null
+              target: _blank
+              title: null
+        text: '@chaosmum_sophie'
+      -
+        type: text
+        text: ' nehme ich euch mit in mein verrücktes Leben zwischen Therapie, Kindergarten, Homeschooling und normalen Alltag ♥️«'
 ---

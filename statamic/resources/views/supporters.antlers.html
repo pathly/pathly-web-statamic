@@ -12,15 +12,15 @@
   </div>
 </section>
 
-<section id="supporters_cooperations" class="section_pattern section--top-spacing">
+<section id="supporters_cooperations" class="section--top-spacing">
   {{ if cooperations_headline_addition }}
     <h2 class="section-headline--addition">{{ cooperations_headline_addition }}</h2>
   {{ /if }}
   <h2 class="section-headline">{{ cooperations_headline }}</h2>
 
-  <div id="cooperations_profile" class="tiles">
+  <div class="tiles">
     {{ cooperations_profiles }}
-      <div>
+      <div class="cooperations_profile">
         <a target="_blank" href="{{ cooperations_profile_url }}">
           {{ cooperations_profile_image }}
             <img src="{{ url }}" alt="{{ alt }}"/>
@@ -31,7 +31,7 @@
   </div>
 </section>
 
-<section id="supporters_sponsors" class="section_alternating-pattern section--top-spacing">
+<section id="supporters_sponsors" class="section--top-spacing">
   {{ if sponsors_headline_addition }}
     <h2 class="section-headline--addition">{{ sponsors_headline_addition }}</h2>
   {{ /if }}
@@ -40,13 +40,13 @@
   <div class="alternating-tiles">
       {{ sponsors_profiles }}
         <div id="sponsors_profile">
-          <div class="alternating-tiles_image-container">
+          <div class="image-container">
             {{ sponsors_profile_image }}
               <img src="{{ url }}" alt="{{ alt }}"/>
             {{ /sponsors_profile_image }}
           </div>
 
-          <div>
+          <div class="text-container">
             <h3>{{ sponsors_profile_name }}</h3>
             <p>{{ sponsors_profile_description }}</p>
             <a class="arrow-link" href="{{ sponsors_profile_url }}" target="_blank">Website</a>

@@ -10,7 +10,7 @@
   </picture>
 </section>
 
-<section id="team_profiles" class="section_pattern section--top-spacing">
+<section id="team_profiles" class="section--top-spacing">
   {{ if team_headline_addition }}
     <h2 class="section-headline--addition">{{ team_headline_addition }}</h2>
   {{ /if }}
@@ -18,7 +18,7 @@
 
   <div class="tiles">
     {{ team_profiles }}
-      <div id="team_profile" class="{{ !team_profile_is_active ?= 'inactive' }}">
+      <div class="team_profile {{ !team_profile_is_active ?= 'inactive' }}">
         {{ team_profile_image }}
           <img class="round-image shadow" src="{{ url }}" alt="{{ alt }}"/>
         {{ /team_profile_image }}

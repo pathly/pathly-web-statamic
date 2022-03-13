@@ -54,7 +54,7 @@ content:
     attrs:
       values:
         type: images
-        images:
+        content_images:
           - stories/m/Michael-.png
           - stories/m/Michael-2.png
   -

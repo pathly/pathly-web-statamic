@@ -3,7 +3,7 @@
   text-align: center;
   border-radius: var(--root16px);
   padding: var(--root80px);
-  margin-top: var(--root120px);
+  margin: var(--root120px) 0 var(--root40px) 0;
   pointer-events: none;
   text-decoration: none;
   color: inherit;

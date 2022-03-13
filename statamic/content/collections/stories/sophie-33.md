@@ -57,7 +57,7 @@ content:
     attrs:
       values:
         type: images
-        images:
+        content_images:
           - stories/s/Sophie-G-2.png
           - stories/s/Sophie-G-3.png
   -

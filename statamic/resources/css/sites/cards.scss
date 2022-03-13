@@ -344,6 +344,11 @@
         }
       }
 
+      p + blockquote,
+      blockquote + p {
+        margin-top: var(--root24px);
+      }
+
       h2 + *,
       h3 + *,
       * + h3,
@@ -557,7 +562,8 @@
       display: block;
 
       img {
-        display: none;
+        margin-right: 0;
+        margin-bottom: var(--root32px);
       }
     }
   }

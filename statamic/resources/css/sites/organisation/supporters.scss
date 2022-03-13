@@ -1,0 +1,29 @@
+.cooperations_profile {
+  @media (max-width: 650px) {
+    margin: 0 10%;
+    width: 80%;
+  }
+
+  a {
+    display: block;
+    padding: var(--root40px);
+    background-color: var(--purple_ultraLight);
+    border-radius: var(--root40px);
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.sponsors_profile {
+  .alternating-tiles_image-container {
+    background-color: var(--purple_ultraLight);
+    aspect-ratio: 1;
+    padding: var(--root40px);
+
+    img {
+      width: 100%;
+    }
+  }
+}

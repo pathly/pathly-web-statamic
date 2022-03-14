@@ -1,6 +1,5 @@
 ---
 id: cc63b15f-b1cd-49dc-9146-42944f07913c
-published: false
 blueprint: story
 title: 'Alexander Böhmer, 23'
 passed_away: false
@@ -20,13 +19,30 @@ contact:
     type: links
     enabled: true
 release_date: '2021-08-07'
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647204234
-content:
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1647264612
+description:
   -
     type: paragraph
     content:
       -
         type: text
-        text: _
+        text: 'Heute erzählen wir euch die faszinierende Geschichte von Alex Böhmer @alexboehm. Alex ist Krebsblogger und hat im August 2018 die Diagnose Knochenkrebs erhalten. Auf seinem Account berichtet er über seine Zeit im Krankenhaus, der Amputation seines rechten Beins, der Reha und dem Leben nach dem Krebs.'
+content:
+  -
+    type: blockquote
+    content:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: '»Ich bin Alex, 23 Jahre alt und ich hatte Krebs. Hatte. Denn seit nun knapp 2 Jahren bin ich krebsfrei. Dass mein Leben nach dem Krebs wieder genauso schnell, aufregend und lustig wird wie davor, hätte ich während der Zeit im Krankenhaus niemals gedacht. Während die Zeit im Krankenhaus von Sorge, Angst und Nebenwirkungen geprägt war, ist mein Leben jetzt voller Freude und Glück. Ich bin jeden Tag dankbar dafür, das ich gesund geworden bin und leben darf. Denn auch wenn der Krebs mir mein Bein genommen hat, so hat er mir nicht meine Lebensfreude genommen.«'
+  -
+    type: set
+    attrs:
+      values:
+        type: images
+        content_images:
+          - stories/a/Alex-B-2.png
 ---

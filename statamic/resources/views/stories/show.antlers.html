@@ -19,6 +19,11 @@
             {{ text }}
           </div>
 
+        {{ elseif type == "callout" }}
+          <div class="text callout" style="background-color:{{ content_callout_color }}">
+            {{ content_callout_content }}
+          </div>
+
         {{ elseif type == "images" }}
           <div class="images">
             {{ content_images }}

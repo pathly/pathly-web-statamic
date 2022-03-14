@@ -167,14 +167,27 @@ $(document).ready(function() {
     });
   });
 
-  $(".dropdown-menu--select input").on("change", function() {
-    const new_param_type = $(this).attr("name");
-    const new_param = $(this).val();
+  $(".dropdown-menu--select input[type=radio]").on("change", function() {
+    const param_type = $(this).attr("name");
+    const param = $(this).val();
 
     const params = [
       {
-        "param_type": new_param_type,
-        "param": new_param
+        "param_type": param_type,
+        "param": param
+      }
+    ];
+
+    set_url_params(params);
+  });
+
+  $(".dropdown-menu--select input[type=reset]").on("click", function() {
+    const param_type = $(this).attr("name");
+
+    const params = [
+      {
+        "param_type": param_type,
+        "param": "none"
       }
     ];
 
@@ -183,21 +196,21 @@ $(document).ready(function() {
 
   $(".dropdown-menu--range input[type=submit]").on("click", function() {
     const sibling_from = $(this).siblings("#from");
-    const new_param_type_from = sibling_from.attr("name");
-    const new_param_from = sibling_from.val();
+    const param_type_from = sibling_from.attr("name");
+    const param_from = sibling_from.val();
 
     const sibling_to = $(this).siblings("#to");
-    const new_param_type_to = sibling_to.attr("name");
-    const new_param_to = sibling_to.val();
+    const param_type_to = sibling_to.attr("name");
+    const param_to = sibling_to.val();
 
     const params = [
       {
-        "param_type": new_param_type_from,
-        "param": new_param_from
+        "param_type": param_type_from,
+        "param": param_from
       },
       {
-        "param_type": new_param_type_to,
-        "param": new_param_to
+        "param_type": param_type_to,
+        "param": param_to
       }
     ];
 
@@ -205,19 +218,16 @@ $(document).ready(function() {
   });
 
   $(".dropdown-menu--range input[type=reset]").on("click", function() {
-    const sibling_from = $(this).siblings("#from");
-    const new_param_type_from = sibling_from.attr("name");
-
-    const sibling_to = $(this).siblings("#to");
-    const new_param_type_to = sibling_to.attr("name");
+    const param_type_from = $(this).siblings("#from").attr("name");
+    const param_type_to = $(this).siblings("#to").attr("name");
 
     const params = [
       {
-        "param_type": new_param_type_from,
+        "param_type": param_type_from,
         "param": "none"
       },
       {
-        "param_type": new_param_type_to,
+        "param_type": param_type_to,
         "param": "none"
       }
     ];

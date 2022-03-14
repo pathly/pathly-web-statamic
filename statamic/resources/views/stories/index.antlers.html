@@ -17,14 +17,14 @@
         </button>
 
         <div class="dropdown-menu dropdown-menu--select shadow hidden">
-          <input id="type_none" value="none" name="cancer_type" type="radio">
-          <label for="type_none">– zurücksetzen –</label>
-          <hr>
-
           {{ taxonomy:cancer_type min_count="1" }}
             <input id="{{ slug }}" value="{{ slug }}" name="cancer_type" type="radio">
             <label for="{{ slug }}">{{ title }}</label>
           {{ /taxonomy:cancer_type }}
+
+          <hr>
+          <input id="type_none" name="cancer_type" type="reset">
+          <label class="reset" for="type_none">Filter zurücksetzen</label>
         </div>
       </div>
 
@@ -43,10 +43,15 @@
 
         <div class="dropdown-menu dropdown-menu--range shadow hidden">
           <input id="from" name="from_age" type="number" value="{{ get:from_age | sanitize }}">
-          -
+          <span>-</span>
           <input id="to" name="to_age" type="number" value="{{ get:to_age | sanitize }}">
-          <input name="age" type="submit">
-          <input name="age" type="reset">
+
+          <input id="age_submit" name="age" type="submit">
+          <label class="submit" for="age_submit">Anwenden</label>
+
+          <hr>
+          <input id="age_none" name="age" type="reset">
+          <label class="reset" for="age_none">Filter zurücksetzen</label>
         </div>
       </div>
 
@@ -62,14 +67,14 @@
         </button>
 
         <div class="dropdown-menu dropdown-menu--select shadow hidden">
-          <input id="therapy_none" value="none" name="therapy_type" type="radio">
-          <label for="therapy_none">– zurücksetzen –</label>
-          <hr>
-
           {{ taxonomy:therapy_type min_count="1" }}
             <input id="{{ slug }}" value="{{ slug }}" name="therapy_type" type="radio">
             <label for="{{ slug }}">{{ title }}</label>
           {{ /taxonomy:therapy_type }}
+
+          <hr>
+          <input id="therapy_none" name="therapy_type" type="reset">
+          <label class="reset" for="therapy_none">Filter zurücksetzen</label>
         </div>
       </div>
 
@@ -80,30 +85,30 @@
           {{ elseif get:person_type == "relative" }}
             Angehörige:r
           {{ else }}
-            Betroffenheit
+            Personengruppe
           {{ /if }}
         </button>
 
         <div class="dropdown-menu dropdown-menu--select shadow hidden">
-          <input id="person_none" value="none" name="person_type" type="radio">
-          <label for="person_none">– zurücksetzen –</label>
-          <hr>
-
           <input id="patient" value="patient" name="person_type" type="radio">
           <label for="patient">Patient:in</label>
           <input id="relative" value="relative" name="person_type" type="radio">
           <label for="relative">Angehörige:r</label>
+
+          <hr>
+          <input id="person_none" name="person_type" type="reset">
+          <label class="reset" for="person_none">Filter zurücksetzen</label>
         </div>
       </div>
     </div>
 
     <div>
-      <button class="favorites-mode-toggle {{ if get:favorite }}active{{ /if }}"></button>
+      <button class="favorites-mode-toggle {{ if get:favorite }}active{{ /if }}"><div></div></button>
     </div>
   </div>
 
   <div class="blog">
-    {{ collection:stories paginate="6" as="posts"
+    {{ collection:stories paginate="12" as="posts" sort="release_date:desc"
     :filter_from_age="get:from_age"
     :filter_to_age="get:to_age"
     :cancer_type:contains="get:cancer_type"

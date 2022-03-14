@@ -22,7 +22,7 @@ contact:
     enabled: true
 release_date: '2021-10-30'
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1647265408
+updated_at: 1647274552
 content:
   -
     type: blockquote
@@ -33,18 +33,18 @@ content:
           -
             type: text
             text: '»Hallo da draußen, mein Name ist Daniela, ich lebe in der Pfalz und meine Krebsgeschichte begann im Januar 2019. Ich bekam die Diagnose Brustkrebs.'
-  -
-    type: paragraph
-    content:
       -
-        type: text
-        text: 'Drei Jahre lang spürte ich schon drei Knoten und hatte immer ein ungutes Gefühl. Mein damaliger Frauenarzt sagte mir allerdings, es wäre harmlos. Trotz privatem Ultraschall hatte er die Diagnose immer wieder entkräftet. Im Januar 2019 wechselte ich schließlich den Arzt und dann ging alles ganz schnell. Die Frauenärztin war höchst alarmiert. Im Ultraschall war nicht viel zu sehen, doch der Tastbefund war wohl eindeutig 😳. Es kamen die Worte ›Das ist mit großer Wahrscheinlichkeit Krebs!‹ Es folgte die Mammografie, auch hier war nichts zu sehen. Dann die Stanzung, das Ergebnis: Krebs.'
-  -
-    type: paragraph
-    content:
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Drei Jahre lang spürte ich schon drei Knoten und hatte immer ein ungutes Gefühl. Mein damaliger Frauenarzt sagte mir allerdings, es wäre harmlos. Trotz privatem Ultraschall hatte er die Diagnose immer wieder entkräftet. Im Januar 2019 wechselte ich schließlich den Arzt und dann ging alles ganz schnell. Die Frauenärztin war höchst alarmiert. Im Ultraschall war nicht viel zu sehen, doch der Tastbefund war wohl eindeutig 😳. Es kamen die Worte ›Das ist mit großer Wahrscheinlichkeit Krebs!‹ Es folgte die Mammografie, auch hier war nichts zu sehen. Dann die Stanzung, das Ergebnis: Krebs.'
       -
-        type: text
-        text: 'Es brach für mich eine Welt zusammen. Ich rechnete mit dem Schlimmsten. Es folgte noch ein MRT. Dort war zu sehen, dass er sich dünn durch das Gewebe zog. Es war nicht definierbar wie groß er ist, wie weit er sich durchs Gewebe zieht. Auf einmal ging alles sehr schnell und die operative Entfernung der rechten Brust wurde veranlasst. Der pathologische Befund sagte, der Tumor war 9 auf 6 auf 4 cm groß und der Wächter-Lymphknoten war befallen. Es folgte eine weitere Operation, in der 20 Lymphknoten entfernt wurden, Chemotherapie und Bestrahlung. Das volle Programm. '
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Es brach für mich eine Welt zusammen. Ich rechnete mit dem Schlimmsten. Es folgte noch ein MRT. Dort war zu sehen, dass er sich dünn durch das Gewebe zog. Es war nicht definierbar wie groß er ist, wie weit er sich durchs Gewebe zieht. Auf einmal ging alles sehr schnell und die operative Entfernung der rechten Brust wurde veranlasst. Der pathologische Befund sagte, der Tumor war 9 auf 6 auf 4 cm groß und der Wächter-Lymphknoten war befallen. Es folgte eine weitere Operation, in der 20 Lymphknoten entfernt wurden, Chemotherapie und Bestrahlung. Das volle Programm. '
   -
     type: set
     attrs:

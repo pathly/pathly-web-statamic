@@ -15,8 +15,8 @@ contact:
     contact_url: 'https://www.instagram.com/michomb/'
     type: links
     enabled: true
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647196063
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1647275399
 passed_away: false
 release_date: '2021-12-26'
 content:
@@ -74,7 +74,7 @@ content:
             content:
               -
                 type: text
-                text: 'Mehr Informationen für Patienten mit schwarzem Hautkrebs gibt es beim '
+                text: 'Mehr Informationen für Patient:innen mit schwarzem Hautkrebs gibt es beim '
               -
                 type: text
                 marks:

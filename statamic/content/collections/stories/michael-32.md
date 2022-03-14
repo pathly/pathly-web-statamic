@@ -16,7 +16,7 @@ contact:
     type: links
     enabled: true
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647127830
+updated_at: 1647196063
 passed_away: false
 release_date: '2021-12-26'
 content:
@@ -64,5 +64,27 @@ content:
         type: text
         text: 'Viele Dinge, die früher scheinbar wichtig waren, sind es nun nicht mehr. Die richtig wichtigen Themen rücken in den Vordergrund. Und jetzt? Die Frage: Kann ich dem ganzen zuvorkommen? Ganz klar: JA! Hautkrebsvorsorge! Ein ab einem gewissen Alter von der Kasse bezahltes Instrument, um Hautkrebs früh zu entdecken und meinem Schicksal aus dem Weg zu gehen! Und selbst wenn es nicht bezahlt wird, ein auffälliges Muttermal zu kontrollieren, macht niemanden arm. 😊 Ich für meinen Teil habe beschlossen, den Kampf gegen den schwarzen Hautkrebs nicht aufzugeben. Ich werde kämpfen und kommunizieren, so viel und so oft ich kann. Vielleicht erreiche ich dadurch den einen oder anderen, der dann durch mich zur Hautkrebsvorsorge geht. Einen, dem ich durch mein Beispiel mein Schicksal ersparen kann. Passt auf euch auf! 😊«'
   -
-    type: paragraph
+    type: set
+    attrs:
+      values:
+        type: callout
+        content_callout_content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Mehr Informationen für Patienten mit schwarzem Hautkrebs gibt es beim '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://www.melanominfo.com/'
+                      rel: null
+                      target: _blank
+                      title: null
+                text: 'Melanom Info Deutschland e.V.'
+        content_callout_color: '#EAF9E2'
 ---

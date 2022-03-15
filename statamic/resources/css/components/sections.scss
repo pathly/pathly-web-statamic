@@ -9,7 +9,7 @@ section {
   position: relative;
 
   .section-headline {
-    margin-bottom: var(--root80px);
+    margin-bottom: var(--root40px);
   }
 
   .section-headline--addition,
@@ -306,7 +306,7 @@ section {
     }
   }
 
-  .section_video-full-width .video_thumbnail_disclaimer_text {
+  .video_thumbnail_disclaimer_text {
     position: absolute;
     bottom: 0;
     text-align: center;

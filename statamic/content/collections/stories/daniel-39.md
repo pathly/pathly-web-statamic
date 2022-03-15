@@ -20,8 +20,8 @@ contact:
     type: links
     enabled: true
 release_date: '2021-12-29'
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647199549
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1647264193
 content:
   -
     type: blockquote
@@ -43,7 +43,7 @@ content:
     content:
       -
         type: text
-        text: 'Zuerst wurde eine stationäre Chemotherapie versucht, die aber nicht angeschlagen hatte, sodass wir auf eine Tablettentherapie mit dem Medikament Cabozantinib umgeschwenkt sind. Diese Therapie wirkte bis Juli diesen Jahres, bis die Krankenkasse die neue Therapie genehmigt hatte, haben wir es erst mal mit dem Medikament Pazopanib wieder als Tablettentherapie versucht. Diese Therapieart schlug allerdings nicht an, weswegen ich seit Mitte Oktober das Medikament Axitinib in Tablettenform nehme und begleitend eine Immuntherapie bekomme.'
+        text: 'Zuerst wurde eine stationäre Chemotherapie versucht, die aber nicht angeschlagen hatte, sodass wir auf eine Tablettentherapie mit dem Medikament Cabozantinib umgeschwenkt sind. Diese Therapie wirkte bis Juli diesen Jahres. Bis die Krankenkasse eine neue Therapie genehmigt hatte, haben wir es erst mal mit dem Medikament Pazopanib wieder als Tablettentherapie versucht. Diese Therapieart schlug allerdings nicht an, weswegen ich seit Mitte Oktober das Medikament Axitinib in Tablettenform nehme und begleitend eine Immuntherapie bekomme.'
   -
     type: set
     attrs:

@@ -1,6 +1,5 @@
 ---
 id: 9d445dc8-8c94-4913-80da-3ad10f2543cd
-published: false
 blueprint: story
 title: 'Danita Lehmann, 25'
 passed_away: false
@@ -22,7 +21,7 @@ contact:
     enabled: true
 release_date: '2020-09-02'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647205035
+updated_at: 1647280738
 content:
   -
     type: paragraph

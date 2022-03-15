@@ -1,6 +1,5 @@
 ---
 id: abf90a37-495d-44ff-8488-1945b18b78c4
-published: false
 blueprint: story
 title: 'Franziska Baumgart, 25'
 passed_away: false
@@ -24,7 +23,7 @@ contact:
     enabled: true
 release_date: '2021-10-21'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647209837
+updated_at: 1647280755
 content:
   -
     type: paragraph

@@ -3,8 +3,8 @@ id: 0c70512f-c4ec-4640-8e88-707b66cb0aac
 blueprint: tamoxifen
 title: Tamoxifen
 image_position: center
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1646418685
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1647281681
 image: infos/Tamoxifen--Website.png
 template: tamoxifen
 type: info
@@ -292,6 +292,13 @@ content:
               - '56 Tabletten'
               - '20'
               - RY529
+          -
+            cells:
+              - 'Arcana Arzneimittel GmbH'
+              - 'Tamoxifen Arcana Tabletten'
+              - '30 Tabletten'
+              - '20'
+              - 00490A
   -
     type: heading
     attrs:

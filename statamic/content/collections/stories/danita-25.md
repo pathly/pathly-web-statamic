@@ -1,6 +1,5 @@
 ---
 id: 9d445dc8-8c94-4913-80da-3ad10f2543cd
-published: false
 blueprint: story
 title: 'Danita Lehmann, 25'
 passed_away: false

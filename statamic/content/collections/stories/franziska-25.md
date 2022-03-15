@@ -1,6 +1,5 @@
 ---
 id: abf90a37-495d-44ff-8488-1945b18b78c4
-published: false
 blueprint: story
 title: 'Franziska Baumgart, 25'
 passed_away: false

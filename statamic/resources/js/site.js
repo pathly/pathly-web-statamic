@@ -156,11 +156,12 @@ $(document).ready(function() {
     e.preventDefault();
     e.stopPropagation();
 
-    $(this).siblings(".dropdown-menu").toggleClass("hidden");
+    $(this).parent().toggleClass("active");
 
-    $(document).one("click", function closeMenu (e) {
-      if($(".dropdown-menu").has(e.target).length === 0) {
-        $(".dropdown-menu").addClass("hidden");
+    $(document).one("click", function closeMenu(e) {
+      if($(".dropdown").has(e.target).length === 0) {
+        $(".dropdown").removeClass("active");
+
       } else {
         $(document).one("click", closeMenu);
       }

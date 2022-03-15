@@ -16,7 +16,7 @@
           {{ /if }}
         </button>
 
-        <div class="dropdown-menu dropdown-menu--select shadow hidden">
+        <div class="dropdown-menu dropdown-menu--select shadow">
           {{ taxonomy:cancer_type min_count="1" }}
             <input id="{{ slug }}" value="{{ slug }}" name="cancer_type" type="radio">
             <label for="{{ slug }}">{{ title }}</label>
@@ -41,7 +41,7 @@
           {{ /if }}
         </button>
 
-        <div class="dropdown-menu dropdown-menu--range shadow hidden">
+        <div class="dropdown-menu dropdown-menu--range shadow">
           <input id="from" name="from_age" type="number" value="{{ get:from_age | sanitize }}">
           <span>-</span>
           <input id="to" name="to_age" type="number" value="{{ get:to_age | sanitize }}">
@@ -66,7 +66,7 @@
           {{ /if }}
         </button>
 
-        <div class="dropdown-menu dropdown-menu--select shadow hidden">
+        <div class="dropdown-menu dropdown-menu--select shadow">
           {{ taxonomy:therapy_type min_count="1" }}
             <input id="{{ slug }}" value="{{ slug }}" name="therapy_type" type="radio">
             <label for="{{ slug }}">{{ title }}</label>
@@ -89,7 +89,7 @@
           {{ /if }}
         </button>
 
-        <div class="dropdown-menu dropdown-menu--select shadow hidden">
+        <div class="dropdown-menu dropdown-menu--select shadow">
           <input id="patient" value="patient" name="person_type" type="radio">
           <label for="patient">Patient:in</label>
           <input id="relative" value="relative" name="person_type" type="radio">
@@ -107,6 +107,22 @@
     </div>
   </div>
 
+  {{ favorites-stories }}
+    <section class="favorites-disclaimer hidden {{ if favorites_image_position == 'left' }}section_text-w-image-left{{ elseif favorites_image_position == 'right' }}section_text-w-image-right{{ endif }}">
+      {{ favorites_image }}
+        <img src="{{ url }}" alt="{{ alt }}"/>
+      {{ /favorites_image }}
+
+      <div>
+        {{ if favorites_headline_addition }}
+          <h2 class="section-headline--addition">{{ favorites_headline_addition }}</h2>
+        {{ /if }}
+        <h2 class="section-headline">{{ favorites_headline }}</h2>
+        <p>{{ favorites_textarea }}</p>
+      </div>
+    </section>
+  {{ /favorites-stories }}
+
   <div class="blog">
     {{ collection:stories paginate="12" as="posts" sort="release_date:desc"
     :filter_from_age="get:from_age"
@@ -117,13 +133,10 @@
     :filter_favorites="get:favorite"
     query_scope="stories" }}
 
-      <p class="favorites-disclaimer {{ if !get:favorite }}hidden{{ /if }}">Hier kannst du deine Lieblingsgeschichten speichern.
-      <br>Achtung: Sobald du die Cookies in deinem Browser löschst, sind auch deine Favoriten weg.</p>
-
       <div id="stories" class="tiles">
         {{ posts }}
           <div class="card shadow">
-            <a href="{{ url }}" target="_blank">
+            <a href="{{ url }}">
               <article>
                 <img src="{{ image }}" alt="{{ alt }}">
                 <div>
@@ -141,27 +154,43 @@
         {{ /posts }}
       </div>
 
-      <div class="pagination">
-        <ul>
-          {{ paginate }}
-            {{ if prev_page }}
-              <li><a href="{{ prev_page }}"><</a></li>
-            {{ else }}
-              <li><a href="{{ prev_page }}" class="disabled"><</a></li>
-            {{ /if }}
 
-            {{ links:all }}
-              <li><a href="{{ url }}">{{ page }}</a></li>
-            {{ /links:all }}
+        {{ paginate }}
+          {{ if links }}
+            <ul class="pagination">
+              {{ if prev_page }}
+                <li>
+                  <a href="{{ prev_page }}">
+                    <div class="arrow--left"></div>
+                  </a>
+                </li>
+              {{ else }}
+                <li class="disabled">
+                  <div class="arrow--left"></div>
+                </li>
+              {{ /if }}
 
-            {{ if next_page }}
-              <li><a href="{{ next_page }}">></a></li>
-            {{ else }}
-              <li><a href="{{ next_page }}" class="disabled">></a></li>
-            {{ /if }}
-          {{ /paginate }}
-        </ul>
-      </div>
+              {{ links:all }}
+                <li {{ if page == current_page }} class="active" {{ endif }}>
+                  <a href="{{ url }}">{{ page }}</a>
+                </li>
+              {{ /links:all }}
+
+              {{ if next_page }}
+                <li>
+                  <a href="{{ next_page }}">
+                    <div class="arrow--right"></div>
+                  </a>
+                </li>
+              {{ else }}
+                <li class="disabled">
+                  <div class="arrow--right"></div>
+                </li>
+              {{ /if }}
+            </ul>
+          {{ /if }}
+        {{ /paginate }}
+
     {{ /collection:stories }}
   </div>
 </section>

@@ -218,6 +218,11 @@
 /* --- section supporters --- */
 /* -------------------------------------------------------------------------------- */
 
+#home_supporters .section-headline--addition,
+#home_supporters .section-headline {
+  text-align: center;
+}
+
 .all-supporters_slick-slider {
   grid-column: 1/14;
 }

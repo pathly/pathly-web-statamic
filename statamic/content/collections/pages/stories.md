@@ -1,6 +1,6 @@
 ---
 id: 66978426-e477-48bd-a511-b4593d8e02f9
-published: false
+published: true
 blueprint: overview
 title: Geschichten
 template: stories/index

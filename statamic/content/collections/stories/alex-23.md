@@ -20,7 +20,7 @@ contact:
     enabled: true
 release_date: '2021-08-07'
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1647264612
+updated_at: 1647355532
 description:
   -
     type: paragraph
@@ -45,4 +45,11 @@ content:
         type: images
         content_images:
           - stories/a/Alex-B-2.png
+  -
+    type: set
+    attrs:
+      values:
+        type: video
+        video_url: 'https://www.youtube-nocookie.com/embed/vhr4R6GKuwE'
+        video_thumbnail: stories/a/Alex-B-1-Titelbild.png
 ---

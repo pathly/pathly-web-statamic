@@ -3,17 +3,26 @@ id: 5a9d1aaf-b693-493c-9eb8-959a811eb732
 blueprint: collaboration
 title: Mitwirken
 intro_headline: 'Ihr könnt uns dabei helfen, Pathly in den App- und Play Store zu bringen!'
-intro_textarea: |-
-  Unser Verein für Krebspatient:innen und Angehörige befindet sich derzeit noch in der Entstehungsphase, weshalb wir stets auf der Suche nach Unterstützer:innen und neuen Impressionen sind.
-
-  Du bist Krebspatient:in, Angehörige:r oder möchtest dich für das Thema stark machen? Du übernimmst Verantwortung und arbeitest dich gerne in neue Themen ein? Du hast Lust Teil unseres Teams zu werden? Fang jetzt an zu helfen, denn wir brauchen Dich!
+intro_textarea:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Unser Verein für Krebspatient:innen und Angehörige befindet sich derzeit noch in der Entstehungsphase, weshalb wir stets auf der Suche nach Unterstützer:innen und neuen Impressionen sind. '
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Du bist Krebspatient:in, Angehörige:r oder möchtest dich für das Thema stark machen? Du übernimmst Verantwortung und arbeitest dich gerne in neue Themen ein? Du hast Lust Teil unseres Teams zu werden? Fang jetzt an zu helfen, denn wir brauchen Dich!'
 intro_image: collaboration_phone.svg
 feedback_headline_addition: Stimmen
 feedback_headline: 'Das sagt unsere Community'
 support_headline_addition: 'Du & Pathly'
 support_headline: 'So kannst du helfen!'
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1645201134
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1647352657
 template: collaboration
 feedback_quotes:
   -

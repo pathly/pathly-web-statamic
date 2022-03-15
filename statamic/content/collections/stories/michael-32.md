@@ -15,8 +15,8 @@ contact:
     contact_url: 'https://www.instagram.com/michomb/'
     type: links
     enabled: true
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647196063
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1647280111
 passed_away: false
 release_date: '2021-12-26'
 content:
@@ -43,12 +43,12 @@ content:
           -
             type: text
             text: '. Die Info über zahlreiche Metastasen habe ich ein Jahr nach meiner ursprünglichen Diagnose erhalten. Ich werde den Moment niemals vergessen, als meine Angst bestätigt wurde, noch viel schlimmer krank zu sein. Ich, mit meinem zumeist schlagfertigen Mundwerk, war sprachlos, hoffnungslos, niedergeschlagen, durch und durch voller Angst, alles durch die Diagnose: Schwarzer Hautkrebs.'
-  -
-    type: paragraph
-    content:
       -
-        type: text
-        text: 'All das soll durch ein kleines Muttermal entstanden sein? Ja, es hat sich ein wenig verändert, und ja, es hat hin und wieder gejuckt, aber das kleine Ding? Das kleine Ding soll diese verheerenden Auswirkungen haben? Ja, ein malignes Melanom ist unfassbar gefährlich und aggressiv, es frisst sich in Rekordtempo durch die Hautschichten und sobald es das geschafft hat, streut es liebend gerne in sämtliche Organe. Und dann ist es von einem auf den anderen Tag vorbei, das frühere Leben. Wie ein zweiter, noch dunklerer Schatten verfolgt dich das Thema Krebs, jeden Tag. Seither gab es keinen Tag mehr, an welchem ich nicht mit meiner Krankheit konfrontiert wurde. Schnell ist man gezeichnet von den ersten Wirkungen und Nebenwirkungen der Therapie. Therapieerfolge werden von zum Teil heftigen Nebenwirkungen begleitet. Aber mit diesen vereinbart man sein Leben, denn, es ist ein Leben. Jede, wirklich jede Nebenwirkung würde man eingehen, nur um den Worten ›krebsfrei‹ oder ›Heilung‹ näher zu kommen. Klar, einiges ist auch positiv zu betrachten, die Ansicht auf das Leben ändert sich. '
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'All das soll durch ein kleines Muttermal entstanden sein? Ja, es hat sich ein wenig verändert, und ja, es hat hin und wieder gejuckt, aber das kleine Ding? Das kleine Ding soll diese verheerenden Auswirkungen haben? Ja, ein malignes Melanom ist unfassbar gefährlich und aggressiv, es frisst sich in Rekordtempo durch die Hautschichten und sobald es das geschafft hat, streut es liebend gerne in sämtliche Organe. Und dann ist es von einem auf den anderen Tag vorbei, das frühere Leben. Wie ein zweiter, noch dunklerer Schatten verfolgt dich das Thema Krebs, jeden Tag. Seither gab es keinen Tag mehr, an welchem ich nicht mit meiner Krankheit konfrontiert wurde. Schnell ist man gezeichnet von den ersten Wirkungen und Nebenwirkungen der Therapie. Therapieerfolge werden von zum Teil heftigen Nebenwirkungen begleitet. Aber mit diesen vereinbart man sein Leben, denn, es ist ein Leben. Jede, wirklich jede Nebenwirkung würde man eingehen, nur um den Worten ›krebsfrei‹ oder ›Heilung‹ näher zu kommen. Klar, einiges ist auch positiv zu betrachten, die Ansicht auf das Leben ändert sich. '
   -
     type: set
     attrs:
@@ -74,7 +74,7 @@ content:
             content:
               -
                 type: text
-                text: 'Mehr Informationen für Patienten mit schwarzem Hautkrebs gibt es beim '
+                text: 'Mehr Informationen für Patient:innen mit schwarzem Hautkrebs gibt es beim '
               -
                 type: text
                 marks:

@@ -69,9 +69,8 @@ $(document).ready(function() {
       } else {
         // no favorites yet
         $(this).toggleClass("active");
-        $(".blog .favorites-disclaimer").toggleClass("hidden");
-        $(".blog .tiles").toggleClass("hidden");
-        $(".blog .pagination").toggleClass("hidden");
+        $(".favorites-disclaimer").toggleClass("hidden");
+        $(".blog").toggleClass("hidden");
       }
     }
   });

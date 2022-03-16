@@ -5,40 +5,120 @@
   margin-bottom: var(--root80px);
   display: flex;
   justify-content: space-between;
+  position: relative;
+
+  @media (max-width: 450px) {
+    grid-column: 1/14;
+  }
 
   > div {
-    display: flex;
+    /* this is only for mobile */
+    .all-dropdowns-wrapper {
+      display: flex;
+
+      @media (max-width: 1100px) {
+        display: none;
+      }
+
+      &.active {
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: var(--root24px);
+        padding: var(--root24px);
+        border-radius: var(--root24px);
+        background-color: white;
+        z-index: 2000;
+
+        @media (max-width: 450px) {
+          padding: var(--root16px);
+        }
+
+        .dropdown {
+          &:not(:last-child) {
+            margin-bottom: var(--root16px);
+          }
+
+          .dropdown-button {
+            width: 100%;
+            text-align: left;
+          }
+
+          .dropdown-menu {
+            position: relative;
+            padding-top: 0;
+
+            div {
+              background-color: none;
+              box-shadow: none;
+              padding: var(--root24px) 0;
+
+              @media (max-width: 450px) {
+                padding: 0;
+                padding-top: var(--root16px);
+              }
+            }
+
+            &.dropdown-menu--select {
+              div {
+                max-height: 30vh;
+                overflow: scroll;
+              }
+            }
+
+            &.dropdown-menu--range {
+              label.submit {
+                @media (max-width: 450px) {
+                  display: inline-block;
+                  margin-top: var(--root16px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
 
     .dropdown {
+      cursor: pointer;
+
+      &.mobile {
+        display: none;
+
+        .dropdown-button {
+          padding: var(--root8px) var(--root16px) var(--root8px) var(--root48px);
+
+          &::after {
+            content: none;
+          }
+        }
+
+        @media (max-width: 1100px) {
+          display: block;
+        }
+      }
+
       .dropdown-button {
         font-family: "neue-kabel";
         font-weight: 700;
         font-size: var(--root24px);
-        padding: var(--root8px) var(--root40px) var(--root8px) var(--root16px);
+        padding: var(--root8px) var(--root48px) var(--root8px) var(--root16px);
         margin-right: var(--root16px);
         border: 2px solid var(--primary_red);
         border-radius: var(--root96px);
         color: var(--primary_red);
+        background-color: var(--background);
         position: relative;
 
         &::after {
           content: '';
           position: absolute;
-          right: var(--root32px);
+          right: var(--root40px);
           transform: translate(calc(100% + 7px), 100%) rotate(45deg);
           height: var(--root8px);
           width: var(--root8px);
           border: var(--primary_red) solid;
           border-width: 0 2px 2px 0;
-        }
-
-        &:hover {
-          background-color: var(--primary_red);
-          color: var(--purple_ultraLight);
-
-          &::after {
-            border-color: white;
-          }
         }
 
         &.active {
@@ -53,38 +133,27 @@
 
       .dropdown-menu {
         display: none;
-      }
 
-      &.active {
-        .dropdown-button {
-          background-color: var(--primary_red);
-          color: var(--purple_ultraLight);
+        position: absolute;
+        font-family: "neue-kabel";
+        font-weight: 700;
+        color: var(--primary_red);
+        z-index: 2000;
+        padding-top: var(--root24px);
 
-          &::after {
-            border-color: white;
-            border-width: 2px 0 0 2px;
-            top: 10px;
-          }
-        }
-
-        .dropdown-menu {
-          display: block;
-          position: absolute;
-          font-family: "neue-kabel";
-          font-weight: 700;
-          color: var(--primary_red);
+        /* this div is importan for the hover effect */
+        div {
           background-color: white;
           border-radius: var(--root24px);
           padding: var(--root16px);
-          margin-top: var(--root24px);
-          cursor: pointer;
-          z-index: 2000;
-          max-height: 50vh;
-          overflow: scroll;
+        }
 
-          &.dropdown-menu--select {
+        &.dropdown-menu--select {
+          div {
             display: flex;
             flex-direction: column;
+            max-height: 50vh;
+            overflow: scroll;
 
             hr {
               border: 1px solid var(--primary_red);
@@ -117,8 +186,10 @@
               }
             }
           }
+        }
 
-          &.dropdown-menu--range {
+        &.dropdown-menu--range {
+          div {
             padding: var(--root16px);
 
             hr {
@@ -189,6 +260,42 @@
           }
         }
       }
+
+      &.active {
+        .dropdown-button {
+          background-color: var(--primary_red);
+          color: var(--purple_ultraLight);
+
+          &::after {
+            border-color: white;
+            border-width: 2px 0 0 2px;
+            top: 10px;
+          }
+        }
+
+        .dropdown-menu {
+          display: block;
+        }
+      }
+
+      @media (min-width: 1100px) {
+        &:hover {
+          .dropdown-button {
+            background-color: var(--primary_red);
+            color: var(--purple_ultraLight);
+
+            &::after {
+              border-color: white;
+              border-width: 2px 0 0 2px;
+              top: 10px;
+            }
+          }
+
+          .dropdown-menu {
+            display: block;
+          }
+        }
+      }
     }
   }
 
@@ -196,6 +303,7 @@
     cursor: pointer;
     border: 2px solid var(--primary_red);
     border-radius: var(--root56px);
+    overflow: hidden;
 
     div {
       width: var(--root24px);
@@ -232,6 +340,7 @@
     border-radius: var(--root24px);
     background-color: white;
     transition: all 0.5s ease;
+    cursor: pointer;
 
     &:hover {
       transform: translateY(-0.5em);

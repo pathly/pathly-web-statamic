@@ -149,14 +149,17 @@ $(document).ready(function() {
   });
 
   // ------------------------------
-  // ----- Filter – Change URL Params
+  // ----- Filter – Open Filter Button Options
   // ------------------------------
 
-  $(".dropdown-button").on("click", function(e) {
+  $(".dropdown-button").not(".dropdown.mobile .dropdown-button").on("click", function(e) {
     e.preventDefault();
     e.stopPropagation();
 
-    $(this).parent().toggleClass("active");
+    const parent = $(this).parent();
+
+    $(".dropdown:not(.mobile)").not(parent).removeClass("active");
+    parent.toggleClass("active");
 
     $(document).one("click", function closeMenu(e) {
       if($(".dropdown").has(e.target).length === 0) {
@@ -167,6 +170,32 @@ $(document).ready(function() {
       }
     });
   });
+
+  // ------------------------------
+  // ----- Filter – Open Filter Buttons (Mobile)
+  // ------------------------------
+
+  $(".dropdown.mobile .dropdown-button").on("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const parent = $(this).parent();
+    parent.siblings(".all-dropdowns-wrapper").toggleClass("active");
+    parent.toggleClass("active");
+
+    $(document).one("click", function closeMenu(e) {
+      if($(".dropdown").has(e.target).length === 0) {
+        $(".dropdown").removeClass("active");
+        $(".all-dropdowns-wrapper").removeClass("active");
+      } else {
+        $(document).one("click", closeMenu);
+      }
+    });
+  });
+
+  // ------------------------------
+  // ----- Filter – Change URL Params
+  // ------------------------------
 
   $(".dropdown-menu--select input[type=radio]").on("change", function() {
     const param_type = $(this).attr("name");

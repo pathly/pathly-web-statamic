@@ -3,7 +3,9 @@
     <div class="card-detail_header">
       <div>
         <span>Geschichte</span>
-        <span>{{ cancer_type:title }}</span>
+        {{ cancer_type }}
+          <span>{{ title }}</span>
+        {{ /cancer_type }}
       </div>
 
       <h1 class="">{{ name }}, {{ age }}</h1>
@@ -65,7 +67,7 @@
               </a>
             {{ /content_links }}
           </div>
-          
+
         {{ /if }}
       {{ /content }}
     </div>

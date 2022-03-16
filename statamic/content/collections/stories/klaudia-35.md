@@ -49,7 +49,7 @@ content:
     attrs:
       values:
         type: images
-        images:
+        content_images:
           - stories/k/Klaudia-2.png
           - stories/k/Klaudia-3.png
   -

@@ -16,7 +16,7 @@
         font-size: var(--root24px);
         padding: var(--root8px) var(--root40px) var(--root8px) var(--root16px);
         margin-right: var(--root16px);
-        border: calc(var(--root4px)/2) solid var(--primary_red);
+        border: 2px solid var(--primary_red);
         border-radius: var(--root96px);
         color: var(--primary_red);
         position: relative;
@@ -87,7 +87,7 @@
             flex-direction: column;
 
             hr {
-              border: calc(var(--root4px)/4) solid var(--primary_red);
+              border: 1px solid var(--primary_red);
               margin: var(--root8px);
             }
 
@@ -140,7 +140,7 @@
               text-align: center;
               width: var(--root80px);
               height: var(--root48px);
-              border: calc(var(--root4px)/2) solid var(--primary_red);
+              border: 2px solid var(--primary_red);
               border-radius: var(--root48px);
 
               &::-webkit-inner-spin-button,
@@ -194,7 +194,7 @@
 
   .favorites-mode-toggle {
     cursor: pointer;
-    border: calc(var(--root4px)/2) solid var(--primary_red);
+    border: 2px solid var(--primary_red);
     border-radius: var(--root56px);
 
     div {
@@ -318,7 +318,7 @@
       justify-content: center;
       align-items: center;
       border-radius: calc(var(--root24px) + 2 * var(--root8px)); /* fontsize + 2 * padding */
-      border: calc(var(--root4px)/2) solid var(--primary_red);
+      border: 2px solid var(--primary_red);
       margin: 0 var(--root4px);
 
       a {

@@ -49,6 +49,6 @@ content:
     attrs:
       values:
         type: images
-        images:
+        content_images:
           - stories/e/Evelyn-2.png
 ---

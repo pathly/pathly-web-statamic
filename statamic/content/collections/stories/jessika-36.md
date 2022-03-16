@@ -46,7 +46,7 @@ content:
     attrs:
       values:
         type: images
-        images:
+        content_images:
           - stories/j/Jessika-2.png
           - stories/j/Jessika-3.png
           - stories/j/Jessika-4.png

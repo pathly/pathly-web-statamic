@@ -56,7 +56,7 @@ content:
     attrs:
       values:
         type: images
-        images:
+        content_images:
           - stories/m/Manuela-3.png
           - stories/m/Manuela-2.png
           - stories/m/Manuela-4.png

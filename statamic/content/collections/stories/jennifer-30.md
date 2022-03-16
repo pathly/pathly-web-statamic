@@ -48,7 +48,7 @@ content:
     attrs:
       values:
         type: images
-        images:
+        content_images:
           - stories/j/Jennifer-2.png
           - stories/j/Jennifer-3.png
   -

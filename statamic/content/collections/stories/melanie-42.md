@@ -54,7 +54,7 @@ content:
     attrs:
       values:
         type: images
-        images:
+        content_images:
           - stories/m/Melanie-2.png
           - stories/m/Melanie-3.png
   -

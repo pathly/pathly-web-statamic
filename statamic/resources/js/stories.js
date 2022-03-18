@@ -69,7 +69,7 @@ $(document).ready(function() {
       } else {
         // no favorites yet
         $(this).toggleClass("active");
-        $(".favorites-disclaimer").toggleClass("hidden");
+        $(".no-favorites-disclaimer").toggleClass("hidden");
         $(".blog").toggleClass("hidden");
       }
     }

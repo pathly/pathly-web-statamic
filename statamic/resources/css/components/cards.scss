@@ -2,7 +2,7 @@
 
 .filter {
   grid-column: 2/13;
-  margin-bottom: var(--root80px);
+  margin-bottom: var(--root40px);
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -12,97 +12,15 @@
   }
 
   > div {
-    /* this is only for mobile */
-    .all-dropdowns-wrapper {
-      display: flex;
-
-      @media (max-width: 1100px) {
-        display: none;
-      }
-
-      &.active {
-        display: block;
-        position: absolute;
-        width: 100%;
-        margin-top: var(--root24px);
-        padding: var(--root24px);
-        border-radius: var(--root24px);
-        background-color: white;
-        z-index: 2000;
-
-        @media (max-width: 450px) {
-          padding: var(--root16px);
-        }
-
-        .dropdown {
-          &:not(:last-child) {
-            margin-bottom: var(--root16px);
-          }
-
-          .dropdown-button {
-            width: 100%;
-            text-align: left;
-          }
-
-          .dropdown-menu {
-            position: relative;
-            padding-top: 0;
-
-            div {
-              background-color: none;
-              box-shadow: none;
-              padding: var(--root24px) 0;
-
-              @media (max-width: 450px) {
-                padding: 0;
-                padding-top: var(--root16px);
-              }
-            }
-
-            &.dropdown-menu--select {
-              div {
-                max-height: 30vh;
-                overflow: scroll;
-              }
-            }
-
-            &.dropdown-menu--range {
-              label.submit {
-                @media (max-width: 450px) {
-                  display: inline-block;
-                  margin-top: var(--root16px);
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
+    /* dropdown general */
     .dropdown {
       cursor: pointer;
-
-      &.mobile {
-        display: none;
-
-        .dropdown-button {
-          padding: var(--root8px) var(--root16px) var(--root8px) var(--root48px);
-
-          &::after {
-            content: none;
-          }
-        }
-
-        @media (max-width: 1100px) {
-          display: block;
-        }
-      }
 
       .dropdown-button {
         font-family: "neue-kabel";
         font-weight: 700;
         font-size: var(--root24px);
-        padding: var(--root8px) var(--root48px) var(--root8px) var(--root16px);
+        padding: var(--root8px) var(--root48px) var(--root8px) var(--root24px);
         margin-right: var(--root16px);
         border: 2px solid var(--primary_red);
         border-radius: var(--root96px);
@@ -141,110 +59,32 @@
         z-index: 2000;
         padding-top: var(--root24px);
 
-        /* this div is importan for the hover effect */
-        div {
+        /* this div is important for the hover effect */
+        > div {
           background-color: white;
           border-radius: var(--root24px);
           padding: var(--root16px);
-        }
 
-        &.dropdown-menu--select {
+          /* this div is important for sticky reset */
           div {
-            display: flex;
-            flex-direction: column;
-            max-height: 50vh;
-            overflow: scroll;
-
-            hr {
-              border: 1px solid var(--primary_red);
-              margin: var(--root8px);
-            }
-
             input {
               display: none;
             }
 
             label {
-              padding: var(--root16px);
               cursor: pointer;
-
-              &:hover {
-                background-color: var(--shadow_red);
-                border-radius: var(--root8px);
-              }
-
-              &.reset {
-                opacity: 0.5;
-
-                &:hover {
-                  opacity: 1;
-                }
-
-                &::after {
-                  /* TODO */
-                }
-              }
             }
-          }
-        }
 
-        &.dropdown-menu--range {
-          div {
-            padding: var(--root16px);
-
-            hr {
-              border: calc(var(--root4px)/4) solid var(--primary_red);
+            &.reset-wrapper {
+              display: none !important;
               margin-top: var(--root16px);
-              margin-bottom: var(--root8px);
-            }
 
-            span {
-              font-weight: 500;
-            }
-
-            input[type=number] {
-              appearance: none;
-              font-family: "neue-kabel";
-              font-weight: 700;
-              font-size: var(--root24px);
-              color: var(--primary_red);
-              text-align: center;
-              width: var(--root80px);
-              height: var(--root48px);
-              border: 2px solid var(--primary_red);
-              border-radius: var(--root48px);
-
-              &::-webkit-inner-spin-button,
-              &::-webkit-outer-spin-button {
-                appearance: none;
-              }
-            }
-
-            input[type=submit],
-            input[type=reset] {
-              display: none;
-            }
-
-            label {
-              cursor: pointer;
-
-              &.submit {
-                border-radius: var(--root48px);
-                background-color: var(--primary_red);
-                box-shadow: 0 var(--root8px) var(--root48px) var(--shadow_red);
-                -moz-box-shadow: 0 var(--root8px) var(--root48px) var(--shadow_red);
-                -webkit-box-shadow: 0 var(--root8px) var(--root48px) var(--shadow_red);
-                color: var(--purple_ultraLight);
-
-                margin-left: var(--root8px);
-                margin-bottom: var(--root8px);
-                padding: var(--root8px) var(--root16px);
-              }
-
-              &.reset {
-                display: block;
-                padding: var(--root16px);
+              label {
+                display: flex;
+                align-items: center;
                 opacity: 0.5;
+                padding: var(--root16px);
+                width: 100%;
 
                 &:hover {
                   opacity: 1;
@@ -253,7 +93,80 @@
                 }
 
                 &::after {
-                  /* TODO */
+                  width: var(--root24px);
+                  height: var(--root24px);
+                  position: absolute;
+                  content: "";
+                  right: var(--root16px);
+                  background-image: url("../images/cancel.svg");
+                  background-repeat: no-repeat;
+                  background-size: 100%;
+                }
+              }
+            }
+          }
+        }
+
+        &.dropdown-menu--select {
+          /* this div is important for hover effect */
+          > div {
+            /* this div is important for sticky reset */
+            div {
+              display: flex;
+              flex-direction: column;
+              position: relative;
+              max-height: 50vh;
+              overflow: scroll;
+
+              label {
+                padding: var(--root16px);
+
+                &:hover {
+                  background-color: var(--shadow_red);
+                  border-radius: var(--root8px);
+                }
+              }
+            }
+          }
+        }
+
+        &.dropdown-menu--range {
+          > div {
+            div {
+              span {
+                font-weight: 500;
+              }
+
+              input[type=number] {
+                display: initial;
+                appearance: none;
+                font-family: "neue-kabel";
+                font-weight: 700;
+                font-size: var(--root24px);
+                color: var(--primary_red);
+                text-align: center;
+                width: var(--root80px);
+                height: var(--root48px);
+                border: 2px solid var(--primary_red);
+                border-radius: var(--root48px);
+
+                &::-webkit-inner-spin-button,
+                &::-webkit-outer-spin-button {
+                  appearance: none;
+                }
+              }
+
+              label {
+                &.submit {
+                  border-radius: var(--root48px);
+                  background-color: var(--primary_red);
+                  box-shadow: 0 var(--root8px) var(--root48px) var(--shadow_red);
+                  -moz-box-shadow: 0 var(--root8px) var(--root48px) var(--shadow_red);
+                  -webkit-box-shadow: 0 var(--root8px) var(--root48px) var(--shadow_red);
+                  color: var(--purple_ultraLight);
+
+                  margin-left: var(--root8px);
+                  padding: var(--root8px) var(--root16px);
                 }
               }
             }
@@ -261,6 +174,13 @@
         }
       }
 
+      .dropdown-button.active + .dropdown-menu {
+        .reset-wrapper {
+          display: flex !important;
+        }
+      }
+
+      /* dropdown & active */
       &.active {
         .dropdown-button {
           background-color: var(--primary_red);
@@ -278,8 +198,27 @@
         }
       }
 
-      @media (min-width: 1100px) {
-        &:hover {
+      /* dropdown & mobile */
+      &.mobile {
+        display: none;
+
+        .dropdown-button {
+          padding: var(--root8px) var(--root16px) var(--root8px) var(--root48px);
+
+          &::after {
+            content: none;
+          }
+        }
+
+        @media (max-width: 1100px) {
+          display: block;
+        }
+      }
+
+      /* dropdown & hover */
+      &:hover {
+        /* only desktop */
+        @media (min-width: 1100px) {
           .dropdown-button {
             background-color: var(--primary_red);
             color: var(--purple_ultraLight);
@@ -293,6 +232,77 @@
 
           .dropdown-menu {
             display: block;
+          }
+        }
+      }
+    }
+
+    /* only for mobile */
+    .all-dropdowns-wrapper {
+      display: flex;
+
+      @media (max-width: 1100px) {
+        display: none;
+      }
+
+      &.active {
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: var(--root24px);
+        padding: var(--root24px);
+        border-radius: var(--root24px);
+        background-color: white;
+        z-index: 2000;
+
+        @media (max-width: 450px) {
+          padding: var(--root16px);
+        }
+
+        .dropdown {
+          &:not(:last-child) {
+            margin-bottom: var(--root16px);
+          }
+
+          .dropdown-button {
+            width: 100%;
+            text-align: left;
+            padding-left: var(--root16px);
+          }
+
+          .dropdown-menu {
+            position: relative;
+            padding-top: 0;
+
+            > div {
+              background-color: none;
+              box-shadow: none;
+              padding: var(--root24px) 0;
+
+              @media (max-width: 450px) {
+                padding: 0;
+                padding-top: var(--root16px);
+              }
+            }
+
+            &.dropdown-menu--select {
+              /* first div is important for hover effect */
+              /* second div is important for sticky reset */
+              > div div {
+                max-height: 30vh;
+                overflow: scroll;
+              }
+            }
+
+            &.dropdown-menu--range {
+              label.submit {
+                @media (max-width: 450px) {
+                  display: inline-block;
+                  margin-top: var(--root16px);
+                  margin-left: 0;
+                }
+              }
+            }
           }
         }
       }
@@ -327,89 +337,94 @@
   }
 }
 
+.favorites-disclaimer {
+  /* TODO */
+}
+
 /* blog */
 
 .blog {
   margin-top: 0;
 
-  .favorites-disclaimer {
-    margin-bottom: var(--root40px);
-  }
-
-  .card {
-    border-radius: var(--root24px);
-    background-color: white;
-    transition: all 0.5s ease;
-    cursor: pointer;
-
-    &:hover {
-      transform: translateY(-0.5em);
+  .tiles {
+    @media (max-width: 1400px) {
+      grid-gap: var(--root56px);
     }
 
-    a {
-      display: block;
-      padding: var(--root32px);
+    .card {
+      border-radius: var(--root24px);
+      background-color: white;
+      transition: all 0.5s ease;
+      cursor: pointer;
 
-      article {
-        img {
-          border-radius: var(--root16px);
-          width: 100% !important;
-          aspect-ratio: 1;
-          object-fit: cover;
-        }
+      &:hover {
+        transform: translateY(-0.5em);
+      }
 
-        > div {
-          display: flex;
-          justify-content: space-between;
-          margin-top: var(--root32px);
-          margin-bottom: var(--root16px);
+      a {
+        display: block;
+        padding: var(--root32px);
 
-          span {
-            font-family: "azo-sans-web";
-            font-size: var(--root16px);
-            font-weight: 400;
-            padding: var(--root4px) var(--root16px);
-            border-radius: calc(var(--root16px) + 2 * var(--root4px)); /* font size + 2 * padding */
-            background-color: var(--purple_ultraLightViolett);
-            color: var(--purple_darkViolett);
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            margin-right: var(--root16px);
-            line-height: 1.6;
+        article {
+          img {
+            border-radius: var(--root16px);
+            width: 100% !important;
+            aspect-ratio: 1;
+            object-fit: cover;
           }
 
-          .favorite-toggle {
-            input {
-              display: none;
+          > div {
+            display: flex;
+            justify-content: space-between;
+            margin-top: var(--root32px);
+            margin-bottom: var(--root16px);
 
-              &:checked + label {
+            span {
+              font-family: "azo-sans-web";
+              font-size: var(--root16px);
+              font-weight: 400;
+              padding: var(--root4px) var(--root16px);
+              border-radius: calc(var(--root16px) + 2 * var(--root4px)); /* font size + 2 * padding */
+              background-color: var(--purple_ultraLightViolett);
+              color: var(--purple_darkViolett);
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              margin-right: var(--root16px);
+              line-height: 1.6;
+            }
+
+            .favorite-toggle {
+              input {
+                display: none;
+              }
+
+              label {
+                display: block;
+                width: var(--root32px);
+                height: var(--root32px);
+                background-image: url("../images/heart_inactive.svg");
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: contain;
+                cursor: pointer;
+
+                &:hover {
+                  background-image: url("../images/heart_hover.svg") !important;
+                }
+              }
+
+              input:checked + label {
                 background-image: url("../images/heart_active.svg");
               }
             }
-
-            label {
-              display: block;
-              width: var(--root32px);
-              height: var(--root32px);
-              background-image: url("../images/heart_inactive.svg");
-              background-repeat: no-repeat;
-              background-position: right;
-              background-size: contain;
-              cursor: pointer;
-
-              &:hover {
-                background-image: url("../images/heart_hover.svg") !important;
-              }
-            }
-
           }
-        }
 
-        h2 {
-          font-size: var(--root32px);
-          color: var(--primary_dark);
-          text-align: left;
+          h2 {
+            font-size: var(--root32px);
+            color: var(--primary_dark);
+            text-align: left;
+          }
         }
       }
     }
@@ -434,23 +449,11 @@
         color: var(--primary_red);
       }
 
-      &.active {
-        background-color: var(--primary_red);
-
-        a {
-          color: var(--purple_ultraLight);
-        }
-      }
-
-      &.disabled {
-        opacity: 0.2;
-      }
-
       div {
         width: var(--root24px);
         height: var(--root24px);
         padding: var(--root24px);
-        background-image: url("../images/arrow_thin.svg");
+        background-image: url("../images/arrow_thin_red.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: var(--root24px);
@@ -458,6 +461,23 @@
         &.arrow--left {
           transform: rotate(180deg);
         }
+      }
+
+      &:hover:not(.disabled),
+      &.active {
+        background-color: var(--primary_red);
+
+        a {
+          color: var(--purple_ultraLight);
+
+          div {
+            background-image: url("../images/arrow_thin_light.svg");
+          }
+        }
+      }
+
+      &.disabled {
+        opacity: 0.2;
       }
     }
   }

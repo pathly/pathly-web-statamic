@@ -69,7 +69,6 @@ body {
 
   > ul {
     grid-column: 2/13;
-    margin-top: var(--root40px);
     opacity: 0.4;
     width: 100%;
 
@@ -282,8 +281,8 @@ button {
 
   border-radius: calc(var(--root24px) + 2 * var(--root16px)); /* font-size + 2 * padding */
   display: inline-block; /* otherwise padding not counted for offset */
-  padding: var(--root16px) var(--root48px);
-  margin-top: var(--root80px);
+  padding: var(--root16px) var(--root40px);
+  margin-top: var(--root40px);
 
   background-color: var(--primary_red);
   box-shadow: 0 var(--root8px) var(--root48px) var(--shadow_red);
@@ -325,7 +324,7 @@ button {
 
 .arrow-link::before {
   width: var(--root16px);
-  background-image: url("../images/arrow.svg");
+  background-image: url("../images/arrow_thick_purple.svg");
 }
 
 

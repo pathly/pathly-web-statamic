@@ -8,7 +8,7 @@
         {{ /cancer_type }}
       </div>
 
-      <h1 class="">{{ name }}, {{ age }}</h1>
+      <h1 class="">{{ name }}{{if age }}, {{ age }}{{ /if }}</h1>
       <img src="{{ image }}" alt="{{ alt }}">
 
       {{ description }}

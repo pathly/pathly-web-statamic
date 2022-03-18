@@ -291,6 +291,9 @@ $(document).ready(function() {
       }
     });
 
+    // remove statamic page filter, so we go back to page 1
+    search_params.delete("page");
+
     url.search = search_params.toString();
     let new_url = url.toString();
     window.location.href = new_url;

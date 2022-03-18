@@ -151,7 +151,8 @@
 
     <!-- displayed even when favorites already exist -->
     <div class="favorites-disclaimer hidden">
-      <p><strong>{{ favorites_headline }}</strong> {{ favorites_textarea }}</p>
+      <p><strong>{{ favorites_headline }}</strong> {{ favorites_textarea | strip_tags:p }}</p>
+      <button></button>
     </div>
   {{ /favorites-stories }}
 

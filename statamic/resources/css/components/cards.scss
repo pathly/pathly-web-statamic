@@ -98,7 +98,7 @@
                   position: absolute;
                   content: "";
                   right: var(--root16px);
-                  background-image: url("../images/cancel.svg");
+                  background-image: url("../images/cancel_red.svg");
                   background-repeat: no-repeat;
                   background-size: 100%;
                 }
@@ -338,7 +338,21 @@
 }
 
 .favorites-disclaimer {
-  /* TODO */
+  display: flex;
+
+  background-color: var(--purple_ultraLightViolett);
+  color: var(--purple_darkViolett);
+  padding: var(--root16px) var(--root32px);
+  border-radius: var(--root24px);
+
+  button {
+    height: var(--root24px);
+    aspect-ratio: 1;
+    background-image: url("../images/cancel_purple.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: var(--root24px);
+  }
 }
 
 /* blog */

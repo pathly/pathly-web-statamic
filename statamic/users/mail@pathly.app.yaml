@@ -12,3 +12,4 @@ preferences:
         - title
         - cancer_type
         - release_date
+      per_page: 100

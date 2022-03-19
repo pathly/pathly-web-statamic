@@ -6,7 +6,7 @@ passed_away: false
 name: Sebastian
 age: 35
 cancer_type:
-  - burkittlymphoma
+  - burkitt-lymphoma
 therapy_type:
   - chemotherapy
   - immunotherapy

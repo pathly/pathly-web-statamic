@@ -6,7 +6,7 @@ title: 'Isabell Becker, 25'
 passed_away: false
 name: Isabell
 age: 25
-cancer_type: hodgkinlymphoma
+cancer_type: hodgkin-lymphoma
 therapy_type:
   - chemotherapy
   - radiationtherapy

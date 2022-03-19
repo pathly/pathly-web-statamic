@@ -7,7 +7,7 @@ passed_away: false
 name: Anna
 age: 18
 cancer_type:
-  - hodgkinlymphoma
+  - hodgkin-lymphoma
 therapy_type:
   - chemotherapy
   - radiationtherapy

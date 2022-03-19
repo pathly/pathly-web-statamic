@@ -4,6 +4,6 @@ updated_at: 1647721923
 blueprint: cancer_type
 is_cancer_sub_type: true
 cancer_parent_type:
-  - nonhodgkinlymphoma
+  - non-hodgkin-lymphoma
   - lymphglandcancer
   - bloodcancer

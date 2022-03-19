@@ -6,7 +6,7 @@ passed_away: false
 name: Alina
 age: 23
 cancer_type:
-  - hodgkinlymphoma
+  - hodgkin-lymphoma
 therapy_type:
   - chemotherapy
   - surgery

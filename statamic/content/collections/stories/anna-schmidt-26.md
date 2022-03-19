@@ -1,12 +1,12 @@
 ---
 id: 205d8453-6939-4c27-a8eb-c90fb1b9db5f
-published: false
 blueprint: story
 title: 'Anna Schmidt, 26'
 passed_away: false
 name: Anna
 age: 26
-cancer_type: breastcancer
+cancer_type:
+  - breastcancer
 therapy_type:
   - chemotherapy
 person_type: patient
@@ -28,7 +28,7 @@ description:
         type: text
         text: 'Heute erzählen wir euch die Geschichte von Anna. Die 26-jährige Berlinerin entdeckte ihren Knoten zufällig unter der Dusche. Anna setzt sich für die Krebsvorsorge und -aufklärung ein und möchte mit ihrer Geschichte anderen Patient:innen Mut machen.'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647200340
+updated_at: 1647593834
 content:
   -
     type: paragraph

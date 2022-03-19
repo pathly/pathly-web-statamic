@@ -1,12 +1,12 @@
 ---
 id: 517bc72e-d528-4adb-8c0e-0600537cfcd0
-published: false
 blueprint: story
 title: 'Clemens Wolf, 38'
 passed_away: true
 name: Clemens
 age: 38
-cancer_type: esophagealcancer
+cancer_type:
+  - esophagealcancer
 therapy_type:
   - chemotherapy
   - radiationtherapy
@@ -23,7 +23,7 @@ contact:
     enabled: true
 release_date: '2021-11-13'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647202559
+updated_at: 1647638359
 content:
   -
     type: paragraph

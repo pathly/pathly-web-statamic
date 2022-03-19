@@ -1,9 +1,8 @@
-title: B-Zell-Lymphom
+title: 'Chronische myeloische Leukämie'
 is_cancer_sub_type: true
 cancer_parent_type:
-  - nonhodgkinlymphoma
-  - lymphglandcancer
+  - leukemia
   - bloodcancer
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1647721539
+updated_at: 1647721795
 blueprint: cancer_type

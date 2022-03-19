@@ -1,9 +1,7 @@
-title: B-Zell-Lymphom
+title: Fibrosarkom
 is_cancer_sub_type: true
 cancer_parent_type:
-  - nonhodgkinlymphoma
-  - lymphglandcancer
-  - bloodcancer
+  - bonekrebs
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1647721539
+updated_at: 1647720956
 blueprint: cancer_type

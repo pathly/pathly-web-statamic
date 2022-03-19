@@ -1,5 +1,5 @@
 ---
-id: cc63b15f-b1cd-49dc-9146-42944f07913c
+id: a0656203-071d-42ee-a2a2-42122c408a0f
 blueprint: story
 title: 'Alexander Böhmer, 23'
 passed_away: false

@@ -40,6 +40,25 @@ $(document).ready(function() {
   // ----- Slick Slider
   // ------------------------------
 
+  $(".card-detail_body .images").slick({
+    slidesToScroll: 1,
+    infinite: false,
+    dots: false,
+    autoplay: false,
+    speed: 1000,
+    arrows: false,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+          dots: true
+        }
+      }
+    ]
+  });
+
   $(".section_slider ul").slick({
     slidesToShow: 3,
     slidesToScroll: 1,

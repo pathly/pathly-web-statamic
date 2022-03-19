@@ -27,7 +27,7 @@
           </div>
 
         {{ elseif type == "images" }}
-          <div class="images">
+          <div class="images {{ if content_images | count:is:1 }} one {{ endif }}" data-slick='{"slidesToShow": {{ content_images | count }}}'>
             {{ content_images }}
               <div>
                 <img src="{{ url }}" alt="{{ alt }}" />

@@ -5,15 +5,28 @@ $(document).ready(function() {
   // ------------------------------
 
   $(window).on("load", function() {
+    let stored_favorites = JSON.parse(localStorage.getItem("favoritedStories"));
+
+    // add filled heart to favorited stories
     $(".favorite-toggle input").each(function() {
-      let stored_data = JSON.parse(localStorage.getItem("favoritedStories"));
       let id = $(this).val();
-      if (stored_data.includes(id)) {
+      if (stored_favorites.includes(id)) {
         $(this).prop("checked", true);
       }
     });
+
+    // only show favorites disclaimer when favorites not empty and favorites mode on and ...
+    let is_favorites_mode = $(".favorites-mode-toggle").hasClass("active");
+    if (is_favorites_mode && stored_favorites.length > 0) {
+      // ... when disclaimer not closed yet
+      let is_disclaimer_closed = JSON.parse(localStorage.getItem("isFavoritesDisclaimerClosed"));
+      if (!is_disclaimer_closed) {
+        $(".favorites-disclaimer").removeClass("hidden");
+      }
+    }
   });
 
+  // toggle story as favorite
   $(".favorite-toggle--stories").on("click", function(e) {
     e.preventDefault();
     e.stopPropagation();
@@ -26,30 +39,31 @@ $(document).ready(function() {
       localStorage.setItem("favoritedStories", "[]");
     }
     // get stored data
-    let stored_data = JSON.parse(localStorage.getItem("favoritedStories"));
-    console.log(stored_data);
-    const index = stored_data.indexOf(new_data);
+    let stored_favorites = JSON.parse(localStorage.getItem("favoritedStories"));
+    console.log(stored_favorites);
+    const index = stored_favorites.indexOf(new_data);
 
     if (index > -1) {
       checkbox.prop("checked", false);
-      stored_data.splice(index, 1);
+      stored_favorites.splice(index, 1);
     } else {
       checkbox.prop("checked", true);
       // merge old and new data
-      stored_data.push(new_data);
+      stored_favorites.push(new_data);
     }
 
-    console.log(stored_data);
+    console.log(stored_favorites);
 
     // push them data to local storage
-    localStorage.setItem("favoritedStories", JSON.stringify(stored_data));
+    localStorage.setItem("favoritedStories", JSON.stringify(stored_favorites));
   });
 
+  // toggle favorites mode
   $(".favorites-mode-toggle").on("click", function() {
     const url = new URL(window.location.href);
     let search_params = url.searchParams;
 
-    let stored_data = JSON.parse(localStorage.getItem("favoritedStories"));
+    let stored_favorites = JSON.parse(localStorage.getItem("favoritedStories"));
 
     if ($(".favorites-mode-toggle").hasClass("active")) {
       search_params.delete("favorite[]");
@@ -57,9 +71,9 @@ $(document).ready(function() {
       let new_url = url.toString();
       window.location.href = new_url;
     } else {
-      if (stored_data.length > 0) {
+      if (stored_favorites.length > 0) {
         // add new params
-        stored_data.forEach(function(item) {
+        stored_favorites.forEach(function(item) {
           search_params.append("favorite" + "[]", item);
         });
         // reload
@@ -69,10 +83,15 @@ $(document).ready(function() {
       } else {
         // no favorites yet
         $(this).toggleClass("active");
-        $(".favorites-disclaimer").toggleClass("hidden");
+        $(".no-favorites-disclaimer").toggleClass("hidden");
         $(".blog").toggleClass("hidden");
       }
     }
+  });
+
+  $(".favorites-disclaimer button").on("click", function() {
+    localStorage.setItem("isFavoritesDisclaimerClosed", true);
+    $(this).parent().addClass("hidden");
   });
 
 });

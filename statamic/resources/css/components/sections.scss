@@ -27,17 +27,11 @@ section {
   margin-top: 10.42rem; /* 250px // based on 24px */
 }
 
-
-
 /* ---------------------------------------------------------------------- */
 /* --- section text--- */
 /* ---------------------------------------------------------------------- */
 
 .section_text {
-  .section-headline {
-    margin-bottom: var(--root40px);
-  }
-
   .section-headline--addition,
   .section-headline {
     grid-column: 4/11;
@@ -86,8 +80,6 @@ section {
   }
 }
 
-
-
 /* ---------------------------------------------------------------------- */
 /* --- section standard with image right --- */
 /* ---------------------------------------------------------------------- */
@@ -95,17 +87,9 @@ section {
 .section_text-w-image-right {
   align-items: center;
 
-  .section-headline {
-    margin-bottom: var(--root40px);
-  }
-
   > img {
     width: 100%;
     grid-area: 1/9/1/13;
-
-    @media (max-width: 1400px) {
-      grid-column: 9/14;
-    }
 
     /* Elements under each other, image on top */
     @media (max-width: 1000px) {
@@ -124,10 +108,6 @@ section {
 
   > div {
     grid-area: 1/2/1/8;
-
-    @media (max-width: 1400px) {
-      grid-column: 1/8;
-    }
 
     /* Elements under each other, image on top */
     @media (max-width: 1000px) {
@@ -152,8 +132,6 @@ section {
   }
 }
 
-
-
 /* ---------------------------------------------------------------------- */
 /* --- section standard with image left --- */
 /* ---------------------------------------------------------------------- */
@@ -161,22 +139,13 @@ section {
 .section_text-w-image-left {
   align-items: center;
 
-  .section-headline {
-    margin-bottom: var(--root40px);
-  }
-
   > img {
     width: 100%;
     grid-area: 1/2/1/6;
 
-    @media (max-width: 1400px) {
-      grid-column: 1/6;
-    }
-
     /* Elements under each other, image on top */
     @media (max-width: 1000px) {
       grid-area: 1/2/1/13;
-
     }
 
     @media (max-width: 650px) {
@@ -193,10 +162,6 @@ section {
 
   > div {
     grid-area: 1/7/1/13;
-
-    @media (max-width: 1400px) {
-      grid-column: 7/14;
-    }
 
     /* Elements under each other, image on top */
     @media (max-width: 1000px) {
@@ -221,8 +186,6 @@ section {
   }
 }
 
-
-
 /* ---------------------------------------------------------------------- */
 /* --- section image full width --- */
 /* ---------------------------------------------------------------------- */
@@ -239,8 +202,6 @@ section {
     width: 100%;
   }
 }
-
-
 
 /* ---------------------------------------------------------------------- */
 /* --- section video full width --- */

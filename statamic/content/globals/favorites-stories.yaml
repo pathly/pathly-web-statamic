@@ -7,7 +7,7 @@ data:
       content:
         -
           type: text
-          text: 'Mach einfach ein Herzchen an die Geschichten, die du toll findest oder später lesen möchtest, so findest du sie ganz schnell wieder.'
+          text: 'Mach einfach ein Herzchen an die Geschichten, die du toll findest oder später lesen möchtest, so findest du sie ganz schnell wieder. '
     -
       type: paragraph
       content:

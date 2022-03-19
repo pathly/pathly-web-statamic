@@ -23,14 +23,17 @@
 
           <div class="dropdown-menu dropdown-menu--select">
             <div class="shadow">
-              {{ taxonomy:cancer_type min_count="1" }}
-                <input id="{{ slug }}" value="{{ slug }}" name="cancer_type" type="radio">
-                <label for="{{ slug }}">{{ title }}</label>
-              {{ /taxonomy:cancer_type }}
+              <div>
+                {{ taxonomy:cancer_type min_count="1" }}
+                  <input id="{{ slug }}" value="{{ slug }}" name="cancer_type" type="radio">
+                  <label for="{{ slug }}">{{ title }}</label>
+                {{ /taxonomy:cancer_type }}
+              </div>
 
-              <hr>
-              <input id="type_none" name="cancer_type" type="reset">
-              <label class="reset" for="type_none">Filter zurücksetzen</label>
+              <div class="reset-wrapper">
+                <input id="type_none" name="cancer_type" type="reset">
+                <label for="type_none">Filter zurücksetzen</label>
+              </div>
             </div>
           </div>
         </div>
@@ -50,16 +53,19 @@
 
           <div class="dropdown-menu dropdown-menu--range">
             <div class="shadow">
-              <input id="from" name="from_age" type="number" value="{{ get:from_age | sanitize }}">
-              <span>-</span>
-              <input id="to" name="to_age" type="number" value="{{ get:to_age | sanitize }}">
+              <div>
+                <input id="from" name="from_age" type="number" value="{{ get:from_age | sanitize }}">
+                <span>-</span>
+                <input id="to" name="to_age" type="number" value="{{ get:to_age | sanitize }}">
 
-              <input id="age_submit" name="age" type="submit">
-              <label class="submit" for="age_submit">Anwenden</label>
+                <input id="age_submit" name="age" type="submit">
+                <label class="submit" for="age_submit">Anwenden</label>
+              </div>
 
-              <hr>
-              <input id="age_none" name="age" type="reset">
-              <label class="reset" for="age_none">Filter zurücksetzen</label>
+              <div class="reset-wrapper">
+                <input id="age_none" name="age" type="reset">
+                <label class="reset" for="age_none">Filter zurücksetzen</label>
+              </div>
             </div>
           </div>
         </div>
@@ -77,14 +83,17 @@
 
           <div class="dropdown-menu dropdown-menu--select">
             <div class="shadow">
-              {{ taxonomy:therapy_type min_count="1" }}
-                <input id="{{ slug }}" value="{{ slug }}" name="therapy_type" type="radio">
-                <label for="{{ slug }}">{{ title }}</label>
-              {{ /taxonomy:therapy_type }}
+              <div>
+                {{ taxonomy:therapy_type min_count="1" }}
+                  <input id="{{ slug }}" value="{{ slug }}" name="therapy_type" type="radio">
+                  <label for="{{ slug }}">{{ title }}</label>
+                {{ /taxonomy:therapy_type }}
+              </div>
 
-              <hr>
-              <input id="therapy_none" name="therapy_type" type="reset">
-              <label class="reset" for="therapy_none">Filter zurücksetzen</label>
+              <div class="reset-wrapper">
+                <input id="therapy_none" name="therapy_type" type="reset">
+                <label for="therapy_none">Filter zurücksetzen</label>
+              </div>
             </div>
           </div>
         </div>
@@ -102,14 +111,17 @@
 
           <div class="dropdown-menu dropdown-menu--select">
             <div class="shadow">
-              <input id="patient" value="patient" name="person_type" type="radio">
-              <label for="patient">Patient:in</label>
-              <input id="relative" value="relative" name="person_type" type="radio">
-              <label for="relative">Angehörige:r</label>
+              <div>
+                <input id="patient" value="patient" name="person_type" type="radio">
+                <label for="patient">Patient:in</label>
+                <input id="relative" value="relative" name="person_type" type="radio">
+                <label for="relative">Angehörige:r</label>
+              </div>
 
-              <hr>
-              <input id="person_none" name="person_type" type="reset">
-              <label class="reset" for="person_none">Filter zurücksetzen</label>
+              <div class="reset-wrapper">
+                <input id="person_none" name="person_type" type="reset">
+                <label for="person_none">Filter zurücksetzen</label>
+              </div>
             </div>
           </div>
         </div>
@@ -122,7 +134,8 @@
   </div>
 
   {{ favorites-stories }}
-    <section class="favorites-disclaimer hidden {{ if favorites_image_position == 'left' }}section_text-w-image-left{{ elseif favorites_image_position == 'right' }}section_text-w-image-right{{ endif }}">
+    <!-- displayed when no favorites yet -->
+    <section class="no-favorites-disclaimer hidden {{ if favorites_image_position == 'left' }}section_text-w-image-left{{ elseif favorites_image_position == 'right' }}section_text-w-image-right{{ endif }}">
       {{ favorites_image }}
         <img src="{{ url }}" alt="{{ alt }}"/>
       {{ /favorites_image }}
@@ -135,6 +148,12 @@
         <p>{{ favorites_textarea }}</p>
       </div>
     </section>
+
+    <!-- displayed even when favorites already exist -->
+    <div class="favorites-disclaimer hidden">
+      <p><strong>{{ favorites_headline }}</strong> {{ favorites_textarea | strip_tags:p }}</p>
+      <button></button>
+    </div>
   {{ /favorites-stories }}
 
   <div class="blog">
@@ -163,7 +182,7 @@
                   </div>
                 </div>
 
-                <h2>{{ name }}, {{ age }}</h2>
+                <h2>{{ name }}{{ if age }}, {{ age }}{{ /if }}</h2>
               </article>
             </a>
           </div>

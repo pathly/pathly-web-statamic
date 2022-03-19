@@ -206,17 +206,17 @@
           background-color: var(--primary_red);
           color: var(--purple_ultraLight);
 
-          /* only desktop */
-          @media (min-width: 1100px) {
-            &::after {
-              border-color: white;
-              border-width: 2px 0 0 2px;
-              top: 10px;
-            }
+          &::after {
+            border-color: white;
+            border-width: 2px 0 0 2px;
+            top: 10px;
+          }
+        }
 
-            .dropdown-menu {
-              display: block;
-            }
+        /* only desktop */
+        @media (min-width: 1100px) {
+          .dropdown-menu {
+            display: block;
           }
         }
       }

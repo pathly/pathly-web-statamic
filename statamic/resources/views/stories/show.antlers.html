@@ -1,11 +1,14 @@
 <article class="card-detail">
-  {{ collection:stories paginate="1" }}
     <div class="card-detail_header">
       <div>
         <span>Geschichte</span>
-        {{ cancer_type }}
-          <span>{{ title }}</span>
-        {{ /cancer_type }}
+        <span>
+          {{ if person_type == "patient" }}
+            {{ cancer_type:title }}
+          {{ elseif person_type == "relative" }}
+            Angehörige:r
+          {{ /if }}
+        </span>
       </div>
 
       <h1 class="">{{ name }}{{if age }}, {{ age }}{{ /if }}</h1>
@@ -88,5 +91,4 @@
         </div>
       </div>
     </address>
-  {{ /collection:stories }}
 </article>

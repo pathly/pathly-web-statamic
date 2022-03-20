@@ -44,18 +44,16 @@ $(document).ready(function() {
     const index = stored_favorites.indexOf(new_data);
 
     if (index > -1) {
-      checkbox.prop("checked", false);
       stored_favorites.splice(index, 1);
     } else {
-      checkbox.prop("checked", true);
       // merge old and new data
       stored_favorites.push(new_data);
     }
-
-    console.log(stored_favorites);
-
     // push them data to local storage
     localStorage.setItem("favoritedStories", JSON.stringify(stored_favorites));
+
+    // update ui
+    checkbox.prop("checked", !checkbox.prop("checked"));
   });
 
   // toggle favorites mode

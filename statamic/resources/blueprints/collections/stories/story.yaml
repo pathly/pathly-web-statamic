@@ -56,6 +56,7 @@ sections:
           icon: taxonomy
           listable: hidden
           instructions_position: above
+          max_items: 1
       -
         handle: therapy_type
         field:

@@ -158,11 +158,13 @@
 
   <div class="blog">
     {{ collection:stories paginate="12" as="posts" sort="release_date:desc"
-    :filter_from_age="get:from_age"
-    :filter_to_age="get:to_age"
+
     :cancer_type:contains="get:cancer_type"
     :therapy_type:contains="get:therapy_type"
     :person_type:contains="get:person_type"
+
+    :filter_from_age="get:from_age"
+    :filter_to_age="get:to_age"
     :filter_favorites="get:favorite"
     query_scope="stories" }}
 
@@ -173,9 +175,13 @@
               <article>
                 <img src="{{ image }}" alt="{{ alt }}">
                 <div>
-                  {{ cancer_type }}
-                    <span>{{ title }}</span>
-                  {{ /cancer_type }}
+                  <span>
+                    {{ if person_type == "patient" }}
+                      {{ cancer_type:title }}
+                    {{ elseif person_type == "relative" }}
+                      Angehörige:r
+                    {{ /if }}
+                  </span>
                   <div class="favorite-toggle favorite-toggle--stories">
                     <input value="{{ id }}" name="favorite" type="checkbox">
                     <label for="favorite"></label>
@@ -189,43 +195,41 @@
         {{ /posts }}
       </div>
 
-
-        {{ paginate }}
-          {{ if links }}
-            <ul class="pagination">
-              {{ if prev_page }}
-                <li>
-                  <a href="{{ prev_page }}">
-                    <div class="arrow--left"></div>
-                  </a>
-                </li>
-              {{ else }}
-                <li class="disabled">
+      {{ paginate }}
+        {{ if links }}
+          <ul class="pagination">
+            {{ if prev_page }}
+              <li>
+                <a href="{{ prev_page }}">
                   <div class="arrow--left"></div>
-                </li>
-              {{ /if }}
+                </a>
+              </li>
+            {{ else }}
+              <li class="disabled">
+                <div class="arrow--left"></div>
+              </li>
+            {{ /if }}
 
-              {{ links:all }}
-                <li {{ if page == current_page }} class="active" {{ endif }}>
-                  <a href="{{ url }}">{{ page }}</a>
-                </li>
-              {{ /links:all }}
+            {{ links:all }}
+              <li {{ if page == current_page }} class="active" {{ endif }}>
+                <a href="{{ url }}">{{ page }}</a>
+              </li>
+            {{ /links:all }}
 
-              {{ if next_page }}
-                <li>
-                  <a href="{{ next_page }}">
-                    <div class="arrow--right"></div>
-                  </a>
-                </li>
-              {{ else }}
-                <li class="disabled">
+            {{ if next_page }}
+              <li>
+                <a href="{{ next_page }}">
                   <div class="arrow--right"></div>
-                </li>
-              {{ /if }}
-            </ul>
-          {{ /if }}
-        {{ /paginate }}
-
+                </a>
+              </li>
+            {{ else }}
+              <li class="disabled">
+                <div class="arrow--right"></div>
+              </li>
+            {{ /if }}
+          </ul>
+        {{ /if }}
+      {{ /paginate }}
     {{ /collection:stories }}
   </div>
 </section>

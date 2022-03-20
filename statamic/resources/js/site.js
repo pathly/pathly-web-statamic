@@ -267,8 +267,9 @@ $(document).ready(function() {
   });
 
   $(".dropdown-menu--range input[type=reset]").on("click", function() {
-    const param_type_from = $(this).siblings("#from").attr("name");
-    const param_type_to = $(this).siblings("#to").attr("name");
+    const dir = $(this).parent().siblings("div");
+    const param_type_from = dir.find("#from").attr("name");
+    const param_type_to = dir.find("#to").attr("name");
 
     const params = [
       {

@@ -70,5 +70,5 @@ content:
       values:
         type: video
         video_url: 'https://www.youtube-nocookie.com/embed/PSol3meMmuo'
-        video_thumbnail: Tatiana-Thumpnail.png
+        video_thumbnail: stories/Tatiana-Thumpnail.png
 ---

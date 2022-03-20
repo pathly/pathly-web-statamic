@@ -75,7 +75,7 @@ content:
       values:
         type: video
         video_url: 'https://www.youtube-nocookie.com/embed/Z7n5GgLuQaU'
-        video_thumbnail: Alina-Thumpnail.png
+        video_thumbnail: stories/Alina-Thumpnail.png
   -
     type: paragraph
 ---

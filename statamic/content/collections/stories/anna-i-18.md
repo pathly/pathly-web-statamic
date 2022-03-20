@@ -1,6 +1,5 @@
 ---
 id: 0240b00c-243c-46ea-beb0-89482e5faee1
-published: false
 blueprint: story
 title: 'Anna Ippati, 18'
 passed_away: false
@@ -24,7 +23,7 @@ contact:
     enabled: true
 release_date: '2021-06-03'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647648137
+updated_at: 1647774808
 content:
   -
     type: blockquote

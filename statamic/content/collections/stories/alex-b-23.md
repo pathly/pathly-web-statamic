@@ -58,5 +58,5 @@ content:
       values:
         type: video
         video_url: 'https://www.youtube-nocookie.com/embed/ZCHpqecv5QY'
-        video_thumbnail: Alex-Thumpnail-1647640406.png
+        video_thumbnail: stories/Alex-Thumpnail-1647640406.png
 ---

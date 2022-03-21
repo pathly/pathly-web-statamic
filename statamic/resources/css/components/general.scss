@@ -55,46 +55,6 @@ body {
 
 
 /* -------------------------------------------------------------------------------- */
-/* --- section slider --- */
-/* -------------------------------------------------------------------------------- */
-
-.section_slider {
-  .section-headline  {
-    opacity: 0.4;
-  }
-
-  .slick-list {
-    overflow: visible !important;
-  }
-
-  > ul {
-    grid-column: 2/13;
-    opacity: 0.4;
-    width: 100%;
-
-    img {
-      width: 100%;
-      padding: 0 var(--root24px);
-    }
-  }
-
-}
-
-.comming-soon {
-  grid-column: 1/14;
-  text-align: center;
-
-  .cta-button {
-    background-color: rgb(76, 73, 129);
-    box-shadow: 0 var(--root8px) var(--root48px) rgba(76, 73, 129, 0.2);
-    -moz-box-shadow: 0 var(--root8px) var(--root48px) rgba(76, 73, 129, 0.2);
-    -webkit-box-shadow: 0 var(--root8px) var(--root48px) rgba(76, 73, 129, 0.2);
-  }
-}
-
-
-
-/* -------------------------------------------------------------------------------- */
 /* --- section confirmation --- */
 /* -------------------------------------------------------------------------------- */
 

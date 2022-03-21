@@ -15,10 +15,12 @@ donation-options_buttons:
     donation-options_buttons_icon: icons/PayPal.png
     donation-options_button_headline: 'Mit PayPal einmalig oder regelmäßig spenden'
     donation-options_button_url: 'https://www.paypal.com/donate/?hosted_button_id=XR6MXEY4F6WHQ'
+    donation-options_button_icon: icons/PayPal.png
   -
     donation-options_buttons_icon: icons/Betterplace.png
     donation-options_button_headline: 'Mit Betterplace einmalig oder regelmäßig spenden'
     donation-options_button_url: 'https://www.betterplace.org/de/projects/102174-pathly-dein-wegweiser-durch-den-alltag-mit-krebs'
+    donation-options_button_icon: icons/Betterplace.png
 more-options_headline_addition: 'Das kannst du machen'
 more-options_headline: 'Hilf uns mit deinem Engagement!'
 more-options_options:
@@ -74,7 +76,7 @@ more-options_options:
 cta_toggle: true
 cta: f67d9c6c-015c-4d33-af37-dbbdb50d7347
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1639077104
+updated_at: 1646424945
 donation-options_bank-transfer_headline: 'Oder per Überweisung spenden!'
 donation-options_contribution-receipt_headline: '🧾 Spendenquittung fürs Finanzamt'
 donation-options_contribution-receipt_textarea: 'Bei einer Spende unter 200€ reicht dem Finanzamt der Nachweis auf deinem Kontoauszug, bei Spenden über 200€ stellen wir dir selbstverständlich eine Spenden Quittung aus.'

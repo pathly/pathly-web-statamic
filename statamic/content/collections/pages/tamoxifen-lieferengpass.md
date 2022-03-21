@@ -4,8 +4,8 @@ blueprint: tamoxifen
 title: Tamoxifen
 image_position: center
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1646390310
-image: infos/Tamoxifen--2.png
+updated_at: 1647281681
+image: infos/Tamoxifen--Website.png
 template: tamoxifen
 type: info
 headline: 'Es ist genug für alle da! Ausreichende Versorgung trotz Tamoxifen Engpass möglich.'
@@ -292,6 +292,13 @@ content:
               - '56 Tabletten'
               - '20'
               - RY529
+          -
+            cells:
+              - 'Arcana Arzneimittel GmbH'
+              - 'Tamoxifen Arcana Tabletten'
+              - '30 Tabletten'
+              - '20'
+              - 00490A
   -
     type: heading
     attrs:
@@ -309,12 +316,6 @@ content:
       -
         type: text
         text: "Nein. Die gesetzlichen Krankenkassen wurden dazu aufgefordert eventuelle Mehrkosten zu übernehmen, sodass für dich\_ keine zusätzlichen Kosten entstehen.\_"
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Wir hoffen dir die Informationen der zuständigen Behörden verständlich übermittelt und dir so die Angst und Sorge genommen zu haben. Es wird bis Mai eine vermutlich schwierigere Zeit, als es mit deiner Erkrankung eh schon ist, aber gemeinsam schaffen wir das. Solltest du weiter unsicher sein, kontaktiere uns gern. Aber zögere nicht auch mit deiner behandelnden Ärztin oder deinem behandelnden Arzt darüber zu sprechen.'
   -
     type: set
     attrs:
@@ -363,6 +364,12 @@ content:
                 text: ' und wir werden dich unterstützen.'
         content_callout_color: '#FFF5D6'
   -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wir hoffen dir die Informationen der zuständigen Behörden verständlich übermittelt und dir so die Angst und Sorge genommen zu haben. Es wird bis Mai eine vermutlich schwierigere Zeit, als es mit deiner Erkrankung eh schon ist, aber gemeinsam schaffen wir das. Solltest du weiter unsicher sein, kontaktiere uns gern. Aber zögere nicht auch mit deiner behandelnden Ärztin oder deinem behandelnden Arzt darüber zu sprechen.'
+  -
     type: heading
     attrs:
       level: 2
@@ -370,8 +377,6 @@ content:
       -
         type: text
         text: 'Aktuelle Informationen des Bundesministeriums für Arzneimittel und Medizinprodukte'
-  -
-    type: paragraph
   -
     type: set
     attrs:

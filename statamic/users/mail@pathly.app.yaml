@@ -4,3 +4,12 @@ roles:
   - editor
 id: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 password_hash: $2y$10$6oI1lhcQ2saVy7kcFaVDue5qz85rq98VIDU9hS6kFj/L/eBKjvMUm
+preferences:
+  collections:
+    stories:
+      columns:
+        - image
+        - title
+        - cancer_type
+        - release_date
+      per_page: 100

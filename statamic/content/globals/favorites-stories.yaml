@@ -1,0 +1,28 @@
+title: 'Favorites Stories'
+data:
+  favorites_headline: 'Hier kannst du deine Lieblingsgeschichten speichern.'
+  favorites_textarea:
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'Mach einfach ein Herzchen an die Geschichten, die du toll findest oder später lesen möchtest, so findest du sie ganz schnell wieder. '
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: |
+
+        -
+          type: text
+          marks:
+            -
+              type: bold
+          text: 'Achtung:'
+        -
+          type: text
+          text: ' Sobald du die Cookies in deinem Browser löscht, sind auch deine Favoriten weg.'
+  favorites_image: favorite-stories.png
+  favorites_image_position: right

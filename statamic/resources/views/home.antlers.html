@@ -10,7 +10,7 @@
   </div>
 </section>
 
-<section id="home_project" class="{{ about-project_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-project_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
+<section id="home_project" {{ if about-project_image_position == 'left' }} class="section_text-w-image-left section--top-spacing" {{ elseif about-project_image_position == 'right' }} class="section_text-w-image-right section--top-spacing" {{ endif }}>
   {{ about-project_image }}
     <img src="{{ url }}" alt="{{ alt }}"/>
   {{ /about-project_image }}
@@ -30,20 +30,39 @@
   {{ /if }}
   <h2 class="section-headline">{{ stories_headline }}</h2>
 
-  <ul>
-    <li><img src="/images/story1.png"/></li>
-    <li><img src="/images/story2.png"/></li>
-    <li><img src="/images/story3.png"/></li>
-    <li><img src="/images/story4.png"/></li>
-    <li><img src="/images/story5.png"/></li>
-  </ul>
+  <div class="slider">
+    {{ collection:stories limit="6" sort="release_date:desc" }}
+      <div class="card shadow">
+        <a href="{{ url }}">
+          <article>
+            <img src="{{ image }}" alt="{{ alt }}">
+            <div>
+              <span>
+                {{ if person_type == "patient" }}
+                  {{ cancer_type:title }}
+                {{ elseif person_type == "relative" }}
+                  Angehörige:r
+                {{ /if }}
+              </span>
+              <div class="favorite-toggle favorite-toggle--stories">
+                <input value="{{ id }}" name="favorite" type="checkbox">
+                <label for="favorite"></label>
+              </div>
+            </div>
 
-  <div class="comming-soon">
-    <button class="cta-button">Ab Frühjahr 2022</button>
+            <h2>{{ name }}{{ if age }}, {{ age }}{{ /if }}</h2>
+          </article>
+        </a>
+      </div>
+    {{ /collection:stories }}
+  </div>
+
+  <div class="button">
+    <a href="/stories" class="cta-button">Mehr</a>
   </div>
 </section>
 
-<section id="home_founders" class="{{ about-founders_image_position == 'left' ?= 'section_text-w-image-left' }}{{ about-founders_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
+<section id="home_founders" {{ if about-founders_image_position == 'left' }} class="section_text-w-image-left section--top-spacing" {{ elseif about-founders_image_position == 'right' }} class="section_text-w-image-right section--top-spacing" {{ endif }}>
   {{ about-founders_image }}
     <img src="{{ url }}" alt="{{ alt }}"/>
   {{ /about-founders_image }}
@@ -69,7 +88,7 @@
 </section>
 
 {{ collaboration }}
-  <section id="home_project" class="{{ cta_image_position == 'left' ?= 'section_text-w-image-left' }}{{ cta_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
+  <section id="home_project" {{ if cta_image_position == 'left' }} class="section_text-w-image-left section--top-spacing" {{ elseif cta_image_position == 'right' }} class="section_text-w-image-right section--top-spacing" {{ endif }}>
     {{ cta_image }}
       <img src="{{ url }}" alt="{{ alt }}"/>
     {{ /cta_image }}
@@ -102,7 +121,7 @@
   </section>
 {{ /collaboration }}
 
-<section id="home_supporters" class="section_pattern section--top-spacing">
+<section id="home_supporters" class="section--top-spacing">
   {{ if all-supporters_headline_addition }}
     <h2 class="section-headline--addition">{{ all-supporters_headline_addition }}</h2>
   {{ /if }}

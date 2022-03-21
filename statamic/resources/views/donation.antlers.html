@@ -1,4 +1,4 @@
-<section id="donation_intro" class="{{ intro_image_position == 'left' ?= 'section_text-w-image-left' }}{{ intro_image_position == 'right' ?= 'section_text-w-image-right' }}">
+<section id="donation_intro" {{ if intro_image_position == 'left' }} class="section_text-w-image-left" {{ elseif intro_image_position == 'right' }} class="section_text-w-image-right" {{ endif }}>
   {{ intro_image }}
     <img src="{{ url }}" alt="{{ alt }}"/>
   {{ /intro_image }}
@@ -32,7 +32,7 @@
   {{ /donation_video_thumbnail }}
 </section>
 
-<section id="donation_options" class="section_pattern section--top-spacing">
+<section id="donation_options" class="section--top-spacing">
   {{ if donation-options_headline_addition }}
     <h2 class="section-headline--addition">{{ donation-options_headline_addition }}</h2>
   {{ /if }}
@@ -77,7 +77,7 @@
   </div>
 </section>
 
-<section id="donation_more-options" class="section_pattern section--top-spacing">
+<section id="donation_more-options" class="section--top-spacing">
   {{ if intro_headline_addition }}
     <h2 class="section-headline--addition">{{ more-options_headline_addition }}</h2>
   {{ /if }}

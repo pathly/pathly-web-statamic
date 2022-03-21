@@ -1,0 +1,113 @@
+/* ---------------------------------------------------------------------- */
+/* --- tiles --- */
+/* ---------------------------------------------------------------------- */
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: var(--root80px);
+  text-align: center;
+  margin-top: var(--root40px);
+
+  @media (max-width: 2500px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1400px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/* --- alternating tiles --- */
+/* ---------------------------------------------------------------------- */
+
+.alternating-tiles {
+  grid-column: 1/14;
+  display: grid;
+  grid: inherit;
+  align-items: center;
+  margin-top: var(--root40px);
+
+  > div {
+    grid-column: 1/14;
+    display: grid;
+    grid: inherit;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: var(--root80px);
+    }
+
+    &:nth-child(odd) {
+      .image-container {
+        grid-area: 1/2/1/6;
+      }
+
+      .text-container {
+        grid-area: 1/7/1/13;
+      }
+    }
+
+    &:nth-child(even) {
+      .image-container {
+        grid-area: 1/9/1/13;
+      }
+
+      .text-container {
+        grid-area: 1/2/1/8;
+      }
+    }
+
+    .image-container {
+      width: 100%;
+      height: auto;
+      border-radius: var(--root40px);
+      flex-shrink: 0;
+      overflow: hidden;
+
+      @media (max-width: 1000px) {
+        grid-area: 1/2/1/13 !important;
+      }
+
+      @media (max-width: 450px) {
+        grid-area: 1/1/1/14 !important;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .text-container {
+      @media (max-width: 1000px) {
+        grid-area: 2/2/2/13 !important;
+        margin-top: var(--root40px);
+      }
+
+      @media (max-width: 450px) {
+        grid-area: 2/1/2/14 !important;
+        margin-top: var(--root40px);
+      }
+
+      h3 {
+        margin-bottom: var(--root40px);
+      }
+
+      a {
+        display: block;
+        margin-top: var(--root40px);
+      }
+
+      ul li {
+        list-style-type: disc;
+        margin-left: 1.1rem;
+      }
+    }
+  }
+}

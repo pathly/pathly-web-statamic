@@ -66,19 +66,19 @@
 .header_nav .donation-button {
   display: flex;
   align-items: center;
-  margin-left: var(--root64px);
+  margin-left: var(--root24px);
   margin-top: 0;
-  padding-left: var(--root80px);
+  padding-left: var(--root64px);
   position: relative;
 }
 
 .header_nav .donation-button::before {
   content: "";
-  width: var(--root32px);
-  height: var(--root32px);
+  width: var(--root24px);
+  height: var(--root24px);
   position: absolute;
-  left: var(--root40px);
-  background-image: url("/images/heart.svg");
+  left: var(--root32px);
+  background-image: url("/images/heart_white.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -94,7 +94,6 @@
   position: relative;
   font-weight: 700;
   color: var(--primary_purple);
-  margin-left: var(--root40px);
   padding: var(--root24px);
 }
 
@@ -116,27 +115,6 @@
 .header_nav_list > li:hover > a::after {
   transform: scaleX(1);
   background-color: var(--primary_purple);
-}
-
-/* arrow next to text */
-.header_nav_list > .is-parent > a {
-  margin-right: var(--root24px);
-}
-
-.header_nav_list > .is-parent > a::before {
-  content: '';
-  position: absolute;
-  right: 10px;
-  transform: translate(calc(100% + 7px), 100%) rotate(45deg);
-  height: var(--root8px);
-  width: var(--root8px);
-  border: var(--primary_purple) solid;
-  border-width: 0 2px 2px 0;
-  transition: border 0.4s, transform 0.4s;
-}
-
-.header_nav_list > .is-parent:hover > a::before {
-  transform: translate(calc(100% + 7px), 120%) rotate(45deg);
 }
 
 /* only desktop */
@@ -217,20 +195,6 @@
   .header_nav_list > li > a::after {
     /* remove underline */
     content: none;
-  }
-
-  .header_nav_list > .is-parent > a::before {
-    /* point arrow to the right and make bigger */
-    transform: translate(0, -50%) rotate(-45deg);
-    border-color: var(--primary_purple);
-    top: 50%;
-    border-width: 0 var(--root4px) var(--root4px) 0;
-    height: var(--root8px);
-    width: var(--root8px);
-  }
-
-  .header_nav_list > .is-parent:hover > a::before {
-    transform: translate(0, -50%) rotate(-45deg);
   }
 }
 

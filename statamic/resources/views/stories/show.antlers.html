@@ -1,0 +1,142 @@
+<article class="card-detail">
+    <div class="card-detail_header">
+      <div>
+        <span>Geschichte</span>
+        <span>
+          {{ if person_type == "patient" }}
+            {{ cancer_type:title }}
+          {{ elseif person_type == "relative" }}
+            Angehörige:r
+          {{ /if }}
+        </span>
+      </div>
+
+      <h1 class="">{{ name }}{{if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h1>
+      <img src="{{ image }}" alt="{{ alt }}">
+
+      {{ description }}
+    </div>
+
+    <div class="card-detail_body">
+      {{ content }}
+        {{ if type == "text" }}
+          <div class="text">
+            {{ text }}
+          </div>
+
+        {{ elseif type == "callout" }}
+          <div class="text callout" style="background-color:{{ content_callout_color }}">
+            {{ content_callout_content }}
+          </div>
+
+        {{ elseif type == "images" }}
+          <div class="images {{ if content_images | count == 1 }} one {{ endif }}" data-slick='{"slidesToShow": {{ content_images | count }}}'>
+            {{ content_images }}
+              <div>
+                <img src="{{ url }}" alt="{{ alt }}" />
+              </div>
+            {{ /content_images }}
+          </div>
+
+        {{ elseif type == "video" }}
+          <div class="video">
+            {{ video_thumbnail }}
+              <div class="video_wrapper" style="background-image: url('{{ url }}');">
+                <div class="video_layer">
+                  <iframe src="" title="YouTube Video Player" border="0" data-scaling="true" data-format="16:9" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="video_trigger" data-source="{{ video_url }}">
+                  <button class="video_thumbnail_disclaimer_button">
+                    <img src="/images/play.svg" alt="Play"/>
+                  </button>
+                </div>
+              </div>
+
+              <p class="video_thumbnail_disclaimer_text">Wenn du dieses Video anschaust, stimmst du automatisch unseren <a href="/privacy" target="_blank">Datenschutzbestimmungen</a> in Bezug auf die Verwendung von YouTube zu.</p>
+            {{ /video_thumbnail }}
+          </div>
+
+        {{ elseif type == "links" }}
+          <div class="link-list">
+            {{ content_links }}
+              <a class="link-list_button" href="{{ content_link_url }}" target="_blank">
+                <div class="link-list_button_icon-container {{ if !link_icon }} colored {{ /if }}">
+                  {{ content_link_icon }}
+                    <img src="{{ url }}" alt="{{ alt }}">
+                  {{ /content_link_icon }}
+                </div>
+                <p>{{ content_link_title }}</p>
+              </a>
+            {{ /content_links }}
+          </div>
+
+        {{ /if }}
+      {{ /content }}
+    </div>
+
+    <address class="card-detail_footer">
+      <img src="{{ image }}" alt="{{ alt }}">
+      <div>
+        <p>{{ name }} {{ if passed_away }}†{{ /if }}</p>
+
+        <div>
+          {{ contact }}
+            <span>{{ contact_type:label }}</span>
+            <a href="{{ contact_url }}" target="_blank">{{ contact_text }}</a>
+          {{ /contact }}
+
+          <span>Datum</span>
+          <time datetime="{{ release_date format="Y-m-d" }}">{{ release_date format="d.m.Y" }}</time>
+
+          {{ if passed_away }}
+            <span>Verstorben</span>
+            <time datetime="{{ death_date format="Y-m-d" }}">{{ death_date format="d.m.Y" }}</time>
+          {{ /if }}
+        </div>
+      </div>
+    </address>
+</article>
+
+<section class="section_slider section--top-spacing">
+  {{ collection:stories limit="6" as="posts"
+  :filter_cancer_type="cancer_type:slug"
+  :filter_age="age"
+  :filter_id="id"
+  query_scope="story" }}
+
+    {{ get_content from="/" }}
+      {{ if stories_headline_addition }}
+        <h2 class="section-headline--addition">{{ stories_headline_addition }}</h2>
+      {{ /if }}
+      <h2 class="section-headline">{{ stories_headline }}</h2>
+    {{ /get_content }}
+
+    <div class="slider">
+      {{ posts }}
+        <div class="card shadow">
+          <a href="{{ url }}">
+            <article>
+              <img src="{{ image }}" alt="{{ alt }}">
+              <div>
+                <span>
+                  {{ if person_type == "patient" }}
+                    {{ cancer_type:title }}
+                  {{ elseif person_type == "relative" }}
+                    Angehörige:r
+                  {{ /if }}
+                </span>
+                <div class="favorite-toggle favorite-toggle--stories">
+                  <input value="{{ id }}" name="favorite" type="checkbox">
+                  <label for="favorite"></label>
+                </div>
+              </div>
+
+              <h2>{{ name }}{{ if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h2>
+            </article>
+          </a>
+        </div>
+      {{ /posts }}
+    </div>
+  {{ /collection:stories }}
+</section>

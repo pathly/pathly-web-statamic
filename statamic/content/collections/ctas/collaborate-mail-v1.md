@@ -1,11 +1,11 @@
 ---
 id: 6f656d83-2700-4b8f-aa2e-67e1553868cc
 blueprint: cta
-title: 'Mitwirken Mail V1'
+title: 'Collaboration Mail V1'
 cta_headline_addition: 'Jetzt Mitwirken'
 cta_headline: 'Lust zu Helfen?'
 cta_textarea: |-
-  Du möchtest uns ehrenamtlich unterstützen und hast Freude daran anderen Menschen zu helfen und ihnen mit deiner Arbeit eine Freude zu machen? Schon mit ein paar Stunden im Monat kannst du viel erreichen. 
+  Du möchtest uns ehrenamtlich unterstützen und hast Freude daran anderen Menschen zu helfen und ihnen mit deiner Arbeit eine Freude zu machen? Schon mit ein paar Stunden im Monat kannst du viel erreichen.
 
   Meld dich gerne bei Thora und Rebecca und erzähl uns auf welche Weise du Pathly unterstützen möchtest.
 cta_image: collaboration_mail.svg

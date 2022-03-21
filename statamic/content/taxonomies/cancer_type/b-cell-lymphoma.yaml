@@ -1,0 +1,9 @@
+title: B-Zell-Lymphom
+is_cancer_sub_type: true
+cancer_parent_type:
+  - non-hodgkin-lymphoma
+  - lymphglandcancer
+  - bloodcancer
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1647721539
+blueprint: cancer_type

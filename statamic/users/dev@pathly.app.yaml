@@ -6,3 +6,11 @@ preferences:
   collections:
     pages:
       after_save: continue_editing
+  taxonomies:
+    cancer_type:
+      columns:
+        - title
+        - slug
+        - additional_terms
+        - is_cancer_sub_type
+        - cancer_parent_type

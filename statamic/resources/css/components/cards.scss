@@ -203,7 +203,7 @@
       }
 
       /* dropdown & hover */
-      &:hover {
+      &:hover:not(.disabled) {
         .dropdown-button {
           background-color: var(--primary_red);
           color: var(--purple_ultraLight);
@@ -221,6 +221,11 @@
             display: block;
           }
         }
+      }
+
+      /* dropdown & disabled */
+      &.disabled {
+        opacity: 0.2;
       }
 
       /* dropdown & mobile */

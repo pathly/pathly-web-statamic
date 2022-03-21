@@ -45,6 +45,18 @@ sections:
           icon: integer
           listable: hidden
       -
+        handle: person_type
+        field:
+          options:
+            patient: 'Patient:in'
+            relative: 'Angehörige:r'
+          display: 'Person Type'
+          type: button_group
+          icon: button_group
+          listable: hidden
+          validate:
+            - required
+      -
         handle: cancer_type
         field:
           type: terms
@@ -57,6 +69,8 @@ sections:
           listable: hidden
           instructions_position: above
           max_items: 1
+          if:
+            person_type: 'equals patient'
       -
         handle: therapy_type
         field:
@@ -68,18 +82,8 @@ sections:
           create: false
           icon: taxonomy
           listable: hidden
-      -
-        handle: person_type
-        field:
-          options:
-            patient: 'Patient:in'
-            relative: 'Angehörige:r'
-          display: 'Person Type'
-          type: button_group
-          icon: button_group
-          listable: hidden
-          validate:
-            - required
+          if:
+            person_type: 'equals patient'
       -
         handle: image
         field:

@@ -10,8 +10,8 @@
       </div>
 
       <div class="all-dropdowns-wrapper">
-        <div class="dropdown">
-          <button class="dropdown-button {{ if get:cancer_type }}active{{ /if }}">
+        <div class="dropdown {{ if get:person_type == 'relative' }}disabled{{ /if }}">
+          <button class="dropdown-button {{ if get:cancer_type }}active{{ /if }}" {{ if get:person_type == "relative" }} disabled {{ endif }}>
             {{ if get:cancer_type }}
               {{ taxonomy:cancer_type :slug:is="get:cancer_type | sanitize" }}
                 {{ title }}
@@ -38,8 +38,8 @@
           </div>
         </div>
 
-        <div class="dropdown">
-          <button class="dropdown-button {{ if get:therapy_type }}active{{ /if }}">
+        <div class="dropdown {{ if get:person_type == 'relative' }}disabled{{ /if }}">
+          <button class="dropdown-button {{ if get:therapy_type }}active{{ /if }}" {{ if get:person_type == "relative" }} disabled {{ endif }}>
             {{ if get:therapy_type }}
               {{ taxonomy:therapy_type :slug:is="get:therapy_type | sanitize" }}
                 {{ title }}

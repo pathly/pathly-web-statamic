@@ -5,8 +5,7 @@ title: 'Clemens Wolf, 38'
 passed_away: true
 name: Clemens
 age: 38
-cancer_type:
-  - esophagealcancer
+cancer_type: esophagealcancer
 therapy_type:
   - chemotherapy
   - radiationtherapy

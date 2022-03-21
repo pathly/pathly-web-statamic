@@ -5,8 +5,7 @@ title: 'Alina Ganz, 23'
 passed_away: false
 name: Alina
 age: 23
-cancer_type:
-  - hodgkin-lymphoma
+cancer_type: hodgkin-lymphoma
 therapy_type:
   - chemotherapy
   - surgery

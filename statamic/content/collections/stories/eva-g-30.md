@@ -5,8 +5,7 @@ title: 'Eva Geib, 30'
 passed_away: false
 name: Eva
 age: 30
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - chemotherapy
   - surgery

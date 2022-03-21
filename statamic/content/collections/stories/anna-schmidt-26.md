@@ -5,8 +5,7 @@ title: 'Anna Schmidt, 26'
 passed_away: false
 name: Anna
 age: 26
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - chemotherapy
 person_type: patient

@@ -5,8 +5,7 @@ title: 'Dennis Urban, 29'
 passed_away: false
 name: Dennis
 age: 29
-cancer_type:
-  - t-cell-lymphoma
+cancer_type: t-cell-lymphoma
 person_type: patient
 image_position: center
 contact:

@@ -5,8 +5,7 @@ title: 'Daniela Fricaud, 48'
 passed_away: false
 name: Daniela
 age: 48
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - chemotherapy
   - surgery

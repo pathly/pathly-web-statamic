@@ -5,8 +5,7 @@ title: 'Franziska Baumgart, 25'
 passed_away: false
 name: Franziska
 age: 25
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - hormonetherapy
   - chemotherapy

@@ -6,8 +6,7 @@ title: 'Giada Elisa, 16'
 passed_away: false
 name: Giada
 age: 16
-cancer_type:
-  - osteosarcoma
+cancer_type: osteosarcoma
 therapy_type:
   - surgery
   - chemotherapy

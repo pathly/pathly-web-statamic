@@ -22,8 +22,7 @@ contact:
 release_date: '2020-08-10'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1647774736
-cancer_type:
-  - acute-lymphoblastic-leukemia
+cancer_type: acute-lymphoblastic-leukemia
 content:
   -
     type: paragraph

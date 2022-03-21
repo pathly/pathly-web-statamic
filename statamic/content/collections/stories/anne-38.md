@@ -5,8 +5,7 @@ title: 'Anne Lazar, 38'
 passed_away: false
 name: Anne
 age: 38
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - chemotherapy
   - hormonetherapy

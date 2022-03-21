@@ -4,8 +4,7 @@ blueprint: story
 title: Adam
 passed_away: false
 name: Adam
-cancer_type:
-  - b-cell-lymphoma
+cancer_type: b-cell-lymphoma
 therapy_type:
   - chemotherapy
   - surgery

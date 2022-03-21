@@ -5,8 +5,7 @@ title: 'Denise, 26'
 passed_away: false
 name: Denise
 age: 26
-cancer_type:
-  - thyroidcancer
+cancer_type: thyroidcancer
 therapy_type:
   - radiationtherapy
 person_type: patient

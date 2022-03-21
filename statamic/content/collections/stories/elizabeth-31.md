@@ -5,8 +5,7 @@ title: 'Elizabeth Tsang, 31'
 passed_away: false
 name: Elizabeth
 age: 31
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - chemotherapy
   - radiationtherapy

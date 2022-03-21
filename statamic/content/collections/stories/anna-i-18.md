@@ -5,8 +5,7 @@ title: 'Anna Ippati, 18'
 passed_away: false
 name: Anna
 age: 18
-cancer_type:
-  - hodgkin-lymphoma
+cancer_type: hodgkin-lymphoma
 therapy_type:
   - chemotherapy
   - radiationtherapy

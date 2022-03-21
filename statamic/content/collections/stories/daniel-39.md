@@ -5,8 +5,7 @@ title: 'Daniel Kloß, 39'
 passed_away: false
 name: Daniel
 age: 39
-cancer_type:
-  - softtissuecancer
+cancer_type: softtissuecancer
 therapy_type:
   - chemotherapy
   - immunotherapy

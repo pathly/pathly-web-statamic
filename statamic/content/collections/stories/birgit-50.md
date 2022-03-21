@@ -5,8 +5,7 @@ title: 'Birgit Göttlich, 50'
 passed_away: false
 name: Birgit
 age: 50
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 person_type: patient
 image: stories/b/Birgit-G-1-Titelbild.png
 image_position: center

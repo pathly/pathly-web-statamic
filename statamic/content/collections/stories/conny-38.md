@@ -5,8 +5,7 @@ title: 'Conny, 38'
 passed_away: false
 name: Conny
 age: 38
-cancer_type:
-  - salivaryglandcancer
+cancer_type: salivaryglandcancer
 therapy_type:
   - surgery
 person_type: patient

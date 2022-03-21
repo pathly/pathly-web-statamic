@@ -5,8 +5,7 @@ title: 'Alexander Böhmer, 23'
 passed_away: false
 name: Alex
 age: 23
-cancer_type:
-  - bonekrebs
+cancer_type: bonekrebs
 therapy_type:
   - surgery
 person_type: patient

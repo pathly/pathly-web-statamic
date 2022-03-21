@@ -5,8 +5,7 @@ title: 'Danita Lehmann, 25'
 passed_away: false
 name: Danita
 age: 25
-cancer_type:
-  - ovariancancer
+cancer_type: ovariancancer
 therapy_type:
   - chemotherapy
   - surgery

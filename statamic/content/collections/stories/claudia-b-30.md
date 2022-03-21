@@ -5,8 +5,7 @@ title: 'Claudia Bähr, 30'
 passed_away: false
 name: Claudia
 age: 30
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - hormonetherapy
   - chemotherapy

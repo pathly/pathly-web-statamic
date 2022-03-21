@@ -14,9 +14,9 @@ class Story extends Scope {
    */
   public function apply($query, $values) {
     $cancer_type = $values->get("filter_cancer_type");
+    $age = $values->get("filter_age");
+    $id = $values->get("filter_id");
 
-    if ($cancer_type != null) {
-      $query->whereIn("cancer_type", "breastcancer");
-    }
+    $query->where("cancer_type", "=", $cancer_type)->orWhereBetween("age", [$age - 5, $age + 5])->where("id", "!=", $id);
   }
 }

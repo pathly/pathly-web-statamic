@@ -97,3 +97,46 @@
       </div>
     </address>
 </article>
+
+<section class="section_slider section--top-spacing">
+  {{ collection:stories limit="6" as="posts"
+  :filter_cancer_type="cancer_type:slug"
+  :filter_age="age"
+  :filter_id="id"
+  query_scope="story" }}
+
+    {{ get_content from="/" }}
+      {{ if stories_headline_addition }}
+        <h2 class="section-headline--addition">{{ stories_headline_addition }}</h2>
+      {{ /if }}
+      <h2 class="section-headline">{{ stories_headline }}</h2>
+    {{ /get_content }}
+
+    <div class="slider">
+      {{ posts }}
+        <div class="card shadow">
+          <a href="{{ url }}">
+            <article>
+              <img src="{{ image }}" alt="{{ alt }}">
+              <div>
+                <span>
+                  {{ if person_type == "patient" }}
+                    {{ cancer_type:title }}
+                  {{ elseif person_type == "relative" }}
+                    Angehörige:r
+                  {{ /if }}
+                </span>
+                <div class="favorite-toggle favorite-toggle--stories">
+                  <input value="{{ id }}" name="favorite" type="checkbox">
+                  <label for="favorite"></label>
+                </div>
+              </div>
+
+              <h2>{{ name }}{{ if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h2>
+            </article>
+          </a>
+        </div>
+      {{ /posts }}
+    </div>
+  {{ /collection:stories }}
+</section>

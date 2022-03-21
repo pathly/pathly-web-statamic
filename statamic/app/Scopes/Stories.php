@@ -13,6 +13,29 @@ class Stories extends Scope {
    * @return void
    */
   public function apply($query, $values) {
+
+    // Person Type
+    $person_type = $values->get("filter_person_type");
+    if ($person_type != null) {
+      $query->where("person_type", "=", $person_type);
+    }
+
+    // only filter cancer and therapy thype if person type not relative
+    if ($person_type != "relative") {
+
+      // Cancer Type
+      $cancer_type = $values->get("filter_cancer_type");
+      if ($cancer_type != null) {
+        $query->whereJsonContains("cancer_type", $cancer_type);
+      }
+
+      // Therapy Type
+      $therapy_type = $values->get("filter_therapy_type");
+      if ($therapy_type != null) {
+        $query->whereJsonContains("therapy_type", $therapy_type);
+      }
+    }
+
     // Age Filter
     $from_age = $values->get("filter_from_age");
     $to_age = $values->get("filter_to_age");

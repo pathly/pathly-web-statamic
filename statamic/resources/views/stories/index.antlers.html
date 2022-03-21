@@ -159,10 +159,9 @@
   <div class="blog">
     {{ collection:stories paginate="12" as="posts" sort="release_date:desc"
 
-    :cancer_type:contains="get:cancer_type"
-    :therapy_type:contains="get:therapy_type"
-    :person_type:contains="get:person_type"
-
+    :filter_cancer_type="get:cancer_type"
+    :filter_therapy_type="get:therapy_type"
+    :filter_person_type="get:person_type"
     :filter_from_age="get:from_age"
     :filter_to_age="get:to_age"
     :filter_favorites="get:favorite"

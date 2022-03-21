@@ -6,7 +6,8 @@ title: 'Paul Hofmann, 27'
 passed_away: false
 name: Paul
 age: 27
-cancer_type: testicularcancer
+cancer_type:
+  - testicularcancer
 therapy_type:
   - surgery
 person_type: patient

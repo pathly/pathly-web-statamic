@@ -4,7 +4,8 @@ blueprint: story
 title: 'Michael Hombrecher, 32'
 name: Michael
 age: 32
-cancer_type: skincancer
+cancer_type:
+  - skincancer
 person_type: patient
 image: stories/m/Michael-Titelbild.png
 image_position: center

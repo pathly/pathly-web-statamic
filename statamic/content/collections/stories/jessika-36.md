@@ -4,7 +4,8 @@ blueprint: story
 title: 'Jessika Schliebe, 36'
 name: Jessika
 age: 36
-cancer_type: cervicalcancer
+cancer_type:
+  - cervicalcancer
 person_type: patient
 image: stories/j/Jessika-1-Titelbild.png
 image_position: center

@@ -5,7 +5,8 @@ title: 'Elif Tekküpeli, 46'
 passed_away: false
 name: Elif
 age: 46
-cancer_type: coloncancer
+cancer_type:
+  - coloncancer
 therapy_type:
   - surgery
   - chemotherapy

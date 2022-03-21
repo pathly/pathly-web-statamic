@@ -4,7 +4,8 @@ blueprint: story
 title: 'Sophie Gabor, 33'
 name: Sophie
 age: 33
-cancer_type: breastcancer
+cancer_type:
+  - breastcancer
 therapy_type:
   - chemotherapy
   - surgery

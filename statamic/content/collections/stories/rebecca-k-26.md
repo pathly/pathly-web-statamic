@@ -5,11 +5,6 @@ title: 'Rebecca Kremer, 26'
 passed_away: false
 name: Rebecca
 age: 26
-therapy_type:
-  - chemotherapy
-  - surgery
-  - immunotherapy
-  - radiationtherapy
 person_type: relative
 image: stories/r/Rebecca-1-Titelbild.png
 image_position: center

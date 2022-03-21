@@ -4,7 +4,8 @@ blueprint: story
 title: 'Christian Nübling, 51'
 name: Christian
 age: 51
-cancer_type: gallbladdercancer
+cancer_type:
+  - gallbladdercancer
 therapy_type:
   - chemotherapy
 person_type: patient

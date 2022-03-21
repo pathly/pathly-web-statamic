@@ -4,7 +4,8 @@ blueprint: story
 title: 'Evelyn Tasser, 29'
 name: Evelyn
 age: 29
-cancer_type: breastcancer
+cancer_type:
+  - breastcancer
 therapy_type:
   - hormonetherapy
   - surgery

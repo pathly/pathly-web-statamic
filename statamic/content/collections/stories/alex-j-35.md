@@ -6,7 +6,8 @@ title: 'Alex Jenniges, 35'
 passed_away: false
 name: Alex
 age: 35
-cancer_type: testicularcancer
+cancer_type:
+  - testicularcancer
 therapy_type:
   - chemotherapy
   - surgery

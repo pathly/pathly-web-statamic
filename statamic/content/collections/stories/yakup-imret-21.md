@@ -6,7 +6,8 @@ title: 'Yakup Imret, 21'
 passed_away: false
 name: Yakup
 age: 21
-cancer_type: bloodcancer
+cancer_type:
+  - bloodcancer
 therapy_type:
   - chemotherapy
 person_type: patient

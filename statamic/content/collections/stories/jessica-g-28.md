@@ -6,7 +6,8 @@ title: 'Jessica Götze, 28'
 passed_away: false
 name: Jessica
 age: 28
-cancer_type: cervicalcancer
+cancer_type:
+  - cervicalcancer
 therapy_type:
   - surgery
 person_type: patient

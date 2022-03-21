@@ -5,7 +5,8 @@ title: 'Anja Laskowski, 31'
 passed_away: false
 name: Anja
 age: 31
-cancer_type: breastcancer
+cancer_type:
+  - breastcancer
 therapy_type:
   - chemotherapy
   - surgery

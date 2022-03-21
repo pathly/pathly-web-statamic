@@ -5,8 +5,7 @@ title: 'Tatiana Hafez, 33'
 passed_away: false
 name: Tatiana
 age: 33
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - chemotherapy
 person_type: patient

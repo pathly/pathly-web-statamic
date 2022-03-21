@@ -5,8 +5,7 @@ title: 'Sandy Senft, 23'
 passed_away: false
 name: Sandy
 age: 23
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - hormonetherapy
   - chemotherapy

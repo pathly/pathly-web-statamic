@@ -5,8 +5,7 @@ title: 'Sandra Cramer, 24'
 passed_away: false
 name: Sandra
 age: 24
-cancer_type:
-  - pancreaticcancer
+cancer_type: pancreaticcancer
 therapy_type:
   - chemotherapy
 person_type: patient

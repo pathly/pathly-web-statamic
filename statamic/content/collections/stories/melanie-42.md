@@ -4,8 +4,7 @@ blueprint: story
 title: 'Melanie Bürkle, 42'
 name: Melanie
 age: 42
-cancer_type:
-  - lungcancer
+cancer_type: lungcancer
 therapy_type:
   - surgery
 person_type: patient

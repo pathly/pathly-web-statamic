@@ -6,8 +6,7 @@ title: 'Janina, 35'
 passed_away: false
 name: Janina
 age: 35
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - chemotherapy
   - radiationtherapy

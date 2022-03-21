@@ -6,8 +6,7 @@ title: 'Giulia, 30'
 passed_away: true
 name: Giulia
 age: 30
-cancer_type:
-  - pancreaticcancer
+cancer_type: pancreaticcancer
 therapy_type:
   - chemotherapy
 person_type: patient

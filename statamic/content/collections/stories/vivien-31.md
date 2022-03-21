@@ -21,8 +21,7 @@ contact:
 release_date: '2021-02-21'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1647777242
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 content:
   -
     type: paragraph

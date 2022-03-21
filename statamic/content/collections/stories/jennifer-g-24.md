@@ -5,8 +5,7 @@ title: 'Jennifer Gotta, 24'
 passed_away: false
 name: Jennifer
 age: 24
-cancer_type:
-  - osteosarcoma
+cancer_type: osteosarcoma
 therapy_type:
   - surgery
 person_type: patient

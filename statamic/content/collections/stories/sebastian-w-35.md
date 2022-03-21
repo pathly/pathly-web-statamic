@@ -5,8 +5,7 @@ title: 'Sebastian Waters, 35'
 passed_away: false
 name: Sebastian
 age: 35
-cancer_type:
-  - burkitt-lymphoma
+cancer_type: burkitt-lymphoma
 therapy_type:
   - chemotherapy
   - immunotherapy

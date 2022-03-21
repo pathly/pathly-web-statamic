@@ -5,8 +5,7 @@ title: 'Kendra Zwiefka, 39'
 passed_away: false
 name: Kendra
 age: 39
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - chemotherapy
 person_type: patient

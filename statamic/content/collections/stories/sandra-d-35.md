@@ -5,8 +5,7 @@ title: 'Sandra Dalgliesh, 35'
 passed_away: false
 name: Sandra
 age: 35
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - chemotherapy
   - hormonetherapy

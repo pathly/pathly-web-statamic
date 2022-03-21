@@ -5,8 +5,7 @@ title: 'Lea Schriever, 22'
 passed_away: false
 name: Lea
 age: 22
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - chemotherapy
   - surgery

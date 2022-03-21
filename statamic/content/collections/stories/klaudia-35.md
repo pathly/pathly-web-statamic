@@ -4,8 +4,7 @@ blueprint: story
 title: 'Klaudia Seiter, 35'
 name: Klaudia
 age: 35
-cancer_type:
-  - cervicalcancer
+cancer_type: cervicalcancer
 therapy_type:
   - radiationtherapy
   - chemotherapy

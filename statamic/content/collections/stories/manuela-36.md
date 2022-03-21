@@ -4,8 +4,7 @@ blueprint: story
 title: 'Manuela Suttner, 36'
 name: Manuela
 age: 36
-cancer_type:
-  - lungcancer
+cancer_type: lungcancer
 therapy_type:
   - immunotherapy
   - surgery

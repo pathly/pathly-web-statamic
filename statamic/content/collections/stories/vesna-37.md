@@ -5,8 +5,7 @@ title: 'Vesna Zekic, 37'
 passed_away: false
 name: Vesna
 age: 37
-cancer_type:
-  - lungcancer
+cancer_type: lungcancer
 therapy_type:
   - chemotherapy
   - palliativetherapy

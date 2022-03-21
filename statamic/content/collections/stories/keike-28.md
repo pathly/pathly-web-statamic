@@ -5,8 +5,7 @@ title: 'Keike, 28'
 passed_away: false
 name: Keike
 age: 28
-cancer_type:
-  - neuroblastoma
+cancer_type: neuroblastoma
 therapy_type:
   - chemotherapy
   - surgery

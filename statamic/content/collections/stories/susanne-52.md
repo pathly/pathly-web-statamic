@@ -5,8 +5,7 @@ title: 'Susanne Kitlinski, 52'
 passed_away: false
 name: Susanne
 age: 52
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - chemotherapy
   - radiationtherapy

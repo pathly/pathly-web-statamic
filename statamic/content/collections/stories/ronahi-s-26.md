@@ -5,8 +5,7 @@ title: 'Ronahi Solmaz, 26'
 passed_away: false
 name: Ronahi
 age: 26
-cancer_type:
-  - bloodcancer
+cancer_type: bloodcancer
 therapy_type:
   - stemcelltherapy
 person_type: patient

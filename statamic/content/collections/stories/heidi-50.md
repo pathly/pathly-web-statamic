@@ -5,8 +5,7 @@ title: 'Heidi, 50'
 passed_away: false
 name: Heidi
 age: 50
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - chemotherapy
   - surgery

@@ -5,8 +5,7 @@ title: 'Julija Lleshi, 37'
 passed_away: false
 name: Julija
 age: 37
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - chemotherapy
 person_type: patient

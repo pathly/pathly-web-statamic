@@ -12,7 +12,7 @@ therapy_type:
   - surgery
   - radiationtherapy
 person_type: patient
-image_position: center
+
 contact:
   -
     contact_type: instagram

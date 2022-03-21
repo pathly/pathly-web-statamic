@@ -10,7 +10,7 @@ therapy_type:
   - surgery
   - chemotherapy
 person_type: patient
-image_position: center
+
 contact:
   -
     contact_type: instagram

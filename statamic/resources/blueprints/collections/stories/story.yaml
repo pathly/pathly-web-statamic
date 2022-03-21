@@ -25,6 +25,25 @@ sections:
           listable: hidden
           instructions_position: above
       -
+        handle: death_date
+        field:
+          mode: single
+          time_enabled: false
+          time_required: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: 'Date of Death'
+          type: date
+          icon: date
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+          if:
+            passed_away: 'equals true'
+      -
         handle: name
         field:
           input_type: text
@@ -95,19 +114,6 @@ sections:
           type: assets
           icon: assets
           listable: hidden
-      -
-        handle: image_position
-        field:
-          options:
-            left: Left
-            center: Center
-            right: Right
-          display: 'Image Position on Overview'
-          type: button_group
-          icon: button_group
-          listable: hidden
-          validate:
-            - required
       -
         handle: contact
         field:

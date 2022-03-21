@@ -7,7 +7,7 @@ age: 32
 cancer_type: skincancer
 person_type: patient
 image: stories/m/Michael-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

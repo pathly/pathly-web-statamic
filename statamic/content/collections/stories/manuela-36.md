@@ -11,7 +11,7 @@ therapy_type:
   - chemotherapy
 person_type: patient
 image: stories/m/Manuela-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

@@ -8,7 +8,7 @@ cancer_type: breastcancer
 therapy_type:
   - surgery
 person_type: patient
-image_position: center
+
 contact:
   -
     contact_type: instagram

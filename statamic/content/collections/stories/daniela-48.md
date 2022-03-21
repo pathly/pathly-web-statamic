@@ -12,7 +12,7 @@ therapy_type:
   - radiationtherapy
 person_type: patient
 image: stories/d/Daniela-F-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

@@ -11,7 +11,7 @@ therapy_type:
   - stemcelltherapy
 person_type: patient
 image: stories/a/Anna-E-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

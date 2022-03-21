@@ -8,7 +8,7 @@ age: 50
 cancer_type: breastcancer
 person_type: patient
 image: stories/b/Birgit-G-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

@@ -11,7 +11,7 @@ therapy_type:
   - immunotherapy
 person_type: patient
 image: stories/c/Christin-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

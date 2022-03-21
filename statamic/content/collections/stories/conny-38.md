@@ -10,7 +10,7 @@ therapy_type:
   - surgery
 person_type: patient
 image: stories/c/Conny-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

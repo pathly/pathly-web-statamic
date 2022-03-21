@@ -7,7 +7,7 @@ name: Dennis
 age: 29
 cancer_type: t-cell-lymphoma
 person_type: patient
-image_position: center
+
 contact:
   -
     contact_type: instagram

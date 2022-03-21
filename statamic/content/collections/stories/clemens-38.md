@@ -12,7 +12,7 @@ therapy_type:
   - palliativetherapy
 person_type: patient
 image: stories/c/Clemens-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

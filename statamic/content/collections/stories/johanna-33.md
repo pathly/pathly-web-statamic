@@ -8,7 +8,7 @@ age: 33
 cancer_type: breastcancer
 person_type: patient
 image: stories/j/Johanna-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

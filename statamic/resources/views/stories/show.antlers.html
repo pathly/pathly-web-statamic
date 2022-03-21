@@ -11,7 +11,7 @@
         </span>
       </div>
 
-      <h1 class="">{{ name }}{{if age }}, {{ age }}{{ /if }}</h1>
+      <h1 class="">{{ name }}{{if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h1>
       <img src="{{ image }}" alt="{{ alt }}">
 
       {{ description }}
@@ -78,7 +78,7 @@
     <address class="card-detail_footer">
       <img src="{{ image }}" alt="{{ alt }}">
       <div>
-        <p>{{ name }}</p>
+        <p>{{ name }} {{ if passed_away }}†{{ /if }}</p>
 
         <div>
           {{ contact }}
@@ -87,7 +87,12 @@
           {{ /contact }}
 
           <span>Datum</span>
-          <time datetime="{{ date format="Y-m-d" }}">{{ release_date format="d.m.Y" }}</time>
+          <time datetime="{{ release_date format="Y-m-d" }}">{{ release_date format="d.m.Y" }}</time>
+
+          {{ if passed_away }}
+            <span>Verstorben</span>
+            <time datetime="{{ death_date format="Y-m-d" }}">{{ death_date format="d.m.Y" }}</time>
+          {{ /if }}
         </div>
       </div>
     </address>

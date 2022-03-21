@@ -10,7 +10,7 @@ therapy_type:
   - chemotherapy
 person_type: patient
 image: stories/t/Tatiana-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: youtube

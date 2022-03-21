@@ -7,7 +7,7 @@ age: 30
 cancer_type: hodgkin-lymphoma
 person_type: patient
 image: stories/j/Jennifer-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

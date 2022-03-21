@@ -11,7 +11,7 @@ therapy_type:
   - radiationtherapy
 person_type: patient
 image: stories/s/Susanne-K-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

@@ -11,7 +11,7 @@ therapy_type:
   - hormonetherapy
 person_type: patient
 image: stories/s/Sandra-D-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

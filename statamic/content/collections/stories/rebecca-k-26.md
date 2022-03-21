@@ -7,7 +7,7 @@ name: Rebecca
 age: 26
 person_type: relative
 image: stories/r/Rebecca-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: website

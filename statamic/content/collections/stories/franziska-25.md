@@ -13,7 +13,7 @@ therapy_type:
   - radiationtherapy
 person_type: patient
 image: stories/f/Franziska-B-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

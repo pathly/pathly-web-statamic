@@ -10,7 +10,7 @@ therapy_type:
   - radiationtherapy
 person_type: patient
 image: stories/d/Denise-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

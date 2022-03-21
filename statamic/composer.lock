@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f19694a84339bf02ec69df3d8e95a2cb",
+    "content-hash": "7c12a0204c5d537a9df9c570a509a776",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -7105,16 +7105,16 @@
         },
         {
             "name": "takepart-media/statamic-oreos",
-            "version": "v1.1.1",
+            "version": "v1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/takepart-media/statamic-oreos.git",
-                "reference": "9a35fa6a34817d0a7965ed9c336433902b4e0b8c"
+                "reference": "366826874fcad5f561ce10c6546abf73a18be22a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/takepart-media/statamic-oreos/zipball/9a35fa6a34817d0a7965ed9c336433902b4e0b8c",
-                "reference": "9a35fa6a34817d0a7965ed9c336433902b4e0b8c",
+                "url": "https://api.github.com/repos/takepart-media/statamic-oreos/zipball/366826874fcad5f561ce10c6546abf73a18be22a",
+                "reference": "366826874fcad5f561ce10c6546abf73a18be22a",
                 "shasum": ""
             },
             "require": {
@@ -7160,9 +7160,9 @@
             "support": {
                 "email": "it@takepart-media.de",
                 "issues": "https://github.com/takepart-media/statamic-oreos/issues",
-                "source": "https://github.com/takepart-media/statamic-oreos/tree/v1.1.1"
+                "source": "https://github.com/takepart-media/statamic-oreos/tree/v1.1.2"
             },
-            "time": "2021-11-04T09:32:36+00:00"
+            "time": "2021-12-22T08:24:05+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -10269,5 +10269,5 @@
         "php": "^7.3 || ^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }

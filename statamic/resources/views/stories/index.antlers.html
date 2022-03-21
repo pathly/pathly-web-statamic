@@ -39,6 +39,34 @@
         </div>
 
         <div class="dropdown">
+          <button class="dropdown-button {{ if get:therapy_type }}active{{ /if }}">
+            {{ if get:therapy_type }}
+              {{ taxonomy:therapy_type :slug:is="get:therapy_type | sanitize" }}
+                {{ title }}
+              {{ /taxonomy:therapy_type }}
+            {{ else }}
+              Therapieform
+            {{ /if }}
+          </button>
+
+          <div class="dropdown-menu dropdown-menu--select">
+            <div class="shadow">
+              <div>
+                {{ taxonomy:therapy_type min_count="1" }}
+                  <input id="{{ slug }}" value="{{ slug }}" name="therapy_type" type="radio">
+                  <label for="{{ slug }}">{{ title }}</label>
+                {{ /taxonomy:therapy_type }}
+              </div>
+
+              <div class="reset-wrapper">
+                <input id="therapy_none" name="therapy_type" type="reset">
+                <label for="therapy_none">Filter zurücksetzen</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown">
           <button class="dropdown-button {{ if get:from_age or get:to_age }}active{{ /if }}">
             {{ if get:from_age && get:to_age }}
               {{ get:from_age | sanitize }} - {{ get:to_age | sanitize }}
@@ -65,34 +93,6 @@
               <div class="reset-wrapper">
                 <input id="age_none" name="age" type="reset">
                 <label class="reset" for="age_none">Filter zurücksetzen</label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <button class="dropdown-button {{ if get:therapy_type }}active{{ /if }}">
-            {{ if get:therapy_type }}
-              {{ taxonomy:therapy_type :slug:is="get:therapy_type | sanitize" }}
-                {{ title }}
-              {{ /taxonomy:therapy_type }}
-            {{ else }}
-              Therapieform
-            {{ /if }}
-          </button>
-
-          <div class="dropdown-menu dropdown-menu--select">
-            <div class="shadow">
-              <div>
-                {{ taxonomy:therapy_type min_count="1" }}
-                  <input id="{{ slug }}" value="{{ slug }}" name="therapy_type" type="radio">
-                  <label for="{{ slug }}">{{ title }}</label>
-                {{ /taxonomy:therapy_type }}
-              </div>
-
-              <div class="reset-wrapper">
-                <input id="therapy_none" name="therapy_type" type="reset">
-                <label for="therapy_none">Filter zurücksetzen</label>
               </div>
             </div>
           </div>

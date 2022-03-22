@@ -1,9 +1,10 @@
 ---
 id: 9d445dc8-8c94-4913-80da-3ad10f2543cd
 blueprint: story
-title: 'Danita Lehmann, 25'
+title: 'Danita L., 25'
 passed_away: false
 firstname: Danita
+surname: Lehmann
 age: 25
 cancer_type: ovariancancer
 therapy_type:

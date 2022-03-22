@@ -1,9 +1,10 @@
 ---
 id: 691dfac2-f1b8-4ecf-b84a-bf405c4666e3
 blueprint: story
-title: 'Elizabeth Tsang, 31'
+title: 'Elizabeth T., 31'
 passed_away: false
 firstname: Elizabeth
+surname: Tsang
 age: 31
 cancer_type: breastcancer
 therapy_type:

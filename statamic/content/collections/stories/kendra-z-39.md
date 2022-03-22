@@ -1,9 +1,10 @@
 ---
 id: 3b017cd2-a453-4806-9796-4072a09b12f5
 blueprint: story
-title: 'Kendra Zwiefka, 39'
+title: 'Kendra Z., 39'
 passed_away: false
 firstname: Kendra
+surname: Zwiefka
 age: 39
 cancer_type: breastcancer
 therapy_type:

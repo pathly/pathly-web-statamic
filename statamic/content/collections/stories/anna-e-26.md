@@ -1,9 +1,10 @@
 ---
 id: 678b9d64-1e72-4ca2-af6d-9c8fa5975dac
 blueprint: story
-title: 'Anna Esposito, 26'
+title: 'Anna E., 26'
 passed_away: false
 firstname: Anna
+surname: Esposito
 age: 26
 therapy_type:
   - chemotherapy

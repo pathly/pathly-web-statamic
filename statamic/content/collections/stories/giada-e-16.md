@@ -1,27 +1,29 @@
 ---
-id: b32b1d18-f7ec-49b6-af84-dfc1490b309e
+id: 23d0ca08-ccb9-427b-a550-1abfdcf46f0b
 published: false
 blueprint: story
-title: 'Yakup Imret, 21'
+title: 'Giada E., 16'
 passed_away: false
-firstname: Yakup
-age: 21
-cancer_type: bloodcancer
+firstname: Giada
+surname: Elisa
+age: 16
+cancer_type: osteosarcoma
 therapy_type:
+  - surgery
   - chemotherapy
 person_type: patient
-image: stories/y/Yakup-1-Titelbild.png
+image: stories/g/Giada-1-Titelbild.png
 
 contact:
   -
     contact_type: instagram
-    contact_text: yakupimret
-    contact_url: 'https://www.instagram.com/yakupimret'
+    contact_text: giadacampanozzi
+    contact_url: 'https://www.instagram.com/giadacampanozzi/'
     type: links
     enabled: true
-release_date: '2020-09-11'
+release_date: '2021-08-03'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647205566
+updated_at: 1647206241
 content:
   -
     type: paragraph

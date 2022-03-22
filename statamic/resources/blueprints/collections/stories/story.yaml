@@ -10,7 +10,7 @@ sections:
           required: true
           validate:
             - required
-          instructions: 'Do not add the surname here!'
+          instructions: 'Use the following format: Max M., 22'
           instructions_position: above
           listable: hidden
           input_type: text

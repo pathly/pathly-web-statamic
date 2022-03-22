@@ -1,9 +1,10 @@
 ---
 id: a0656203-071d-42ee-a2a2-42122c408a0f
 blueprint: story
-title: 'Alexander Böhmer, 23'
+title: 'Alex B., 23'
 passed_away: false
 firstname: Alex
+surname: Böhmer
 age: 23
 cancer_type: bonecancer
 therapy_type:

@@ -1,9 +1,10 @@
 ---
 id: 71590e99-058e-4dca-9848-fc245f4e3c9a
 blueprint: story
-title: 'Vanessa Kreuz, 26'
+title: 'Vanessa K., 26'
 passed_away: false
 firstname: Vanessa
+surname: Kreuz
 age: 26
 person_type: relative
 image: stories/v/Vanessa-K-1-Titelbild.png

@@ -1,9 +1,10 @@
 ---
 id: abf90a37-495d-44ff-8488-1945b18b78c4
 blueprint: story
-title: 'Franziska Baumgart, 25'
+title: 'Franziska B., 25'
 passed_away: false
 firstname: Franziska
+surname: Baumgart
 age: 25
 cancer_type: breastcancer
 therapy_type:

@@ -1,8 +1,9 @@
 ---
 id: 6b5804dd-cf46-4fcc-9471-406273b153c8
 blueprint: story
-title: 'Evelyn Tasser, 29'
+title: 'Evelyn T., 29'
 firstname: Evelyn
+surname: Tasser
 age: 29
 cancer_type: breastcancer
 therapy_type:

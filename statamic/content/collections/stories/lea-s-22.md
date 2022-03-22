@@ -1,9 +1,10 @@
 ---
 id: 451eeaa7-a8fc-4194-a83d-aef9499a4b07
 blueprint: story
-title: 'Lea Schriever, 22'
+title: 'Lea S., 22'
 passed_away: false
 firstname: Lea
+surname: Schriever
 age: 22
 cancer_type: breastcancer
 therapy_type:

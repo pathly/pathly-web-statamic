@@ -2,9 +2,10 @@
 id: 5eafa696-64cd-4157-9798-1ada3bc06d82
 published: false
 blueprint: story
-title: 'Christine Raab, 38'
+title: 'Christine R., 38'
 passed_away: false
 firstname: Christine
+surname: Raab
 age: 38
 cancer_type: breastcancer
 therapy_type:

@@ -2,9 +2,10 @@
 id: 8306758c-a07f-4f98-8008-6181de25ded7
 published: false
 blueprint: story
-title: 'Paul Hofmann, 27'
+title: 'Paul H., 27'
 passed_away: false
 firstname: Paul
+surname: Hofmann
 age: 27
 cancer_type: testicularcancer
 therapy_type:

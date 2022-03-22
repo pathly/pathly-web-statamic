@@ -1,9 +1,10 @@
 ---
 id: feccb9d1-ad98-42ef-8bf3-aedb3c130f00
 blueprint: story
-title: 'Anja Rosental'
+title: 'Anja R.'
 passed_away: false
 firstname: Anja
+surname: Rosental
 cancer_type: breastcancer
 therapy_type:
   - surgery

@@ -1,9 +1,10 @@
 ---
 id: fcf2298e-0d83-4686-808a-3c47eb5f38f3
 blueprint: story
-title: 'Daniel Kloß, 39'
+title: 'Daniel K., 39'
 passed_away: false
 firstname: Daniel
+surname: Kloß
 age: 39
 cancer_type: softtissuecancer
 therapy_type:

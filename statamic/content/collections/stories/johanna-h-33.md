@@ -1,7 +1,7 @@
 ---
 id: 16054ce9-5965-4f5c-bd10-9ad1da092fff
 blueprint: story
-title: 'Johanna H, 33'
+title: 'Johanna H., 33'
 passed_away: false
 firstname: Johanna
 age: 33

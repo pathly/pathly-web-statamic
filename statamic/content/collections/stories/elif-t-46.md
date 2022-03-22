@@ -1,9 +1,10 @@
 ---
 id: d530acf7-f3a6-4d48-86e0-acdb1ff7b326
 blueprint: story
-title: 'Elif Tekküpeli, 46'
+title: 'Elif T., 46'
 passed_away: false
 firstname: Elif
+surname: Tekküpeli
 age: 46
 cancer_type: coloncancer
 therapy_type:

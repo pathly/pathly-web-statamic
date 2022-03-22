@@ -1,9 +1,10 @@
 ---
 id: 517bc72e-d528-4adb-8c0e-0600537cfcd0
 blueprint: story
-title: 'Clemens Wolf, 38'
+title: 'Clemens W., 38'
 passed_away: true
 firstname: Clemens
+surname: Wolf
 age: 38
 cancer_type: esophagealcancer
 therapy_type:

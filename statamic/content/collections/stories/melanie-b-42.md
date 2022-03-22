@@ -1,8 +1,9 @@
 ---
 id: 148a6724-c657-41cf-b729-b4a1a27e605b
 blueprint: story
-title: 'Melanie Bürkle, 42'
+title: 'Melanie B., 42'
 firstname: Melanie
+surname: Bürkle
 age: 42
 cancer_type: lungcancer
 therapy_type:

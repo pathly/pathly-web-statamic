@@ -1,8 +1,9 @@
 ---
 id: 8ea599ef-8626-4209-862b-910407cd8d79
 blueprint: story
-title: 'Sophie Gabor, 33'
+title: 'Sophie G., 33'
 firstname: Sophie
+surname: Gabor
 age: 33
 cancer_type: breastcancer
 therapy_type:

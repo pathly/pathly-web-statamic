@@ -1,9 +1,10 @@
 ---
 id: 3715d976-c38a-4009-9573-0965f773b617
 blueprint: story
-title: 'Ronahi Solmaz, 26'
+title: 'Ronahi S., 26'
 passed_away: false
 firstname: Ronahi
+surname: Solmaz
 age: 26
 cancer_type: bloodcancer
 therapy_type:

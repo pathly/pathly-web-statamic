@@ -17,20 +17,32 @@ contact:
     enabled: true
 release_date: '2022-02-22'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647644448
+updated_at: 1647897672
 content:
   -
-    type: paragraph
+    type: blockquote
     content:
       -
-        type: text
-        text: '»Der Moment, als ich das erste Mal die schwindende Gesundheit meines Vaters bemerkte, war wie ein ruckartiger Abschluss meines Erwachsenwerdens. Die kindliche Naivität des Glaubens an die Unverwundbarkeit des Vaters zerschellte urplötzlich im Angesicht des Gewichtsverlustes meines Vaters. Das war ungefähr zwei Jahre vor seinem Tod. Tür an Tür erlebte ich den langsamen und unaufhaltsamen Prozess der gesundheitlichen Verschlechterung, wenngleich die Familie nie die Hoffnung verlor.'
+        type: paragraph
+        content:
+          -
+            type: text
+            text: '»Der Moment, als ich das erste Mal die schwindende Gesundheit meines Vaters bemerkte, war wie ein ruckartiger Abschluss meines Erwachsenwerdens. Die kindliche Naivität des Glaubens an die Unverwundbarkeit des Vaters zerschellte urplötzlich im Angesicht des Gewichtsverlustes meines Vaters. Das war ungefähr zwei Jahre vor seinem Tod. Tür an Tür erlebte ich den langsamen und unaufhaltsamen Prozess der gesundheitlichen Verschlechterung, wenngleich die Familie nie die Hoffnung verlor.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Mein Vater verstarb im Juni 2021 nach fast zwei Jahren Kampf gegen den Lungenkrebs – da war er 67 Jahre, ich 23 Jahre alt. Freiheit war das wertvollste Gut in seinem Leben. So wichtig, dass er nahezu alles diesem Prinzip unterordnete. Er lebte seine Freiheit aus in den radikalsten Formen, Freiheit als Lebensphilosophie, ohne Regeln, ohne gesellschaftliche Zwänge. Lieber kurz und glücklich leben, als lang und unglücklich. Seine Krankheit nahm ihm diese Freiheit. Er sagte mir als Kind wiederholt, dass er niemals an diesen Punkt kommen wolle, wo er nicht mehr der vollkommenen Selbstständigkeit fähig sei. Ich glaube, das war seine größte Angst. Diese Angst manifestiert zu sehen in seiner fortschreitenden Erkrankung, und seine eigene Ohnmacht, das war für mich das Schlimmste.'
   -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Mein Vater verstarb im Juni 2021 nach fast zwei Jahren Kampf gegen den Lungenkrebs – da war er 67 Jahre, ich 23 Jahre alt. Freiheit war das wertvollste Gut in seinem Leben. So wichtig, dass er nahezu alles diesem Prinzip unterordnete. Er lebte seine Freiheit aus in den radikalsten Formen, Freiheit als Lebensphilosophie, ohne Regeln, ohne gesellschaftliche Zwänge. Lieber kurz und glücklich leben, als lang und unglücklich. Seine Krankheit nahm ihm diese Freiheit. Er sagte mir als Kind wiederholt, dass er niemals an diesen Punkt kommen wolle, wo er nicht mehr der vollkommenen Selbstständigkeit fähig sei. Ich glaube, das war seine größte Angst. Diese Angst manifestiert zu sehen in seiner fortschreitenden Erkrankung, und seine eigene Ohnmacht, das war für mich das Schlimmste.'
+    type: set
+    attrs:
+      values:
+        type: images
+        content_images:
+          - stories/n/Nikitas-2.png
+          - stories/n/Nikitas-3.png
+          - stories/n/Nikitas-4.png
   -
     type: paragraph
     content:

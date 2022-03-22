@@ -4,7 +4,7 @@ blueprint: tamoxifen
 title: Tamoxifen
 image_position: center
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1647281681
+updated_at: 1647901568
 image: infos/Tamoxifen--Website.png
 template: tamoxifen
 type: info
@@ -299,6 +299,34 @@ content:
               - '30 Tabletten'
               - '20'
               - 00490A
+          -
+            cells:
+              - 'Orion Pharma AG Schweiz'
+              - 'TAMOXIFEN FARMOS 20 mg'
+              - '100 Tabletten'
+              - '20'
+              - '2093652'
+          -
+            cells:
+              - 'Orion Pharma AG Schweiz'
+              - 'TAMOXIFEN FARMOS 20 mg'
+              - '100 Tabletten'
+              - '20'
+              - '2093653'
+          -
+            cells:
+              - 'Orion Pharma AG Schweiz'
+              - 'TAMOXIFEN FARMOS 20 mg'
+              - '100 Tabletten'
+              - '20'
+              - '2093646'
+          -
+            cells:
+              - 'Orion Pharma AG Schweiz'
+              - 'TAMOXIFEN FARMOS 20 mg'
+              - '100 Tabletten'
+              - '20'
+              - '2093651'
   -
     type: heading
     attrs:

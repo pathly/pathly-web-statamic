@@ -12,7 +12,7 @@ person_type: patient
 image: stories/e/Evelyn-1-Titelbild.png
 image_position: center
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647186488
+updated_at: 1647897895
 passed_away: false
 contact:
   -
@@ -51,4 +51,5 @@ content:
         type: images
         content_images:
           - stories/e/Evelyn-2.png
+          - stories/e/Evelyn-4.png
 ---

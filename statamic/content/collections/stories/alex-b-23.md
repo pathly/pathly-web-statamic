@@ -5,8 +5,7 @@ title: 'Alexander Böhmer, 23'
 passed_away: false
 name: Alex
 age: 23
-cancer_type:
-  - bonekrebs
+cancer_type: osteosarcoma
 therapy_type:
   - surgery
 person_type: patient
@@ -27,7 +26,7 @@ contact:
     enabled: true
 release_date: '2021-08-07'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647640946
+updated_at: 1647898364
 description:
   -
     type: paragraph
@@ -52,6 +51,7 @@ content:
         type: images
         content_images:
           - stories/a/Alex-B-2.png
+          - stories/a/Alex-B-3.png
   -
     type: set
     attrs:

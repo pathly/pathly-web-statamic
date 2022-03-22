@@ -23,50 +23,53 @@ contact:
     enabled: true
 release_date: '2021-06-18'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647782049
+updated_at: 1647894070
 content:
   -
-    type: paragraph
+    type: blockquote
     content:
       -
-        type: text
-        text: '»Hi, ich bin Rebecca! Bereits im Alter von 13 Jahren habe ich die ersten Erfahrungen mit der Krankheit Krebs gemacht, als damals bei meinem Stiefpapa ein Tumor entfernt wurde. Die Bedeutung der Krankheit habe ich damals nicht verstanden, ich wusste lediglich, dass die Mutter einer Freundin daran gestorben war. Die zahlreichen Fachtermini ließen die Erkrankung noch bedrohlicher auf mich wirkte. Als Kind wirkte dieser Tumor wie ein böser Traum auf mich, den ich weder greifen noch verstehen konnte. '
-  -
-    type: paragraph
-    content:
+        type: paragraph
+        content:
+          -
+            type: text
+            text: '»Hi, ich bin Rebecca! Bereits im Alter von 13 Jahren habe ich die ersten Erfahrungen mit der Krankheit Krebs gemacht, als damals bei meinem Stiefpapa ein Tumor entfernt wurde. Die Bedeutung der Krankheit habe ich damals nicht verstanden, ich wusste lediglich, dass die Mutter einer Freundin daran gestorben war. Die zahlreichen Fachtermini ließen die Erkrankung noch bedrohlicher auf mich wirkte. Als Kind wirkte dieser Tumor wie ein böser Traum auf mich, den ich weder greifen noch verstehen konnte. '
       -
-        type: text
-        text: '2015 ereilte unsere Familie der nächste Schicksalsschlag. Die Diagnose: ein Riesenzellgranulom – ein gutartiger Tumor, der allerdings so aggressiv und schnell wuchs, dass er meinem Stiefpapa das Jochbein zerfraß. Mit diesem Ereignis wurde mit bewusst, warum viele Menschen von Krebs reden, als wäre die Krankheit ein lebendiges, wachsendes Wesen.'
-  -
-    type: paragraph
-    content:
+        type: paragraph
+        content:
+          -
+            type: text
+            text: '2015 ereilte unsere Familie der nächste Schicksalsschlag. Die Diagnose: ein Riesenzellgranulom – ein gutartiger Tumor, der allerdings so aggressiv und schnell wuchs, dass er meinem Stiefpapa das Jochbein zerfraß. Mit diesem Ereignis wurde mit bewusst, warum viele Menschen von Krebs reden, als wäre die Krankheit ein lebendiges, wachsendes Wesen.'
       -
-        type: text
-        text: 'Für uns als Familie war diese Nachricht ein schwerer Schlag. Ich habe damals bereits in Berlin gewohnt und bin oft nach Hause gefahren, um meine Familie zu unterstützen. Doch viel machen konnte ich nicht; nur zuhören, hoffen und da sein. Von der Diagnose bis zur Operation verging viel Zeit. Lange war unklar, ob es überhaupt eine Operation geben würde. Es dauerte Wochen, bis sich ein Chirurg fand, der die notwendigen Qualifikationen besaß, um den komplizierten Eingriff durchzuführen. Die OP selbst war eine ganz eigene Herausforderung – sie dauerte Stunden. Stunden, in denen wir nicht wussten, ob er sie überleben würde oder nicht, ob der Tumor entfernt werden kann oder nicht. Glücklicherweise verlief die Operation ohne Komplikationen – den Umständen entsprechend, wie man so schön sagt. Anschließend lag mein Stiefvater noch eine längere Zeit im künstlichen Koma, wobei ich nicht sagen kann, ob es Tage oder Wochen waren. Besonders Lebensabschnitte, die einen persönlich stark belasten, werden häufig verdrängt.'
-  -
-    type: paragraph
-    content:
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Für uns als Familie war diese Nachricht ein schwerer Schlag. Ich habe damals bereits in Berlin gewohnt und bin oft nach Hause gefahren, um meine Familie zu unterstützen. Doch viel machen konnte ich nicht; nur zuhören, hoffen und da sein. Von der Diagnose bis zur Operation verging viel Zeit. Lange war unklar, ob es überhaupt eine Operation geben würde. Es dauerte Wochen, bis sich ein Chirurg fand, der die notwendigen Qualifikationen besaß, um den komplizierten Eingriff durchzuführen. Die OP selbst war eine ganz eigene Herausforderung – sie dauerte Stunden. Stunden, in denen wir nicht wussten, ob er sie überleben würde oder nicht, ob der Tumor entfernt werden kann oder nicht. Glücklicherweise verlief die Operation ohne Komplikationen – den Umständen entsprechend, wie man so schön sagt. Anschließend lag mein Stiefvater noch eine längere Zeit im künstlichen Koma, wobei ich nicht sagen kann, ob es Tage oder Wochen waren. Besonders Lebensabschnitte, die einen persönlich stark belasten, werden häufig verdrängt.'
       -
-        type: text
-        text: 'Im Herbst 2017 trat die Krankheit erneut auf. Eine weitere OP wäre zu gefährlich gewesen, weswegen die Ärzt:innen versuchten, den Tumor mittels einer Strahlentherapie zu bekämpfen. Kurz beschrieben klingt der Verlauf der Krankheit fast wie ein Spaziergang, doch war es ein ewiger, anstrengender Prozess von der Diagnose bis zur Therapie. Da ein Tumor in solch spezieller Form bisher noch nicht häufig aufgetreten ist, waren sich die Ärzt:innen untereinander nicht einig, welche Therapieform die geeignetste für meinen Stiefvater wäre. Wir waren bei der Mund-Kiefer-Gesichts-Chirurgie, bei der Onkologie und schließlich bei der Neurologie.'
-  -
-    type: paragraph
-    content:
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Im Herbst 2017 trat die Krankheit erneut auf. Eine weitere OP wäre zu gefährlich gewesen, weswegen die Ärzt:innen versuchten, den Tumor mittels einer Strahlentherapie zu bekämpfen. Kurz beschrieben klingt der Verlauf der Krankheit fast wie ein Spaziergang, doch war es ein ewiger, anstrengender Prozess von der Diagnose bis zur Therapie. Da ein Tumor in solch spezieller Form bisher noch nicht häufig aufgetreten ist, waren sich die Ärzt:innen untereinander nicht einig, welche Therapieform die geeignetste für meinen Stiefvater wäre. Wir waren bei der Mund-Kiefer-Gesichts-Chirurgie, bei der Onkologie und schließlich bei der Neurologie.'
       -
-        type: text
-        text: 'Letztendlich mussten sich meine Eltern für eine Therapieform entscheiden und hoffen, dass diese die richtige für ihn sein würde. Durch die Bestrahlung wurde der Tumor weitestgehend zerstört. Eine gänzliche Entfernung des Granuloms ist jedoch nicht möglich. Durch die Einschränkungen im Alltag, sein entstelltes, vernarbtes Gesicht wird er täglich an die Krankheit und ihre Folgen erinnert. Trotz allem kämpft er immer weiter, für sich und für unsere Familie. In den folgenden Jahren erlebten wir immer weitere aufs und abs. Zeiten, in denen wir dachten, es wird alles gut und Zeiten, in denen wir nicht mehr weiter wussten.'
-  -
-    type: paragraph
-    content:
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Letztendlich mussten sich meine Eltern für eine Therapieform entscheiden und hoffen, dass diese die richtige für ihn sein würde. Durch die Bestrahlung wurde der Tumor weitestgehend zerstört. Eine gänzliche Entfernung des Granuloms ist jedoch nicht möglich. Durch die Einschränkungen im Alltag, sein entstelltes, vernarbtes Gesicht wird er täglich an die Krankheit und ihre Folgen erinnert. Trotz allem kämpft er immer weiter, für sich und für unsere Familie. In den folgenden Jahren erlebten wir immer weitere aufs und abs. Zeiten, in denen wir dachten, es wird alles gut und Zeiten, in denen wir nicht mehr weiter wussten.'
       -
-        type: text
-        text: 'Der Tumor veränderte unsere Familie, mein Stiefpapa versteckte sich hinter seiner Arbeit. Letztendlich wirkte der Tumor im Kopf sich auch auf die Stimmung meines Stiefpapas aus. Es gab Momente, in denen man in kaum wiedererkannte. Meiner Mama uns mir fiel es immer schwerer, damit umzugehen und ein normales Leben zu führen. Für meine Mama war es besonders schlimm. Ihr Leben bestand nur noch daraus, sich zu kümmern, sei es die Gespräche mit den Ärzt:innen, Anträge für neue Therapien, Besuche im Krankenhaus und sogar das Wechseln von Verbänden und Säubern von Wunden. Sie war eine wahre Superheldin.'
-  -
-    type: paragraph
-    content:
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Der Tumor veränderte unsere Familie, mein Stiefpapa versteckte sich hinter seiner Arbeit. Letztendlich wirkte der Tumor im Kopf sich auch auf die Stimmung meines Stiefpapas aus. Es gab Momente, in denen man in kaum wiedererkannte. Meiner Mama uns mir fiel es immer schwerer, damit umzugehen und ein normales Leben zu führen. Für meine Mama war es besonders schlimm. Ihr Leben bestand nur noch daraus, sich zu kümmern, sei es die Gespräche mit den Ärzt:innen, Anträge für neue Therapien, Besuche im Krankenhaus und sogar das Wechseln von Verbänden und Säubern von Wunden. Sie war eine wahre Superheldin.'
       -
-        type: text
-        text: 'Im Sommer 2021 ging es plötzlich ganz schnell. Nach mehreren Krankenhausbesuchen ging es meinem Stiefpapa immer schlechter. Am 18. Juni erlag er den Folgen seiner Erkrankung. Meiner Mama und mir war die Tatsache, dass dies geschehen würde, damals wahrscheinlich bewusster als ihm.'
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Im Sommer 2021 ging es plötzlich ganz schnell. Nach mehreren Krankenhausbesuchen ging es meinem Stiefpapa immer schlechter. Am 18. Juni erlag er den Folgen seiner Erkrankung. Meiner Mama und mir war die Tatsache, dass dies geschehen würde, damals wahrscheinlich bewusster als ihm.'
   -
     type: set
     attrs:

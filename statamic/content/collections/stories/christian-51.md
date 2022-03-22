@@ -18,7 +18,7 @@ contact:
     type: links
     enabled: true
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647195454
+updated_at: 1647898010
 passed_away: false
 release_date: '2021-11-09'
 content:
@@ -31,12 +31,12 @@ content:
           -
             type: text
             text: '»Hallo, ich bin Christian und ich bin seit dem 16. November 2020 Krebspatient. Ich bin außerdem Blogger und schreibe, was mir in den Sinn kommt. Mit Leidenschaft teile ich Ideen, die dabei helfen, den Alltag mit Krebs mit größtmöglicher Lebensfreude zu bewältigen.'
-  -
-    type: paragraph
-    content:
       -
-        type: text
-        text: 'Ich bin kein Schriftsteller, Lektor, Journalist oder Publizist, habe keinerlei Erfahrung in dem was ich gerade tue – aber ich mache es einfach! Aktuell schreibe ich an einem Buch über mich und meinen Krebs. Mein Ziel: Mit meiner Gesundung möchte ich das Buch veröffentlichen und einer breiten Leserschaft zur Verfügung stellen. Ich möchte anderen Mut machen, mit der Überzeugung an die eigenen Selbstheilungskräfte und mit Liebe, schwierige Lebenssituationen zu meistern.'
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Ich bin kein Schriftsteller, Lektor, Journalist oder Publizist, habe keinerlei Erfahrung in dem was ich gerade tue – aber ich mache es einfach! Aktuell schreibe ich an einem Buch über mich und meinen Krebs. Mein Ziel: Mit meiner Gesundung möchte ich das Buch veröffentlichen und einer breiten Leserschaft zur Verfügung stellen. Ich möchte anderen Mut machen, mit der Überzeugung an die eigenen Selbstheilungskräfte und mit Liebe, schwierige Lebenssituationen zu meistern.'
   -
     type: set
     attrs:

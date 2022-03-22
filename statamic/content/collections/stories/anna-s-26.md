@@ -27,14 +27,17 @@ description:
         type: text
         text: 'Heute erzählen wir euch die Geschichte von Anna. Die 26-jährige Berlinerin entdeckte ihren Knoten zufällig unter der Dusche. Anna setzt sich für die Krebsvorsorge und -aufklärung ein und möchte mit ihrer Geschichte anderen Patient:innen Mut machen.'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647593834
+updated_at: 1647898600
 content:
   -
-    type: paragraph
+    type: blockquote
     content:
       -
-        type: text
-        text: '»Mein Name ist Anna, ich bin 26 Jahre alt und erhielt am 19. November 2020 die Diagnose ›Brustkrebs‹. Bereits gegen Ende September ertastete ich den Knoten in meiner rechten Brust beim Duschen. Am 2. Oktober 2020 besuchte ich eine Frauenärztin in Berlin, erzählte ihr von meiner familiären Vorbelastung und informierte sie auch darüber, dass ich bereits mit 18 einen gutartigen Tumor, ein ›Fibroadenom‹ in der linken Brust hatte, welches mir entfernt wurde. ›Kein Grund sich verrückt zu machen‹, dachte ich, denn angeblich handelte es sich bei dem Knoten um eine Zyste, die man nach drei Monaten wieder kontrollieren sollte. Es sei denn, es würde sich etwas in dieser Zeit verändern. Wie das Schicksal so spielt, spürte ich ungefähr einen Monat später einen geschwollenen Lymphknoten in der rechten Achselhöhle, als ich meinen Freund in Ravensburg besuchte. Als ich ihm davon erzählte, war er ziemlich beunruhigt. Er ist Neurochirurg und kennt die medizinischen Zusammenhänge von Krankheitssymptomen genau. Er empfahl mir unbedingt noch einmal zum Arzt zu gehen, sobald ich wieder in Berlin sei. Obwohl wir uns vorher keine großartigen Sorgen gemacht hatten, beunruhigte uns die Situation dann plötzlich doch sehr. Also blieb ich bei meinem Freund in Ravensburg und ließ mich dort von seinen Kollegen aus der Gynäkologie untersuchen.'
+        type: paragraph
+        content:
+          -
+            type: text
+            text: '»Mein Name ist Anna, ich bin 26 Jahre alt und erhielt am 19. November 2020 die Diagnose ›Brustkrebs‹. Bereits gegen Ende September ertastete ich den Knoten in meiner rechten Brust beim Duschen. Am 2. Oktober 2020 besuchte ich eine Frauenärztin in Berlin, erzählte ihr von meiner familiären Vorbelastung und informierte sie auch darüber, dass ich bereits mit 18 einen gutartigen Tumor, ein ›Fibroadenom‹ in der linken Brust hatte, welches mir entfernt wurde. ›Kein Grund sich verrückt zu machen‹, dachte ich, denn angeblich handelte es sich bei dem Knoten um eine Zyste, die man nach drei Monaten wieder kontrollieren sollte. Es sei denn, es würde sich etwas in dieser Zeit verändern. Wie das Schicksal so spielt, spürte ich ungefähr einen Monat später einen geschwollenen Lymphknoten in der rechten Achselhöhle, als ich meinen Freund in Ravensburg besuchte. Als ich ihm davon erzählte, war er ziemlich beunruhigt. Er ist Neurochirurg und kennt die medizinischen Zusammenhänge von Krankheitssymptomen genau. Er empfahl mir unbedingt noch einmal zum Arzt zu gehen, sobald ich wieder in Berlin sei. Obwohl wir uns vorher keine großartigen Sorgen gemacht hatten, beunruhigte uns die Situation dann plötzlich doch sehr. Also blieb ich bei meinem Freund in Ravensburg und ließ mich dort von seinen Kollegen aus der Gynäkologie untersuchen.'
   -
     type: set
     attrs:

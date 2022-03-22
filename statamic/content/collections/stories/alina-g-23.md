@@ -21,20 +21,23 @@ contact:
     enabled: true
 release_date: '2021-05-27'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647647250
+updated_at: 1647898402
 content:
   -
-    type: paragraph
+    type: blockquote
     content:
       -
-        type: text
-        text: '»Hallo mein Name ist Alina, ich bin 23 Jahre alt und erhielt an meinem diesjährigen Geburtstag – dem 17. Februar 2021 – die Diagnose Lymphkrebs. Erst zwei Wochen später bekam ich dann die finale Diagnose ›Hodgkin Lymphom in Stadium 3‹.'
-  -
-    type: paragraph
-    content:
+        type: paragraph
+        content:
+          -
+            type: text
+            text: '»Hallo mein Name ist Alina, ich bin 23 Jahre alt und erhielt an meinem diesjährigen Geburtstag – dem 17. Februar 2021 – die Diagnose Lymphkrebs. Erst zwei Wochen später bekam ich dann die finale Diagnose ›Hodgkin Lymphom in Stadium 3‹.'
       -
-        type: text
-        text: 'Schon im Dezember 2020 hatte ich unwissentlich die ersten Symptome: Fieber, Kopfschmerzen, Nachtschweiß, Husten. Nach einem negativen Corona-Test und ein paar Tagen ohne Symptome war ich auch scheinbar wieder ›gesund‹. Erst als ich ein paar Wochen später wieder die gleichen Symptome bekam, ging ich erneut zum Hausarzt, welcher mir aufgrund meiner sehr hohen Entzündungswerte ein Antibiotikum verschrieb. Dieses zeigte sogar etwa zwei Wochen lang Wirkung, doch dann war das Fieber wieder zurück und mein Hausarzt schickte mich ins Krankenhaus, wo man dann bei einem CT lauter Lymphknoten in meiner Brust sowie links und rechts an meinem Schlüsselbein entdeckte. Die Ärzte waren sofort alarmiert und entnahmen mir am nächsten Morgen einen Lymphknoten für eine Biopsie und eine Probe von meinem Knochenmark. Ein paar Tage danach durfte ich nach Hause, sodass ich glücklicherweise die Diagnose daheim bei meinen Liebsten erhielt.'
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Schon im Dezember 2020 hatte ich unwissentlich die ersten Symptome: Fieber, Kopfschmerzen, Nachtschweiß, Husten. Nach einem negativen Corona-Test und ein paar Tagen ohne Symptome war ich auch scheinbar wieder ›gesund‹. Erst als ich ein paar Wochen später wieder die gleichen Symptome bekam, ging ich erneut zum Hausarzt, welcher mir aufgrund meiner sehr hohen Entzündungswerte ein Antibiotikum verschrieb. Dieses zeigte sogar etwa zwei Wochen lang Wirkung, doch dann war das Fieber wieder zurück und mein Hausarzt schickte mich ins Krankenhaus, wo man dann bei einem CT lauter Lymphknoten in meiner Brust sowie links und rechts an meinem Schlüsselbein entdeckte. Die Ärzte waren sofort alarmiert und entnahmen mir am nächsten Morgen einen Lymphknoten für eine Biopsie und eine Probe von meinem Knochenmark. Ein paar Tage danach durfte ich nach Hause, sodass ich glücklicherweise die Diagnose daheim bei meinen Liebsten erhielt.'
   -
     type: set
     attrs:

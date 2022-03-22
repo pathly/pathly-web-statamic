@@ -3,7 +3,7 @@ id: e81c4c42-5b7a-4c64-b4d6-11c0f6172b58
 blueprint: story
 title: 'Heidi, 50'
 passed_away: false
-name: Heidi
+firstname: Heidi
 age: 50
 cancer_type: breastcancer
 therapy_type:

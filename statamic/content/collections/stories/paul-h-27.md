@@ -4,7 +4,7 @@ published: false
 blueprint: story
 title: 'Paul Hofmann, 27'
 passed_away: false
-name: Paul
+firstname: Paul
 age: 27
 cancer_type: testicularcancer
 therapy_type:

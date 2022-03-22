@@ -3,7 +3,7 @@ id: bff872a6-4050-40a8-85e8-3f0e7bd801eb
 blueprint: story
 title: 'Denise, 26'
 passed_away: false
-name: Denise
+firstname: Denise
 age: 26
 cancer_type: thyroidcancer
 therapy_type:

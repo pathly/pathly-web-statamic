@@ -3,7 +3,7 @@ id: 73c31ace-acf6-45bd-8ee4-6c382969bb6b
 blueprint: story
 title: 'Nikitas Popp, 24'
 passed_away: false
-name: Nikitas
+firstname: Nikitas
 age: 24
 person_type: relative
 image: stories/n/Nikitas-1-Titelbild.png

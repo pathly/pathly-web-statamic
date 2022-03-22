@@ -3,7 +3,7 @@ id: 03f9aaaa-f862-4118-a6ce-93f6a43e6f2c
 blueprint: story
 title: 'Birgit Göttlich, 50'
 passed_away: false
-name: Birgit
+firstname: Birgit
 age: 50
 cancer_type: breastcancer
 person_type: patient

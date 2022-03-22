@@ -2,7 +2,7 @@
 id: e8459f10-d84b-49d8-b1ad-d9cd7007bc97
 blueprint: story
 title: 'Jennifer Neef, 30'
-name: Jennifer
+firstname: Jennifer
 age: 30
 cancer_type: hodgkin-lymphoma
 person_type: patient

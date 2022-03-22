@@ -4,7 +4,7 @@ published: false
 blueprint: story
 title: 'Giulia, 30'
 passed_away: true
-name: Giulia
+firstname: Giulia
 age: 30
 cancer_type: pancreaticcancer
 therapy_type:

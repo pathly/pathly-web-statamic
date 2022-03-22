@@ -4,7 +4,7 @@ published: false
 blueprint: story
 title: 'Anna Güttler, 32'
 passed_away: false
-name: Anna
+firstname: Anna
 age: 32
 cancer_type: breastcancer
 therapy_type:

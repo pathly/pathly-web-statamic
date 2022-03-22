@@ -3,7 +3,7 @@ id: 8d461339-cb7e-4e22-8e5b-9b9f1d1e83cd
 blueprint: story
 title: 'Sandra Cramer, 24'
 passed_away: false
-name: Sandra
+firstname: Sandra
 age: 24
 cancer_type: pancreaticcancer
 therapy_type:

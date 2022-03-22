@@ -4,7 +4,7 @@ published: false
 blueprint: story
 title: 'Alex Jenniges, 35'
 passed_away: false
-name: Alex
+firstname: Alex
 age: 35
 cancer_type: testicularcancer
 therapy_type:

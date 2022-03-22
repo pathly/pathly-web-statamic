@@ -3,7 +3,7 @@ id: 93f024b9-4b9c-4e28-9947-15d765620161
 blueprint: story
 title: 'Claudia Bähr, 30'
 passed_away: false
-name: Claudia
+firstname: Claudia
 age: 30
 cancer_type: breastcancer
 therapy_type:

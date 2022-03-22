@@ -3,7 +3,7 @@ id: 73ca6450-d3fa-45fd-8b76-141414650ba3
 blueprint: story
 title: 'Rebecca Kremer, 26'
 passed_away: false
-name: Rebecca
+firstname: Rebecca
 age: 26
 person_type: relative
 image: stories/r/Rebecca-1-Titelbild.png

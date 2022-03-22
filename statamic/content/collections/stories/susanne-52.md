@@ -3,7 +3,7 @@ id: 4faa4ed2-ae2a-4793-bbe3-e1c418bebf95
 blueprint: story
 title: 'Susanne Kitlinski, 52'
 passed_away: false
-name: Susanne
+firstname: Susanne
 age: 52
 cancer_type: breastcancer
 therapy_type:

@@ -4,7 +4,7 @@ published: false
 blueprint: story
 title: 'Giada Elisa, 16'
 passed_away: false
-name: Giada
+firstname: Giada
 age: 16
 cancer_type: osteosarcoma
 therapy_type:

@@ -3,7 +3,7 @@ id: 16054ce9-5965-4f5c-bd10-9ad1da092fff
 blueprint: story
 title: 'Johanna H, 33'
 passed_away: false
-name: Johanna
+firstname: Johanna
 age: 33
 cancer_type: breastcancer
 person_type: patient

@@ -10,7 +10,7 @@ sections:
           required: true
           validate:
             - required
-          instructions: 'Title is only for us. Please remove the surname from the slug!'
+          instructions: 'Do not add the surname here!'
           instructions_position: above
           listable: hidden
           input_type: text
@@ -44,18 +44,28 @@ sections:
           if:
             passed_away: 'equals true'
       -
-        handle: name
+        handle: firstname
         field:
           input_type: text
           antlers: false
-          display: Name
-          instructions: 'Only first name!'
+          display: Firstname
           instructions_position: above
           type: text
           icon: text
           listable: hidden
           validate:
             - required
+      -
+        handle: surname
+        field:
+          input_type: text
+          antlers: false
+          display: Surname
+          instructions: 'This is only for us and will not be displayed on the website.'
+          instructions_position: above
+          type: text
+          icon: text
+          listable: hidden
       -
         handle: age
         field:
@@ -185,7 +195,6 @@ sections:
           localizable: true
           validate:
             - required
-          instructions: 'Please remove the surname!'
           instructions_position: above
           listable: hidden
           generate: true

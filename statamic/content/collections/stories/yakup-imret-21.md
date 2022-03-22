@@ -4,7 +4,7 @@ published: false
 blueprint: story
 title: 'Yakup Imret, 21'
 passed_away: false
-name: Yakup
+firstname: Yakup
 age: 21
 cancer_type: bloodcancer
 therapy_type:

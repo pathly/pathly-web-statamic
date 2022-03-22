@@ -3,7 +3,7 @@ id: e7bca8b8-ef02-4b4b-a622-c35bbb2b6c6a
 blueprint: story
 title: 'Sandy Senft, 23'
 passed_away: false
-name: Sandy
+firstname: Sandy
 age: 23
 cancer_type: breastcancer
 therapy_type:

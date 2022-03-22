@@ -3,7 +3,7 @@ id: b63cbb1d-9d57-4124-a38c-6993b8cdaa91
 blueprint: story
 title: 'Daniela Fricaud, 48'
 passed_away: false
-name: Daniela
+firstname: Daniela
 age: 48
 cancer_type: breastcancer
 therapy_type:

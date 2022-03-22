@@ -2,7 +2,7 @@
 id: 508e7615-1791-410a-8cf4-31d83b669e7a
 blueprint: story
 title: 'Sandra, 40'
-name: Sandra
+firstname: Sandra
 age: 40
 cancer_type: breastcancer
 therapy_type:

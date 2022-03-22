@@ -4,7 +4,7 @@ published: false
 blueprint: story
 title: 'Jessica Götze, 28'
 passed_away: false
-name: Jessica
+firstname: Jessica
 age: 28
 cancer_type: cervicalcancer
 therapy_type:

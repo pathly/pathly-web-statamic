@@ -3,7 +3,7 @@ id: 41d9c4e1-24b7-48fc-b8e8-e22c0e40067d
 blueprint: story
 title: 'Anja Laskowski, 31'
 passed_away: false
-name: Anja
+firstname: Anja
 age: 31
 cancer_type: breastcancer
 therapy_type:

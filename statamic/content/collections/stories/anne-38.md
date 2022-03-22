@@ -3,7 +3,7 @@ id: 3e8f85f1-d0cb-485f-9e98-fad344aa2c23
 blueprint: story
 title: 'Anne Lazar, 38'
 passed_away: false
-name: Anne
+firstname: Anne
 age: 38
 cancer_type: breastcancer
 therapy_type:

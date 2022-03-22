@@ -3,7 +3,7 @@ id: 596dfe5b-48b4-46d1-86b3-b82ce52b5926
 blueprint: story
 title: 'Tami, 28'
 passed_away: false
-name: Tami
+firstname: Tami
 age: 28
 cancer_type: breastcancer
 therapy_type:

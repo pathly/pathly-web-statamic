@@ -251,10 +251,16 @@ button {
   color: var(--purple_ultraLight);
 
   transition: all 0.5s ease;
-}
 
-.cta-button:hover {
-  transform: translateY(-0.5em);
+  &.outline {
+    background-color: unset;
+    color: var(--primary_red);
+    border: var(--root4px) solid var(--primary_red);
+  }
+
+  &:hover {
+    transform: translateY(-0.5em);
+  }
 }
 
 .mail-link {

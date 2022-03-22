@@ -3,7 +3,7 @@ id: f44b628e-91d3-4046-a64a-69e61d2968c7
 blueprint: story
 title: 'Vivien, 31'
 passed_away: false
-name: Vivien
+firstname: Vivien
 age: 32
 therapy_type:
   - chemotherapy

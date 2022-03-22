@@ -4,7 +4,7 @@ published: false
 blueprint: story
 title: 'Christine Raab, 38'
 passed_away: false
-name: Christine
+firstname: Christine
 age: 38
 cancer_type: breastcancer
 therapy_type:

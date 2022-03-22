@@ -3,7 +3,7 @@ id: cc63b15f-b1cd-49dc-9146-42944f07913c
 blueprint: story
 title: 'Alexander Böhmer, 23'
 passed_away: false
-name: Alex
+firstname: Alex
 age: 23
 cancer_type: bonekrebs
 therapy_type:

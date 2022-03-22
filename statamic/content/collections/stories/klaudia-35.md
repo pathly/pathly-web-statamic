@@ -2,7 +2,7 @@
 id: 37d0f650-a77d-4a48-b559-84c324f2e4f2
 blueprint: story
 title: 'Klaudia Seiter, 35'
-name: Klaudia
+firstname: Klaudia
 age: 35
 cancer_type: cervicalcancer
 therapy_type:

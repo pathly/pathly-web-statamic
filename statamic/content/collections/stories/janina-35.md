@@ -4,7 +4,7 @@ published: false
 blueprint: story
 title: 'Janina, 35'
 passed_away: false
-name: Janina
+firstname: Janina
 age: 35
 cancer_type: breastcancer
 therapy_type:

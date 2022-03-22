@@ -3,7 +3,7 @@ id: c2d048a6-9e7a-4182-85bd-1584dd1bf3ca
 blueprint: story
 title: 'Vesna Zekic, 37'
 passed_away: false
-name: Vesna
+firstname: Vesna
 age: 37
 cancer_type: lungcancer
 therapy_type:

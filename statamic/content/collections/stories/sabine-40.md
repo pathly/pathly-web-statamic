@@ -2,7 +2,7 @@
 id: 7f7acbfe-8de3-4d65-979f-00c4931acbb7
 blueprint: story
 title: 'Sabine Pohle, 40'
-name: Sabine
+firstname: Sabine
 age: 40
 therapy_type:
   - chemotherapy

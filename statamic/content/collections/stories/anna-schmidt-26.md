@@ -3,7 +3,7 @@ id: 205d8453-6939-4c27-a8eb-c90fb1b9db5f
 blueprint: story
 title: 'Anna Schmidt, 26'
 passed_away: false
-name: Anna
+firstname: Anna
 age: 26
 cancer_type: breastcancer
 therapy_type:

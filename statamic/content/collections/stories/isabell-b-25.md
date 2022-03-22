@@ -4,7 +4,7 @@ published: false
 blueprint: story
 title: 'Isabell Becker, 25'
 passed_away: false
-name: Isabell
+firstname: Isabell
 age: 25
 cancer_type: hodgkin-lymphoma
 therapy_type:

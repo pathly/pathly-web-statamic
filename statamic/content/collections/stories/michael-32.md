@@ -2,7 +2,7 @@
 id: 0eb3b741-b3c4-4f61-a64f-731978b3a4a8
 blueprint: story
 title: 'Michael Hombrecher, 32'
-name: Michael
+firstname: Michael
 age: 32
 cancer_type: skincancer
 person_type: patient

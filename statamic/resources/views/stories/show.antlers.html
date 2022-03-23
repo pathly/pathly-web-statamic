@@ -1,6 +1,8 @@
+<script src="{{ mix src='js/stories.js' }}"></script>
+
 <article class="card-detail">
     <div class="card-detail_header">
-      <div>
+      <div class="tags">
         <span>Geschichte</span>
         <span>
           {{ if person_type == "patient" }}
@@ -11,7 +13,15 @@
         </span>
       </div>
 
-      <h1 class="">{{ firstname }}{{if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h1>
+      <div class="headline-favorite">
+        <h1 class="">{{ firstname }}{{if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h1>
+
+        <div class="favorite-toggle favorite-toggle--stories">
+          <input value="{{ id }}" name="favorite" type="checkbox">
+          <label for="favorite"></label>
+        </div>
+      </div>
+
       <img src="{{ image }}" alt="{{ alt }}">
 
       {{ description }}

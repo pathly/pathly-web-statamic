@@ -562,7 +562,7 @@
       grid-column: 1/14;
     }
 
-    div span {
+    .tags span {
       font-size: var(--root16px);
       font-weight: 400;
       padding: var(--root4px) var(--root16px);
@@ -578,8 +578,41 @@
       display: inline-block;
     }
 
-    h1 {
+    .headline-favorite {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin-bottom: var(--root40px);
+
+      .favorite-toggle {
+        input {
+          display: none;
+        }
+
+        label {
+          display: block;
+          width: var(--root40px);
+          height: var(--root40px);
+          background-image: url("../images/heart_inactive.svg");
+          background-repeat: no-repeat;
+          background-position: right;
+          background-size: contain;
+          cursor: pointer;
+
+          @media (max-width: 800px) {
+            width: var(--root32px);
+            height: var(--root32px);
+          }
+
+          &:hover {
+            background-image: url("../images/heart_hover.svg") !important;
+          }
+        }
+
+        input:checked + label {
+          background-image: url("../images/heart_active.svg");
+        }
+      }
     }
 
     img {

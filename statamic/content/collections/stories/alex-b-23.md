@@ -1,16 +1,17 @@
 ---
 id: a0656203-071d-42ee-a2a2-42122c408a0f
 blueprint: story
-title: 'Alexander Böhmer, 23'
+title: 'Alex B., 23'
 passed_away: false
-name: Alex
+firstname: Alex
+surname: Böhmer
 age: 23
-cancer_type: osteosarcoma
+cancer_type: bonecancer
 therapy_type:
   - surgery
 person_type: patient
 image: stories/a/Alex-B-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

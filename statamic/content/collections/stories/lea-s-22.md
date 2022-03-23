@@ -1,19 +1,19 @@
 ---
 id: 451eeaa7-a8fc-4194-a83d-aef9499a4b07
 blueprint: story
-title: 'Lea Schriever, 22'
+title: 'Lea S., 22'
 passed_away: false
-name: Lea
+firstname: Lea
+surname: Schriever
 age: 22
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - chemotherapy
   - surgery
   - radiationtherapy
 person_type: patient
 image: stories/l/Lea-S-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

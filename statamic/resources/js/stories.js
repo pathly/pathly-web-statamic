@@ -65,6 +65,9 @@ $(document).ready(function() {
 
     if ($(".favorites-mode-toggle").hasClass("active")) {
       search_params.delete("favorite[]");
+      // remove statamic page filter, so we go back to page 1
+      search_params.delete("page");
+      // reload
       url.search = search_params.toString();
       let new_url = url.toString();
       window.location.href = new_url;
@@ -74,6 +77,8 @@ $(document).ready(function() {
         stored_favorites.forEach(function(item) {
           search_params.append("favorite" + "[]", item);
         });
+        // remove statamic page filter, so we go back to page 1
+        search_params.delete("page");
         // reload
         url.search = search_params.toString();
         let new_url = url.toString();

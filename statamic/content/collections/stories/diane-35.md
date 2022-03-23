@@ -3,7 +3,7 @@ id: 8ae01732-7319-4ef4-b637-df7f845b4099
 blueprint: story
 title: 'Diane, 35'
 passed_away: false
-name: Diane
+firstname: Diane
 age: 35
 cancer_type: breastcancer
 therapy_type:
@@ -12,7 +12,7 @@ therapy_type:
   - surgery
 person_type: patient
 image: stories/d/Diane-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

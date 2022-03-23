@@ -3,14 +3,14 @@ id: f44b628e-91d3-4046-a64a-69e61d2968c7
 blueprint: story
 title: 'Vivien, 31'
 passed_away: false
-name: Vivien
+firstname: Vivien
 age: 32
 therapy_type:
   - chemotherapy
   - surgery
 person_type: patient
 image: stories/v/Vivien-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram
@@ -20,7 +20,7 @@ contact:
     enabled: true
 release_date: '2021-02-21'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647898625
+updated_at: 1647777242
 cancer_type: breastcancer
 content:
   -

@@ -59,7 +59,7 @@ $(document).ready(function() {
     ]
   });
 
-  $(".section_slider ul").slick({
+  $(".section_slider .slider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,

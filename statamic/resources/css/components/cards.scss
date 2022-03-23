@@ -203,7 +203,7 @@
       }
 
       /* dropdown & hover */
-      &:hover {
+      &:hover:not(.disabled) {
         .dropdown-button {
           background-color: var(--primary_red);
           color: var(--purple_ultraLight);
@@ -221,6 +221,11 @@
             display: block;
           }
         }
+      }
+
+      /* dropdown & disabled */
+      &.disabled {
+        opacity: 0.2;
       }
 
       /* dropdown & mobile */
@@ -390,84 +395,6 @@
     @media (max-width: 1400px) {
       grid-gap: var(--root56px);
     }
-
-    .card {
-      border-radius: var(--root24px);
-      background-color: white;
-      transition: all 0.5s ease;
-      cursor: pointer;
-
-      &:hover {
-        transform: translateY(-0.5em);
-      }
-
-      a {
-        display: block;
-        padding: var(--root32px);
-
-        article {
-          img {
-            border-radius: var(--root16px);
-            width: 100% !important;
-            aspect-ratio: 1;
-            object-fit: cover;
-          }
-
-          > div {
-            display: flex;
-            justify-content: space-between;
-            margin-top: var(--root32px);
-            margin-bottom: var(--root16px);
-
-            span {
-              font-family: "azo-sans-web";
-              font-size: var(--root16px);
-              font-weight: 400;
-              padding: var(--root4px) var(--root16px);
-              border-radius: calc(var(--root16px) + 2 * var(--root4px)); /* font size + 2 * padding */
-              background-color: var(--purple_ultraLightViolett);
-              color: var(--purple_darkViolett);
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              margin-right: var(--root16px);
-              line-height: 1.6;
-            }
-
-            .favorite-toggle {
-              input {
-                display: none;
-              }
-
-              label {
-                display: block;
-                width: var(--root32px);
-                height: var(--root32px);
-                background-image: url("../images/heart_inactive.svg");
-                background-repeat: no-repeat;
-                background-position: right;
-                background-size: contain;
-                cursor: pointer;
-
-                &:hover {
-                  background-image: url("../images/heart_hover.svg") !important;
-                }
-              }
-
-              input:checked + label {
-                background-image: url("../images/heart_active.svg");
-              }
-            }
-          }
-
-          h2 {
-            font-size: var(--root32px);
-            color: var(--primary_dark);
-            text-align: left;
-          }
-        }
-      }
-    }
   }
 
   /* ------------------------------------------------------------ */
@@ -522,6 +449,88 @@
 
       &.disabled {
         opacity: 0.2;
+      }
+    }
+  }
+}
+
+/* ------------------------------------------------------------ */
+/* --- card general --- */
+/* ------------------------------------------------------------ */
+
+.card {
+  border-radius: var(--root24px);
+  background-color: white;
+  transition: all 0.5s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-0.5em);
+  }
+
+  a {
+    display: block;
+    padding: var(--root32px);
+
+    article {
+      img {
+        border-radius: var(--root16px);
+        width: 100% !important;
+        aspect-ratio: 1;
+        object-fit: cover;
+      }
+
+      > div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: var(--root32px);
+        margin-bottom: var(--root16px);
+
+        span {
+          font-family: "azo-sans-web";
+          font-size: var(--root16px);
+          font-weight: 400;
+          padding: var(--root4px) var(--root16px);
+          border-radius: calc(var(--root16px) + 2 * var(--root4px)); /* font size + 2 * padding */
+          background-color: var(--purple_ultraLightViolett);
+          color: var(--purple_darkViolett);
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin-right: var(--root16px);
+          line-height: 1.6;
+        }
+
+        .favorite-toggle {
+          input {
+            display: none;
+          }
+
+          label {
+            display: block;
+            width: var(--root32px);
+            height: var(--root32px);
+            background-image: url("../images/heart_inactive.svg");
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            cursor: pointer;
+
+            &:hover {
+              background-image: url("../images/heart_hover.svg") !important;
+            }
+          }
+
+          input:checked + label {
+            background-image: url("../images/heart_active.svg");
+          }
+        }
+      }
+
+      h2 {
+        font-size: var(--root32px);
+        color: var(--primary_dark);
+        text-align: left;
       }
     }
   }
@@ -1016,7 +1025,6 @@
           font-weight: 700;
         }
       }
-
     }
   }
 }

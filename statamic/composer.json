@@ -10,8 +10,8 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
-        "statamic/cms": "3.2.23",
-        "takepart-media/statamic-oreos": "^1.1"
+        "statamic/cms": "3.2.38",
+        "takepart-media/statamic-oreos": "1.1.2"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.5",

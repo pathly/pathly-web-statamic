@@ -2,7 +2,7 @@
 id: 508e7615-1791-410a-8cf4-31d83b669e7a
 blueprint: story
 title: 'Sandra, 40'
-name: Sandra
+firstname: Sandra
 age: 40
 cancer_type: breastcancer
 therapy_type:
@@ -11,7 +11,7 @@ therapy_type:
   - radiationtherapy
 person_type: patient
 image: stories/s/Sandra-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

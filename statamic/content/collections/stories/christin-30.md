@@ -3,7 +3,7 @@ id: 2da1bfdc-9299-432d-b3ad-2706c83d9ab9
 blueprint: story
 title: 'Christin, 30'
 passed_away: false
-name: Christin
+firstname: Christin
 age: 30
 cancer_type: breastcancer
 therapy_type:
@@ -11,7 +11,7 @@ therapy_type:
   - immunotherapy
 person_type: patient
 image: stories/c/Christin-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

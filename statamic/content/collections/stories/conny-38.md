@@ -3,15 +3,14 @@ id: 5a06bea4-437c-4bfc-abd2-0da70627b69e
 blueprint: story
 title: 'Conny, 38'
 passed_away: false
-name: Conny
+firstname: Conny
 age: 38
-cancer_type:
-  - salivaryglandcancer
+cancer_type: salivaryglandcancer
 therapy_type:
   - surgery
 person_type: patient
 image: stories/c/Conny-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

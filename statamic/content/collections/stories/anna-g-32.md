@@ -2,9 +2,10 @@
 id: 478e697d-f7a0-4884-90ae-b5c0b0100b57
 published: false
 blueprint: story
-title: 'Anna Güttler, 32'
+title: 'Anna G., 32'
 passed_away: false
-name: Anna
+firstname: Anna
+surname: Güttler
 age: 32
 cancer_type: breastcancer
 therapy_type:
@@ -12,7 +13,7 @@ therapy_type:
   - surgery
 person_type: patient
 image: stories/a/Anna-G-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: website

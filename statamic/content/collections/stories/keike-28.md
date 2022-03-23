@@ -3,7 +3,7 @@ id: 068d90fd-e52c-4fb9-9ac1-72f349e583e6
 blueprint: story
 title: 'Keike, 28'
 passed_away: false
-name: Keike
+firstname: Keike
 age: 28
 cancer_type: neuroblastoma
 therapy_type:
@@ -11,7 +11,7 @@ therapy_type:
   - surgery
 person_type: patient
 image: stories/k/Keike-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

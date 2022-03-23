@@ -3,15 +3,14 @@ id: 36f87769-5104-45a8-acea-62d53099c65c
 blueprint: story
 title: Adam
 passed_away: false
-name: Adam
-cancer_type:
-  - b-cell-lymphoma
+firstname: Adam
+cancer_type: b-cell-lymphoma
 therapy_type:
   - chemotherapy
   - surgery
 person_type: patient
 image: stories/a/Adam-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

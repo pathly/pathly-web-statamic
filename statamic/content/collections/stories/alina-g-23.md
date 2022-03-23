@@ -1,9 +1,10 @@
 ---
 id: 0697e1a9-88c8-4387-a481-d8645ee32baa
 blueprint: story
-title: 'Alina Ganz, 23'
+title: 'Alina G., 23'
 passed_away: false
-name: Alina
+firstname: Alina
+surname: Ganz
 age: 23
 cancer_type: hodgkin-lymphoma
 therapy_type:
@@ -11,7 +12,7 @@ therapy_type:
   - surgery
 person_type: patient
 image: stories/a/Alina-G-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

@@ -153,6 +153,7 @@
                 height: var(--root48px);
                 border: 2px solid var(--primary_red);
                 border-radius: var(--root48px);
+                -moz-appearance: textfield; /* remove ff spin */
 
                 &::-webkit-inner-spin-button,
                 &::-webkit-outer-spin-button {

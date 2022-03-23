@@ -12,7 +12,6 @@ therapy_type:
   - palliativetherapy
 person_type: patient
 image: stories/v/Vesna-1-Titelbild.png
-
 contact:
   -
     contact_type: instagram
@@ -20,9 +19,10 @@ contact:
     contact_url: 'https://www.instagram.com/krebs_karussell/'
     type: links
     enabled: true
-release_date: '2022-03-13'
+release_date: '2021-07-08'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647897529
+updated_at: 1648063102
+death_date: '2022-03-23'
 content:
   -
     type: blockquote

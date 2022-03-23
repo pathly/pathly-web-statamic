@@ -11,7 +11,6 @@ therapy_type:
   - chemotherapy
 person_type: patient
 image: stories/g/Giulia-1-Titelbild.png
-
 contact:
   -
     contact_type: instagram
@@ -21,7 +20,8 @@ contact:
     enabled: true
 release_date: '2020-10-23'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647778049
+updated_at: 1648062886
+death_date: '2022-04-14'
 content:
   -
     type: paragraph

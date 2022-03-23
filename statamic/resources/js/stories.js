@@ -27,7 +27,7 @@ $(document).ready(function() {
   });
 
   // toggle story as favorite
-  $(".favorite-toggle--stories").on("click", function(e) {
+  $(".favorite-toggle--stories").on("click touchstart", function(e) {
     e.preventDefault();
     e.stopPropagation();
 

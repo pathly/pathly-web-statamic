@@ -2,9 +2,10 @@
 id: 9dd0ed3f-5808-4719-9b5a-9d5a41c31340
 published: false
 blueprint: story
-title: 'Alex Jenniges, 35'
+title: 'Alex J., 35'
 passed_away: false
-name: Alex
+firstname: Alex
+surname: Jenniges
 age: 35
 cancer_type: testicularcancer
 therapy_type:
@@ -12,7 +13,7 @@ therapy_type:
   - surgery
 person_type: patient
 image: stories/a/Alex-J-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

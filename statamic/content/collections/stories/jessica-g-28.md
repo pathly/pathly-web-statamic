@@ -2,16 +2,17 @@
 id: 4c7b701c-a888-4b27-a3b5-f2d3edca7d97
 published: false
 blueprint: story
-title: 'Jessica Götze, 28'
+title: 'Jessica G., 28'
 passed_away: false
-name: Jessica
+firstname: Jessica
+surname: Götze
 age: 28
 cancer_type: cervicalcancer
 therapy_type:
   - surgery
 person_type: patient
 image: stories/j/Jessica-G-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

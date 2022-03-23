@@ -1,16 +1,17 @@
 ---
 id: fbe5b53c-c6c6-47d0-95fe-a9900e212662
 blueprint: story
-title: 'Julija Lleshi, 37'
+title: 'Julija L., 37'
 passed_away: false
-name: Julija
+firstname: Julija
+surname: Lleshi
 age: 37
 cancer_type: breastcancer
 therapy_type:
   - chemotherapy
 person_type: patient
 image: stories/j/Julija-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

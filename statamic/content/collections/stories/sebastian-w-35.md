@@ -1,9 +1,10 @@
 ---
 id: 7161fdec-017f-4366-ae85-96f318f63b70
 blueprint: story
-title: 'Sebastian Waters, 35'
+title: 'Sebastian W., 35'
 passed_away: false
-name: Sebastian
+firstname: Sebastian
+surname: Waters
 age: 35
 cancer_type: burkitt-lymphoma
 therapy_type:
@@ -11,7 +12,7 @@ therapy_type:
   - immunotherapy
 person_type: patient
 image: stories/s/Sebastian-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

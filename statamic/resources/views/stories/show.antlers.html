@@ -11,7 +11,7 @@
         </span>
       </div>
 
-      <h1 class="">{{ name }}{{if age }}, {{ age }}{{ /if }}</h1>
+      <h1 class="">{{ firstname }}{{if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h1>
       <img src="{{ image }}" alt="{{ alt }}">
 
       {{ description }}
@@ -78,7 +78,7 @@
     <address class="card-detail_footer">
       <img src="{{ image }}" alt="{{ alt }}">
       <div>
-        <p>{{ name }}</p>
+        <p>{{ firstname }} {{ if passed_away }}†{{ /if }}</p>
 
         <div>
           {{ contact }}
@@ -87,8 +87,56 @@
           {{ /contact }}
 
           <span>Datum</span>
-          <time datetime="{{ date format="Y-m-d" }}">{{ release_date format="d.m.Y" }}</time>
+          <time datetime="{{ release_date format="Y-m-d" }}">{{ release_date format="d.m.Y" }}</time>
+
+          {{ if passed_away }}
+            <span>Verstorben</span>
+            <time datetime="{{ death_date format="Y-m-d" }}">{{ death_date format="d.m.Y" }}</time>
+          {{ /if }}
         </div>
       </div>
     </address>
 </article>
+
+<section class="section_slider section--top-spacing">
+  {{ collection:stories limit="6" as="posts"
+  :filter_cancer_type="cancer_type:slug"
+  :filter_age="age"
+  :filter_id="id"
+  query_scope="story" }}
+
+    {{ get_content from="/stories" }}
+      {{ if relatives_headline_addition }}
+        <h2 class="section-headline--addition">{{ relatives_headline_addition }}</h2>
+      {{ /if }}
+      <h2 class="section-headline">{{ relatives_headline }}</h2>
+    {{ /get_content }}
+
+    <div class="slider">
+      {{ posts }}
+        <div class="card shadow">
+          <a href="{{ url }}">
+            <article>
+              <img src="{{ image }}" alt="{{ alt }}">
+              <div>
+                <span>
+                  {{ if person_type == "patient" }}
+                    {{ cancer_type:title }}
+                  {{ elseif person_type == "relative" }}
+                    Angehörige:r
+                  {{ /if }}
+                </span>
+                <div class="favorite-toggle favorite-toggle--stories">
+                  <input value="{{ id }}" name="favorite" type="checkbox">
+                  <label for="favorite"></label>
+                </div>
+              </div>
+
+              <h2>{{ firstname }}{{ if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h2>
+            </article>
+          </a>
+        </div>
+      {{ /posts }}
+    </div>
+  {{ /collection:stories }}
+</section>

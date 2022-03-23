@@ -1,9 +1,10 @@
 ---
 id: 678b9d64-1e72-4ca2-af6d-9c8fa5975dac
 blueprint: story
-title: 'Anna Esposito, 26'
+title: 'Anna E., 26'
 passed_away: false
-name: Anna
+firstname: Anna
+surname: Esposito
 age: 26
 therapy_type:
   - chemotherapy
@@ -11,7 +12,7 @@ therapy_type:
   - stemcelltherapy
 person_type: patient
 image: stories/a/Anna-E-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram
@@ -21,7 +22,7 @@ contact:
     enabled: true
 release_date: '2020-08-10'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647899245
+updated_at: 1647774736
 cancer_type: acute-lymphoblastic-leukemia
 content:
   -

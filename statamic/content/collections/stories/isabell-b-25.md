@@ -2,9 +2,10 @@
 id: 27d0f692-e192-42d7-a9f2-bc7cd9b3ec34
 published: false
 blueprint: story
-title: 'Isabell Becker, 25'
+title: 'Isabell B., 25'
 passed_away: false
-name: Isabell
+firstname: Isabell
+surname: Becker
 age: 25
 cancer_type: hodgkin-lymphoma
 therapy_type:
@@ -12,7 +13,7 @@ therapy_type:
   - radiationtherapy
 person_type: patient
 image: stories/i/Isabell-B-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

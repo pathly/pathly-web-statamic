@@ -2,16 +2,17 @@
 id: 8306758c-a07f-4f98-8008-6181de25ded7
 published: false
 blueprint: story
-title: 'Paul Hofmann, 27'
+title: 'Paul H., 27'
 passed_away: false
-name: Paul
+firstname: Paul
+surname: Hofmann
 age: 27
 cancer_type: testicularcancer
 therapy_type:
   - surgery
 person_type: patient
 image: stories/p/Paul-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

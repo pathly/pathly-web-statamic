@@ -1,16 +1,17 @@
 ---
 id: 8d461339-cb7e-4e22-8e5b-9b9f1d1e83cd
 blueprint: story
-title: 'Sandra Cramer, 24'
+title: 'Sandra C., 24'
 passed_away: false
-name: Sandra
+firstname: Sandra
+surname: Cramer
 age: 24
 cancer_type: pancreaticcancer
 therapy_type:
   - chemotherapy
 person_type: patient
 image: stories/s/Sandra-C-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

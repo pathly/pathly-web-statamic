@@ -3,7 +3,7 @@ id: 4fd8cb89-6959-49ed-b55a-75c215892ea4
 blueprint: story
 title: 'Denis Urban, 29'
 passed_away: false
-name: Denis
+firstname: Denis
 age: 29
 cancer_type: t-cell-lymphoma
 person_type: patient

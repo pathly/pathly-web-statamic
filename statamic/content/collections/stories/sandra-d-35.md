@@ -1,9 +1,10 @@
 ---
 id: 335c674b-16c8-44b2-b93f-43ee36200bbd
 blueprint: story
-title: 'Sandra Dalgliesh, 35'
+title: 'Sandra D., 35'
 passed_away: false
-name: Sandra
+firstname: Sandra
+surname: Dalgliesh
 age: 35
 cancer_type: breastcancer
 therapy_type:
@@ -11,7 +12,7 @@ therapy_type:
   - hormonetherapy
 person_type: patient
 image: stories/s/Sandra-D-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

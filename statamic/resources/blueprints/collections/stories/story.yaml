@@ -10,7 +10,7 @@ sections:
           required: true
           validate:
             - required
-          instructions: 'Title is only for us. Please remove the surname from the slug!'
+          instructions: 'Use the following format: Max M., 22'
           instructions_position: above
           listable: hidden
           input_type: text
@@ -25,12 +25,30 @@ sections:
           listable: hidden
           instructions_position: above
       -
-        handle: name
+        handle: death_date
+        field:
+          mode: single
+          time_enabled: false
+          time_required: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: 'Date of Death'
+          type: date
+          icon: date
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+          if:
+            passed_away: 'equals true'
+      -
+        handle: firstname
         field:
           input_type: text
           antlers: false
-          display: Name
-          instructions: 'Only first name!'
+          display: Firstname
           instructions_position: above
           type: text
           icon: text
@@ -38,35 +56,22 @@ sections:
           validate:
             - required
       -
+        handle: surname
+        field:
+          input_type: text
+          antlers: false
+          display: Surname
+          instructions: 'This is only for us and will not be displayed on the website.'
+          instructions_position: above
+          type: text
+          icon: text
+          listable: hidden
+      -
         handle: age
         field:
           display: Age
           type: integer
           icon: integer
-          listable: hidden
-      -
-        handle: cancer_type
-        field:
-          type: terms
-          taxonomies:
-            - cancer_type
-          display: 'Cancer Type'
-          mode: select
-          create: false
-          icon: taxonomy
-          listable: hidden
-          instructions_position: above
-          max_items: 1
-      -
-        handle: therapy_type
-        field:
-          type: terms
-          taxonomies:
-            - therapy_type
-          display: 'Therapy Type'
-          mode: select
-          create: false
-          icon: taxonomy
           listable: hidden
       -
         handle: person_type
@@ -81,6 +86,34 @@ sections:
           validate:
             - required
       -
+        handle: cancer_type
+        field:
+          type: terms
+          taxonomies:
+            - cancer_type
+          display: 'Cancer Type'
+          mode: select
+          create: false
+          icon: taxonomy
+          listable: hidden
+          instructions_position: above
+          max_items: 1
+          if:
+            person_type: 'equals patient'
+      -
+        handle: therapy_type
+        field:
+          type: terms
+          taxonomies:
+            - therapy_type
+          display: 'Therapy Type'
+          mode: select
+          create: false
+          icon: taxonomy
+          listable: hidden
+          if:
+            person_type: 'equals patient'
+      -
         handle: image
         field:
           mode: grid
@@ -91,19 +124,6 @@ sections:
           type: assets
           icon: assets
           listable: hidden
-      -
-        handle: image_position
-        field:
-          options:
-            left: Left
-            center: Center
-            right: Right
-          display: 'Image Position on Overview'
-          type: button_group
-          icon: button_group
-          listable: hidden
-          validate:
-            - required
       -
         handle: contact
         field:
@@ -175,7 +195,6 @@ sections:
           localizable: true
           validate:
             - required
-          instructions: 'Please remove the surname!'
           instructions_position: above
           listable: hidden
           generate: true

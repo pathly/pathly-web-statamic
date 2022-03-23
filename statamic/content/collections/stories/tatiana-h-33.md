@@ -1,17 +1,17 @@
 ---
 id: 16717b79-6756-4d35-8784-7b76a207ac0e
 blueprint: story
-title: 'Tatiana Hafez, 33'
+title: 'Tatiana H., 33'
 passed_away: false
-name: Tatiana
+firstname: Tatiana
+surname: Hafez
 age: 33
-cancer_type:
-  - breastcancer
+cancer_type: breastcancer
 therapy_type:
   - chemotherapy
 person_type: patient
 image: stories/t/Tatiana-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: youtube

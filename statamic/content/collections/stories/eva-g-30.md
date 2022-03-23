@@ -1,9 +1,10 @@
 ---
 id: 3bf0c2dd-9dd7-4b29-b781-8fa627f6f71f
 blueprint: story
-title: 'Eva Geib, 30'
+title: 'Eva G., 30'
 passed_away: false
-name: Eva
+firstname: Eva
+surname: Geib
 age: 30
 cancer_type: breastcancer
 therapy_type:
@@ -12,7 +13,7 @@ therapy_type:
   - radiationtherapy
 person_type: patient
 image: stories/e/Eva-G-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

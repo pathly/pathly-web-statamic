@@ -295,3 +295,28 @@ section {
     }
   }
 }
+
+/* ---------------------------------------------------------------------- */
+/* --- section slider --- */
+/* ---------------------------------------------------------------------- */
+
+.section_slider {
+  .slider {
+    grid-column: 2/13;
+    width: 100%;
+    margin-top: var(--root40px);
+
+    .slick-list {
+      overflow: visible !important;
+
+      .slick-slide {
+        margin: 0 var(--root32px);
+      }
+    }
+  }
+
+  .button {
+    text-align: center;
+    margin-top: var(--root40px);
+  }
+}

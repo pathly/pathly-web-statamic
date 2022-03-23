@@ -10,8 +10,8 @@
       </div>
 
       <div class="all-dropdowns-wrapper">
-        <div class="dropdown">
-          <button class="dropdown-button {{ if get:cancer_type }}active{{ /if }}">
+        <div class="dropdown {{ if get:person_type == 'relative' }}disabled{{ /if }}">
+          <button class="dropdown-button {{ if get:cancer_type }}active{{ /if }}" {{ if get:person_type == "relative" }} disabled {{ endif }}>
             {{ if get:cancer_type }}
               {{ taxonomy:cancer_type :slug:is="get:cancer_type | sanitize" }}
                 {{ title }}
@@ -33,6 +33,34 @@
               <div class="reset-wrapper">
                 <input id="type_none" name="cancer_type" type="reset">
                 <label for="type_none">Filter zurücksetzen</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown {{ if get:person_type == 'relative' }}disabled{{ /if }}">
+          <button class="dropdown-button {{ if get:therapy_type }}active{{ /if }}" {{ if get:person_type == "relative" }} disabled {{ endif }}>
+            {{ if get:therapy_type }}
+              {{ taxonomy:therapy_type :slug:is="get:therapy_type | sanitize" }}
+                {{ title }}
+              {{ /taxonomy:therapy_type }}
+            {{ else }}
+              Therapieform
+            {{ /if }}
+          </button>
+
+          <div class="dropdown-menu dropdown-menu--select">
+            <div class="shadow">
+              <div>
+                {{ taxonomy:therapy_type min_count="1" }}
+                  <input id="{{ slug }}" value="{{ slug }}" name="therapy_type" type="radio">
+                  <label for="{{ slug }}">{{ title }}</label>
+                {{ /taxonomy:therapy_type }}
+              </div>
+
+              <div class="reset-wrapper">
+                <input id="therapy_none" name="therapy_type" type="reset">
+                <label for="therapy_none">Filter zurücksetzen</label>
               </div>
             </div>
           </div>
@@ -65,34 +93,6 @@
               <div class="reset-wrapper">
                 <input id="age_none" name="age" type="reset">
                 <label class="reset" for="age_none">Filter zurücksetzen</label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <button class="dropdown-button {{ if get:therapy_type }}active{{ /if }}">
-            {{ if get:therapy_type }}
-              {{ taxonomy:therapy_type :slug:is="get:therapy_type | sanitize" }}
-                {{ title }}
-              {{ /taxonomy:therapy_type }}
-            {{ else }}
-              Therapieform
-            {{ /if }}
-          </button>
-
-          <div class="dropdown-menu dropdown-menu--select">
-            <div class="shadow">
-              <div>
-                {{ taxonomy:therapy_type min_count="1" }}
-                  <input id="{{ slug }}" value="{{ slug }}" name="therapy_type" type="radio">
-                  <label for="{{ slug }}">{{ title }}</label>
-                {{ /taxonomy:therapy_type }}
-              </div>
-
-              <div class="reset-wrapper">
-                <input id="therapy_none" name="therapy_type" type="reset">
-                <label for="therapy_none">Filter zurücksetzen</label>
               </div>
             </div>
           </div>
@@ -133,36 +133,33 @@
     </div>
   </div>
 
-  {{ favorites-stories }}
-    <!-- displayed when no favorites yet -->
-    <section class="no-favorites-disclaimer hidden {{ if favorites_image_position == 'left' }}section_text-w-image-left{{ elseif favorites_image_position == 'right' }}section_text-w-image-right{{ endif }}">
-      {{ favorites_image }}
-        <img src="{{ url }}" alt="{{ alt }}"/>
-      {{ /favorites_image }}
+  <!-- displayed when no favorites yet -->
+  <section class="no-favorites-disclaimer hidden {{ if favorites_image_position == 'left' }}section_text-w-image-left{{ elseif favorites_image_position == 'right' }}section_text-w-image-right{{ endif }}">
+    {{ favorites_image }}
+      <img src="{{ url }}" alt="{{ alt }}"/>
+    {{ /favorites_image }}
 
-      <div>
-        {{ if favorites_headline_addition }}
-          <h2 class="section-headline--addition">{{ favorites_headline_addition }}</h2>
-        {{ /if }}
-        <h2 class="section-headline">{{ favorites_headline }}</h2>
-        <p>{{ favorites_textarea }}</p>
-      </div>
-    </section>
-
-    <!-- displayed even when favorites already exist -->
-    <div class="favorites-disclaimer hidden">
-      <p><strong>{{ favorites_headline }}</strong> {{ favorites_textarea | strip_tags:p }}</p>
-      <button></button>
+    <div>
+      {{ if favorites_headline_addition }}
+        <h2 class="section-headline--addition">{{ favorites_headline_addition }}</h2>
+      {{ /if }}
+      <h2 class="section-headline">{{ favorites_headline }}</h2>
+      <p>{{ favorites_textarea }}</p>
     </div>
-  {{ /favorites-stories }}
+  </section>
+
+  <!-- displayed even when favorites already exist -->
+  <div class="favorites-disclaimer hidden">
+    <p><strong>{{ favorites_headline }}</strong> {{ favorites_textarea | strip_tags:p }}</p>
+    <button></button>
+  </div>
 
   <div class="blog">
     {{ collection:stories paginate="12" as="posts" sort="release_date:desc"
 
-    :cancer_type:contains="get:cancer_type"
-    :therapy_type:contains="get:therapy_type"
-    :person_type:contains="get:person_type"
-
+    :filter_cancer_type="get:cancer_type"
+    :filter_therapy_type="get:therapy_type"
+    :filter_person_type="get:person_type"
     :filter_from_age="get:from_age"
     :filter_to_age="get:to_age"
     :filter_favorites="get:favorite"
@@ -188,7 +185,7 @@
                   </div>
                 </div>
 
-                <h2>{{ name }}{{ if age }}, {{ age }}{{ /if }}</h2>
+                <h2>{{ firstname }}{{ if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h2>
               </article>
             </a>
           </div>

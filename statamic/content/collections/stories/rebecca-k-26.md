@@ -1,18 +1,14 @@
 ---
 id: 73ca6450-d3fa-45fd-8b76-141414650ba3
 blueprint: story
-title: 'Rebecca Kremer, 26'
+title: 'Rebecca K., 26'
 passed_away: false
-name: Rebecca
+firstname: Rebecca
+surname: Kremer
 age: 26
-therapy_type:
-  - chemotherapy
-  - surgery
-  - immunotherapy
-  - radiationtherapy
 person_type: relative
 image: stories/r/Rebecca-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: website

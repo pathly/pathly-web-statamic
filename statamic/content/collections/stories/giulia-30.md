@@ -4,15 +4,14 @@ published: false
 blueprint: story
 title: 'Giulia, 30'
 passed_away: true
-name: Giulia
+firstname: Giulia
 age: 30
-cancer_type:
-  - pancreaticcancer
+cancer_type: pancreaticcancer
 therapy_type:
   - chemotherapy
 person_type: patient
 image: stories/g/Giulia-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

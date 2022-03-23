@@ -1,9 +1,10 @@
 ---
 id: 41d9c4e1-24b7-48fc-b8e8-e22c0e40067d
 blueprint: story
-title: 'Anja Laskowski, 31'
+title: 'Anja L., 31'
 passed_away: false
-name: Anja
+firstname: Anja
+surname: Laskowski
 age: 31
 cancer_type: breastcancer
 therapy_type:
@@ -12,7 +13,7 @@ therapy_type:
   - radiationtherapy
 person_type: patient
 image: stories/a/Anja-L-1-Titelbild.png
-image_position: center
+
 contact:
   -
     contact_type: instagram

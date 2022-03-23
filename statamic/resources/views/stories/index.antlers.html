@@ -133,28 +133,26 @@
     </div>
   </div>
 
-  {{ favorites-stories }}
-    <!-- displayed when no favorites yet -->
-    <section class="no-favorites-disclaimer hidden {{ if favorites_image_position == 'left' }}section_text-w-image-left{{ elseif favorites_image_position == 'right' }}section_text-w-image-right{{ endif }}">
-      {{ favorites_image }}
-        <img src="{{ url }}" alt="{{ alt }}"/>
-      {{ /favorites_image }}
+  <!-- displayed when no favorites yet -->
+  <section class="no-favorites-disclaimer hidden {{ if favorites_image_position == 'left' }}section_text-w-image-left{{ elseif favorites_image_position == 'right' }}section_text-w-image-right{{ endif }}">
+    {{ favorites_image }}
+      <img src="{{ url }}" alt="{{ alt }}"/>
+    {{ /favorites_image }}
 
-      <div>
-        {{ if favorites_headline_addition }}
-          <h2 class="section-headline--addition">{{ favorites_headline_addition }}</h2>
-        {{ /if }}
-        <h2 class="section-headline">{{ favorites_headline }}</h2>
-        <p>{{ favorites_textarea }}</p>
-      </div>
-    </section>
-
-    <!-- displayed even when favorites already exist -->
-    <div class="favorites-disclaimer hidden">
-      <p><strong>{{ favorites_headline }}</strong> {{ favorites_textarea | strip_tags:p }}</p>
-      <button></button>
+    <div>
+      {{ if favorites_headline_addition }}
+        <h2 class="section-headline--addition">{{ favorites_headline_addition }}</h2>
+      {{ /if }}
+      <h2 class="section-headline">{{ favorites_headline }}</h2>
+      <p>{{ favorites_textarea }}</p>
     </div>
-  {{ /favorites-stories }}
+  </section>
+
+  <!-- displayed even when favorites already exist -->
+  <div class="favorites-disclaimer hidden">
+    <p><strong>{{ favorites_headline }}</strong> {{ favorites_textarea | strip_tags:p }}</p>
+    <button></button>
+  </div>
 
   <div class="blog">
     {{ collection:stories paginate="12" as="posts" sort="release_date:desc"

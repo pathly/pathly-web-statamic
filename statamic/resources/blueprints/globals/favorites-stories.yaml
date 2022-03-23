@@ -1,7 +1,0 @@
-sections:
-  main:
-    display: Favorites Stories
-    fields:
-      -
-        import: standard_section_w_image
-        prefix: favorites_

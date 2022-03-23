@@ -105,11 +105,11 @@
   :filter_id="id"
   query_scope="story" }}
 
-    {{ get_content from="/" }}
-      {{ if stories_headline_addition }}
-        <h2 class="section-headline--addition">{{ stories_headline_addition }}</h2>
+    {{ get_content from="/stories" }}
+      {{ if relatives_headline_addition }}
+        <h2 class="section-headline--addition">{{ relatives_headline_addition }}</h2>
       {{ /if }}
-      <h2 class="section-headline">{{ stories_headline }}</h2>
+      <h2 class="section-headline">{{ relatives_headline }}</h2>
     {{ /get_content }}
 
     <div class="slider">

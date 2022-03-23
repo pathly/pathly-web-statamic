@@ -1,9 +1,10 @@
 ---
 id: 1d9e6d35-3aea-4fe6-9465-369f9e77f79b
 blueprint: story
-title: 'Jennifer Gotta, 24'
+title: 'Jennifer G., 24'
 passed_away: false
 firstname: Jennifer
+surname: Gotta
 age: 24
 cancer_type: osteosarcoma
 therapy_type:

@@ -26,7 +26,7 @@ class Stories extends Scope {
       // Cancer Type
       $cancer_type = $values->get("filter_cancer_type");
       if ($cancer_type != null) {
-        $query->whereJsonContains("cancer_type", $cancer_type);
+        $query->where("cancer_type", "=", $cancer_type);
       }
 
       // Therapy Type

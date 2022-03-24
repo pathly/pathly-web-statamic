@@ -13,7 +13,6 @@ therapy_type:
   - palliativetherapy
 person_type: patient
 image: stories/c/Clemens-1-Titelbild.png
-
 contact:
   -
     contact_type: instagram
@@ -23,7 +22,8 @@ contact:
     enabled: true
 release_date: '2021-11-13'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647894108
+updated_at: 1648104324
+death_date: '2022-02-15'
 content:
   -
     type: blockquote

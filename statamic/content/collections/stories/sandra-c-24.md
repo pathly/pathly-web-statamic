@@ -6,12 +6,11 @@ passed_away: false
 firstname: Sandra
 surname: Cramer
 age: 24
-cancer_type: pancreaticcancer
+cancer_type: lymphglandcancer
 therapy_type:
   - chemotherapy
 person_type: patient
 image: stories/s/Sandra-C-1-Titelbild.png
-
 contact:
   -
     contact_type: instagram
@@ -28,7 +27,8 @@ description:
         type: text
         text: 'Wenn man eine Sache über Sandra sagen kann, dann, dass sie Power hat. Die Diagnose »Lymphdrüsenkrebs« erhielt Sandra im Sommer 2016, kurz nach ihrem Abitur. Während der Therapie startete sie einen YouTube-Kanal, auf dem sie ihre Geschichte mit der Welt teilt. Ehrlich, echt und emotional begleitet man sie durch ihre Erkrankung.'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647898989
+updated_at: 1648103347
+death_date: '2022-03-24'
 content:
   -
     type: blockquote

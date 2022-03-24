@@ -1,0 +1,16 @@
+
+.section_asset-full-width .image_wrapper {
+    padding-top: 56.25%;
+    position: relative;
+}
+.section_asset-full-width .image_wrapper > img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    border-radius: var(--root40px);
+}
+
+.section_asset-full-width .image_wrapper + .arrow-link {
+    margin-top: 60px;
+}

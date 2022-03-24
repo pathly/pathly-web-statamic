@@ -1,0 +1,36 @@
+<section class="section_asset-full-width">
+    <h1>{{ title }}</h1>
+</section>
+
+{{ media }}
+    <section class="section_asset-full-width section--top-spacing">
+        {{ if media_headline_addition }}
+            <h2 class="section-headline--addition">{{ media_headline_addition }}</h2>
+        {{ /if }}
+
+        <h2 class="section-headline">{{ media_headline }}</h2>
+
+        {{ media_replicator }}
+            {{ if media_article_image }}
+                <div class="image_wrapper">
+                    <img src="{{ media_article_image }}"/>
+                </div>
+                <a class="arrow-link" href="{{ media_article_url }}" target="_blank">Zum Artikel</a>
+            {{ /if }}
+
+            {{ if media_video_thumbnail }}
+                <div class="video_wrapper" style="background-image: url('{{ media_video_thumbnail }}');">
+                    <div class="video_layer">
+                        <iframe src="" title="YouTube Video Player" border="0" data-scaling="true" data-format="16:9" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                
+                    <div class="video_trigger" data-source="{{ media_video_url }}">
+                        <button class="video_thumbnail_disclaimer_button">
+                            <img src="/images/play.svg" alt="Play"/>
+                        </button>
+                    </div>
+                </div>
+            {{ /if }}
+        {{ /media_replicator }}
+    </section>
+{{ /media }}

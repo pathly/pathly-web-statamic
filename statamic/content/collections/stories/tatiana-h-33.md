@@ -11,7 +11,6 @@ therapy_type:
   - chemotherapy
 person_type: patient
 image: stories/t/Tatiana-1-Titelbild.png
-
 contact:
   -
     contact_type: youtube
@@ -27,7 +26,8 @@ contact:
     enabled: true
 release_date: '2020-10-22'
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1647721958
+updated_at: 1648146472
+death_date: '2022-03-24'
 content:
   -
     type: blockquote
@@ -70,5 +70,5 @@ content:
       values:
         type: video
         video_url: 'https://www.youtube-nocookie.com/embed/PSol3meMmuo'
-        video_thumbnail: stories/Tatiana-Thumpnail.png
+        video_thumbnail: stories/t/Tatiana-Thumpnail.png
 ---

@@ -11,7 +11,6 @@ therapy_type:
   - surgery
 person_type: patient
 image: stories/a/Alex-B-1-Titelbild.png
-
 contact:
   -
     contact_type: instagram
@@ -26,8 +25,8 @@ contact:
     type: links
     enabled: true
 release_date: '2021-08-07'
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647898364
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1648146276
 description:
   -
     type: paragraph
@@ -35,6 +34,7 @@ description:
       -
         type: text
         text: 'Heute erzählen wir euch die faszinierende Geschichte von Alex Böhmer @alexboehm. Alex ist Krebsblogger und hat im August 2018 die Diagnose Knochenkrebs erhalten. Auf seinem Account berichtet er über seine Zeit im Krankenhaus, der Amputation seines rechten Beins, der Reha und dem Leben nach dem Krebs.'
+death_date: '2022-03-24'
 content:
   -
     type: blockquote
@@ -59,5 +59,5 @@ content:
       values:
         type: video
         video_url: 'https://www.youtube-nocookie.com/embed/ZCHpqecv5QY'
-        video_thumbnail: stories/Alex-Thumpnail-1647640406.png
+        video_thumbnail: stories/a/Alex-Thumbnail.png
 ---

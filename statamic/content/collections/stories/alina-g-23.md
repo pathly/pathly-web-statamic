@@ -12,7 +12,6 @@ therapy_type:
   - surgery
 person_type: patient
 image: stories/a/Alina-G-1-Titelbild.png
-
 contact:
   -
     contact_type: instagram
@@ -21,8 +20,9 @@ contact:
     type: links
     enabled: true
 release_date: '2021-05-27'
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647898402
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1648146230
+death_date: '2022-03-24'
 content:
   -
     type: blockquote
@@ -78,7 +78,7 @@ content:
       values:
         type: video
         video_url: 'https://www.youtube-nocookie.com/embed/Z7n5GgLuQaU'
-        video_thumbnail: stories/Alina-Thumpnail.png
+        video_thumbnail: stories/a/Alina-Thumpnail.png
   -
     type: paragraph
 ---

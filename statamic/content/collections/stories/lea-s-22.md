@@ -13,7 +13,6 @@ therapy_type:
   - radiationtherapy
 person_type: patient
 image: stories/l/Lea-S-1-Titelbild.png
-
 contact:
   -
     contact_type: instagram
@@ -49,8 +48,9 @@ description:
       -
         type: text
         text: ' abrupt geändert. Doch mit viel Lebensfreude, Mut und Enthusiasmus stellte sie sich ihrer Krebstherapie. Heute macht Lea ihre Ausbildung zur Krankenpflegerin weiter, lernt fleißig und stellt sich ihrem »Chemobrain«.'
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647641049
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1648136482
+death_date: '2022-03-24'
 content:
   -
     type: blockquote
@@ -106,5 +106,5 @@ content:
       values:
         type: video
         video_url: 'https://www.youtube-nocookie.com/embed/hwNSIrwHhCw'
-        video_thumbnail: Lea-Thumpnail.png
+        video_thumbnail: stories/l/Lea-Thumpnail.png
 ---

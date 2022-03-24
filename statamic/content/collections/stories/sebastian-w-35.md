@@ -12,7 +12,6 @@ therapy_type:
   - immunotherapy
 person_type: patient
 image: stories/s/Sebastian-1-Titelbild.png
-
 contact:
   -
     contact_type: instagram
@@ -28,8 +27,9 @@ description:
       -
         type: text
         text: 'Sebastian ist 35 Jahre alt, stolzer Papa von seinen zwei Jungs und Partner, Projektmanager und Berater in einer Berliner Digital-Agentur.'
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647899203
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1648136546
+death_date: '2022-03-24'
 content:
   -
     type: blockquote
@@ -87,7 +87,7 @@ content:
         type: links
         content_links:
           -
-            content_link_icon: Flow-Lap.png
+            content_link_icon: stories/s/Flow-Lap.png
             content_link_title: 'Podcast: Dem Krebs den Kampf ansagen – Wie schafft man das, Sebastian Waters?'
             content_link_url: 'https://flowlab.com/mental-fitness-blog/folge-08-dem-krebs-den-kampf-ansagen-wie-schafft-man-das-sebastian-waters/'
   -

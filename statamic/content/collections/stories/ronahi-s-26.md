@@ -6,7 +6,7 @@ passed_away: false
 firstname: Ronahi
 surname: Solmaz
 age: 26
-cancer_type: bloodcancer
+cancer_type: leukemia
 therapy_type:
   - stemcelltherapy
 person_type: patient

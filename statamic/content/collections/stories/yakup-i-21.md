@@ -6,7 +6,7 @@ passed_away: false
 firstname: Yakup
 surname: Imret
 age: 21
-cancer_type: bloodcancer
+cancer_type: leukemia
 therapy_type:
   - chemotherapy
 person_type: patient

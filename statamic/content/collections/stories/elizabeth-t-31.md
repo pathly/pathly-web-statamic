@@ -12,7 +12,7 @@ therapy_type:
   - radiationtherapy
   - surgery
 person_type: patient
-image: stories/e/Elizabeth-1-Titelbild.png
+image: stories/e/Elizabeth-1-Titelbild.jpg
 
 contact:
   -
@@ -52,9 +52,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/e/Elizabeth-2.png
-          - stories/e/Elizabeth-3.png
-          - stories/e/Elizabeth-4.png
+          - stories/e/Elizabeth-2.jpg
+          - stories/e/Elizabeth-3.jpg
+          - stories/e/Elizabeth-4.jpg
   -
     type: paragraph
     content:

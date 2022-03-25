@@ -13,7 +13,7 @@ therapy_type:
   - surgery
   - radiationtherapy
 person_type: patient
-image: stories/f/Franziska-B-1-Titelbild.png
+image: stories/f/Franziska-B-1-Titelbild.jpg
 
 contact:
   -
@@ -47,9 +47,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/f/Franziska-B-2.png
-          - stories/f/Franziska-B-3.png
-          - stories/f/Franziska-B-4.png
+          - stories/f/Franziska-B-2.jpg
+          - stories/f/Franziska-B-3.jpg
+          - stories/f/Franziska-B-4.jpg
   -
     type: paragraph
     content:

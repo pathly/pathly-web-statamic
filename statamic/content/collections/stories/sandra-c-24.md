@@ -10,7 +10,7 @@ cancer_type: lymphglandcancer
 therapy_type:
   - chemotherapy
 person_type: patient
-image: stories/s/Sandra-C-1-Titelbild.png
+image: stories/s/Sandra-C-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram
@@ -63,7 +63,7 @@ content:
       values:
         type: images
         content_images:
-          - stories/s/Sandra-C-2.png
-          - stories/s/Sandra-C-3.png
-          - stories/s/Sandra-C-4.png
+          - stories/s/Sandra-C-2.jpg
+          - stories/s/Sandra-C-3.jpg
+          - stories/s/Sandra-C-4.jpg
 ---

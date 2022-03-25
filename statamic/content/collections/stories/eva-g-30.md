@@ -12,7 +12,7 @@ therapy_type:
   - surgery
   - radiationtherapy
 person_type: patient
-image: stories/e/Eva-G-1-Titelbild.png
+image: stories/e/Eva-G-1-Titelbild.jpg
 
 contact:
   -
@@ -46,9 +46,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/e/Eva-G-2.png
-          - stories/e/Eva-G-3.png
-          - stories/e/Eva-G-4.png
+          - stories/e/Eva-G-2.jpg
+          - stories/e/Eva-G-3.jpg
+          - stories/e/Eva-G-4.jpg
   -
     type: paragraph
     content:

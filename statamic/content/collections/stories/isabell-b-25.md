@@ -11,7 +11,7 @@ therapy_type:
   - chemotherapy
   - radiationtherapy
 person_type: patient
-image: stories/i/Isabell-B-1-Titelbild.png
+image: stories/i/Isabell-B-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram
@@ -42,9 +42,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/i/Isabell-B-2.png
-          - stories/i/Isabell-B-3.png
-          - stories/i/Isabell-B-5.png
+          - stories/i/Isabell-B-2.jpg
+          - stories/i/Isabell-B-3.jpg
+          - stories/i/Isabell-B-5.jpg
   -
     type: paragraph
     content:
@@ -83,7 +83,7 @@ content:
       values:
         type: video
         video_url: 'https://www.youtube-nocookie.com/embed/ZE9U89YDGbw'
-        video_thumbnail: stories/i/Isabel-Thumbnail.png
+        video_thumbnail: stories/i/Isabel-Thumbnail.jpg
   -
     type: paragraph
 ---

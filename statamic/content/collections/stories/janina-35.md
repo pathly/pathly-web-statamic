@@ -12,7 +12,7 @@ therapy_type:
   - radiationtherapy
   - surgery
 person_type: patient
-image: stories/j/Janina-1-Titelbild.png
+image: stories/j/Janina-1-Titelbild.jpg
 
 contact:
   -
@@ -89,7 +89,7 @@ content:
       values:
         type: images
         content_images:
-          - stories/j/Janina-2.png
+          - stories/j/Janina-2.jpg
   -
     type: paragraph
     content:

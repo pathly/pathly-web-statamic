@@ -10,7 +10,7 @@ therapy_type:
   - chemotherapy
   - surgery
 person_type: patient
-image: stories/k/Keike-1-Titelbild.png
+image: stories/k/Keike-1-Titelbild.jpg
 
 contact:
   -
@@ -69,9 +69,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/k/Keike-2.png
-          - stories/k/Keike-3.png
-          - stories/k/Keike-4.png
+          - stories/k/Keike-2.jpg
+          - stories/k/Keike-3.jpg
+          - stories/k/Keike-4.jpg
   -
     type: paragraph
 ---

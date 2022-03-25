@@ -24,7 +24,7 @@ contact:
 release_date: '2022-03-22'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1647897394
-image: stories/c/Claudia-B-1-Titelbild.png
+image: stories/c/Claudia-B-1-Titelbild.jpg
 content:
   -
     type: blockquote
@@ -53,9 +53,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/c/Claudia-B-2.png
-          - stories/c/Claudia-B-3.png
-          - stories/c/Claudia-B-4.png
+          - stories/c/Claudia-B-2.jpg
+          - stories/c/Claudia-B-3.jpg
+          - stories/c/Claudia-B-4.jpg
   -
     type: paragraph
     content:

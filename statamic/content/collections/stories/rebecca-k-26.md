@@ -7,7 +7,7 @@ firstname: Rebecca
 surname: Kremer
 age: 26
 person_type: relative
-image: stories/r/Rebecca-1-Titelbild.png
+image: stories/r/Rebecca-1-Titelbild.jpg
 
 contact:
   -
@@ -77,9 +77,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/r/Rebecca-2.png
-          - stories/r/Rebecca-3.png
-          - stories/r/Rebecca-4.png
+          - stories/r/Rebecca-2.jpg
+          - stories/r/Rebecca-3.jpg
+          - stories/r/Rebecca-4.jpg
   -
     type: paragraph
     content:

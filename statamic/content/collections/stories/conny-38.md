@@ -9,7 +9,7 @@ cancer_type: salivaryglandcancer
 therapy_type:
   - surgery
 person_type: patient
-image: stories/c/Conny-1-Titelbild.png
+image: stories/c/Conny-1-Titelbild.jpg
 
 contact:
   -
@@ -74,8 +74,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/c/Conny-3.png
-          - stories/c/Conny-2.png
+          - stories/c/Conny-3.jpg
+          - stories/c/Conny-2.jpg
   -
     type: paragraph
     content:

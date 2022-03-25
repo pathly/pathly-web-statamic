@@ -12,7 +12,7 @@ therapy_type:
   - hormonetherapy
   - radiationtherapy
 person_type: patient
-image: stories/s/Sophie-G-Titelbild.png
+image: stories/s/Sophie-G-Titelbild.jpg
 
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1647126368
@@ -59,8 +59,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/s/Sophie-G-2.png
-          - stories/s/Sophie-G-3.png
+          - stories/s/Sophie-G-2.jpg
+          - stories/s/Sophie-G-3.jpg
   -
     type: paragraph
     content:

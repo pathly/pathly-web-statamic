@@ -10,7 +10,7 @@ cancer_type: pancreaticcancer
 therapy_type:
   - chemotherapy
 person_type: patient
-image: stories/g/Giulia-1-Titelbild.png
+image: stories/g/Giulia-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram

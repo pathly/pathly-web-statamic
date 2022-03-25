@@ -11,7 +11,7 @@ therapy_type:
   - chemotherapy
   - immunotherapy
 person_type: patient
-image: stories/d/Daniel-1-Titelbild.png
+image: stories/d/Daniel-1-Titelbild.jpg
 
 contact:
   -
@@ -51,9 +51,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/d/Daniel-2.png
-          - stories/d/Daniel-3.png
-          - stories/d/Daniel-4.png
+          - stories/d/Daniel-2.jpg
+          - stories/d/Daniel-3.jpg
+          - stories/d/Daniel-4.jpg
   -
     type: paragraph
     content:

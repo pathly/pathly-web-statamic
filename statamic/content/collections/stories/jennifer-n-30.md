@@ -7,7 +7,7 @@ surname: Neef
 age: 30
 cancer_type: hodgkin-lymphoma
 person_type: patient
-image: stories/j/Jennifer-1-Titelbild.png
+image: stories/j/Jennifer-1-Titelbild.jpg
 
 contact:
   -
@@ -50,8 +50,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/j/Jennifer-2.png
-          - stories/j/Jennifer-3.png
+          - stories/j/Jennifer-2.jpg
+          - stories/j/Jennifer-3.jpg
   -
     type: paragraph
     content:

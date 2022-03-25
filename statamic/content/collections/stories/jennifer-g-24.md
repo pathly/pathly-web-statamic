@@ -10,7 +10,7 @@ cancer_type: osteosarcoma
 therapy_type:
   - surgery
 person_type: patient
-image: stories/j/Jennifer-G-1-Titelbild.png
+image: stories/j/Jennifer-G-1-Titelbild.jpg
 
 contact:
   -
@@ -56,7 +56,7 @@ content:
       values:
         type: images
         content_images:
-          - stories/j/Jennifer-G-2.png
-          - stories/j/Jennifer-G-3.png
-          - stories/j/Jennifer-G-4.png
+          - stories/j/Jennifer-G-2.jpg
+          - stories/j/Jennifer-G-3.jpg
+          - stories/j/Jennifer-G-4.jpg
 ---

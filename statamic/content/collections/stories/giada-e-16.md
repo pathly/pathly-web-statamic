@@ -11,7 +11,7 @@ therapy_type:
   - surgery
   - chemotherapy
 person_type: patient
-image: stories/g/Giada-1-Titelbild.png
+image: stories/g/Giada-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram
@@ -51,9 +51,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/g/Giada-2.png
-          - stories/g/Giada-3.png
-          - stories/g/Giada-4.png
+          - stories/g/Giada-2.jpg
+          - stories/g/Giada-3.jpg
+          - stories/g/Giada-4.jpg
   -
     type: paragraph
     content:

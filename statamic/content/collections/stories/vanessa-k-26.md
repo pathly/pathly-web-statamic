@@ -7,7 +7,7 @@ firstname: Vanessa
 surname: Kreuz
 age: 26
 person_type: relative
-image: stories/v/Vanessa-K-1-Titelbild.png
+image: stories/v/Vanessa-K-1-Titelbild.jpg
 
 contact:
   -
@@ -47,7 +47,7 @@ content:
       values:
         type: images
         content_images:
-          - stories/v/Vanessa-K-2.png
+          - stories/v/Vanessa-K-2.jpg
   -
     type: paragraph
     content:

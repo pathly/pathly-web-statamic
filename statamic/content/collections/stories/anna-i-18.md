@@ -12,7 +12,7 @@ therapy_type:
   - radiationtherapy
   - surgery
 person_type: patient
-image: stories/a/Anna-I-1-Titelbild.png
+image: stories/a/Anna-I-1-Titelbild.jpg
 
 contact:
   -
@@ -64,9 +64,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/a/Anna-I-2.png
-          - stories/a/Anna-I-3.png
-          - stories/a/Anna-I-4.png
+          - stories/a/Anna-I-2.jpg
+          - stories/a/Anna-I-3.jpg
+          - stories/a/Anna-I-4.jpg
   -
     type: paragraph
     content:

@@ -12,7 +12,7 @@ therapy_type:
   - surgery
   - radiationtherapy
 person_type: patient
-image: stories/d/Daniela-F-1-Titelbild.png
+image: stories/d/Daniela-F-1-Titelbild.jpg
 
 contact:
   -
@@ -52,9 +52,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/d/Daniela-F-2.png
-          - stories/d/Daniela-F-3.png
-          - stories/d/Daniela-F-4.png
+          - stories/d/Daniela-F-2.jpg
+          - stories/d/Daniela-F-3.jpg
+          - stories/d/Daniela-F-4.jpg
   -
     type: paragraph
     content:

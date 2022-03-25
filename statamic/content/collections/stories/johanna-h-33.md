@@ -7,7 +7,7 @@ firstname: Johanna
 age: 33
 cancer_type: breastcancer
 person_type: patient
-image: stories/j/Johanna-1-Titelbild.png
+image: stories/j/Johanna-1-Titelbild.jpg
 
 contact:
   -
@@ -54,9 +54,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/j/Johanna-2.png
-          - stories/j/Johanna-3.png
-          - stories/j/Johanna-4.png
+          - stories/j/Johanna-2.jpg
+          - stories/j/Johanna-3.jpg
+          - stories/j/Johanna-4.jpg
   -
     type: paragraph
     content:

@@ -11,7 +11,7 @@ therapy_type:
   - chemotherapy
   - surgery
 person_type: patient
-image: stories/a/Alina-G-1-Titelbild.png
+image: stories/a/Alina-G-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram
@@ -45,9 +45,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/a/Alina-G-4.png
-          - stories/a/Alina-G-3.png
-          - stories/a/Alina-G-2.png
+          - stories/a/Alina-G-4.jpg
+          - stories/a/Alina-G-3.jpg
+          - stories/a/Alina-G-2.jpg
   -
     type: paragraph
     content:
@@ -78,7 +78,7 @@ content:
       values:
         type: video
         video_url: 'https://www.youtube-nocookie.com/embed/Z7n5GgLuQaU'
-        video_thumbnail: stories/a/Alina-Thumpnail.png
+        video_thumbnail: stories/a/Alina-Thumpnail.jpg
   -
     type: paragraph
 ---

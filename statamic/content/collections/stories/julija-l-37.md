@@ -10,7 +10,7 @@ cancer_type: breastcancer
 therapy_type:
   - chemotherapy
 person_type: patient
-image: stories/j/Julija-1-Titelbild.png
+image: stories/j/Julija-1-Titelbild.jpg
 
 contact:
   -
@@ -56,7 +56,7 @@ content:
       values:
         type: images
         content_images:
-          - stories/j/Julija-2.png
-          - stories/j/Julija-3.png
-          - stories/j/Julija-4.png
+          - stories/j/Julija-2.jpg
+          - stories/j/Julija-3.jpg
+          - stories/j/Julija-4.jpg
 ---

@@ -10,7 +10,7 @@ cancer_type: bonecancer
 therapy_type:
   - surgery
 person_type: patient
-image: stories/a/Alex-B-1-Titelbild.png
+image: stories/a/Alex-B-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram
@@ -51,13 +51,13 @@ content:
       values:
         type: images
         content_images:
-          - stories/a/Alex-B-2.png
-          - stories/a/Alex-B-3.png
+          - stories/a/Alex-B-2.jpg
+          - stories/a/Alex-B-3.jpg
   -
     type: set
     attrs:
       values:
         type: video
         video_url: 'https://www.youtube-nocookie.com/embed/ZCHpqecv5QY'
-        video_thumbnail: stories/a/Alex-Thumbnail.png
+        video_thumbnail: stories/a/Alex-Thumbnail.jpg
 ---

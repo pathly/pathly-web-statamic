@@ -10,7 +10,7 @@ therapy_type:
   - chemotherapy
   - surgery
 person_type: patient
-image: stories/h/Heidi-1-Titelbild.png
+image: stories/h/Heidi-1-Titelbild.jpg
 
 contact:
   -
@@ -44,9 +44,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/h/Heidi-2.png
-          - stories/h/Heidi-3.png
-          - stories/h/Heidi-4.png
+          - stories/h/Heidi-2.jpg
+          - stories/h/Heidi-3.jpg
+          - stories/h/Heidi-4.jpg
   -
     type: paragraph
     content:

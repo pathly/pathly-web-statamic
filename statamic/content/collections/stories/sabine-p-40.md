@@ -9,7 +9,7 @@ therapy_type:
   - chemotherapy
   - surgery
 person_type: patient
-image: stories/s/Sabine--Titelbild.png
+image: stories/s/Sabine--Titelbild.jpg
 
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1647196787
@@ -39,8 +39,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/s/Sabine--2.png
-          - stories/s/Sabine--1.png
+          - stories/s/Sabine--2.jpg
+          - stories/s/Sabine--1.jpg
   -
     type: paragraph
     content:

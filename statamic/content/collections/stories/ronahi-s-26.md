@@ -10,7 +10,7 @@ cancer_type: bloodcancer
 therapy_type:
   - stemcelltherapy
 person_type: patient
-image: stories/r/Ronahi-1-Titelbild.png
+image: stories/r/Ronahi-1-Titelbild.jpg
 
 contact:
   -
@@ -44,8 +44,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/r/Ronahi-2.png
-          - stories/r/Ronahi-3.png
+          - stories/r/Ronahi-2.jpg
+          - stories/r/Ronahi-3.jpg
   -
     type: paragraph
     content:

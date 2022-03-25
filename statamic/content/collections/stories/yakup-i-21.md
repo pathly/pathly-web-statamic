@@ -10,7 +10,7 @@ cancer_type: bloodcancer
 therapy_type:
   - chemotherapy
 person_type: patient
-image: stories/y/Yakup-1-Titelbild.png
+image: stories/y/Yakup-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram
@@ -51,8 +51,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/y/Yakup-2.png
-          - stories/y/Yakup-3.png
+          - stories/y/Yakup-2.jpg
+          - stories/y/Yakup-3.jpg
   -
     type: paragraph
     content:

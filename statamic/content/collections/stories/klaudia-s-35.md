@@ -10,7 +10,7 @@ therapy_type:
   - radiationtherapy
   - chemotherapy
 person_type: patient
-image: stories/k/Klaudia-1-Titelbild.png
+image: stories/k/Klaudia-1-Titelbild.jpg
 
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1647183772
@@ -51,8 +51,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/k/Klaudia-2.png
-          - stories/k/Klaudia-3.png
+          - stories/k/Klaudia-2.jpg
+          - stories/k/Klaudia-3.jpg
   -
     type: paragraph
     content:

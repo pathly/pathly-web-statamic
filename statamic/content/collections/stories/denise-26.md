@@ -9,7 +9,7 @@ cancer_type: thyroidcancer
 therapy_type:
   - radiationtherapy
 person_type: patient
-image: stories/d/Denise-1-Titelbild.png
+image: stories/d/Denise-1-Titelbild.jpg
 
 contact:
   -
@@ -69,8 +69,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/d/Denise-2.png
-          - stories/d/Denise-3.png
+          - stories/d/Denise-2.jpg
+          - stories/d/Denise-3.jpg
   -
     type: paragraph
     content:

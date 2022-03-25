@@ -12,7 +12,7 @@ therapy_type:
   - radiationtherapy
   - palliativetherapy
 person_type: patient
-image: stories/c/Clemens-1-Titelbild.png
+image: stories/c/Clemens-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram
@@ -40,6 +40,6 @@ content:
       values:
         type: images
         content_images:
-          - stories/c/Clemens-2.png
-          - stories/c/Clemens-3.png
+          - stories/c/Clemens-2.jpg
+          - stories/c/Clemens-3.jpg
 ---

@@ -12,7 +12,7 @@ therapy_type:
   - surgery
   - radiationtherapy
 person_type: patient
-image: stories/l/Lea-S-1-Titelbild.png
+image: stories/l/Lea-S-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram
@@ -85,9 +85,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/l/Lea-S-2.png
-          - stories/l/Lea-S-3.png
-          - stories/l/Lea-S-4.png
+          - stories/l/Lea-S-2.jpg
+          - stories/l/Lea-S-3.jpg
+          - stories/l/Lea-S-4.jpg
   -
     type: paragraph
     content:
@@ -106,5 +106,5 @@ content:
       values:
         type: video
         video_url: 'https://www.youtube-nocookie.com/embed/hwNSIrwHhCw'
-        video_thumbnail: stories/l/Lea-Thumpnail.png
+        video_thumbnail: stories/l/Lea-Thumpnail.jpg
 ---

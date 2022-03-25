@@ -7,7 +7,7 @@ surname: Hombrecher
 age: 32
 cancer_type: skincancer
 person_type: patient
-image: stories/m/Michael-Titelbild.png
+image: stories/m/Michael-Titelbild.jpg
 
 contact:
   -
@@ -56,8 +56,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/m/Michael-.png
-          - stories/m/Michael-2.png
+          - stories/m/Michael-.jpg
+          - stories/m/Michael-2.jpg
   -
     type: paragraph
     content:

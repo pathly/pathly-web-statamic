@@ -11,7 +11,7 @@ therapy_type:
   - radiationtherapy
   - stemcelltherapy
 person_type: patient
-image: stories/a/Anna-E-1-Titelbild.png
+image: stories/a/Anna-E-1-Titelbild.jpg
 
 contact:
   -
@@ -40,6 +40,6 @@ content:
       values:
         type: images
         content_images:
-          - stories/a/Anna-E-2.png
-          - stories/a/Anna-E-3.png
+          - stories/a/Anna-E-2.jpg
+          - stories/a/Anna-E-3.jpg
 ---

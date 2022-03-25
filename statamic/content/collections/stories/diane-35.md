@@ -11,7 +11,7 @@ therapy_type:
   - chemotherapy
   - surgery
 person_type: patient
-image: stories/d/Diane-1-Titelbild.png
+image: stories/d/Diane-1-Titelbild.jpg
 
 contact:
   -
@@ -63,8 +63,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/d/Diane-2.png
-          - stories/d/Diane-3.png
+          - stories/d/Diane-2.jpg
+          - stories/d/Diane-3.jpg
   -
     type: paragraph
     content:

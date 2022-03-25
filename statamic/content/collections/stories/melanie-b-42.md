@@ -21,7 +21,7 @@ updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1647183119
 passed_away: false
 release_date: '2021-12-20'
-image: stories/m/Melanie-Titelbild.png
+image: stories/m/Melanie-Titelbild.jpg
 content:
   -
     type: blockquote
@@ -56,8 +56,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/m/Melanie-2.png
-          - stories/m/Melanie-3.png
+          - stories/m/Melanie-2.jpg
+          - stories/m/Melanie-3.jpg
   -
     type: paragraph
     content:

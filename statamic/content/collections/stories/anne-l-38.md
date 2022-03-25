@@ -13,7 +13,7 @@ therapy_type:
   - radiationtherapy
   - surgery
 person_type: patient
-image: stories/a/Anne-L-1-Titelbild.png
+image: stories/a/Anne-L-1-Titelbild.jpg
 
 contact:
   -
@@ -64,9 +64,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/a/Anne-L-2.png
-          - stories/a/Anne-L-3.png
-          - stories/a/Anne-L-4.png
+          - stories/a/Anne-L-2.jpg
+          - stories/a/Anne-L-3.jpg
+          - stories/a/Anne-L-4.jpg
   -
     type: paragraph
     content:

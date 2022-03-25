@@ -10,7 +10,7 @@ cancer_type: breastcancer
 therapy_type:
   - chemotherapy
 person_type: patient
-image: stories/a/Anna-S-1-Titelbild.png
+image: stories/a/Anna-S-1-Titelbild.jpg
 
 contact:
   -
@@ -45,9 +45,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/a/Anna-S-2.png
-          - stories/a/Anna-S-3.png
-          - stories/a/Anna-S-4.png
+          - stories/a/Anna-S-2.jpg
+          - stories/a/Anna-S-3.jpg
+          - stories/a/Anna-S-4.jpg
   -
     type: paragraph
     content:

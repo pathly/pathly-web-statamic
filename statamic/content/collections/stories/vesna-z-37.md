@@ -11,7 +11,7 @@ therapy_type:
   - chemotherapy
   - palliativetherapy
 person_type: patient
-image: stories/v/Vesna-1-Titelbild.png
+image: stories/v/Vesna-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram
@@ -99,9 +99,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/v/Vesna-2.png
-          - stories/v/Vesna-3.png
-          - stories/v/Vesna-4.png
+          - stories/v/Vesna-2.jpg
+          - stories/v/Vesna-3.jpg
+          - stories/v/Vesna-4.jpg
   -
     type: paragraph
     content:

@@ -20,7 +20,7 @@ contact:
 release_date: '2021-10-19'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1647898148
-image: stories/a/Anja-R-1-Titelbild.png
+image: stories/a/Anja-R-1-Titelbild.jpg
 content:
   -
     type: blockquote
@@ -55,9 +55,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/a/Anja-R-2.png
-          - stories/a/Anja-R-3.png
-          - stories/a/Anja-R-4.png
+          - stories/a/Anja-R-2.jpg
+          - stories/a/Anja-R-3.jpg
+          - stories/a/Anja-R-4.jpg
   -
     type: paragraph
     content:

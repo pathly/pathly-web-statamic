@@ -10,7 +10,7 @@ therapy_type:
   - surgery
   - radiationtherapy
 person_type: patient
-image: stories/s/Sandra-Titelbild.png
+image: stories/s/Sandra-Titelbild.jpg
 
 contact:
   -
@@ -72,8 +72,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/s/Sandra-3.png
-          - stories/s/Sandra-2.png
+          - stories/s/Sandra-3.jpg
+          - stories/s/Sandra-2.jpg
   -
     type: paragraph
     content:

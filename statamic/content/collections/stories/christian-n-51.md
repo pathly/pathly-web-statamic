@@ -9,7 +9,7 @@ cancer_type: gallbladdercancer
 therapy_type:
   - chemotherapy
 person_type: patient
-image: stories/c/Christian-1-Titelbild.png
+image: stories/c/Christian-1-Titelbild.jpg
 
 contact:
   -
@@ -44,8 +44,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/c/Christian-2.png
-          - stories/c/Christian-3.png
+          - stories/c/Christian-2.jpg
+          - stories/c/Christian-3.jpg
   -
     type: paragraph
     content:

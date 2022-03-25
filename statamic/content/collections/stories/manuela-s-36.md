@@ -11,7 +11,7 @@ therapy_type:
   - surgery
   - chemotherapy
 person_type: patient
-image: stories/m/Manuela-Titelbild.png
+image: stories/m/Manuela-Titelbild.jpg
 
 contact:
   -
@@ -58,9 +58,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/m/Manuela-3.png
-          - stories/m/Manuela-2.png
-          - stories/m/Manuela-4.png
+          - stories/m/Manuela-3.jpg
+          - stories/m/Manuela-2.jpg
+          - stories/m/Manuela-4.jpg
   -
     type: paragraph
     content:

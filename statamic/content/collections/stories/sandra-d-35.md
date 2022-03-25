@@ -11,7 +11,7 @@ therapy_type:
   - chemotherapy
   - hormonetherapy
 person_type: patient
-image: stories/s/Sandra-D-1-Titelbild.png
+image: stories/s/Sandra-D-1-Titelbild.jpg
 
 contact:
   -
@@ -57,6 +57,6 @@ content:
       values:
         type: images
         content_images:
-          - stories/s/Sandra-D-2.png
-          - stories/s/Sandra-D-3.png
+          - stories/s/Sandra-D-2.jpg
+          - stories/s/Sandra-D-3.jpg
 ---

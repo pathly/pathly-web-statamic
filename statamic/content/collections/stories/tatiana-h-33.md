@@ -10,7 +10,7 @@ cancer_type: breastcancer
 therapy_type:
   - chemotherapy
 person_type: patient
-image: stories/t/Tatiana-1-Titelbild.png
+image: stories/t/Tatiana-1-Titelbild.jpg
 contact:
   -
     contact_type: youtube
@@ -56,8 +56,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/t/Tatiana-2.png
-          - stories/t/Tatiana-3.png
+          - stories/t/Tatiana-2.jpg
+          - stories/t/Tatiana-3.jpg
   -
     type: paragraph
     content:
@@ -70,5 +70,5 @@ content:
       values:
         type: video
         video_url: 'https://www.youtube-nocookie.com/embed/PSol3meMmuo'
-        video_thumbnail: stories/t/Tatiana-Thumpnail.png
+        video_thumbnail: stories/t/Tatiana-Thumpnail.jpg
 ---

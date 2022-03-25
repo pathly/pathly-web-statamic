@@ -11,7 +11,7 @@ therapy_type:
   - chemotherapy
   - surgery
 person_type: patient
-image: stories/a/Alex-J-1-Titelbild.png
+image: stories/a/Alex-J-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram
@@ -101,6 +101,6 @@ content:
       values:
         type: images
         content_images:
-          - stories/a/Alex-J-2.png
-          - stories/a/Alex-J-3.png
+          - stories/a/Alex-J-2.jpg
+          - stories/a/Alex-J-3.jpg
 ---

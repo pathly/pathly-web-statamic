@@ -10,7 +10,7 @@ cancer_type: breastcancer
 therapy_type:
   - chemotherapy
 person_type: patient
-image: stories/k/Kendra-1-Titelbild.png
+image: stories/k/Kendra-1-Titelbild.jpg
 
 contact:
   -
@@ -105,8 +105,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/k/Kendra-2.png
-          - stories/k/Kendra-3.png
+          - stories/k/Kendra-2.jpg
+          - stories/k/Kendra-3.jpg
   -
     type: paragraph
     content:

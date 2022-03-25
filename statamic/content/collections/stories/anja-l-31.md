@@ -12,7 +12,7 @@ therapy_type:
   - surgery
   - radiationtherapy
 person_type: patient
-image: stories/a/Anja-L-1-Titelbild.png
+image: stories/a/Anja-L-1-Titelbild.jpg
 
 contact:
   -
@@ -40,9 +40,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/a/Anja-L-2.png
-          - stories/a/Anja-L-3.png
-          - stories/a/Anja-L-4.png
+          - stories/a/Anja-L-2.jpg
+          - stories/a/Anja-L-3.jpg
+          - stories/a/Anja-L-4.jpg
   -
     type: paragraph
     content:

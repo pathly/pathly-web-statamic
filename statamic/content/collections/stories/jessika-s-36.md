@@ -7,7 +7,7 @@ surname: Schliebe
 age: 36
 cancer_type: cervicalcancer
 person_type: patient
-image: stories/j/Jessika-1-Titelbild.png
+image: stories/j/Jessika-1-Titelbild.jpg
 
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1647184720
@@ -48,7 +48,7 @@ content:
       values:
         type: images
         content_images:
-          - stories/j/Jessika-2.png
-          - stories/j/Jessika-3.png
-          - stories/j/Jessika-4.png
+          - stories/j/Jessika-2.jpg
+          - stories/j/Jessika-3.jpg
+          - stories/j/Jessika-4.jpg
 ---

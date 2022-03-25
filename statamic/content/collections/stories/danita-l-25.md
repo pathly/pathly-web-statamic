@@ -11,7 +11,7 @@ therapy_type:
   - chemotherapy
   - surgery
 person_type: patient
-image: stories/d/Danita-1-Titelbild.png
+image: stories/d/Danita-1-Titelbild.jpg
 
 contact:
   -
@@ -42,9 +42,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/d/Danita-2.png
-          - stories/d/Danita-3.png
-          - stories/d/Danita-4.png
+          - stories/d/Danita-2.jpg
+          - stories/d/Danita-3.jpg
+          - stories/d/Danita-4.jpg
   -
     type: paragraph
     content:

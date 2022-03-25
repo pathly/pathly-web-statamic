@@ -18,7 +18,7 @@ contact:
 release_date: '2021-12-01'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1647897943
-image: stories/d/Denis-1-Titelbild.png
+image: stories/d/Denis-1-Titelbild.jpg
 content:
   -
     type: blockquote
@@ -61,9 +61,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/d/Denis-2.png
-          - stories/d/Denis-3.png
-          - stories/d/Denis-4.png
+          - stories/d/Denis-2.jpg
+          - stories/d/Denis-3.jpg
+          - stories/d/Denis-4.jpg
   -
     type: paragraph
     content:

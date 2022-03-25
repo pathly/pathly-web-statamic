@@ -9,7 +9,7 @@ therapy_type:
   - chemotherapy
   - surgery
 person_type: patient
-image: stories/a/Adam-1-Titelbild.png
+image: stories/a/Adam-1-Titelbild.jpg
 
 contact:
   -
@@ -62,9 +62,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/a/Adam-2.png
-          - stories/a/Adam-3.png
-          - stories/a/Adam-4.png
+          - stories/a/Adam-2.jpg
+          - stories/a/Adam-3.jpg
+          - stories/a/Adam-4.jpg
   -
     type: paragraph
     content:

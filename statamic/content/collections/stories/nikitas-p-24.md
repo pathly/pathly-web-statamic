@@ -7,7 +7,7 @@ firstname: Nikitas
 surname: Popp
 age: 24
 person_type: relative
-image: stories/n/Nikitas-1-Titelbild.png
+image: stories/n/Nikitas-1-Titelbild.jpg
 
 contact:
   -
@@ -41,9 +41,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/n/Nikitas-2.png
-          - stories/n/Nikitas-3.png
-          - stories/n/Nikitas-4.png
+          - stories/n/Nikitas-2.jpg
+          - stories/n/Nikitas-3.jpg
+          - stories/n/Nikitas-4.jpg
   -
     type: paragraph
     content:

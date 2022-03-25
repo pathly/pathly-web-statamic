@@ -10,7 +10,7 @@ therapy_type:
   - chemotherapy
   - immunotherapy
 person_type: patient
-image: stories/c/Christin-1-Titelbild.png
+image: stories/c/Christin-1-Titelbild.jpg
 
 contact:
   -
@@ -63,7 +63,7 @@ content:
       values:
         type: images
         content_images:
-          - stories/c/Christin-2.png
-          - stories/c/Christin-3.png
-          - stories/c/Christin-4.png
+          - stories/c/Christin-2.jpg
+          - stories/c/Christin-3.jpg
+          - stories/c/Christin-4.jpg
 ---

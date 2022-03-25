@@ -22,7 +22,7 @@ contact:
 release_date: '2021-08-24'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1647898219
-image: stories/e/Elif-1-Titelbild.png
+image: stories/e/Elif-1-Titelbild.jpg
 content:
   -
     type: blockquote
@@ -60,8 +60,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/e/Elif-3.png
-          - stories/e/Elif-2.png
+          - stories/e/Elif-3.jpg
+          - stories/e/Elif-2.jpg
   -
     type: paragraph
     content:

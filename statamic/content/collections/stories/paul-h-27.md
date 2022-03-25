@@ -10,7 +10,7 @@ cancer_type: testicularcancer
 therapy_type:
   - surgery
 person_type: patient
-image: stories/p/Paul-1-Titelbild.png
+image: stories/p/Paul-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram
@@ -56,9 +56,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/p/Paul-2.png
-          - stories/p/Paul-3.png
-          - stories/p/Paul-4.png
+          - stories/p/Paul-2.jpg
+          - stories/p/Paul-3.jpg
+          - stories/p/Paul-4.jpg
   -
     type: paragraph
     content:

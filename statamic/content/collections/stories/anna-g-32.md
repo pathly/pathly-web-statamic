@@ -11,7 +11,7 @@ therapy_type:
   - chemotherapy
   - surgery
 person_type: patient
-image: stories/a/Anna-G-1-Titelbild.png
+image: stories/a/Anna-G-1-Titelbild.jpg
 contact:
   -
     contact_type: website
@@ -51,7 +51,7 @@ content:
       values:
         type: images
         content_images:
-          - stories/a/Anna-G-2.png
-          - stories/a/Anna-G-3.png
-          - stories/a/Anna-G-4.png
+          - stories/a/Anna-G-2.jpg
+          - stories/a/Anna-G-3.jpg
+          - stories/a/Anna-G-4.jpg
 ---

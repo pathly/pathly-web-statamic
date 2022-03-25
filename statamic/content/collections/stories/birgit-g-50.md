@@ -8,7 +8,7 @@ surname: Göttlich
 age: 50
 cancer_type: breastcancer
 person_type: patient
-image: stories/b/Birgit-G-1-Titelbild.png
+image: stories/b/Birgit-G-1-Titelbild.jpg
 
 contact:
   -
@@ -59,9 +59,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/b/Birgit-G-2.png
-          - stories/b/Birgit-G-3.png
-          - stories/b/Birgit-G-4.png
+          - stories/b/Birgit-G-2.jpg
+          - stories/b/Birgit-G-3.jpg
+          - stories/b/Birgit-G-4.jpg
   -
     type: paragraph
     content:

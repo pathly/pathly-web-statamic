@@ -9,7 +9,7 @@ therapy_type:
   - chemotherapy
   - surgery
 person_type: patient
-image: stories/v/Vivien-1-Titelbild.png
+image: stories/v/Vivien-1-Titelbild.jpg
 
 contact:
   -
@@ -50,6 +50,6 @@ content:
       values:
         type: images
         content_images:
-          - stories/v/Vivien-2.png
-          - stories/v/Vivien-3.png
+          - stories/v/Vivien-2.jpg
+          - stories/v/Vivien-3.jpg
 ---

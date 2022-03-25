@@ -11,7 +11,7 @@ therapy_type:
   - chemotherapy
   - radiationtherapy
 person_type: patient
-image: stories/s/Susanne-K-1-Titelbild.png
+image: stories/s/Susanne-K-1-Titelbild.jpg
 
 contact:
   -
@@ -50,8 +50,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/s/Susanne-K-2.png
-          - stories/s/Susanne-K-3.png
+          - stories/s/Susanne-K-2.jpg
+          - stories/s/Susanne-K-3.jpg
   -
     type: paragraph
     content:

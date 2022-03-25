@@ -11,7 +11,7 @@ therapy_type:
   - chemotherapy
   - immunotherapy
 person_type: patient
-image: stories/s/Sebastian-1-Titelbild.png
+image: stories/s/Sebastian-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram
@@ -78,8 +78,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/s/Sebastian-2.png
-          - stories/s/Sebastian-3.png
+          - stories/s/Sebastian-2.jpg
+          - stories/s/Sebastian-3.jpg
   -
     type: set
     attrs:
@@ -87,7 +87,7 @@ content:
         type: links
         content_links:
           -
-            content_link_icon: stories/s/Flow-Lap.png
+            content_link_icon: stories/s/Flow-Lap.jpg
             content_link_title: 'Podcast: Dem Krebs den Kampf ansagen – Wie schafft man das, Sebastian Waters?'
             content_link_url: 'https://flowlab.com/mental-fitness-blog/folge-08-dem-krebs-den-kampf-ansagen-wie-schafft-man-das-sebastian-waters/'
   -

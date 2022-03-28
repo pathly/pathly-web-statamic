@@ -65,7 +65,7 @@
         > div {
           background-color: white;
           border-radius: var(--root24px);
-          padding: var(--root16px);
+          padding: var(--root24px);
 
           /* this div is important for sticky reset */
           div {
@@ -493,13 +493,20 @@
           font-weight: 400;
           padding: var(--root4px) var(--root16px);
           border-radius: calc(var(--root16px) + 2 * var(--root4px)); /* font size + 2 * padding */
-          background-color: var(--purple_ultraLightViolett);
           color: var(--purple_darkViolett);
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
           margin-right: var(--root16px);
           line-height: 1.6;
+
+          &.cancer-type {
+            background-color: var(--purple_ultraLightViolett);
+          }
+
+          &.person-type {
+            background-color: var(--purple_ultraLightViolett);
+          }
         }
 
         .favorite-toggle {
@@ -761,10 +768,6 @@
     .images {
       grid-column: 2/13;
 
-      @media (max-width: 450px) {
-        grid-column: 1/14;
-      }
-
       .slick-list {
         width: 100%;
 
@@ -773,7 +776,11 @@
           .slick-slide {
             display: flex;
             justify-content: center;
-            padding: 0 var(--root24px);
+            padding: 0 var(--root32px);
+
+            @media (max-width: 600px) {
+              padding: 0 var(--root16px);
+            }
 
             img {
               width: 100%;

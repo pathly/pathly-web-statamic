@@ -172,13 +172,11 @@
               <article>
                 <img src="{{ image }}" alt="{{ alt }}">
                 <div>
-                  <span>
-                    {{ if person_type == "patient" }}
-                      {{ cancer_type:title }}
-                    {{ elseif person_type == "relative" }}
-                      Angehörige:r
-                    {{ /if }}
-                  </span>
+                  {{ if person_type == "patient" }}
+                    <span class="cancer-type">{{ cancer_type:title }}</span>
+                  {{ elseif person_type == "relative" }}
+                    <span class="person-type">Angehörige:r</span>
+                  {{ /if }}
                   <div class="favorite-toggle favorite-toggle--stories">
                     <input value="{{ id }}" name="favorite" type="checkbox">
                     <label for="favorite"></label>

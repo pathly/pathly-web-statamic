@@ -109,44 +109,43 @@
 </article>
 
 <section class="section_slider section--top-spacing">
-  {{ collection:stories limit="6" as="posts"
-  :filter_cancer_type="cancer_type:slug"
-  :filter_age="age"
-  :filter_id="id"
-  query_scope="story" }}
+  {{ get_content from="/stories" }}
+    {{ if relatives_headline_addition }}
+      <h2 class="section-headline--addition">{{ relatives_headline_addition }}</h2>
+    {{ /if }}
+    <h2 class="section-headline">{{ relatives_headline }}</h2>
+  {{ /get_content }}
 
-    {{ get_content from="/stories" }}
-      {{ if relatives_headline_addition }}
-        <h2 class="section-headline--addition">{{ relatives_headline_addition }}</h2>
-      {{ /if }}
-      <h2 class="section-headline">{{ relatives_headline }}</h2>
-    {{ /get_content }}
-
-    <div class="slider">
-      {{ posts }}
-        <div class="card shadow">
-          <a href="{{ url }}">
-            <article>
-              <img src="{{ image }}" alt="{{ alt }}">
-              <div>
-                <span>
-                  {{ if person_type == "patient" }}
-                    {{ cancer_type:title }}
-                  {{ elseif person_type == "relative" }}
-                    Angehörige:r
-                  {{ /if }}
-                </span>
-                <div class="favorite-toggle favorite-toggle--stories">
-                  <input value="{{ id }}" name="favorite" type="checkbox">
-                  <label for="favorite"></label>
-                </div>
+  <div class="slider">
+    {{ collection:stories limit="6"
+    :filter_cancer_type="cancer_type:slug"
+    :filter_age="age"
+    :filter_id="id"
+    query_scope="story" }}
+      <div class="card shadow">
+        <a href="{{ url }}">
+          <article>
+            <img src="{{ image }}" alt="{{ alt }}">
+            <div>
+              {{ if person_type == "patient" }}
+                <span class="cancer-type">{{ cancer_type:title }}</span>
+              {{ elseif person_type == "relative" }}
+                <span class="person-type">Angehörige:r</span>
+              {{ /if }}
+              <div class="favorite-toggle favorite-toggle--stories">
+                <input value="{{ id }}" name="favorite" type="checkbox">
+                <label for="favorite"></label>
               </div>
+            </div>
 
-              <h2>{{ firstname }}{{ if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h2>
-            </article>
-          </a>
-        </div>
-      {{ /posts }}
-    </div>
-  {{ /collection:stories }}
+            <h2>{{ firstname }}{{ if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h2>
+          </article>
+        </a>
+      </div>
+    {{ /collection:stories }}
+  </div>
+
+  <div class="button">
+    <a href="/stories" class="cta-button outline">Alle Geschichten</a>
+  </div>
 </section>

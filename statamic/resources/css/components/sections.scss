@@ -311,6 +311,10 @@ section {
 
       .slick-slide {
         margin: 0 var(--root32px);
+
+        @media (max-width: 600px) {
+          margin: 0 var(--root16px);
+        }
       }
     }
   }

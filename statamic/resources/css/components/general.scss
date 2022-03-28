@@ -250,12 +250,17 @@ button {
   -webkit-box-shadow: 0 var(--root8px) var(--root48px) var(--shadow_red);
   color: var(--purple_ultraLight);
 
-  transition: all 0.5s ease;
+  transition: transform 0.5s ease;
 
   &.outline {
     background-color: unset;
     color: var(--primary_red);
     border: var(--root4px) solid var(--primary_red);
+
+    &:hover {
+      background-color: var(--primary_red);
+      color: var(--purple_ultraLight);
+    }
   }
 
   &:hover {

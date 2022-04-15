@@ -1,6 +1,5 @@
 ---
 id: cbef7cab-10f0-448f-8310-646662b187b2
-published: false
 blueprint: story
 title: 'Janina, 35'
 passed_away: false
@@ -13,7 +12,6 @@ therapy_type:
   - surgery
 person_type: patient
 image: stories/j/Janina-1-Titelbild.jpg
-
 contact:
   -
     contact_type: instagram
@@ -23,7 +21,7 @@ contact:
     enabled: true
 release_date: '2020-10-10'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647641851
+updated_at: 1649505924
 description:
   -
     type: paragraph
@@ -31,6 +29,7 @@ description:
       -
         type: text
         text: 'Janinas Geschichte zeigt, was man mit Mut schaffen kann. Auf ihrem Account erzählte sie von ihrer Erkrankung, zeigt Stärke und macht darauf aufmerksam, wie wichtig es ist, für sich einzustehen.'
+death_date: '2022-04-09'
 content:
   -
     type: blockquote

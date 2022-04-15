@@ -9,4 +9,4 @@ updated_at: 1647721599
 blueprint: cancer_type
 is_cancer_sub_type: true
 cancer_parent_type:
-  - bloodcancer
+  - blood-cancer

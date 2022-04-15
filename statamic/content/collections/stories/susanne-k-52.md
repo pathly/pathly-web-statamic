@@ -6,7 +6,7 @@ passed_away: false
 firstname: Susanne
 surname: Kitlinski
 age: 52
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
   - radiationtherapy

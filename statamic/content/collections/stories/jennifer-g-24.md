@@ -6,7 +6,7 @@ passed_away: false
 firstname: Jennifer
 surname: Gotta
 age: 24
-cancer_type: osteosarcoma
+cancer_type: osteo-sarcoma
 therapy_type:
   - surgery
 person_type: patient

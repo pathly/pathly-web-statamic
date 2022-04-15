@@ -5,7 +5,7 @@ title: 'Tami, 28'
 passed_away: false
 firstname: Tami
 age: 28
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
 person_type: patient

@@ -6,7 +6,7 @@ passed_away: false
 firstname: Lea
 surname: Schriever
 age: 22
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
   - surgery

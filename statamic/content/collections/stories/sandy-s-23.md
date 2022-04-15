@@ -6,7 +6,7 @@ passed_away: false
 firstname: Sandy
 surname: Senft
 age: 23
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - hormonetherapy
   - chemotherapy

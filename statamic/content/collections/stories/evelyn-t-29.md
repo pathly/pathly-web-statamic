@@ -5,7 +5,7 @@ title: 'Evelyn T., 29'
 firstname: Evelyn
 surname: Tasser
 age: 29
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - hormonetherapy
   - surgery

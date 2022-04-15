@@ -6,7 +6,7 @@ passed_away: false
 firstname: Eva
 surname: Geib
 age: 30
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
   - surgery

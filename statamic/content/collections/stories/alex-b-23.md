@@ -6,7 +6,7 @@ passed_away: false
 firstname: Alex
 surname: Böhmer
 age: 23
-cancer_type: bonecancer
+cancer_type: bone-cancer
 therapy_type:
   - surgery
 person_type: patient

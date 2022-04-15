@@ -5,7 +5,7 @@ title: 'Michael H., 32'
 firstname: Michael
 surname: Hombrecher
 age: 32
-cancer_type: skincancer
+cancer_type: skin-cancer
 person_type: patient
 image: stories/m/Michael-Titelbild.jpg
 

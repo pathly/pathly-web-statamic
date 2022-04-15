@@ -6,7 +6,7 @@ passed_away: false
 firstname: Christine
 surname: Raab
 age: 38
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
   - surgery

@@ -6,7 +6,7 @@ passed_away: false
 firstname: Jessica
 surname: Götze
 age: 28
-cancer_type: cervicalcancer
+cancer_type: cervical-cancer
 therapy_type:
   - surgery
 person_type: patient

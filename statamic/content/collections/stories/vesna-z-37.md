@@ -6,7 +6,7 @@ passed_away: false
 firstname: Vesna
 surname: Zekic
 age: 37
-cancer_type: lungcancer
+cancer_type: lung-cancer
 therapy_type:
   - chemotherapy
   - palliativetherapy

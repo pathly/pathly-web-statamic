@@ -6,7 +6,7 @@ passed_away: false
 firstname: Sandra
 surname: Dalgliesh
 age: 35
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
   - hormonetherapy

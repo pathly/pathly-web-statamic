@@ -5,7 +5,7 @@ title: 'Christian N., 51'
 firstname: Christian
 surname: Nübling
 age: 51
-cancer_type: gallbladdercancer
+cancer_type: gall-bladder-cancer
 therapy_type:
   - chemotherapy
 person_type: patient

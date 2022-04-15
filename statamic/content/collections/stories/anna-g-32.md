@@ -6,7 +6,7 @@ passed_away: false
 firstname: Anna
 surname: Güttler
 age: 32
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
   - surgery

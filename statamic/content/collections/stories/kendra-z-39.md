@@ -6,7 +6,7 @@ passed_away: false
 firstname: Kendra
 surname: Zwiefka
 age: 39
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
 person_type: patient

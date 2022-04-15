@@ -6,7 +6,7 @@ passed_away: true
 firstname: Clemens
 surname: Wolf
 age: 38
-cancer_type: esophagealcancer
+cancer_type: esophageal-cancer
 therapy_type:
   - chemotherapy
   - radiationtherapy

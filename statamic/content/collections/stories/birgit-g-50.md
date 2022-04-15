@@ -6,7 +6,7 @@ passed_away: false
 firstname: Birgit
 surname: Göttlich
 age: 50
-cancer_type: breastcancer
+cancer_type: breast-cancer
 person_type: patient
 image: stories/b/Birgit-G-1-Titelbild.jpg
 

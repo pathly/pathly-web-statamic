@@ -5,7 +5,7 @@ title: 'Johanna H., 33'
 passed_away: false
 firstname: Johanna
 age: 33
-cancer_type: breastcancer
+cancer_type: breast-cancer
 person_type: patient
 image: stories/j/Johanna-1-Titelbild.jpg
 

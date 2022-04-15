@@ -6,7 +6,7 @@ passed_away: false
 firstname: Elizabeth
 surname: Tsang
 age: 31
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
   - radiationtherapy

@@ -9,5 +9,5 @@ additional_terms:
   -
     term: '(Multiples) Myelom'
 cancer_parent_type:
-  - lymphglandcancer
-  - bloodcancer
+  - lymph-gland-cancer
+  - blood-cancer

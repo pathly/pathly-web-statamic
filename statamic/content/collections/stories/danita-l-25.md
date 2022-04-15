@@ -6,7 +6,7 @@ passed_away: false
 firstname: Danita
 surname: Lehmann
 age: 25
-cancer_type: ovariancancer
+cancer_type: ovarian-cancer
 therapy_type:
   - chemotherapy
   - surgery

@@ -5,7 +5,7 @@ title: 'Keike, 28'
 passed_away: false
 firstname: Keike
 age: 28
-cancer_type: neuroblastoma
+cancer_type: neuro-blastoma
 therapy_type:
   - chemotherapy
   - surgery
@@ -38,7 +38,7 @@ content:
         content:
           -
             type: text
-            text: '»Hallo, mein Name ist Keike und bin 28 Jahre alt. Im Jahr 2008 wurde bei mir mit 15 Jahren ein Neuroblastom entdeckt. Nach mehreren Chemotherapien und Operationen – darunter eine Not-OP – war ich krebsfrei.'
+            text: '»Hallo, mein Name ist Keike und bin 28 Jahre alt. Im Jahr 2008 wurde bei mir mit 15 Jahren ein neuro-blastom entdeckt. Nach mehreren Chemotherapien und Operationen – darunter eine Not-OP – war ich krebsfrei.'
       -
         type: paragraph
         content:

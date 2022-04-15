@@ -6,7 +6,7 @@ passed_away: false
 firstname: Franziska
 surname: Baumgart
 age: 25
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - hormonetherapy
   - chemotherapy

@@ -6,7 +6,7 @@ passed_away: false
 firstname: Paul
 surname: Hofmann
 age: 27
-cancer_type: testicularcancer
+cancer_type: testicular-cancer
 therapy_type:
   - surgery
 person_type: patient

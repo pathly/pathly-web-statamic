@@ -6,7 +6,7 @@ passed_away: false
 firstname: Daniela
 surname: Fricaud
 age: 48
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
   - surgery

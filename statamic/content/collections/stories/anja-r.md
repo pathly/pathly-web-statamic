@@ -5,7 +5,7 @@ title: 'Anja R.'
 passed_away: false
 firstname: Anja
 surname: Rosental
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - surgery
 person_type: patient

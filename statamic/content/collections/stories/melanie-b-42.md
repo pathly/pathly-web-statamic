@@ -5,7 +5,7 @@ title: 'Melanie B., 42'
 firstname: Melanie
 surname: Bürkle
 age: 42
-cancer_type: lungcancer
+cancer_type: lung-cancer
 therapy_type:
   - surgery
 person_type: patient

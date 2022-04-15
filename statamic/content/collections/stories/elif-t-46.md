@@ -6,7 +6,7 @@ passed_away: false
 firstname: Elif
 surname: Tekküpeli
 age: 46
-cancer_type: coloncancer
+cancer_type: colon-cancer
 therapy_type:
   - surgery
   - chemotherapy

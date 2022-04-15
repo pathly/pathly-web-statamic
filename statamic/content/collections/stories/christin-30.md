@@ -5,7 +5,7 @@ title: 'Christin, 30'
 passed_away: false
 firstname: Christin
 age: 30
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
   - immunotherapy

@@ -5,7 +5,7 @@ title: 'Manuela S., 36'
 firstname: Manuela
 surname: Suttner
 age: 36
-cancer_type: lungcancer
+cancer_type: lung-cancer
 therapy_type:
   - immunotherapy
   - surgery

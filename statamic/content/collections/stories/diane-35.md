@@ -5,7 +5,7 @@ title: 'Diane, 35'
 passed_away: false
 firstname: Diane
 age: 35
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - hormonetherapy
   - chemotherapy

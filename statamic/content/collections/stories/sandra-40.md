@@ -4,7 +4,7 @@ blueprint: story
 title: 'Sandra, 40'
 firstname: Sandra
 age: 40
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
   - surgery

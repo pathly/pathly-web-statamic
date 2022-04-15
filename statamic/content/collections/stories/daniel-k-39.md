@@ -6,7 +6,7 @@ passed_away: false
 firstname: Daniel
 surname: Kloß
 age: 39
-cancer_type: softtissuecancer
+cancer_type: soft-tissue-cancer
 therapy_type:
   - chemotherapy
   - immunotherapy

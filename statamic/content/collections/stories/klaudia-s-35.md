@@ -5,7 +5,7 @@ title: 'Klaudia S., 35'
 firstname: Klaudia
 surname: Seiter
 age: 35
-cancer_type: cervicalcancer
+cancer_type: cervical-cancer
 therapy_type:
   - radiationtherapy
   - chemotherapy

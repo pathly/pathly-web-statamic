@@ -6,7 +6,7 @@ passed_away: false
 firstname: Alex
 surname: Jenniges
 age: 35
-cancer_type: testicularcancer
+cancer_type: testicular-cancer
 therapy_type:
   - chemotherapy
   - surgery

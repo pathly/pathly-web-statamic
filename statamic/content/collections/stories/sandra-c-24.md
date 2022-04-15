@@ -6,7 +6,7 @@ passed_away: false
 firstname: Sandra
 surname: Cramer
 age: 24
-cancer_type: lymphglandcancer
+cancer_type: lymph-gland-cancer
 therapy_type:
   - chemotherapy
 person_type: patient

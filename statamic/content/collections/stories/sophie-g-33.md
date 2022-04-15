@@ -5,7 +5,7 @@ title: 'Sophie G., 33'
 firstname: Sophie
 surname: Gabor
 age: 33
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
   - surgery

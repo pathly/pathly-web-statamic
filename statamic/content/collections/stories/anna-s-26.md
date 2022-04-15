@@ -6,7 +6,7 @@ passed_away: false
 firstname: Anna
 surname: Schmidt
 age: 26
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
 person_type: patient

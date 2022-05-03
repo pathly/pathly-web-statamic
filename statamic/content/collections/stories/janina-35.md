@@ -29,7 +29,6 @@ description:
       -
         type: text
         text: 'Janinas Geschichte zeigt, was man mit Mut schaffen kann. Auf ihrem Account erzählte sie von ihrer Erkrankung, zeigt Stärke und macht darauf aufmerksam, wie wichtig es ist, für sich einzustehen.'
-death_date: '2022-04-09'
 content:
   -
     type: blockquote

@@ -29,7 +29,6 @@ release_date: '2021-03-02'
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
 updated_at: 1648146370
 image: stories/c/Christine-R-1-Titelbild.jpg
-death_date: '2022-03-23'
 description:
   -
     type: paragraph

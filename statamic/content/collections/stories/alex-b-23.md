@@ -34,7 +34,6 @@ description:
       -
         type: text
         text: 'Heute erzählen wir euch die faszinierende Geschichte von Alex Böhmer @alexboehm. Alex ist Krebsblogger und hat im August 2018 die Diagnose Knochenkrebs erhalten. Auf seinem Account berichtet er über seine Zeit im Krankenhaus, der Amputation seines rechten Beins, der Reha und dem Leben nach dem Krebs.'
-death_date: '2022-03-24'
 content:
   -
     type: blockquote

@@ -3,7 +3,6 @@ id: 272abe16-16af-4ba8-98fa-ba8b2eed4ccf
 blueprint: story
 title: 'Katja S, 42'
 passed_away: false
-death_date: '2022-04-30'
 firstname: Katja
 surname: Stieglitz
 age: 42
@@ -30,8 +29,8 @@ description:
       -
         type: text
         text: 'Katja und ihre Familie erlebten 2011 einen Schicksalsschlag – bei ihrer damals zwei Jahre alten Tochter wurde ein seltener Hirntumor festgestellt. Heute erzählt Katja uns tapfer von ihrer Geschichte und möchte darauf aufmerksam machen, wie wichtig die Forschung auch bei seltenen Erkrankungen ist.'
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1651344852
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1651573357
 content:
   -
     type: blockquote

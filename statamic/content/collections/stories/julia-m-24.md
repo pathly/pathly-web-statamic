@@ -3,7 +3,6 @@ id: eba997a3-9602-4f23-8a56-385cf111ca5c
 blueprint: story
 title: 'Julia M, 24'
 passed_away: false
-death_date: '2022-04-30'
 firstname: Julia
 surname: Moritz
 age: 24

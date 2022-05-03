@@ -3,7 +3,6 @@ id: 2612417f-6eef-4ebf-955d-dc7fd40dee80
 blueprint: story
 title: 'Beatrix S, 44'
 passed_away: false
-death_date: '2022-04-30'
 firstname: Beatrix
 surname: Schäfer
 age: 44

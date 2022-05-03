@@ -21,7 +21,6 @@ contact:
 release_date: '2020-09-11'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1648062961
-death_date: '2022-03-23'
 description:
   -
     type: paragraph

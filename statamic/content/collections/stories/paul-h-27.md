@@ -21,7 +21,6 @@ contact:
 release_date: '2021-06-08'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1648063029
-death_date: '2022-03-23'
 content:
   -
     type: blockquote

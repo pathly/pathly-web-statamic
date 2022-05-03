@@ -4,7 +4,6 @@ published: false
 blueprint: story
 title: 'Lucie M, 48'
 passed_away: false
-death_date: '2022-04-30'
 firstname: Lucie
 surname: Martinek
 age: 48

@@ -3,7 +3,6 @@ id: b3a5b3b4-c8cf-4bbd-b2a4-696bf22c913d
 blueprint: story
 title: 'Daniela P, 38'
 passed_away: false
-death_date: '2022-04-30'
 firstname: Daniela
 surname: Peifer
 age: 38

@@ -3,7 +3,6 @@ id: 4f172a55-9c8f-4d40-b5c3-603d55b6f237
 blueprint: story
 title: 'Birgit G, 52'
 passed_away: false
-death_date: '2022-04-29'
 firstname: Birgit
 surname: Göttlich
 age: 52

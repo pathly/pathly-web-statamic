@@ -3,7 +3,6 @@ id: 6d4d97c2-c059-4dcc-bf98-4f44985f890b
 blueprint: story
 title: 'Anja S, 49'
 passed_away: false
-death_date: '2022-04-30'
 firstname: Anja
 surname: Schmidt-Mohrlüder
 age: 49

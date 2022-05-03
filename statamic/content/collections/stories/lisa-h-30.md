@@ -3,7 +3,6 @@ id: dc30cba1-f9cb-445c-84d8-c1ec7832055c
 blueprint: story
 title: 'Lisa H, 30'
 passed_away: false
-death_date: '2022-04-09'
 firstname: Lisa
 surname: H
 age: 30

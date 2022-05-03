@@ -29,7 +29,6 @@ description:
         text: 'Sebastian ist 35 Jahre alt, stolzer Papa von seinen zwei Jungs und Partner, Projektmanager und Berater in einer Berliner Digital-Agentur.'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
 updated_at: 1649501750
-death_date: '2022-03-24'
 content:
   -
     type: blockquote

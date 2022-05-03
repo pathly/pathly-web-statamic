@@ -3,7 +3,6 @@ id: 3dd9ad79-353c-4843-8699-136d9f443f78
 blueprint: story
 title: 'Maja B, 40'
 passed_away: false
-death_date: '2022-04-30'
 firstname: Maja
 surname: Benz
 age: 40

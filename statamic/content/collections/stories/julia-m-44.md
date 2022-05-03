@@ -3,7 +3,6 @@ id: 1fd5c58f-611f-481d-85f7-a5c5d91e651f
 blueprint: story
 title: 'Julia M, 44'
 passed_away: false
-death_date: '2022-04-30'
 firstname: Julia
 surname: Mittelstädt
 age: 44

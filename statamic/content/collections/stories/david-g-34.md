@@ -3,7 +3,6 @@ id: 4ce39a78-fe45-4b58-833d-23c8b201940c
 blueprint: story
 title: 'David G, 34'
 passed_away: false
-death_date: '2022-04-30'
 firstname: David
 surname: Gabe
 age: 34

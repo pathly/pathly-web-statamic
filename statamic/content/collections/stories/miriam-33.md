@@ -3,7 +3,6 @@ id: c2cac0e2-2528-4b4a-a936-25d8f4ceaae9
 blueprint: story
 title: 'Miriam, 33'
 passed_away: false
-death_date: '2022-04-29'
 firstname: Miriam
 surname: Seith
 age: 33

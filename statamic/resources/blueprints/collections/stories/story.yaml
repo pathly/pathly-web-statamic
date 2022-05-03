@@ -39,8 +39,6 @@ sections:
           icon: date
           listable: hidden
           instructions_position: above
-          validate:
-            - required
           if:
             passed_away: 'equals true'
       -
@@ -100,6 +98,21 @@ sections:
           max_items: 1
           if:
             person_type: 'equals patient'
+      -
+        handle: additional_cancer_type_info
+        field:
+          multiple: false
+          max_items: 1
+          clearable: true
+          searchable: true
+          taggable: true
+          push_tags: true
+          cast_booleans: false
+          display: 'Additional Cancer Type Info'
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
       -
         handle: therapy_type
         field:
@@ -191,7 +204,6 @@ sections:
         handle: slug
         field:
           type: slug
-          required: true
           localizable: true
           validate:
             - required

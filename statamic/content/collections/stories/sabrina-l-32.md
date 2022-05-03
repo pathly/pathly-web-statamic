@@ -3,7 +3,6 @@ id: 9cba5c1b-9437-4c62-be59-de46780be98a
 blueprint: story
 title: 'Sabrina L, 32'
 passed_away: false
-death_date: '2022-04-30'
 firstname: Sabrina
 surname: Lehmann
 age: 32

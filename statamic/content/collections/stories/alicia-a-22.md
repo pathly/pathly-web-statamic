@@ -3,7 +3,6 @@ id: fd3883ea-f1ef-4c23-ab39-a6d5767e1ce9
 blueprint: story
 title: 'Alicia A, 22'
 passed_away: false
-death_date: '2022-04-30'
 firstname: Alicia
 surname: Akkaya
 age: 22

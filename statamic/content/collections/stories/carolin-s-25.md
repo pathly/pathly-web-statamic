@@ -3,7 +3,6 @@ id: b63fc77e-e687-4034-9dc9-4177a6396c15
 blueprint: story
 title: 'Carolin S, 25'
 passed_away: false
-death_date: '2022-04-30'
 firstname: Carolin
 surname: Schweier
 age: 25

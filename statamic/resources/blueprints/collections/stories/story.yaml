@@ -113,6 +113,8 @@ sections:
           icon: select
           listable: hidden
           instructions_position: above
+          if:
+            person_type: 'equals patient'
       -
         handle: therapy_type
         field:

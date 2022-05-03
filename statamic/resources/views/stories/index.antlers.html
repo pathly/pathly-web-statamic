@@ -173,7 +173,10 @@
                 <img src="{{ image }}" alt="{{ alt }}">
                 <div>
                   {{ if person_type == "patient" }}
-                    <span class="cancer-type">{{ cancer_type:title }}</span>
+                    <div>
+                      <span class="cancer-type">{{ cancer_type:title }}</span>
+                      {{ if additional_cancer_type_info }}<span class="cancer-type">{{ additional_cancer_type_info }}</span>{{ /if }}
+                    </div>
                   {{ elseif person_type == "relative" }}
                     <span class="person-type">Angehörige:r</span>
                   {{ /if }}

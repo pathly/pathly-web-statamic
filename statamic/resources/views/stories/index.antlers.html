@@ -6,7 +6,7 @@
   <div class="filter">
     <div>
       <div class="dropdown mobile">
-        <button class="dropdown-button">Filtern</button>
+        <button class="dropdown-button {{ if get:cancer_type or get:therapy_type or get:from_age or get:to_age or get:person_type }}active{{ /if }}">Filtern</button>
       </div>
 
       <div class="all-dropdowns-wrapper">

@@ -252,12 +252,12 @@
             background-repeat: no-repeat;
             background-size: 100%;
           }
-        }
 
-        &:hover,
-        &.active {
-          .dropdown-button::before {
-            background-image: url("../images/filter_light.svg");
+          &:hover,
+          &.active {
+            &::before {
+              background-image: url("../images/filter_light.svg");
+            }
           }
         }
 
@@ -466,7 +466,7 @@
     /* show page info on small screens */
     .page-info {
       margin: 0 var(--root16px);
-      
+
       @media (min-width: 1000px) {
         display: none;
       }

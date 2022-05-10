@@ -406,6 +406,7 @@
     margin-top: var(--root80px);
     display: flex;
     justify-content: center;
+    align-items: center;
 
     li {
       width: var(--root48px);
@@ -416,6 +417,13 @@
       border-radius: calc(var(--root24px) + 2 * var(--root8px)); /* fontsize + 2 * padding */
       border: 2px solid var(--primary_red);
       margin: 0 var(--root4px);
+
+      /* hide page numbers on small screens */
+      &.page-numbers {
+        @media (max-width: 1000px) {
+          display: none;
+        }
+      }
 
       a,
       span {
@@ -452,6 +460,15 @@
 
       &.disabled {
         opacity: 0.2;
+      }
+    }
+
+    /* show page info on small screens */
+    .page-info {
+      margin: 0 var(--root16px);
+      
+      @media (min-width: 1000px) {
+        display: none;
       }
     }
   }

@@ -14,21 +14,28 @@
   }
 
   > div {
+    overflow: hidden;
+    
     /* dropdown general */
     .dropdown {
       cursor: pointer;
+      min-width: 110px;
+      margin-right: var(--root16px);
 
       .dropdown-button {
         font-family: "neue-kabel";
         font-weight: 700;
         font-size: var(--root24px);
         padding: var(--root8px) var(--root48px) var(--root8px) var(--root24px);
-        margin-right: var(--root16px);
         border: 2px solid var(--primary_red);
         border-radius: var(--root96px);
         color: var(--primary_red);
         background-color: var(--background);
         position: relative;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
 
         &::after {
           content: '';

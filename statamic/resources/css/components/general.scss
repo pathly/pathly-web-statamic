@@ -255,7 +255,7 @@ button {
   &.outline {
     background-color: unset;
     color: var(--primary_red);
-    border: var(--root4px) solid var(--primary_red);
+    border: 2px solid var(--primary_red);
 
     &:hover {
       background-color: var(--primary_red);

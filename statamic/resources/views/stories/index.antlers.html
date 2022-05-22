@@ -10,33 +10,33 @@
       </div>
 
       <div class="all-dropdowns-wrapper">
-        <div class="dropdown {{ if get:person_type == 'relative' }}disabled{{ /if }}">
-          <button class="dropdown-button {{ if get:cancer_type }}active{{ /if }}" {{ if get:person_type == "relative" }} disabled {{ endif }}>
-            {{ if get:cancer_type }}
-              {{ taxonomy:cancer_type :slug:is="get:cancer_type | sanitize" }}
-                {{ title }}
-              {{ /taxonomy:cancer_type }}
-            {{ else }}
-              Krebsart
-            {{ /if }}
-          </button>
+          <div class="dropdown {{ if get:person_type == 'relative' }}disabled{{ /if }}">
+              <button class="dropdown-button {{ if get:cancer_type }}active{{ /if }}" {{ if get:person_type == "relative" }} disabled {{ endif }}>
+              {{ if get:cancer_type }}
+                  {{ taxonomy:cancer_type :slug:is="get:cancer_type | sanitize" }}
+                    {{ title }}
+                  {{ /taxonomy:cancer_type }}
+              {{ else }}
+                Krebsart
+              {{ /if }}
+              </button>
 
-          <div class="dropdown-menu dropdown-menu--select">
-            <div class="shadow">
-              <div>
-                {{ taxonomy:cancer_type min_count="1" }}
-                  <input id="{{ slug }}" value="{{ slug }}" name="cancer_type" type="radio">
-                  <label for="{{ slug }}">{{ title }}</label>
-                {{ /taxonomy:cancer_type }}
-              </div>
+              <div class="dropdown-menu dropdown-menu--select">
+                  <div class="shadow">
+                      <div>
+                          {{ taxonomy:cancer_type min_count="1" }}
+                          <input id="{{ slug }}" value="{{ slug }}" name="cancer_type" type="radio">
+                          <label for="{{ slug }}">{{ title }}</label>
+                          {{ /taxonomy:cancer_type }}
+                      </div>
 
-              <div class="reset-wrapper">
-                <input id="type_none" name="cancer_type" type="reset">
-                <label for="type_none">Filter zurücksetzen</label>
+                      <div class="reset-wrapper">
+                          <input id="type_none" name="cancer_type" type="reset">
+                          <label for="type_none">Filter zurücksetzen</label>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
 
         <div class="dropdown {{ if get:person_type == 'relative' }}disabled{{ /if }}">
           <button class="dropdown-button {{ if get:therapy_type }}active{{ /if }}" {{ if get:person_type == "relative" }} disabled {{ endif }}>
@@ -170,7 +170,7 @@
           <div class="card shadow">
             <a href="{{ url }}">
               <article>
-                <img src="{{ image }}" alt="{{ alt }}">
+                <img src="{{ glide:image width="257" height="257" format="webp" }}" alt="{{ alt }}">
                 <div>
                   {{ if person_type == "patient" }}
                     <div>

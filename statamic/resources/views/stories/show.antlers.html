@@ -21,7 +21,7 @@
         </div>
       </div>
 
-      <img src="{{ image }}" alt="{{ alt }}">
+      <img src="{{ glide:image width="969" height="654" format="webp" }}" alt="{{ alt }}">
 
       {{ description }}
     </div>
@@ -42,7 +42,11 @@
           <div class="images {{ if content_images | count == 1 }} one {{ endif }}" data-slick='{"slidesToShow": {{ content_images | count }}}'>
             {{ content_images }}
               <div>
-                <img src="{{ url }}" alt="{{ alt }}" />
+                  {{ if content_images | count < 3 }}
+                    <img src="{{ glide:url width="698" height="698" format="webp" }}" alt="{{ alt }}" />
+                  {{ else }}
+                    <img src="{{ glide:url width="444" height="444" format="webp" }}" alt="{{ alt }}" />
+                  {{ endif }}
               </div>
             {{ /content_images }}
           </div>
@@ -85,7 +89,7 @@
     </div>
 
     <address class="card-detail_footer">
-      <img src="{{ image }}" alt="{{ alt }}">
+      <img src="{{ glide:image width="200" height="200" format="webp" }}" alt="{{ alt }}">
       <div>
         <p>{{ firstname }} {{ if passed_away }}†{{ /if }}</p>
 
@@ -124,7 +128,7 @@
       <div class="card shadow">
         <a href="{{ url }}">
           <article>
-            <img src="{{ image }}" alt="{{ alt }}">
+            <img src="{{ glide:image width="380" height="380" format="webp" }}" alt="{{ alt }}">
             <div>
               {{ if person_type == "patient" }}
                 <div>

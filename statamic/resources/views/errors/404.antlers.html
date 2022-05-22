@@ -2,6 +2,7 @@
   body {
     background-color: var(--purple_darkViolett);
     height: 100vh;
+    overflow-y: overlay;
   }
 
   #error-image-wrapper {
@@ -49,6 +50,17 @@
     #right-dark-fern {
       display: none;
     }
+  }
+
+  .footer {
+    z-index: 1001;
+  }
+
+  #footer_nav {
+    padding-left: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    background-color: #4C498166; /* var(--purple_darkViolett) with 40% alpha */
   }
 </style>
 

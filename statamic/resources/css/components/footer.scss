@@ -10,148 +10,148 @@
   grid-template-columns: repeat(13, 1fr);
   margin: auto 5vw var(--root40px) 5vw; /* 350px // based on 24px */
   padding-top: 14.58rem;
-}
 
-/* -------------------------------------------------------------------------------- */
-/* --- contact --- */
-/* -------------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------------- */
+  /* --- contact --- */
+  /* -------------------------------------------------------------------------------- */
 
-.footer_contact {
-  grid-column: 6/13;
-  display: block;
-  position: revert;
-  z-index: 1;
-  margin-bottom: 10.42rem; /* 250px // based on 24px */
-
-  @media (max-width: 750px) {
-    grid-column: 2/13;
-  }
-
-  @media (max-width: 650px) {
-    grid-column: 2/13;
-  }
-
-  @media (max-width: 450px) {
-    grid-column: 1/14;
-  }
-
-  p {
-    font-family: "neue-kabel";
-    font-size: var(--root32px);
-    font-weight: 700;
-    line-height: 1.2;
-  }
-
-  a {
-    position: relative;
-    font-size: var(--root32px);
-    color: var(--primary_red);
-
-    /* underline animation */
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: var(--root4px);
-      border-radius: var(--root4px);
-      transform: scaleX(0);
-      transform-origin: center;
-      background-color: var(--primary_red);
-      transition: opacity 0.4s, transform 0.4s;
-    }
-
-    &:hover::after {
-      transform: scaleX(1);
-      background-color: var(--primary_red);
-    }
-  }
-
-  img {
-    position: absolute;
-    bottom: 8rem;
-    left: 10vw;
-    width: 40%;
-    height: auto;
-    z-index: -1;
-
-    @media (max-width: 1400px) {
-      width: 50%;
-    }
-
-    @media (max-width: 1200px) {
-      bottom: 8rem;
-      left: 5vw;
-      width: 70%;
-    }
-
-    @media (max-width: 1000px) {
-      left: -15vw;
-      width: 80%;
-    }
+  .footer_contact {
+    grid-column: 6/13;
+    display: block;
+    position: revert;
+    z-index: 1;
+    margin-bottom: 10.42rem; /* 250px // based on 24px */
 
     @media (max-width: 750px) {
-      left: 25vw;
+      grid-column: 2/13;
     }
 
     @media (max-width: 650px) {
-      display: none;
+      grid-column: 2/13;
+    }
+
+    @media (max-width: 450px) {
+      grid-column: 1/14;
+    }
+
+    p {
+      font-family: "neue-kabel";
+      font-size: var(--root32px);
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    a {
+      position: relative;
+      font-size: var(--root32px);
+      color: var(--primary_red);
+
+      /* underline animation */
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: var(--root4px);
+        border-radius: var(--root4px);
+        transform: scaleX(0);
+        transform-origin: center;
+        background-color: var(--primary_red);
+        transition: opacity 0.4s, transform 0.4s;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        background-color: var(--primary_red);
+      }
+    }
+
+    img {
+      position: absolute;
+      bottom: 8rem;
+      left: 10vw;
+      width: 40%;
+      height: auto;
+      z-index: -1;
+
+      @media (max-width: 1400px) {
+        width: 50%;
+      }
+
+      @media (max-width: 1200px) {
+        bottom: 8rem;
+        left: 5vw;
+        width: 70%;
+      }
+
+      @media (max-width: 1000px) {
+        left: -15vw;
+        width: 80%;
+      }
+
+      @media (max-width: 750px) {
+        left: 25vw;
+      }
+
+      @media (max-width: 650px) {
+        display: none;
+      }
     }
   }
-}
 
-/* -------------------------------------------------------------------------------- */
-/* --- navigation --- */
-/* -------------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------------- */
+  /* --- navigation --- */
+  /* -------------------------------------------------------------------------------- */
 
-.footer_nav {
-  grid-column: 1/14;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  @media (max-width: 1200px) {
-    display: block;
-  }
-
-  * {
-    font-size: var(--root24px);
-    font-family: "neue-kabel";
-    font-weight: 700;
-    color: var(--primary_purple);
-  }
-
-  .copyright {
-    flex-shrink: 0;
-    margin-right: var(--root48px);
-
-    span {
-      font-weight: 500;
-    }
-  }
-
-  .footer_nav_list {
+  .footer_nav {
+    grid-column: 1/14;
     display: flex;
-
+    justify-content: flex-start;
+    align-items: center;
 
     @media (max-width: 1200px) {
-      flex-wrap: wrap;
-      margin-left: calc(-1 * var(--root16px));
-      margin-top: var(--root16px);
+      display: block;
     }
 
-    @media (max-width: 800px) {
-      display: none;
+    * {
+      font-size: var(--root24px);
+      font-family: "neue-kabel";
+      font-weight: 700;
+      color: var(--primary_purple);
     }
 
-    li {
-      padding: var(--root8px) var(--root16px);
-      border-radius: calc(var(--root24px) + 2 * var(--root16px)); /* fontsize + 2 * padding */
-      margin-right: var(--root32px);
+    .copyright {
+      flex-shrink: 0;
+      margin-right: var(--root48px);
 
-      &:hover {
-        background-color: var(--purple_ultraLightViolett);
+      span {
+        font-weight: 500;
+      }
+    }
+
+    .footer_nav_list {
+      display: flex;
+
+
+      @media (max-width: 1200px) {
+        flex-wrap: wrap;
+        margin-left: calc(-1 * var(--root16px));
+        margin-top: var(--root16px);
+      }
+
+      @media (max-width: 800px) {
+        display: none;
+      }
+
+      li {
+        padding: var(--root8px) var(--root16px);
+        border-radius: calc(var(--root24px) + 2 * var(--root16px)); /* fontsize + 2 * padding */
+        margin-right: var(--root32px);
+
+        &:hover {
+          background-color: var(--purple_ultraLightViolett);
+        }
       }
     }
   }

@@ -1,0 +1,371 @@
+/* -------------------------------------------------------------------------------- */
+/* --- header --- */
+/* -------------------------------------------------------------------------------- */
+
+.header {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px); /* not working in FF, FF Android, IE */
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--root24px);
+  border-radius: var(--root24px);
+  margin: var(--root24px) 5vw;
+  z-index: 2000;
+
+  @supports (-moz-appearance:none) {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  @media (max-width: 800px) {
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .header_logo {
+    display: flex;
+    align-items: center;
+    color: var(--primary_purple);
+
+    img {
+      height: var(--root72px);
+      width: auto;
+      margin-right: var(--root24px);
+      border-radius: var(--root16px);
+      box-shadow: 0 0 var(--root8px) var(--shadow_purple);
+      -moz-box-shadow: 0 0 var(--root8px) var(--shadow_purple);
+      -webkit-box-shadow: 0 0 var(--root8px) var(--shadow_purple);
+    }
+
+    h1 {
+      font-size: var(--root32px);
+      white-space: nowrap;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------------- */
+/* --- navigation --- */
+/* -------------------------------------------------------------------------------- */
+
+.header_nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  @media (max-width: 800px) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  &.active {
+    @media (max-width: 800px) {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+      transition: left 0.5s ease-out;
+      background-color: var(--purple_darkViolett);
+    }
+
+    /* when menu is active activated by adding the active class */
+    .header_nav_mobile-burger-button {
+      @media (max-width: 800px) {
+        margin-left: auto;
+        margin-top: var(--root24px);
+        margin-right: var(--root24px);
+        content: url("/images/menu_cancel.svg");
+      }
+    }
+
+    .donation-button {
+      @media (max-width: 800px) {
+        display: flex;
+        margin-left: var(--root40px);
+        position: absolute;
+        top: var(--root32px);
+      }
+    }
+
+    .header_nav_list {
+      @media (max-width: 800px) {
+        display: block;
+      }
+    }
+  }
+
+  .donation-button {
+    display: flex;
+    align-items: center;
+    margin-left: var(--root24px);
+    margin-top: 0;
+    padding-left: var(--root64px);
+    position: relative;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      width: var(--root24px);
+      height: var(--root24px);
+      position: absolute;
+      left: var(--root32px);
+      background-image: url("/images/heart_white.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
+
+  .header_nav_list {
+    display: flex;
+
+    @media (max-width: 800px) {
+      display: none;
+      padding: 0 var(--root40px);
+      width: 100%;
+    }
+
+    > li {
+      @media (max-width: 800px) {
+        margin-top: var(--root40px);
+      }
+
+      /* underline animation */
+      > a {
+        font-family: "neue-kabel";
+        font-weight: 700;
+        position: relative;
+        font-weight: 700;
+        color: var(--primary_purple);
+        padding: var(--root24px);
+
+        @media (max-width: 800px) {
+          display: block;
+          margin: 0;
+          padding: 0;
+          font-size: var(--root32px);
+          color: var(--primary_purple);
+          width: 100%;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: var(--root8px);
+          left: 0;
+          width: 100%;
+          height: var(--root4px);
+          border-radius: var(--root4px);
+          transform: scaleX(0);
+          transform-origin: center;
+          background-color: var(--primary_purple);
+          transition: opacity 0.4s, transform 0.4s;
+
+          @media (max-width: 800px) {
+            /* remove underline */
+            content: none;
+          }
+        }
+      }
+
+      &:hover {
+        > a::after {
+          transform: scaleX(1);
+          background-color: var(--primary_purple);
+        }
+      }
+    }
+  }
+
+  /* only desktop */
+  .header_nav_mobile-burger-button {
+    display: none;
+
+    @media (max-width: 800px) {
+      display: block;
+      cursor: pointer;
+      height: var(--root80px);
+      width: var(--root80px);
+      padding: var(--root16px);
+    }
+  }
+
+  /* ---------------------------------------- */
+  /* --- footer menu --- */
+  /* ---------------------------------------- */
+
+  .header_footer_nav_list {
+    display: none;
+    opacity: 0.6;
+  }
+}
+
+/* ---------------------------------------- */
+/* --- sub menu --- */
+/* ---------------------------------------- */
+
+.header .header_nav {
+
+  /* sub menu
+  activated by adding the active class to list item is-parent
+  and adding sub-menu-active to header
+  attached to the right of the menu */
+  &.active.sub-menu-active {
+    @media (max-width: 800px) {
+      left: -100%;
+    }
+  }
+
+  .header_nav_list {
+    li {
+      &.is-parent {
+        /* open state of sub menu */
+        /* open when hover on parent of this sub menu */
+        &:hover > .header_nav_sub {
+          @media (min-width: 800px) {
+            display: block;
+          }
+        }
+
+        &.active > .header_nav_sub {
+          @media (max-width: 800px) {
+            display: block;
+            height: 100vh;
+            width: 100%;
+            right: 0;
+            top: 0;
+            transform: translateX(100%);
+          }
+
+          .header_nav_sub_list {
+            @media (max-width: 800px) {
+              margin: 0;
+              height: 100%;
+              max-height: none;
+              padding: 0 var(--root40px) var(--root80px) var(--root40px);
+              display: flex;
+              flex-direction: column;
+              border-radius: 0;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+
+      /* closed state of sub menu */
+      .header_nav_sub {
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+
+        .header_nav_sub_list {
+          width: 100%;
+          padding: var(--root40px);
+          margin-top: calc(var(--root40px) + var(--root24px) + var(--root16px));
+          background-color: #ffffff;
+          border-radius: var(--root24px);
+          display: grid;
+          grid-gap: var(--root16px);
+          grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+          max-height: calc(100vh - (var(--root40px) + var(--root24px) * 5 + var(--root16px) + 1em));
+          overflow: auto;
+
+          @media (max-width: 800px) {
+            background-color: var(--purple_darkViolett);
+            margin-bottom: var(--root16px);
+          }
+
+          .header_nav_sub_mobile-back-button {
+            display: none;
+
+            @media (max-width: 800px) {
+              display: block;
+              cursor: pointer;
+              height: var(--root80px);
+              width: var(--root80px);
+              margin-top: var(--root24px);
+              padding: var(--root16px);
+              padding-left: 0;
+            }
+
+            img {
+              transform: rotateY(180deg);
+              height: 100%;
+            }
+          }
+
+          > li {
+            > a {
+              font-family: "neue-kabel";
+              font-weight: 700;
+              display: flex;
+              align-items: center;
+              position: relative;
+              color: var(--primary_purple);
+              border-radius: var(--root24px);
+              padding: var(--root24px);
+              margin: 0;
+              transition: background-color 0.5s ease;
+
+              @media (max-width: 800px) {
+                padding: var(--root24px) 0;
+              }
+
+              &:hover {
+                @media (min-width: 800px) {
+                  background-color: var(--purple_ultraLightViolett);
+                }
+              }
+
+              > img {
+                height: var(--root80px);
+                margin-right: var(--root24px);
+                box-sizing: revert;
+
+                @media (max-width: 800px) {
+                  margin-right: var(--root16px);
+                }
+              }
+
+              > div {
+                overflow: hidden;
+
+                .header_nav_sub_list_title {
+                  font-family: "neue-kabel";
+                  font-weight: 700;
+                  font-size: var(--root32px);
+                  color: var(--primary_dark);
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  display: block;
+                  margin-bottom: calc(-1 * var(--root4px));
+
+                  @media (max-width: 800px) {
+                    color: var(--purple_ultraLight);
+                  }
+                }
+
+                .header_nav_sub_list_description {
+                  font-size: var(--root20px);
+                  font-weight: 400;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

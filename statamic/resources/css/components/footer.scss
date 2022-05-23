@@ -127,6 +127,10 @@
   justify-content: flex-start;
   align-items: center;
 
+  @media (max-width: 1200px) {
+    display: block;
+  }
+
   * {
     font-size: var(--root24px);
     font-family: "neue-kabel";
@@ -136,6 +140,7 @@
 
   .copyright {
     flex-shrink: 0;
+    margin-right: var(--root48px);
 
     span {
       font-weight: 500;
@@ -144,10 +149,12 @@
 
   .footer_nav_list {
     display: flex;
-    margin-left: var(--root32px);
+
 
     @media (max-width: 1200px) {
       flex-wrap: wrap;
+      margin-left: calc(-1 * var(--root16px));
+      margin-top: var(--root16px);
     }
 
     @media (max-width: 800px) {
@@ -157,7 +164,7 @@
     li {
       padding: var(--root8px) var(--root16px);
       border-radius: calc(var(--root24px) + 2 * var(--root16px)); /* fontsize + 2 * padding */
-      margin-left: var(--root32px);
+      margin-right: var(--root32px);
 
       &:hover {
         background-color: var(--purple_ultraLightViolett);

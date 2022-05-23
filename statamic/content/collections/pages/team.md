@@ -30,30 +30,27 @@ team_profiles:
     team_profile_name: 'Anna Güttler'
     team_profile_responsibilities:
       - mentalHealthCoach
-      - workshop
       - contentCreation
-    team_profile_mail: null
     team_profile_is_active: true
+    team_profile_mail: anna@pathly.app
   -
     team_profile_image: supporter/Christine_Farbe_500.png
     team_profile_name: 'Christine Deder'
     team_profile_responsibilities:
       - publicRelations
-    team_profile_mail: null
     team_profile_is_active: true
+    team_profile_mail: christine@pathly.app
   -
     team_profile_image: supporter/Elena-Weber_500.png
     team_profile_name: 'Elena Weber'
     team_profile_responsibilities:
       - publicRelations
-    team_profile_mail: null
     team_profile_is_active: true
   -
     team_profile_image: supporter/DannyRjabof_500.png
     team_profile_name: 'Danny Rjabof'
     team_profile_responsibilities:
       - illustration
-    team_profile_mail: null
     team_profile_is_active: false
   -
     team_profile_image: supporter/EllaMacWilliams_500.png
@@ -67,14 +64,12 @@ team_profiles:
     team_profile_name: 'Friderike Krafczyk'
     team_profile_responsibilities:
       - contentCreation
-    team_profile_mail: null
     team_profile_is_active: false
   -
     team_profile_image: supporter/JanNaubert_500.png
     team_profile_name: 'Jan Naubert'
     team_profile_responsibilities:
       - webDevelopment
-    team_profile_mail: null
     team_profile_is_active: true
   -
     team_profile_image: supporter/Jessica-Krueger_500.png
@@ -88,14 +83,18 @@ team_profiles:
     team_profile_name: 'Marcel Wittrin'
     team_profile_responsibilities:
       - webDevelopment
-    team_profile_mail: null
+    team_profile_is_active: true
+  -
+    team_profile_image: supporter/Michael-Becker.jpg
+    team_profile_name: 'Michael Becker'
+    team_profile_responsibilities:
+      - webDevelopment
     team_profile_is_active: true
   -
     team_profile_image: supporter/Oliver-Mesieh_500.png
     team_profile_name: 'Oliver Mesieh'
     team_profile_responsibilities:
       - webDevelopment
-    team_profile_mail: null
     team_profile_is_active: true
   -
     team_profile_image: supporter/RonahiSolmaz_500.png
@@ -109,21 +108,18 @@ team_profiles:
     team_profile_name: 'Sabine Antweiler'
     team_profile_responsibilities:
       - contentCreation
-    team_profile_mail: null
     team_profile_is_active: true
   -
     team_profile_image: supporter/SarahDecker_500.png
     team_profile_name: 'Sarah Decker'
     team_profile_responsibilities:
       - contentCreation
-    team_profile_mail: null
     team_profile_is_active: false
   -
     team_profile_image: supporter/YanaSokova_500.png
     team_profile_name: 'Yana Sorkova'
     team_profile_responsibilities:
       - illustration
-    team_profile_mail: null
     team_profile_is_active: false
   -
     team_profile_image: supporter/Vanessa-Till.png
@@ -132,10 +128,9 @@ team_profiles:
       - nutritionCounseling
       - workshop
       - contentCreation
-    team_profile_mail: null
     team_profile_is_active: true
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1645013062
+updated_at: 1653145841
 template: team
 cta_toggle: true
 cta: 26cd6f15-97c9-4d5d-b701-6725436ce2b0

@@ -2,7 +2,7 @@
 id: 23d0ca08-ccb9-427b-a550-1abfdcf46f0b
 blueprint: story
 title: 'Giada E., 16'
-passed_away: false
+passed_away: true
 firstname: Giada
 surname: Elisa
 age: 16
@@ -21,7 +21,8 @@ contact:
     enabled: true
 release_date: '2021-08-03'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1648062827
+updated_at: 1653123844
+death_date: '2022-05-20'
 content:
   -
     type: blockquote

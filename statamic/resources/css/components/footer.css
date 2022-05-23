@@ -129,6 +129,7 @@
 }
 
 .footer_nav * {
+  font-size: var(--root24px);
   font-family: "neue-kabel";
   font-weight: 700;
   color: var(--primary_purple);

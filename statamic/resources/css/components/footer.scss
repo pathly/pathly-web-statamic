@@ -126,36 +126,42 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
 
-.footer_nav * {
-  font-size: var(--root24px);
-  font-family: "neue-kabel";
-  font-weight: 700;
-  color: var(--primary_purple);
-}
+  * {
+    font-size: var(--root24px);
+    font-family: "neue-kabel";
+    font-weight: 700;
+    color: var(--primary_purple);
+  }
 
-.footer_nav span {
-  font-weight: 500;
-}
+  .copyright {
+    flex-shrink: 0;
 
-.footer_nav_list {
-  display: flex;
-  margin-left: var(--root32px);
-}
+    span {
+      font-weight: 500;
+    }
+  }
 
-.footer_nav_list li {
-  padding: var(--root8px) var(--root16px);
-  border-radius: calc(var(--root24px) + 2 * var(--root16px)); /* fontsize + 2 * padding */
-  margin-left: var(--root32px);
-}
-
-.footer_nav_list li:hover {
-  background-color: var(--purple_ultraLightViolett);
-}
-
-@media (max-width: 800px) {
   .footer_nav_list {
-    display: none;
+    display: flex;
+    margin-left: var(--root32px);
+
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+
+    li {
+      padding: var(--root8px) var(--root16px);
+      border-radius: calc(var(--root24px) + 2 * var(--root16px)); /* fontsize + 2 * padding */
+      margin-left: var(--root32px);
+
+      &:hover {
+        background-color: var(--purple_ultraLightViolett);
+      }
+    }
   }
 }

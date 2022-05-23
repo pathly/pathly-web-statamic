@@ -1,28 +1,49 @@
 /* -------------------------------------------------------------------------------- */
 /* --- header --- */
 /* -------------------------------------------------------------------------------- */
-
-.header {
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(13,1fr);
   position: fixed;
+  z-index: 2000;
+  margin: var(--root24px) 0;
+  padding: var(--root24px) 5vw;
+  width: 100vw;
+  border-radius: 0;
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px); /* not working in FF, FF Android, IE */
-  width: 90vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--root24px);
-  border-radius: var(--root24px);
-  margin: var(--root24px) 5vw;
-  z-index: 2000;
 
   @supports (-moz-appearance:none) {
     background-color: rgba(255, 255, 255, 0.95);
   }
 
   @media (max-width: 800px) {
+    margin: var(--root24px) 5vw;
+    padding: var(--root24px) 0;
+    width: 90vw;
+    border-radius: var(--root24px);
+  }
+
+  @media (max-width: 550px) {
     margin: 0;
-    width: 100%;
+    padding: var(--root24px) 5vw;
+    width: 100vw;
     border-radius: 0;
+  }
+}
+
+.header {
+  grid-column: 1/14;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 800px) {
+    grid-column: 2/13;
+  }
+
+  @media (max-width: 550px) {
+    grid-column: 1/14;
   }
 
   .header_logo {

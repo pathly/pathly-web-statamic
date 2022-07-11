@@ -47,18 +47,25 @@ team_profiles:
       - publicRelations
     team_profile_is_active: true
   -
-    team_profile_image: supporter/DannyRjabof_500.png
-    team_profile_name: 'Danny Rjabof'
-    team_profile_responsibilities:
-      - illustration
-    team_profile_is_active: false
-  -
     team_profile_image: supporter/EllaMacWilliams_500.png
     team_profile_name: 'Ella MacWilliams'
     team_profile_responsibilities:
       - design
     team_profile_mail: ella@pathly.app
     team_profile_is_active: true
+  -
+    team_profile_image: supporter/Eva-Geib.png
+    team_profile_name: 'Eva Geib'
+    team_profile_responsibilities:
+      - design
+      - contentCreation
+    team_profile_is_active: true
+  -
+    team_profile_image: supporter/DannyRjabof_500.png
+    team_profile_name: 'Danny Rjabof'
+    team_profile_responsibilities:
+      - illustration
+    team_profile_is_active: false
   -
     team_profile_image: supporter/FriderikeKrafczyk_500.png
     team_profile_name: 'Friderike Krafczyk'
@@ -130,7 +137,7 @@ team_profiles:
       - contentCreation
     team_profile_is_active: true
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1653145841
+updated_at: 1656272408
 template: team
 cta_toggle: true
 cta: 26cd6f15-97c9-4d5d-b701-6725436ce2b0

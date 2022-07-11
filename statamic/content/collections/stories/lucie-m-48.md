@@ -1,6 +1,5 @@
 ---
 id: cbad8001-a413-4897-8caa-6967d3f73744
-published: false
 blueprint: story
 title: 'Lucie M, 48'
 passed_away: false
@@ -29,7 +28,7 @@ description:
         type: text
         text: 'Heute möchten wir euch Lucie vorstellen. Lucie ist 48, war 10 Jahre lang Psychoonkologin und sowohl Angehörige als auch Krebspatientin. 2019 bekam sie die Diagnose Brustkrebs, heute ist »Alles so, wie es sein soll« sagt sie.'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1651425387
+updated_at: 1656087135
 content:
   -
     type: blockquote
@@ -78,4 +77,31 @@ content:
       -
         type: text
         text: 'Meine Schwester stellte mal eine Frage, die ich jetzt nicht mehr reproduzieren kann. ABER ich antwortete: ›ALLES IST SO, WIE ES SEIN SOLL!‹ Ich kann mich noch erinnern, wie sie völlig erstaunt fragte, ob ich es wirklich so meine. Erst dann wurde mir bewusst, was ich eigentlich gesagt habe… Und ja! ALLES IST SO, WIE ES SEIN SOLL! Diese, meine Lebenserfahrung war brutal, aber sie hat mir geholfen, zu mir zu finden. Sie hat mir geholfen, meinen Lebensweg wiederzufinden. Und dafür bin ich dankbar.«'
+  -
+    type: set
+    attrs:
+      values:
+        type: callout
+        content_callout_content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Die Geschichten, die wir bei Pathly teilen, sind individuelle Erzählungen. Jegliche Meinungen, Behandlungsentscheidungen und Wortwahl sind von den Autor:innen gewählt. Es kann vorkommen, dass Geschichten von den deutschen Krebsbehandlungsleitlinien abweichen. Für mehr Informationen über die Leitlinien, schaue gerne bei der '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://www.krebshilfe.de/informieren/fuer-fachkreise/leitlinienprogramm-onkologie/'
+                      rel: 'noopener noreferrer'
+                      target: _blank
+                      title: null
+                text: 'Deutschen Krebshilfe'
+              -
+                type: text
+                text: ' vorbei.'
+        content_callout_color: '#FFF5D6'
 ---

@@ -1,16 +1,11 @@
-<section id="nonprofit_intro" {{ if intro_image_position == 'left' }} class="section_text-w-image-left" {{ elseif intro_image_position == 'right' }} class="section_text-w-image-right" {{ endif }}>
-  {{ intro_image }}
-    <img src="{{ url }}" alt="{{ alt }}"/>
-  {{ /intro_image }}
-
-  <div>
-    {{ if intro_headline_addition }}
-      <h2 class="section-headline--addition">{{ intro_headline_addition }}</h2>
-    {{ /if }}
-    <h2 class="section-headline">{{ intro_headline }}</h2>
-    <p>{{ intro_textarea }}</p>
-  </div>
-</section>
+{{ partial:text-with-image
+  id="nonprofit_intro"
+  :image_position="intro_image_position"
+  :image="intro_image"
+  :headline_addition="intro_headline_addition"
+  :headline="intro_headline"
+  :textarea="intro_textarea"
+}}
 
 <section id="nonprofit_preamble" class="section_text section--top-spacing">
   {{ if preamble_headline_addition }}

@@ -10,24 +10,21 @@
   </div>
 </section>
 
-<section id="home_project" {{ if about-project_image_position == 'left' }} class="section_text-w-image-left section--top-spacing" {{ elseif about-project_image_position == 'right' }} class="section_text-w-image-right section--top-spacing" {{ endif }}>
-  {{ about-project_image }}
-    <img src="{{ url }}" alt="{{ alt }}"/>
-  {{ /about-project_image }}
-
-  <div>
-    {{ if about-project_headline_addition }}
-      <h2 class="section-headline--addition">{{ about-project_headline_addition }}</h2>
-    {{ /if }}
-    <h2 class="section-headline">{{ about-project_headline }}</h2>
-    <p>{{ about-project_textarea }}</p>
-  </div>
-</section>
+{{ partial:text-with-image
+  id="home_project"
+  class="section--top-spacing"
+  :image_position="about-project_image_position"
+  :image="about-project_image"
+  :headline_addition="about-project_headline_addition"
+  :headline="about-project_headline"
+  :textarea="about-project_textarea"
+}}
 
 <section id="home_stories" class="section_slider section--top-spacing">
   {{ if stories_headline_addition }}
     <h2 class="section-headline--addition">{{ stories_headline_addition }}</h2>
   {{ /if }}
+
   <h2 class="section-headline">{{ stories_headline }}</h2>
 
   <div class="slider">
@@ -35,7 +32,7 @@
       <div class="card shadow">
         <a href="{{ url }}">
           <article>
-            <img src="{{ image }}" alt="{{ alt }}">
+            <img src="{{ glide:image width='400' height='400' format='webp' }}" alt="{{ alt }}">
             <div>
               {{ if person_type == "patient" }}
                 <span class="cancer-type">{{ cancer_type:title }}</span>
@@ -43,8 +40,8 @@
                 <span class="person-type">Angehörige:r</span>
               {{ /if }}
               <div class="favorite-toggle favorite-toggle--stories">
-                <input value="{{ id }}" name="favorite" type="checkbox">
-                <label for="favorite"></label>
+                <input id="favorite_{{ index }}" value="{{ id }}" name="favorite" type="checkbox">
+                <label for="favorite_{{ index }}"></label>
               </div>
             </div>
 
@@ -60,19 +57,15 @@
   </div>
 </section>
 
-<section id="home_founders" {{ if about-founders_image_position == 'left' }} class="section_text-w-image-left section--top-spacing" {{ elseif about-founders_image_position == 'right' }} class="section_text-w-image-right section--top-spacing" {{ endif }}>
-  {{ about-founders_image }}
-    <img src="{{ url }}" alt="{{ alt }}"/>
-  {{ /about-founders_image }}
-
-  <div>
-    {{ if about-founders_headline_addition }}
-      <h2 class="section-headline--addition">{{ about-founders_headline_addition }}</h2>
-    {{ /if }}
-    <h2 class="section-headline">{{ about-founders_headline }}</h2>
-    <p>{{ about-founders_textarea }}</p>
-  </div>
-</section>
+{{ partial:text-with-image
+  id="home_founders"
+  class="section--top-spacing"
+  :image_position="about-founders_image_position"
+  :image="about-founders_image"
+  :headline_addition="about-founders_headline_addition"
+  :headline="about-founders_headline"
+  :textarea="about-founders_textarea"
+}}
 
 <section id="home_newsletter" class="section_newsletter section--top-spacing">
   <div class="newsletter_header">
@@ -86,37 +79,34 @@
 </section>
 
 {{ collaboration }}
-  <section id="home_project" {{ if cta_image_position == 'left' }} class="section_text-w-image-left section--top-spacing" {{ elseif cta_image_position == 'right' }} class="section_text-w-image-right section--top-spacing" {{ endif }}>
-    {{ cta_image }}
-      <img src="{{ url }}" alt="{{ alt }}"/>
-    {{ /cta_image }}
-
-    <div>
-      {{ if cta_headline_addition }}
-        <h2 class="section-headline--addition">{{ cta_headline_addition }}</h2>
-      {{ /if }}
-      <h2 class="section-headline">{{ cta_headline }}</h2>
-      <p>{{ cta_textarea }}</p>
-
-      {{ if cta_button_type === 'mail' }}
-        <a class="cta-button" href="mailto:{{ cta_mail_address }}?subject={{ cta_mail_subject }}&body={{ cta_mail_body }}">
+  {{ partial:text-with-image
+    id="home_collaboration"
+    class="section--top-spacing"
+    :image_position="cta_image_position"
+    :image="cta_image"
+    :headline_addition="cta_headline_addition"
+    :headline="cta_headline"
+    :textarea="cta_textarea"
+  }}
+    {{ if cta_button_type === "mail" }}
+      <a class="cta-button" href="mailto:{{ cta_mail_address }}?subject={{ cta_mail_subject }}&body={{ cta_mail_body }}">
+        {{ cta_button_icon }}
+          <img src="{{ url }}" alt="{{ alt }}"/>
+        {{ /cta_button_icon }}
+        Schreib uns!
+      </a>
+    {{ elseif cta_button_type === "subpage" }}
+      {{ cta_subpage }}
+        <a class="cta-button" href="{{ url }}">
           {{ cta_button_icon }}
             <img src="{{ url }}" alt="{{ alt }}"/>
           {{ /cta_button_icon }}
-          Schreib uns!
+
+          {{ title }}
         </a>
-      {{ elseif cta_button_type === 'subpage' }}
-        {{ cta_subpage }}
-          <a class="cta-button" href="{{ url }}">
-            {{ cta_button_icon }}
-              <img src="{{ url }}" alt="{{ alt }}"/>
-            {{ /cta_button_icon }}
-            {{ title }}
-          </a>
-        {{ /cta_subpage }}
-      {{ /if }}
-    </div>
-  </section>
+      {{ /cta_subpage }}
+    {{ /if }}
+  {{ /partial:text-with-image }}
 {{ /collaboration }}
 
 <section id="home_supporters" class="section--top-spacing">
@@ -129,7 +119,7 @@
     <ul class="all-supporters_slick-slider_list">
       {{ assets container="assets" folder="supporter" sort="rating" }}
         <li class="all-supporters_slick-slider_list_item">
-          <img class="round-image shadow" src="{{ url }}" alt="{{ alt }}"/>
+          <img class="round-image shadow" src="{{ glide:url width='250' height='250' format='webp' }}" alt="{{ alt }}"/>
         </li>
       {{ /assets }}
     </ul>

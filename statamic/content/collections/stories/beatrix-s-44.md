@@ -28,7 +28,8 @@ description:
         type: text
         text: 'Heute möchten wir euch Bea vorstellen. Bea kämpft tapfer und mit einer wunderbaren Einstellung gegen den Krebs. Brustkrebs, HER2 positiv in der linken Brust.'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1651321164
+updated_at: 1653674764
+additional_cancer_type_info: 'HER2 positiv'
 content:
   -
     type: blockquote

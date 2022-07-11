@@ -1,17 +1,16 @@
-<section id="{{ id }}" class="section_text-w-image-{{ image_position }} section--top-spacing">
-    {{ image }}
-        <img src="{{ glide:url width="554" height="551" format="webp" }}" alt="{{ alt }}"/>
-    {{ /image }}
+<section id="{{ id }}" class="section_text-w-image-{{ image_position }} {{ class }}">
+  {{ image }}
+    <img src="{{ glide:url width='700' height='700' format='webp' }}" alt="{{ alt }}"/>
+  {{ /image }}
 
-    <div>
-        {{ if headline_addition }}
-            <h2 class="section-headline--addition">{{ headline_addition }}</h2>
-        {{ /if }}
+  <div>
+    {{ if headline_addition }}
+      <h2 class="section-headline--addition">{{ headline_addition }}</h2>
+    {{ /if }}
+    <h2 class="section-headline">{{ headline }}</h2>
 
-        <h2 class="section-headline">{{ headline }}</h2>
+    <p>{{ textarea }}</p>
 
-        <p>{{ textarea }}</p>
-
-        {{ slot ?? '' }}
-    </div>
+    {{ slot ?? '' }}
+  </div>
 </section>

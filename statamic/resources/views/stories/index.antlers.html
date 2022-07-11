@@ -10,33 +10,33 @@
       </div>
 
       <div class="all-dropdowns-wrapper">
-          <div class="dropdown {{ if get:person_type == 'relative' }}disabled{{ /if }}">
-              <button class="dropdown-button {{ if get:cancer_type }}active{{ /if }}" {{ if get:person_type == "relative" }} disabled {{ endif }}>
-              {{ if get:cancer_type }}
-                  {{ taxonomy:cancer_type :slug:is="get:cancer_type | sanitize" }}
-                    {{ title }}
-                  {{ /taxonomy:cancer_type }}
-              {{ else }}
-                Krebsart
-              {{ /if }}
-              </button>
+        <div class="dropdown {{ if get:person_type == 'relative' }}disabled{{ /if }}">
+          <button class="dropdown-button {{ if get:cancer_type }}active{{ /if }}" {{ if get:person_type == "relative" }} disabled {{ endif }}>
+          {{ if get:cancer_type }}
+            {{ taxonomy:cancer_type :slug:is="get:cancer_type | sanitize" }}
+              {{ title }}
+            {{ /taxonomy:cancer_type }}
+          {{ else }}
+            Krebsart
+          {{ /if }}
+          </button>
 
-              <div class="dropdown-menu dropdown-menu--select">
-                  <div class="shadow">
-                      <div>
-                          {{ taxonomy:cancer_type min_count="1" }}
-                          <input id="{{ slug }}" value="{{ slug }}" name="cancer_type" type="radio">
-                          <label for="{{ slug }}">{{ title }}</label>
-                          {{ /taxonomy:cancer_type }}
-                      </div>
-
-                      <div class="reset-wrapper">
-                          <input id="type_none" name="cancer_type" type="reset">
-                          <label for="type_none">Filter zurücksetzen</label>
-                      </div>
-                  </div>
+          <div class="dropdown-menu dropdown-menu--select">
+            <div class="shadow">
+              <div>
+                {{ taxonomy:cancer_type min_count="1" }}
+                <input id="{{ slug }}" value="{{ slug }}" name="cancer_type" type="radio">
+                <label for="{{ slug }}">{{ title }}</label>
+                {{ /taxonomy:cancer_type }}
               </div>
+
+              <div class="reset-wrapper">
+                <input id="type_none" name="cancer_type" type="reset">
+                <label for="type_none">Filter zurücksetzen</label>
+              </div>
+            </div>
           </div>
+        </div>
 
         <div class="dropdown {{ if get:person_type == 'relative' }}disabled{{ /if }}">
           <button class="dropdown-button {{ if get:therapy_type }}active{{ /if }}" {{ if get:person_type == "relative" }} disabled {{ endif }}>
@@ -134,19 +134,15 @@
   </div>
 
   <!-- displayed when no favorites yet -->
-  <section class="no-favorites-disclaimer hidden {{ if favorites_image_position == 'left' }}section_text-w-image-left{{ elseif favorites_image_position == 'right' }}section_text-w-image-right{{ endif }}">
-    {{ favorites_image }}
-      <img src="{{ url }}" alt="{{ alt }}"/>
-    {{ /favorites_image }}
-
-    <div>
-      {{ if favorites_headline_addition }}
-        <h2 class="section-headline--addition">{{ favorites_headline_addition }}</h2>
-      {{ /if }}
-      <h2 class="section-headline">{{ favorites_headline }}</h2>
-      <p>{{ favorites_textarea }}</p>
-    </div>
-  </section>
+  {{ partial:text-with-image
+    id="no-favorites-disclaimer"
+    class="hidden"
+    :image_position="favorites_image_position"
+    :image="favorites_image"
+    :headline_addition="favorites_headline_addition"
+    :headline="favorites_headline"
+    :textarea="favorites_textarea"
+  }}
 
   <!-- displayed even when favorites already exist -->
   <div class="favorites-disclaimer hidden">
@@ -170,7 +166,7 @@
           <div class="card shadow">
             <a href="{{ url }}">
               <article>
-                <img src="{{ glide:image width="257" height="257" format="webp" }}" alt="{{ alt }}">
+                <img src="{{ glide:image width='700' height='700' format='webp' }}" alt="{{ alt }}">
                 <div>
                   {{ if person_type == "patient" }}
                     <div>

@@ -154,6 +154,7 @@
   background-color: var(--purple_ultraLight);
   border-radius: var(--root16px) var(--root16px) 0 0;
   position: relative;
+  margin-top: 2rem;
 }
 
 .newsletter_header h2 {
@@ -170,7 +171,7 @@
 .newsletter_mailbox-image {
   position: absolute;
   width: 10rem;
-  top: -2rem;
+  top: -4rem;
   left: 3rem;
 }
 

@@ -1,16 +1,16 @@
 ---
 id: 16717b79-6756-4d35-8784-7b76a207ac0e
 blueprint: story
-title: 'Tatiana Hafez, 33'
+title: 'Tatiana H., 33'
 passed_away: false
-name: Tatiana
+firstname: Tatiana
+surname: Hafez
 age: 33
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
 person_type: patient
-image: stories/t/Tatiana-1-Titelbild.png
-
+image: stories/t/Tatiana-1-Titelbild.jpg
 contact:
   -
     contact_type: youtube
@@ -26,7 +26,7 @@ contact:
     enabled: true
 release_date: '2020-10-22'
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1647721958
+updated_at: 1648146472
 content:
   -
     type: blockquote
@@ -55,8 +55,8 @@ content:
       values:
         type: images
         content_images:
-          - stories/t/Tatiana-2.png
-          - stories/t/Tatiana-3.png
+          - stories/t/Tatiana-2.jpg
+          - stories/t/Tatiana-3.jpg
   -
     type: paragraph
     content:
@@ -69,5 +69,5 @@ content:
       values:
         type: video
         video_url: 'https://www.youtube-nocookie.com/embed/PSol3meMmuo'
-        video_thumbnail: stories/Tatiana-Thumpnail.png
+        video_thumbnail: stories/t/Tatiana-Thumpnail.jpg
 ---

@@ -1,18 +1,27 @@
+<script src="{{ mix src='js/stories.js' }}"></script>
+
 <article class="card-detail">
     <div class="card-detail_header">
-      <div>
+      <div class="tags">
         <span>Geschichte</span>
-        <span>
           {{ if person_type == "patient" }}
-            {{ cancer_type:title }}
+            <span class="cancer-type">{{ cancer_type:title }}</span>
+            {{ if additional_cancer_type_info }}<span class="cancer-type">{{ additional_cancer_type_info }}</span>{{ /if }}
           {{ elseif person_type == "relative" }}
-            Angehörige:r
+            <span>Angehörige:r</span>
           {{ /if }}
-        </span>
       </div>
 
-      <h1 class="">{{ name }}{{if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h1>
-      <img src="{{ image }}" alt="{{ alt }}">
+      <div class="headline-favorite">
+        <h1 class="">{{ firstname }}{{if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h1>
+
+        <div class="favorite-toggle favorite-toggle--stories">
+          <input value="{{ id }}" name="favorite" type="checkbox">
+          <label for="favorite"></label>
+        </div>
+      </div>
+
+      <img src="{{ glide:image width='816' height='551' format='webp' }}" alt="{{ alt }}">
 
       {{ description }}
     </div>
@@ -33,7 +42,7 @@
           <div class="images {{ if content_images | count == 1 }} one {{ endif }}" data-slick='{"slidesToShow": {{ content_images | count }}}'>
             {{ content_images }}
               <div>
-                <img src="{{ url }}" alt="{{ alt }}" />
+                <img src="{{ glide:url width='700' height='700' format='webp' }}" alt="{{ alt }}" />
               </div>
             {{ /content_images }}
           </div>
@@ -76,9 +85,9 @@
     </div>
 
     <address class="card-detail_footer">
-      <img src="{{ image }}" alt="{{ alt }}">
+      <img src="{{ glide:image width='200' height='200' format='webp' }}" alt="{{ alt }}">
       <div>
-        <p>{{ name }} {{ if passed_away }}†{{ /if }}</p>
+        <p>{{ firstname }} {{ if passed_away }}†{{ /if }}</p>
 
         <div>
           {{ contact }}
@@ -99,44 +108,46 @@
 </article>
 
 <section class="section_slider section--top-spacing">
-  {{ collection:stories limit="6" as="posts"
-  :filter_cancer_type="cancer_type:slug"
-  :filter_age="age"
-  :filter_id="id"
-  query_scope="story" }}
+  {{ get_content from="/stories" }}
+    {{ if relatives_headline_addition }}
+      <h2 class="section-headline--addition">{{ relatives_headline_addition }}</h2>
+    {{ /if }}
+    <h2 class="section-headline">{{ relatives_headline }}</h2>
+  {{ /get_content }}
 
-    {{ get_content from="/" }}
-      {{ if stories_headline_addition }}
-        <h2 class="section-headline--addition">{{ stories_headline_addition }}</h2>
-      {{ /if }}
-      <h2 class="section-headline">{{ stories_headline }}</h2>
-    {{ /get_content }}
-
-    <div class="slider">
-      {{ posts }}
-        <div class="card shadow">
-          <a href="{{ url }}">
-            <article>
-              <img src="{{ image }}" alt="{{ alt }}">
-              <div>
-                <span>
-                  {{ if person_type == "patient" }}
-                    {{ cancer_type:title }}
-                  {{ elseif person_type == "relative" }}
-                    Angehörige:r
-                  {{ /if }}
-                </span>
-                <div class="favorite-toggle favorite-toggle--stories">
-                  <input value="{{ id }}" name="favorite" type="checkbox">
-                  <label for="favorite"></label>
+  <div class="slider">
+    {{ collection:stories limit="6"
+    :filter_cancer_type="cancer_type:slug"
+    :filter_age="age"
+    :filter_id="id"
+    query_scope="story" }}
+      <div class="card shadow">
+        <a href="{{ url }}">
+          <article>
+            <img src="{{ glide:image width='400' height='400' format='webp' }}" alt="{{ alt }}">
+            <div>
+              {{ if person_type == "patient" }}
+                <div>
+                  <span class="cancer-type">{{ cancer_type:title }}</span>
+                  {{ if additional_cancer_type_info }}<span class="cancer-type">{{ additional_cancer_type_info }}</span>{{ /if }}
                 </div>
+              {{ elseif person_type == "relative" }}
+                <span class="person-type">Angehörige:r</span>
+              {{ /if }}
+              <div class="favorite-toggle favorite-toggle--stories">
+                <input value="{{ id }}" name="favorite" type="checkbox">
+                <label for="favorite"></label>
               </div>
+            </div>
 
-              <h2>{{ name }}{{ if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h2>
-            </article>
-          </a>
-        </div>
-      {{ /posts }}
-    </div>
-  {{ /collection:stories }}
+            <h2>{{ firstname }}{{ if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h2>
+          </article>
+        </a>
+      </div>
+    {{ /collection:stories }}
+  </div>
+
+  <div class="button">
+    <a href="/stories" class="cta-button outline">Alle Geschichten</a>
+  </div>
 </section>

@@ -1,19 +1,17 @@
 ---
 id: cbef7cab-10f0-448f-8310-646662b187b2
-published: false
 blueprint: story
 title: 'Janina, 35'
 passed_away: false
-name: Janina
+firstname: Janina
 age: 35
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - chemotherapy
   - radiationtherapy
   - surgery
 person_type: patient
-image: stories/j/Janina-1-Titelbild.png
-
+image: stories/j/Janina-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram
@@ -23,7 +21,7 @@ contact:
     enabled: true
 release_date: '2020-10-10'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647641851
+updated_at: 1649505924
 description:
   -
     type: paragraph
@@ -89,7 +87,7 @@ content:
       values:
         type: images
         content_images:
-          - stories/j/Janina-2.png
+          - stories/j/Janina-2.jpg
   -
     type: paragraph
     content:

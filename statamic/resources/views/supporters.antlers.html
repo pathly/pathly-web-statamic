@@ -1,16 +1,11 @@
-<section id="supporters_intro" {{ if intro_image_position == 'left' }} class="section_text-w-image-left" {{ elseif intro_image_position == 'right' }} class="section_text-w-image-right" {{ endif }}>
-  {{ intro_image }}
-    <img src="{{ url }}" alt="{{ alt }}"/>
-  {{ /intro_image }}
-
-  <div>
-    {{ if intro_headline_addition }}
-      <h2 class="section-headline--addition">{{ intro_headline_addition }}</h2>
-    {{ /if }}
-    <h2 class="section-headline">{{ intro_headline }}</h2>
-    <p>{{ intro_textarea }}</p>
-  </div>
-</section>
+{{ partial:text-with-image
+  id="supporters_intro"
+  :image_position="intro_image_position"
+  :image="intro_image"
+  :headline_addition="intro_headline_addition"
+  :headline="intro_headline"
+  :textarea="intro_textarea"
+}}
 
 <section id="supporters_cooperations" class="section--top-spacing">
   {{ if cooperations_headline_addition }}
@@ -23,7 +18,7 @@
       <div class="cooperations_profile">
         <a target="_blank" href="{{ cooperations_profile_url }}">
           {{ cooperations_profile_image }}
-            <img src="{{ url }}" alt="{{ alt }}"/>
+            <img src="{{ glide:url width='700' height='700' format='webp' }}" alt="{{ alt }}"/>
           {{ /cooperations_profile_image }}
         </a>
       </div>
@@ -42,7 +37,7 @@
         <div class="sponsors_profile">
           <div class="image-container">
             {{ sponsors_profile_image }}
-              <img src="{{ url }}" alt="{{ alt }}"/>
+              <img src="{{ glide:url width='700' height='700' format='webp' }}" alt="{{ alt }}"/>
             {{ /sponsors_profile_image }}
           </div>
 

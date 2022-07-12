@@ -36,6 +36,11 @@ $(document).ready(function() {
     $(".oreos-form_options").removeClass("hidden");
   });
 
+  // reopen cookie banner
+  $(".cookie-trigger").on("click", function () {
+    $(".oreos-popup").removeClass("hidden");
+  });
+
   // ------------------------------
   // ----- Slick Slider
   // ------------------------------

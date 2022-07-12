@@ -1,9 +1,10 @@
 ---
 id: 0240b00c-243c-46ea-beb0-89482e5faee1
 blueprint: story
-title: 'Anna Ippati, 18'
+title: 'Anna I., 18'
 passed_away: false
-name: Anna
+firstname: Anna
+surname: Ippati
 age: 18
 cancer_type: hodgkin-lymphoma
 therapy_type:
@@ -11,7 +12,7 @@ therapy_type:
   - radiationtherapy
   - surgery
 person_type: patient
-image: stories/a/Anna-I-1-Titelbild.png
+image: stories/a/Anna-I-1-Titelbild.jpg
 
 contact:
   -
@@ -63,9 +64,9 @@ content:
       values:
         type: images
         content_images:
-          - stories/a/Anna-I-2.png
-          - stories/a/Anna-I-3.png
-          - stories/a/Anna-I-4.png
+          - stories/a/Anna-I-2.jpg
+          - stories/a/Anna-I-3.jpg
+          - stories/a/Anna-I-4.jpg
   -
     type: paragraph
     content:

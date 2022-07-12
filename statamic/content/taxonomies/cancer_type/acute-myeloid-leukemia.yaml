@@ -2,7 +2,7 @@ title: 'Akute myeloische Leukämie'
 is_cancer_sub_type: true
 cancer_parent_type:
   - leukemia
-  - bloodcancer
+  - blood-cancer
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
 updated_at: 1647721749
 blueprint: cancer_type

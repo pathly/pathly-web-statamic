@@ -3,15 +3,15 @@ id: 8ae01732-7319-4ef4-b637-df7f845b4099
 blueprint: story
 title: 'Diane, 35'
 passed_away: false
-name: Diane
+firstname: Diane
 age: 35
-cancer_type: breastcancer
+cancer_type: breast-cancer
 therapy_type:
   - hormonetherapy
   - chemotherapy
   - surgery
 person_type: patient
-image: stories/d/Diane-1-Titelbild.png
+image: stories/d/Diane-1-Titelbild.jpg
 
 contact:
   -
@@ -22,38 +22,49 @@ contact:
     enabled: true
 release_date: '2020-12-17'
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647642686
+updated_at: 1647898699
 content:
   -
-    type: paragraph
+    type: blockquote
     content:
       -
-        type: text
-        text: '»Hallo, ich heiße Diane. Ich bin 35 Jahre alt, verheiratet und stolze Mama von einer 8-jährigen Tochter und einem 5-jährigen Sohn. Meine Geschichte beginnt im Februar 2020. Ich war mit meinen beiden Kindern zur Mutter-Kind-Kur und wir Mütter erhielten dort einen Vortrag zum Thema Krebsvorsorge. Anhand einer künstlichen Brust wurde uns gezeigt, wie eine Brust abgetastet werden muss.'
+        type: paragraph
+        content:
+          -
+            type: text
+            text: '»Hallo, ich heiße Diane. Ich bin 35 Jahre alt, verheiratet und stolze Mama von einer 8-jährigen Tochter und einem 5-jährigen Sohn. Meine Geschichte beginnt im Februar 2020. Ich war mit meinen beiden Kindern zur Mutter-Kind-Kur und wir Mütter erhielten dort einen Vortrag zum Thema Krebsvorsorge. Anhand einer künstlichen Brust wurde uns gezeigt, wie eine Brust abgetastet werden muss.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Mit diesem Wissen schaute ich nun genauer auf meine Brust und nahm mir immer mal bewusst Zeit. Schon kurze Zeit später war es dann leider auch so weit. In meiner linken Brust habe ich etwas ertastet, was dort nicht hingehörte. Ich machte allerdings nicht sofort einen Termin beim Frauenarzt, denn meinen regulären Kontrolltermin hatte ich am 15. Mai 2020.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Der Ultraschall war auffällig, somit wurde noch eine Biopsie und ein Termin zur Mammografie gemacht. In der Mammografie war aber nichts ersichtlich. Ich hatte wieder Hoffnung, welche mir jedoch am 20. Mai dann endgültig genommen wurde. Der Befund war da: Triple positiver Brustkrebs. Chemotherapie notwendig!'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Danach war ich wie in Watte gepackt und alles verlief wie im Film. Ich bekam meinen Port, hatte zig Untersuchungen und am 15. Juni startete ich mit meiner Chemotherapie: 4x EC dosisdicht alle 14 Tage, danach 12x Paclitaxel wöchentlich. Zwischendurch musste ich zweimal aussetzen, da meine Blutwerte nicht gut waren.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Insgesamt habe ich die Chemotherapie aber ganz gut verkraftet und konnte mit den ganzen Nebenwirkungen sehr gut umgehen. Die Zeit ist nur so geflogen. Ich hatte die ganze Zeit meine Familie und meine Freunde an meiner Seite, auf die ich mich immer verlassen konnte.'
   -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Mit diesem Wissen schaute ich nun genauer auf meine Brust und nahm mir immer mal bewusst Zeit. Schon kurze Zeit später war es dann leider auch so weit. In meiner linken Brust habe ich etwas ertastet, was dort nicht hingehörte. Ich machte allerdings nicht sofort einen Termin beim Frauenarzt, denn meinen regulären Kontrolltermin hatte ich am 15. Mai 2020.'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Der Ultraschall war auffällig, somit wurde noch eine Biopsie und ein Termin zur Mammografie gemacht. In der Mammografie war aber nichts ersichtlich. Ich hatte wieder Hoffnung, welche mir jedoch am 20. Mai dann endgültig genommen wurde. Der Befund war da: Triple positiver Brustkrebs. Chemotherapie notwendig!'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Danach war ich wie in Watte gepackt und alles verlief wie im Film. Ich bekam meinen Port, hatte zig Untersuchungen und am 15. Juni startete ich mit meiner Chemotherapie: 4x EC dosisdicht alle 14 Tage, danach 12x Paclitaxel wöchentlich. Zwischendurch musste ich zweimal aussetzen, da meine Blutwerte nicht gut waren.'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Insgesamt habe ich die Chemotherapie aber ganz gut verkraftet und konnte mit den ganzen Nebenwirkungen sehr gut umgehen. Die Zeit ist nur so geflogen. Ich hatte die ganze Zeit meine Familie und meine Freunde an meiner Seite, auf die ich mich immer verlassen konnte.'
+    type: set
+    attrs:
+      values:
+        type: images
+        content_images:
+          - stories/d/Diane-2.jpg
+          - stories/d/Diane-3.jpg
   -
     type: paragraph
     content:

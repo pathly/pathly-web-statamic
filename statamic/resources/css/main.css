@@ -9,8 +9,8 @@
 @import "components/patterns.scss";
 @import "components/cards.scss";
 
-@import "components/header.css";
-@import "components/footer.css";
+@import "components/header.scss";
+@import "components/footer.scss";
 @import "components/cookies.scss";
 
 @import "sites/home.css";

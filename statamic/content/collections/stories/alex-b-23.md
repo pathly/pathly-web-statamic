@@ -1,16 +1,16 @@
 ---
 id: a0656203-071d-42ee-a2a2-42122c408a0f
 blueprint: story
-title: 'Alexander Böhmer, 23'
+title: 'Alex B., 23'
 passed_away: false
-name: Alex
+firstname: Alex
+surname: Böhmer
 age: 23
-cancer_type: bonekrebs
+cancer_type: bone-cancer
 therapy_type:
   - surgery
 person_type: patient
-image: stories/a/Alex-B-1-Titelbild.png
-
+image: stories/a/Alex-B-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram
@@ -25,8 +25,8 @@ contact:
     type: links
     enabled: true
 release_date: '2021-08-07'
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647640946
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1648146276
 description:
   -
     type: paragraph
@@ -50,12 +50,13 @@ content:
       values:
         type: images
         content_images:
-          - stories/a/Alex-B-2.png
+          - stories/a/Alex-B-2.jpg
+          - stories/a/Alex-B-3.jpg
   -
     type: set
     attrs:
       values:
         type: video
         video_url: 'https://www.youtube-nocookie.com/embed/ZCHpqecv5QY'
-        video_thumbnail: stories/Alex-Thumpnail-1647640406.png
+        video_thumbnail: stories/a/Alex-Thumbnail.jpg
 ---

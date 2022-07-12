@@ -4,5 +4,5 @@ updated_at: 1647721583
 blueprint: cancer_type
 is_cancer_sub_type: true
 cancer_parent_type:
-  - lymphglandcancer
-  - bloodcancer
+  - lymph-gland-cancer
+  - blood-cancer

@@ -1,17 +1,17 @@
 ---
 id: 0697e1a9-88c8-4387-a481-d8645ee32baa
 blueprint: story
-title: 'Alina Ganz, 23'
+title: 'Alina G., 23'
 passed_away: false
-name: Alina
+firstname: Alina
+surname: Ganz
 age: 23
 cancer_type: hodgkin-lymphoma
 therapy_type:
   - chemotherapy
   - surgery
 person_type: patient
-image: stories/a/Alina-G-1-Titelbild.png
-
+image: stories/a/Alina-G-1-Titelbild.jpg
 contact:
   -
     contact_type: instagram
@@ -20,30 +20,33 @@ contact:
     type: links
     enabled: true
 release_date: '2021-05-27'
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1647647250
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1648146230
 content:
   -
-    type: paragraph
+    type: blockquote
     content:
       -
-        type: text
-        text: '»Hallo mein Name ist Alina, ich bin 23 Jahre alt und erhielt an meinem diesjährigen Geburtstag – dem 17. Februar 2021 – die Diagnose Lymphkrebs. Erst zwei Wochen später bekam ich dann die finale Diagnose ›Hodgkin Lymphom in Stadium 3‹.'
-  -
-    type: paragraph
-    content:
+        type: paragraph
+        content:
+          -
+            type: text
+            text: '»Hallo mein Name ist Alina, ich bin 23 Jahre alt und erhielt an meinem diesjährigen Geburtstag – dem 17. Februar 2021 – die Diagnose Lymphkrebs. Erst zwei Wochen später bekam ich dann die finale Diagnose ›Hodgkin Lymphom in Stadium 3‹.'
       -
-        type: text
-        text: 'Schon im Dezember 2020 hatte ich unwissentlich die ersten Symptome: Fieber, Kopfschmerzen, Nachtschweiß, Husten. Nach einem negativen Corona-Test und ein paar Tagen ohne Symptome war ich auch scheinbar wieder ›gesund‹. Erst als ich ein paar Wochen später wieder die gleichen Symptome bekam, ging ich erneut zum Hausarzt, welcher mir aufgrund meiner sehr hohen Entzündungswerte ein Antibiotikum verschrieb. Dieses zeigte sogar etwa zwei Wochen lang Wirkung, doch dann war das Fieber wieder zurück und mein Hausarzt schickte mich ins Krankenhaus, wo man dann bei einem CT lauter Lymphknoten in meiner Brust sowie links und rechts an meinem Schlüsselbein entdeckte. Die Ärzte waren sofort alarmiert und entnahmen mir am nächsten Morgen einen Lymphknoten für eine Biopsie und eine Probe von meinem Knochenmark. Ein paar Tage danach durfte ich nach Hause, sodass ich glücklicherweise die Diagnose daheim bei meinen Liebsten erhielt.'
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Schon im Dezember 2020 hatte ich unwissentlich die ersten Symptome: Fieber, Kopfschmerzen, Nachtschweiß, Husten. Nach einem negativen Corona-Test und ein paar Tagen ohne Symptome war ich auch scheinbar wieder ›gesund‹. Erst als ich ein paar Wochen später wieder die gleichen Symptome bekam, ging ich erneut zum Hausarzt, welcher mir aufgrund meiner sehr hohen Entzündungswerte ein Antibiotikum verschrieb. Dieses zeigte sogar etwa zwei Wochen lang Wirkung, doch dann war das Fieber wieder zurück und mein Hausarzt schickte mich ins Krankenhaus, wo man dann bei einem CT lauter Lymphknoten in meiner Brust sowie links und rechts an meinem Schlüsselbein entdeckte. Die Ärzte waren sofort alarmiert und entnahmen mir am nächsten Morgen einen Lymphknoten für eine Biopsie und eine Probe von meinem Knochenmark. Ein paar Tage danach durfte ich nach Hause, sodass ich glücklicherweise die Diagnose daheim bei meinen Liebsten erhielt.'
   -
     type: set
     attrs:
       values:
         type: images
         content_images:
-          - stories/a/Alina-G-4.png
-          - stories/a/Alina-G-3.png
-          - stories/a/Alina-G-2.png
+          - stories/a/Alina-G-4.jpg
+          - stories/a/Alina-G-3.jpg
+          - stories/a/Alina-G-2.jpg
   -
     type: paragraph
     content:
@@ -74,7 +77,7 @@ content:
       values:
         type: video
         video_url: 'https://www.youtube-nocookie.com/embed/Z7n5GgLuQaU'
-        video_thumbnail: stories/Alina-Thumpnail.png
+        video_thumbnail: stories/a/Alina-Thumpnail.jpg
   -
     type: paragraph
 ---

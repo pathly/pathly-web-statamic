@@ -10,7 +10,7 @@ sections:
           required: true
           validate:
             - required
-          instructions: 'Title is only for us. Please remove the surname from the slug!'
+          instructions: 'Use the following format: Max M., 22'
           instructions_position: above
           listable: hidden
           input_type: text
@@ -39,23 +39,31 @@ sections:
           icon: date
           listable: hidden
           instructions_position: above
-          validate:
-            - required
           if:
             passed_away: 'equals true'
       -
-        handle: name
+        handle: firstname
         field:
           input_type: text
           antlers: false
-          display: Name
-          instructions: 'Only first name!'
+          display: Firstname
           instructions_position: above
           type: text
           icon: text
           listable: hidden
           validate:
             - required
+      -
+        handle: surname
+        field:
+          input_type: text
+          antlers: false
+          display: Surname
+          instructions: 'This is only for us and will not be displayed on the website.'
+          instructions_position: above
+          type: text
+          icon: text
+          listable: hidden
       -
         handle: age
         field:
@@ -88,6 +96,23 @@ sections:
           listable: hidden
           instructions_position: above
           max_items: 1
+          if:
+            person_type: 'equals patient'
+      -
+        handle: additional_cancer_type_info
+        field:
+          multiple: false
+          max_items: 1
+          clearable: true
+          searchable: true
+          taggable: true
+          push_tags: true
+          cast_booleans: false
+          display: 'Additional Cancer Type Info'
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
           if:
             person_type: 'equals patient'
       -
@@ -181,11 +206,9 @@ sections:
         handle: slug
         field:
           type: slug
-          required: true
           localizable: true
           validate:
             - required
-          instructions: 'Please remove the surname!'
           instructions_position: above
           listable: hidden
           generate: true

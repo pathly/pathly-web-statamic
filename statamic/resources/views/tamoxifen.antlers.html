@@ -1,0 +1,106 @@
+<article class="card-detail">
+  <div class="card-detail_header">
+    <div>
+      <span>Info</span>
+    </div>
+
+    <h1 class="">{{ headline }}</h1>
+    <img src="{{ image }}" alt="{{ alt }}">
+
+    {{ description }}
+  </div>
+
+  <div class="card-detail_body">
+    {{ content }}
+      {{ if type == "text" }}
+        <div class="text">
+          {{ text }}
+        </div>
+
+      {{ elseif type == "callout" }}
+        <div class="text callout" style="background-color:{{ content_callout_color }}">
+          {{ content_callout_content }}
+        </div>
+
+      {{ elseif type == "quote" }}
+        <div class="quote">
+          <span>{{ content_quote_author }}</span>
+          <blockquote>{{ content_quote_paragraph }}</blockquote>
+        </div>
+
+      {{ elseif type == "table" }}
+        <table class="table">
+          {{ content_table }}
+            {{ if first }}
+                <thead>
+                  <tr>
+                    {{ cells }}
+                      <th>{{ value | markdown }}</th>
+                    {{ /cells }}
+                  </tr>
+                </thead>
+                <tbody>
+            {{ else }}
+                  <tr>
+                    {{ cells }}
+                      <td>{{ value|markdown }}</td>
+                    {{ /cells }}
+                  </tr>
+              {{ if last }}
+                </tbody>
+              {{ /if }}
+            {{ /if }}
+          {{ /content_table }}
+        </table>
+
+      {{ elseif type == "links" }}
+        <div class="link-list">
+          {{ content_links }}
+            <a class="link-list_button" href="{{ content_link_url }}" target="_blank">
+              <div class="link-list_button_icon-container {{ if !link_icon }} colored {{ /if }}">
+                {{ content_link_icon }}
+                  <img src="{{ url }}" alt="{{ alt }}">
+                {{ /content_link_icon }}
+              </div>
+              <p>{{ content_link_title }}</p>
+            </a>
+          {{ /content_links }}
+        </div>
+
+      {{ elseif type == "accordions" }}
+        <div class="accordion-list">
+          {{ content_accordions }}
+            <div class="accordion">
+              <input type="checkbox" id="accordion_button-{{ content_accordion_title }}"/>
+              <label for="accordion_button-{{ content_accordion_title }}" class="accordion_title">
+                <h3>{{ content_accordion_title }}</h3>
+                <span class="accordion_indicator no-select">+</span>
+              </label>
+
+              <div class="accordion_content">
+                <p>{{ content_accordion_content }}</p>
+              </div>
+            </div>
+          {{ /content_accordions }}
+        </div>
+
+      {{ elseif type == "images" }}
+        <div class="images">
+          {{ content_images }}
+            <div>
+              <img src="{{ url }}" alt="{{ alt }}" />
+            </div>
+          {{ /content_images }}
+        </div>
+      {{ /if }}
+    {{ /content }}
+  </div>
+
+  <!-- <address class="">
+    <img src="" alt="">
+    <time datetime="{{ date format="Y-m-d" }}">{{ date format="d.m.Y" }}</time>
+
+
+  </address> -->
+
+</article>

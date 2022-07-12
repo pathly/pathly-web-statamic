@@ -38,6 +38,11 @@ sections:
           type: template
           icon: template
           listable: hidden
+  prefooter:
+    display: Prefooter
+    fields:
+      -
+        import: prefooter
   opengraph:
     display: Open Graph
     fields:

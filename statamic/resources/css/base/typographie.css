@@ -26,8 +26,19 @@ body {
   }
 }
 
+h1 {
+  font-family: "neue-kabel";
+  font-weight: 700;
+  font-size: var(--root48px);
+  line-height: 1.2;
+}
 
-h1,
+@media (max-width: 650px) {
+  h1 {
+    font-size: var(--root40px);
+  }
+}
+
 h2 {
   font-family: "neue-kabel";
   font-weight: 700;
@@ -36,9 +47,8 @@ h2 {
 }
 
 @media (max-width: 650px) {
-  h1,
   h2 {
-    font-size: var(--root40px);
+    font-size: var(--root32px);
   }
 }
 
@@ -46,10 +56,6 @@ h2.section-headline--addition {
   font-size: var(--root24px);
   font-weight: 500;
   color: var(--primary_purple);
-}
-
-h2.section-headline {
-  margin-bottom: var(--root48px);
 }
 
 h3 {
@@ -78,5 +84,9 @@ a {
   font-family: 'neue-kabel';
   font-weight: 700;
   font-size: var(--root24px);
+  color: var(--primary_purple);
+}
+
+li::marker {
   color: var(--primary_purple);
 }

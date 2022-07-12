@@ -1,16 +1,11 @@
-<section id="nonprofit_intro" class="{{ intro_image_position == 'left' ?= 'section_text-w-image-left' }}{{ intro_image_position == 'right' ?= 'section_text-w-image-right' }}">
-  {{ intro_image }}
-    <img src="{{ url }}" alt="{{ alt }}"/>
-  {{ /intro_image }}
-
-  <div>
-    {{ if intro_headline_addition }}
-      <h2 class="section-headline--addition">{{ intro_headline_addition }}</h2>
-    {{ /if }}
-    <h2 class="section-headline">{{ intro_headline }}</h2>
-    <p>{{ intro_textarea }}</p>
-  </div>
-</section>
+{{ partial:text-with-image
+  id="nonprofit_intro"
+  :image_position="intro_image_position"
+  :image="intro_image"
+  :headline_addition="intro_headline_addition"
+  :headline="intro_headline"
+  :textarea="intro_textarea"
+}}
 
 <section id="nonprofit_preamble" class="section_text section--top-spacing">
   {{ if preamble_headline_addition }}
@@ -28,36 +23,32 @@
   {{ /if }}
   <h2 class="section-headline">{{ statutes_headline }}</h2>
 
-  <div>
-    <ol class="statutes_sections">
-      {{ statutes_sections }}
-        <li>
-          <div class="accordion">
-            <input type="checkbox" id="accordion_button-{{ statutes_section_headline }}"/>
-            <label for="accordion_button-{{ statutes_section_headline }}" class="accordion_title">
-              <h3>{{ statutes_section_headline }}</h3>
-              <span class="accordion_indicator no-select">+</span>
-            </label>
+  <div class="statutes_sections">
+    {{ statutes_sections }}
+      <div class="accordion">
+        <input type="checkbox" id="accordion_button-{{ statutes_section_headline }}"/>
+        <label for="accordion_button-{{ statutes_section_headline }}" class="accordion_title">
+          <h3>{{ statutes_section_headline }}</h3>
+          <span class="accordion_indicator no-select">+</span>
+        </label>
 
-            <div class="accordion_content">
-              <ol class="statutes_section_subsections">
-                {{ statutes_section_subsections }}
-                  <li>
-                    <p>{{ statutes_section_subsection_textarea }}<p>
-                    <ul>
-                      {{ statutes_section_subsection_list }}
-                        <li>
-                          <p>{{ value }}</p>
-                        </li>
-                      {{ /statutes_section_subsection_list }}
-                    </ul>
-                  </li>
-                {{ /statutes_section_subsections }}
-              </ol>
-            </div>
-          </div>
-        </li>
-      {{ /statutes_sections }}
-    </ol>
+        <div class="accordion_content">
+          <ol class="statutes_section_subsections">
+            {{ statutes_section_subsections }}
+              <li>
+                <p>{{ statutes_section_subsection_textarea }}<p>
+                <ul>
+                  {{ statutes_section_subsection_list }}
+                    <li>
+                      <p>{{ value }}</p>
+                    </li>
+                  {{ /statutes_section_subsection_list }}
+                </ul>
+              </li>
+            {{ /statutes_section_subsections }}
+          </ol>
+        </div>
+      </div>
+    {{ /statutes_sections }}
   </div>
 </section>

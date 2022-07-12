@@ -2,10 +2,12 @@
 	--primary_purple: #9AA9FB;
 	--primary_red: #FF696E;
 	--primary_dark: #314355;
+	--background: #FBFDFF;
   --purple_ultraLight: #F6F9FF;
 	--purple_ultraLightViolett: #EDEFFC;
 	--purple_darkViolett: #4C4981;
 
+	--shadow_dark: #31435520;
 	--shadow_purple: #9AA9FB15;
 	--shadow_red: #FF696E15;
 }

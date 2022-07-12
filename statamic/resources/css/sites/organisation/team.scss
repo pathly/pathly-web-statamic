@@ -1,0 +1,25 @@
+#team_profiles {
+  .section-headline--addition,
+  .section-headline {
+    text-align: center;
+  }
+
+  .team_profile {
+    &.inactive {
+      opacity: 0.2;
+    }
+
+    img {
+      width: 100%;
+
+      @media (max-width: 650px) {
+        margin: 0 10%;
+        width: 80%;
+      }
+    }
+
+    h3 {
+      margin: var(--root24px) 0 var(--root8px) 0;
+    }
+  }
+}

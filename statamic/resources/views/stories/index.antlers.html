@@ -1,13 +1,233 @@
-<main class="main-grid">
-  <h1 class="">{{ title }}</h1>
+<script src="{{ mix src='js/stories.js' }}"></script>
 
-  <section class="section_card-overview">
-    {{ collection:stories }}
-    <a class="section_card-overview_card" href="{{ url }}">
-      <img class="section_card-overview_card_image" src="{{ image }}" alt="{{ alt }}"/>
-      <span class="section_card-overview_card_type">{{ type }}</span>
-      <h2 class="section_card-overview_card_name">{{ name }}, {{ age }}</h2>
-    </a>
+<section>
+  <h1 class="section-headline">{{ title }}</h1>
+
+  <div class="filter">
+    <div>
+      <div class="dropdown mobile">
+        <button class="dropdown-button {{ if get:cancer_type or get:therapy_type or get:from_age or get:to_age or get:person_type }}active{{ /if }}">Filtern</button>
+      </div>
+
+      <div class="all-dropdowns-wrapper">
+        <div class="dropdown {{ if get:person_type == 'relative' }}disabled{{ /if }}">
+          <button class="dropdown-button {{ if get:cancer_type }}active{{ /if }}" {{ if get:person_type == "relative" }} disabled {{ endif }}>
+          {{ if get:cancer_type }}
+            {{ taxonomy:cancer_type :slug:is="get:cancer_type | sanitize" }}
+              {{ title }}
+            {{ /taxonomy:cancer_type }}
+          {{ else }}
+            Krebsart
+          {{ /if }}
+          </button>
+
+          <div class="dropdown-menu dropdown-menu--select">
+            <div class="shadow">
+              <div>
+                {{ taxonomy:cancer_type min_count="1" }}
+                <input id="{{ slug }}" value="{{ slug }}" name="cancer_type" type="radio">
+                <label for="{{ slug }}">{{ title }}</label>
+                {{ /taxonomy:cancer_type }}
+              </div>
+
+              <div class="reset-wrapper">
+                <input id="type_none" name="cancer_type" type="reset">
+                <label for="type_none">Filter zurücksetzen</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown {{ if get:person_type == 'relative' }}disabled{{ /if }}">
+          <button class="dropdown-button {{ if get:therapy_type }}active{{ /if }}" {{ if get:person_type == "relative" }} disabled {{ endif }}>
+            {{ if get:therapy_type }}
+              {{ taxonomy:therapy_type :slug:is="get:therapy_type | sanitize" }}
+                {{ title }}
+              {{ /taxonomy:therapy_type }}
+            {{ else }}
+              Therapieform
+            {{ /if }}
+          </button>
+
+          <div class="dropdown-menu dropdown-menu--select">
+            <div class="shadow">
+              <div>
+                {{ taxonomy:therapy_type min_count="1" }}
+                  <input id="{{ slug }}" value="{{ slug }}" name="therapy_type" type="radio">
+                  <label for="{{ slug }}">{{ title }}</label>
+                {{ /taxonomy:therapy_type }}
+              </div>
+
+              <div class="reset-wrapper">
+                <input id="therapy_none" name="therapy_type" type="reset">
+                <label for="therapy_none">Filter zurücksetzen</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-button {{ if get:from_age or get:to_age }}active{{ /if }}">
+            {{ if get:from_age && get:to_age }}
+              {{ get:from_age | sanitize }} - {{ get:to_age | sanitize }}
+            {{ elseif get:from_age }}
+              ab {{ get:from_age | sanitize }}
+            {{ elseif get:to_age }}
+              bis {{ get:to_age | sanitize }}
+            {{ else }}
+              Alter
+            {{ /if }}
+          </button>
+
+          <div class="dropdown-menu dropdown-menu--range">
+            <div class="shadow">
+              <div>
+                <input id="from" name="from_age" type="number" value="{{ get:from_age | sanitize }}">
+                <span>-</span>
+                <input id="to" name="to_age" type="number" value="{{ get:to_age | sanitize }}">
+
+                <input id="age_submit" name="age" type="submit">
+                <label class="submit" for="age_submit">Anwenden</label>
+              </div>
+
+              <div class="reset-wrapper">
+                <input id="age_none" name="age" type="reset">
+                <label class="reset" for="age_none">Filter zurücksetzen</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-button {{ if get:person_type }}active{{ /if }}">
+            {{ if get:person_type == "patient" }}
+              Patient:in
+            {{ elseif get:person_type == "relative" }}
+              Angehörige:r
+            {{ else }}
+              Personengruppe
+            {{ /if }}
+          </button>
+
+          <div class="dropdown-menu dropdown-menu--select">
+            <div class="shadow">
+              <div>
+                <input id="patient" value="patient" name="person_type" type="radio">
+                <label for="patient">Patient:in</label>
+                <input id="relative" value="relative" name="person_type" type="radio">
+                <label for="relative">Angehörige:r</label>
+              </div>
+
+              <div class="reset-wrapper">
+                <input id="person_none" name="person_type" type="reset">
+                <label for="person_none">Filter zurücksetzen</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <button class="favorites-mode-toggle {{ if get:favorite }}active{{ /if }}"><div></div></button>
+    </div>
+  </div>
+
+  <!-- displayed when no favorites yet -->
+  {{ partial:text-with-image
+    id="no-favorites-disclaimer"
+    class="hidden"
+    :image_position="favorites_image_position"
+    :image="favorites_image"
+    :headline_addition="favorites_headline_addition"
+    :headline="favorites_headline"
+    :textarea="favorites_textarea"
+  }}
+
+  <!-- displayed even when favorites already exist -->
+  <div class="favorites-disclaimer hidden">
+    <p><strong>{{ favorites_headline }}</strong> {{ favorites_textarea | strip_tags:p }}</p>
+    <button></button>
+  </div>
+
+  <div class="blog">
+    {{ collection:stories paginate="12" as="posts" sort="release_date:desc"
+
+    :filter_cancer_type="get:cancer_type"
+    :filter_therapy_type="get:therapy_type"
+    :filter_person_type="get:person_type"
+    :filter_from_age="get:from_age"
+    :filter_to_age="get:to_age"
+    :filter_favorites="get:favorite"
+    query_scope="stories" }}
+
+      <div id="stories" class="tiles">
+        {{ posts }}
+          <div class="card shadow">
+            <a href="{{ url }}">
+              <article>
+                <img src="{{ glide:image width='700' height='700' format='webp' }}" alt="{{ alt }}">
+                <div>
+                  {{ if person_type == "patient" }}
+                    <div>
+                      <span class="cancer-type">{{ cancer_type:title }}</span>
+                      {{ if additional_cancer_type_info }}<span class="cancer-type">{{ additional_cancer_type_info }}</span>{{ /if }}
+                    </div>
+                  {{ elseif person_type == "relative" }}
+                    <span class="person-type">Angehörige:r</span>
+                  {{ /if }}
+                  <div class="favorite-toggle favorite-toggle--stories">
+                    <input value="{{ id }}" name="favorite" type="checkbox">
+                    <label for="favorite"></label>
+                  </div>
+                </div>
+
+                <h2>{{ firstname }}{{ if age }}, {{ age }}{{ /if }} {{ if passed_away }}†{{ /if }}</h2>
+              </article>
+            </a>
+          </div>
+        {{ /posts }}
+      </div>
+
+      {{ paginate }}
+        {{ if links }}
+          <ul class="pagination">
+            {{ if prev_page }}
+              <li>
+                <a href="{{ prev_page }}">
+                  <div class="arrow--left"></div>
+                </a>
+              </li>
+            {{ else }}
+              <li class="disabled">
+                <div class="arrow--left"></div>
+              </li>
+            {{ /if }}
+
+            {{ links:all }}
+              <li class="page-numbers" {{ if page == current_page }} class="active" {{ endif }}>
+                <a href="{{ url }}">{{ page }}</a>
+              </li>
+            {{ /links:all }}
+
+            <div class="page-info">
+              {{ current_page }} von {{ total_pages }}
+            </div>
+
+            {{ if next_page }}
+              <li>
+                <a href="{{ next_page }}">
+                  <div class="arrow--right"></div>
+                </a>
+              </li>
+            {{ else }}
+              <li class="disabled">
+                <div class="arrow--right"></div>
+              </li>
+            {{ /if }}
+          </ul>
+        {{ /if }}
+      {{ /paginate }}
     {{ /collection:stories }}
-  </section>
-</main>
+  </div>
+</section>

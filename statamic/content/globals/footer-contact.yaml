@@ -1,0 +1,56 @@
+title: 'Footer Contact'
+data:
+  textarea:
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: "Erfahrt mehr über unsere Arbeit und folgt uns auf\_"
+        -
+          type: text
+          marks:
+            -
+              type: link
+              attrs:
+                href: 'https://www.instagram.com/pathly_ev/'
+                rel: null
+                target: _blank
+                title: null
+            -
+              type: bold
+          text: Instagram
+        -
+          type: text
+          text: "\_und\_"
+        -
+          type: text
+          marks:
+            -
+              type: link
+              attrs:
+                href: 'https://www.facebook.com/pathlyev/'
+                rel: null
+                target: _blank
+                title: null
+          text: Facebook
+        -
+          type: text
+          marks:
+            -
+              type: bold
+          text: ". Bei Fragen, Wünschen oder Anregungen schreibt uns gerne eine\_"
+        -
+          type: text
+          marks:
+            -
+              type: link
+              attrs:
+                href: 'mailto:mail@pathly.app'
+                rel: null
+                target: null
+                title: null
+          text: Mail
+        -
+          type: text
+          text: .

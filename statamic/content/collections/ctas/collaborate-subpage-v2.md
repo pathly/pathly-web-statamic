@@ -1,7 +1,7 @@
 ---
 id: f67d9c6c-015c-4d33-af37-dbbdb50d7347
 blueprint: cta
-title: 'Mitwirken Subpage V2'
+title: 'Collaboration Subpage V2'
 cta_headline_addition: 'Wir brauchen dich!'
 cta_headline: 'Werde ein Teil von Pathly.'
 cta_textarea: 'Wir möchten dem Krebs mit mehr Humor, Lebensfreude und Leichtigkeit begegnen, ohne dabei die Ernsthaftigkeit der Krankheit aus den Augen zu verlieren. Wir möchten frei von Tabus und Stigmen sein, eine einfache und verständliche Sprache verwenden und ein Wegweiser durch den Dschungel an Informationen sein. Dabei brauchen wir Deine Hilfe, denn Du kannst uns dabei helfen Pathly in den App- und Play Store zu bringen!'

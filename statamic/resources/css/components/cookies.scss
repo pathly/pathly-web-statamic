@@ -1,0 +1,107 @@
+.oreos-popup {
+  position: fixed;
+  bottom: 0;
+  margin: 0 5vw;
+  margin-bottom: var(--root24px);
+  padding: var(--root40px);
+  z-index: 2000;
+  background-color: white;
+  border-radius: var(--root24px);
+  max-width: 700px;
+
+  @media (max-width: 400px) {
+    top: 0;
+    margin-top: var(--root24px);
+    overflow: auto;
+  }
+
+  h2 {
+    margin-bottom: var(--root40px);
+  }
+
+  /* navigation */
+  > div {
+    margin-top: var(--root32px);
+
+    a {
+      padding: var(--root8px) var(--root16px);
+      border-radius: calc(var(--root24px) + 2 * var(--root16px)); /* fontsize + 2 * padding */
+      margin-right: var(--root8px);
+
+      &:hover {
+        background-color: var(--purple_ultraLightViolett);
+      }
+    }
+  }
+}
+
+.oreos-form {
+  .oreos-form_options {
+    margin-top: var(--root32px);
+
+    label {
+      display: flex;
+      align-items: center;
+      margin: 0 var(--root24px) var(--root16px) 0;
+
+      input {
+        display: none;
+      }
+
+      span {
+        margin-right: var(--root8px);
+        height: var(--root24px);
+        width: var(--root24px);
+        border: var(--root4px) solid var(--primary_red);
+        border-radius: var(--root4px);
+        display: inline-block;
+        position: relative;
+      }
+
+      input[type=checkbox]:checked + span {
+        background-color: var(--primary_red);
+      }
+
+      input[type=checkbox]:checked + span:before {
+        width: var(--root16px);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        background-image: url("../images/checkmark.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
+
+  .oreos-form_buttons {
+    margin-top: var(--root40px);
+
+    @media (max-width: 550px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    button {
+      margin-top: 0;
+      padding: var(--root8px) var(--root32px);
+      margin-right: var(--root16px);
+      border: var(--root4px) solid var(--primary_red);
+    }
+
+    @media (max-width: 550px) {
+      button + button {
+        margin-top: var(--root24px);
+      }
+    }
+
+    .configure-button,
+    .save-button {
+      color: var(--primary_red);
+      background-color: white;
+    }
+  }
+}

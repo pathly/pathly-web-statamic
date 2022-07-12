@@ -4,17 +4,19 @@
 @import "base/sizes.css";
 @import "base/colors.css";
 
-@import "components/general.css";
-@import "components/header.css";
-@import "components/footer.css";
+@import "components/general.scss";
+@import "components/sections.scss";
+@import "components/patterns.scss";
+@import "components/cards.scss";
+
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/cookies.scss";
 
 @import "sites/home.css";
 @import "sites/donation.css";
-@import "sites/organisation/team.css";
+@import "sites/organisation/team.scss";
 @import "sites/organisation/nonprofit.css";
-@import "sites/organisation/mission.css";
-@import "sites/organisation/supporters.css";
-@import "sites/organisation/collaboration.css";
-
+@import "sites/organisation/supporters.scss";
 @import "sites/meta-page.css";
 @import "sites/press.css";

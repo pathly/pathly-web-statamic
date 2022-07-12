@@ -15,10 +15,12 @@ donation-options_buttons:
     donation-options_buttons_icon: icons/PayPal.png
     donation-options_button_headline: 'Mit PayPal einmalig oder regelmäßig spenden'
     donation-options_button_url: 'https://www.paypal.com/donate/?hosted_button_id=XR6MXEY4F6WHQ'
+    donation-options_button_icon: icons/PayPal.png
   -
     donation-options_buttons_icon: icons/Betterplace.png
     donation-options_button_headline: 'Mit Betterplace einmalig oder regelmäßig spenden'
     donation-options_button_url: 'https://www.betterplace.org/de/projects/102174-pathly-dein-wegweiser-durch-den-alltag-mit-krebs'
+    donation-options_button_icon: icons/Betterplace.png
 more-options_headline_addition: 'Das kannst du machen'
 more-options_headline: 'Hilf uns mit deinem Engagement!'
 more-options_options:

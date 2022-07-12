@@ -1,46 +1,39 @@
-<section id="collaboration_intro" class="{{ intro_image_position == 'left' ?= 'section_text-w-image-left' }}{{ intro_image_position == 'right' ?= 'section_text-w-image-right' }}">
-  {{ intro_image }}
-    <img src="{{ url }}" alt="{{ alt }}"/>
-  {{ /intro_image }}
+{{ partial:text-with-image
+  id="collaboration_intro"
+  :image_position="intro_image_position"
+  :image="intro_image"
+  :headline_addition="intro_headline_addition"
+  :headline="intro_headline"
+  :textarea="intro_textarea"
+}}
 
-  <div>
-    {{ if intro_headline_addition }}
-      <h2 class="section-headline--addition">{{ intro_headline_addition }}</h2>
-    {{ /if }}
-    <h2 class="section-headline">{{ intro_headline }}</h2>
-    <p>{{ intro_textarea }}</p>
-  </div>
-</section>
-
-<section id="collaboration_support" class="section_alternating-pattern section--top-spacing">
+<section id="collaboration_support" class="section--top-spacing">
   {{ if support_headline_addition }}
     <h2 class="section-headline--addition">{{ support_headline_addition }}</h2>
   {{ /if }}
   <h2 class="section-headline">{{ support_headline }}</h2>
 
-  <div>
-    <ul class="alternating-tiles">
-      {{ support_needs }}
-        <li>
-          <div class="alternating-tiles_image-container">
-            {{ support_needs_image }}
-              <img src="{{ url }}" alt="{{ alt }}"/>
-            {{ /support_needs_image }}
-          </div>
+  <div class="alternating-tiles">
+    {{ support_needs }}
+      <div>
+        <div class="image-container">
+          {{ support_needs_image }}
+            <img src="{{ url }}" alt="{{ alt }}"/>
+          {{ /support_needs_image }}
+        </div>
 
-          <div>
-            <h3>{{ support_needs_headline }}</h3>
-            <ul>
-              {{ support_needs_description }}
-                <li>
-                  <p>{{ value }}</p>
-                </li>
-              {{ /support_needs_description }}
-            </ul>
-            <a class="mail-link" href="mailto:mitwirken@pathly.app?subject={{ title }}: {{ support_needs_headline }}&body=Liebes Pathly Team,">Schreib uns</a>
-          </div>
-        </li>
-      {{ /support_needs }}
-    </ul>
+        <div class="text-container">
+          <h3>{{ support_needs_headline }}</h3>
+          <ul>
+            {{ support_needs_description }}
+              <li>
+                <p>{{ value }}</p>
+              </li>
+            {{ /support_needs_description }}
+          </ul>
+          <a class="mail-link" href="mailto:mitwirken@pathly.app?subject={{ title }}: {{ support_needs_headline }}&body=Liebes Pathly Team,">Schreib uns</a>
+        </div>
+      </div>
+    {{ /support_needs }}
   </div>
 </section>

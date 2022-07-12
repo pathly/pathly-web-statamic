@@ -1,6 +1,9 @@
 title: Stories
 template: stories/show
 layout: layout
+taxonomies:
+  - cancer_type
+  - therapy_type
 revisions: false
 route: '/stories/{slug}'
 sort_dir: asc

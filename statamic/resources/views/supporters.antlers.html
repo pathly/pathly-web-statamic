@@ -1,61 +1,52 @@
-<section id="supporters_intro" class="{{ intro_image_position == 'left' ?= 'section_text-w-image-left' }}{{ intro_image_position == 'right' ?= 'section_text-w-image-right' }}">
-  {{ intro_image }}
-    <img src="{{ url }}" alt="{{ alt }}"/>
-  {{ /intro_image }}
+{{ partial:text-with-image
+  id="supporters_intro"
+  :image_position="intro_image_position"
+  :image="intro_image"
+  :headline_addition="intro_headline_addition"
+  :headline="intro_headline"
+  :textarea="intro_textarea"
+}}
 
-  <div>
-    {{ if intro_headline_addition }}
-      <h2 class="section-headline--addition">{{ intro_headline_addition }}</h2>
-    {{ /if }}
-    <h2 class="section-headline">{{ intro_headline }}</h2>
-    <p>{{ intro_textarea }}</p>
-  </div>
-</section>
-
-<section id="supporters_cooperations" class="section_pattern section--top-spacing">
+<section id="supporters_cooperations" class="section--top-spacing">
   {{ if cooperations_headline_addition }}
     <h2 class="section-headline--addition">{{ cooperations_headline_addition }}</h2>
   {{ /if }}
   <h2 class="section-headline">{{ cooperations_headline }}</h2>
 
-  <div>
-    <ul class="tiles">
-      {{  cooperations_profiles }}
-        <li id="cooperations_profile">
-          <a target="_blank" href="{{ cooperations_profile_url }}">
-              {{ cooperations_profile_image }}
-                <img src="{{ url }}" alt="{{ alt }}"/>
-              {{ /cooperations_profile_image }}
-          </a>
-        </li>
-      {{ /cooperations_profiles }}
-    </ul>
+  <div class="tiles">
+    {{ cooperations_profiles }}
+      <div class="cooperations_profile">
+        <a target="_blank" href="{{ cooperations_profile_url }}">
+          {{ cooperations_profile_image }}
+            <img src="{{ glide:url width='700' height='700' format='webp' }}" alt="{{ alt }}"/>
+          {{ /cooperations_profile_image }}
+        </a>
+      </div>
+    {{ /cooperations_profiles }}
   </div>
 </section>
 
-<section id="supporters_sponsors" class="section_alternating-pattern section--top-spacing">
+<section id="supporters_sponsors" class="section--top-spacing">
   {{ if sponsors_headline_addition }}
     <h2 class="section-headline--addition">{{ sponsors_headline_addition }}</h2>
   {{ /if }}
   <h2 class="section-headline">{{ sponsors_headline }}</h2>
 
-  <div>
-    <ul class="alternating-tiles">
+  <div class="alternating-tiles">
       {{ sponsors_profiles }}
-        <li id="sponsors_profile">
-          <div class="alternating-tiles_image-container">
+        <div class="sponsors_profile">
+          <div class="image-container">
             {{ sponsors_profile_image }}
-              <img src="{{ url }}" alt="{{ alt }}"/>
+              <img src="{{ glide:url width='700' height='700' format='webp' }}" alt="{{ alt }}"/>
             {{ /sponsors_profile_image }}
           </div>
 
-          <div>
+          <div class="text-container">
             <h3>{{ sponsors_profile_name }}</h3>
             <p>{{ sponsors_profile_description }}</p>
             <a class="arrow-link" href="{{ sponsors_profile_url }}" target="_blank">Website</a>
           </div>
-        </li>
+        </div>
       {{ /sponsors_profiles }}
-    </ul>
   </div>
 </section>

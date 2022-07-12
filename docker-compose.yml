@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   statamic:
-    image: ghcr.io/o1y/statamic-starter:1.0.1-php7.4
+    image: ghcr.io/o1y/statamic-starter:1.0.2-php7.4
     ports:
       - 8080:8080
     volumes:

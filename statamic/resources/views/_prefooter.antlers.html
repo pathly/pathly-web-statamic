@@ -1,35 +1,30 @@
 {{ if cta_toggle }}
   {{ cta }}
-    <section class="{{ cta_image_position == 'left' ?= 'section_text-w-image-left' }}{{ cta_image_position == 'right' ?= 'section_text-w-image-right' }} section--top-spacing">
-      {{ cta_image }}
-        <img src="{{ url }}" alt="{{ alt }}"/>
-      {{ /cta_image }}
-
-      <div>
-        {{ if cta_headline_addition }}
-          <h2 class="section-headline--addition">{{ cta_headline_addition }}</h2>
-        {{ /if }}
-        <h2 class="section-headline">{{ cta_headline }}</h2>
-        {{ if cta_textarea }}<p>{{ cta_textarea }}</p>{{ /if }}
-
-        {{ if cta_button_type === 'mail' }}
-          <a class="cta-button" href="mailto:{{ cta_mail_address }}?subject={{ cta_mail_subject }}&body={{ cta_mail_body }}">
+    {{ partial:text-with-image
+      class="section--top-spacing"
+      :image_position="cta_image_position"
+      :image="cta_image"
+      :headline_addition="cta_headline_addition"
+      :headline="cta_headline"
+      :textarea="cta_textarea"
+    }}
+      {{ if cta_button_type === "mail" }}
+        <a class="cta-button" href="mailto:{{ cta_mail_address }}?subject={{ cta_mail_subject }}&body={{ cta_mail_body }}">
+          {{ cta_button_icon }}
+            <img src="{{ url }}" alt="{{ alt }}"/>
+          {{ /cta_button_icon }}
+          Schreib uns!
+        </a>
+      {{ elseif cta_button_type === "subpage" }}
+        {{ cta_subpage }}
+          <a class="cta-button" href="{{ url }}">
             {{ cta_button_icon }}
               <img src="{{ url }}" alt="{{ alt }}"/>
             {{ /cta_button_icon }}
-            Schreib uns!
+            {{ title }}
           </a>
-        {{ elseif cta_button_type === 'subpage' }}
-          {{ cta_subpage }}
-            <a class="cta-button" href="{{ url }}">
-              {{ cta_button_icon }}
-                <img src="{{ url }}" alt="{{ alt }}"/>
-              {{ /cta_button_icon }}
-              {{ title }}
-            </a>
-          {{ /cta_subpage }}
-        {{ /if }}
-      </div>
-    </section>
+        {{ /cta_subpage }}
+      {{ /if }}
+    {{ /partial:text-with-image }}
   {{ /cta }}
 {{ /if }}

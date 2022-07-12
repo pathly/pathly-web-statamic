@@ -10,8 +10,8 @@
 <section id="donation_options" class="section_asset-full-width section--top-spacing">
   <h2 class="section-headline">{{ donation_video_headline }}</h2>
 
-  {{ donation_video_thumbnail }}
-    <div class="video_wrapper" style="background-image: url('{{ url }}');">
+  <div class="video-content_wrapper">
+    <div class="video_wrapper" style="background-image: url('{{ donation_video_thumbnail }}');">
       <div class="video_layer">
         <iframe src="" title="YouTube Video Player" border="0" data-scaling="true" data-format="16:9" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
@@ -24,7 +24,7 @@
     </div>
 
     <p class="video_thumbnail_disclaimer_text">Wenn du dieses Video anschaust, stimmst du automatisch unseren <a href="/privacy" target="_blank">Datenschutzbestimmungen</a> in Bezug auf die Verwendung von YouTube zu.</p>
-  {{ /donation_video_thumbnail }}
+  </div>
 </section>
 
 <section id="donation_options" class="section--top-spacing">

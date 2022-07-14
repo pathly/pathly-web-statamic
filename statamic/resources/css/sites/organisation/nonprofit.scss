@@ -1,0 +1,24 @@
+#nonprofit_statutes .accordion-list {
+  counter-reset: statutes_headlines_item;
+  list-style-type: none;
+
+  h3::before {
+    content: "§" counter(statutes_headlines_item) " ";
+    counter-increment: statutes_headlines_item;
+    padding-right: var(--root8px);
+  }
+
+  ol {
+    font-weight: normal;
+    padding-left: var(--root32px);
+
+    > li:not(:first-child) {
+      margin-top: var(--root24px);
+    }
+
+    ul {
+      padding: revert;
+      list-style: disc;
+    }
+  }
+}

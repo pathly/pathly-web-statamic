@@ -1,0 +1,25 @@
+.bank-transfer {
+  background-color: var(--purple_ultraLight);
+  text-align: center;
+  border-radius: var(--root16px);
+  padding: var(--root80px);
+  margin: var(--root120px) 0 var(--root40px) 0;
+  pointer-events: none;
+  text-decoration: none;
+  color: inherit;
+
+  @media (max-width: 600px) {
+    padding: var(--root40px) var(--root24px);
+  }
+
+  h2 {
+    margin-bottom: var(--root40px);
+  }
+
+  /* detects iban as phone number and adds an anchor tag */
+  a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+  }
+}

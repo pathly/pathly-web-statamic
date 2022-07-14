@@ -23,7 +23,7 @@
   {{ /if }}
   <h2 class="section-headline">{{ statutes_headline }}</h2>
 
-  <div class="statutes_sections">
+  <div class="accordion-list">
     {{ statutes_sections }}
       <div class="accordion">
         <input type="checkbox" id="accordion_button-{{ statutes_section_headline }}"/>
@@ -33,7 +33,7 @@
         </label>
 
         <div class="accordion_content">
-          <ol class="statutes_section_subsections">
+          <ol>
             {{ statutes_section_subsections }}
               <li>
                 <p>{{ statutes_section_subsection_textarea }}<p>

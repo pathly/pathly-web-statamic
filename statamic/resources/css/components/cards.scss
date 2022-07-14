@@ -15,7 +15,7 @@
 
   > div {
     overflow: hidden;
-    
+
     /* dropdown general */
     .dropdown {
       cursor: pointer;
@@ -363,7 +363,7 @@
     }
 
     &.active div {
-      background-image: url("../images/heart_inactive_w-fill.svg");
+      background-image: url("../images/heart_white.svg");
       background-color: var(--primary_red);
     }
 
@@ -424,6 +424,7 @@
       border-radius: calc(var(--root24px) + 2 * var(--root8px)); /* fontsize + 2 * padding */
       border: 2px solid var(--primary_red);
       margin: 0 var(--root4px);
+      cursor: pointer;
 
       /* hide page numbers on small screens */
       &.page-numbers {
@@ -432,8 +433,7 @@
         }
       }
 
-      a,
-      span {
+      a {
         color: var(--primary_red);
       }
 
@@ -451,18 +451,13 @@
         }
       }
 
-      &:hover:not(.disabled),
+      &:hover:not(.disabled):not(.active) {
+        background-color: var(--shadow_red);
+      }
+
       &.active {
         background-color: var(--primary_red);
-
-        a,
-        span {
-          color: var(--purple_ultraLight);
-
-          div {
-            background-image: url("../images/arrow_thin_light.svg");
-          }
-        }
+        color: var(--purple_ultraLight);
       }
 
       &.disabled {

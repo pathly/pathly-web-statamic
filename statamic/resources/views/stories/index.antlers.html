@@ -205,9 +205,16 @@
             {{ /if }}
 
             {{ links:all }}
-              <li class="page-numbers" {{ if page == current_page }} class="active" {{ endif }}>
-                <a href="{{ url }}">{{ page }}</a>
-              </li>
+              {{ if page == current_page }}
+                <li class="page-numbers active">
+                  {{ page }}
+                </li>
+              {{ else }}
+                <li class="page-numbers">
+                  <a href="{{ url }}">{{ page }}</a>
+                </li>
+              {{ endif }}
+
             {{ /links:all }}
 
             <div class="page-info">

@@ -7,13 +7,15 @@ $(document).ready(function() {
   $(window).on("load", function() {
     let stored_favorites = JSON.parse(localStorage.getItem("favoritedStories"));
 
-    // add filled heart to favorited stories
-    $(".favorite-toggle input").each(function() {
-      let id = $(this).val();
-      if (stored_favorites.includes(id)) {
-        $(this).prop("checked", true);
-      }
-    });
+    if (stored_favorites != null) {
+      // add filled heart to favorited stories
+      $(".favorite-toggle input").each(function() {
+        let id = $(this).val();
+        if (stored_favorites.includes(id)) {
+          $(this).prop("checked", true);
+        }
+      });
+    }
 
     // only show favorites disclaimer when favorites not empty and favorites mode on and ...
     let is_favorites_mode = $(".favorites-mode-toggle").hasClass("active");
@@ -72,7 +74,7 @@ $(document).ready(function() {
       let new_url = url.toString();
       window.location.href = new_url;
     } else {
-      if (stored_favorites.length > 0) {
+      if (stored_favorites != null && stored_favorites.length > 0) {
         // add new params
         stored_favorites.forEach(function(item) {
           search_params.append("favorite" + "[]", item);

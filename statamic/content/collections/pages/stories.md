@@ -4,7 +4,7 @@ blueprint: stories
 title: Geschichten
 template: stories/index
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1652889329
+updated_at: 1657900786
 cta_toggle: true
 cta: f3471284-8cd7-429b-8ce7-82f939699fdc
 favorites_headline: 'Hier kannst du deine Lieblingsgeschichten speichern.'
@@ -30,7 +30,7 @@ favorites_textarea:
         type: text
         text: ' Sobald du die Cookies in deinem Browser löschst, sind auch deine Favoriten weg.'
 relatives_headline: 'Schau mal, diese Geschichten könnten dir auch gefallen.'
-og_title: Geschichten
+og_title: 'Eure Geschichten'
 og_description: 'Krebspatient:innen und Angehörige erzählen ihre Geschichten.'
 og_image: opengraph/og-stories.jpg
 ---

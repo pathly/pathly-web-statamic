@@ -4,8 +4,8 @@ blueprint: mission
 title: 'Unsere Mission'
 intro_image--big: ribbons-big.svg
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
-updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1645196440
+updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
+updated_at: 1657900653
 mission_section:
   -
     headline_addition: 'Unsere Mission'
@@ -83,6 +83,6 @@ cta_toggle: true
 intro_image--small: ribbons-small.svg
 cta: 4257810f-4ba7-44ca-a0a2-8ee85aa3439f
 og_title: 'Unsere Mission'
-og_description: 'Unsere Mission'
+og_description: 'Erfahre was uns antreibt und wo die Reise hingehen soll!'
 og_image: opengraph/og_mission.png
 ---

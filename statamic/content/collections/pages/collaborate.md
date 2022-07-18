@@ -22,17 +22,15 @@ feedback_headline: 'Das sagt unsere Community'
 support_headline_addition: 'Du & Pathly'
 support_headline: 'So kannst du helfen!'
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1647352657
+updated_at: 1657900591
 template: collaboration
 feedback_quotes:
   -
     feedback_quotes_textarea: 'Lorem ipsum dolor sit amet, consetetur sadi elitr, sed diam nonumy eirmod tempor invidunt ut labore et do magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
     feedback_quotes_author: 'Max Mustermann'
-    feedback_quotes_link: null
   -
     feedback_quotes_textarea: 'Lorem ipsum dolor sit amet, consetetur sadi elitr, sed diam nonumy eirmod tempor invidunt ut labore et do magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
     feedback_quotes_author: 'Maria Musterfraue'
-    feedback_quotes_link: null
 support_needs:
   -
     support_needs_image: icons/collaboration_content-creation.svg
@@ -82,6 +80,6 @@ intro_image_position: right
 cta_toggle: true
 cta: 6f656d83-2700-4b8f-aa2e-67e1553868cc
 og_title: Mitwirken
-og_description: Mitwirken
+og_description: 'So kannst du uns unterstützen!'
 og_image: opengraph/og_home.png
 ---

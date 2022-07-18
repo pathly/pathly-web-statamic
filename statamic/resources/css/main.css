@@ -14,8 +14,8 @@
 @import "components/cookies.scss";
 
 @import "sites/home.css";
-@import "sites/donation.css";
+@import "sites/donation.scss";
 @import "sites/organisation/team.scss";
-@import "sites/organisation/nonprofit.css";
+@import "sites/organisation/nonprofit.scss";
 @import "sites/organisation/supporters.scss";
 @import "sites/meta-page.css";

@@ -9,12 +9,12 @@ media:
     media_replicator:
       -
         media_video_url: 'https://www.youtube-nocookie.com/embed/Eiw2fS4eY_I'
-        media_video_thumbnail: fundraising-video_thumbnail.png
+        media_video_thumbnail: press/thumbnail_alex-tv_anna.png
         type: video
         enabled: true
       -
         media_video_url: 'https://www.youtube-nocookie.com/embed/PJNT_VRc60c'
-        media_video_thumbnail: fundraising-video_thumbnail.png
+        media_video_thumbnail: press/thumbnail_alex-tv_raum-fuer-notizen.png
         type: video
         enabled: true
   -
@@ -22,7 +22,7 @@ media:
     media_headline: 'Thora und Rebecca im Campus Magazin ihrer Hochschule'
     media_replicator:
       -
-        media_article_image: article-htw.png
+        media_article_image: press/article-htw.png
         media_article_url: 'https://campus-stories.htw-berlin.de/jahr/2021/rebecca-kremer-und-thora-hornburg/'
         type: article
         enabled: true
@@ -31,12 +31,12 @@ media:
     media_headline: 'Pathly im Social Startups Magazin'
     media_replicator:
       -
-        media_article_image: article-socialstartups.png
+        media_article_image: press/article-socialstartups.png
         media_article_url: 'https://www.social-startups.de/pathly-mutmacher-und-wegbegleiter-bei-einer-krebserkrankung/'
         type: article
         enabled: true
 updated_by: 31bb3955-fa9f-477e-94b8-d1afcdc3367e
-updated_at: 1657901025
+updated_at: 1658164015
 cta_toggle: true
 template: footer-pages/press
 og_title: 'Die Pathlys in der Presse'

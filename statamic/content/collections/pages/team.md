@@ -77,7 +77,7 @@ team_profiles:
     team_profile_name: 'Jan Naubert'
     team_profile_responsibilities:
       - webDevelopment
-    team_profile_is_active: true
+    team_profile_is_active: false
   -
     team_profile_image: supporter/Jessica-Krueger_500.png
     team_profile_name: 'Jessica Krüger'
@@ -90,7 +90,7 @@ team_profiles:
     team_profile_name: 'Marcel Wittrin'
     team_profile_responsibilities:
       - webDevelopment
-    team_profile_is_active: true
+    team_profile_is_active: false
   -
     team_profile_image: supporter/Michael-Becker.jpg
     team_profile_name: 'Michael Becker'
@@ -98,7 +98,7 @@ team_profiles:
       - webDevelopment
     team_profile_is_active: true
   -
-    team_profile_image: supporter/Oliver-Mesieh_500.png
+    team_profile_image: supporter/Oliver-500.png
     team_profile_name: 'Oliver Mesieh'
     team_profile_responsibilities:
       - webDevelopment
@@ -109,7 +109,7 @@ team_profiles:
     team_profile_responsibilities:
       - contentCreation
     team_profile_mail: ronahi@pathly.app
-    team_profile_is_active: true
+    team_profile_is_active: false
   -
     team_profile_image: supporter/SabineAntweiler_500.png
     team_profile_name: 'Sabine Antweiler'
@@ -137,7 +137,7 @@ team_profiles:
       - contentCreation
     team_profile_is_active: true
 updated_by: 3b7f2d63-0aed-4ba3-824c-3b1650cef8a6
-updated_at: 1656272408
+updated_at: 1657970487
 template: team
 cta_toggle: true
 cta: 26cd6f15-97c9-4d5d-b701-6725436ce2b0

@@ -5,28 +5,38 @@ title: 'Unser Verein'
 description: 'Unsere Satzung'
 icon: icons/nav_nonprofit.svg
 intro_headline: 'Unser gemeinnütziger Verein'
-intro_textarea: 'An dieser Stelle haben wir unsere Satzung für Euch bereitgestellt. Natürlich ist eine Satzung nicht so spannend, trotzdem möchten wir, dass die Ziele und Strukturen unseres Vereins transparent und für alle Interessierten zugänglich sind.'
+intro_textarea:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'An dieser Stelle haben wir unsere Satzung für Euch bereitgestellt. Natürlich ist eine Satzung nicht so spannend, trotzdem möchten wir, dass die Ziele und Strukturen unseres Vereins transparent und für alle Interessierten zugänglich sind.'
 intro_image: nonprofit_statutes.svg
 intro_image_position: left
 parent: fb9b709e-70d1-4b44-8658-b9d4a845c495
 preamble_headline: Präambel
-preamble_textarea: |-
-  Krebs. Eine Diagnose, die einen extremen Einschnitt im Leben der Betroffenen bedeutet.
-  Mit der Diagnose ändert sich das Leben der Betroffenen schlagartig.
-
-  Der Verein »Pathly e.V.« hat es sich zur Aufgabe gemacht, Krebspatient:inn:en und
-  ihre Angehörigen auf ihrem Weg durch die Erkrankung zu begleiten. Hierbei verfolgt
-  der Verein das Ziel den Zugang zu komplexen Informationen zu erleichtern
-  sowie Tipps und Hilfestellungen zu geben, welche auf die Lebenssituation und
-  Erkrankung der Betroffenen abgestimmt sind.
-
-  Bei Pathly sollen die Menschen im Fokus stehen, gemeinsam mit den Krebspatient:
-  inn:en und Angehörigen wollen wir einen digitalen Wegweiser entwickeln, der
-  die Betroffenen im Alltag unterstützt. Mit der Diagnose kommen lebensverändernde
-  Entscheidung, körperliche Einschränkungen sowie eine enorme psychische Belastung
-  auf die Betroffenen zu. Die Vision des Vereins ist es, Betroffenen und ihren
-  Angehörigen in solchen Momenten zur Seite zu stehen, sie richtig abzuholen und
-  dabei offen, persönlich und emotional zu sein, zu inspirieren und Mut zu machen.
+preamble_textarea:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: |-
+          Krebs. Eine Diagnose, die einen extremen Einschnitt im Leben der Betroffenen bedeutet.
+          Mit der Diagnose ändert sich das Leben der Betroffenen schlagartig.
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Der Verein »Pathly e.V.« hat es sich zur Aufgabe gemacht, Krebspatient:inn:en und ihre Angehörigen auf ihrem Weg durch die Erkrankung zu begleiten. Hierbei verfolgt der Verein das Ziel den Zugang zu komplexen Informationen zu erleichtern sowie Tipps und Hilfestellungen zu geben, welche auf die Lebenssituation und Erkrankung der Betroffenen abgestimmt sind.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Bei Pathly sollen die Menschen im Fokus stehen, gemeinsam mit den Krebspatient:innen und Angehörigen wollen wir einen digitalen Wegweiser entwickeln, der die Betroffenen im Alltag unterstützt. Mit der Diagnose kommen lebensverändernde Entscheidung, körperliche Einschränkungen sowie eine enorme psychische Belastung auf die Betroffenen zu. Die Vision des Vereins ist es, Betroffenen und ihren Angehörigen in solchen Momenten zur Seite zu stehen, sie richtig abzuholen und dabei offen, persönlich und emotional zu sein, zu inspirieren und Mut zu machen.'
 statutes_headline: Satzung
 statutes_sections:
   -
